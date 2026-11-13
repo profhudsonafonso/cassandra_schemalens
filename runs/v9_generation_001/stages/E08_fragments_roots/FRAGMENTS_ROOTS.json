@@ -1,0 +1,1023 @@
+{
+  "1": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 1
+  },
+  "2": {
+    "anchors": [
+      "categories"
+    ],
+    "centrality": {
+      "categories": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "categories"
+    ],
+    "kind": "read",
+    "most_central": "categories",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "categories",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 2
+  },
+  "3": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 3
+  },
+  "4": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "bids": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "bids.item->items",
+      "bids.user->users"
+    ],
+    "fragment": [
+      "bids",
+      "items",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "bids",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "bids",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 4
+  },
+  "5": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 5
+  },
+  "6": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "bids": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "bids.item->items"
+    ],
+    "fragment": [
+      "bids",
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "bids",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "bids",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 6
+  },
+  "7": {
+    "anchors": [
+      "categories"
+    ],
+    "centrality": {
+      "categories": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "items.category->categories"
+    ],
+    "fragment": [
+      "categories",
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "categories",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": false,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 7
+  },
+  "8": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 8
+  },
+  "9": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "comments": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "users": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "comments.to_user->users"
+    ],
+    "fragment": [
+      "comments",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "comments",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "comments",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 9
+  },
+  "10": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "categories": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "items": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "items.category->categories",
+      "items.seller->users"
+    ],
+    "fragment": [
+      "categories",
+      "items",
+      "users"
+    ],
+    "kind": "write",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 10
+  },
+  "11": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "regions": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "users": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "users.region->regions"
+    ],
+    "fragment": [
+      "regions",
+      "users"
+    ],
+    "kind": "write",
+    "most_central": "regions",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": false,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 11
+  },
+  "12": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 12
+  },
+  "13": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 13
+  },
+  "14": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 14
+  },
+  "15": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "write",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 15
+  },
+  "16": {
+    "anchors": [
+      "buynow"
+    ],
+    "centrality": {
+      "buynow": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "buynow.buyer->users",
+      "buynow.item->items"
+    ],
+    "fragment": [
+      "buynow",
+      "items",
+      "users"
+    ],
+    "kind": "write",
+    "most_central": "buynow",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "buynow",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 16
+  },
+  "17": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 17
+  },
+  "18": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 18
+  },
+  "19": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "bids": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "bids.item->items"
+    ],
+    "fragment": [
+      "bids",
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "bids",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "bids",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 19
+  },
+  "20": {
+    "anchors": [
+      "bids"
+    ],
+    "centrality": {
+      "bids": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "bids.item->items",
+      "bids.user->users"
+    ],
+    "fragment": [
+      "bids",
+      "items",
+      "users"
+    ],
+    "kind": "write",
+    "most_central": "bids",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "bids",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 20
+  },
+  "21": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 21
+  },
+  "22": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "write",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 22
+  },
+  "23": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 23
+  },
+  "24": {
+    "anchors": [
+      "items"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "items"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 24
+  },
+  "25": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 25
+  },
+  "26": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 26
+  },
+  "27": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "write",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 27
+  },
+  "28": {
+    "anchors": [
+      "comments"
+    ],
+    "centrality": {
+      "comments": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "comments.from_user->users",
+      "comments.item->items",
+      "comments.to_user->users"
+    ],
+    "fragment": [
+      "comments",
+      "items",
+      "users"
+    ],
+    "kind": "write",
+    "most_central": "comments",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "comments",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 28
+  },
+  "29": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "users": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "users",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "users",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 29
+  },
+  "30": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "comments": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "users": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "comments.to_user->users"
+    ],
+    "fragment": [
+      "comments",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "comments",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "comments",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 30
+  },
+  "31": {
+    "anchors": [
+      "comments"
+    ],
+    "centrality": {
+      "comments": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "users": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "comments.from_user->users"
+    ],
+    "fragment": [
+      "comments",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "comments",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "comments",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 31
+  },
+  "32": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "buynow": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "buynow.buyer->users",
+      "buynow.item->items"
+    ],
+    "fragment": [
+      "buynow",
+      "items",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "buynow",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "buynow",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 32
+  },
+  "33": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "items": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      },
+      "users": {
+        "avg_distance": 1.0,
+        "direct_links": 1,
+        "max_distance": 1
+      }
+    },
+    "edges": [
+      "items.seller->users"
+    ],
+    "fragment": [
+      "items",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 33
+  },
+  "34": {
+    "anchors": [
+      "users"
+    ],
+    "centrality": {
+      "bids": {
+        "avg_distance": 1.0,
+        "direct_links": 2,
+        "max_distance": 1
+      },
+      "items": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      },
+      "users": {
+        "avg_distance": 1.5,
+        "direct_links": 1,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "bids.item->items",
+      "bids.user->users"
+    ],
+    "fragment": [
+      "bids",
+      "items",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "bids",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": false,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 34
+  },
+  "35": {
+    "anchors": [
+      "regions",
+      "categories"
+    ],
+    "centrality": {
+      "categories": {
+        "avg_distance": 2.0,
+        "direct_links": 1,
+        "max_distance": 3
+      },
+      "items": {
+        "avg_distance": 1.333,
+        "direct_links": 2,
+        "max_distance": 2
+      },
+      "regions": {
+        "avg_distance": 2.0,
+        "direct_links": 1,
+        "max_distance": 3
+      },
+      "users": {
+        "avg_distance": 1.333,
+        "direct_links": 2,
+        "max_distance": 2
+      }
+    },
+    "edges": [
+      "items.category->categories",
+      "items.seller->users",
+      "users.region->regions"
+    ],
+    "fragment": [
+      "categories",
+      "items",
+      "regions",
+      "users"
+    ],
+    "kind": "read",
+    "most_central": "items",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "items",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 35
+  },
+  "36": {
+    "anchors": [
+      "regions"
+    ],
+    "centrality": {
+      "regions": {
+        "avg_distance": 0.0,
+        "direct_links": 0,
+        "max_distance": 0
+      }
+    },
+    "edges": [],
+    "fragment": [
+      "regions"
+    ],
+    "kind": "read",
+    "most_central": "regions",
+    "partition_orientation": "chave de partição = atributos de igualdade (âncora); direção de acesso âncora → raiz",
+    "root": "regions",
+    "root_equals_most_central": true,
+    "root_rule": "papel semântico: entidade cujas instâncias formam as linhas do resultado (ou a entidade escrita)",
+    "statement": 36
+  }
+}

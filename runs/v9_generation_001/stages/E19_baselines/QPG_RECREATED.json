@@ -1,0 +1,93 @@
+{
+  "at": "2026-11-12T15:33:53-0300",
+  "correctness": {
+    "agree_oracle": 79429,
+    "agree_v8_reference": 79429,
+    "evaluations": 79429
+  },
+  "materialization": {
+    "historical_ddl": null,
+    "manifest_sha256": "1a27e7b536975681bea93e8701804ad85d0bacbc3cad50e1768ed7de4297bb2b",
+    "tables": {
+      "q15_2": {
+        "expected_rows": 6501,
+        "match": true,
+        "read_back": 6501,
+        "skipped_missing_relationship": 0
+      },
+      "q16_2": {
+        "expected_rows": 5300,
+        "match": true,
+        "read_back": 5300,
+        "skipped_missing_relationship": 0
+      },
+      "q17": {
+        "expected_rows": 5906,
+        "match": true,
+        "read_back": 5906,
+        "skipped_missing_relationship": 0
+      },
+      "q18": {
+        "expected_rows": 1221,
+        "match": true,
+        "read_back": 1221,
+        "skipped_missing_relationship": 4469
+      },
+      "q19": {
+        "expected_rows": 5906,
+        "match": true,
+        "read_back": 5906,
+        "skipped_missing_relationship": 0
+      },
+      "q1_7_9_14": {
+        "expected_rows": 20494,
+        "match": true,
+        "read_back": 20494,
+        "skipped_missing_relationship": 0
+      },
+      "q2": {
+        "expected_rows": 500,
+        "match": true,
+        "read_back": 500,
+        "skipped_missing_relationship": 0
+      },
+      "q20": {
+        "expected_rows": 50,
+        "match": true,
+        "read_back": 50,
+        "skipped_missing_relationship": 0
+      },
+      "q3_10_11_13": {
+        "expected_rows": 5906,
+        "match": true,
+        "read_back": 5906,
+        "skipped_missing_relationship": 0
+      },
+      "q4_2": {
+        "expected_rows": 1221,
+        "match": true,
+        "read_back": 1221,
+        "skipped_missing_relationship": 4469
+      },
+      "q5_12": {
+        "expected_rows": 1221,
+        "match": true,
+        "read_back": 1221,
+        "skipped_missing_relationship": 4469
+      },
+      "q6": {
+        "expected_rows": 5906,
+        "match": true,
+        "read_back": 5906,
+        "skipped_missing_relationship": 0
+      },
+      "q8": {
+        "expected_rows": 6501,
+        "match": true,
+        "read_back": 6501,
+        "skipped_missing_relationship": 0
+      }
+    }
+  },
+  "reason": "keyspace sujo após interrupção da tentativa 4 do E20 sem reset_state"
+}

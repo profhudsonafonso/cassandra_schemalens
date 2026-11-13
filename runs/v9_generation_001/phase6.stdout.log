@@ -1,0 +1,8 @@
+{"stage": "E20", "attempt": 1, "status": "FAIL", "checks": {"invalidated": "H01"}, "error": null}
+{"stage": "E20", "attempt": 2, "status": "FAIL", "checks": {"invalidated": "H03"}, "error": null}
+{"stage": "E20", "attempt": 3, "status": "FAIL", "checks": {"invalidated": "QPG"}, "error": null}
+{"stage": "E20", "attempt": 1, "status": "FAIL", "checks": {"failed": "QPG", "agreement": "FAIL", "errors": 0, "restoration": ["q15_2", "q16_2", "q17", "q18", "q19", "q1_7_9_14", "q3_10_11_13", "q4_2", "q5_12", "q6", "q8"]}, "error": null}
+{"stage": "E20", "attempt": 1, "status": "PASS", "checks": {"deployments": ["H01", "NoSE", "H02", "V8_AUTO_H_norm", "H03", "QPG", "H04", "H05"], "all_pass": true}, "error": null}
+{"stage": "E21", "status": "PASS", "checks": {"Htop": ["H02", "H03", "H04", "H05"], "kendall_tau_internal": {"browsing": 0.7, "bidding": 1.0, "update10x": 0.8, "update100x": 0.2}, "top1_preserved": {"browsing": false, "bidding": true, "update10x": false, "update100x": false}}, "error": null}
+{"stage": "E20", "attempt": 1, "status": "PASS", "checks": {"deployments": ["H01", "NoSE", "H02", "V8_AUTO_H_norm", "H03", "QPG", "H04", "H05"], "all_pass": true}, "error": null}
+{"stage": "E21", "status": "PASS", "checks": {"Htop": ["H01", "H03"], "kendall_tau_internal": {"browsing": 0.9, "bidding": 0.8, "update10x": 0.8, "update100x": 0.8}, "top1_preserved": {"browsing": true, "bidding": false, "update10x": true, "update100x": true}}, "error": null}

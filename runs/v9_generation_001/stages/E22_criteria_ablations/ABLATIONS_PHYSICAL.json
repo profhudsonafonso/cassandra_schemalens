@@ -1,0 +1,460 @@
+{
+  "agreement": {
+    "A01": "PASS",
+    "A02": "PASS",
+    "A03": "PASS",
+    "A04": "PASS",
+    "A05": "PASS",
+    "H02": "PASS"
+  },
+  "blocked_by_oracle": [],
+  "contrasts": {
+    "A01": {
+      "criteria": [
+        "sharedness",
+        "supersedes",
+        "canonicalization"
+      ],
+      "label": "pareto_1",
+      "per_workload": {
+        "bidding": {
+          "ablated_ms": 1.46686973616,
+          "diff_ms": {
+            "ci95_high": -0.6026310852112091,
+            "ci95_low": -0.8961781680687908,
+            "mean": -0.74940462664,
+            "n": 5,
+            "sd": 0.11822608643125293
+          },
+          "full_ms": 2.2162743628,
+          "verdict_95": "ablado mais rápido"
+        },
+        "browsing": {
+          "ablated_ms": 1.20366317632,
+          "diff_ms": {
+            "ci95_high": -0.3845549245264377,
+            "ci95_low": -0.5193631040335623,
+            "mean": -0.45195901428,
+            "n": 5,
+            "sd": 0.05429399375016657
+          },
+          "full_ms": 1.6556221906000002,
+          "verdict_95": "ablado mais rápido"
+        },
+        "update100x": {
+          "ablated_ms": 3.2117651787,
+          "diff_ms": {
+            "ci95_high": 0.5978651188164105,
+            "ci95_low": 0.18232922834358967,
+            "mean": 0.39009717358000007,
+            "n": 5,
+            "sd": 0.16735707820391474
+          },
+          "full_ms": 2.8216680051200003,
+          "verdict_95": "ablado mais lento"
+        },
+        "update10x": {
+          "ablated_ms": 2.44441983526,
+          "diff_ms": {
+            "ci95_high": -0.1093253069747338,
+            "ci95_low": -0.4416585627052663,
+            "mean": -0.27549193484000006,
+            "n": 5,
+            "sd": 0.13384721739864774
+          },
+          "full_ms": 2.7199117701,
+          "verdict_95": "ablado mais rápido"
+        }
+      },
+      "reads_per_request": {
+        "bidding": 1.84956,
+        "browsing": 1.46698,
+        "update100x": 2.62984,
+        "update10x": 2.26036
+      },
+      "vs": "H02",
+      "writes_per_request": {
+        "bidding": 0.38266,
+        "browsing": 0.0,
+        "update100x": 3.60296,
+        "update10x": 2.075
+      }
+    },
+    "A02": {
+      "criteria": [
+        "write_exposure"
+      ],
+      "label": "kbest_1",
+      "per_workload": {
+        "bidding": {
+          "ablated_ms": 1.6196329422799998,
+          "diff_ms": {
+            "ci95_high": -0.44473227627023665,
+            "ci95_low": -0.7485505647697632,
+            "mean": -0.5966414205199999,
+            "n": 5,
+            "sd": 0.12236281446192075
+          },
+          "full_ms": 2.2162743628,
+          "verdict_95": "ablado mais rápido"
+        },
+        "browsing": {
+          "ablated_ms": 1.24352035536,
+          "diff_ms": {
+            "ci95_high": -0.34312924210755397,
+            "ci95_low": -0.481074428372446,
+            "mean": -0.41210183524,
+            "n": 5,
+            "sd": 0.05555742320914425
+          },
+          "full_ms": 1.6556221906000002,
+          "verdict_95": "ablado mais rápido"
+        },
+        "update100x": {
+          "ablated_ms": 3.1581440575400004,
+          "diff_ms": {
+            "ci95_high": 0.3856464051248775,
+            "ci95_low": 0.2873056997151225,
+            "mean": 0.33647605242,
+            "n": 5,
+            "sd": 0.03960671870524019
+          },
+          "full_ms": 2.8216680051200003,
+          "verdict_95": "ablado mais lento"
+        },
+        "update10x": {
+          "ablated_ms": 2.64512816668,
+          "diff_ms": {
+            "ci95_high": 0.11182500203928537,
+            "ci95_low": -0.2613922088792853,
+            "mean": -0.07478360341999997,
+            "n": 5,
+            "sd": 0.15031323018494253
+          },
+          "full_ms": 2.7199117701,
+          "verdict_95": "empate"
+        }
+      },
+      "reads_per_request": {
+        "bidding": 1.84956,
+        "browsing": 1.46698,
+        "update100x": 2.62984,
+        "update10x": 2.26036
+      },
+      "vs": "H02",
+      "writes_per_request": {
+        "bidding": 0.33534,
+        "browsing": 0.0,
+        "update100x": 3.16298,
+        "update10x": 1.81872
+      }
+    },
+    "A03": {
+      "criteria": [
+        "write_exposure"
+      ],
+      "label": "kbest_2",
+      "per_workload": {
+        "bidding": {
+          "ablated_ms": 1.7789247551799998,
+          "diff_ms": {
+            "ci95_high": -0.3414241091675645,
+            "ci95_low": -0.5332751060724356,
+            "mean": -0.43734960762,
+            "n": 5,
+            "sd": 0.07726798822593545
+          },
+          "full_ms": 2.2162743628,
+          "verdict_95": "ablado mais rápido"
+        },
+        "browsing": {
+          "ablated_ms": 1.3054647119,
+          "diff_ms": {
+            "ci95_high": -0.25008552486273417,
+            "ci95_low": -0.4502294325372659,
+            "mean": -0.3501574787,
+            "n": 5,
+            "sd": 0.08060795800480813
+          },
+          "full_ms": 1.6556221906000002,
+          "verdict_95": "ablado mais rápido"
+        },
+        "update100x": {
+          "ablated_ms": 3.15026020512,
+          "diff_ms": {
+            "ci95_high": 0.35829206668396685,
+            "ci95_low": 0.29889233331603304,
+            "mean": 0.32859219999999995,
+            "n": 5,
+            "sd": 0.0239232423732101
+          },
+          "full_ms": 2.8216680051200003,
+          "verdict_95": "ablado mais lento"
+        },
+        "update10x": {
+          "ablated_ms": 2.6007427574,
+          "diff_ms": {
+            "ci95_high": 0.010922567502967745,
+            "ci95_low": -0.2492605929029678,
+            "mean": -0.11916901270000002,
+            "n": 5,
+            "sd": 0.10478876679906407
+          },
+          "full_ms": 2.7199117701,
+          "verdict_95": "empate"
+        }
+      },
+      "reads_per_request": {
+        "bidding": 1.84956,
+        "browsing": 1.46698,
+        "update100x": 2.62984,
+        "update10x": 2.26036
+      },
+      "vs": "H02",
+      "writes_per_request": {
+        "bidding": 0.3367,
+        "browsing": 0.0,
+        "update100x": 3.17234,
+        "update10x": 1.82488
+      }
+    },
+    "A04": {
+      "criteria": [
+        "B2_all_addition"
+      ],
+      "label": "B2_all_addition",
+      "per_workload": {
+        "bidding": {
+          "ablated_ms": 1.61774458576,
+          "diff_ms": {
+            "ci95_high": -0.5038076132027983,
+            "ci95_low": -0.6932519408772017,
+            "mean": -0.59852977704,
+            "n": 5,
+            "sd": 0.07629870220311788
+          },
+          "full_ms": 2.2162743628,
+          "verdict_95": "ablado mais rápido"
+        },
+        "browsing": {
+          "ablated_ms": 1.298492471,
+          "diff_ms": {
+            "ci95_high": -0.2595298077716065,
+            "ci95_low": -0.4547296314283934,
+            "mean": -0.35712971959999995,
+            "n": 5,
+            "sd": 0.07861672818669795
+          },
+          "full_ms": 1.6556221906000002,
+          "verdict_95": "ablado mais rápido"
+        },
+        "update100x": {
+          "ablated_ms": 3.4605331163199997,
+          "diff_ms": {
+            "ci95_high": 0.8064438401496157,
+            "ci95_low": 0.4712863822503841,
+            "mean": 0.6388651111999999,
+            "n": 5,
+            "sd": 0.13498466481064586
+          },
+          "full_ms": 2.8216680051200003,
+          "verdict_95": "ablado mais lento"
+        },
+        "update10x": {
+          "ablated_ms": 2.78219963468,
+          "diff_ms": {
+            "ci95_high": 0.227679512537747,
+            "ci95_low": -0.10310378337774712,
+            "mean": 0.06228786457999993,
+            "n": 5,
+            "sd": 0.13322297108942244
+          },
+          "full_ms": 2.7199117701,
+          "verdict_95": "empate"
+        }
+      },
+      "reads_per_request": {
+        "bidding": 1.84956,
+        "browsing": 1.46698,
+        "update100x": 2.62984,
+        "update10x": 2.26036
+      },
+      "vs": "H02",
+      "writes_per_request": {
+        "bidding": 0.39494,
+        "browsing": 0.0,
+        "update100x": 3.71966,
+        "update10x": 2.14076
+      }
+    },
+    "A05": {
+      "criteria": [
+        "B3_all_substitution_no_cost"
+      ],
+      "label": "B3_all_substitution_no_cost",
+      "per_workload": {
+        "bidding": {
+          "ablated_ms": 4.630676762919999,
+          "diff_ms": {
+            "ci95_high": 2.588137431456833,
+            "ci95_low": 2.2406673687831673,
+            "mean": 2.41440240012,
+            "n": 5,
+            "sd": 0.13994356633365074
+          },
+          "full_ms": 2.2162743628,
+          "verdict_95": "ablado mais lento"
+        },
+        "browsing": {
+          "ablated_ms": 6.07324909366,
+          "diff_ms": {
+            "ci95_high": 4.529047489777535,
+            "ci95_low": 4.3062063163424655,
+            "mean": 4.41762690306,
+            "n": 5,
+            "sd": 0.0897492816978813
+          },
+          "full_ms": 1.6556221906000002,
+          "verdict_95": "ablado mais lento"
+        },
+        "update100x": {
+          "ablated_ms": 3.14607944428,
+          "diff_ms": {
+            "ci95_high": 0.4343271182466321,
+            "ci95_low": 0.21449576007336796,
+            "mean": 0.32441143916000004,
+            "n": 5,
+            "sd": 0.08853707861338665
+          },
+          "full_ms": 2.8216680051200003,
+          "verdict_95": "ablado mais lento"
+        },
+        "update10x": {
+          "ablated_ms": 3.91268945894,
+          "diff_ms": {
+            "ci95_high": 1.3623125037078063,
+            "ci95_low": 1.023242873972194,
+            "mean": 1.1927776888400001,
+            "n": 5,
+            "sd": 0.13656029200189362
+          },
+          "full_ms": 2.7199117701,
+          "verdict_95": "ablado mais lento"
+        }
+      },
+      "reads_per_request": {
+        "bidding": 7.58076,
+        "browsing": 10.87148,
+        "update100x": 2.69758,
+        "update10x": 4.96462
+      },
+      "vs": "H02",
+      "writes_per_request": {
+        "bidding": 0.3343,
+        "browsing": 0.0,
+        "update100x": 3.14976,
+        "update10x": 1.8124
+      }
+    }
+  },
+  "counterpart": "H02",
+  "errors": {
+    "A01": 0,
+    "A02": 0,
+    "A03": 0,
+    "A04": 0,
+    "A05": 0,
+    "H02": 0
+  },
+  "measured_at": "2026-11-12T20:14:35-0300",
+  "order": [
+    "A01",
+    "A02",
+    "H02",
+    "A03",
+    "A04",
+    "A05"
+  ],
+  "window": {
+    "A01": {
+      "clean": true,
+      "concurrent_bulk_writer_samples": 0,
+      "first_observations": [],
+      "ignored_paused_sibling_runner_noops": {
+        "count": 0,
+        "first": [],
+        "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+      },
+      "interval_s": 15.0,
+      "samples": 39
+    },
+    "A02": {
+      "clean": true,
+      "concurrent_bulk_writer_samples": 0,
+      "first_observations": [],
+      "ignored_paused_sibling_runner_noops": {
+        "count": 1,
+        "first": [
+          "2026-11-12T19:21:38-0300 36367 /Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/.venv/bin/python -c import runpy; runpy.run_path(\"/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/methodology/sequential_baselines_011.py\", run_name=\"__main__\")"
+        ],
+        "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+      },
+      "interval_s": 15.0,
+      "samples": 40
+    },
+    "A03": {
+      "clean": true,
+      "concurrent_bulk_writer_samples": 0,
+      "first_observations": [],
+      "ignored_paused_sibling_runner_noops": {
+        "count": 0,
+        "first": [],
+        "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+      },
+      "interval_s": 15.0,
+      "samples": 40
+    },
+    "A04": {
+      "clean": true,
+      "concurrent_bulk_writer_samples": 0,
+      "first_observations": [],
+      "ignored_paused_sibling_runner_noops": {
+        "count": 1,
+        "first": [
+          "2026-11-12T19:52:33-0300 38060 /Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/.venv/bin/python -c import runpy; runpy.run_path(\"/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/methodology/sequential_baselines_011.py\", run_name=\"__main__\")"
+        ],
+        "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+      },
+      "interval_s": 15.0,
+      "samples": 43
+    },
+    "A05": {
+      "clean": true,
+      "concurrent_bulk_writer_samples": 0,
+      "first_observations": [],
+      "ignored_paused_sibling_runner_noops": {
+        "count": 1,
+        "first": [
+          "2026-11-12T20:05:09-0300 38698 /Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/.venv/bin/python -c import runpy; runpy.run_path(\"/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/methodology/sequential_baselines_011.py\", run_name=\"__main__\")"
+        ],
+        "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+      },
+      "interval_s": 15.0,
+      "samples": 75
+    },
+    "H02": {
+      "clean": true,
+      "concurrent_bulk_writer_samples": 0,
+      "first_observations": [],
+      "ignored_paused_sibling_runner_noops": {
+        "count": 1,
+        "first": [
+          "2026-11-12T19:27:21-0300 36700 /Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/.venv/bin/python -c import runpy; runpy.run_path(\"/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/methodology/sequential_baselines_011.py\", run_name=\"__main__\")"
+        ],
+        "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+      },
+      "interval_s": 15.0,
+      "samples": 42
+    }
+  }
+}

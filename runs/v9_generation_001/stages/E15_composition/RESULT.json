@@ -1,0 +1,34 @@
+{
+  "H_size": 5,
+  "checks": {
+    "H_size": 5,
+    "all_cover_36_with_writeplans": true,
+    "anchors": {
+      "anchor_c5_substitution": [
+        "opt_bidding"
+      ],
+      "anchor_sl_norm": [
+        "opt_bidding"
+      ]
+    },
+    "at_least_5": true,
+    "distinct": true
+  },
+  "duration_s": 0.576,
+  "error": null,
+  "finished_at": "2026-11-12T11:53:08-0300",
+  "inputs": [],
+  "name": "Composição H",
+  "outputs": [
+    {
+      "bytes": 420201,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E15_composition/H.json",
+      "sha256": "cc42a62b5d3c9a2786bab45a44b27af56b4ba0f17e6be1bfc5224608bc154328"
+    }
+  ],
+  "phase": 4,
+  "run_id": "v9-generation-20261112-001",
+  "sha256": "7c2df580f7cd2d1a9140396d1a77ef6ac0410abbe125faf8ce7d461b43b9a385",
+  "stage": "E15",
+  "status": "PASS"
+}

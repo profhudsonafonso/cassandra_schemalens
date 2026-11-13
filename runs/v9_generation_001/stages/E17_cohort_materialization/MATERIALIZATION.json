@@ -1,0 +1,560 @@
+{
+  "H01": {
+    "ddl_sha256": "3acfd03479720c17de16794440a0de52bb93d1b76736df1ced1889a9f8e5b90c",
+    "keyspace": "rubis_v9_h01",
+    "tables": {
+      "bids_by_item_id_2847dc": {
+        "acked": 5690,
+        "expected_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "expected_rows": 5690,
+        "match": true,
+        "observed_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "read_back": 5690
+      },
+      "bids_by_user_id_56201c": {
+        "acked": 829,
+        "expected_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "expected_rows": 829,
+        "match": true,
+        "observed_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "read_back": 829
+      },
+      "buynow_base": {
+        "acked": 5300,
+        "expected_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "read_back": 5300
+      },
+      "buynow_by_buyer_id_498aaa": {
+        "acked": 5300,
+        "expected_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "read_back": 5300
+      },
+      "categories_by_dummy_3a576f": {
+        "acked": 500,
+        "expected_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "expected_rows": 500,
+        "match": true,
+        "observed_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "read_back": 500
+      },
+      "comments_base": {
+        "acked": 6501,
+        "expected_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "read_back": 6501
+      },
+      "comments_by_to_user_id_c51248": {
+        "acked": 6501,
+        "expected_fingerprint": "17130bca5c9efcecbfbfc59fcdac30090180bbac8ef81513c5b5ea442be36b4b",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "17130bca5c9efcecbfbfc59fcdac30090180bbac8ef81513c5b5ea442be36b4b",
+        "read_back": 6501
+      },
+      "items_base": {
+        "acked": 5906,
+        "expected_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "read_back": 5906
+      },
+      "items_by_category_id_ef9d5a": {
+        "acked": 5906,
+        "expected_fingerprint": "0a4ea54ba7f290b08d5321b0b0c95de1555c21ff5109433638af45a0258b69f3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "0a4ea54ba7f290b08d5321b0b0c95de1555c21ff5109433638af45a0258b69f3",
+        "read_back": 5906
+      },
+      "items_by_seller__region_id_category_id_99797b": {
+        "acked": 5906,
+        "expected_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "read_back": 5906
+      },
+      "items_by_seller_id_34858b": {
+        "acked": 5906,
+        "expected_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "read_back": 5906
+      },
+      "regions_by_dummy_05c2a3": {
+        "acked": 50,
+        "expected_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "expected_rows": 50,
+        "match": true,
+        "observed_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "read_back": 50
+      },
+      "users_base": {
+        "acked": 20494,
+        "expected_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "expected_rows": 20494,
+        "match": true,
+        "observed_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "read_back": 20494
+      }
+    }
+  },
+  "H02": {
+    "ddl_sha256": "4f3278ebc5f467345d8c94df0bc6ab31ac8b02326ad411bee9992a7101f9436f",
+    "keyspace": "rubis_v9_h02",
+    "tables": {
+      "bids_by_item_id_2847dc": {
+        "acked": 5690,
+        "expected_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "expected_rows": 5690,
+        "match": true,
+        "observed_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "read_back": 5690
+      },
+      "bids_by_user_id_56201c": {
+        "acked": 829,
+        "expected_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "expected_rows": 829,
+        "match": true,
+        "observed_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "read_back": 829
+      },
+      "buynow_base": {
+        "acked": 5300,
+        "expected_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "read_back": 5300
+      },
+      "buynow_by_buyer_id_498aaa": {
+        "acked": 5300,
+        "expected_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "read_back": 5300
+      },
+      "categories_by_dummy_3a576f": {
+        "acked": 500,
+        "expected_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "expected_rows": 500,
+        "match": true,
+        "observed_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "read_back": 500
+      },
+      "comments_base": {
+        "acked": 6501,
+        "expected_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "read_back": 6501
+      },
+      "comments_by_to_user_id_c51248": {
+        "acked": 6501,
+        "expected_fingerprint": "17130bca5c9efcecbfbfc59fcdac30090180bbac8ef81513c5b5ea442be36b4b",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "17130bca5c9efcecbfbfc59fcdac30090180bbac8ef81513c5b5ea442be36b4b",
+        "read_back": 6501
+      },
+      "comments_from_user__nickname_2425": {
+        "acked": 6501,
+        "expected_fingerprint": "7897e4d91f54526361df0f95110d03b371a7e17823f3a401b23d6cf670bab3a7",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "7897e4d91f54526361df0f95110d03b371a7e17823f3a401b23d6cf670bab3a7",
+        "read_back": 6501
+      },
+      "items_base": {
+        "acked": 5906,
+        "expected_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "read_back": 5906
+      },
+      "items_by_category_id_ef9d5a": {
+        "acked": 5906,
+        "expected_fingerprint": "0a4ea54ba7f290b08d5321b0b0c95de1555c21ff5109433638af45a0258b69f3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "0a4ea54ba7f290b08d5321b0b0c95de1555c21ff5109433638af45a0258b69f3",
+        "read_back": 5906
+      },
+      "items_by_seller__region_id_category_id_99797b": {
+        "acked": 5906,
+        "expected_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "read_back": 5906
+      },
+      "items_by_seller_id_34858b": {
+        "acked": 5906,
+        "expected_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "read_back": 5906
+      },
+      "regions_by_dummy_05c2a3": {
+        "acked": 50,
+        "expected_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "expected_rows": 50,
+        "match": true,
+        "observed_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "read_back": 50
+      },
+      "users_base": {
+        "acked": 20494,
+        "expected_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "expected_rows": 20494,
+        "match": true,
+        "observed_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "read_back": 20494
+      }
+    }
+  },
+  "H03": {
+    "ddl_sha256": "a26b95a0f2261238e38d62649ab8c05b251584a6b73fa766fe110516055a0132",
+    "keyspace": "rubis_v9_h03",
+    "tables": {
+      "bids_by_item_id_2847dc": {
+        "acked": 5690,
+        "expected_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "expected_rows": 5690,
+        "match": true,
+        "observed_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "read_back": 5690
+      },
+      "bids_by_user_id_56201c": {
+        "acked": 829,
+        "expected_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "expected_rows": 829,
+        "match": true,
+        "observed_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "read_back": 829
+      },
+      "buynow_base": {
+        "acked": 5300,
+        "expected_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "read_back": 5300
+      },
+      "buynow_by_buyer_id_498aaa": {
+        "acked": 5300,
+        "expected_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "read_back": 5300
+      },
+      "categories_by_dummy_3a576f": {
+        "acked": 500,
+        "expected_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "expected_rows": 500,
+        "match": true,
+        "observed_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "read_back": 500
+      },
+      "comments_base": {
+        "acked": 6501,
+        "expected_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "read_back": 6501
+      },
+      "comments_by_to_user_id_c51248": {
+        "acked": 6501,
+        "expected_fingerprint": "17130bca5c9efcecbfbfc59fcdac30090180bbac8ef81513c5b5ea442be36b4b",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "17130bca5c9efcecbfbfc59fcdac30090180bbac8ef81513c5b5ea442be36b4b",
+        "read_back": 6501
+      },
+      "items_base": {
+        "acked": 5906,
+        "expected_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "read_back": 5906
+      },
+      "items_by_category_id_5fdc7a": {
+        "acked": 5906,
+        "expected_fingerprint": "022c46e0d0103c0fb830fd9d3d24714e772d887fa20212d1250593cf4bc8472f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "022c46e0d0103c0fb830fd9d3d24714e772d887fa20212d1250593cf4bc8472f",
+        "read_back": 5906
+      },
+      "items_by_seller__region_id_category_id_99797b": {
+        "acked": 5906,
+        "expected_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "read_back": 5906
+      },
+      "items_by_seller_id_34858b": {
+        "acked": 5906,
+        "expected_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "read_back": 5906
+      },
+      "regions_by_dummy_05c2a3": {
+        "acked": 50,
+        "expected_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "expected_rows": 50,
+        "match": true,
+        "observed_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "read_back": 50
+      },
+      "users_base": {
+        "acked": 20494,
+        "expected_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "expected_rows": 20494,
+        "match": true,
+        "observed_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "read_back": 20494
+      }
+    }
+  },
+  "H04": {
+    "ddl_sha256": "86843da996e6c6543ad79b999bf85d596171c284acde2a210f26f2c8637172bf",
+    "keyspace": "rubis_v9_h04",
+    "tables": {
+      "bids_by_item_id_2847dc": {
+        "acked": 5690,
+        "expected_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "expected_rows": 5690,
+        "match": true,
+        "observed_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "read_back": 5690
+      },
+      "bids_by_user_id_56201c": {
+        "acked": 829,
+        "expected_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "expected_rows": 829,
+        "match": true,
+        "observed_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "read_back": 829
+      },
+      "buynow_base": {
+        "acked": 5300,
+        "expected_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "read_back": 5300
+      },
+      "buynow_by_buyer_id_498aaa": {
+        "acked": 5300,
+        "expected_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "read_back": 5300
+      },
+      "categories_by_dummy_3a576f": {
+        "acked": 500,
+        "expected_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "expected_rows": 500,
+        "match": true,
+        "observed_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "read_back": 500
+      },
+      "comments_base": {
+        "acked": 6501,
+        "expected_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "read_back": 6501
+      },
+      "comments_by_to_user_id_579efe": {
+        "acked": 6501,
+        "expected_fingerprint": "63f7f164254bf101f8f802804b935611fad1b67be2807bdf139132e70e6e7f0e",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "63f7f164254bf101f8f802804b935611fad1b67be2807bdf139132e70e6e7f0e",
+        "read_back": 6501
+      },
+      "items_base": {
+        "acked": 5906,
+        "expected_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "read_back": 5906
+      },
+      "items_by_category_id_ef9d5a": {
+        "acked": 5906,
+        "expected_fingerprint": "0a4ea54ba7f290b08d5321b0b0c95de1555c21ff5109433638af45a0258b69f3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "0a4ea54ba7f290b08d5321b0b0c95de1555c21ff5109433638af45a0258b69f3",
+        "read_back": 5906
+      },
+      "items_by_seller__region_id_category_id_99797b": {
+        "acked": 5906,
+        "expected_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "read_back": 5906
+      },
+      "items_by_seller_id_34858b": {
+        "acked": 5906,
+        "expected_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "read_back": 5906
+      },
+      "regions_by_dummy_05c2a3": {
+        "acked": 50,
+        "expected_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "expected_rows": 50,
+        "match": true,
+        "observed_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "read_back": 50
+      },
+      "users_base": {
+        "acked": 20494,
+        "expected_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "expected_rows": 20494,
+        "match": true,
+        "observed_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "read_back": 20494
+      }
+    }
+  },
+  "H05": {
+    "ddl_sha256": "f03ebd93ff75fb267d68bb6e03b6bfcf3c1d50429ac9b0eb49a44ba73fba796c",
+    "keyspace": "rubis_v9_h05",
+    "tables": {
+      "bids_by_item_id_2847dc": {
+        "acked": 5690,
+        "expected_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "expected_rows": 5690,
+        "match": true,
+        "observed_fingerprint": "486039eccc3f0276b5624e49911f0cab87e017c3877941e32fd33f91c9274e34",
+        "read_back": 5690
+      },
+      "bids_by_user_id_56201c": {
+        "acked": 829,
+        "expected_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "expected_rows": 829,
+        "match": true,
+        "observed_fingerprint": "c4c76cd233bf0a942613d628b17e8e32445dc4c7ec2e7db77825014bcdbad285",
+        "read_back": 829
+      },
+      "buynow_base": {
+        "acked": 5300,
+        "expected_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "90679720ce620db56b9d81c70745d29fb98a665a335ad86a6afe8e03e33a494d",
+        "read_back": 5300
+      },
+      "buynow_by_buyer_id_498aaa": {
+        "acked": 5300,
+        "expected_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "expected_rows": 5300,
+        "match": true,
+        "observed_fingerprint": "1f4f26ca0d8a327fc8aab54d2844388db1cdd93abd43c50a3408133a4c315d3d",
+        "read_back": 5300
+      },
+      "categories_by_dummy_3a576f": {
+        "acked": 500,
+        "expected_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "expected_rows": 500,
+        "match": true,
+        "observed_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+        "read_back": 500
+      },
+      "comments_base": {
+        "acked": 6501,
+        "expected_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "977f99d6e25ec939845e9ca404df6cf6dc1be354b42402b37b377fbd65e48564",
+        "read_back": 6501
+      },
+      "comments_by_to_user_id_579efe": {
+        "acked": 6501,
+        "expected_fingerprint": "63f7f164254bf101f8f802804b935611fad1b67be2807bdf139132e70e6e7f0e",
+        "expected_rows": 6501,
+        "match": true,
+        "observed_fingerprint": "63f7f164254bf101f8f802804b935611fad1b67be2807bdf139132e70e6e7f0e",
+        "read_back": 6501
+      },
+      "items_base": {
+        "acked": 5906,
+        "expected_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+        "read_back": 5906
+      },
+      "items_by_category_id_5fdc7a": {
+        "acked": 5906,
+        "expected_fingerprint": "022c46e0d0103c0fb830fd9d3d24714e772d887fa20212d1250593cf4bc8472f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "022c46e0d0103c0fb830fd9d3d24714e772d887fa20212d1250593cf4bc8472f",
+        "read_back": 5906
+      },
+      "items_by_seller__region_id_category_id_99797b": {
+        "acked": 5906,
+        "expected_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "2011e04aab0cf34bc4cf344319956a11340085ed65affe37b7335ad6a444bb00",
+        "read_back": 5906
+      },
+      "items_by_seller_id_34858b": {
+        "acked": 5906,
+        "expected_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "expected_rows": 5906,
+        "match": true,
+        "observed_fingerprint": "ef581b27eb95b3a316cb41915655158958546cc3f9803ab0a239e0727341169f",
+        "read_back": 5906
+      },
+      "regions_by_dummy_05c2a3": {
+        "acked": 50,
+        "expected_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "expected_rows": 50,
+        "match": true,
+        "observed_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+        "read_back": 50
+      },
+      "users_base": {
+        "acked": 20494,
+        "expected_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "expected_rows": 20494,
+        "match": true,
+        "observed_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+        "read_back": 20494
+      }
+    }
+  }
+}

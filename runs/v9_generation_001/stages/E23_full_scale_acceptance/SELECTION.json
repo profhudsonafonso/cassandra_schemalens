@@ -1,0 +1,21 @@
+{
+  "mean_rank": {
+    "H01": 0.5,
+    "H02": 2.0,
+    "H03": 2.25,
+    "H04": 2.0,
+    "H05": 3.25
+  },
+  "rule": "os 2 esquemas de H que mais vezes foram o melhor medido na coorte (E21, janela contínua); desempate pela posição média",
+  "selected": [
+    "H01",
+    "H03"
+  ],
+  "wins": {
+    "H01": 3,
+    "H02": 0,
+    "H03": 1,
+    "H04": 0,
+    "H05": 0
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "acceptance_rule": "τ ≥ 0.6 em todas as cargas, com e sem deixar um esquema de fora",
+  "calibrated_at": "2026-11-12T11:50:58-0300",
+  "coefficients": {
+    "a_read_ms": 0.46203494209018664,
+    "b_write_ms": 0.38868924673141214,
+    "c_row_ms": 0.007505140208184864,
+    "d_request_ms": 0.14852161053840138,
+    "weighted_r2": 0.999102
+  },
+  "competitive_deployments": [
+    "ABL_f000_norm",
+    "ABL_f001_c7",
+    "ABL_f010_c5",
+    "ABL_f011_c5c7",
+    "ABL_f100_c3",
+    "ABL_f101_c3c7",
+    "ABL_f110_c3c5",
+    "ABL_f111_c3c5c7",
+    "NoSE",
+    "QPG"
+  ],
+  "deployments": [
+    "ABL_f000_norm",
+    "ABL_f001_c7",
+    "ABL_f010_c5",
+    "ABL_f011_c5c7",
+    "ABL_f100_c3",
+    "ABL_f101_c3c7",
+    "ABL_f110_c3c5",
+    "ABL_f111_c3c5c7",
+    "Expert",
+    "NoSE",
+    "Normalized",
+    "QPG"
+  ],
+  "kendall_tau": {
+    "bidding": 0.8788,
+    "browsing": 0.8182,
+    "update100x": 0.8182,
+    "update10x": 0.8485
+  },
+  "kendall_tau_competitive_only": {
+    "bidding": 0.8222,
+    "browsing": 0.7333,
+    "update100x": 0.7333,
+    "update10x": 0.7778
+  },
+  "kendall_tau_leave_one_out": {
+    "bidding": 0.7879,
+    "browsing": 0.7576,
+    "update100x": 0.8182,
+    "update10x": 0.8485
+  },
+  "loo_coefficients": {
+    "ABL_f000_norm": {
+      "a_read_ms": 0.4619703646098711,
+      "b_write_ms": 0.38712423348054537,
+      "c_row_ms": 0.007551056270087363,
+      "d_request_ms": 0.1585997049672049,
+      "weighted_r2": 0.999146
+    },
+    "ABL_f001_c7": {
+      "a_read_ms": 0.4620359333949189,
+      "b_write_ms": 0.3855919208171025,
+      "c_row_ms": 0.007506543779867506,
+      "d_request_ms": 0.15840649913737043,
+      "weighted_r2": 0.999141
+    },
+    "ABL_f010_c5": {
+      "a_read_ms": 0.4619932071915437,
+      "b_write_ms": 0.38544063567506737,
+      "c_row_ms": 0.0075339842889833595,
+      "d_request_ms": 0.16582499001961434,
+      "weighted_r2": 0.999161
+    },
+    "ABL_f011_c5c7": {
+      "a_read_ms": 0.4620728124904472,
+      "b_write_ms": 0.38643077642806195,
+      "c_row_ms": 0.0074889750742687805,
+      "d_request_ms": 0.15714866265268596,
+      "weighted_r2": 0.999137
+    },
+    "ABL_f100_c3": {
+      "a_read_ms": 0.46197636685490945,
+      "b_write_ms": 0.39038383748779293,
+      "c_row_ms": 0.007550388503193199,
+      "d_request_ms": 0.16571893547743552,
+      "weighted_r2": 0.999161
+    },
+    "ABL_f101_c3c7": {
+      "a_read_ms": 0.46209104728099604,
+      "b_write_ms": 0.38571406901658634,
+      "c_row_ms": 0.007471695906956566,
+      "d_request_ms": 0.15854369576904023,
+      "weighted_r2": 0.999137
+    },
+    "ABL_f110_c3c5": {
+      "a_read_ms": 0.46210792208107154,
+      "b_write_ms": 0.38473082795506297,
+      "c_row_ms": 0.007463555855063818,
+      "d_request_ms": 0.1577612289415865,
+      "weighted_r2": 0.999144
+    },
+    "ABL_f111_c3c5c7": {
+      "a_read_ms": 0.4620549322916048,
+      "b_write_ms": 0.3925904682488047,
+      "c_row_ms": 0.007514701587192463,
+      "d_request_ms": 0.1576099093232584,
+      "weighted_r2": 0.999149
+    },
+    "Expert": {
+      "a_read_ms": 0.4624025110280664,
+      "b_write_ms": 0.3960898697972561,
+      "c_row_ms": 0.007183575116600869,
+      "d_request_ms": 0.10282733714744434,
+      "weighted_r2": 0.998702
+    },
+    "NoSE": {
+      "a_read_ms": 0.4619642067102111,
+      "b_write_ms": 0.3880642509934366,
+      "c_row_ms": 0.007584462985647175,
+      "d_request_ms": 0.15420084707929924,
+      "weighted_r2": 0.999167
+    },
+    "Normalized": {
+      "a_read_ms": 0.4613093752490743,
+      "b_write_ms": 0.396191228993634,
+      "c_row_ms": 0.007692509528612615,
+      "d_request_ms": 0.09041733594833012,
+      "weighted_r2": 0.998589
+    },
+    "QPG": {
+      "a_read_ms": 0.4620370451274832,
+      "b_write_ms": 0.3855008847977285,
+      "c_row_ms": 0.007513302032496487,
+      "d_request_ms": 0.1575322165603073,
+      "weighted_r2": 0.999138
+    }
+  },
+  "per_workload": {
+    "bidding": {
+      "ABL_f000_norm": {
+        "measured_ms": 1.9538233114400008,
+        "predicted_cost": 2.115560884863859
+      },
+      "ABL_f001_c7": {
+        "measured_ms": 1.963919240860001,
+        "predicted_cost": 2.1184138639348675
+      },
+      "ABL_f010_c5": {
+        "measured_ms": 1.8885195944799995,
+        "predicted_cost": 2.1362780217146433
+      },
+      "ABL_f011_c5c7": {
+        "measured_ms": 2.0137571162999994,
+        "predicted_cost": 2.139131000785652
+      },
+      "ABL_f100_c3": {
+        "measured_ms": 1.9944138070800004,
+        "predicted_cost": 2.2948951992675335
+      },
+      "ABL_f101_c3c7": {
+        "measured_ms": 2.156125644339999,
+        "predicted_cost": 2.2977481783385416
+      },
+      "ABL_f110_c3c5": {
+        "measured_ms": 2.2219064112599995,
+        "predicted_cost": 2.3406388225048214
+      },
+      "ABL_f111_c3c5c7": {
+        "measured_ms": 2.261718598839999,
+        "predicted_cost": 2.34349180157583
+      },
+      "Expert": {
+        "measured_ms": 30.20509647871994,
+        "predicted_cost": 29.61647055579486
+      },
+      "NoSE": {
+        "measured_ms": 1.8290994574600017,
+        "predicted_cost": 2.0307914900941095
+      },
+      "Normalized": {
+        "measured_ms": 44.83498488912,
+        "predicted_cost": 43.92938983073143
+      },
+      "QPG": {
+        "measured_ms": 1.8567492431199972,
+        "predicted_cost": 1.9825603328404209
+      }
+    },
+    "browsing": {
+      "ABL_f000_norm": {
+        "measured_ms": 1.3423364537599998,
+        "predicted_cost": 1.4787756288105212
+      },
+      "ABL_f001_c7": {
+        "measured_ms": 1.4241882275399982,
+        "predicted_cost": 1.4787756288105212
+      },
+      "ABL_f010_c5": {
+        "measured_ms": 1.3229542160400014,
+        "predicted_cost": 1.4787756288105212
+      },
+      "ABL_f011_c5c7": {
+        "measured_ms": 1.4380411591800029,
+        "predicted_cost": 1.4787756288105212
+      },
+      "ABL_f100_c3": {
+        "measured_ms": 1.537026382859999,
+        "predicted_cost": 1.6266901455361538
+      },
+      "ABL_f101_c3c7": {
+        "measured_ms": 1.56443319306,
+        "predicted_cost": 1.6266901455361538
+      },
+      "ABL_f110_c3c5": {
+        "measured_ms": 1.548796027480002,
+        "predicted_cost": 1.6266901455361538
+      },
+      "ABL_f111_c3c5c7": {
+        "measured_ms": 1.5690539080199994,
+        "predicted_cost": 1.6266901455361538
+      },
+      "Expert": {
+        "measured_ms": 37.23604813776011,
+        "predicted_cost": 36.13125477537583
+      },
+      "NoSE": {
+        "measured_ms": 1.1290725803600008,
+        "predicted_cost": 1.1877546858019905
+      },
+      "Normalized": {
+        "measured_ms": 32.79922739123999,
+        "predicted_cost": 33.02245018521018
+      },
+      "QPG": {
+        "measured_ms": 1.3006273621799993,
+        "predicted_cost": 1.3374440640387113
+      }
+    },
+    "update100x": {
+      "ABL_f000_norm": {
+        "measured_ms": 2.782017292699994,
+        "predicted_cost": 2.4159559095071637
+      },
+      "ABL_f001_c7": {
+        "measured_ms": 2.9023744919200167,
+        "predicted_cost": 2.443024228649539
+      },
+      "ABL_f010_c5": {
+        "measured_ms": 3.061235007780009,
+        "predicted_cost": 2.61040159207702
+      },
+      "ABL_f011_c5c7": {
+        "measured_ms": 3.038740232619998,
+        "predicted_cost": 2.637469911219396
+      },
+      "ABL_f100_c3": {
+        "measured_ms": 2.879534480259999,
+        "predicted_cost": 2.7603769794733624
+      },
+      "ABL_f101_c3c7": {
+        "measured_ms": 3.239229349940026,
+        "predicted_cost": 2.7874452986157383
+      },
+      "ABL_f110_c3c5": {
+        "measured_ms": 3.7349753286399974,
+        "predicted_cost": 3.1897147836138027
+      },
+      "ABL_f111_c3c5c7": {
+        "measured_ms": 3.417166893080002,
+        "predicted_cost": 3.2167831027561777
+      },
+      "Expert": {
+        "measured_ms": 5.826081439960007,
+        "predicted_cost": 5.308876645219065
+      },
+      "NoSE": {
+        "measured_ms": 2.8711851099399954,
+        "predicted_cost": 2.4699766129922796
+      },
+      "Normalized": {
+        "measured_ms": 8.292027666599997,
+        "predicted_cost": 7.622941066392502
+      },
+      "QPG": {
+        "measured_ms": 2.6168908017799914,
+        "predicted_cost": 2.1856043575490935
+      }
+    },
+    "update10x": {
+      "ABL_f000_norm": {
+        "measured_ms": 2.713314837739997,
+        "predicted_cost": 2.625623951692132
+      },
+      "ABL_f001_c7": {
+        "measured_ms": 2.7614617158200017,
+        "predicted_cost": 2.6408294750242645
+      },
+      "ABL_f010_c5": {
+        "measured_ms": 2.683080239899995,
+        "predicted_cost": 2.738048429416725
+      },
+      "ABL_f011_c5c7": {
+        "measured_ms": 2.9176095954399974,
+        "predicted_cost": 2.7532539527488575
+      },
+      "ABL_f100_c3": {
+        "measured_ms": 2.7767149577600003,
+        "predicted_cost": 2.892484177532899
+      },
+      "ABL_f101_c3c7": {
+        "measured_ms": 3.092094536959997,
+        "predicted_cost": 2.9076897008650318
+      },
+      "ABL_f110_c3c5": {
+        "measured_ms": 3.3403615981599946,
+        "predicted_cost": 3.1407184286614735
+      },
+      "ABL_f111_c3c5c7": {
+        "measured_ms": 2.981409417500002,
+        "predicted_cost": 3.155923951993606
+      },
+      "Expert": {
+        "measured_ms": 18.969681318900022,
+        "predicted_cost": 18.34012946265907
+      },
+      "NoSE": {
+        "measured_ms": 2.612337349239999,
+        "predicted_cost": 2.566373959600546
+      },
+      "Normalized": {
+        "measured_ms": 30.649092244559977,
+        "predicted_cost": 29.694502697495395
+      },
+      "QPG": {
+        "measured_ms": 2.5796926947200025,
+        "predicted_cost": 2.4509046625617303
+      }
+    }
+  },
+  "points": 660,
+  "source_files": [
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_update10x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_bidding.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_browsing.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_update100x.jsonl.gz",
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_update10x.jsonl.gz"
+  ]
+}

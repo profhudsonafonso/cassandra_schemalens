@@ -1,0 +1,116 @@
+# SchemaLens V9 — catálogo de famílias com contratos (E7).
+# Cada família declara: source, provides, supersedes, maintenance, activation.
+# `activation` é um predicado quantitativo avaliado sobre a matriz de evidências (E9) de cada instrução
+# (variável `q`) e os parâmetros abaixo (`p`). Predicados geram candidatos; a escolha entre candidatos é do
+# modelo de custo (E14/E15). Justificativa de cada parâmetro: docs/DECISION_LOG.md (D-V9-007).
+version: 1
+evidence_fields:            # produzidos pela E9; nenhum outro nome pode aparecer num predicado
+  - kind                    # "read" | "write"
+  - root                    # entidade-âncora (E8)
+  - eq_attrs                # atributos de igualdade, relativos à raiz
+  - eq_on_key               # eq_attrs == [id] da raiz e sem navegação
+  - range_attrs
+  - order_attrs
+  - proj_attrs
+  - proj_entities           # nº de entidades distintas na projeção
+  - path_len                # nº de relacionamentos navegados (where + projeção)
+  - reverse_hops            # nº de saltos pelo lado inverso (1:N) entre a entidade da igualdade e a raiz
+  - limit                   # LIMIT do contrato (None = sem limite)
+  - expected_rows           # linhas que casam com eq_attrs (média, de E4), antes do LIMIT
+  - rows_read_bound         # min(expected_rows, limit)
+  - sharedness              # nº de leituras com a mesma assinatura de acesso (eq + ordem), inclusive q
+  - volatile_proj           # atributos projetados que alguma escrita do mix atualiza (UPDATE)
+  - volatile_copies         # nº de leituras que projetam algum atributo de volatile_proj por outra assinatura
+  - volatile_update_ratio   # Σ freq(escritas que atualizam volatile_proj) / freq(q), no mix
+  - proj_bytes              # bytes estimados por linha projetada (tamanhos do modelo NoSE)
+  - nonroot_proj_bytes      # bytes projetados de entidades navegadas (não-raiz)
+  - nonroot_proj_volatile   # atributos voláteis vindos de entidades navegadas
+  - support_attrs           # atributos que exigem navegação a partir da raiz (SupportQuery se não copiados)
+  - relaxed_ratio           # min sobre subconjuntos próprios de eq_attrs: linhas lidas relaxando / linhas necessárias
+  - missing_maintenance_keys  # (escritas) chaves de tabelas mantidas que não vêm nos parâmetros
+  - mix_write_weight        # Σ freq das escritas no mix
+parameters:
+  beta2_bytes: 64           # C2: projeção larga o bastante para justificar índice + leitura pontual
+  lambda2_rows: 25          # C2: no máximo 25 leituras pontuais de acompanhamento (o LIMIT da carga)
+  k3_copies: 2              # C3: o atributo volátil aparece em pelo menos 2 tabelas
+  theta3_ratio: 0.05        # C3: escritas do volátil ≥ 5% das leituras de q (gera candidato; custo decide)
+  rho7_ratio: 4             # C7: relaxar a chave lê no máximo 4× as linhas necessárias
+  beta8_bytes: 64           # C8: parte não-raiz larga
+families:
+  C0:
+    name: Lookup normalizado por entidade
+    source: SchemaLens (baseline)
+    provides: {partition: ["<root>.id"], clustering: [], columns: "todos os atributos e chaves estrangeiras da entidade"}
+    supersedes: []
+    maintenance: "INSERT/UPDATE da entidade: upsert da linha pela chave"
+    activation:
+      read: "q.kind == 'read' and q.eq_on_key and q.path_len == 0"
+      write: "q.kind == 'write'"            # toda entidade escrita tem a sua tabela-fonte
+  C1:
+    name: Tabela materializada por consulta
+    source: NoSE + Chen
+    provides: {partition: "eq_attrs", clustering: "range_attrs + order_attrs + <root>.id", columns: "proj_attrs"}
+    supersedes: []
+    maintenance: "INSERT da raiz: insere linha (leituras de apoio para atributos navegados); UPDATE de atributo projetado: atualiza a linha (chave completa via apoio)"
+    activation:
+      read: "q.kind == 'read' and not q.eq_on_key"
+  C2:
+    name: Lookup decomposto (índice + leitura pontual)
+    source: NoSE
+    provides: {partition: "eq_attrs", clustering: "range_attrs + order_attrs + <root>.id", columns: ["<root>.id"]}
+    supersedes: []
+    maintenance: "INSERT da raiz: insere a entrada do índice; atributos projetados vêm de C0 (sem cópia)"
+    activation:
+      read: "q.kind == 'read' and not q.eq_on_key and q.rows_read_bound <= p.lambda2_rows and (q.proj_bytes >= p.beta2_bytes or len(q.volatile_proj) >= 1)"
+  C3:
+    name: Entidade compartilhada seletivamente normalizada
+    source: Chen
+    provides: {partition: "eq_attrs", clustering: "range_attrs + order_attrs + <root>.id", columns: "proj_attrs - volatile_proj (o volátil é lido de C0)"}
+    supersedes: ["atributos voláteis (volatile_proj) da cópia materializada de q"]
+    maintenance: "UPDATE de atributo volátil: só a tabela C0 da entidade; as cópias não guardam o volátil"
+    activation:
+      read: "q.kind == 'read' and not q.eq_on_key and len(q.volatile_proj) >= 1 and q.volatile_copies >= p.k3_copies and q.volatile_update_ratio >= p.theta3_ratio"
+  C4:
+    name: Tabela de acesso reverso
+    source: SchemaLens/NoSE
+    provides: {partition: "<entidade da igualdade>.id", clustering: "order_attrs + <root>.id", columns: "proj_attrs"}
+    supersedes: []
+    maintenance: "INSERT da entidade de ligação: insere linha (apoio para atributos da raiz)"
+    activation:
+      read: "q.kind == 'read' and q.reverse_hops >= 1"
+  C5:
+    name: Tabela compartilhada por várias consultas
+    source: Chen (merge) + SchemaLens (fusão)
+    provides: {partition: "eq_attrs comuns", clustering: "ordem comum + <root>.id", columns: "união das proj_attrs"}
+    supersedes: ["tabelas C1 individuais das consultas fundidas"]
+    maintenance: "união das manutenções das consultas fundidas (uma escrita por linha)"
+    activation:
+      read: "q.kind == 'read' and q.sharedness >= 2"
+  C6:
+    name: Lookup de apoio e manutenção
+    source: NoSE
+    provides: {partition: ["<entidade>.id"], clustering: [], columns: "chaves de manutenção ou atributos de apoio"}
+    supersedes: []
+    maintenance: "INSERT da entidade: insere a linha de apoio"
+    activation:
+      read: "q.kind == 'read' and len(q.support_attrs) >= 1"
+      write: "q.kind == 'write' and len(q.missing_maintenance_keys) >= 1"
+  C7:
+    name: Variante relaxada com pós-filtro (limitada)
+    source: NoSE (Relax)
+    provides: {partition: "subconjunto de eq_attrs", clustering: "atributos relaxados + order_attrs + <root>.id", columns: "proj_attrs + atributos relaxados"}
+    supersedes: ["tabela C1 de q"]
+    maintenance: "como C1"
+    activation:
+      read: "q.kind == 'read' and len(q.eq_attrs) >= 2 and q.relaxed_ratio <= p.rho7_ratio"
+  C8:
+    name: Híbrido materializado + normalizado
+    source: Chen + NoSE
+    provides: {partition: "eq_attrs", clustering: "range_attrs + order_attrs + <root>.id", columns: "atributos da raiz + chaves das entidades navegadas"}
+    supersedes: ["atributos de entidades navegadas na cópia materializada de q"]
+    maintenance: "como C1, sem manter atributos das entidades navegadas (lidos de C0)"
+    activation:
+      read: "q.kind == 'read' and q.proj_entities >= 2 and (len(q.nonroot_proj_volatile) >= 1 or q.nonroot_proj_bytes >= p.beta8_bytes)"
+  C9:
+    name: reservado
+    status: UNDEFINED_RESERVED   # D-002 (herdada da V8)

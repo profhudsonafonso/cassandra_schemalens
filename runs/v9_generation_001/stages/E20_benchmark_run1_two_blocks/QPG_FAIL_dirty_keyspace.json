@@ -1,0 +1,470 @@
+{
+  "agreement_with_v8_reference": {
+    "agree": 327197,
+    "first_disagreements": [
+      {
+        "request": "c005:browsing:r0:measured:1",
+        "sid": 35
+      },
+      {
+        "request": "c005:browsing:r0:measured:4",
+        "sid": 5
+      },
+      {
+        "request": "c005:browsing:r0:measured:4",
+        "sid": 6
+      },
+      {
+        "request": "c005:browsing:r0:measured:6",
+        "sid": 5
+      },
+      {
+        "request": "c005:browsing:r0:measured:6",
+        "sid": 6
+      },
+      {
+        "request": "c005:browsing:r0:measured:9",
+        "sid": 5
+      },
+      {
+        "request": "c005:browsing:r0:measured:9",
+        "sid": 6
+      },
+      {
+        "request": "c005:browsing:r0:measured:13",
+        "sid": 8
+      },
+      {
+        "request": "c005:browsing:r0:measured:16",
+        "sid": 5
+      },
+      {
+        "request": "c005:browsing:r0:measured:16",
+        "sid": 6
+      }
+    ],
+    "statement_results": 397479,
+    "status": "FAIL"
+  },
+  "deployment_id": "QPG",
+  "errors": 0,
+  "finished_at": "2026-11-12T15:31:06-0300",
+  "hbench_frozen_sha256": "8446365297fc491883753a0159193172acd3f7776be9094f075821ef9f2b3cfa",
+  "isolation": {
+    "clean": true,
+    "concurrent_bulk_writer_samples": 0,
+    "first_observations": [],
+    "ignored_paused_sibling_runner_noops": {
+      "count": 0,
+      "first": [],
+      "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+    },
+    "interval_s": 15.0,
+    "samples": 70
+  },
+  "keyspace": "rubis_v9_cohort_qpg_bidding",
+  "latency_mean_ms": {
+    "bidding": 4.8328817912,
+    "browsing": 4.5220880567999995,
+    "update100x": 2.9670167256799997,
+    "update10x": 4.198412788080001
+  },
+  "node_state_at_start": {
+    "bulk_writers": [],
+    "checked_at": "2026-11-12T15:13:27-0300",
+    "idle": true,
+    "pending_compactions": 0
+  },
+  "protocol": {
+    "measured": 10000,
+    "repetitions": 5,
+    "warmup": 1000,
+    "workloads": [
+      "browsing",
+      "bidding",
+      "update10x",
+      "update100x"
+    ]
+  },
+  "raw_files": [
+    {
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/raw/QPG_browsing.jsonl.gz",
+      "records": 50000,
+      "sha256": "62a6865eaeef593320d8862fd87877d935f989df6bd11032a30faa4fe07f744f"
+    },
+    {
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/raw/QPG_bidding.jsonl.gz",
+      "records": 50000,
+      "sha256": "e72675dba563d44834b00dd451104051cd4081d82695d0a510dbd39e1c29b14a"
+    },
+    {
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/raw/QPG_update10x.jsonl.gz",
+      "records": 50000,
+      "sha256": "a061ad83f73cdbff6ac315e0bb4768637d6980be18a6914676c5d4e8ebeb426a"
+    },
+    {
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/raw/QPG_update100x.jsonl.gz",
+      "records": 50000,
+      "sha256": "70a2b3cf8d7d7a826ef38e05e58c6a3c4bb6d064d40875af06e440181334d2a5"
+    }
+  ],
+  "started_at": "2026-11-12T15:13:28-0300",
+  "state_restoration": {
+    "tables_changed": [
+      "q15_2",
+      "q16_2",
+      "q17",
+      "q18",
+      "q19",
+      "q1_7_9_14",
+      "q3_10_11_13",
+      "q4_2",
+      "q5_12",
+      "q6",
+      "q8"
+    ]
+  },
+  "status": "FAIL",
+  "summaries": [
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.7516804178,
+      "measured_requests": 10000,
+      "p50_ms": 1.8960835,
+      "p95_ms": 6.809014599999998,
+      "p99_ms": 65.56801083000002,
+      "physical_reads": 65121,
+      "physical_writes": 0,
+      "repetition": 0,
+      "rows_fetched": 1450547,
+      "rows_returned": 963818,
+      "support_reads": 50442,
+      "throughput_requests_per_second": 210.45186377727694,
+      "workload": "browsing"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.4922412508,
+      "measured_requests": 10000,
+      "p50_ms": 1.769917,
+      "p95_ms": 5.617195549999998,
+      "p99_ms": 64.19988083000004,
+      "physical_reads": 62790,
+      "physical_writes": 0,
+      "repetition": 1,
+      "rows_fetched": 1463329,
+      "rows_returned": 976597,
+      "support_reads": 48084,
+      "throughput_requests_per_second": 222.6060320829642,
+      "workload": "browsing"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.4175670839,
+      "measured_requests": 10000,
+      "p50_ms": 1.773479,
+      "p95_ms": 5.567179149999998,
+      "p99_ms": 63.560508090000006,
+      "physical_reads": 62591,
+      "physical_writes": 0,
+      "repetition": 2,
+      "rows_fetched": 1461000,
+      "rows_returned": 975382,
+      "support_reads": 47909,
+      "throughput_requests_per_second": 226.36894494359578,
+      "workload": "browsing"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.5399971275,
+      "measured_requests": 10000,
+      "p50_ms": 1.729667,
+      "p95_ms": 5.5557194,
+      "p99_ms": 62.24484899000001,
+      "physical_reads": 64723,
+      "physical_writes": 0,
+      "repetition": 3,
+      "rows_fetched": 1467520,
+      "rows_returned": 980601,
+      "support_reads": 50052,
+      "throughput_requests_per_second": 220.26445654397605,
+      "workload": "browsing"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.408954404,
+      "measured_requests": 10000,
+      "p50_ms": 1.7647085,
+      "p95_ms": 5.643573549999997,
+      "p99_ms": 62.76513175000001,
+      "physical_reads": 62778,
+      "physical_writes": 0,
+      "repetition": 4,
+      "rows_fetched": 1470716,
+      "rows_returned": 981952,
+      "support_reads": 48167,
+      "throughput_requests_per_second": 226.81114576570704,
+      "workload": "browsing"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.2984407683,
+      "measured_requests": 10000,
+      "p50_ms": 2.2430209999999997,
+      "p95_ms": 8.607456249999975,
+      "p99_ms": 64.20253092,
+      "physical_reads": 64950,
+      "physical_writes": 3579,
+      "repetition": 0,
+      "rows_fetched": 1580499,
+      "rows_returned": 1069950,
+      "support_reads": 48362,
+      "throughput_requests_per_second": 232.6424985019608,
+      "workload": "bidding"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 5.0293796109,
+      "measured_requests": 10000,
+      "p50_ms": 2.377792,
+      "p95_ms": 13.351241349999913,
+      "p99_ms": 68.53261166000001,
+      "physical_reads": 69265,
+      "physical_writes": 3603,
+      "repetition": 1,
+      "rows_fetched": 1589104,
+      "rows_returned": 1068990,
+      "support_reads": 52621,
+      "throughput_requests_per_second": 198.8316805183555,
+      "workload": "bidding"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.9747101334,
+      "measured_requests": 10000,
+      "p50_ms": 2.348979,
+      "p95_ms": 12.690558649999913,
+      "p99_ms": 70.17693634000001,
+      "physical_reads": 68473,
+      "physical_writes": 3760,
+      "repetition": 2,
+      "rows_fetched": 1589669,
+      "rows_returned": 1083411,
+      "support_reads": 51913,
+      "throughput_requests_per_second": 201.01673729410703,
+      "workload": "bidding"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.7372582926,
+      "measured_requests": 10000,
+      "p50_ms": 2.301021,
+      "p95_ms": 9.85079374999984,
+      "p99_ms": 65.71254634000002,
+      "physical_reads": 65810,
+      "physical_writes": 3653,
+      "repetition": 3,
+      "rows_fetched": 1567179,
+      "rows_returned": 1049996,
+      "support_reads": 49322,
+      "throughput_requests_per_second": 211.09256414455697,
+      "workload": "bidding"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 5.1246201508,
+      "measured_requests": 10000,
+      "p50_ms": 2.337604,
+      "p95_ms": 16.456918099999786,
+      "p99_ms": 70.24456533,
+      "physical_reads": 66870,
+      "physical_writes": 3443,
+      "repetition": 4,
+      "rows_fetched": 1582940,
+      "rows_returned": 1064939,
+      "support_reads": 50129,
+      "throughput_requests_per_second": 195.13641412893614,
+      "workload": "bidding"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 3.8191710808000003,
+      "measured_requests": 10000,
+      "p50_ms": 2.280042,
+      "p95_ms": 6.509851449999995,
+      "p99_ms": 74.25632634000002,
+      "physical_reads": 50785,
+      "physical_writes": 19582,
+      "repetition": 0,
+      "rows_fetched": 952775,
+      "rows_returned": 631549,
+      "support_reads": 38441,
+      "throughput_requests_per_second": 261.8369218983849,
+      "workload": "update10x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.4482495752,
+      "measured_requests": 10000,
+      "p50_ms": 2.3466875,
+      "p95_ms": 7.822591999999981,
+      "p99_ms": 77.88016500000002,
+      "physical_reads": 53923,
+      "physical_writes": 19385,
+      "repetition": 1,
+      "rows_fetched": 957842,
+      "rows_returned": 642084,
+      "support_reads": 41536,
+      "throughput_requests_per_second": 224.80753003950738,
+      "workload": "update10x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.3116813401,
+      "measured_requests": 10000,
+      "p50_ms": 2.3817705,
+      "p95_ms": 7.432697899999999,
+      "p99_ms": 77.02622116000023,
+      "physical_reads": 47586,
+      "physical_writes": 19441,
+      "repetition": 2,
+      "rows_fetched": 953378,
+      "rows_returned": 638600,
+      "support_reads": 35280,
+      "throughput_requests_per_second": 231.92808584894337,
+      "workload": "update10x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 4.5512839602,
+      "measured_requests": 10000,
+      "p50_ms": 2.3955624999999996,
+      "p95_ms": 7.824127749999995,
+      "p99_ms": 78.79368742000021,
+      "physical_reads": 51243,
+      "physical_writes": 19639,
+      "repetition": 3,
+      "rows_fetched": 958462,
+      "rows_returned": 629624,
+      "support_reads": 38883,
+      "throughput_requests_per_second": 219.71821770401166,
+      "workload": "update10x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 3.8616779841000004,
+      "measured_requests": 10000,
+      "p50_ms": 2.321208,
+      "p95_ms": 6.9828041999999995,
+      "p99_ms": 48.226443670000485,
+      "physical_reads": 44358,
+      "physical_writes": 19760,
+      "repetition": 4,
+      "rows_fetched": 938865,
+      "rows_returned": 624270,
+      "support_reads": 32022,
+      "throughput_requests_per_second": 258.95478704267447,
+      "workload": "update10x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 2.9406227285,
+      "measured_requests": 10000,
+      "p50_ms": 2.532083,
+      "p95_ms": 4.795297599999999,
+      "p99_ms": 11.677013090000003,
+      "physical_reads": 20899,
+      "physical_writes": 33996,
+      "repetition": 0,
+      "rows_fetched": 193067,
+      "rows_returned": 135234,
+      "support_reads": 12429,
+      "throughput_requests_per_second": 340.06402463946677,
+      "workload": "update100x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 2.9910283066,
+      "measured_requests": 10000,
+      "p50_ms": 2.502896,
+      "p95_ms": 4.913237799999997,
+      "p99_ms": 10.644895660000001,
+      "physical_reads": 21874,
+      "physical_writes": 34053,
+      "repetition": 1,
+      "rows_fetched": 193923,
+      "rows_returned": 139048,
+      "support_reads": 13370,
+      "throughput_requests_per_second": 334.3331782562542,
+      "workload": "update100x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 3.2358338111,
+      "measured_requests": 10000,
+      "p50_ms": 2.8056035,
+      "p95_ms": 6.0573372,
+      "p99_ms": 13.003041990000092,
+      "physical_reads": 18884,
+      "physical_writes": 33936,
+      "repetition": 2,
+      "rows_fetched": 162218,
+      "rows_returned": 123916,
+      "support_reads": 10319,
+      "throughput_requests_per_second": 309.0393568945547,
+      "workload": "update100x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 2.7999924604,
+      "measured_requests": 10000,
+      "p50_ms": 2.709625,
+      "p95_ms": 4.81938125,
+      "p99_ms": 8.122499340000001,
+      "physical_reads": 15935,
+      "physical_writes": 33815,
+      "repetition": 3,
+      "rows_fetched": 141501,
+      "rows_returned": 117009,
+      "support_reads": 7389,
+      "throughput_requests_per_second": 357.14381882912016,
+      "workload": "update100x"
+    },
+    {
+      "deployment_id": "QPG",
+      "errors": 0,
+      "mean_ms": 2.8676063218,
+      "measured_requests": 10000,
+      "p50_ms": 2.790167,
+      "p95_ms": 5.003966649999999,
+      "p99_ms": 8.209091760000003,
+      "physical_reads": 15486,
+      "physical_writes": 33952,
+      "repetition": 4,
+      "rows_fetched": 135899,
+      "rows_returned": 111496,
+      "support_reads": 6996,
+      "throughput_requests_per_second": 348.7229025817947,
+      "workload": "update100x"
+    }
+  ]
+}

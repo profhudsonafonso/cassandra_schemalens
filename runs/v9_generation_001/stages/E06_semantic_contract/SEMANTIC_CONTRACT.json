@@ -1,0 +1,1472 @@
+{
+  "canonical_form": "reused/methodology/oracle_011.canonical: float → 2 casas, timestamp → UTC ms",
+  "reads": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    17,
+    18,
+    19,
+    21,
+    23,
+    24,
+    25,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "semantics": "executada na V8 (AUTO_H_norm e cinco desenhos independentes concordantes); desvios do texto NoSE em `deviation`",
+  "statements": {
+    "1": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "BrowseCategories",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname, users.password FROM users WHERE users.id = ?",
+      "order": [],
+      "project": [
+        [
+          "users.nickname",
+          "nickname"
+        ],
+        [
+          "users.password",
+          "password"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "10": {
+      "entity": "items",
+      "event": {
+        "item_id": "param:new_id",
+        "write_event": "const:RegisterItem"
+      },
+      "group": "RegisterItem",
+      "kind": "write",
+      "nose_text": "INSERT INTO items SET id=?, name=?, description=?, initial_price=?, quantity=?, reserve_price=?, buy_now=?, nb_of_bids=0, max_bid=0, start_date=?, end_date=? AND CONNECT TO category(?), seller(?)",
+      "op": "INSERT",
+      "values": {
+        "buy_now": "param:buy_now",
+        "category_id": "param:category_id",
+        "description": "param:description",
+        "end_date": "param:end_date",
+        "id": "param:new_id",
+        "initial_price": "param:initial_price",
+        "max_bid": "const:0.0",
+        "name": "param:name",
+        "nb_of_bids": "const:0",
+        "quantity": "param:quantity",
+        "reserve_price": "param:reserve_price",
+        "seller_id": "param:user_id",
+        "start_date": "param:date"
+      }
+    },
+    "11": {
+      "entity": "users",
+      "event": {
+        "user_id": "param:new_id",
+        "write_event": "const:RegisterUser"
+      },
+      "group": "RegisterUser",
+      "kind": "write",
+      "nose_text": "INSERT INTO users SET id=?, firstname=?, lastname=?, nickname=?, password=?, email=?, rating=0, balance=0, creation_date=? AND CONNECT TO region(?)",
+      "op": "INSERT",
+      "values": {
+        "balance": "const:0.0",
+        "creation_date": "param:date",
+        "email": "param:email",
+        "firstname": "param:firstname",
+        "id": "param:new_id",
+        "lastname": "param:lastname",
+        "nickname": "param:nickname",
+        "password": "param:password",
+        "rating": "const:0",
+        "region_id": "param:region_id"
+      }
+    },
+    "12": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "BuyNow",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname FROM users WHERE users.id=?",
+      "order": [],
+      "project": [
+        [
+          "users.nickname",
+          "nickname"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "13": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "BuyNow",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id=?",
+      "order": [],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ],
+        [
+          "items.description",
+          "description"
+        ],
+        [
+          "items.initial_price",
+          "initial_price"
+        ],
+        [
+          "items.quantity",
+          "quantity"
+        ],
+        [
+          "items.reserve_price",
+          "reserve_price"
+        ],
+        [
+          "items.buy_now",
+          "buy_now"
+        ],
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.max_bid",
+          "max_bid"
+        ],
+        [
+          "items.start_date",
+          "start_date"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "14": {
+      "ctx_out": {
+        "read_item_14": [
+          0,
+          null
+        ]
+      },
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "StoreBuyNow",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.quantity, items.nb_of_bids, items.end_date FROM items WHERE items.id=?",
+      "order": [],
+      "project": [
+        [
+          "items.quantity",
+          "quantity"
+        ],
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "15": {
+      "deviation": "D-V9-005: só quantity muda; nb_of_bids e end_date ficam como estão (NoSE: SET quantity, nb_of_bids, end_date)",
+      "entity": "items",
+      "event": {
+        "item_id": "param:item_id",
+        "quantity": "value:quantity",
+        "write_event": "const:ReduceQuantity"
+      },
+      "group": "StoreBuyNow",
+      "key": "param:item_id",
+      "kind": "write",
+      "nose_text": "UPDATE items SET quantity=?, nb_of_bids=?, end_date=? WHERE items.id=?",
+      "op": "UPDATE",
+      "values": {
+        "quantity": "max0(ctx:read_item_14.items.quantity|param:quantity - param:qty)"
+      }
+    },
+    "16": {
+      "entity": "buynow",
+      "event": {
+        "buynow_id": "param:new_id",
+        "write_event": "const:StoreBuyNow"
+      },
+      "group": "StoreBuyNow",
+      "kind": "write",
+      "nose_text": "INSERT INTO buynow SET id=?, qty=?, date=? AND CONNECT TO item(?), buyer(?)",
+      "op": "INSERT",
+      "values": {
+        "buyer_id": "param:user_id",
+        "date": "param:date",
+        "id": "param:new_id",
+        "item_id": "param:item_id",
+        "qty": "param:qty"
+      }
+    },
+    "17": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "PutBid",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname, users.password FROM users WHERE users.id=?",
+      "order": [],
+      "project": [
+        [
+          "users.nickname",
+          "nickname"
+        ],
+        [
+          "users.password",
+          "password"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "18": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "PutBid",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id=?",
+      "order": [],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ],
+        [
+          "items.description",
+          "description"
+        ],
+        [
+          "items.initial_price",
+          "initial_price"
+        ],
+        [
+          "items.quantity",
+          "quantity"
+        ],
+        [
+          "items.reserve_price",
+          "reserve_price"
+        ],
+        [
+          "items.buy_now",
+          "buy_now"
+        ],
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.max_bid",
+          "max_bid"
+        ],
+        [
+          "items.start_date",
+          "start_date"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "19": {
+      "ctx_out": {},
+      "deviation": "ORDER BY bids.bid com desempate por bids.id",
+      "distinct": null,
+      "entity": "bids",
+      "fallback": {},
+      "group": "PutBid",
+      "kind": "read",
+      "limit": 2,
+      "nose_text": "SELECT bids.qty, bids.date FROM bids.item WHERE item.id=? ORDER BY bids.bid LIMIT 2",
+      "order": [
+        [
+          "bid",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "bids.qty",
+          "qty"
+        ],
+        [
+          "bids.date",
+          "date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "item_id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "2": {
+      "ctx_out": {},
+      "deviation": "resultado ordenado por id (NoSE não fixa ordem)",
+      "distinct": null,
+      "entity": "categories",
+      "fallback": {},
+      "group": "BrowseCategories",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT categories.id, categories.name FROM categories WHERE categories.dummy = 1",
+      "order": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "categories.id",
+          "id"
+        ],
+        [
+          "categories.name",
+          "name"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "dummy",
+          "=",
+          "const:1"
+        ]
+      ]
+    },
+    "20": {
+      "entity": "bids",
+      "event": {
+        "bid_id": "param:new_id",
+        "write_event": "const:StoreBid"
+      },
+      "group": "StoreBid",
+      "kind": "write",
+      "nose_text": "INSERT INTO bids SET id=?, qty=?, bid=?, date=? AND CONNECT TO item(?), user(?)",
+      "op": "INSERT",
+      "values": {
+        "bid": "param:bid",
+        "date": "param:date",
+        "id": "param:new_id",
+        "item_id": "param:item_id",
+        "qty": "param:qty",
+        "user_id": "param:user_id"
+      }
+    },
+    "21": {
+      "ctx_out": {
+        "read_item_21": [
+          0,
+          null
+        ]
+      },
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "StoreBid",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.nb_of_bids, items.max_bid FROM items WHERE items.id=?",
+      "order": [],
+      "project": [
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.max_bid",
+          "max_bid"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "22": {
+      "entity": "items",
+      "event": {
+        "item_id": "param:item_id",
+        "nb_of_bids": "value:nb_of_bids",
+        "write_event": "const:UpdateMaxBid"
+      },
+      "group": "StoreBid",
+      "key": "param:item_id",
+      "kind": "write",
+      "nose_text": "UPDATE items SET nb_of_bids=?, max_bid=? WHERE items.id=?",
+      "op": "UPDATE",
+      "values": {
+        "max_bid": "max(ctx:read_item_21.items.max_bid|const:0.0, param:bid)",
+        "nb_of_bids": "ctx:read_item_21.items.nb_of_bids|const:0 + 1"
+      }
+    },
+    "23": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "PutComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname, users.password FROM users WHERE users.id=?",
+      "order": [],
+      "project": [
+        [
+          "users.nickname",
+          "nickname"
+        ],
+        [
+          "users.password",
+          "password"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "24": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "PutComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id=?",
+      "order": [],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ],
+        [
+          "items.description",
+          "description"
+        ],
+        [
+          "items.initial_price",
+          "initial_price"
+        ],
+        [
+          "items.quantity",
+          "quantity"
+        ],
+        [
+          "items.reserve_price",
+          "reserve_price"
+        ],
+        [
+          "items.buy_now",
+          "buy_now"
+        ],
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.max_bid",
+          "max_bid"
+        ],
+        [
+          "items.start_date",
+          "start_date"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "25": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "PutComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.* FROM users WHERE users.id=?",
+      "order": [],
+      "project": [
+        [
+          "users.id",
+          "id"
+        ],
+        [
+          "users.firstname",
+          "firstname"
+        ],
+        [
+          "users.lastname",
+          "lastname"
+        ],
+        [
+          "users.nickname",
+          "nickname"
+        ],
+        [
+          "users.password",
+          "password"
+        ],
+        [
+          "users.email",
+          "email"
+        ],
+        [
+          "users.rating",
+          "rating"
+        ],
+        [
+          "users.balance",
+          "balance"
+        ],
+        [
+          "users.creation_date",
+          "creation_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "26": {
+      "ctx_out": {
+        "read_user_rating": [
+          0,
+          "users.rating"
+        ]
+      },
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "StoreComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.rating FROM users WHERE users.id=?",
+      "order": [],
+      "project": [
+        [
+          "users.rating",
+          "rating"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "27": {
+      "entity": "users",
+      "event": {
+        "rating": "value:rating",
+        "user_id": "param:user_id",
+        "write_event": "const:UpdateUserRating"
+      },
+      "group": "StoreComment",
+      "key": "param:user_id",
+      "kind": "write",
+      "nose_text": "UPDATE users SET rating=? WHERE users.id=?",
+      "op": "UPDATE",
+      "values": {
+        "rating": "ctx:read_user_rating|const:0 + param:rating"
+      }
+    },
+    "28": {
+      "entity": "comments",
+      "event": {
+        "comment_id": "param:new_id",
+        "write_event": "const:StoreComment"
+      },
+      "group": "StoreComment",
+      "kind": "write",
+      "nose_text": "INSERT INTO comments SET id=?, rating=?, date=?, comment=? AND CONNECT TO to_user(?), from_user(?), item(?)",
+      "op": "INSERT",
+      "values": {
+        "comment": "param:comment",
+        "date": "param:date",
+        "from_user_id": "param:from_user_id",
+        "id": "param:new_id",
+        "item_id": "param:item_id",
+        "rating": "param:rating",
+        "to_user_id": "param:user_id"
+      }
+    },
+    "29": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.* FROM users WHERE users.id=?",
+      "order": [],
+      "project": [
+        [
+          "users.id",
+          "id"
+        ],
+        [
+          "users.firstname",
+          "firstname"
+        ],
+        [
+          "users.lastname",
+          "lastname"
+        ],
+        [
+          "users.nickname",
+          "nickname"
+        ],
+        [
+          "users.password",
+          "password"
+        ],
+        [
+          "users.email",
+          "email"
+        ],
+        [
+          "users.rating",
+          "rating"
+        ],
+        [
+          "users.balance",
+          "balance"
+        ],
+        [
+          "users.creation_date",
+          "creation_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "3": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "ViewBidHistory",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.name FROM items WHERE items.id = ?",
+      "order": [],
+      "project": [
+        [
+          "items.name",
+          "name"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "30": {
+      "ctx_out": {
+        "active_comment_id": [
+          0,
+          "comments_received.id"
+        ]
+      },
+      "deviation": "LIMIT 25 por id (ausente no NoSE); o primeiro comentário alimenta a instrução 31",
+      "distinct": null,
+      "entity": "comments",
+      "fallback": {},
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT comments_received.* FROM users.comments_received WHERE users.id = ?",
+      "order": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "comments_received.id",
+          "id"
+        ],
+        [
+          "comments_received.rating",
+          "rating"
+        ],
+        [
+          "comments_received.date",
+          "date"
+        ],
+        [
+          "comments_received.comment",
+          "comment"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "to_user_id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "31": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "comments",
+      "fallback": {
+        "from_user.nickname": "user-{from_user_id}"
+      },
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT from_user.nickname FROM comments.from_user WHERE comments.id = ?",
+      "order": [],
+      "project": [
+        [
+          "from_user.nickname",
+          "from_user.nickname"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "ctx:active_comment_id|param:comment_id"
+        ]
+      ]
+    },
+    "32": {
+      "ctx_out": {},
+      "deviation": "projeção reduzida a (compra, items.id, items.name); ordem (date, id) crescente; LIMIT 25; compras de itens ausentes da coorte são descartadas",
+      "distinct": null,
+      "entity": "buynow",
+      "fallback": {},
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT bought_now.*, items.* FROM items.bought_now.buyer WHERE buyer.id = ? AND bought_now.date>=?",
+      "order": [
+        [
+          "date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "bought_now.id",
+          "id"
+        ],
+        [
+          "bought_now.qty",
+          "qty"
+        ],
+        [
+          "bought_now.date",
+          "date"
+        ],
+        [
+          "items.id",
+          "item.id"
+        ],
+        [
+          "items.name",
+          "item.name"
+        ]
+      ],
+      "require": [
+        "item"
+      ],
+      "where": [
+        [
+          "buyer_id",
+          "=",
+          "param:user_id"
+        ],
+        [
+          "date",
+          ">=",
+          "param:since"
+        ]
+      ]
+    },
+    "33": {
+      "ctx_out": {},
+      "deviation": "projeção items.* reduzida a (id, name); LIMIT 25 por id",
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT items.* FROM items.seller WHERE seller.id=? AND items.end_date >=?",
+      "order": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "seller_id",
+          "=",
+          "param:user_id"
+        ],
+        [
+          "end_date",
+          ">=",
+          "param:since"
+        ]
+      ]
+    },
+    "34": {
+      "ctx_out": {},
+      "deviation": "projeção items.* reduzida a (id, name); itens distintos ordenados por id, LIMIT 25",
+      "distinct": "item.id",
+      "entity": "bids",
+      "fallback": {},
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT items.* FROM items.bids.user WHERE user.id=? AND items.end_date>=?",
+      "order": [
+        [
+          "item.id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "items.id",
+          "item.id"
+        ],
+        [
+          "items.name",
+          "item.name"
+        ]
+      ],
+      "require": [
+        "item"
+      ],
+      "where": [
+        [
+          "user_id",
+          "=",
+          "param:user_id"
+        ],
+        [
+          "item.end_date",
+          ">=",
+          "param:since"
+        ]
+      ]
+    },
+    "35": {
+      "ctx_out": {},
+      "deviation": "projeção reduzida a (id, name, end_date); ordem (end_date, id)",
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "SearchItemsByRegion",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT items.id, items.name, items.initial_price, items.max_bid, items.nb_of_bids, items.end_date FROM items.seller WHERE seller.region.id = ? AND items.category.id = ? AND items.end_date >= ? LIMIT 25",
+      "order": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "seller.region_id",
+          "=",
+          "param:region_id"
+        ],
+        [
+          "category_id",
+          "=",
+          "param:category_id"
+        ],
+        [
+          "end_date",
+          ">=",
+          "param:since"
+        ]
+      ]
+    },
+    "36": {
+      "ctx_out": {},
+      "deviation": "resultado ordenado por id (NoSE não fixa ordem)",
+      "distinct": null,
+      "entity": "regions",
+      "fallback": {},
+      "group": "BrowseRegions",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT regions.id, regions.name FROM regions WHERE regions.dummy = 1",
+      "order": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "regions.id",
+          "id"
+        ],
+        [
+          "regions.name",
+          "name"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "dummy",
+          "=",
+          "const:1"
+        ]
+      ]
+    },
+    "4": {
+      "ctx_out": {},
+      "deviation": "ORDER BY bids.date com desempate por bids.id",
+      "distinct": null,
+      "entity": "bids",
+      "fallback": {
+        "user.nickname": "user-{user_id}"
+      },
+      "group": "ViewBidHistory",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.id, users.nickname, bids.id, item.id, bids.qty, bids.bid, bids.date FROM users.bids.item WHERE item.id = ? ORDER BY bids.date",
+      "order": [
+        [
+          "date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "users.id",
+          "user_id"
+        ],
+        [
+          "users.nickname",
+          "user.nickname"
+        ],
+        [
+          "bids.id",
+          "id"
+        ],
+        [
+          "item.id",
+          "item_id"
+        ],
+        [
+          "bids.qty",
+          "qty"
+        ],
+        [
+          "bids.bid",
+          "bid"
+        ],
+        [
+          "bids.date",
+          "date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "item_id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "5": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "ViewItem",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id = ?",
+      "order": [],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ],
+        [
+          "items.description",
+          "description"
+        ],
+        [
+          "items.initial_price",
+          "initial_price"
+        ],
+        [
+          "items.quantity",
+          "quantity"
+        ],
+        [
+          "items.reserve_price",
+          "reserve_price"
+        ],
+        [
+          "items.buy_now",
+          "buy_now"
+        ],
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.max_bid",
+          "max_bid"
+        ],
+        [
+          "items.start_date",
+          "start_date"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "6": {
+      "ctx_out": {},
+      "deviation": "projeção bids.* sem as chaves estrangeiras; ordem por bids.id (NoSE não fixa ordem)",
+      "distinct": null,
+      "entity": "bids",
+      "fallback": {},
+      "group": "ViewItem",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT bids.* FROM items.bids WHERE items.id = ?",
+      "order": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "bids.id",
+          "id"
+        ],
+        [
+          "bids.qty",
+          "qty"
+        ],
+        [
+          "bids.bid",
+          "bid"
+        ],
+        [
+          "bids.date",
+          "date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "item_id",
+          "=",
+          "param:item_id"
+        ]
+      ]
+    },
+    "7": {
+      "ctx_out": {},
+      "deviation": "ordem (end_date, id) antes do LIMIT 25",
+      "distinct": null,
+      "entity": "items",
+      "fallback": {},
+      "group": "SearchItemsByCategory",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT items.id, items.name, items.initial_price, items.max_bid, items.nb_of_bids, items.end_date FROM items.category WHERE category.id = ? AND items.end_date >= ? LIMIT 25",
+      "order": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "items.id",
+          "id"
+        ],
+        [
+          "items.name",
+          "name"
+        ],
+        [
+          "items.initial_price",
+          "initial_price"
+        ],
+        [
+          "items.max_bid",
+          "max_bid"
+        ],
+        [
+          "items.nb_of_bids",
+          "nb_of_bids"
+        ],
+        [
+          "items.end_date",
+          "end_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "category_id",
+          "=",
+          "param:category_id"
+        ],
+        [
+          "end_date",
+          ">=",
+          "param:since"
+        ]
+      ]
+    },
+    "8": {
+      "ctx_out": {},
+      "deviation": null,
+      "distinct": null,
+      "entity": "users",
+      "fallback": {},
+      "group": "ViewUserInfo",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.* FROM users WHERE users.id = ?",
+      "order": [],
+      "project": [
+        [
+          "users.id",
+          "id"
+        ],
+        [
+          "users.firstname",
+          "firstname"
+        ],
+        [
+          "users.lastname",
+          "lastname"
+        ],
+        [
+          "users.nickname",
+          "nickname"
+        ],
+        [
+          "users.password",
+          "password"
+        ],
+        [
+          "users.email",
+          "email"
+        ],
+        [
+          "users.rating",
+          "rating"
+        ],
+        [
+          "users.balance",
+          "balance"
+        ],
+        [
+          "users.creation_date",
+          "creation_date"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    },
+    "9": {
+      "ctx_out": {},
+      "deviation": "LIMIT 25 por id (ausente no NoSE)",
+      "distinct": null,
+      "entity": "comments",
+      "fallback": {},
+      "group": "ViewUserInfo",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT comments.id, comments.rating, comments.date, comments.comment FROM comments.to_user WHERE to_user.id = ?",
+      "order": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "project": [
+        [
+          "comments.id",
+          "id"
+        ],
+        [
+          "comments.rating",
+          "rating"
+        ],
+        [
+          "comments.date",
+          "date"
+        ],
+        [
+          "comments.comment",
+          "comment"
+        ]
+      ],
+      "require": [],
+      "where": [
+        [
+          "to_user_id",
+          "=",
+          "param:user_id"
+        ]
+      ]
+    }
+  },
+  "writes": [
+    10,
+    11,
+    15,
+    16,
+    20,
+    22,
+    27,
+    28
+  ]
+}

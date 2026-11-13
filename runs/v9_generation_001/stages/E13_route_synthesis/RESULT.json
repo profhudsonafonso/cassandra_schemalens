@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "every_read_has_route": true,
+    "mechanisms_identifiable": {
+      "access_profile": "apenas metadados/especificações",
+      "relationships": "apenas metadados/especificações",
+      "sharedness": "composição H",
+      "support_sharing": "estrutura física de C",
+      "write_exposure": "estrutura física de C"
+    },
+    "universal_schema_valid": true,
+    "writeplans_cover_written_data": true
+  },
+  "duration_s": 3.639,
+  "error": null,
+  "finished_at": "2026-11-13T08:29:01-0300",
+  "inputs": [],
+  "name": "Síntese de rotas",
+  "outputs": [
+    {
+      "bytes": 55801,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E13_route_synthesis/ROUTES_UNIVERSAL.json",
+      "sha256": "5733e0c0622e07d1820225a9198684541f445d6b50e99ee1852a6ac31c1fcb0f"
+    },
+    {
+      "bytes": 91719,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E13_route_synthesis/CANONICAL_WITH_COVER.json",
+      "sha256": "dcaa1c3f23ee655bdf6b614c38c4f46b74abf63eb544e4845bb324997dc45194"
+    },
+    {
+      "bytes": 1097,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E13_route_synthesis/MECHANISM_USAGE.json",
+      "sha256": "ebe9d59c2edc94f0ec5d95540947ef6d59c38fc663acfba93706c2785308ec7c"
+    }
+  ],
+  "phase": 2,
+  "run_id": "v9-generation-20261112-001",
+  "sha256": "49452dd24d5c911d3390000069ca662691cacc0c0bf5bef3d6abd12e9e27e7d3",
+  "stage": "E13",
+  "status": "PASS"
+}

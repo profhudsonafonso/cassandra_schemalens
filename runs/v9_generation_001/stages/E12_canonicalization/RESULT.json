@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "CCR": 0.5789,
+    "C_size": 24,
+    "deterministic": true,
+    "fusions": 3,
+    "no_fusion_by_name": true
+  },
+  "duration_s": 0.245,
+  "error": null,
+  "finished_at": "2026-11-12T11:48:04-0300",
+  "inputs": [],
+  "name": "Canonicalização e fusão",
+  "outputs": [
+    {
+      "bytes": 89459,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E12_canonicalization/CANONICAL_C.json",
+      "sha256": "51a43abb52ee8feb2a8425969572fecda155e7d9efa4652b96c7db3e74bbc879"
+    }
+  ],
+  "phase": 2,
+  "run_id": "v9-generation-20261112-001",
+  "sha256": "6b93eaa3f84f43e7e2c6544dbd45ad854acf5f241f1b7e1c741cc001508b5aa1",
+  "stage": "E12",
+  "status": "PASS"
+}

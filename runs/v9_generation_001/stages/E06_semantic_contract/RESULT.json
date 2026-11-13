@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "agreement": "397479/397479",
+    "all_36_statements_evaluated": true,
+    "contract_refs_resolve": true,
+    "oracle_equals_v8_reference": true,
+    "requests_200000": true
+  },
+  "duration_s": 37.605,
+  "error": null,
+  "finished_at": "2026-11-12T11:42:15-0300",
+  "inputs": [],
+  "name": "Contrato semântico das 36 instruções",
+  "outputs": [
+    {
+      "bytes": 30540,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E06_semantic_contract/SEMANTIC_CONTRACT.json",
+      "sha256": "09c92030cedddfcd6dcc4dcb088775dfad77ed1043c149693fc79c43bfae926e"
+    },
+    {
+      "bytes": 3121,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E06_semantic_contract/ORACLE_VERIFICATION.json",
+      "sha256": "54ab18195d17c048e515cef830c729cddd6d99ac6bf34776a71cc5a972079be4"
+    }
+  ],
+  "phase": 1,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E6",
+  "status": "PASS"
+}

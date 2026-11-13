@@ -1,0 +1,322 @@
+{
+  "access": "read-only",
+  "files": {
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/config/catalog_C0_C8.json": {
+      "read_by": "inventory",
+      "sha256": "a95274e456e983ccf08a18cd789d6ceb262192468ada5ff2a07d58dcc4c8df76"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/docs/HISTORICAL_SOURCE_PROVENANCE.md": {
+      "read_by": "inventory",
+      "sha256": "c5ccab4c1d3a4fbc39e6e1c13fd23a4983cde7888f195035e42e4d1677296839"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/inputs/conceptual_schema/rubis_eer.json": {
+      "read_by": "inventory",
+      "sha256": "abc2a7bfd11060284600181fe523309b6e22dc15ac517be7174231aa7258b19e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/inputs/historical_sources/nose_workloads_rubis.rb": {
+      "read_by": "inventory",
+      "sha256": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/inputs/workload/rubis_workload.json": {
+      "read_by": "inventory",
+      "sha256": "76de4a192b99d91f0654583f9ff488efa8f77861377a24dc5666f2276a4406d4"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/ablation_factorial_012.py": {
+      "read_by": "inventory",
+      "sha256": "05b54497306019c940d89d529490a220f96704aa02a34be64a0991d6dec98500"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/benchmark_005.py": {
+      "read_by": "inventory",
+      "sha256": "68ce42578480312b3bc0c5975ef50e49871cb4b4387d4deccc29d031acd8dd0c"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/design_space_005.py": {
+      "read_by": "inventory",
+      "sha256": "c63d5141d20b9b6ca1751f641f233172c3b8e8730523e04624bf8018d1771c5f"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/design_space_006.py": {
+      "read_by": "inventory",
+      "sha256": "da712b1e047bc6b60b9041d8cd29a6c62bf97afd833a15a2dc8bed1f4f957745"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/engine.py": {
+      "read_by": "inventory",
+      "sha256": "58a91acc9fe6d967cb96b5703b4f92ccc48faf8d98dfaf9b76a780f0ea536c7b"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/final_v7.py": {
+      "read_by": "inventory",
+      "sha256": "5264929eba276652ac810a80df36ffa19bf585bc91622b90c31ed6fc93ca7cda"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/methodology/oracle_011.py": {
+      "read_by": "inventory",
+      "sha256": "9767be777546c939654041a64a5f3dc79bf971d2cf947bce7bd286bdb4cf1cde"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_005/design_space/CANDIDATE_SEARCH_SPACE.json": {
+      "read_by": "inventory",
+      "sha256": "953d001b692b4ea8568d56ad8771ea2c3fcd14866bd6a50db96a2315040c96ef"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/full_scale_matched_cohort/raw/AUTO_H_norm_bidding.jsonl.gz": {
+      "read_by": "E6 (referência do oráculo)",
+      "sha256": "1e2dce242e28f5272bde07ccdfbde0df23ecbffe48846977f6899458e8f32358"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/full_scale_matched_cohort/raw/AUTO_H_norm_browsing.jsonl.gz": {
+      "read_by": "E6 (referência do oráculo)",
+      "sha256": "2ffd591a9c4e2cb1941692f27626471e0430120af815eda68ccf963d0ee8619d"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/full_scale_matched_cohort/raw/AUTO_H_norm_update100x.jsonl.gz": {
+      "read_by": "E6 (referência do oráculo)",
+      "sha256": "bbcdaab4f66ac386a2f7090080656c3774955d1813db40b2bdd9ffc0301a98e1"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/full_scale_matched_cohort/raw/AUTO_H_norm_update10x.jsonl.gz": {
+      "read_by": "E6 (referência do oráculo)",
+      "sha256": "b28c19b8aee1e53e7f47d0663f5a4b2eee3774f35c45eaeb16075c3203e7a2d4"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/FACTORIAL_ANALYSIS.json": {
+      "read_by": "inventory",
+      "sha256": "90626204446954cebdc10b80e8492d2edcd774dcadb703ef562924a34b410c8e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f000_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "91d3ca0a4ec432a806070a2ad292b1b47ff274e189711d1627b2fe28393d82fd"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f001_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "2762a859bce97be2cb439c27462ea866a550c33f835c61cedf557bf5507dc1ec"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f010_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "882e2ee609b1d47818d74d3340ba6341b9d9efab2b68325a53174f174a15d5a7"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f011_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "6e30f55e0ae8229994191fab3be8a3eaad20ce5abe8103d29d6d7392fdccf485"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f100_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "abdd8b5dff551f7181629018c2f7bbae2b0d6258caee5fe58481a92e6c29c759"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f101_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "2bf716e03bb172ae38edd600df70c37f63fea533f33191adaa03bbf7baf3ee47"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f110_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "e94746685c262ee1a1ab45ea73a9b6f34547aa3c6c2acdaa68b1cf403bef1652"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/f111_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "ac4f1f82037eaeb99c6fe9fec57c79b3474d4fedfdcb8fac0ffb53ca7a918910"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8f2e6333529d266941020939128afa376d785041f659b38013bbd733ba77016c"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "300c29e4fe7d908daaf7bd254682b636af77664a4b8c92346e718a41a9d3e21d"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "3afd4bfefa0b39c1d345af2e507400eab6b5c2783285c90488f8781a3ecf7e80"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f000_norm_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "22003d9b720546203ff6c6db2a57989f7ddaca22f3bc3e307da91921050e5a6a"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "334ae2a524ef9a831c9b82300dbed9aee330b90d5dd9ef3120d2757282c19c9d"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "915f4f7b9104aa0e25e76a752ee4c3e2b8b43a0c8544a581d9fed3130983e74e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "9f94d9919b3ee734ffce647cd64d189ccf3d69f8649234dfc255c09732443622"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f001_c7_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "2da0c7e4ef36d610278859674a36d690f3be9789f47fae209e94d6200f6c26c3"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8094fb2a0f294de40816a182acdb363fde6db7fd57a1835d0e9842999168f697"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "f79072de6a564764a227dd0c18467ded5f157990c9062d5f9c9a17075467c0be"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "9061afbba7601cbc4188ba49a277662d52531d6a9373c58775c2a5dcb9ed31a8"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f010_c5_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "e9c4147c1588c2fd66c2d7a5a1496a1a9d5d2c8fcbd97034ecedd5fea6c8eb99"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "5c118a36df195c5d65cde8addebee1dc41ed3ffec3904742212b61d4b987ef92"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8d5a3ac2432c9cb90b80d19a0f0a722efe93630c5d199bfa3de64fdbc55b9777"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "a553bf158b258f2aed4de25acd68885c58135f84d3a161e5012291ee6814859b"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f011_c5c7_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "4788f7c29eaff71b625ef923597d272d607d89049db3927a1f9ebc48a7bb60e1"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8c8b40a1056512b0332844a00f57f4ba594f9909408635cf5e692838f8aa4f82"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "56ea760297bc8c3078e9696fdab615e5643d68773dd56549ae9b6aa00be5f8bd"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "55799dce0d1e75674f6a663e06a35923e0133b2071262821cf7f865a85921f07"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f100_c3_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8e52f6901e5aabf2520b723b83cc7d9ad67485663f13e8af87626d67ef1c3e01"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "7575c3a9bbeb19dc8c9940b093d3da9dfeb8c64c892aa893b818ec0d8bb78a5f"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "5df823b6dfbcfe99a5e8c23fd6e53c754b5c421ce570d948b5256a335ad0798e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "d76697faaecde57c3e084ddd2188fbd1fd6a077e5dfbff2c1b3017798d63906a"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f101_c3c7_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "93931321bb775b9e6820d1263a6d0b7b1032a8adbe3c28ac6f2a98d40d302c4f"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "83cf6fbfd301bf325019653db6b9ce955bdfacd5d20264baa3a9eea01aa8cc0d"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "fab27a8ea9b70fa2e90f4d541ae53f86f23717f6542eeabc8f794292f216a439"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8bafb05354681707dff72277ff08374c654bba568b02bc251e5e53b1eec9496d"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f110_c3c5_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "6d31886245403973d0ff88b86f04464c2ebdf3478635f941cbdbb2f9cb289d8d"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "da33f89e3ba42efb14f63e58b6745423c0cbb8536a2e80c335077c2b4105042c"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "80260910df3c4046d7587a02988a7026b7bff834aadf358dc6fd3b097665ff0e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "552e33dc32b1e1d7e00fb9085c326aafaa4f2249570ed6762f624d7ab321417a"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol/raw/ABL_f111_c3c5c7_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "a4dd0a8a3ae14dd5d3ba71543077565a0f04219fd90b6bb1a9519699e246148e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/expert_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "c8fda048eff2132401802e640e3c558323396c6e1b13fac30ac6b0ea3470977a"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/normalized_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "02138d7ac455a7ddfacb0b94652681a0fcd74d19ae0131c461f22e3f9ac2b1a7"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/nose_bidding_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "4d7f3d77cfb68055a2601cb3563248ee29e89e4e1b710ceb8e90a4d44f37c955"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/qpg_bidding_RESULT.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "59e02f1fdc042428223667563614c74ef0abeac1e299317c642e91557bdb6808"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "e2abce54f6187086081843c0c5e0c6a38c7776a965c31535cbef060d835fb607"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "49113d8d8183506611463c081a95c6729bc9e2b275ae895ee0dbe4a32d6020ee"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "3f2dd98e595e7edfd8054b832cf6105de5825c2b6a40bf6af6a03c5111ec71ba"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Expert_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "94ffa05b01d818f3cc63aadd530941e0f738d0470baa2207419fe841d83d2ec9"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "5478da219bb92e9eff3da42fb22efa6846b1818459680ead5a3a8c871bb6b117"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "67dd81e5e484542dbc2d5b75724cbfdf5e0c1be18094f46fdf1f105126d4470e"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "e416a1c1319658e41976a3613a659bf6c2ab35b1a504580791e2d5a24ccdc7e5"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/NoSE_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "be2d65decdb80166e35cd8607b676609aabde038fd7de1f37f65012e34c87be0"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "8b7a0e0caa2394a9462906d21db739db503aa5336b73b5435ffe8f5f3a7b95eb"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "ad9511cebb09f8aa6b24f0787439dc0b7f009b61741a2b7c312c7acb8b5ffa67"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "a14b947ce47f320693b2073b1854110be13cc2869a413c011aff4c6c51736988"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/Normalized_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "842743e9c0023247e5ecaf77d0b68cdae31520aeb3a800940548a149ed64b0bc"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_bidding.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "ce174a54ab333d0a68b563a3cfbd56dc34de5175aad45bd095e12ab0d6a56d56"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_browsing.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "0b4ba3198bfb13191db0b33c0d63e32688f841081ea32d229706b87fe55e0b50"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_update100x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "bc61ea0658fcf9255b5097440800ec7f50a3aa083671d9931115c10b8bc925e8"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol/raw/QPG_update10x.jsonl.gz": {
+      "read_by": "E14 (calibração)",
+      "sha256": "f99a69fb4db4b08e490ba89726878c0f295c89169ee2cebbdbc8b198a2b3ffd0"
+    },
+    "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/orchestration/STATE.json": {
+      "read_by": "monitor (ETA histórico)",
+      "sha256": "b708a9fcb2e6f7fe3f123b731d699e400044de142d658c6c269c0f64f8835f22"
+    }
+  },
+  "updated_at": "2026-11-12T11:42:10-0300"
+}

@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "default_mode": "HISTORICAL_FIDELITY",
+  "scales": {
+    "mini_rubis": {"categories": 50, "regions": 5, "users": 2000, "items": 20000, "bids": 200000, "comments": 100000, "buynow": 40000},
+    "full_rubis": {"categories": 500, "regions": 50, "users": 200000, "items": 2000000, "bids": 20000000, "comments": 10000000, "buynow": 2000000}
+  },
+  "optimizer_cardinalities": {"categories": 50, "regions": 5, "users": 2000, "items": 20000, "bids": 200000, "comments": 100000, "buynow": 40000},
+  "historical_physical_cardinalities": {"categories": 500, "regions": 50, "users": 200000, "items": 2000000, "bids": 20000000, "comments": 10000000, "buynow": 2000000},
+  "modes": {"HISTORICAL_FIDELITY": {"buynow_item_source": "users"}, "CORRECTED_RESEARCH_VARIANT": {"buynow_item_source": "items"}}
+}

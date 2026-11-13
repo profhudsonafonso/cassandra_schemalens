@@ -1,0 +1,161 @@
+{
+  "acceptance_status": "PASS",
+  "evaluated_at": "2026-11-13T08:32:30-0300",
+  "gates": {
+    "activation": {
+      "status": "PASS",
+      "violations": []
+    },
+    "cohort_benchmark": {
+      "agreement": "3179832/3179832",
+      "errors": 0,
+      "isolation_clean": true,
+      "protocol_frozen": true,
+      "requests": {
+        "H01": 200000,
+        "H02": 200000,
+        "H03": 200000,
+        "H04": 200000,
+        "H05": 200000,
+        "NoSE": 200000,
+        "QPG": 200000,
+        "V8_AUTO_H_norm": 200000
+      },
+      "state_restored": true,
+      "status": "PASS"
+    },
+    "correctness": {
+      "failed": [],
+      "per_schema": {
+        "H01": "79429/79429",
+        "H02": "79429/79429",
+        "H03": "79429/79429",
+        "H04": "79429/79429",
+        "H05": "79429/79429",
+        "NoSE": "79429/79429",
+        "QPG": "79429/79429",
+        "V8_AUTO_H_norm": "79429/79429"
+      },
+      "status": "PASS"
+    },
+    "criteria_ablations": {
+      "agreement": {
+        "A01": "PASS",
+        "A02": "PASS",
+        "A03": "PASS",
+        "A04": "PASS",
+        "A05": "PASS",
+        "H02": "PASS"
+      },
+      "status": "PASS"
+    },
+    "full_scale": {
+      "agreement": {
+        "H01": "PASS",
+        "H03": "PASS",
+        "NoSE": "PASS",
+        "QPG": "PASS"
+      },
+      "cache_control": {
+        "all_ok": true,
+        "cycles": 84,
+        "max_kib_after": 213732
+      },
+      "status": "PASS"
+    },
+    "generator_hash": {
+      "mismatched": [],
+      "status": "PASS"
+    },
+    "mechanisms": {
+      "declaration_mismatch": [],
+      "levels": {
+        "access_profile": "apenas metadados/especificações",
+        "relationships": "apenas metadados/especificações",
+        "sharedness": "composição H",
+        "support_sharing": "estrutura física de C",
+        "write_exposure": "estrutura física de C"
+      },
+      "no_physical_effect": [
+        "access_profile",
+        "relationships"
+      ],
+      "status": "PASS"
+    },
+    "supersedes": {
+      "status": "PASS",
+      "violations": []
+    }
+  },
+  "global_pass_hardcoded": false,
+  "negative_tests": [
+    {
+      "gate": "supersedes",
+      "passed": true,
+      "rejected": true,
+      "test": "esquema mantém tabela marcada como substituída"
+    },
+    {
+      "gate": "activation",
+      "passed": true,
+      "rejected": true,
+      "test": "família ativada sem predicado verdadeiro"
+    },
+    {
+      "gate": "generator_hash",
+      "passed": true,
+      "rejected": true,
+      "test": "esquema com hash diferente da saída do gerador (edição manual)"
+    },
+    {
+      "gate": "mechanisms",
+      "passed": true,
+      "rejected": true,
+      "test": "mecanismo declarado usado cujo desligamento não muda a saída"
+    },
+    {
+      "gate": "cohort_benchmark",
+      "passed": true,
+      "rejected": true,
+      "test": "hash de resposta alterado"
+    },
+    {
+      "gate": "cohort_benchmark",
+      "passed": true,
+      "rejected": true,
+      "test": "observação apagada"
+    },
+    {
+      "gate": "cohort_benchmark",
+      "passed": true,
+      "rejected": true,
+      "test": "erro injetado"
+    },
+    {
+      "gate": "cohort_benchmark",
+      "passed": true,
+      "rejected": true,
+      "test": "carga concorrente"
+    },
+    {
+      "gate": "cohort_benchmark",
+      "passed": true,
+      "rejected": true,
+      "test": "estado não restaurado"
+    },
+    {
+      "gate": "cohort_benchmark",
+      "passed": true,
+      "rejected": true,
+      "test": "protocolo reduzido"
+    },
+    {
+      "gate": "correctness",
+      "passed": true,
+      "rejected": true,
+      "test": "divergência do oráculo escondida"
+    }
+  ],
+  "not_executed": [],
+  "run_id": "v9-generation-20261112-001"
+}

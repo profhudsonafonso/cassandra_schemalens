@@ -1,0 +1,66 @@
+{
+  "checks": {
+    "all_pass": true,
+    "deployments": [
+      "H01",
+      "NoSE",
+      "H02",
+      "V8_AUTO_H_norm",
+      "H03",
+      "QPG",
+      "H04",
+      "H05"
+    ]
+  },
+  "duration_s": 2964.407,
+  "error": null,
+  "finished_at": "2026-11-12T16:23:23-0300",
+  "inputs": [],
+  "name": "Benchmark na coorte",
+  "outputs": [
+    {
+      "bytes": 11998,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/H01_RESULT.json",
+      "sha256": "03ff126c67cab80693b119c558de9574b2787f2d3f3b92b3254c70a97c5a7b12"
+    },
+    {
+      "bytes": 12009,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/NoSE_RESULT.json",
+      "sha256": "2457b048405dbd03aa309c9d18d0c1a7e715fd88f85012d64910651fca64907b"
+    },
+    {
+      "bytes": 11972,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/H02_RESULT.json",
+      "sha256": "8508666db127d24f10eed60bb481bf36dbf9f40751aca87dda4f72bdd8134851"
+    },
+    {
+      "bytes": 12320,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/V8_AUTO_H_norm_RESULT.json",
+      "sha256": "963b5554093dc39af654c7c07e95416b92999ac0e02310d454daff7f3000822b"
+    },
+    {
+      "bytes": 11997,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/H03_RESULT.json",
+      "sha256": "479c0e9b0c364823a7135c199db8044549f35fe610d73770311ed1e25d286b55"
+    },
+    {
+      "bytes": 12520,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/QPG_RESULT.json",
+      "sha256": "383f1141c58572e28c3eb80666a905a57f3dba33ba03039f6bb0d0f2fe513442"
+    },
+    {
+      "bytes": 12220,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/H04_RESULT.json",
+      "sha256": "e85a9884b0832b7f048b62cbf8d304d324edcbe3f896d7f12843939f6b22c0b1"
+    },
+    {
+      "bytes": 12514,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark/H05_RESULT.json",
+      "sha256": "b84198cd3587873d1ab83090ed1fddaa92861503bd7189c3b81eca7af1dd6dd0"
+    }
+  ],
+  "phase": 6,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E20",
+  "status": "PASS"
+}

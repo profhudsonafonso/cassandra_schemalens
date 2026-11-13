@@ -1,0 +1,85 @@
+[
+  {
+    "families": [
+      "C0",
+      "C1",
+      "C4",
+      "C5"
+    ],
+    "name": "H01 · opt_browsing",
+    "predicted_cost": {
+      "bidding": 1.561248,
+      "browsing": 1.053204,
+      "update100x": 2.433985,
+      "update10x": 2.015748
+    },
+    "tables": 13
+  },
+  {
+    "families": [
+      "C0",
+      "C1",
+      "C4",
+      "C5"
+    ],
+    "name": "H02 · opt_bidding",
+    "predicted_cost": {
+      "bidding": 1.55522,
+      "browsing": 1.053204,
+      "update100x": 2.484325,
+      "update10x": 2.039075
+    },
+    "tables": 14
+  },
+  {
+    "families": [
+      "C0",
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "name": "H03 · opt_update100x",
+    "predicted_cost": {
+      "bidding": 4.221481,
+      "browsing": 5.493114,
+      "update100x": 2.255791,
+      "update10x": 3.197797
+    },
+    "tables": 13
+  },
+  {
+    "families": [
+      "C0",
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "name": "H04 · pareto_8",
+    "predicted_cost": {
+      "bidding": 2.272724,
+      "browsing": 1.758281,
+      "update100x": 2.499456,
+      "update10x": 2.3908
+    },
+    "tables": 13
+  },
+  {
+    "families": [
+      "C0",
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "name": "H05 · pareto_10",
+    "predicted_cost": {
+      "bidding": 4.932957,
+      "browsing": 6.198191,
+      "update100x": 2.321262,
+      "update10x": 3.57285
+    },
+    "tables": 13
+  }
+]

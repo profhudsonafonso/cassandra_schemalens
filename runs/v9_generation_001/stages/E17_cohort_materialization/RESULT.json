@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "all_tables_fingerprint_match": true,
+    "closure_users": 14878,
+    "cohort_counts_match_statement": {
+      "bids": true,
+      "items": true,
+      "users": true
+    },
+    "keyspaces": [
+      "rubis_v9_h01",
+      "rubis_v9_h02",
+      "rubis_v9_h03",
+      "rubis_v9_h04",
+      "rubis_v9_h05"
+    ]
+  },
+  "duration_s": 33.242,
+  "error": null,
+  "finished_at": "2026-11-12T12:16:19-0300",
+  "inputs": [],
+  "name": "Coorte e materialização",
+  "outputs": [
+    {
+      "bytes": 592676,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E17_cohort_materialization/COHORT_MANIFEST.json",
+      "sha256": "1a39f187d966d591fdc93ed8abd78ec09530369d9a4b307ec125433491981449"
+    },
+    {
+      "bytes": 23590,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E17_cohort_materialization/MATERIALIZATION.json",
+      "sha256": "52cdee46192b4e0836e3ac2ea1383fbd4adeeb340b91d33a9880ba5da9c93886"
+    }
+  ],
+  "phase": 5,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E17",
+  "status": "PASS"
+}

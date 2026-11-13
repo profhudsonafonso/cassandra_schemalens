@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "DeploymentReduction": 0.0,
+    "Hbench_size": 5,
+    "frozen_before_first_benchmark": true
+  },
+  "duration_s": 0.003,
+  "error": null,
+  "finished_at": "2026-11-12T11:53:08-0300",
+  "inputs": [],
+  "name": "Hbench congelado",
+  "outputs": [
+    {
+      "bytes": 6056,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E16_hbench_frozen/HBENCH_FROZEN.json",
+      "sha256": "94f8494f354ca17591d260eaf6eb00bd4f8b1d0b8c810f86414f34a8f7fead81"
+    }
+  ],
+  "phase": 4,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E16",
+  "status": "PASS"
+}

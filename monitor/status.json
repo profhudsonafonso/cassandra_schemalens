@@ -1,0 +1,606 @@
+{
+  "H": [
+    {
+      "families": [
+        "C0",
+        "C1",
+        "C4",
+        "C5"
+      ],
+      "name": "H01 · opt_browsing",
+      "predicted_cost": {
+        "bidding": 1.561248,
+        "browsing": 1.053204,
+        "update100x": 2.433985,
+        "update10x": 2.015748
+      },
+      "tables": 13
+    },
+    {
+      "families": [
+        "C0",
+        "C1",
+        "C4",
+        "C5"
+      ],
+      "name": "H02 · opt_bidding",
+      "predicted_cost": {
+        "bidding": 1.55522,
+        "browsing": 1.053204,
+        "update100x": 2.484325,
+        "update10x": 2.039075
+      },
+      "tables": 14
+    },
+    {
+      "families": [
+        "C0",
+        "C1",
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "name": "H03 · opt_update100x",
+      "predicted_cost": {
+        "bidding": 4.221481,
+        "browsing": 5.493114,
+        "update100x": 2.255791,
+        "update10x": 3.197797
+      },
+      "tables": 13
+    },
+    {
+      "families": [
+        "C0",
+        "C1",
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "name": "H04 · pareto_8",
+      "predicted_cost": {
+        "bidding": 2.272724,
+        "browsing": 1.758281,
+        "update100x": 2.499456,
+        "update10x": 2.3908
+      },
+      "tables": 13
+    },
+    {
+      "families": [
+        "C0",
+        "C1",
+        "C2",
+        "C4",
+        "C5"
+      ],
+      "name": "H05 · pareto_10",
+      "predicted_cost": {
+        "bidding": 4.932957,
+        "browsing": 6.198191,
+        "update100x": 2.321262,
+        "update10x": 3.57285
+      },
+      "tables": 13
+    }
+  ],
+  "all_remaining": {
+    "eta": "13/11 09:16",
+    "minutes": 0,
+    "without_estimate": []
+  },
+  "current": "E13",
+  "environment": {
+    "disk": {
+      "host_free_gb": 298.6,
+      "host_total_gb": 494.3
+    },
+    "invalidated_measurements": [
+      {
+        "at": "2026-11-12T12:55:46-0300",
+        "deployment": "H01"
+      },
+      {
+        "at": "2026-11-12T14:23:15-0300",
+        "deployment": "H03"
+      },
+      {
+        "at": "2026-11-12T14:52:43-0300",
+        "deployment": "QPG"
+      },
+      {
+        "at": "2026-11-13T06:23:36-0300",
+        "deployment": "E23:H01"
+      }
+    ],
+    "isolation": {
+      "bulk_writers": [],
+      "checked_at": "2026-11-13T09:16:22-0300",
+      "idle": true,
+      "pending_compactions": 0
+    },
+    "node": {
+      "nodes": [
+        "UN 172.18.0.2"
+      ],
+      "rc": 0,
+      "up_normal": true
+    }
+  },
+  "first_results": {
+    "approval_wait": "0 parada(s) pendente(s); sem estimativa (depende de aprovação)",
+    "eta_wallclock_if_no_waits": "13/11 09:16",
+    "machine_minutes_known": 0.0,
+    "milestone": "fim da Fase 6 (E20–E21: benchmark e análise na coorte)",
+    "stages_without_estimate": []
+  },
+  "incidents": [
+    {
+      "at": "2026-11-12T11:36:34-0300",
+      "text": "E6 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T12:29:27-0300",
+      "text": "E19 falhou: ModuleNotFoundError(\"No module named 'methodology'\")"
+    },
+    {
+      "at": "2026-11-12T12:55:46-0300",
+      "text": "H01: medição invalidada por carga concorrente; será refeita"
+    },
+    {
+      "at": "2026-11-12T12:55:46-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T14:23:15-0300",
+      "text": "H03: medição invalidada por carga concorrente; será refeita"
+    },
+    {
+      "at": "2026-11-12T14:23:15-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T14:52:43-0300",
+      "text": "QPG: medição invalidada por carga concorrente; será refeita"
+    },
+    {
+      "at": "2026-11-12T14:52:43-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T15:03:08-0300",
+      "text": "E20: tentativa 4 interrompida para aplicar D-V9-012; retomada a partir das medições aprovadas"
+    },
+    {
+      "at": "2026-11-12T15:31:06-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T15:33:53-0300",
+      "text": "QPG recriado a partir de rubis_full e reverificado: oráculo 79429/79429"
+    },
+    {
+      "at": "2026-11-13T06:23:36-0300",
+      "text": "E23: medição fria de H01 invalidada; janela recomeçada"
+    }
+  ],
+  "log_tail": [
+    "2026-11-12T15:31:06-0300 INCIDENT E20 falhou: verificação reprovada",
+    "2026-11-12T15:33:53-0300 INCIDENT QPG recriado a partir de rubis_full e reverificado: oráculo 79429/79429",
+    "2026-11-12T15:33:59-0300 E20 RUNNING",
+    "2026-11-12T16:23:23-0300 E20 PASS (2964.407 s)",
+    "2026-11-12T16:23:23-0300 E21 RUNNING",
+    "2026-11-12T16:23:23-0300 E21 PASS (0.008 s)",
+    "2026-11-12T16:32:14-0300 Passo 1 (usuário): refazer E20/E21 numa janela contínua; anterior arquivado em E20_benchmark_run1_two_blocks",
+    "2026-11-12T16:32:32-0300 E20 RUNNING",
+    "2026-11-12T16:46:49-0300 E20: keyspaces da coorte recriados a partir de rubis_full antes da janela contínua",
+    "2026-11-12T16:46:49-0300 E20 RUNNING",
+    "2026-11-12T18:41:23-0300 E20 PASS (6873.942 s)",
+    "2026-11-12T18:41:23-0300 E21 RUNNING",
+    "2026-11-12T18:41:23-0300 E21 PASS (0.008 s)",
+    "2026-11-12T18:41:23-0300 E22 RUNNING",
+    "2026-11-12T20:14:35-0300 E22 PASS (5591.93 s)",
+    "2026-11-12T20:14:35-0300 E23 RUNNING",
+    "2026-11-13T06:23:36-0300 INCIDENT E23: medição fria de H01 invalidada; janela recomeçada",
+    "2026-11-13T08:04:59-0300 E23 PASS (42624.489 s)",
+    "2026-11-13T08:28:58-0300 E13 RUNNING",
+    "2026-11-13T08:29:01-0300 E13 PASS (3.639 s)"
+  ],
+  "overall": "DONE",
+  "overall_note": "Passos 1, 2 e 3 concluídos",
+  "partial_results": {
+    "latency_mean_ms": {
+      "H01": {
+        "bidding": 1.4836891743,
+        "browsing": 1.05843641924,
+        "update100x": 2.9912313478400003,
+        "update10x": 2.2835716052199997
+      },
+      "H02": {
+        "bidding": 1.9541881047,
+        "browsing": 1.0656021233800002,
+        "update100x": 3.6535139559000003,
+        "update10x": 3.02694967548
+      },
+      "H03": {
+        "bidding": 5.09752338086,
+        "browsing": 6.6892491987,
+        "update100x": 2.7385613933800004,
+        "update10x": 4.0998770914
+      },
+      "H04": {
+        "bidding": 2.33430433252,
+        "browsing": 1.9386633825399997,
+        "update100x": 3.17780070356,
+        "update10x": 2.9250112207599996
+      },
+      "H05": {
+        "bidding": 5.3450435608,
+        "browsing": 6.83121970558,
+        "update100x": 2.9666519450999997,
+        "update10x": 4.18196917528
+      },
+      "NoSE": {
+        "bidding": 2.10526134044,
+        "browsing": 1.24440993254,
+        "update100x": 3.1243172608000003,
+        "update10x": 3.0699273857000002
+      },
+      "QPG": {
+        "bidding": 1.7028192963400002,
+        "browsing": 1.19504027024,
+        "update100x": 2.65878964072,
+        "update10x": 2.59319763206
+      },
+      "V8_AUTO_H_norm": {
+        "bidding": 2.9069440096,
+        "browsing": 1.95347674884,
+        "update100x": 3.37743687578,
+        "update10x": 3.60419497054
+      }
+    },
+    "note": "PARCIAL — latência média (ms) por esquema e carga, antes da aceitação"
+  },
+  "run_id": "v9-generation-20261112-001",
+  "stages": [
+    {
+      "duration_s": 0.194,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:20:47-0300",
+      "id": "INV",
+      "label": "Inventário do repositório antigo",
+      "phase": 0,
+      "progress": null,
+      "started_at": "2026-11-12T11:20:47-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 10.968,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:16:50-0300",
+      "id": "E1",
+      "label": "Preflight do ambiente",
+      "phase": 0,
+      "progress": null,
+      "started_at": "2026-11-12T11:16:39-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 45.627,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:17:41-0300",
+      "id": "E2",
+      "label": "Fonte de dados rubis_full",
+      "phase": 0,
+      "progress": "tabela 13 de 13 (users_by_region): faixa 512 de 512",
+      "started_at": "2026-11-12T11:16:55-0300",
+      "status": "PASS",
+      "stop_point": "Parada 1 — fim da Fase 0 (aguarda aprovação)"
+    },
+    {
+      "duration_s": 0.18,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:35:30-0300",
+      "id": "E3",
+      "label": "Esquema conceitual S (EER)",
+      "phase": 1,
+      "progress": null,
+      "started_at": "2026-11-12T11:35:30-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 67.011,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:43:32-0300",
+      "id": "E4",
+      "label": "Estatísticas observadas",
+      "phase": 1,
+      "progress": "tabela 5 de 5 (buynow): faixa 1024 de 1024",
+      "started_at": "2026-11-12T11:42:25-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.014,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:35:30-0300",
+      "id": "E5",
+      "label": "Carga W (rubis.rb)",
+      "phase": 1,
+      "progress": null,
+      "started_at": "2026-11-12T11:35:30-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 37.605,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:42:15-0300",
+      "id": "E6",
+      "label": "Contrato semântico das 36 instruções",
+      "phase": 1,
+      "progress": "oráculo × referência V8: carga update100x, repetição 5 de 5",
+      "started_at": "2026-11-12T11:41:37-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.004,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:42:15-0300",
+      "id": "E7",
+      "label": "Catálogo com contratos",
+      "phase": 1,
+      "progress": null,
+      "started_at": "2026-11-12T11:42:15-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.001,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "id": "E8",
+      "label": "Fragmentos e raízes",
+      "phase": 2,
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.113,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "id": "E9",
+      "label": "Matriz de evidências",
+      "phase": 2,
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.122,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "id": "E10",
+      "label": "Ativação A(q)",
+      "phase": 2,
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.123,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "id": "E11",
+      "label": "Especificações P",
+      "phase": 2,
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.245,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "id": "E12",
+      "label": "Canonicalização e fusão",
+      "phase": 2,
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 3.639,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-13T08:29:01-0300",
+      "id": "E13",
+      "label": "Síntese de rotas",
+      "phase": 2,
+      "progress": null,
+      "started_at": "2026-11-13T08:28:58-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 55.891,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:50:59-0300",
+      "id": "E14",
+      "label": "Modelo de custo calibrado",
+      "phase": 3,
+      "progress": null,
+      "started_at": "2026-11-12T11:50:03-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.576,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:53:08-0300",
+      "id": "E15",
+      "label": "Composição H",
+      "phase": 4,
+      "progress": null,
+      "started_at": "2026-11-12T11:53:07-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.003,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T11:53:08-0300",
+      "id": "E16",
+      "label": "Hbench congelado",
+      "phase": 4,
+      "progress": null,
+      "started_at": "2026-11-12T11:53:08-0300",
+      "status": "PASS",
+      "stop_point": "Parada 2 — fim da Fase 4 (aguarda aprovação)"
+    },
+    {
+      "duration_s": 33.242,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T12:16:19-0300",
+      "id": "E17",
+      "label": "Coorte e materialização",
+      "phase": 5,
+      "progress": "esquema 5 de 5 (H05)",
+      "started_at": "2026-11-12T12:15:46-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 737.355,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T12:29:27-0300",
+      "id": "E18",
+      "label": "Corretude (oráculo + replay)",
+      "phase": 5,
+      "progress": "H05: carga update100x (repetição 0)",
+      "started_at": "2026-11-12T12:17:09-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 366.743,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T12:36:20-0300",
+      "id": "E19",
+      "label": "Baselines NoSE e QPG",
+      "phase": 5,
+      "progress": "QPG (recriado): carga update100x (repetição 0)",
+      "started_at": "2026-11-12T12:30:13-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 6873.942,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T18:41:23-0300",
+      "id": "E20",
+      "label": "Benchmark na coorte",
+      "phase": 6,
+      "progress": "esquema 8 de 8 (H05). carga update100x. repetição 5 de 5. 10.000 de 10.000 requisições",
+      "started_at": "2026-11-12T16:46:49-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 0.008,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T18:41:23-0300",
+      "id": "E21",
+      "label": "Análise",
+      "phase": 6,
+      "progress": null,
+      "started_at": "2026-11-12T18:41:23-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 5591.93,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-12T20:14:35-0300",
+      "id": "E22",
+      "label": "Ablações dos critérios",
+      "phase": 7,
+      "progress": "esquema 6 de 6 (A05). carga update100x. repetição 5 de 5. 10.000 de 10.000 requisições",
+      "started_at": "2026-11-12T18:41:23-0300",
+      "status": "PASS",
+      "stop_point": null
+    },
+    {
+      "duration_s": 42624.489,
+      "error": null,
+      "eta_min": null,
+      "eta_origin": "—",
+      "finished_at": "2026-11-13T08:04:59-0300",
+      "id": "E23",
+      "label": "Escala completa, aceitação e relatório",
+      "phase": 8,
+      "progress": "esquema 4 de 4 (QPG). carga update100x. repetição 5 de 5. 10.000 de 10.000 requisições",
+      "started_at": "2026-11-12T20:14:35-0300",
+      "status": "PASS",
+      "stop_point": null
+    }
+  ],
+  "started_at": "2026-11-12T11:15:52-0300",
+  "updated_at": "2026-11-13T09:16:22-0300",
+  "updated_epoch": 1794572182.1919732
+}

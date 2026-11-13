@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "P_size": 57,
+    "every_spec_has_ddl_and_origin": true
+  },
+  "duration_s": 0.123,
+  "error": null,
+  "finished_at": "2026-11-12T11:48:04-0300",
+  "inputs": [],
+  "name": "Especificações P",
+  "outputs": [
+    {
+      "bytes": 83406,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E11_specifications/SPECIFICATIONS_P.json",
+      "sha256": "446d491cdc45e53e4145371bd2280bdc8f3cc0524151013968d876983f983639"
+    }
+  ],
+  "phase": 2,
+  "run_id": "v9-generation-20261112-001",
+  "sha256": "04ce18a4e91577c6d044a8aceb58b39bfdb7ee85d5b0aa8d259ed2f2710aec57",
+  "stage": "E11",
+  "status": "PASS"
+}

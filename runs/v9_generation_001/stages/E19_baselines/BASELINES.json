@@ -1,0 +1,877 @@
+{
+  "correctness": {
+    "NoSE": {
+      "agree_oracle": 79429,
+      "agree_v8_reference": 79429,
+      "evaluations": 79429,
+      "first_mismatches": [],
+      "per_statement": {
+        "1": {
+          "n": 2339,
+          "oracle": 2339,
+          "v8": 2339
+        },
+        "10": {
+          "n": 1189,
+          "oracle": 1189,
+          "v8": 1189
+        },
+        "11": {
+          "n": 2407,
+          "oracle": 2407,
+          "v8": 2407
+        },
+        "12": {
+          "n": 274,
+          "oracle": 274,
+          "v8": 274
+        },
+        "13": {
+          "n": 274,
+          "oracle": 274,
+          "v8": 274
+        },
+        "14": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "15": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "16": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "17": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "18": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "19": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "2": {
+          "n": 2339,
+          "oracle": 2339,
+          "v8": 2339
+        },
+        "20": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "21": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "22": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "23": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "24": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "25": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "26": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "27": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "28": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "29": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "3": {
+          "n": 686,
+          "oracle": 686,
+          "v8": 686
+        },
+        "30": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "31": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "32": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "33": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "34": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "35": {
+          "n": 2584,
+          "oracle": 2584,
+          "v8": 2584
+        },
+        "36": {
+          "n": 1677,
+          "oracle": 1677,
+          "v8": 1677
+        },
+        "4": {
+          "n": 686,
+          "oracle": 686,
+          "v8": 686
+        },
+        "5": {
+          "n": 6573,
+          "oracle": 6573,
+          "v8": 6573
+        },
+        "6": {
+          "n": 6573,
+          "oracle": 6573,
+          "v8": 6573
+        },
+        "7": {
+          "n": 7472,
+          "oracle": 7472,
+          "v8": 7472
+        },
+        "8": {
+          "n": 1172,
+          "oracle": 1172,
+          "v8": 1172
+        },
+        "9": {
+          "n": 1172,
+          "oracle": 1172,
+          "v8": 1172
+        }
+      }
+    },
+    "QPG": {
+      "agree_oracle": 79429,
+      "agree_v8_reference": 79429,
+      "evaluations": 79429,
+      "first_mismatches": [],
+      "per_statement": {
+        "1": {
+          "n": 2339,
+          "oracle": 2339,
+          "v8": 2339
+        },
+        "10": {
+          "n": 1189,
+          "oracle": 1189,
+          "v8": 1189
+        },
+        "11": {
+          "n": 2407,
+          "oracle": 2407,
+          "v8": 2407
+        },
+        "12": {
+          "n": 274,
+          "oracle": 274,
+          "v8": 274
+        },
+        "13": {
+          "n": 274,
+          "oracle": 274,
+          "v8": 274
+        },
+        "14": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "15": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "16": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "17": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "18": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "19": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "2": {
+          "n": 2339,
+          "oracle": 2339,
+          "v8": 2339
+        },
+        "20": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "21": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "22": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "23": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "24": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "25": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "26": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "27": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "28": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "29": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "3": {
+          "n": 686,
+          "oracle": 686,
+          "v8": 686
+        },
+        "30": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "31": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "32": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "33": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "34": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "35": {
+          "n": 2584,
+          "oracle": 2584,
+          "v8": 2584
+        },
+        "36": {
+          "n": 1677,
+          "oracle": 1677,
+          "v8": 1677
+        },
+        "4": {
+          "n": 686,
+          "oracle": 686,
+          "v8": 686
+        },
+        "5": {
+          "n": 6573,
+          "oracle": 6573,
+          "v8": 6573
+        },
+        "6": {
+          "n": 6573,
+          "oracle": 6573,
+          "v8": 6573
+        },
+        "7": {
+          "n": 7472,
+          "oracle": 7472,
+          "v8": 7472
+        },
+        "8": {
+          "n": 1172,
+          "oracle": 1172,
+          "v8": 1172
+        },
+        "9": {
+          "n": 1172,
+          "oracle": 1172,
+          "v8": 1172
+        }
+      }
+    },
+    "V8_AUTO_H_norm": {
+      "agree_oracle": 79429,
+      "agree_v8_reference": 79429,
+      "evaluations": 79429,
+      "first_mismatches": [],
+      "per_statement": {
+        "1": {
+          "n": 2339,
+          "oracle": 2339,
+          "v8": 2339
+        },
+        "10": {
+          "n": 1189,
+          "oracle": 1189,
+          "v8": 1189
+        },
+        "11": {
+          "n": 2407,
+          "oracle": 2407,
+          "v8": 2407
+        },
+        "12": {
+          "n": 274,
+          "oracle": 274,
+          "v8": 274
+        },
+        "13": {
+          "n": 274,
+          "oracle": 274,
+          "v8": 274
+        },
+        "14": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "15": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "16": {
+          "n": 2490,
+          "oracle": 2490,
+          "v8": 2490
+        },
+        "17": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "18": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "19": {
+          "n": 1270,
+          "oracle": 1270,
+          "v8": 1270
+        },
+        "2": {
+          "n": 2339,
+          "oracle": 2339,
+          "v8": 2339
+        },
+        "20": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "21": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "22": {
+          "n": 8428,
+          "oracle": 8428,
+          "v8": 8428
+        },
+        "23": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "24": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "25": {
+          "n": 104,
+          "oracle": 104,
+          "v8": 104
+        },
+        "26": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "27": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "28": {
+          "n": 958,
+          "oracle": 958,
+          "v8": 958
+        },
+        "29": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "3": {
+          "n": 686,
+          "oracle": 686,
+          "v8": 686
+        },
+        "30": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "31": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "32": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "33": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "34": {
+          "n": 377,
+          "oracle": 377,
+          "v8": 377
+        },
+        "35": {
+          "n": 2584,
+          "oracle": 2584,
+          "v8": 2584
+        },
+        "36": {
+          "n": 1677,
+          "oracle": 1677,
+          "v8": 1677
+        },
+        "4": {
+          "n": 686,
+          "oracle": 686,
+          "v8": 686
+        },
+        "5": {
+          "n": 6573,
+          "oracle": 6573,
+          "v8": 6573
+        },
+        "6": {
+          "n": 6573,
+          "oracle": 6573,
+          "v8": 6573
+        },
+        "7": {
+          "n": 7472,
+          "oracle": 7472,
+          "v8": 7472
+        },
+        "8": {
+          "n": 1172,
+          "oracle": 1172,
+          "v8": 1172
+        },
+        "9": {
+          "n": 1172,
+          "oracle": 1172,
+          "v8": 1172
+        }
+      }
+    }
+  },
+  "declared": "NoSE e QPG reconstruídos dos artefatos históricos (DDL/SQL), não execuções dos otimizadores",
+  "materialization": {
+    "NoSE": {
+      "historical_ddl": null,
+      "manifest_sha256": "e1c4e0e1365d606b2ed530cdc1635a7f64c2746d6dda744ddd00534fd7711110",
+      "tables": {
+        "i1888493477": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "i193173044": {
+          "expected_rows": 1221,
+          "match": true,
+          "read_back": 1221,
+          "skipped_missing_relationship": 4469
+        },
+        "i2337785568": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "i2653317939": {
+          "expected_rows": 5300,
+          "match": true,
+          "read_back": 5300,
+          "skipped_missing_relationship": 0
+        },
+        "i2906147889": {
+          "expected_rows": 20494,
+          "match": true,
+          "read_back": 20494,
+          "skipped_missing_relationship": 0
+        },
+        "i3157175159": {
+          "expected_rows": 6501,
+          "match": true,
+          "read_back": 6501,
+          "skipped_missing_relationship": 0
+        },
+        "i3392968797": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "i3553045793": {
+          "expected_rows": 1221,
+          "match": true,
+          "read_back": 1221,
+          "skipped_missing_relationship": 4469
+        },
+        "i3563903410": {
+          "expected_rows": 1221,
+          "match": true,
+          "read_back": 1221,
+          "skipped_missing_relationship": 4469
+        },
+        "i3639792234": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "i3722443462": {
+          "expected_rows": 500,
+          "match": true,
+          "read_back": 500,
+          "skipped_missing_relationship": 0
+        },
+        "i590232953": {
+          "expected_rows": 50,
+          "match": true,
+          "read_back": 50,
+          "skipped_missing_relationship": 0
+        },
+        "i915430138": {
+          "expected_rows": 6501,
+          "match": true,
+          "read_back": 6501,
+          "skipped_missing_relationship": 0
+        }
+      }
+    },
+    "QPG": {
+      "historical_ddl": null,
+      "manifest_sha256": "1a27e7b536975681bea93e8701804ad85d0bacbc3cad50e1768ed7de4297bb2b",
+      "tables": {
+        "q15_2": {
+          "expected_rows": 6501,
+          "match": true,
+          "read_back": 6501,
+          "skipped_missing_relationship": 0
+        },
+        "q16_2": {
+          "expected_rows": 5300,
+          "match": true,
+          "read_back": 5300,
+          "skipped_missing_relationship": 0
+        },
+        "q17": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "q18": {
+          "expected_rows": 1221,
+          "match": true,
+          "read_back": 1221,
+          "skipped_missing_relationship": 4469
+        },
+        "q19": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "q1_7_9_14": {
+          "expected_rows": 20494,
+          "match": true,
+          "read_back": 20494,
+          "skipped_missing_relationship": 0
+        },
+        "q2": {
+          "expected_rows": 500,
+          "match": true,
+          "read_back": 500,
+          "skipped_missing_relationship": 0
+        },
+        "q20": {
+          "expected_rows": 50,
+          "match": true,
+          "read_back": 50,
+          "skipped_missing_relationship": 0
+        },
+        "q3_10_11_13": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "q4_2": {
+          "expected_rows": 1221,
+          "match": true,
+          "read_back": 1221,
+          "skipped_missing_relationship": 4469
+        },
+        "q5_12": {
+          "expected_rows": 1221,
+          "match": true,
+          "read_back": 1221,
+          "skipped_missing_relationship": 4469
+        },
+        "q6": {
+          "expected_rows": 5906,
+          "match": true,
+          "read_back": 5906,
+          "skipped_missing_relationship": 0
+        },
+        "q8": {
+          "expected_rows": 6501,
+          "match": true,
+          "read_back": 6501,
+          "skipped_missing_relationship": 0
+        }
+      }
+    },
+    "V8_AUTO_H_norm": {
+      "ddl_sha256": "db38c1868d8d6855c494080fc90cd9e7d0fc996cad866ff9083bb981857a196a",
+      "tables": {
+        "bids": {
+          "expected_fingerprint": "6d4cc4cc682dfc1de7304063fc847ccaafcf68e0bc7c23a1d81b3ebfdd58c522",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "6d4cc4cc682dfc1de7304063fc847ccaafcf68e0bc7c23a1d81b3ebfdd58c522",
+          "read_back": 5690
+        },
+        "bids_by_item": {
+          "expected_fingerprint": "da8d114ec9657af351dce5ac3f47edec7ca6f51994040165883500e2bf661d7a",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "da8d114ec9657af351dce5ac3f47edec7ca6f51994040165883500e2bf661d7a",
+          "read_back": 5690
+        },
+        "buynow": {
+          "expected_fingerprint": "52bc2dc0f1873dde195db5ab8860d5f155ab2379f32a12743ad0de3199347f50",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "52bc2dc0f1873dde195db5ab8860d5f155ab2379f32a12743ad0de3199347f50",
+          "read_back": 5300
+        },
+        "buynow_by_buyer": {
+          "expected_fingerprint": "52bc2dc0f1873dde195db5ab8860d5f155ab2379f32a12743ad0de3199347f50",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "52bc2dc0f1873dde195db5ab8860d5f155ab2379f32a12743ad0de3199347f50",
+          "read_back": 5300
+        },
+        "categories": {
+          "expected_fingerprint": "dfeca5432dd8d201dd402bd26de4e3288de6ad6f4205205c11e504db52aa13a6",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "dfeca5432dd8d201dd402bd26de4e3288de6ad6f4205205c11e504db52aa13a6",
+          "read_back": 500
+        },
+        "categories_by_dummy": {
+          "expected_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "93e8d47256365605e893041edd4b5c25e03ab6496d4d5040214ae35c1cc2e32a",
+          "read_back": 500
+        },
+        "comments": {
+          "expected_fingerprint": "7f40141be3b1e2b6cb1ad61d591552241084be3831ca610ffd117ff5b42ba821",
+          "expected_rows": 6501,
+          "match": true,
+          "observed_fingerprint": "7f40141be3b1e2b6cb1ad61d591552241084be3831ca610ffd117ff5b42ba821",
+          "read_back": 6501
+        },
+        "comments_by_id": {
+          "expected_fingerprint": "122c9e5a05d15da905b03307c153acc142f465518058f26b012a9db0a1d0296a",
+          "expected_rows": 6501,
+          "match": true,
+          "observed_fingerprint": "122c9e5a05d15da905b03307c153acc142f465518058f26b012a9db0a1d0296a",
+          "read_back": 6501
+        },
+        "comments_by_to_user": {
+          "expected_fingerprint": "99cc33c4a0c0e4e4385f712916866a42f19691b2e03fcf55ad465da6e2fde39e",
+          "expected_rows": 6501,
+          "match": true,
+          "observed_fingerprint": "99cc33c4a0c0e4e4385f712916866a42f19691b2e03fcf55ad465da6e2fde39e",
+          "read_back": 6501
+        },
+        "comments_by_user": {
+          "expected_fingerprint": "ab9bd2e449d6d66c377d70604b67b72b1b316ee6a347a359fd02db312b051f38",
+          "expected_rows": 6501,
+          "match": true,
+          "observed_fingerprint": "ab9bd2e449d6d66c377d70604b67b72b1b316ee6a347a359fd02db312b051f38",
+          "read_back": 6501
+        },
+        "items": {
+          "expected_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+          "expected_rows": 5906,
+          "match": true,
+          "observed_fingerprint": "62fd0c19487a6cccebd7c60071e0042f16cb4b85fe283f000ea866eab8dbf5d3",
+          "read_back": 5906
+        },
+        "items_by_category": {
+          "expected_fingerprint": "51f0bf7bc54fc4396e646a125e9954746744f49c2d6981a884e7bf136cb44648",
+          "expected_rows": 5906,
+          "match": true,
+          "observed_fingerprint": "51f0bf7bc54fc4396e646a125e9954746744f49c2d6981a884e7bf136cb44648",
+          "read_back": 5906
+        },
+        "items_by_region": {
+          "expected_fingerprint": "5406c827e002e4159a9f99267f81fa3eb61596ef725f6ad5edd3445647fe2a29",
+          "expected_rows": 5906,
+          "match": true,
+          "observed_fingerprint": "5406c827e002e4159a9f99267f81fa3eb61596ef725f6ad5edd3445647fe2a29",
+          "read_back": 5906
+        },
+        "items_by_seller": {
+          "expected_fingerprint": "1a21cdef1b7cdd118ce5ae76995a4bd9f87501c872992faa8f032e58bb46c6d2",
+          "expected_rows": 5906,
+          "match": true,
+          "observed_fingerprint": "1a21cdef1b7cdd118ce5ae76995a4bd9f87501c872992faa8f032e58bb46c6d2",
+          "read_back": 5906
+        },
+        "items_by_user_bid": {
+          "expected_fingerprint": "90f2fa004796c04eff2d2b4c1acc9631c9b852599cf814f16baa1254d69d415b",
+          "expected_rows": 829,
+          "match": true,
+          "observed_fingerprint": "90f2fa004796c04eff2d2b4c1acc9631c9b852599cf814f16baa1254d69d415b",
+          "read_back": 829
+        },
+        "regions": {
+          "expected_fingerprint": "6c01cb951cf492f594c555ce5598bc798216aa48dfd92ccab15b731472a54278",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "6c01cb951cf492f594c555ce5598bc798216aa48dfd92ccab15b731472a54278",
+          "read_back": 50
+        },
+        "regions_by_dummy": {
+          "expected_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "b7306a5eec18ea95d631a90106302c485a12a46b587e8172448bfd9830d07235",
+          "read_back": 50
+        },
+        "users": {
+          "expected_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+          "expected_rows": 20494,
+          "match": true,
+          "observed_fingerprint": "ce31da9567a9d5fd2fe56cf31597fc2a33bf79021f96a5dbdb3be16128e6a19b",
+          "read_back": 20494
+        },
+        "users_by_region": {
+          "expected_fingerprint": "93f87913df4d3fdfd25a8dabfc23927932584f66a58554551a475b3fc7640dda",
+          "expected_rows": 20494,
+          "match": true,
+          "observed_fingerprint": "93f87913df4d3fdfd25a8dabfc23927932584f66a58554551a475b3fc7640dda",
+          "read_back": 20494
+        }
+      }
+    }
+  }
+}

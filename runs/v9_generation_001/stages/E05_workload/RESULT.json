@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "groups_16": true,
+    "ids_1_to_36": true,
+    "reads_28": true,
+    "sha256_matches_v8": true,
+    "statements_36": true,
+    "weights_equal_v8_config": true,
+    "writes_8": true
+  },
+  "duration_s": 0.014,
+  "error": null,
+  "finished_at": "2026-11-12T11:35:30-0300",
+  "inputs": [],
+  "name": "Carga W (rubis.rb)",
+  "outputs": [
+    {
+      "bytes": 31020,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E05_workload/WORKLOAD.json",
+      "sha256": "c92546f954c06399c1fcf348286cce388932bcf3745cf9dd2e5d788fb9972ef4"
+    },
+    {
+      "bytes": 6632,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/reused/workloads/rubis.rb",
+      "sha256": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371"
+    }
+  ],
+  "phase": 1,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E5",
+  "status": "PASS"
+}

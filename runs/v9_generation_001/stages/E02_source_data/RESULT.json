@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "all_total_matches": true,
+    "base_total_matches": true,
+    "divergences": 0,
+    "tables_13": true
+  },
+  "duration_s": 45.627,
+  "error": null,
+  "finished_at": "2026-11-12T11:17:41-0300",
+  "inputs": [],
+  "name": "Fonte de dados rubis_full",
+  "outputs": [
+    {
+      "bytes": 1162,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E02_source_data/SOURCE_COUNTS.json",
+      "sha256": "803eac197c8d85ce2eba7aeb1c6aaf22e2d67195391ff82114242f9a198914c0"
+    }
+  ],
+  "phase": 0,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E2",
+  "status": "PASS"
+}

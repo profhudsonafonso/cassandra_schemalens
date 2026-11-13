@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+monitor/.rate_samples.json
+runs/**/.tmp_*
+.DS_Store
+# Raw benchmark traces (~2.2 GB) - too large for GitHub
+runs/**/raw/

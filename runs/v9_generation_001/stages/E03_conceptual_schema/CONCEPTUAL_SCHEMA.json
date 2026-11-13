@@ -1,0 +1,556 @@
+{
+  "entities": {
+    "bids": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": 5,
+          "name": "qty",
+          "size": null,
+          "type": "Integer"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "bid",
+          "size": null,
+          "type": "Float"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "date",
+          "size": null,
+          "type": "Date"
+        }
+      ],
+      "count_optimizer_nose": 200000,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "bid": "bid",
+        "date": "bid_date",
+        "id": "id",
+        "item_id": "item_id",
+        "qty": "qty",
+        "user_id": "user_id"
+      },
+      "source_table": "rubis_full.bids",
+      "unmapped_source_columns": [
+        "max_bid"
+      ]
+    },
+    "buynow": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": 4,
+          "name": "qty",
+          "size": null,
+          "type": "Integer"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "date",
+          "size": null,
+          "type": "Date"
+        }
+      ],
+      "count_optimizer_nose": 40000,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "buyer_id": "buyer_id",
+        "date": "buy_date",
+        "id": "id",
+        "item_id": "item_id",
+        "qty": "qty"
+      },
+      "source_table": "rubis_full.buynow",
+      "unmapped_source_columns": []
+    },
+    "categories": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "name",
+          "size": 20,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": 1,
+          "name": "dummy",
+          "size": null,
+          "type": "Integer"
+        }
+      ],
+      "count_optimizer_nose": 50,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "dummy": "dummy",
+        "id": "id",
+        "name": "name"
+      },
+      "source_table": "rubis_full.categories",
+      "unmapped_source_columns": []
+    },
+    "comments": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": 10,
+          "name": "rating",
+          "size": null,
+          "type": "Integer"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "date",
+          "size": null,
+          "type": "Date"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "comment",
+          "size": 130,
+          "type": "String"
+        }
+      ],
+      "count_optimizer_nose": 100000,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "comment": "comment",
+        "date": "comment_date",
+        "from_user_id": "from_user_id",
+        "id": "id",
+        "item_id": "item_id",
+        "rating": "rating",
+        "to_user_id": "to_user_id"
+      },
+      "source_table": "rubis_full.comments",
+      "unmapped_source_columns": []
+    },
+    "items": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "name",
+          "size": 19,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "description",
+          "size": 197,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "initial_price",
+          "size": null,
+          "type": "Float"
+        },
+        {
+          "distinct_count_optimizer": 100,
+          "name": "quantity",
+          "size": null,
+          "type": "Integer"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "reserve_price",
+          "size": null,
+          "type": "Float"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "buy_now",
+          "size": null,
+          "type": "Float"
+        },
+        {
+          "distinct_count_optimizer": 100,
+          "name": "nb_of_bids",
+          "size": null,
+          "type": "Integer"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "max_bid",
+          "size": null,
+          "type": "Float"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "start_date",
+          "size": null,
+          "type": "Date"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "end_date",
+          "size": null,
+          "type": "Date"
+        }
+      ],
+      "count_optimizer_nose": 20000,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "buy_now": "buy_now",
+        "category_id": "category_id",
+        "description": "description",
+        "end_date": "end_date",
+        "id": "id",
+        "initial_price": "initial_price",
+        "max_bid": "max_bid",
+        "name": "name",
+        "nb_of_bids": "nb_of_bids",
+        "quantity": "quantity",
+        "reserve_price": "reserve_price",
+        "seller_id": "seller_id",
+        "start_date": "start_date"
+      },
+      "source_table": "rubis_full.items",
+      "unmapped_source_columns": []
+    },
+    "regions": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "name",
+          "size": 25,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": 1,
+          "name": "dummy",
+          "size": null,
+          "type": "Integer"
+        }
+      ],
+      "count_optimizer_nose": 5,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "dummy": "dummy",
+        "id": "id",
+        "name": "name"
+      },
+      "source_table": "rubis_full.regions",
+      "unmapped_source_columns": []
+    },
+    "users": {
+      "attributes": [
+        {
+          "distinct_count_optimizer": null,
+          "name": "id",
+          "size": null,
+          "type": "ID"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "firstname",
+          "size": 6,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "lastname",
+          "size": 7,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "nickname",
+          "size": 12,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "password",
+          "size": 15,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "email",
+          "size": 23,
+          "type": "String"
+        },
+        {
+          "distinct_count_optimizer": 50,
+          "name": "rating",
+          "size": null,
+          "type": "Integer"
+        },
+        {
+          "distinct_count_optimizer": 10000,
+          "name": "balance",
+          "size": null,
+          "type": "Float"
+        },
+        {
+          "distinct_count_optimizer": null,
+          "name": "creation_date",
+          "size": null,
+          "type": "Date"
+        }
+      ],
+      "count_optimizer_nose": 2000,
+      "key": [
+        "id"
+      ],
+      "source_columns": {
+        "balance": "balance",
+        "creation_date": "creation_date",
+        "email": "email",
+        "firstname": "firstname",
+        "id": "id",
+        "lastname": "lastname",
+        "nickname": "nickname",
+        "password": "password",
+        "rating": "rating",
+        "region_id": "region_id"
+      },
+      "source_table": "rubis_full.users",
+      "unmapped_source_columns": []
+    }
+  },
+  "nose_commit": "d275634d99069bfd88a6c3ac51020138bc130dd4",
+  "problems": [],
+  "relationships": [
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "region_id",
+      "from": "users",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "users",
+      "name": "region",
+      "optionality_verified_in": "E4",
+      "to": "regions",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "seller_id",
+      "from": "items",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "items_sold",
+      "name": "seller",
+      "optionality_verified_in": "E4",
+      "to": "users",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "category_id",
+      "from": "items",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "items",
+      "name": "category",
+      "optionality_verified_in": "E4",
+      "to": "categories",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "user_id",
+      "from": "bids",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "bids",
+      "name": "user",
+      "optionality_verified_in": "E4",
+      "to": "users",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "item_id",
+      "from": "bids",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "bids",
+      "name": "item",
+      "optionality_verified_in": "E4",
+      "to": "items",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "from_user_id",
+      "from": "comments",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "comments_sent",
+      "name": "from_user",
+      "optionality_verified_in": "E4",
+      "to": "users",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "to_user_id",
+      "from": "comments",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "comments_received",
+      "name": "to_user",
+      "optionality_verified_in": "E4",
+      "to": "users",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "item_id",
+      "from": "comments",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "comments",
+      "name": "item",
+      "optionality_verified_in": "E4",
+      "to": "items",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "buyer_id",
+      "from": "buynow",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "bought_now",
+      "name": "buyer",
+      "optionality_verified_in": "E4",
+      "to": "users",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    },
+    {
+      "cardinality": "N:1",
+      "fk_attribute": "item_id",
+      "from": "buynow",
+      "from_side": {
+        "declared": "HasOne (NoSE): cada instância de origem tem exatamente um alvo",
+        "max": 1,
+        "min": 1
+      },
+      "inverse": "bought_now",
+      "name": "item",
+      "optionality_verified_in": "E4",
+      "to": "items",
+      "to_side": {
+        "declared": "lado inverso: zero ou mais",
+        "max": "N",
+        "min": 0
+      }
+    }
+  ],
+  "source_ddl": "system_schema.columns de rubis_full",
+  "source_model": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/reused/inputs/historical_sources/models/rubis.rb",
+  "source_model_sha256": "19bce54ed0c66dbdf6b659cb363e13f4b655663c689987df0aac0b268ac5c880"
+}

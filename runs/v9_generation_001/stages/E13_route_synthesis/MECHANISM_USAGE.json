@@ -1,0 +1,47 @@
+{
+  "access_profile": {
+    "C_content_changes": true,
+    "C_physical_changes": false,
+    "C_size": 24,
+    "H_changes": false,
+    "P_size": 57,
+    "level": "apenas metadados/especificações",
+    "output_changes": false
+  },
+  "relationships": {
+    "C_content_changes": true,
+    "C_physical_changes": false,
+    "C_size": 24,
+    "H_changes": false,
+    "P_size": 55,
+    "level": "apenas metadados/especificações",
+    "output_changes": false
+  },
+  "sharedness": {
+    "C_content_changes": true,
+    "C_physical_changes": false,
+    "C_size": 24,
+    "H_changes": true,
+    "P_size": 53,
+    "level": "composição H",
+    "output_changes": false
+  },
+  "support_sharing": {
+    "C_content_changes": true,
+    "C_physical_changes": true,
+    "C_size": 20,
+    "H_changes": false,
+    "P_size": 46,
+    "level": "estrutura física de C",
+    "output_changes": true
+  },
+  "write_exposure": {
+    "C_content_changes": true,
+    "C_physical_changes": true,
+    "C_size": 22,
+    "H_changes": true,
+    "P_size": 55,
+    "level": "estrutura física de C",
+    "output_changes": true
+  }
+}

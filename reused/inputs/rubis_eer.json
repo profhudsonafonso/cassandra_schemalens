@@ -1,0 +1,103 @@
+{
+  "cardinalities": {
+    "optimizer": {
+      "bids": 200000,
+      "buynow": 40000,
+      "categories": 50,
+      "comments": 100000,
+      "items": 20000,
+      "regions": 5,
+      "users": 2000
+    },
+    "physical": {
+      "bids": 20000000,
+      "buynow": 2000000,
+      "categories": 500,
+      "comments": 10000000,
+      "items": 2000000,
+      "regions": 50,
+      "users": 200000
+    }
+  },
+  "entities": [
+    "categories",
+    "regions",
+    "users",
+    "items",
+    "bids",
+    "comments",
+    "buynow"
+  ],
+  "relationships": [
+    {
+      "from": "users",
+      "name": "region",
+      "to": "regions"
+    },
+    {
+      "from": "items",
+      "name": "seller",
+      "to": "users"
+    },
+    {
+      "from": "items",
+      "name": "category",
+      "to": "categories"
+    },
+    {
+      "from": "bids",
+      "name": "user",
+      "to": "users"
+    },
+    {
+      "from": "bids",
+      "name": "item",
+      "to": "items"
+    },
+    {
+      "from": "comments",
+      "name": "from_user",
+      "to": "users"
+    },
+    {
+      "from": "comments",
+      "name": "to_user",
+      "to": "users"
+    },
+    {
+      "from": "comments",
+      "name": "item",
+      "to": "items"
+    },
+    {
+      "from": "buynow",
+      "name": "buyer",
+      "to": "users"
+    },
+    {
+      "from": "buynow",
+      "name": "item",
+      "to": "items"
+    }
+  ],
+  "update_ownership": {
+    "bids": [
+      "StoreBid"
+    ],
+    "buynow": [
+      "StoreBuyNow"
+    ],
+    "comments": [
+      "StoreComment"
+    ],
+    "items": [
+      "RegisterItem",
+      "StoreBuyNow",
+      "StoreBid"
+    ],
+    "users": [
+      "RegisterUser",
+      "StoreComment"
+    ]
+  }
+}

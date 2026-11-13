@@ -1,0 +1,2648 @@
+{
+  "bidding": {
+    "1": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "2": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "3": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "4": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "user.nickname"
+          ]
+        }
+      }
+    },
+    "5": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "6": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "7": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 51,
+          "rows_read_bound": 25,
+          "volatile_proj": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ]
+        },
+        "C3": {
+          "eq_on_key": false,
+          "kind": "read",
+          "volatile_copies": 2,
+          "volatile_proj": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ],
+          "volatile_update_ratio": 0.23463
+        }
+      }
+    },
+    "8": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "9": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "10": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.region_id"
+          ]
+        }
+      }
+    },
+    "11": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "12": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "13": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "14": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "15": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "16": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.id",
+            "items.name"
+          ]
+        }
+      }
+    },
+    "17": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "18": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "19": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "20": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.end_date",
+            "items.id",
+            "items.name",
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "21": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "22": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.category_id",
+            "items.end_date"
+          ]
+        }
+      }
+    },
+    "23": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "24": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "25": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "26": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "27": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "28": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "29": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "30": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "31": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "from_user.nickname"
+          ]
+        }
+      }
+    },
+    "32": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "33": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "34": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 1
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.end_date",
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "35": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 2
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "seller.region_id"
+          ]
+        }
+      }
+    },
+    "36": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    }
+  },
+  "browsing": {
+    "1": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "2": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "3": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "4": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "user.nickname"
+          ]
+        }
+      }
+    },
+    "5": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "6": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "7": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "8": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "9": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "10": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.region_id"
+          ]
+        }
+      }
+    },
+    "11": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "12": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "13": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "14": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "15": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "16": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.id",
+            "items.name"
+          ]
+        }
+      }
+    },
+    "17": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "18": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "19": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "20": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.end_date",
+            "items.id",
+            "items.name",
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "21": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "22": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.category_id",
+            "items.end_date"
+          ]
+        }
+      }
+    },
+    "23": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "24": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "25": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "26": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "27": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "28": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "29": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "30": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "31": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "from_user.nickname"
+          ]
+        }
+      }
+    },
+    "32": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "33": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "34": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 1
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.end_date",
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "35": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 2
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "seller.region_id"
+          ]
+        }
+      }
+    },
+    "36": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    }
+  },
+  "update100x": {
+    "1": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "2": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "3": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "4": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "user.nickname"
+          ]
+        }
+      }
+    },
+    "5": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "6": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "7": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 51,
+          "rows_read_bound": 25,
+          "volatile_proj": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ]
+        },
+        "C3": {
+          "eq_on_key": false,
+          "kind": "read",
+          "volatile_copies": 2,
+          "volatile_proj": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ],
+          "volatile_update_ratio": 23.462986
+        }
+      }
+    },
+    "8": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "9": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "10": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.region_id"
+          ]
+        }
+      }
+    },
+    "11": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "12": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "13": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "14": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "15": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "16": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.id",
+            "items.name"
+          ]
+        }
+      }
+    },
+    "17": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "18": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "19": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "20": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.end_date",
+            "items.id",
+            "items.name",
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "21": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "22": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.category_id",
+            "items.end_date"
+          ]
+        }
+      }
+    },
+    "23": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "24": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "25": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "26": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "27": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "28": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "29": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "30": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "31": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "from_user.nickname"
+          ]
+        }
+      }
+    },
+    "32": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "33": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "34": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 1
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.end_date",
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "35": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 2
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "seller.region_id"
+          ]
+        }
+      }
+    },
+    "36": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    }
+  },
+  "update10x": {
+    "1": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "2": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "3": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "4": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "user.nickname"
+          ]
+        }
+      }
+    },
+    "5": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "6": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "7": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 51,
+          "rows_read_bound": 25,
+          "volatile_proj": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ]
+        },
+        "C3": {
+          "eq_on_key": false,
+          "kind": "read",
+          "volatile_copies": 2,
+          "volatile_proj": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ],
+          "volatile_update_ratio": 2.346299
+        }
+      }
+    },
+    "8": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "9": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "10": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.region_id"
+          ]
+        }
+      }
+    },
+    "11": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "12": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "13": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "14": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "15": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "16": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.id",
+            "items.name"
+          ]
+        }
+      }
+    },
+    "17": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "18": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "19": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 3
+        }
+      }
+    },
+    "20": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.end_date",
+            "items.id",
+            "items.name",
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "21": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "22": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "items.category_id",
+            "items.end_date"
+          ]
+        }
+      }
+    },
+    "23": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "24": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 7
+        }
+      }
+    },
+    "25": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "26": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "27": {
+      "DSR": 0.8889,
+      "active": [
+        "C0"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        }
+      }
+    },
+    "28": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "kind": "write"
+        },
+        "C6": {
+          "kind": "write",
+          "missing_maintenance_keys": [
+            "users.nickname"
+          ]
+        }
+      }
+    },
+    "29": {
+      "DSR": 0.7778,
+      "active": [
+        "C0",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C0": {
+          "eq_on_key": true,
+          "kind": "read",
+          "path_len": 0
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 8
+        }
+      }
+    },
+    "30": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C2",
+        "C5"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C2": {
+          "eq_on_key": false,
+          "kind": "read",
+          "proj_bytes": 146,
+          "rows_read_bound": 25,
+          "volatile_proj": []
+        },
+        "C5": {
+          "kind": "read",
+          "sharedness": 2
+        }
+      }
+    },
+    "31": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "from_user.nickname"
+          ]
+        }
+      }
+    },
+    "32": {
+      "DSR": 0.7778,
+      "active": [
+        "C1",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "33": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    },
+    "34": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 1
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "item.end_date",
+            "item.id",
+            "item.name"
+          ]
+        }
+      }
+    },
+    "35": {
+      "DSR": 0.6667,
+      "active": [
+        "C1",
+        "C4",
+        "C6"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        },
+        "C4": {
+          "kind": "read",
+          "reverse_hops": 2
+        },
+        "C6": {
+          "kind": "read",
+          "support_attrs": [
+            "seller.region_id"
+          ]
+        }
+      }
+    },
+    "36": {
+      "DSR": 0.8889,
+      "active": [
+        "C1"
+      ],
+      "decisive_terms": {
+        "C1": {
+          "eq_on_key": false,
+          "kind": "read"
+        }
+      }
+    }
+  }
+}

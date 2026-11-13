@@ -1,0 +1,462 @@
+{
+  "commit": "d275634d99069bfd88a6c3ac51020138bc130dd4",
+  "groups": [
+    "BrowseCategories",
+    "ViewBidHistory",
+    "ViewItem",
+    "SearchItemsByCategory",
+    "ViewUserInfo",
+    "RegisterItem",
+    "RegisterUser",
+    "BuyNow",
+    "StoreBuyNow",
+    "PutBid",
+    "StoreBid",
+    "PutComment",
+    "StoreComment",
+    "AboutMe",
+    "SearchItemsByRegion",
+    "BrowseRegions"
+  ],
+  "source_sha256": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371",
+  "source_url": "https://raw.githubusercontent.com/michaelmior/NoSE/d275634d99069bfd88a6c3ac51020138bc130dd4/workloads/rubis.rb",
+  "statements": [
+    {
+      "entities": [
+        "users",
+        "regions"
+      ],
+      "operation_type": "read",
+      "request_group": "BrowseCategories",
+      "semantic": "user/region equality",
+      "statement_id": 1
+    },
+    {
+      "entities": [
+        "categories"
+      ],
+      "operation_type": "read",
+      "request_group": "BrowseCategories",
+      "semantic": "dummy enumeration",
+      "statement_id": 2
+    },
+    {
+      "entities": [
+        "items",
+        "bids"
+      ],
+      "operation_type": "read",
+      "request_group": "ViewBidHistory",
+      "semantic": "item equality + date order",
+      "statement_id": 3
+    },
+    {
+      "entities": [
+        "users",
+        "bids",
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "ViewBidHistory",
+      "semantic": "item equality + date order",
+      "statement_id": 4
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "ViewItem",
+      "semantic": "item equality",
+      "statement_id": 5
+    },
+    {
+      "entities": [
+        "items",
+        "bids"
+      ],
+      "operation_type": "read",
+      "request_group": "ViewItem",
+      "semantic": "item equality",
+      "statement_id": 6
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "SearchItemsByCategory",
+      "semantic": "category equality + end range + limit",
+      "statement_id": 7
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "read",
+      "request_group": "ViewUserInfo",
+      "semantic": "user equality",
+      "statement_id": 8
+    },
+    {
+      "entities": [
+        "comments"
+      ],
+      "operation_type": "read",
+      "request_group": "ViewUserInfo",
+      "semantic": "recipient equality",
+      "statement_id": 9
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "write",
+      "request_group": "RegisterItem",
+      "semantic": "insert + category/seller edges",
+      "statement_id": 10
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "write",
+      "request_group": "RegisterUser",
+      "semantic": "insert + region edge",
+      "statement_id": 11
+    },
+    {
+      "entities": [
+        "users",
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "BuyNow",
+      "semantic": "user/item equality",
+      "statement_id": 12
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "BuyNow",
+      "semantic": "item equality",
+      "statement_id": 13
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "StoreBuyNow",
+      "semantic": "item equality",
+      "statement_id": 14
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "write",
+      "request_group": "StoreBuyNow",
+      "semantic": "item update",
+      "statement_id": 15
+    },
+    {
+      "entities": [
+        "buynow"
+      ],
+      "operation_type": "write",
+      "request_group": "StoreBuyNow",
+      "semantic": "insert + item/buyer edges",
+      "statement_id": 16
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "read",
+      "request_group": "PutBid",
+      "semantic": "user equality",
+      "statement_id": 17
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "PutBid",
+      "semantic": "item equality",
+      "statement_id": 18
+    },
+    {
+      "entities": [
+        "bids"
+      ],
+      "operation_type": "read",
+      "request_group": "PutBid",
+      "semantic": "item equality + bid order + limit",
+      "statement_id": 19
+    },
+    {
+      "entities": [
+        "bids"
+      ],
+      "operation_type": "write",
+      "request_group": "StoreBid",
+      "semantic": "insert + item/user edges",
+      "statement_id": 20
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "StoreBid",
+      "semantic": "item equality",
+      "statement_id": 21
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "write",
+      "request_group": "StoreBid",
+      "semantic": "item update",
+      "statement_id": 22
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "read",
+      "request_group": "PutComment",
+      "semantic": "user equality",
+      "statement_id": 23
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "PutComment",
+      "semantic": "item equality",
+      "statement_id": 24
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "read",
+      "request_group": "PutComment",
+      "semantic": "user equality",
+      "statement_id": 25
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "read",
+      "request_group": "StoreComment",
+      "semantic": "user equality",
+      "statement_id": 26
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "write",
+      "request_group": "StoreComment",
+      "semantic": "rating update",
+      "statement_id": 27
+    },
+    {
+      "entities": [
+        "comments"
+      ],
+      "operation_type": "write",
+      "request_group": "StoreComment",
+      "semantic": "insert + three edges",
+      "statement_id": 28
+    },
+    {
+      "entities": [
+        "users"
+      ],
+      "operation_type": "read",
+      "request_group": "AboutMe",
+      "semantic": "user equality",
+      "statement_id": 29
+    },
+    {
+      "entities": [
+        "comments"
+      ],
+      "operation_type": "read",
+      "request_group": "AboutMe",
+      "semantic": "user comments traversal",
+      "statement_id": 30
+    },
+    {
+      "entities": [
+        "users",
+        "comments"
+      ],
+      "operation_type": "read",
+      "request_group": "AboutMe",
+      "semantic": "comment equality",
+      "statement_id": 31
+    },
+    {
+      "entities": [
+        "buynow",
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "AboutMe",
+      "semantic": "buyer equality + date range",
+      "statement_id": 32
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "AboutMe",
+      "semantic": "seller equality + end range",
+      "statement_id": 33
+    },
+    {
+      "entities": [
+        "items",
+        "bids"
+      ],
+      "operation_type": "read",
+      "request_group": "AboutMe",
+      "semantic": "user equality + end range",
+      "statement_id": 34
+    },
+    {
+      "entities": [
+        "items"
+      ],
+      "operation_type": "read",
+      "request_group": "SearchItemsByRegion",
+      "semantic": "region/category equality + end range + limit",
+      "statement_id": 35
+    },
+    {
+      "entities": [
+        "regions"
+      ],
+      "operation_type": "read",
+      "request_group": "BrowseRegions",
+      "semantic": "dummy enumeration",
+      "statement_id": 36
+    }
+  ],
+  "weights": {
+    "AboutMe": [
+      0,
+      1.71,
+      1.71,
+      1.71
+    ],
+    "BrowseCategories": [
+      4.44,
+      7.65,
+      7.65,
+      7.65
+    ],
+    "BrowseRegions": [
+      3.21,
+      5.39,
+      5.39,
+      5.39
+    ],
+    "BuyNow": [
+      0,
+      1.16,
+      1.16,
+      1.16
+    ],
+    "PutBid": [
+      0,
+      5.4,
+      5.4,
+      5.4
+    ],
+    "PutComment": [
+      0,
+      0.46,
+      0.46,
+      0.46
+    ],
+    "RegisterItem": [
+      0,
+      0.53,
+      5.3,
+      53
+    ],
+    "RegisterUser": [
+      0,
+      1.07,
+      10.7,
+      107
+    ],
+    "SearchItemsByCategory": [
+      27.77,
+      15.94,
+      15.94,
+      15.94
+    ],
+    "SearchItemsByRegion": [
+      8.26,
+      6.34,
+      6.34,
+      6.34
+    ],
+    "StoreBid": [
+      0,
+      3.74,
+      37.4,
+      374
+    ],
+    "StoreBuyNow": [
+      0,
+      1.1,
+      11,
+      110
+    ],
+    "StoreComment": [
+      0,
+      0.45,
+      4.5,
+      45
+    ],
+    "ViewBidHistory": [
+      2.38,
+      1.54,
+      1.54,
+      1.54
+    ],
+    "ViewItem": [
+      22.95,
+      14.17,
+      14.17,
+      14.17
+    ],
+    "ViewUserInfo": [
+      4.41,
+      2.48,
+      2.48,
+      2.48
+    ]
+  },
+  "workloads": [
+    "browsing",
+    "bidding",
+    "update10x",
+    "update100x"
+  ]
+}

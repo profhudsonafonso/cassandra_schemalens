@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "computed_by_code": true,
+    "fields": 29,
+    "mixes_4": true,
+    "statements_36": true
+  },
+  "duration_s": 0.113,
+  "error": null,
+  "finished_at": "2026-11-12T11:48:04-0300",
+  "inputs": [],
+  "name": "Matriz de evidências",
+  "outputs": [
+    {
+      "bytes": 196171,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E09_evidence_matrix/EVIDENCE_MATRIX.json",
+      "sha256": "14b4399894b48bcd52ab884e0de5bf383cc48a013e1f44351090e35a8678a324"
+    }
+  ],
+  "phase": 2,
+  "run_id": "v9-generation-20261112-001",
+  "sha256": "4389e1d7a23d46ea7c68e37038f798cec250e97acee9be9b2028618d651005ec",
+  "stage": "E9",
+  "status": "PASS"
+}

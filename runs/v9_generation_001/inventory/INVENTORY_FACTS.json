@@ -1,0 +1,144 @@
+{
+  "C": 41,
+  "CCR": 0.5233,
+  "P": 86,
+  "P_architectures": [
+    "C0",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7"
+  ],
+  "P_statement_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    17,
+    18,
+    19,
+    21,
+    23,
+    24,
+    25,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "c3c5c7_tables": 22,
+  "eer_entities": 7,
+  "eer_relationships": 10,
+  "engine_rules_lines": [],
+  "extra_tables": [
+    "item_bid_shared",
+    "items_region_bounded",
+    "items_selective"
+  ],
+  "mechanisms_not_identifiable": [
+    "sharedness",
+    "update_exposure",
+    "access_profile",
+    "support_query_sharing",
+    "relationships"
+  ],
+  "norm_tables": 19,
+  "nose_commit": "d275634d99069bfd88a6c3ac51020138bc130dd4",
+  "qpg_commit": "314e1730175349176b40164086ecb3dc895e41b6",
+  "reads": 28,
+  "rubis_rb_sha256": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371",
+  "rubis_rb_sha256_registered_v8": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371",
+  "statements": 36,
+  "volatile": [
+    {
+      "attribute": "max_bid",
+      "code_lines": [
+        1126,
+        1129
+      ],
+      "in_items_selective": false,
+      "tables_holding_a_copy": [
+        "bids",
+        "items",
+        "items_by_category"
+      ],
+      "tables_updated": [
+        "items",
+        "items_by_category"
+      ],
+      "written_by_statements": [
+        22
+      ]
+    },
+    {
+      "attribute": "nb_of_bids",
+      "code_lines": [
+        1041,
+        1126,
+        1129
+      ],
+      "in_items_selective": false,
+      "tables_holding_a_copy": [
+        "items",
+        "items_by_category"
+      ],
+      "tables_updated": [
+        "items",
+        "items_by_category"
+      ],
+      "written_by_statements": [
+        15,
+        22
+      ]
+    },
+    {
+      "attribute": "quantity",
+      "code_lines": [
+        1041
+      ],
+      "in_items_selective": false,
+      "tables_holding_a_copy": [
+        "items"
+      ],
+      "tables_updated": [
+        "items"
+      ],
+      "written_by_statements": [
+        15
+      ]
+    },
+    {
+      "attribute": "rating",
+      "code_lines": [
+        1156
+      ],
+      "in_items_selective": false,
+      "tables_holding_a_copy": [
+        "comments",
+        "comments_by_to_user",
+        "users"
+      ],
+      "tables_updated": [
+        "users"
+      ],
+      "written_by_statements": [
+        27
+      ]
+    }
+  ],
+  "writes": 8
+}

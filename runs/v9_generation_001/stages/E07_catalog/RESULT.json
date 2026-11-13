@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "c9_reserved": true,
+    "families_C0_C8_complete": true,
+    "predicates_quantitative_and_valid": true
+  },
+  "duration_s": 0.004,
+  "error": null,
+  "finished_at": "2026-11-12T11:42:15-0300",
+  "inputs": [],
+  "name": "Catálogo com contratos",
+  "outputs": [
+    {
+      "bytes": 428,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E07_catalog/CATALOG_VALIDATION.json",
+      "sha256": "dd43288ec841da1ec79cab57a4ff828bcc19b46742ff14c97fca57c90245735e"
+    },
+    {
+      "bytes": 7270,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/schemalens_v9/catalog.yaml",
+      "sha256": "f3ebe3300ed69178cb54d14c4735f7f7b97c3ee795d3246a4f6a13704f5180e6"
+    }
+  ],
+  "phase": 1,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E7",
+  "status": "PASS"
+}

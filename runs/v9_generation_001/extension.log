@@ -1,0 +1,22 @@
+2026-11-12 16:35:42 aguardando passo 1
+2026-11-12 16:45:49 master iniciado (pid 27818)
+2026-11-12 18:41:23 aguardando passo 1
+2026-11-12 18:41:23 passo 2 (E22)
+{"stage": "E22", "status": "PASS", "checks": {"criteria": 8, "null_results": ["access_profile", "support_sharing", "relationships", "cost_selection"], "physical_schemas_measured": 5, "blocked": [], "agreement_all": true}, "error": null}
+2026-11-12 20:14:35 passo 3 (E23) tentativa 1
+{"stage": "E23", "status": "PASS", "checks": {"selected": ["H01", "H03"], "verification": {"H01": "79429/79429", "H03": "79429/79429", "NoSE": "79429/79429", "QPG": "79429/79429"}, "agreement": {"H01": "PASS", "NoSE": "PASS", "H03": "PASS", "QPG": "PASS"}, "cache_control_ok": true}, "error": null}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/schemalens_v9/acceptance_v9.py", line 204, in <module>
+    r = run()
+        ^^^^^
+  File "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/schemalens_v9/acceptance_v9.py", line 193, in run
+    neg = negative_tests(b)
+          ^^^^^^^^^^^^^^^^^
+  File "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/schemalens_v9/acceptance_v9.py", line 146, in negative_tests
+    target = next(u for u, t in bb["C"].items() for sup in bb["C"][sup_tab]["supersedes"]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/reports/V9_REPORT.md
+2026-11-13 08:05:34 fim

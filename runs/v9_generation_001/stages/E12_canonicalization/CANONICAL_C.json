@@ -1,0 +1,3836 @@
+{
+  "CCR": 0.578947,
+  "C_size": 24,
+  "P_size": 57,
+  "fusions": [
+    {
+      "absorbed": "P043",
+      "into": "P001",
+      "redundancy": 0.046,
+      "scope": [
+        "users",
+        [
+          "id"
+        ],
+        []
+      ]
+    },
+    {
+      "absorbed": "P042",
+      "into": "P003",
+      "redundancy": 0.029,
+      "scope": [
+        "items",
+        [
+          "id"
+        ],
+        []
+      ]
+    },
+    {
+      "absorbed": "P035",
+      "into": "P031",
+      "redundancy": 0.3478,
+      "scope": [
+        "items",
+        [
+          "id"
+        ],
+        []
+      ]
+    }
+  ],
+  "rho_max": 0.5,
+  "tables": [
+    {
+      "canonical_id": "C001",
+      "clustering": [],
+      "columns": [
+        "balance",
+        "creation_date",
+        "email",
+        "firstname",
+        "lastname",
+        "nickname",
+        "password",
+        "rating",
+        "region_id"
+      ],
+      "ddl": "CREATE TABLE users_base (id int, balance double, creation_date timestamp, email text, firstname text, lastname text, nickname text, password text, rating int, region_id int, PRIMARY KEY ((id)))",
+      "families": [
+        "C0",
+        "C5"
+      ],
+      "family": "C0",
+      "lookups": [],
+      "members": [
+        "P001",
+        "P011",
+        "P014",
+        "P017",
+        "P021",
+        "P023",
+        "P024",
+        "P025",
+        "P046",
+        "P055",
+        "P043"
+      ],
+      "name": "users_base",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          },
+          "browsing": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          },
+          "update100x": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          },
+          "update10x": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          }
+        },
+        "family": "C0",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 1
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 1
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 8
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 12
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 17
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 23
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 25
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 26
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 29
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 11
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 27
+        },
+        {
+          "evidence": {
+            "1": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "8": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "12": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "17": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "23": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "25": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "26": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            },
+            "29": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 8
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 8
+              }
+            }
+          },
+          "family": "C5",
+          "mixes": [
+            "bidding",
+            "browsing",
+            "update100x",
+            "update10x"
+          ],
+          "statement": [
+            1,
+            8,
+            12,
+            17,
+            23,
+            25,
+            26,
+            29
+          ]
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "40724255be7c",
+      "row_entity": "users",
+      "spec_id": "P001",
+      "supersedes": [
+        {
+          "family": "C1",
+          "statement": 1
+        },
+        {
+          "family": "C1",
+          "statement": 8
+        },
+        {
+          "family": "C1",
+          "statement": 12
+        },
+        {
+          "family": "C1",
+          "statement": 17
+        },
+        {
+          "family": "C1",
+          "statement": 23
+        },
+        {
+          "family": "C1",
+          "statement": 25
+        },
+        {
+          "family": "C1",
+          "statement": 26
+        },
+        {
+          "family": "C1",
+          "statement": 29
+        }
+      ]
+    },
+    {
+      "canonical_id": "C002",
+      "clustering": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "name"
+      ],
+      "ddl": "CREATE TABLE categories_by_dummy_3a576f (dummy int, id int, name text, PRIMARY KEY ((dummy), id)) WITH CLUSTERING ORDER BY (id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P002"
+      ],
+      "name": "categories_by_dummy_3a576f",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 2
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 2
+        }
+      ],
+      "partition": [
+        "dummy"
+      ],
+      "physical_id": "3a576f7e8027",
+      "row_entity": "categories",
+      "spec_id": "P002",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C003",
+      "clustering": [],
+      "columns": [
+        "buy_now",
+        "category_id",
+        "description",
+        "end_date",
+        "initial_price",
+        "max_bid",
+        "name",
+        "nb_of_bids",
+        "quantity",
+        "reserve_price",
+        "seller_id",
+        "start_date"
+      ],
+      "ddl": "CREATE TABLE items_base (id int, buy_now double, category_id int, description text, end_date timestamp, initial_price double, max_bid double, name text, nb_of_bids int, quantity int, reserve_price double, seller_id int, start_date timestamp, PRIMARY KEY ((id)))",
+      "families": [
+        "C0",
+        "C5"
+      ],
+      "family": "C0",
+      "lookups": [],
+      "members": [
+        "P003",
+        "P006",
+        "P015",
+        "P016",
+        "P018",
+        "P020",
+        "P022",
+        "P044",
+        "P047",
+        "P053",
+        "P042"
+      ],
+      "name": "items_base",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          },
+          "browsing": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          },
+          "update100x": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          },
+          "update10x": {
+            "eq_on_key": true,
+            "kind": "read",
+            "path_len": 0
+          }
+        },
+        "family": "C0",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 3
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 3
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 5
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 13
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 14
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 18
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 21
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "browsing": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update100x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            },
+            "update10x": {
+              "eq_on_key": true,
+              "kind": "read",
+              "path_len": 0
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 24
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 10
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 15
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 22
+        },
+        {
+          "evidence": {
+            "3": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            },
+            "5": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            },
+            "13": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            },
+            "14": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            },
+            "18": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            },
+            "21": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            },
+            "24": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 7
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 7
+              }
+            }
+          },
+          "family": "C5",
+          "mixes": [
+            "bidding",
+            "browsing",
+            "update100x",
+            "update10x"
+          ],
+          "statement": [
+            3,
+            5,
+            13,
+            14,
+            18,
+            21,
+            24
+          ]
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "16bbf5dcda53",
+      "row_entity": "items",
+      "spec_id": "P003",
+      "supersedes": [
+        {
+          "family": "C1",
+          "statement": 3
+        },
+        {
+          "family": "C1",
+          "statement": 5
+        },
+        {
+          "family": "C1",
+          "statement": 13
+        },
+        {
+          "family": "C1",
+          "statement": 14
+        },
+        {
+          "family": "C1",
+          "statement": 18
+        },
+        {
+          "family": "C1",
+          "statement": 21
+        },
+        {
+          "family": "C1",
+          "statement": 24
+        }
+      ]
+    },
+    {
+      "canonical_id": "C004",
+      "clustering": [
+        [
+          "date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "bid",
+        "qty",
+        "user.nickname",
+        "user_id"
+      ],
+      "ddl": "CREATE TABLE bids_by_item_id_2847dc (item_id int, date timestamp, id int, bid double, qty int, user__nickname text, user_id int, PRIMARY KEY ((item_id), date, id)) WITH CLUSTERING ORDER BY (date ASC, id ASC)",
+      "families": [
+        "C1",
+        "C5"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P004",
+        "P040"
+      ],
+      "name": "bids_by_item_id_2847dc",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 4
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 4
+        },
+        {
+          "evidence": {
+            "4": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 3
+              }
+            },
+            "6": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 3
+              }
+            },
+            "19": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 3
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 3
+              }
+            }
+          },
+          "family": "C5",
+          "mixes": [
+            "bidding",
+            "browsing",
+            "update100x",
+            "update10x"
+          ],
+          "statement": [
+            4,
+            6,
+            19
+          ]
+        }
+      ],
+      "partition": [
+        "item_id"
+      ],
+      "physical_id": "2847dc7157c3",
+      "row_entity": "bids",
+      "spec_id": "P004",
+      "supersedes": [
+        {
+          "family": "C1",
+          "statement": 4
+        },
+        {
+          "family": "C1",
+          "statement": 6
+        },
+        {
+          "family": "C1",
+          "statement": 19
+        }
+      ]
+    },
+    {
+      "canonical_id": "C005",
+      "clustering": [],
+      "columns": [
+        "nickname"
+      ],
+      "ddl": "CREATE TABLE users_nickname_dcd8 (id int, nickname text, PRIMARY KEY ((id)))",
+      "families": [
+        "C6"
+      ],
+      "family": "C6",
+      "lookups": [],
+      "members": [
+        "P005",
+        "P029",
+        "P052",
+        "P057"
+      ],
+      "name": "users_nickname_dcd8",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "read",
+            "support_attrs": [
+              "user.nickname"
+            ]
+          },
+          "browsing": {
+            "kind": "read",
+            "support_attrs": [
+              "user.nickname"
+            ]
+          },
+          "update100x": {
+            "kind": "read",
+            "support_attrs": [
+              "user.nickname"
+            ]
+          },
+          "update10x": {
+            "kind": "read",
+            "support_attrs": [
+              "user.nickname"
+            ]
+          }
+        },
+        "family": "C6",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 4
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "support_attrs": [
+                "user.nickname"
+              ]
+            },
+            "browsing": {
+              "kind": "read",
+              "support_attrs": [
+                "user.nickname"
+              ]
+            },
+            "update100x": {
+              "kind": "read",
+              "support_attrs": [
+                "user.nickname"
+              ]
+            },
+            "update10x": {
+              "kind": "read",
+              "support_attrs": [
+                "user.nickname"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 4
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "support_attrs": [
+                "from_user.nickname"
+              ]
+            },
+            "browsing": {
+              "kind": "read",
+              "support_attrs": [
+                "from_user.nickname"
+              ]
+            },
+            "update100x": {
+              "kind": "read",
+              "support_attrs": [
+                "from_user.nickname"
+              ]
+            },
+            "update10x": {
+              "kind": "read",
+              "support_attrs": [
+                "from_user.nickname"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 31
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            },
+            "browsing": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            },
+            "update100x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            },
+            "update10x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 20
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.nickname"
+              ]
+            },
+            "browsing": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.nickname"
+              ]
+            },
+            "update100x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.nickname"
+              ]
+            },
+            "update10x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.nickname"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 28
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "dcd838446052",
+      "row_entity": "users",
+      "spec_id": "P005",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C006",
+      "clustering": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "bid",
+        "date",
+        "qty"
+      ],
+      "ddl": "CREATE TABLE bids_by_item_id_2ca03c (item_id int, id int, bid double, date timestamp, qty int, PRIMARY KEY ((item_id), id)) WITH CLUSTERING ORDER BY (id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P007"
+      ],
+      "name": "bids_by_item_id_2ca03c",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 6
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 6
+        }
+      ],
+      "partition": [
+        "item_id"
+      ],
+      "physical_id": "2ca03c32f110",
+      "row_entity": "bids",
+      "spec_id": "P007",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C007",
+      "clustering": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "initial_price",
+        "max_bid",
+        "name",
+        "nb_of_bids"
+      ],
+      "ddl": "CREATE TABLE items_by_category_id_ef9d5a (category_id int, end_date timestamp, id int, initial_price double, max_bid double, name text, nb_of_bids int, PRIMARY KEY ((category_id), end_date, id)) WITH CLUSTERING ORDER BY (end_date ASC, id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P008"
+      ],
+      "name": "items_by_category_id_ef9d5a",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 7
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 7
+        }
+      ],
+      "partition": [
+        "category_id"
+      ],
+      "physical_id": "ef9d5ae1f1ff",
+      "row_entity": "items",
+      "spec_id": "P008",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C008",
+      "clustering": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [],
+      "ddl": "CREATE TABLE items_by_category_id_5fdc7a (category_id int, end_date timestamp, id int, PRIMARY KEY ((category_id), end_date, id)) WITH CLUSTERING ORDER BY (end_date ASC, id ASC)",
+      "families": [
+        "C2"
+      ],
+      "family": "C2",
+      "lookups": [
+        "initial_price",
+        "max_bid",
+        "name",
+        "nb_of_bids"
+      ],
+      "members": [
+        "P009"
+      ],
+      "name": "items_by_category_id_5fdc7a",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 51,
+            "rows_read_bound": 25,
+            "volatile_proj": [
+              "items.max_bid",
+              "items.nb_of_bids"
+            ]
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 51,
+            "rows_read_bound": 25,
+            "volatile_proj": [
+              "items.max_bid",
+              "items.nb_of_bids"
+            ]
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 51,
+            "rows_read_bound": 25,
+            "volatile_proj": [
+              "items.max_bid",
+              "items.nb_of_bids"
+            ]
+          }
+        },
+        "family": "C2",
+        "mixes": [
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 7
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 51,
+              "rows_read_bound": 25,
+              "volatile_proj": [
+                "items.max_bid",
+                "items.nb_of_bids"
+              ]
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 51,
+              "rows_read_bound": 25,
+              "volatile_proj": [
+                "items.max_bid",
+                "items.nb_of_bids"
+              ]
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 51,
+              "rows_read_bound": 25,
+              "volatile_proj": [
+                "items.max_bid",
+                "items.nb_of_bids"
+              ]
+            }
+          },
+          "family": "C2",
+          "mixes": [
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 7
+        }
+      ],
+      "partition": [
+        "category_id"
+      ],
+      "physical_id": "5fdc7aed6788",
+      "row_entity": "items",
+      "spec_id": "P009",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C009",
+      "clustering": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "initial_price",
+        "name"
+      ],
+      "ddl": "CREATE TABLE items_by_category_id_c67866 (category_id int, end_date timestamp, id int, initial_price double, name text, PRIMARY KEY ((category_id), end_date, id)) WITH CLUSTERING ORDER BY (end_date ASC, id ASC)",
+      "families": [
+        "C3"
+      ],
+      "family": "C3",
+      "lookups": [
+        "max_bid",
+        "nb_of_bids"
+      ],
+      "members": [
+        "P010"
+      ],
+      "name": "items_by_category_id_c67866",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read",
+            "volatile_copies": 2,
+            "volatile_proj": [
+              "items.max_bid",
+              "items.nb_of_bids"
+            ],
+            "volatile_update_ratio": 0.23463
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read",
+            "volatile_copies": 2,
+            "volatile_proj": [
+              "items.max_bid",
+              "items.nb_of_bids"
+            ],
+            "volatile_update_ratio": 23.462986
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read",
+            "volatile_copies": 2,
+            "volatile_proj": [
+              "items.max_bid",
+              "items.nb_of_bids"
+            ],
+            "volatile_update_ratio": 2.346299
+          }
+        },
+        "family": "C3",
+        "mixes": [
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 7
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read",
+              "volatile_copies": 2,
+              "volatile_proj": [
+                "items.max_bid",
+                "items.nb_of_bids"
+              ],
+              "volatile_update_ratio": 0.23463
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "volatile_copies": 2,
+              "volatile_proj": [
+                "items.max_bid",
+                "items.nb_of_bids"
+              ],
+              "volatile_update_ratio": 23.462986
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "volatile_copies": 2,
+              "volatile_proj": [
+                "items.max_bid",
+                "items.nb_of_bids"
+              ],
+              "volatile_update_ratio": 2.346299
+            }
+          },
+          "family": "C3",
+          "mixes": [
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 7
+        }
+      ],
+      "partition": [
+        "category_id"
+      ],
+      "physical_id": "c678669930ff",
+      "row_entity": "items",
+      "spec_id": "P010",
+      "supersedes": [
+        {
+          "attributes": [
+            "items.max_bid",
+            "items.nb_of_bids"
+          ],
+          "family": "C1",
+          "statement": 7
+        }
+      ]
+    },
+    {
+      "canonical_id": "C010",
+      "clustering": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "comment",
+        "date",
+        "rating"
+      ],
+      "ddl": "CREATE TABLE comments_by_to_user_id_c51248 (to_user_id int, id int, comment text, date timestamp, rating int, PRIMARY KEY ((to_user_id), id)) WITH CLUSTERING ORDER BY (id ASC)",
+      "families": [
+        "C1",
+        "C5"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P012",
+        "P026",
+        "P041"
+      ],
+      "name": "comments_by_to_user_id_c51248",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 9
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 9
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 30
+        },
+        {
+          "evidence": {
+            "9": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 2
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 2
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 2
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 2
+              }
+            },
+            "30": {
+              "bidding": {
+                "kind": "read",
+                "sharedness": 2
+              },
+              "browsing": {
+                "kind": "read",
+                "sharedness": 2
+              },
+              "update100x": {
+                "kind": "read",
+                "sharedness": 2
+              },
+              "update10x": {
+                "kind": "read",
+                "sharedness": 2
+              }
+            }
+          },
+          "family": "C5",
+          "mixes": [
+            "bidding",
+            "browsing",
+            "update100x",
+            "update10x"
+          ],
+          "statement": [
+            9,
+            30
+          ]
+        }
+      ],
+      "partition": [
+        "to_user_id"
+      ],
+      "physical_id": "c51248b15948",
+      "row_entity": "comments",
+      "spec_id": "P012",
+      "supersedes": [
+        {
+          "family": "C1",
+          "statement": 9
+        },
+        {
+          "family": "C1",
+          "statement": 30
+        }
+      ]
+    },
+    {
+      "canonical_id": "C011",
+      "clustering": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [],
+      "ddl": "CREATE TABLE comments_by_to_user_id_579efe (to_user_id int, id int, PRIMARY KEY ((to_user_id), id)) WITH CLUSTERING ORDER BY (id ASC)",
+      "families": [
+        "C2"
+      ],
+      "family": "C2",
+      "lookups": [
+        "comment",
+        "date",
+        "rating"
+      ],
+      "members": [
+        "P013",
+        "P027"
+      ],
+      "name": "comments_by_to_user_id_579efe",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 146,
+            "rows_read_bound": 25,
+            "volatile_proj": []
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 146,
+            "rows_read_bound": 25,
+            "volatile_proj": []
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 146,
+            "rows_read_bound": 25,
+            "volatile_proj": []
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read",
+            "proj_bytes": 146,
+            "rows_read_bound": 25,
+            "volatile_proj": []
+          }
+        },
+        "family": "C2",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 9
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            }
+          },
+          "family": "C2",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 9
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read",
+              "proj_bytes": 146,
+              "rows_read_bound": 25,
+              "volatile_proj": []
+            }
+          },
+          "family": "C2",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 30
+        }
+      ],
+      "partition": [
+        "to_user_id"
+      ],
+      "physical_id": "579efefd05c2",
+      "row_entity": "comments",
+      "spec_id": "P013",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C012",
+      "clustering": [
+        [
+          "bid",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "date",
+        "qty"
+      ],
+      "ddl": "CREATE TABLE bids_by_item_id_3c110b (item_id int, bid double, id int, date timestamp, qty int, PRIMARY KEY ((item_id), bid, id)) WITH CLUSTERING ORDER BY (bid ASC, id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P019"
+      ],
+      "name": "bids_by_item_id_3c110b",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 19
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 19
+        }
+      ],
+      "partition": [
+        "item_id"
+      ],
+      "physical_id": "3c110b2ede36",
+      "row_entity": "bids",
+      "spec_id": "P019",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C013",
+      "clustering": [],
+      "columns": [
+        "from_user.nickname"
+      ],
+      "ddl": "CREATE TABLE comments_from_user__nickname_2425 (id int, from_user__nickname text, PRIMARY KEY ((id)))",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P028"
+      ],
+      "name": "comments_from_user__nickname_2425",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 31
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 31
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "2425314b5363",
+      "row_entity": "comments",
+      "spec_id": "P028",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C014",
+      "clustering": [
+        [
+          "date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "item.id",
+        "item.name",
+        "qty"
+      ],
+      "ddl": "CREATE TABLE buynow_by_buyer_id_498aaa (buyer_id int, date timestamp, id int, item__id int, item__name text, qty int, PRIMARY KEY ((buyer_id), date, id)) WITH CLUSTERING ORDER BY (date ASC, id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P030"
+      ],
+      "name": "buynow_by_buyer_id_498aaa",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 32
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 32
+        }
+      ],
+      "partition": [
+        "buyer_id"
+      ],
+      "physical_id": "498aaa7f9cf6",
+      "row_entity": "buynow",
+      "spec_id": "P030",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C015",
+      "clustering": [],
+      "columns": [
+        "end_date",
+        "name"
+      ],
+      "ddl": "CREATE TABLE items_end_date_name_b8ee (id int, end_date timestamp, name text, PRIMARY KEY ((id)))",
+      "families": [
+        "C6"
+      ],
+      "family": "C6",
+      "lookups": [],
+      "members": [
+        "P031",
+        "P049",
+        "P035",
+        "P051"
+      ],
+      "name": "items_end_date_name_b8ee",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "read",
+            "support_attrs": [
+              "item.id",
+              "item.name"
+            ]
+          },
+          "browsing": {
+            "kind": "read",
+            "support_attrs": [
+              "item.id",
+              "item.name"
+            ]
+          },
+          "update100x": {
+            "kind": "read",
+            "support_attrs": [
+              "item.id",
+              "item.name"
+            ]
+          },
+          "update10x": {
+            "kind": "read",
+            "support_attrs": [
+              "item.id",
+              "item.name"
+            ]
+          }
+        },
+        "family": "C6",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 32
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "support_attrs": [
+                "item.id",
+                "item.name"
+              ]
+            },
+            "browsing": {
+              "kind": "read",
+              "support_attrs": [
+                "item.id",
+                "item.name"
+              ]
+            },
+            "update100x": {
+              "kind": "read",
+              "support_attrs": [
+                "item.id",
+                "item.name"
+              ]
+            },
+            "update10x": {
+              "kind": "read",
+              "support_attrs": [
+                "item.id",
+                "item.name"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 32
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.id",
+                "items.name"
+              ]
+            },
+            "browsing": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.id",
+                "items.name"
+              ]
+            },
+            "update100x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.id",
+                "items.name"
+              ]
+            },
+            "update10x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.id",
+                "items.name"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 16
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "support_attrs": [
+                "item.end_date",
+                "item.id",
+                "item.name"
+              ]
+            },
+            "browsing": {
+              "kind": "read",
+              "support_attrs": [
+                "item.end_date",
+                "item.id",
+                "item.name"
+              ]
+            },
+            "update100x": {
+              "kind": "read",
+              "support_attrs": [
+                "item.end_date",
+                "item.id",
+                "item.name"
+              ]
+            },
+            "update10x": {
+              "kind": "read",
+              "support_attrs": [
+                "item.end_date",
+                "item.id",
+                "item.name"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 34
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            },
+            "browsing": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            },
+            "update100x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            },
+            "update10x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.end_date",
+                "items.id",
+                "items.name",
+                "users.nickname"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 20
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "b8ee551d315a",
+      "row_entity": "items",
+      "spec_id": "P031",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C016",
+      "clustering": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "name"
+      ],
+      "ddl": "CREATE TABLE items_by_seller_id_34858b (seller_id int, end_date timestamp, id int, name text, PRIMARY KEY ((seller_id), end_date, id)) WITH CLUSTERING ORDER BY (end_date ASC, id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P032"
+      ],
+      "name": "items_by_seller_id_34858b",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 33
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 33
+        }
+      ],
+      "partition": [
+        "seller_id"
+      ],
+      "physical_id": "34858b3bc209",
+      "row_entity": "items",
+      "spec_id": "P032",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C017",
+      "clustering": [
+        [
+          "item.end_date",
+          "asc"
+        ],
+        [
+          "item.id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "item.name"
+      ],
+      "ddl": "CREATE TABLE bids_by_user_id_56201c (user_id int, item__end_date timestamp, item__id int, item__name text, PRIMARY KEY ((user_id), item__end_date, item__id)) WITH CLUSTERING ORDER BY (item__end_date ASC, item__id ASC)",
+      "families": [
+        "C1",
+        "C4"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P033",
+        "P034"
+      ],
+      "name": "bids_by_user_id_56201c",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 34
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 34
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "reverse_hops": 1
+            },
+            "browsing": {
+              "kind": "read",
+              "reverse_hops": 1
+            },
+            "update100x": {
+              "kind": "read",
+              "reverse_hops": 1
+            },
+            "update10x": {
+              "kind": "read",
+              "reverse_hops": 1
+            }
+          },
+          "family": "C4",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 34
+        }
+      ],
+      "partition": [
+        "user_id"
+      ],
+      "physical_id": "56201ca9efd9",
+      "row_entity": "bids",
+      "spec_id": "P033",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C018",
+      "clustering": [
+        [
+          "end_date",
+          "asc"
+        ],
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "name"
+      ],
+      "ddl": "CREATE TABLE items_by_seller__region_id_category_id_99797b (seller__region_id int, category_id int, end_date timestamp, id int, name text, PRIMARY KEY ((seller__region_id, category_id), end_date, id)) WITH CLUSTERING ORDER BY (end_date ASC, id ASC)",
+      "families": [
+        "C1",
+        "C4"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P036",
+        "P037"
+      ],
+      "name": "items_by_seller__region_id_category_id_99797b",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 35
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 35
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "reverse_hops": 2
+            },
+            "browsing": {
+              "kind": "read",
+              "reverse_hops": 2
+            },
+            "update100x": {
+              "kind": "read",
+              "reverse_hops": 2
+            },
+            "update10x": {
+              "kind": "read",
+              "reverse_hops": 2
+            }
+          },
+          "family": "C4",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 35
+        }
+      ],
+      "partition": [
+        "seller.region_id",
+        "category_id"
+      ],
+      "physical_id": "99797bc0bb18",
+      "row_entity": "items",
+      "spec_id": "P036",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C019",
+      "clustering": [],
+      "columns": [
+        "region_id"
+      ],
+      "ddl": "CREATE TABLE users_region_id_6f78 (id int, region_id int, PRIMARY KEY ((id)))",
+      "families": [
+        "C6"
+      ],
+      "family": "C6",
+      "lookups": [],
+      "members": [
+        "P038",
+        "P045"
+      ],
+      "name": "users_region_id_6f78",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "read",
+            "support_attrs": [
+              "seller.region_id"
+            ]
+          },
+          "browsing": {
+            "kind": "read",
+            "support_attrs": [
+              "seller.region_id"
+            ]
+          },
+          "update100x": {
+            "kind": "read",
+            "support_attrs": [
+              "seller.region_id"
+            ]
+          },
+          "update10x": {
+            "kind": "read",
+            "support_attrs": [
+              "seller.region_id"
+            ]
+          }
+        },
+        "family": "C6",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 35
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "read",
+              "support_attrs": [
+                "seller.region_id"
+              ]
+            },
+            "browsing": {
+              "kind": "read",
+              "support_attrs": [
+                "seller.region_id"
+              ]
+            },
+            "update100x": {
+              "kind": "read",
+              "support_attrs": [
+                "seller.region_id"
+              ]
+            },
+            "update10x": {
+              "kind": "read",
+              "support_attrs": [
+                "seller.region_id"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 35
+        },
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.region_id"
+              ]
+            },
+            "browsing": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.region_id"
+              ]
+            },
+            "update100x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.region_id"
+              ]
+            },
+            "update10x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "users.region_id"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 10
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "6f784f9ee4e9",
+      "row_entity": "users",
+      "spec_id": "P038",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C020",
+      "clustering": [
+        [
+          "id",
+          "asc"
+        ]
+      ],
+      "columns": [
+        "name"
+      ],
+      "ddl": "CREATE TABLE regions_by_dummy_05c2a3 (dummy int, id int, name text, PRIMARY KEY ((dummy), id)) WITH CLUSTERING ORDER BY (id ASC)",
+      "families": [
+        "C1"
+      ],
+      "family": "C1",
+      "lookups": [],
+      "members": [
+        "P039"
+      ],
+      "name": "regions_by_dummy_05c2a3",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "browsing": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update100x": {
+            "eq_on_key": false,
+            "kind": "read"
+          },
+          "update10x": {
+            "eq_on_key": false,
+            "kind": "read"
+          }
+        },
+        "family": "C1",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 36
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "browsing": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update100x": {
+              "eq_on_key": false,
+              "kind": "read"
+            },
+            "update10x": {
+              "eq_on_key": false,
+              "kind": "read"
+            }
+          },
+          "family": "C1",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 36
+        }
+      ],
+      "partition": [
+        "dummy"
+      ],
+      "physical_id": "05c2a35cd3d6",
+      "row_entity": "regions",
+      "spec_id": "P039",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C021",
+      "clustering": [],
+      "columns": [
+        "buyer_id",
+        "date",
+        "item_id",
+        "qty"
+      ],
+      "ddl": "CREATE TABLE buynow_base (id int, buyer_id int, date timestamp, item_id int, qty int, PRIMARY KEY ((id)))",
+      "families": [
+        "C0"
+      ],
+      "family": "C0",
+      "lookups": [],
+      "members": [
+        "P048"
+      ],
+      "name": "buynow_base",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "write"
+          },
+          "browsing": {
+            "kind": "write"
+          },
+          "update100x": {
+            "kind": "write"
+          },
+          "update10x": {
+            "kind": "write"
+          }
+        },
+        "family": "C0",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 16
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 16
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "f604996913dd",
+      "row_entity": "buynow",
+      "spec_id": "P048",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C022",
+      "clustering": [],
+      "columns": [
+        "bid",
+        "date",
+        "item_id",
+        "qty",
+        "user_id"
+      ],
+      "ddl": "CREATE TABLE bids_base (id int, bid double, date timestamp, item_id int, qty int, user_id int, PRIMARY KEY ((id)))",
+      "families": [
+        "C0"
+      ],
+      "family": "C0",
+      "lookups": [],
+      "members": [
+        "P050"
+      ],
+      "name": "bids_base",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "write"
+          },
+          "browsing": {
+            "kind": "write"
+          },
+          "update100x": {
+            "kind": "write"
+          },
+          "update10x": {
+            "kind": "write"
+          }
+        },
+        "family": "C0",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 20
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 20
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "bdd579852bb6",
+      "row_entity": "bids",
+      "spec_id": "P050",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C023",
+      "clustering": [],
+      "columns": [
+        "category_id",
+        "end_date"
+      ],
+      "ddl": "CREATE TABLE items_category_id_end_date_4ea0 (id int, category_id int, end_date timestamp, PRIMARY KEY ((id)))",
+      "families": [
+        "C6"
+      ],
+      "family": "C6",
+      "lookups": [],
+      "members": [
+        "P054"
+      ],
+      "name": "items_category_id_end_date_4ea0",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "write",
+            "missing_maintenance_keys": [
+              "items.category_id",
+              "items.end_date"
+            ]
+          },
+          "browsing": {
+            "kind": "write",
+            "missing_maintenance_keys": [
+              "items.category_id",
+              "items.end_date"
+            ]
+          },
+          "update100x": {
+            "kind": "write",
+            "missing_maintenance_keys": [
+              "items.category_id",
+              "items.end_date"
+            ]
+          },
+          "update10x": {
+            "kind": "write",
+            "missing_maintenance_keys": [
+              "items.category_id",
+              "items.end_date"
+            ]
+          }
+        },
+        "family": "C6",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 22
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.category_id",
+                "items.end_date"
+              ]
+            },
+            "browsing": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.category_id",
+                "items.end_date"
+              ]
+            },
+            "update100x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.category_id",
+                "items.end_date"
+              ]
+            },
+            "update10x": {
+              "kind": "write",
+              "missing_maintenance_keys": [
+                "items.category_id",
+                "items.end_date"
+              ]
+            }
+          },
+          "family": "C6",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 22
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "4ea027745b2e",
+      "row_entity": "items",
+      "spec_id": "P054",
+      "supersedes": []
+    },
+    {
+      "canonical_id": "C024",
+      "clustering": [],
+      "columns": [
+        "comment",
+        "date",
+        "from_user_id",
+        "item_id",
+        "rating",
+        "to_user_id"
+      ],
+      "ddl": "CREATE TABLE comments_base (id int, comment text, date timestamp, from_user_id int, item_id int, rating int, to_user_id int, PRIMARY KEY ((id)))",
+      "families": [
+        "C0"
+      ],
+      "family": "C0",
+      "lookups": [],
+      "members": [
+        "P056"
+      ],
+      "name": "comments_base",
+      "origin": {
+        "evidence": {
+          "bidding": {
+            "kind": "write"
+          },
+          "browsing": {
+            "kind": "write"
+          },
+          "update100x": {
+            "kind": "write"
+          },
+          "update10x": {
+            "kind": "write"
+          }
+        },
+        "family": "C0",
+        "mixes": [
+          "browsing",
+          "bidding",
+          "update10x",
+          "update100x"
+        ],
+        "statement": 28
+      },
+      "origin_all": [
+        {
+          "evidence": {
+            "bidding": {
+              "kind": "write"
+            },
+            "browsing": {
+              "kind": "write"
+            },
+            "update100x": {
+              "kind": "write"
+            },
+            "update10x": {
+              "kind": "write"
+            }
+          },
+          "family": "C0",
+          "mixes": [
+            "browsing",
+            "bidding",
+            "update10x",
+            "update100x"
+          ],
+          "statement": 28
+        }
+      ],
+      "partition": [
+        "id"
+      ],
+      "physical_id": "e65584003ec9",
+      "row_entity": "comments",
+      "spec_id": "P056",
+      "supersedes": []
+    }
+  ]
+}

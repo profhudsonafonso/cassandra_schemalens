@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "root_agrees_with_centrality": 33,
+    "root_per_statement": true,
+    "statements_36": true
+  },
+  "duration_s": 0.001,
+  "error": null,
+  "finished_at": "2026-11-12T11:48:04-0300",
+  "inputs": [],
+  "name": "Fragmentos e raízes",
+  "outputs": [
+    {
+      "bytes": 26207,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E08_fragments_roots/FRAGMENTS_ROOTS.json",
+      "sha256": "f36242ade0c459660ecae306846aff4ba29fb3e305ec37a6d5b07c6ad42f0559"
+    }
+  ],
+  "phase": 2,
+  "run_id": "v9-generation-20261112-001",
+  "sha256": "8af27cdf3950deffb65c4e4e84068e7e410916fafc56359354cd562affd51d9b",
+  "stage": "E8",
+  "status": "PASS"
+}

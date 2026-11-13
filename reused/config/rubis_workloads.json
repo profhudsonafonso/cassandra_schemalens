@@ -1,0 +1,7 @@
+{
+  "workloads": ["browsing", "bidding", "update10x", "update100x"],
+  "groups": ["BrowseCategories", "ViewBidHistory", "ViewItem", "SearchItemsByCategory", "ViewUserInfo", "RegisterItem", "RegisterUser", "BuyNow", "StoreBuyNow", "PutBid", "StoreBid", "PutComment", "StoreComment", "AboutMe", "SearchItemsByRegion", "BrowseRegions"],
+  "weights": {
+    "BrowseCategories": [4.44, 7.65, 7.65, 7.65], "ViewBidHistory": [2.38, 1.54, 1.54, 1.54], "ViewItem": [22.95, 14.17, 14.17, 14.17], "SearchItemsByCategory": [27.77, 15.94, 15.94, 15.94], "ViewUserInfo": [4.41, 2.48, 2.48, 2.48], "RegisterItem": [0, 0.53, 5.30, 53.00], "RegisterUser": [0, 1.07, 10.70, 107.00], "BuyNow": [0, 1.16, 1.16, 1.16], "StoreBuyNow": [0, 1.10, 11.00, 110.00], "PutBid": [0, 5.40, 5.40, 5.40], "StoreBid": [0, 3.74, 37.40, 374.00], "PutComment": [0, 0.46, 0.46, 0.46], "StoreComment": [0, 0.45, 4.50, 45.00], "AboutMe": [0, 1.71, 1.71, 1.71], "SearchItemsByRegion": [8.26, 6.34, 6.34, 6.34], "BrowseRegions": [3.21, 5.39, 5.39, 5.39]
+  }
+}

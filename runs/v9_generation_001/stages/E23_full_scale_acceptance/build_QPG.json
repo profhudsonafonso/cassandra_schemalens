@@ -1,0 +1,84 @@
+{
+  "created": "2026-11-13T02:56:54-0300",
+  "manifest_sha256": "1a27e7b536975681bea93e8701804ad85d0bacbc3cad50e1768ed7de4297bb2b",
+  "tables": {
+    "q15_2": {
+      "finished_at": "2026-11-13T03:25:53-0300",
+      "inserted": 10000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q16_2": {
+      "finished_at": "2026-11-13T03:28:36-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q17": {
+      "finished_at": "2026-11-13T03:40:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q18": {
+      "finished_at": "2026-11-13T05:51:59-0300",
+      "inserted": 20000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q19": {
+      "finished_at": "2026-11-13T03:40:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q1_7_9_14": {
+      "finished_at": "2026-11-13T05:52:13-0300",
+      "inserted": 200000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q2": {
+      "finished_at": "2026-11-13T05:52:13-0300",
+      "inserted": 500,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q20": {
+      "finished_at": "2026-11-13T05:52:13-0300",
+      "inserted": 50,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q3_10_11_13": {
+      "finished_at": "2026-11-13T03:40:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q4_2": {
+      "finished_at": "2026-11-13T05:51:59-0300",
+      "inserted": 20000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q5_12": {
+      "finished_at": "2026-11-13T05:51:59-0300",
+      "inserted": 20000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q6": {
+      "finished_at": "2026-11-13T03:40:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "q8": {
+      "finished_at": "2026-11-13T03:25:53-0300",
+      "inserted": 10000000,
+      "skipped": 0,
+      "status": "DONE"
+    }
+  }
+}

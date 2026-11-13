@@ -1,0 +1,3 @@
+{
+  "C0": "Entity-normalized baseline", "C1": "Direct query-materialized table", "C2": "Decomposed multi-table access", "C3": "Selectively normalized shared entity", "C4": "Reverse-access table", "C5": "Shared multi-query table", "C6": "Maintenance/SupportQuery table", "C7": "Relaxed/filter-assisted access", "C8": "Hybrid materialized/normalized design", "C9": "UNDEFINED_RESERVED"
+}

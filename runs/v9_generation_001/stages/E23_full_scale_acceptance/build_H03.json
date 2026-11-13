@@ -1,0 +1,99 @@
+{
+  "created": "2026-11-12T22:23:49-0300",
+  "fingerprint_after_tables": [
+    "bids_by_item_id_2847dc",
+    "bids_by_user_id_56201c",
+    "buynow_base",
+    "buynow_by_buyer_id_498aaa",
+    "categories_by_dummy_3a576f",
+    "comments_base",
+    "comments_by_to_user_id_c51248",
+    "items_base",
+    "items_by_category_id_5fdc7a",
+    "items_by_seller__region_id_category_id_99797b",
+    "items_by_seller_id_34858b",
+    "regions_by_dummy_05c2a3",
+    "users_base"
+  ],
+  "post_build_domain_fingerprint": "79da75352501bdb6919ed40bf6143f301fc2c1f3f248cdff3972feb9d9628efb",
+  "tables": {
+    "bids_by_item_id_2847dc": {
+      "finished_at": "2026-11-12T23:44:57-0300",
+      "inserted": 20000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "bids_by_user_id_56201c": {
+      "finished_at": "2026-11-12T23:44:57-0300",
+      "inserted": 20000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "buynow_base": {
+      "finished_at": "2026-11-13T00:17:47-0300",
+      "inserted": 2000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "buynow_by_buyer_id_498aaa": {
+      "finished_at": "2026-11-13T00:17:47-0300",
+      "inserted": 2000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "categories_by_dummy_3a576f": {
+      "finished_at": "2026-11-12T22:24:09-0300",
+      "inserted": 500,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "comments_base": {
+      "finished_at": "2026-11-13T00:12:47-0300",
+      "inserted": 10000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "comments_by_to_user_id_c51248": {
+      "finished_at": "2026-11-13T00:12:47-0300",
+      "inserted": 10000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "items_base": {
+      "finished_at": "2026-11-12T22:34:30-0300",
+      "inserted": 2000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "items_by_category_id_5fdc7a": {
+      "finished_at": "2026-11-12T22:34:30-0300",
+      "inserted": 2000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "items_by_seller__region_id_category_id_99797b": {
+      "finished_at": "2026-11-12T22:34:30-0300",
+      "inserted": 2000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "items_by_seller_id_34858b": {
+      "finished_at": "2026-11-12T22:34:30-0300",
+      "inserted": 2000000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "regions_by_dummy_05c2a3": {
+      "finished_at": "2026-11-13T00:17:47-0300",
+      "inserted": 50,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    },
+    "users_base": {
+      "finished_at": "2026-11-12T22:24:09-0300",
+      "inserted": 200000,
+      "skipped_null_key": 0,
+      "status": "DONE"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "all_total": 70400550,
+  "base_counts": {
+    "bids": 20000000,
+    "buynow": 2000000,
+    "categories": 500,
+    "comments": 10000000,
+    "items": 2000000,
+    "regions": 50,
+    "users": 200000
+  },
+  "base_total": 34200550,
+  "counted_at": "2026-11-12T11:17:41-0300",
+  "divergences": [],
+  "expected": {
+    "all_total": 70400550,
+    "base": {
+      "bids": 20000000,
+      "buynow": 2000000,
+      "categories": 500,
+      "comments": 10000000,
+      "items": 2000000,
+      "regions": 50,
+      "users": 200000
+    },
+    "base_total": 34200550,
+    "tables": 13
+  },
+  "keyspace": "rubis_full",
+  "method": "token-range split count(*) per table (read-only)",
+  "regenerated": false,
+  "seed_decision": "D-001 (inherited from V8): seed 42, not regenerated",
+  "table_count": 13,
+  "tables": {
+    "bids": 20000000,
+    "bids_by_item": 20000000,
+    "buynow": 2000000,
+    "buynow_by_buyer": 2000000,
+    "categories": 500,
+    "comments": 10000000,
+    "comments_by_to_user": 10000000,
+    "items": 2000000,
+    "items_by_category": 2000000,
+    "items_by_region": 2000000,
+    "regions": 50,
+    "users": 200000,
+    "users_by_region": 200000
+  }
+}

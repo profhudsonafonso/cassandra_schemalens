@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "entities_7": true,
+    "every_relationship_has_cardinality": true,
+    "matches_v8_relationship_list": true,
+    "no_mapping_problems": true,
+    "relationships_10": true
+  },
+  "duration_s": 0.18,
+  "error": null,
+  "finished_at": "2026-11-12T11:35:30-0300",
+  "inputs": [],
+  "name": "Esquema conceitual S (EER)",
+  "outputs": [
+    {
+      "bytes": 13537,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E03_conceptual_schema/CONCEPTUAL_SCHEMA.json",
+      "sha256": "1a325ca9ea70b8e90893109818b5f15befe7159b48b4ced9c3b2510c9c648a6c"
+    },
+    {
+      "bytes": 2239,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/reused/inputs/historical_sources/models/rubis.rb",
+      "sha256": "19bce54ed0c66dbdf6b659cb363e13f4b655663c689987df0aac0b268ac5c880"
+    }
+  ],
+  "phase": 1,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E3",
+  "status": "PASS"
+}

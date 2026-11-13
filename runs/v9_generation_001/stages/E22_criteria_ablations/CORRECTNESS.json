@@ -1,0 +1,32 @@
+{
+  "A01": {
+    "agree_oracle": 79429,
+    "agree_v8_reference": 79429,
+    "evaluations": 79429,
+    "first_mismatches": []
+  },
+  "A02": {
+    "agree_oracle": 79429,
+    "agree_v8_reference": 79429,
+    "evaluations": 79429,
+    "first_mismatches": []
+  },
+  "A03": {
+    "agree_oracle": 79429,
+    "agree_v8_reference": 79429,
+    "evaluations": 79429,
+    "first_mismatches": []
+  },
+  "A04": {
+    "agree_oracle": 79429,
+    "agree_v8_reference": 79429,
+    "evaluations": 79429,
+    "first_mismatches": []
+  },
+  "A05": {
+    "agree_oracle": 79429,
+    "agree_v8_reference": 79429,
+    "evaluations": 79429,
+    "first_mismatches": []
+  }
+}

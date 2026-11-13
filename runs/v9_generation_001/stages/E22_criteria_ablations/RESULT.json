@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "agreement_all": true,
+    "blocked": [],
+    "criteria": 8,
+    "null_results": [
+      "access_profile",
+      "support_sharing",
+      "relationships",
+      "cost_selection"
+    ],
+    "physical_schemas_measured": 5
+  },
+  "duration_s": 5591.93,
+  "error": null,
+  "finished_at": "2026-11-12T20:14:35-0300",
+  "inputs": [],
+  "name": "Ablações dos critérios",
+  "outputs": [
+    {
+      "bytes": 952328,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E22_criteria_ablations/ABLATIONS_ANALYTIC.json",
+      "sha256": "de6986119fe5a38835ed5dcf63f890ab2aad252824e0112c23782377ef2c711d"
+    },
+    {
+      "bytes": 14008,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E22_criteria_ablations/ABLATIONS_PHYSICAL.json",
+      "sha256": "23f1ddd731521e301ff3398299694bfeb0518fb0325c4d574cda8c9c24d3f499"
+    }
+  ],
+  "phase": 7,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E22",
+  "status": "PASS"
+}

@@ -1,0 +1,20 @@
+{
+  "H01": {
+    "agree_v8_full_reference": 79429,
+    "domain_state_restored": true,
+    "evaluations": 79429
+  },
+  "H03": {
+    "agree_v8_full_reference": 79429,
+    "domain_state_restored": true,
+    "evaluations": 79429
+  },
+  "NoSE": {
+    "agree_v8_full_reference": 79429,
+    "evaluations": 79429
+  },
+  "QPG": {
+    "agree_v8_full_reference": 79429,
+    "evaluations": 79429
+  }
+}

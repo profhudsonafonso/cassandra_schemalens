@@ -1,0 +1,84 @@
+{
+  "created": "2026-11-13T00:17:56-0300",
+  "manifest_sha256": "e1c4e0e1365d606b2ed530cdc1635a7f64c2746d6dda744ddd00534fd7711110",
+  "tables": {
+    "i1888493477": {
+      "finished_at": "2026-11-13T00:29:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i193173044": {
+      "finished_at": "2026-11-13T02:24:38-0300",
+      "inserted": 20000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i2337785568": {
+      "finished_at": "2026-11-13T00:29:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i2653317939": {
+      "finished_at": "2026-11-13T02:27:54-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i2906147889": {
+      "finished_at": "2026-11-13T02:28:09-0300",
+      "inserted": 200000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i3157175159": {
+      "finished_at": "2026-11-13T02:56:49-0300",
+      "inserted": 10000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i3392968797": {
+      "finished_at": "2026-11-13T00:29:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i3553045793": {
+      "finished_at": "2026-11-13T02:24:38-0300",
+      "inserted": 20000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i3563903410": {
+      "finished_at": "2026-11-13T02:24:38-0300",
+      "inserted": 20000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i3639792234": {
+      "finished_at": "2026-11-13T00:29:21-0300",
+      "inserted": 2000000,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i3722443462": {
+      "finished_at": "2026-11-13T02:56:49-0300",
+      "inserted": 500,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i590232953": {
+      "finished_at": "2026-11-13T02:56:50-0300",
+      "inserted": 50,
+      "skipped": 0,
+      "status": "DONE"
+    },
+    "i915430138": {
+      "finished_at": "2026-11-13T02:56:49-0300",
+      "inserted": 10000000,
+      "skipped": 0,
+      "status": "DONE"
+    }
+  }
+}

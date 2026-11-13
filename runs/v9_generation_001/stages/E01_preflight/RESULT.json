@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "cassandra_is_3_11_11": true,
+    "container_data_free_gb": 419.8,
+    "isolation_guard_ran": true,
+    "no_v9_keyspace_preexisting": true,
+    "node_up_normal": true,
+    "rubis_full_present": true
+  },
+  "duration_s": 10.968,
+  "error": null,
+  "finished_at": "2026-11-12T11:16:50-0300",
+  "inputs": [],
+  "isolation_at_check": {
+    "bulk_writers": [
+      "88177 /Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/.venv/bin/python -m methodology.tracker_012 --loop"
+    ],
+    "checked_at": "2026-11-12T11:16:50-0300",
+    "idle": false,
+    "pending_compactions": 0
+  },
+  "name": "Preflight do ambiente",
+  "outputs": [
+    {
+      "bytes": 4310,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E01_preflight/PREFLIGHT.json",
+      "sha256": "af1b58980eab7344a797f16fcfe855718f21bebaeb37ff5dd73909a433e02102"
+    }
+  ],
+  "phase": 0,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E1",
+  "status": "PASS"
+}

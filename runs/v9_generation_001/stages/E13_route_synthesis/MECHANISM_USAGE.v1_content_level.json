@@ -1,0 +1,27 @@
+{
+  "access_profile": {
+    "C_size": 24,
+    "P_size": 57,
+    "output_changes": true
+  },
+  "relationships": {
+    "C_size": 24,
+    "P_size": 55,
+    "output_changes": true
+  },
+  "sharedness": {
+    "C_size": 24,
+    "P_size": 53,
+    "output_changes": true
+  },
+  "support_sharing": {
+    "C_size": 20,
+    "P_size": 46,
+    "output_changes": true
+  },
+  "write_exposure": {
+    "C_size": 22,
+    "P_size": 55,
+    "output_changes": true
+  }
+}

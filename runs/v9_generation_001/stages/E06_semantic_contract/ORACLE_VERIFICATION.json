@@ -1,0 +1,175 @@
+{
+  "agreements": 397479,
+  "deployment": "AUTO_H_norm (V8-011, coorte)",
+  "first_mismatches": [],
+  "per_statement": {
+    "1": {
+      "agree": 12027,
+      "evaluated": 12027
+    },
+    "10": {
+      "agree": 5805,
+      "evaluated": 5805
+    },
+    "11": {
+      "agree": 11848,
+      "evaluated": 11848
+    },
+    "12": {
+      "agree": 1419,
+      "evaluated": 1419
+    },
+    "13": {
+      "agree": 1419,
+      "evaluated": 1419
+    },
+    "14": {
+      "agree": 12473,
+      "evaluated": 12473
+    },
+    "15": {
+      "agree": 12473,
+      "evaluated": 12473
+    },
+    "16": {
+      "agree": 12473,
+      "evaluated": 12473
+    },
+    "17": {
+      "agree": 6243,
+      "evaluated": 6243
+    },
+    "18": {
+      "agree": 6243,
+      "evaluated": 6243
+    },
+    "19": {
+      "agree": 6243,
+      "evaluated": 6243
+    },
+    "2": {
+      "agree": 12027,
+      "evaluated": 12027
+    },
+    "20": {
+      "agree": 42140,
+      "evaluated": 42140
+    },
+    "21": {
+      "agree": 42140,
+      "evaluated": 42140
+    },
+    "22": {
+      "agree": 42140,
+      "evaluated": 42140
+    },
+    "23": {
+      "agree": 521,
+      "evaluated": 521
+    },
+    "24": {
+      "agree": 521,
+      "evaluated": 521
+    },
+    "25": {
+      "agree": 521,
+      "evaluated": 521
+    },
+    "26": {
+      "agree": 4961,
+      "evaluated": 4961
+    },
+    "27": {
+      "agree": 4961,
+      "evaluated": 4961
+    },
+    "28": {
+      "agree": 4961,
+      "evaluated": 4961
+    },
+    "29": {
+      "agree": 1949,
+      "evaluated": 1949
+    },
+    "3": {
+      "agree": 3400,
+      "evaluated": 3400
+    },
+    "30": {
+      "agree": 1949,
+      "evaluated": 1949
+    },
+    "31": {
+      "agree": 1949,
+      "evaluated": 1949
+    },
+    "32": {
+      "agree": 1949,
+      "evaluated": 1949
+    },
+    "33": {
+      "agree": 1949,
+      "evaluated": 1949
+    },
+    "34": {
+      "agree": 1949,
+      "evaluated": 1949
+    },
+    "35": {
+      "agree": 13068,
+      "evaluated": 13068
+    },
+    "36": {
+      "agree": 8433,
+      "evaluated": 8433
+    },
+    "4": {
+      "agree": 3400,
+      "evaluated": 3400
+    },
+    "5": {
+      "agree": 32340,
+      "evaluated": 32340
+    },
+    "6": {
+      "agree": 32340,
+      "evaluated": 32340
+    },
+    "7": {
+      "agree": 37501,
+      "evaluated": 37501
+    },
+    "8": {
+      "agree": 5872,
+      "evaluated": 5872
+    },
+    "9": {
+      "agree": 5872,
+      "evaluated": 5872
+    }
+  },
+  "reference": "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/full_scale_matched_cohort/raw",
+  "requests": 200000,
+  "state_provenance": {
+    "closure_users_added": 14878,
+    "cohort_counts": {
+      "bids": 5690,
+      "buynow": 5300,
+      "comments": 6501,
+      "items": 5906,
+      "users": 5616
+    },
+    "cohort_keyspace": "rubis_v8_c008_auto_norm",
+    "state_counts": {
+      "bids": 5690,
+      "buynow": 5300,
+      "categories": 500,
+      "comments": 6501,
+      "items": 5906,
+      "regions": 50,
+      "users": 20494
+    }
+  },
+  "statement_evaluations": 397479,
+  "unresolved_contract_refs": []
+}

@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-11-13T09:16:21-0300",
+  "sources": {
+    "E1": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E10": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E11": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E12": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E13": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E14": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E15": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E16": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E17": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E18": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E19": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E2": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E20": {
+      "basis": "mediana de 8 medições SchemaLens na coorte da V8-012 (11.0 min cada) × (|H| = 5 + SL norm) + NoSE + QPG medidos na coorte da V8-012",
+      "files": [
+        "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/ablations/protocol",
+        "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/cohort_baselines/protocol"
+      ],
+      "minutes": 85.6,
+      "origin": "histórico V8"
+    },
+    "E21": {
+      "basis": "duração do E21 anterior",
+      "files": [],
+      "minutes": 0.0,
+      "origin": "medida na V9"
+    },
+    "E22": {
+      "basis": "5 esquemas de ablação: materialização + verificação (2.5 min cada, E18) + 10 min de nó ocioso + 6 medições × 10.8 min (mediana do E20)",
+      "files": [
+        "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E18_correctness/RESULT.json",
+        "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E20_benchmark_run1_two_blocks"
+      ],
+      "minutes": 87.0,
+      "origin": "medida na V9"
+    },
+    "E23": {
+      "basis": "V8-012: 2 construções completas de keyspace SchemaLens (uma por esquema de H) + verificação, carga de NoSE e QPG, medição fria de 4 esquemas",
+      "files": [
+        "/Users/hudsonbatista/Documents/rubis3_claude/experiments/rubis_cassandra/outputs/final_run_v8_completion_012/orchestration/STATE.json"
+      ],
+      "minutes": 962.9,
+      "origin": "histórico V8"
+    },
+    "E3": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E4": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E5": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E6": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E7": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E8": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "E9": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    },
+    "INV": {
+      "basis": "sem etapa equivalente com duração registrada na V8-012",
+      "minutes": null,
+      "origin": "sem estimativa"
+    }
+  }
+}

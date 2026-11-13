@@ -1,0 +1,319 @@
+{
+  "current": "E13",
+  "idle_wait": {
+    "last": {
+      "bulk_writers": [],
+      "checked_at": "2026-11-12T16:57:02-0300",
+      "idle": true,
+      "pending_compactions": 0
+    }
+  },
+  "incidents": [
+    {
+      "at": "2026-11-12T11:36:34-0300",
+      "text": "E6 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T12:29:27-0300",
+      "text": "E19 falhou: ModuleNotFoundError(\"No module named 'methodology'\")"
+    },
+    {
+      "at": "2026-11-12T12:55:46-0300",
+      "text": "H01: medição invalidada por carga concorrente; será refeita"
+    },
+    {
+      "at": "2026-11-12T12:55:46-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T14:23:15-0300",
+      "text": "H03: medição invalidada por carga concorrente; será refeita"
+    },
+    {
+      "at": "2026-11-12T14:23:15-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T14:52:43-0300",
+      "text": "QPG: medição invalidada por carga concorrente; será refeita"
+    },
+    {
+      "at": "2026-11-12T14:52:43-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T15:03:08-0300",
+      "text": "E20: tentativa 4 interrompida para aplicar D-V9-012; retomada a partir das medições aprovadas"
+    },
+    {
+      "at": "2026-11-12T15:31:06-0300",
+      "text": "E20 falhou: verificação reprovada"
+    },
+    {
+      "at": "2026-11-12T15:33:53-0300",
+      "text": "QPG recriado a partir de rubis_full e reverificado: oráculo 79429/79429"
+    },
+    {
+      "at": "2026-11-13T06:23:36-0300",
+      "text": "E23: medição fria de H01 invalidada; janela recomeçada"
+    }
+  ],
+  "invalidated_measurements": [
+    {
+      "at": "2026-11-12T12:55:46-0300",
+      "deployment": "H01"
+    },
+    {
+      "at": "2026-11-12T14:23:15-0300",
+      "deployment": "H03"
+    },
+    {
+      "at": "2026-11-12T14:52:43-0300",
+      "deployment": "QPG"
+    },
+    {
+      "at": "2026-11-13T06:23:36-0300",
+      "deployment": "E23:H01"
+    }
+  ],
+  "overall": "DONE",
+  "overall_note": "Passos 1, 2 e 3 concluídos",
+  "run_id": "v9-generation-20261112-001",
+  "stages": {
+    "E1": {
+      "duration_s": 10.968,
+      "error": null,
+      "finished_at": "2026-11-12T11:16:50-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:16:39-0300",
+      "status": "PASS"
+    },
+    "E10": {
+      "duration_s": 0.122,
+      "error": null,
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS"
+    },
+    "E11": {
+      "duration_s": 0.123,
+      "error": null,
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS"
+    },
+    "E12": {
+      "duration_s": 0.245,
+      "error": null,
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS"
+    },
+    "E13": {
+      "duration_s": 3.639,
+      "error": null,
+      "finished_at": "2026-11-13T08:29:01-0300",
+      "progress": null,
+      "started_at": "2026-11-13T08:28:58-0300",
+      "status": "PASS"
+    },
+    "E14": {
+      "duration_s": 55.891,
+      "error": null,
+      "finished_at": "2026-11-12T11:50:59-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:50:03-0300",
+      "status": "PASS"
+    },
+    "E15": {
+      "duration_s": 0.576,
+      "error": null,
+      "finished_at": "2026-11-12T11:53:08-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:53:07-0300",
+      "status": "PASS"
+    },
+    "E16": {
+      "approved": true,
+      "approved_note": "Parada 2 aprovada pelo usuário em 2026-11-12 (Fases 5 e 6)",
+      "duration_s": 0.003,
+      "error": null,
+      "finished_at": "2026-11-12T11:53:08-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:53:08-0300",
+      "status": "PASS",
+      "stop": "WAITING_APPROVAL"
+    },
+    "E17": {
+      "duration_s": 33.242,
+      "error": null,
+      "finished_at": "2026-11-12T12:16:19-0300",
+      "progress": {
+        "done": 4,
+        "text": "esquema 5 de 5 (H05)",
+        "total": 5
+      },
+      "started_at": "2026-11-12T12:15:46-0300",
+      "status": "PASS"
+    },
+    "E18": {
+      "duration_s": 737.355,
+      "error": null,
+      "finished_at": "2026-11-12T12:29:27-0300",
+      "progress": {
+        "done": 3,
+        "text": "H05: carga update100x (repetição 0)",
+        "total": 4
+      },
+      "started_at": "2026-11-12T12:17:09-0300",
+      "status": "PASS"
+    },
+    "E19": {
+      "duration_s": 366.743,
+      "error": null,
+      "finished_at": "2026-11-12T12:36:20-0300",
+      "progress": {
+        "done": 3,
+        "text": "QPG (recriado): carga update100x (repetição 0)",
+        "total": 4
+      },
+      "started_at": "2026-11-12T12:30:13-0300",
+      "status": "PASS"
+    },
+    "E2": {
+      "approved": true,
+      "approved_note": "Parada 1 aprovada pelo usuário em 2026-11-12; instrução 15 mantém a interpretação da V8 (D-V9-005)",
+      "duration_s": 45.627,
+      "error": null,
+      "finished_at": "2026-11-12T11:17:41-0300",
+      "progress": {
+        "done": 13000,
+        "text": "tabela 13 de 13 (users_by_region): faixa 512 de 512",
+        "total": 13000
+      },
+      "started_at": "2026-11-12T11:16:55-0300",
+      "status": "PASS",
+      "stop": "WAITING_APPROVAL"
+    },
+    "E20": {
+      "duration_s": 6873.942,
+      "error": null,
+      "finished_at": "2026-11-12T18:41:23-0300",
+      "progress": {
+        "done": 1600000,
+        "text": "esquema 8 de 8 (H05). carga update100x. repetição 5 de 5. 10.000 de 10.000 requisições",
+        "total": 1600000
+      },
+      "started_at": "2026-11-12T16:46:49-0300",
+      "status": "PASS"
+    },
+    "E21": {
+      "duration_s": 0.008,
+      "error": null,
+      "finished_at": "2026-11-12T18:41:23-0300",
+      "progress": null,
+      "started_at": "2026-11-12T18:41:23-0300",
+      "status": "PASS"
+    },
+    "E22": {
+      "duration_s": 5591.93,
+      "error": null,
+      "finished_at": "2026-11-12T20:14:35-0300",
+      "progress": {
+        "done": 1200000,
+        "text": "esquema 6 de 6 (A05). carga update100x. repetição 5 de 5. 10.000 de 10.000 requisições",
+        "total": 1200000
+      },
+      "started_at": "2026-11-12T18:41:23-0300",
+      "status": "PASS"
+    },
+    "E23": {
+      "duration_s": 42624.489,
+      "error": null,
+      "finished_at": "2026-11-13T08:04:59-0300",
+      "progress": {
+        "done": 800000,
+        "text": "esquema 4 de 4 (QPG). carga update100x. repetição 5 de 5. 10.000 de 10.000 requisições",
+        "total": 800000
+      },
+      "started_at": "2026-11-12T20:14:35-0300",
+      "status": "PASS"
+    },
+    "E3": {
+      "duration_s": 0.18,
+      "error": null,
+      "finished_at": "2026-11-12T11:35:30-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:35:30-0300",
+      "status": "PASS"
+    },
+    "E4": {
+      "duration_s": 67.011,
+      "error": null,
+      "finished_at": "2026-11-12T11:43:32-0300",
+      "progress": {
+        "done": 50000,
+        "text": "tabela 5 de 5 (buynow): faixa 1024 de 1024",
+        "total": 50000
+      },
+      "started_at": "2026-11-12T11:42:25-0300",
+      "status": "PASS"
+    },
+    "E5": {
+      "duration_s": 0.014,
+      "error": null,
+      "finished_at": "2026-11-12T11:35:30-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:35:30-0300",
+      "status": "PASS"
+    },
+    "E6": {
+      "duration_s": 37.605,
+      "error": null,
+      "finished_at": "2026-11-12T11:42:15-0300",
+      "progress": {
+        "done": 19,
+        "text": "oráculo × referência V8: carga update100x, repetição 5 de 5",
+        "total": 20
+      },
+      "started_at": "2026-11-12T11:41:37-0300",
+      "status": "PASS"
+    },
+    "E7": {
+      "duration_s": 0.004,
+      "error": null,
+      "finished_at": "2026-11-12T11:42:15-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:42:15-0300",
+      "status": "PASS"
+    },
+    "E8": {
+      "duration_s": 0.001,
+      "error": null,
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS"
+    },
+    "E9": {
+      "duration_s": 0.113,
+      "error": null,
+      "finished_at": "2026-11-12T11:48:04-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:48:04-0300",
+      "status": "PASS"
+    },
+    "INV": {
+      "duration_s": 0.194,
+      "error": null,
+      "finished_at": "2026-11-12T11:20:47-0300",
+      "progress": null,
+      "started_at": "2026-11-12T11:20:47-0300",
+      "status": "PASS"
+    }
+  },
+  "started_at": "2026-11-12T11:15:52-0300"
+}

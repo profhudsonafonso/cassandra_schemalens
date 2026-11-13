@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "Htop": [
+      "H01",
+      "H03"
+    ],
+    "kendall_tau_internal": {
+      "bidding": 0.8,
+      "browsing": 0.9,
+      "update100x": 0.8,
+      "update10x": 0.8
+    },
+    "top1_preserved": {
+      "bidding": false,
+      "browsing": true,
+      "update100x": true,
+      "update10x": true
+    }
+  },
+  "duration_s": 0.008,
+  "error": null,
+  "finished_at": "2026-11-12T18:41:23-0300",
+  "inputs": [],
+  "name": "Análise",
+  "outputs": [
+    {
+      "bytes": 43208,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E21_analysis/ANALYSIS.json",
+      "sha256": "78b30d4b7b9d374d74786a28138907114d798419dff30163f38a90ef7b1a14d1"
+    }
+  ],
+  "phase": 6,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E21",
+  "status": "PASS"
+}

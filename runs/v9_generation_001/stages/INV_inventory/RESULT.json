@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "diagnosis_items_confirmed": 5,
+    "old_files_registered": 27,
+    "volatile_attrs_found": 4
+  },
+  "duration_s": 0.194,
+  "error": null,
+  "finished_at": "2026-11-12T11:20:47-0300",
+  "inputs": [],
+  "name": "Inventário do repositório antigo",
+  "outputs": [
+    {
+      "bytes": 19760,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/inventory/INVENTORY.md",
+      "sha256": "d0513b4a583c6f90f01afc4d64696ef4a031400753aedd935db993e64363fd6d"
+    },
+    {
+      "bytes": 2496,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/inventory/INVENTORY_FACTS.json",
+      "sha256": "8143a8262347ede3764edcfd6487fd5eee3537b8a7b5e23bae04990f23252a78"
+    },
+    {
+      "bytes": 7262,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/provenance/V8_INPUTS.json",
+      "sha256": "72bd308029ef983b0266c655055c0a6e44b14a17ffe808d33018c4c682183e01"
+    }
+  ],
+  "phase": 0,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "INV",
+  "status": "PASS"
+}

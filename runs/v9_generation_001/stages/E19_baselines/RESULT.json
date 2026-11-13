@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "NoSE": {
+      "oracle": "79429/79429",
+      "v8_ref": "79429/79429"
+    },
+    "QPG": {
+      "oracle": "79429/79429",
+      "v8_ref": "79429/79429"
+    },
+    "V8_AUTO_H_norm": {
+      "oracle": "79429/79429",
+      "v8_ref": "79429/79429"
+    },
+    "materialized": {
+      "NoSE": true,
+      "QPG": true,
+      "V8_AUTO_H_norm": true
+    }
+  },
+  "duration_s": 366.743,
+  "error": null,
+  "finished_at": "2026-11-12T12:36:20-0300",
+  "inputs": [],
+  "name": "Baselines NoSE e QPG",
+  "outputs": [
+    {
+      "bytes": 21744,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E19_baselines/BASELINES.json",
+      "sha256": "d5ed0a5bba27441ad26482464c06e41190113ebca4e7fe612badbc5ef93becb4"
+    }
+  ],
+  "phase": 5,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E19",
+  "status": "PASS"
+}

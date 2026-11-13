@@ -1,0 +1,201 @@
+{
+  "composite_partitions": {
+    "items por (seller.region_id, category_id)": {
+      "max": 4000,
+      "max_over_mean": 50.0,
+      "mean": 80.0,
+      "p50": 0,
+      "p90": 0,
+      "p99": 4000,
+      "parents": 25000,
+      "parents_with_children": 500,
+      "zero_fraction": 0.98
+    }
+  },
+  "entity_counts": {
+    "bids": 20000000,
+    "buynow": 2000000,
+    "categories": 500,
+    "comments": 10000000,
+    "items": 2000000,
+    "regions": 50,
+    "users": 200000
+  },
+  "estimated_row_bytes_model": {
+    "bids": 32,
+    "buynow": 24,
+    "categories": 28,
+    "comments": 158,
+    "items": 284,
+    "regions": 33,
+    "users": 91
+  },
+  "measured_at": "2026-11-12T11:43:32-0300",
+  "range_selectivity": {
+    "items.end_date >= 2010-01-01 (since fixo da carga)": 1.0
+  },
+  "relationships": {
+    "bids.item -> items (inverso: items.bids)": {
+      "fanout_per_target": {
+        "max": 10,
+        "max_over_mean": 1.0,
+        "mean": 10.0,
+        "p50": 10,
+        "p90": 10,
+        "p99": 10,
+        "parents": 2000000,
+        "parents_with_children": 2000000,
+        "zero_fraction": 0.0
+      },
+      "fk": "bids.item_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "bids.user -> users (inverso: users.bids)": {
+      "fanout_per_target": {
+        "max": 100,
+        "max_over_mean": 1.0,
+        "mean": 100.0,
+        "p50": 100,
+        "p90": 100,
+        "p99": 100,
+        "parents": 200000,
+        "parents_with_children": 200000,
+        "zero_fraction": 0.0
+      },
+      "fk": "bids.user_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "buynow.buyer -> users (inverso: users.bought_now)": {
+      "fanout_per_target": {
+        "max": 10,
+        "max_over_mean": 1.0,
+        "mean": 10.0,
+        "p50": 10,
+        "p90": 10,
+        "p99": 10,
+        "parents": 200000,
+        "parents_with_children": 200000,
+        "zero_fraction": 0.0
+      },
+      "fk": "buynow.buyer_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "buynow.item -> items (inverso: items.bought_now)": {
+      "fanout_per_target": {
+        "max": 1,
+        "max_over_mean": 1.0,
+        "mean": 1.0,
+        "p50": 1,
+        "p90": 1,
+        "p99": 1,
+        "parents": 2000000,
+        "parents_with_children": 2000000,
+        "zero_fraction": 0.0
+      },
+      "fk": "buynow.item_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "comments.from_user -> users (inverso: users.comments_sent)": {
+      "fanout_per_target": {
+        "max": 50,
+        "max_over_mean": 1.0,
+        "mean": 50.0,
+        "p50": 50,
+        "p90": 50,
+        "p99": 50,
+        "parents": 200000,
+        "parents_with_children": 200000,
+        "zero_fraction": 0.0
+      },
+      "fk": "comments.from_user_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "comments.item -> items (inverso: items.comments)": {
+      "fanout_per_target": {
+        "max": 5,
+        "max_over_mean": 1.0,
+        "mean": 5.0,
+        "p50": 5,
+        "p90": 5,
+        "p99": 5,
+        "parents": 2000000,
+        "parents_with_children": 2000000,
+        "zero_fraction": 0.0
+      },
+      "fk": "comments.item_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "comments.to_user -> users (inverso: users.comments_received)": {
+      "fanout_per_target": {
+        "max": 50,
+        "max_over_mean": 1.0,
+        "mean": 50.0,
+        "p50": 50,
+        "p90": 50,
+        "p99": 50,
+        "parents": 200000,
+        "parents_with_children": 200000,
+        "zero_fraction": 0.0
+      },
+      "fk": "comments.to_user_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "items.category -> categories (inverso: categories.items)": {
+      "fanout_per_target": {
+        "max": 4000,
+        "max_over_mean": 1.0,
+        "mean": 4000.0,
+        "p50": 4000,
+        "p90": 4000,
+        "p99": 4000,
+        "parents": 500,
+        "parents_with_children": 500,
+        "zero_fraction": 0.0
+      },
+      "fk": "items.category_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "items.seller -> users (inverso: users.items_sold)": {
+      "fanout_per_target": {
+        "max": 10,
+        "max_over_mean": 1.0,
+        "mean": 10.0,
+        "p50": 10,
+        "p90": 10,
+        "p99": 10,
+        "parents": 200000,
+        "parents_with_children": 200000,
+        "zero_fraction": 0.0
+      },
+      "fk": "items.seller_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    },
+    "users.region -> regions (inverso: regions.users)": {
+      "fanout_per_target": {
+        "max": 4000,
+        "max_over_mean": 1.0,
+        "mean": 4000.0,
+        "p50": 4000,
+        "p90": 4000,
+        "p99": 4000,
+        "parents": 50,
+        "parents_with_children": 50,
+        "zero_fraction": 0.0
+      },
+      "fk": "users.region_id",
+      "from_side_mandatory_observed": true,
+      "null_fk_rows": 0
+    }
+  },
+  "row_bytes_basis": "tamanhos de String do modelo NoSE; Integer/ID/FK 4 B; Float/Date 8 B",
+  "source": "rubis_full"
+}

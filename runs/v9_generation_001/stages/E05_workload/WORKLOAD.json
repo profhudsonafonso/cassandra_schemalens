@@ -1,0 +1,1394 @@
+{
+  "groups": [
+    {
+      "name": "BrowseCategories",
+      "statements": [
+        1,
+        2
+      ],
+      "weights": {
+        "bidding": 7.65,
+        "browsing": 4.44,
+        "update100x": 7.65,
+        "update10x": 7.65
+      }
+    },
+    {
+      "name": "ViewBidHistory",
+      "statements": [
+        3,
+        4
+      ],
+      "weights": {
+        "bidding": 1.54,
+        "browsing": 2.38,
+        "update100x": 1.54,
+        "update10x": 1.54
+      }
+    },
+    {
+      "name": "ViewItem",
+      "statements": [
+        5,
+        6
+      ],
+      "weights": {
+        "bidding": 14.17,
+        "browsing": 22.95,
+        "update100x": 14.17,
+        "update10x": 14.17
+      }
+    },
+    {
+      "name": "SearchItemsByCategory",
+      "statements": [
+        7
+      ],
+      "weights": {
+        "bidding": 15.94,
+        "browsing": 27.77,
+        "update100x": 15.94,
+        "update10x": 15.94
+      }
+    },
+    {
+      "name": "ViewUserInfo",
+      "statements": [
+        8,
+        9
+      ],
+      "weights": {
+        "bidding": 2.48,
+        "browsing": 4.41,
+        "update100x": 2.48,
+        "update10x": 2.48
+      }
+    },
+    {
+      "name": "RegisterItem",
+      "statements": [
+        10
+      ],
+      "weights": {
+        "bidding": 0.53,
+        "browsing": 0.0,
+        "update100x": 53.0,
+        "update10x": 5.3
+      }
+    },
+    {
+      "name": "RegisterUser",
+      "statements": [
+        11
+      ],
+      "weights": {
+        "bidding": 1.07,
+        "browsing": 0.0,
+        "update100x": 107.0,
+        "update10x": 10.7
+      }
+    },
+    {
+      "name": "BuyNow",
+      "statements": [
+        12,
+        13
+      ],
+      "weights": {
+        "bidding": 1.16,
+        "browsing": 0.0,
+        "update100x": 1.16,
+        "update10x": 1.16
+      }
+    },
+    {
+      "name": "StoreBuyNow",
+      "statements": [
+        14,
+        15,
+        16
+      ],
+      "weights": {
+        "bidding": 1.1,
+        "browsing": 0.0,
+        "update100x": 110.0,
+        "update10x": 11.0
+      }
+    },
+    {
+      "name": "PutBid",
+      "statements": [
+        17,
+        18,
+        19
+      ],
+      "weights": {
+        "bidding": 5.4,
+        "browsing": 0.0,
+        "update100x": 5.4,
+        "update10x": 5.4
+      }
+    },
+    {
+      "name": "StoreBid",
+      "statements": [
+        20,
+        21,
+        22
+      ],
+      "weights": {
+        "bidding": 3.74,
+        "browsing": 0.0,
+        "update100x": 374.0,
+        "update10x": 37.4
+      }
+    },
+    {
+      "name": "PutComment",
+      "statements": [
+        23,
+        24,
+        25
+      ],
+      "weights": {
+        "bidding": 0.46,
+        "browsing": 0.0,
+        "update100x": 0.46,
+        "update10x": 0.46
+      }
+    },
+    {
+      "name": "StoreComment",
+      "statements": [
+        26,
+        27,
+        28
+      ],
+      "weights": {
+        "bidding": 0.45,
+        "browsing": 0.0,
+        "update100x": 45.0,
+        "update10x": 4.5
+      }
+    },
+    {
+      "name": "AboutMe",
+      "statements": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "weights": {
+        "bidding": 1.71,
+        "browsing": 0.0,
+        "update100x": 1.71,
+        "update10x": 1.71
+      }
+    },
+    {
+      "name": "SearchItemsByRegion",
+      "statements": [
+        35
+      ],
+      "weights": {
+        "bidding": 6.34,
+        "browsing": 8.26,
+        "update100x": 6.34,
+        "update10x": 6.34
+      }
+    },
+    {
+      "name": "BrowseRegions",
+      "statements": [
+        36
+      ],
+      "weights": {
+        "bidding": 5.39,
+        "browsing": 3.21,
+        "update100x": 5.39,
+        "update10x": 5.39
+      }
+    }
+  ],
+  "levels": {
+    "physical_cql": "definido por esquema na síntese de rotas (E13): QueryPlan/WritePlan",
+    "request_group": "16 grupos com pesos por carga",
+    "statement": "36 instruções numeradas (texto NoSE)"
+  },
+  "normalized_group_weights": {
+    "bidding": {
+      "AboutMe": 0.02473600462895993,
+      "BrowseCategories": 0.11066107334008392,
+      "BrowseRegions": 0.07796904383046434,
+      "BuyNow": 0.016779979748300304,
+      "PutBid": 0.07811369882829453,
+      "PutComment": 0.0066541299001880525,
+      "RegisterItem": 0.007666714884999278,
+      "RegisterUser": 0.01547808476782873,
+      "SearchItemsByCategory": 0.230580066541299,
+      "SearchItemsByRegion": 0.09171126862433097,
+      "StoreBid": 0.05410096918848547,
+      "StoreBuyNow": 0.015912049761319255,
+      "StoreComment": 0.006509474902357877,
+      "ViewBidHistory": 0.02227686966584696,
+      "ViewItem": 0.20497613192535805,
+      "ViewUserInfo": 0.03587443946188341
+    },
+    "browsing": {
+      "AboutMe": 0.0,
+      "BrowseCategories": 0.06047398529011169,
+      "BrowseRegions": 0.04372105693271588,
+      "BuyNow": 0.0,
+      "PutBid": 0.0,
+      "PutComment": 0.0,
+      "RegisterItem": 0.0,
+      "RegisterUser": 0.0,
+      "SearchItemsByCategory": 0.37823481340234266,
+      "SearchItemsByRegion": 0.11250340506673931,
+      "StoreBid": 0.0,
+      "StoreBuyNow": 0.0,
+      "StoreComment": 0.0,
+      "ViewBidHistory": 0.032416235358213016,
+      "ViewItem": 0.3125851266684827,
+      "ViewUserInfo": 0.060065377281394716
+    },
+    "update100x": {
+      "AboutMe": 0.002276236622118098,
+      "BrowseCategories": 0.010183163835791492,
+      "BrowseRegions": 0.007174804323518449,
+      "BuyNow": 0.001544113731963154,
+      "PutBid": 0.007188115648793994,
+      "PutComment": 0.0006123209626750439,
+      "RegisterItem": 0.0705500239603855,
+      "RegisterUser": 0.14243118044832542,
+      "SearchItemsByCategory": 0.021218252489217826,
+      "SearchItemsByRegion": 0.00843938022469517,
+      "StoreBid": 0.4978435653053618,
+      "StoreBuyNow": 0.14642457803098877,
+      "StoreComment": 0.05990096373994995,
+      "ViewBidHistory": 0.002049944092433843,
+      "ViewItem": 0.01886214791544646,
+      "ViewUserInfo": 0.003301208668335019
+    },
+    "update10x": {
+      "AboutMe": 0.013039499771236846,
+      "BrowseCategories": 0.05833460423974379,
+      "BrowseRegions": 0.04110111331401556,
+      "BuyNow": 0.008845508616745464,
+      "PutBid": 0.04117736769864268,
+      "PutComment": 0.003507701692847339,
+      "RegisterItem": 0.040414823852371516,
+      "RegisterUser": 0.08159219155101419,
+      "SearchItemsByCategory": 0.121549489095623,
+      "SearchItemsByRegion": 0.048345279853591584,
+      "StoreBid": 0.2851913985054141,
+      "StoreBuyNow": 0.08387982308982768,
+      "StoreComment": 0.03431447308220223,
+      "ViewBidHistory": 0.011743175232575875,
+      "ViewItem": 0.10805246301662347,
+      "ViewUserInfo": 0.018911087387524783
+    }
+  },
+  "nose_commit": "d275634d99069bfd88a6c3ac51020138bc130dd4",
+  "parameter_domain": {
+    "domain": {
+      "categories": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "comments": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "items": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "regions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "users": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    "sampling": "uniforme com semente (reused/methodology/workload_005.histories, seed 42005 + namespace)",
+    "since": "fixo em 2010-01-01T00:00:00",
+    "status": "HIPÓTESE DE PESQUISA (não é dado histórico)"
+  },
+  "registered_v8_sha256": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371",
+  "source": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/reused/workloads/rubis.rb",
+  "source_sha256": "a4669b5d5b3b1dec2fb9934120d60b70fcbf8140dff150197d4f9195d6a88371",
+  "statement_frequency_per_request": {
+    "bidding": {
+      "1": 0.11066107334008392,
+      "2": 0.11066107334008392,
+      "3": 0.02227686966584696,
+      "4": 0.02227686966584696,
+      "5": 0.20497613192535805,
+      "6": 0.20497613192535805,
+      "7": 0.230580066541299,
+      "8": 0.03587443946188341,
+      "9": 0.03587443946188341,
+      "10": 0.007666714884999278,
+      "11": 0.01547808476782873,
+      "12": 0.016779979748300304,
+      "13": 0.016779979748300304,
+      "14": 0.015912049761319255,
+      "15": 0.015912049761319255,
+      "16": 0.015912049761319255,
+      "17": 0.07811369882829453,
+      "18": 0.07811369882829453,
+      "19": 0.07811369882829453,
+      "20": 0.05410096918848547,
+      "21": 0.05410096918848547,
+      "22": 0.05410096918848547,
+      "23": 0.0066541299001880525,
+      "24": 0.0066541299001880525,
+      "25": 0.0066541299001880525,
+      "26": 0.006509474902357877,
+      "27": 0.006509474902357877,
+      "28": 0.006509474902357877,
+      "29": 0.02473600462895993,
+      "30": 0.02473600462895993,
+      "31": 0.02473600462895993,
+      "32": 0.02473600462895993,
+      "33": 0.02473600462895993,
+      "34": 0.02473600462895993,
+      "35": 0.09171126862433097,
+      "36": 0.07796904383046434
+    },
+    "browsing": {
+      "1": 0.06047398529011169,
+      "2": 0.06047398529011169,
+      "3": 0.032416235358213016,
+      "4": 0.032416235358213016,
+      "5": 0.3125851266684827,
+      "6": 0.3125851266684827,
+      "7": 0.37823481340234266,
+      "8": 0.060065377281394716,
+      "9": 0.060065377281394716,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.0,
+      "23": 0.0,
+      "24": 0.0,
+      "25": 0.0,
+      "26": 0.0,
+      "27": 0.0,
+      "28": 0.0,
+      "29": 0.0,
+      "30": 0.0,
+      "31": 0.0,
+      "32": 0.0,
+      "33": 0.0,
+      "34": 0.0,
+      "35": 0.11250340506673931,
+      "36": 0.04372105693271588
+    },
+    "update100x": {
+      "1": 0.010183163835791492,
+      "2": 0.010183163835791492,
+      "3": 0.002049944092433843,
+      "4": 0.002049944092433843,
+      "5": 0.01886214791544646,
+      "6": 0.01886214791544646,
+      "7": 0.021218252489217826,
+      "8": 0.003301208668335019,
+      "9": 0.003301208668335019,
+      "10": 0.0705500239603855,
+      "11": 0.14243118044832542,
+      "12": 0.001544113731963154,
+      "13": 0.001544113731963154,
+      "14": 0.14642457803098877,
+      "15": 0.14642457803098877,
+      "16": 0.14642457803098877,
+      "17": 0.007188115648793994,
+      "18": 0.007188115648793994,
+      "19": 0.007188115648793994,
+      "20": 0.4978435653053618,
+      "21": 0.4978435653053618,
+      "22": 0.4978435653053618,
+      "23": 0.0006123209626750439,
+      "24": 0.0006123209626750439,
+      "25": 0.0006123209626750439,
+      "26": 0.05990096373994995,
+      "27": 0.05990096373994995,
+      "28": 0.05990096373994995,
+      "29": 0.002276236622118098,
+      "30": 0.002276236622118098,
+      "31": 0.002276236622118098,
+      "32": 0.002276236622118098,
+      "33": 0.002276236622118098,
+      "34": 0.002276236622118098,
+      "35": 0.00843938022469517,
+      "36": 0.007174804323518449
+    },
+    "update10x": {
+      "1": 0.05833460423974379,
+      "2": 0.05833460423974379,
+      "3": 0.011743175232575875,
+      "4": 0.011743175232575875,
+      "5": 0.10805246301662347,
+      "6": 0.10805246301662347,
+      "7": 0.121549489095623,
+      "8": 0.018911087387524783,
+      "9": 0.018911087387524783,
+      "10": 0.040414823852371516,
+      "11": 0.08159219155101419,
+      "12": 0.008845508616745464,
+      "13": 0.008845508616745464,
+      "14": 0.08387982308982768,
+      "15": 0.08387982308982768,
+      "16": 0.08387982308982768,
+      "17": 0.04117736769864268,
+      "18": 0.04117736769864268,
+      "19": 0.04117736769864268,
+      "20": 0.2851913985054141,
+      "21": 0.2851913985054141,
+      "22": 0.2851913985054141,
+      "23": 0.003507701692847339,
+      "24": 0.003507701692847339,
+      "25": 0.003507701692847339,
+      "26": 0.03431447308220223,
+      "27": 0.03431447308220223,
+      "28": 0.03431447308220223,
+      "29": 0.013039499771236846,
+      "30": 0.013039499771236846,
+      "31": 0.013039499771236846,
+      "32": 0.013039499771236846,
+      "33": 0.013039499771236846,
+      "34": 0.013039499771236846,
+      "35": 0.048345279853591584,
+      "36": 0.04110111331401556
+    }
+  },
+  "statements": [
+    {
+      "group": "BrowseCategories",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname, users.password FROM users WHERE users.id = ?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.nickname",
+        "users.password"
+      ],
+      "statement_id": 1
+    },
+    {
+      "group": "BrowseCategories",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT categories.id, categories.name FROM categories WHERE categories.dummy = 1",
+      "order_by": null,
+      "path": [
+        "categories"
+      ],
+      "predicates": [
+        {
+          "attr": "categories.dummy",
+          "op": "=",
+          "value": "1"
+        }
+      ],
+      "projection": [
+        "categories.id",
+        "categories.name"
+      ],
+      "statement_id": 2
+    },
+    {
+      "group": "ViewBidHistory",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.name FROM items WHERE items.id = ?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.name"
+      ],
+      "statement_id": 3
+    },
+    {
+      "group": "ViewBidHistory",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.id, users.nickname, bids.id, item.id, bids.qty, bids.bid, bids.date FROM users.bids.item WHERE item.id = ? ORDER BY bids.date",
+      "order_by": "bids.date",
+      "path": [
+        "users",
+        "bids",
+        "item"
+      ],
+      "predicates": [
+        {
+          "attr": "item.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.id",
+        "users.nickname",
+        "bids.id",
+        "item.id",
+        "bids.qty",
+        "bids.bid",
+        "bids.date"
+      ],
+      "statement_id": 4
+    },
+    {
+      "group": "ViewItem",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id = ?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.*"
+      ],
+      "statement_id": 5
+    },
+    {
+      "group": "ViewItem",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT bids.* FROM items.bids WHERE items.id = ?",
+      "order_by": null,
+      "path": [
+        "items",
+        "bids"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "bids.*"
+      ],
+      "statement_id": 6
+    },
+    {
+      "group": "SearchItemsByCategory",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT items.id, items.name, items.initial_price, items.max_bid, items.nb_of_bids, items.end_date FROM items.category WHERE category.id = ? AND items.end_date >= ? LIMIT 25",
+      "order_by": null,
+      "path": [
+        "items",
+        "category"
+      ],
+      "predicates": [
+        {
+          "attr": "category.id",
+          "op": "=",
+          "value": "?"
+        },
+        {
+          "attr": "items.end_date",
+          "op": ">=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.id",
+        "items.name",
+        "items.initial_price",
+        "items.max_bid",
+        "items.nb_of_bids",
+        "items.end_date"
+      ],
+      "statement_id": 7
+    },
+    {
+      "group": "ViewUserInfo",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.* FROM users WHERE users.id = ?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.*"
+      ],
+      "statement_id": 8
+    },
+    {
+      "group": "ViewUserInfo",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT comments.id, comments.rating, comments.date, comments.comment FROM comments.to_user WHERE to_user.id = ?",
+      "order_by": null,
+      "path": [
+        "comments",
+        "to_user"
+      ],
+      "predicates": [
+        {
+          "attr": "to_user.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "comments.id",
+        "comments.rating",
+        "comments.date",
+        "comments.comment"
+      ],
+      "statement_id": 9
+    },
+    {
+      "connect": [
+        "category",
+        "seller"
+      ],
+      "constants": {
+        "max_bid": "0",
+        "nb_of_bids": "0"
+      },
+      "entity": "items",
+      "group": "RegisterItem",
+      "kind": "write",
+      "nose_text": "INSERT INTO items SET id=?, name=?, description=?, initial_price=?, quantity=?, reserve_price=?, buy_now=?, nb_of_bids=0, max_bid=0, start_date=?, end_date=? AND CONNECT TO category(?), seller(?)",
+      "op": "INSERT",
+      "set": [
+        "id",
+        "name",
+        "description",
+        "initial_price",
+        "quantity",
+        "reserve_price",
+        "buy_now",
+        "nb_of_bids",
+        "max_bid",
+        "start_date",
+        "end_date"
+      ],
+      "statement_id": 10
+    },
+    {
+      "connect": [
+        "region"
+      ],
+      "constants": {
+        "balance": "0",
+        "rating": "0"
+      },
+      "entity": "users",
+      "group": "RegisterUser",
+      "kind": "write",
+      "nose_text": "INSERT INTO users SET id=?, firstname=?, lastname=?, nickname=?, password=?, email=?, rating=0, balance=0, creation_date=? AND CONNECT TO region(?)",
+      "op": "INSERT",
+      "set": [
+        "id",
+        "firstname",
+        "lastname",
+        "nickname",
+        "password",
+        "email",
+        "rating",
+        "balance",
+        "creation_date"
+      ],
+      "statement_id": 11
+    },
+    {
+      "group": "BuyNow",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname FROM users WHERE users.id=?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.nickname"
+      ],
+      "statement_id": 12
+    },
+    {
+      "group": "BuyNow",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id=?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.*"
+      ],
+      "statement_id": 13
+    },
+    {
+      "group": "StoreBuyNow",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.quantity, items.nb_of_bids, items.end_date FROM items WHERE items.id=?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.quantity",
+        "items.nb_of_bids",
+        "items.end_date"
+      ],
+      "statement_id": 14
+    },
+    {
+      "entity": "items",
+      "group": "StoreBuyNow",
+      "key": "items.id",
+      "kind": "write",
+      "nose_text": "UPDATE items SET quantity=?, nb_of_bids=?, end_date=? WHERE items.id=?",
+      "op": "UPDATE",
+      "set": [
+        "quantity",
+        "nb_of_bids",
+        "end_date"
+      ],
+      "statement_id": 15
+    },
+    {
+      "connect": [
+        "item",
+        "buyer"
+      ],
+      "constants": {},
+      "entity": "buynow",
+      "group": "StoreBuyNow",
+      "kind": "write",
+      "nose_text": "INSERT INTO buynow SET id=?, qty=?, date=? AND CONNECT TO item(?), buyer(?)",
+      "op": "INSERT",
+      "set": [
+        "id",
+        "qty",
+        "date"
+      ],
+      "statement_id": 16
+    },
+    {
+      "group": "PutBid",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname, users.password FROM users WHERE users.id=?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.nickname",
+        "users.password"
+      ],
+      "statement_id": 17
+    },
+    {
+      "group": "PutBid",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id=?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.*"
+      ],
+      "statement_id": 18
+    },
+    {
+      "group": "PutBid",
+      "kind": "read",
+      "limit": 2,
+      "nose_text": "SELECT bids.qty, bids.date FROM bids.item WHERE item.id=? ORDER BY bids.bid LIMIT 2",
+      "order_by": "bids.bid",
+      "path": [
+        "bids",
+        "item"
+      ],
+      "predicates": [
+        {
+          "attr": "item.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "bids.qty",
+        "bids.date"
+      ],
+      "statement_id": 19
+    },
+    {
+      "connect": [
+        "item",
+        "user"
+      ],
+      "constants": {},
+      "entity": "bids",
+      "group": "StoreBid",
+      "kind": "write",
+      "nose_text": "INSERT INTO bids SET id=?, qty=?, bid=?, date=? AND CONNECT TO item(?), user(?)",
+      "op": "INSERT",
+      "set": [
+        "id",
+        "qty",
+        "bid",
+        "date"
+      ],
+      "statement_id": 20
+    },
+    {
+      "group": "StoreBid",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.nb_of_bids, items.max_bid FROM items WHERE items.id=?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.nb_of_bids",
+        "items.max_bid"
+      ],
+      "statement_id": 21
+    },
+    {
+      "entity": "items",
+      "group": "StoreBid",
+      "key": "items.id",
+      "kind": "write",
+      "nose_text": "UPDATE items SET nb_of_bids=?, max_bid=? WHERE items.id=?",
+      "op": "UPDATE",
+      "set": [
+        "nb_of_bids",
+        "max_bid"
+      ],
+      "statement_id": 22
+    },
+    {
+      "group": "PutComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.nickname, users.password FROM users WHERE users.id=?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.nickname",
+        "users.password"
+      ],
+      "statement_id": 23
+    },
+    {
+      "group": "PutComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items WHERE items.id=?",
+      "order_by": null,
+      "path": [
+        "items"
+      ],
+      "predicates": [
+        {
+          "attr": "items.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.*"
+      ],
+      "statement_id": 24
+    },
+    {
+      "group": "PutComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.* FROM users WHERE users.id=?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.*"
+      ],
+      "statement_id": 25
+    },
+    {
+      "group": "StoreComment",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.rating FROM users WHERE users.id=?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.rating"
+      ],
+      "statement_id": 26
+    },
+    {
+      "entity": "users",
+      "group": "StoreComment",
+      "key": "users.id",
+      "kind": "write",
+      "nose_text": "UPDATE users SET rating=? WHERE users.id=?",
+      "op": "UPDATE",
+      "set": [
+        "rating"
+      ],
+      "statement_id": 27
+    },
+    {
+      "connect": [
+        "to_user",
+        "from_user",
+        "item"
+      ],
+      "constants": {},
+      "entity": "comments",
+      "group": "StoreComment",
+      "kind": "write",
+      "nose_text": "INSERT INTO comments SET id=?, rating=?, date=?, comment=? AND CONNECT TO to_user(?), from_user(?), item(?)",
+      "op": "INSERT",
+      "set": [
+        "id",
+        "rating",
+        "date",
+        "comment"
+      ],
+      "statement_id": 28
+    },
+    {
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT users.* FROM users WHERE users.id=?",
+      "order_by": null,
+      "path": [
+        "users"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "users.*"
+      ],
+      "statement_id": 29
+    },
+    {
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT comments_received.* FROM users.comments_received WHERE users.id = ?",
+      "order_by": null,
+      "path": [
+        "users",
+        "comments_received"
+      ],
+      "predicates": [
+        {
+          "attr": "users.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "comments_received.*"
+      ],
+      "statement_id": 30
+    },
+    {
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT from_user.nickname FROM comments.from_user WHERE comments.id = ?",
+      "order_by": null,
+      "path": [
+        "comments",
+        "from_user"
+      ],
+      "predicates": [
+        {
+          "attr": "comments.id",
+          "op": "=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "from_user.nickname"
+      ],
+      "statement_id": 31
+    },
+    {
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT bought_now.*, items.* FROM items.bought_now.buyer WHERE buyer.id = ? AND bought_now.date>=?",
+      "order_by": null,
+      "path": [
+        "items",
+        "bought_now",
+        "buyer"
+      ],
+      "predicates": [
+        {
+          "attr": "buyer.id",
+          "op": "=",
+          "value": "?"
+        },
+        {
+          "attr": "bought_now.date",
+          "op": ">=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "bought_now.*",
+        "items.*"
+      ],
+      "statement_id": 32
+    },
+    {
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items.seller WHERE seller.id=? AND items.end_date >=?",
+      "order_by": null,
+      "path": [
+        "items",
+        "seller"
+      ],
+      "predicates": [
+        {
+          "attr": "seller.id",
+          "op": "=",
+          "value": "?"
+        },
+        {
+          "attr": "items.end_date",
+          "op": ">=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.*"
+      ],
+      "statement_id": 33
+    },
+    {
+      "group": "AboutMe",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT items.* FROM items.bids.user WHERE user.id=? AND items.end_date>=?",
+      "order_by": null,
+      "path": [
+        "items",
+        "bids",
+        "user"
+      ],
+      "predicates": [
+        {
+          "attr": "user.id",
+          "op": "=",
+          "value": "?"
+        },
+        {
+          "attr": "items.end_date",
+          "op": ">=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.*"
+      ],
+      "statement_id": 34
+    },
+    {
+      "group": "SearchItemsByRegion",
+      "kind": "read",
+      "limit": 25,
+      "nose_text": "SELECT items.id, items.name, items.initial_price, items.max_bid, items.nb_of_bids, items.end_date FROM items.seller WHERE seller.region.id = ? AND items.category.id = ? AND items.end_date >= ? LIMIT 25",
+      "order_by": null,
+      "path": [
+        "items",
+        "seller"
+      ],
+      "predicates": [
+        {
+          "attr": "seller.region.id",
+          "op": "=",
+          "value": "?"
+        },
+        {
+          "attr": "items.category.id",
+          "op": "=",
+          "value": "?"
+        },
+        {
+          "attr": "items.end_date",
+          "op": ">=",
+          "value": "?"
+        }
+      ],
+      "projection": [
+        "items.id",
+        "items.name",
+        "items.initial_price",
+        "items.max_bid",
+        "items.nb_of_bids",
+        "items.end_date"
+      ],
+      "statement_id": 35
+    },
+    {
+      "group": "BrowseRegions",
+      "kind": "read",
+      "limit": null,
+      "nose_text": "SELECT regions.id, regions.name FROM regions WHERE regions.dummy = 1",
+      "order_by": null,
+      "path": [
+        "regions"
+      ],
+      "predicates": [
+        {
+          "attr": "regions.dummy",
+          "op": "=",
+          "value": "1"
+        }
+      ],
+      "projection": [
+        "regions.id",
+        "regions.name"
+      ],
+      "statement_id": 36
+    }
+  ]
+}

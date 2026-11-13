@@ -1,0 +1,46 @@
+{
+  "blocked_schemas": [],
+  "checks": {
+    "H01": {
+      "oracle": "79429/79429",
+      "restored": true,
+      "v8_ref": "79429/79429"
+    },
+    "H02": {
+      "oracle": "79429/79429",
+      "restored": true,
+      "v8_ref": "79429/79429"
+    },
+    "H03": {
+      "oracle": "79429/79429",
+      "restored": true,
+      "v8_ref": "79429/79429"
+    },
+    "H04": {
+      "oracle": "79429/79429",
+      "restored": true,
+      "v8_ref": "79429/79429"
+    },
+    "H05": {
+      "oracle": "79429/79429",
+      "restored": true,
+      "v8_ref": "79429/79429"
+    }
+  },
+  "duration_s": 737.355,
+  "error": null,
+  "finished_at": "2026-11-12T12:29:27-0300",
+  "inputs": [],
+  "name": "Corretude (oráculo + replay)",
+  "outputs": [
+    {
+      "bytes": 15998,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E18_correctness/CORRECTNESS.json",
+      "sha256": "a169af69d9a0db6bd8068b90be20b9c23ad458c7e2cfa094838e28fc938c7bc9"
+    }
+  ],
+  "phase": 5,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E18",
+  "status": "PASS"
+}

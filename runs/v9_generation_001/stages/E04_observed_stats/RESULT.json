@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "all_from_sides_mandatory": true,
+    "composite_35_measured": true,
+    "relationships_10": true
+  },
+  "duration_s": 67.011,
+  "error": null,
+  "finished_at": "2026-11-12T11:43:32-0300",
+  "inputs": [],
+  "name": "Estatísticas observadas",
+  "outputs": [
+    {
+      "bytes": 5229,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E04_observed_stats/STATS.json",
+      "sha256": "a5ddaf11c0999abb75e60250bdd05810e326ffb0afda9383e5381c72324ea5df"
+    }
+  ],
+  "phase": 1,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E4",
+  "status": "PASS"
+}

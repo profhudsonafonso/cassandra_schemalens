@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "r2_weighted": 0.999102,
+    "tau_all": {
+      "bidding": 0.8788,
+      "browsing": 0.8182,
+      "update100x": 0.8182,
+      "update10x": 0.8485
+    },
+    "tau_competitive_only": {
+      "bidding": 0.8222,
+      "browsing": 0.7333,
+      "update100x": 0.7333,
+      "update10x": 0.7778
+    },
+    "tau_leave_one_out": {
+      "bidding": 0.7879,
+      "browsing": 0.7576,
+      "update100x": 0.8182,
+      "update10x": 0.8485
+    },
+    "tau_ok": true
+  },
+  "duration_s": 55.891,
+  "error": null,
+  "finished_at": "2026-11-12T11:50:59-0300",
+  "inputs": [],
+  "name": "Modelo de custo calibrado",
+  "outputs": [
+    {
+      "bytes": 17922,
+      "path": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/runs/v9_generation_001/stages/E14_cost_model/COST_MODEL.json",
+      "sha256": "c3bb0512e3f8d3818fa8960005d0bf7b5bf0957ec6a9dc44193953078187b4f5"
+    }
+  ],
+  "phase": 3,
+  "run_id": "v9-generation-20261112-001",
+  "stage": "E14",
+  "status": "PASS"
+}

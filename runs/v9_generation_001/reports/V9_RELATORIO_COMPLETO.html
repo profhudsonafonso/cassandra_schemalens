@@ -1,0 +1,1524 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>SchemaLens V9 — relatório completo</title>
+<style>
+@page { size: A4; margin: 16mm 13mm 16mm 13mm; }
+body { font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif; font-size: 9.6pt; line-height: 1.42; color: #1b1f24; }
+h1 { font-size: 20pt; margin: 0 0 4pt; } h2 { font-size: 14pt; border-bottom: 1.5px solid #2f5d8a; padding-bottom: 2pt; margin-top: 18pt; color: #1f4468; page-break-after: avoid; }
+h3 { font-size: 11.5pt; margin-top: 12pt; color: #2f5d8a; page-break-after: avoid; } h4 { font-size: 10pt; }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-size: 7.9pt; page-break-inside: auto; }
+tr { page-break-inside: avoid; } th, td { border: 1px solid #c9d1da; padding: 2.5pt 4pt; vertical-align: top; text-align: left; }
+th { background: #e8eef5; } tr:nth-child(even) td { background: #f7f9fb; }
+code { font-family: Menlo, monospace; font-size: 8pt; background: #f1f3f5; padding: 0 2pt; border-radius: 2pt; }
+.cover { border-left: 5px solid #2f5d8a; padding: 6pt 0 6pt 12pt; margin-bottom: 14pt; } .sub { color: #555; font-size: 10pt; }
+.part { page-break-before: always; } ul { padding-left: 16pt; } li { margin: 2pt 0; }
+</style></head><body><div class="cover"><h1>SchemaLens V9 — relatório completo da execução</h1>
+<div class="sub">Execução <code>v9-generation-20261112-001</code> · Cassandra 3.11.11 · RUBiS · aceitação <b>PASS</b>
+(avaliada em 2026-11-13 08:32). Todos os números são lidos dos arquivos de resultado.</div></div>
+<h2>Resumo executivo</h2>
+<ul>
+<li><strong>Aceitação final:</strong> PASS. 8 de 8 gates aprovados, recalculados dos dados brutos (<code>global_pass_hardcoded = False</code>). 11 de 11 testes negativos de adulteração foram rejeitados.</li>
+<li><strong>Coorte (E20/E21):</strong> esquemas de H não dominados nas 4 cargas: H01, H03. τ de Kendall entre previsto e medido: Browsing 0,9, Bidding 0,8, Update10x 0,8, Update100x 0,8.</li>
+<li><strong>Selecionados para a escala completa:</strong> H01, H03. Vitórias na coorte: H01 3, H02 0, H03 1, H04 0, H05 0.</li>
+<li><strong>H01 vs NoSE, escala completa a frio:</strong> Browsing H mais rápido (-3,11 ms, -64%); Bidding H mais rápido (-2,75 ms, -55%); Update10x H mais rápido (-1,32 ms, -31%); Update100x empate (-0,04 ms, -1%).</li>
+<li><strong>H01 vs QPG, escala completa a frio:</strong> Browsing H mais rápido (-3,32 ms, -66%); Bidding H mais rápido (-2,06 ms, -48%); Update10x H mais rápido (-0,85 ms, -23%); Update100x H mais lento (0,31 ms, 11%).</li>
+<li><strong>Ablações (E22):</strong> 5 esquemas medidos contra H02; concordância com o oráculo em todos. Veja a seção 7 do relatório e o item 11 das limitações.</li>
+<li><strong>Controle de cache em escala completa:</strong> 84 ciclos de reinício e limpeza; todos aprovados.</li>
+</ul>
+<h2>Método</h2>
+<p>Pipeline E1–E23, em fases 0–8. Cada estágio grava <code>runs/v9_generation_001/stages/Exx_&lt;nome&gt;/RESULT.json</code> com o status,
+as entradas e saídas (SHA-256), as verificações e a duração. Houve duas paradas obrigatórias, ambas aprovadas: no fim da
+Fase 0 e no fim da Fase 4.</p>
+<ul>
+<li><strong>Fase 0 (INV, E1, E2):</strong> inventário do repositório da V8 (somente leitura), preflight e fonte <code>rubis_full</code>.</li>
+<li><strong>Fase 1 (E3–E7):</strong> esquema conceitual, estatísticas, carga, contrato semântico das 36 instruções e catálogo C0–C9.</li>
+<li><strong>Fase 2 (E8–E13):</strong> evidências → ativação → P → canonicalização e fusão (C) → síntese de rotas.</li>
+<li><strong>Fase 3 (E14):</strong> modelo de custo calibrado (NNLS) nos dados brutos da V8-012.</li>
+<li><strong>Fase 4 (E15, E16):</strong> composição por ILP (ótimos por carga, Pareto e k-best) e Hbench congelado.</li>
+<li><strong>Fase 5 (E17–E19):</strong> coorte, materialização, corretude por oráculo e replay, e baselines.</li>
+<li><strong>Fase 6 (E20, E21):</strong> benchmark na coorte numa janela contínua, intercalada, com protocolo congelado e guarda de isolamento.</li>
+<li><strong>Fase 7 (E22):</strong> ablações dos critérios. Cada critério é neutralizado e o gerador é rodado de novo; os esquemas novos
+  são medidos (D-V9-013).</li>
+<li><strong>Fase 8 (E23):</strong> os 2 melhores de H em escala completa a frio, contra NoSE e QPG; depois a aceitação e o relatório.</li>
+</ul>
+<p>Os resultados estão em <code>runs/v9_generation_001/reports/V9_REPORT.md</code> e <code>ACCEPTANCE_V9.json</code>. As decisões estão em
+<code>DECISION_LOG.md</code> e as limitações em <code>LIMITATIONS.md</code>.</p>
+<h2>Processo executado</h2>
+<p>Execução <code>v9-generation-20261112-001</code>, iniciada em 2026-11-12 11:15. Estado final: <strong>DONE</strong>. Cada linha abaixo vem do <code>RESULT.json</code> do estágio.</p>
+<h3>Fase 0 — preparação</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INV</td>
+<td>Inventário do repositório antigo</td>
+<td>PASS</td>
+<td>11-12 11:20</td>
+<td>11-12 11:20</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E1</td>
+<td>Preflight do ambiente</td>
+<td>PASS</td>
+<td>11-12 11:16</td>
+<td>11-12 11:16</td>
+<td>10 s</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Fonte de dados rubis_full</td>
+<td>PASS</td>
+<td>11-12 11:16</td>
+<td>11-12 11:17</td>
+<td>45 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 1 — entradas</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E3</td>
+<td>Esquema conceitual S (EER)</td>
+<td>PASS</td>
+<td>11-12 11:35</td>
+<td>11-12 11:35</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Estatísticas observadas</td>
+<td>PASS</td>
+<td>11-12 11:42</td>
+<td>11-12 11:43</td>
+<td>1 min 07 s</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Carga W (rubis.rb)</td>
+<td>PASS</td>
+<td>11-12 11:35</td>
+<td>11-12 11:35</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Contrato semântico das 36 instruções</td>
+<td>PASS</td>
+<td>11-12 11:41</td>
+<td>11-12 11:42</td>
+<td>37 s</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>Catálogo com contratos</td>
+<td>PASS</td>
+<td>11-12 11:42</td>
+<td>11-12 11:42</td>
+<td>0 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 2 — geração</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E8</td>
+<td>Fragmentos e raízes</td>
+<td>PASS</td>
+<td>11-12 11:48</td>
+<td>11-12 11:48</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E9</td>
+<td>Matriz de evidências</td>
+<td>PASS</td>
+<td>11-12 11:48</td>
+<td>11-12 11:48</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E10</td>
+<td>Ativação A(q)</td>
+<td>PASS</td>
+<td>11-12 11:48</td>
+<td>11-12 11:48</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E11</td>
+<td>Especificações P</td>
+<td>PASS</td>
+<td>11-12 11:48</td>
+<td>11-12 11:48</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E12</td>
+<td>Canonicalização e fusão</td>
+<td>PASS</td>
+<td>11-12 11:48</td>
+<td>11-12 11:48</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E13</td>
+<td>Síntese de rotas</td>
+<td>PASS</td>
+<td>11-13 08:28</td>
+<td>11-13 08:29</td>
+<td>3 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 3 — custo</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E14</td>
+<td>Modelo de custo calibrado</td>
+<td>PASS</td>
+<td>11-12 11:50</td>
+<td>11-12 11:50</td>
+<td>55 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 4 — composição</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E15</td>
+<td>Composição H</td>
+<td>PASS</td>
+<td>11-12 11:53</td>
+<td>11-12 11:53</td>
+<td>0 s</td>
+</tr>
+<tr>
+<td>E16</td>
+<td>Hbench congelado</td>
+<td>PASS</td>
+<td>11-12 11:53</td>
+<td>11-12 11:53</td>
+<td>0 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 5 — corretude</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E17</td>
+<td>Coorte e materialização</td>
+<td>PASS</td>
+<td>11-12 12:15</td>
+<td>11-12 12:16</td>
+<td>33 s</td>
+</tr>
+<tr>
+<td>E18</td>
+<td>Corretude (oráculo + replay)</td>
+<td>PASS</td>
+<td>11-12 12:17</td>
+<td>11-12 12:29</td>
+<td>12 min 17 s</td>
+</tr>
+<tr>
+<td>E19</td>
+<td>Baselines NoSE e QPG</td>
+<td>PASS</td>
+<td>11-12 12:30</td>
+<td>11-12 12:36</td>
+<td>6 min 06 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 6 — benchmark na coorte</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E20</td>
+<td>Benchmark na coorte</td>
+<td>PASS</td>
+<td>11-12 16:46</td>
+<td>11-12 18:41</td>
+<td>1 h 54 min</td>
+</tr>
+<tr>
+<td>E21</td>
+<td>Análise</td>
+<td>PASS</td>
+<td>11-12 18:41</td>
+<td>11-12 18:41</td>
+<td>0 s</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 7 — ablações</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E22</td>
+<td>Ablações dos critérios</td>
+<td>PASS</td>
+<td>11-12 18:41</td>
+<td>11-12 20:14</td>
+<td>1 h 33 min</td>
+</tr>
+</tbody>
+</table>
+<h3>Fase 8 — escala completa e aceitação</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Descrição</th>
+<th>Status</th>
+<th>Início</th>
+<th>Fim</th>
+<th>Duração</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E23</td>
+<td>Escala completa, aceitação e relatório</td>
+<td>PASS</td>
+<td>11-12 20:14</td>
+<td>11-13 08:04</td>
+<td>11 h 50 min</td>
+</tr>
+</tbody>
+</table>
+<h3>Incidentes registrados e como foram tratados</h3>
+<table>
+<thead>
+<tr>
+<th>Quando</th>
+<th>Incidente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11-12 11:36</td>
+<td>E6 falhou: verificação reprovada</td>
+</tr>
+<tr>
+<td>11-12 12:29</td>
+<td>E19 falhou: ModuleNotFoundError("No module named 'methodology'")</td>
+</tr>
+<tr>
+<td>11-12 12:55</td>
+<td>H01: medição invalidada por carga concorrente; será refeita</td>
+</tr>
+<tr>
+<td>11-12 12:55</td>
+<td>E20 falhou: verificação reprovada</td>
+</tr>
+<tr>
+<td>11-12 14:23</td>
+<td>H03: medição invalidada por carga concorrente; será refeita</td>
+</tr>
+<tr>
+<td>11-12 14:23</td>
+<td>E20 falhou: verificação reprovada</td>
+</tr>
+<tr>
+<td>11-12 14:52</td>
+<td>QPG: medição invalidada por carga concorrente; será refeita</td>
+</tr>
+<tr>
+<td>11-12 14:52</td>
+<td>E20 falhou: verificação reprovada</td>
+</tr>
+<tr>
+<td>11-12 15:03</td>
+<td>E20: tentativa 4 interrompida para aplicar D-V9-012; retomada a partir das medições aprovadas</td>
+</tr>
+<tr>
+<td>11-12 15:31</td>
+<td>E20 falhou: verificação reprovada</td>
+</tr>
+<tr>
+<td>11-12 15:33</td>
+<td>QPG recriado a partir de rubis_full e reverificado: oráculo 79429/79429</td>
+</tr>
+<tr>
+<td>11-13 06:23</td>
+<td>E23: medição fria de H01 invalidada; janela recomeçada</td>
+</tr>
+<tr>
+<td>11-13 08:05</td>
+<td>Aceitação interrompida: StopIteration no teste negativo de <code>supersedes</code>. Corrigido (D-V9-014).</td>
+</tr>
+<tr>
+<td>11-13 08:20</td>
+<td>Gate <code>mechanisms</code> reprovado: a declaração do E13 era no nível de conteúdo. E13 refeito em três níveis (D-V9-014), aceitação refeita: PASS.</td>
+</tr>
+</tbody>
+</table>
+<p>Medições invalidadas pela guarda de isolamento: 4 (H01, H03, QPG, E23:H01). Todas foram descartadas e refeitas; os arquivos invalidados ficam guardados.</p>
+<div class="part"></div>
+
+<h2>Relatório de resultados (gerado por <code>report.py</code>)</h2>
+<p>Gerado em 2026-11-13T08:33:03-0300 por <code>schemalens_v9/report.py</code>. Todos os números são lidos dos arquivos de resultado dos estágios; o que não foi executado aparece como <code>NOT_EXECUTED</code>.</p>
+<h3>1. Estado dos estágios</h3>
+<table>
+<thead>
+<tr>
+<th>Estágio</th>
+<th>Nome</th>
+<th>Status</th>
+<th>Duração (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INV</td>
+<td>Inventário do repositório antigo</td>
+<td>PASS</td>
+<td>0,2</td>
+</tr>
+<tr>
+<td>E1</td>
+<td>Preflight do ambiente</td>
+<td>PASS</td>
+<td>11,0</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Fonte de dados rubis_full</td>
+<td>PASS</td>
+<td>45,6</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Esquema conceitual S (EER)</td>
+<td>PASS</td>
+<td>0,2</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Estatísticas observadas</td>
+<td>PASS</td>
+<td>67,0</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Carga W (rubis.rb)</td>
+<td>PASS</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Contrato semântico das 36 instruções</td>
+<td>PASS</td>
+<td>37,6</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>Catálogo com contratos</td>
+<td>PASS</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>E8</td>
+<td>Fragmentos e raízes</td>
+<td>PASS</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>E9</td>
+<td>Matriz de evidências</td>
+<td>PASS</td>
+<td>0,1</td>
+</tr>
+<tr>
+<td>E10</td>
+<td>Ativação A(q)</td>
+<td>PASS</td>
+<td>0,1</td>
+</tr>
+<tr>
+<td>E11</td>
+<td>Especificações P</td>
+<td>PASS</td>
+<td>0,1</td>
+</tr>
+<tr>
+<td>E12</td>
+<td>Canonicalização e fusão</td>
+<td>PASS</td>
+<td>0,2</td>
+</tr>
+<tr>
+<td>E13</td>
+<td>Síntese de rotas</td>
+<td>PASS</td>
+<td>3,6</td>
+</tr>
+<tr>
+<td>E14</td>
+<td>Modelo de custo calibrado</td>
+<td>PASS</td>
+<td>55,9</td>
+</tr>
+<tr>
+<td>E15</td>
+<td>Composição H</td>
+<td>PASS</td>
+<td>0,6</td>
+</tr>
+<tr>
+<td>E16</td>
+<td>Hbench congelado</td>
+<td>PASS</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>E17</td>
+<td>Coorte e materialização</td>
+<td>PASS</td>
+<td>33,2</td>
+</tr>
+<tr>
+<td>E18</td>
+<td>Corretude (oráculo + replay)</td>
+<td>PASS</td>
+<td>737,4</td>
+</tr>
+<tr>
+<td>E19</td>
+<td>Baselines NoSE e QPG</td>
+<td>PASS</td>
+<td>366,7</td>
+</tr>
+<tr>
+<td>E20</td>
+<td>Benchmark na coorte</td>
+<td>PASS</td>
+<td>6.873,9</td>
+</tr>
+<tr>
+<td>E21</td>
+<td>Análise</td>
+<td>PASS</td>
+<td>0,0</td>
+</tr>
+<tr>
+<td>E22</td>
+<td>Ablações dos critérios</td>
+<td>PASS</td>
+<td>5.591,9</td>
+</tr>
+<tr>
+<td>E23</td>
+<td>Escala completa, aceitação e relatório</td>
+<td>PASS</td>
+<td>42.624,5</td>
+</tr>
+</tbody>
+</table>
+<h3>2. O que mudou em relação à V8</h3>
+<ul>
+<li><strong>Espaço de projeto.</strong> V8: P = 86, C = 41, gerados por um módulo desligado de H. V9: P = 57, C = 24 (CCR = 0,5789), com linhagem até cada tabela de H.</li>
+<li><strong>Oráculo.</strong> V8 calculava a resposta exata só das instruções 34 e 35. V9 calcula as 36 a partir de <code>rubis_full</code> e reproduz a referência da V8 em 397479 de 397479 avaliações.</li>
+<li><strong>Mecanismos.</strong> access_profile: apenas metadados/especificações; relationships: apenas metadados/especificações; sharedness: composição H; support_sharing: estrutura física de C; write_exposure: estrutura física de C.</li>
+<li><strong>Rotas.</strong> QueryPlans e WritePlans sintetizados por código (<code>schemalens_v9/routes.py</code>) e executados por um executor genérico; nenhuma rota escrita à mão para os esquemas de H.</li>
+<li><strong>Famílias como substituição.</strong> O catálogo declara <code>supersedes</code>; a composição proíbe uma tabela de família junto com as tabelas que ela substitui.</li>
+</ul>
+<h3>3. Modelo de custo (E14)</h3>
+<p>Coeficientes (ms): leitura a = 0,4620, escrita b = 0,3887, linha lida c = 0,00751; constante por requisição d = 0,1485; R² ponderado = 0,9991. Calibrado em 12 esquemas da V8-012.</p>
+<table>
+<thead>
+<tr>
+<th>Carga</th>
+<th>τ (12 esquemas)</th>
+<th>τ deixando um de fora</th>
+<th>τ só competitivos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Browsing</td>
+<td>0,818</td>
+<td>0,758</td>
+<td>0,733</td>
+</tr>
+<tr>
+<td>Bidding</td>
+<td>0,879</td>
+<td>0,788</td>
+<td>0,822</td>
+</tr>
+<tr>
+<td>Update10x</td>
+<td>0,849</td>
+<td>0,849</td>
+<td>0,778</td>
+</tr>
+<tr>
+<td>Update100x</td>
+<td>0,818</td>
+<td>0,818</td>
+<td>0,733</td>
+</tr>
+</tbody>
+</table>
+<h3>4. Esquemas gerados (H)</h3>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Selecionado por</th>
+<th>Tabelas</th>
+<th>Famílias</th>
+<th>Custo previsto Browsing</th>
+<th>Bidding</th>
+<th>Update10x</th>
+<th>Update100x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01</td>
+<td>fronteira de Pareto (leitura × escrita × espaço, mix bidding); ótimo da carga browsing; ótimo da carga update10x</td>
+<td>13</td>
+<td>C0, C1, C4, C5</td>
+<td>1,053</td>
+<td>1,561</td>
+<td>2,016</td>
+<td>2,434</td>
+</tr>
+<tr>
+<td>H02</td>
+<td>fronteira de Pareto (leitura × escrita × espaço, mix bidding); ótimo da carga bidding</td>
+<td>14</td>
+<td>C0, C1, C4, C5</td>
+<td>1,053</td>
+<td>1,555</td>
+<td>2,039</td>
+<td>2,484</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>ótimo da carga update100x</td>
+<td>13</td>
+<td>C0, C1, C2, C4, C5</td>
+<td>5,493</td>
+<td>4,221</td>
+<td>3,198</td>
+<td>2,256</td>
+</tr>
+<tr>
+<td>H04</td>
+<td>fronteira de Pareto (leitura × escrita × espaço, mix bidding)</td>
+<td>13</td>
+<td>C0, C1, C2, C4, C5</td>
+<td>1,758</td>
+<td>2,273</td>
+<td>2,391</td>
+<td>2,499</td>
+</tr>
+<tr>
+<td>H05</td>
+<td>fronteira de Pareto (leitura × escrita × espaço, mix bidding)</td>
+<td>13</td>
+<td>C0, C1, C2, C4, C5</td>
+<td>6,198</td>
+<td>4,933</td>
+<td>3,573</td>
+<td>2,321</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Âncora <code>anchor_sl_norm</code>: 14 tabelas; coincide com opt_bidding.</p>
+</li>
+<li>
+<p>Âncora <code>anchor_c5_substitution</code>: 14 tabelas; coincide com opt_bidding.</p>
+</li>
+<li>AUTO_H_norm da V8: 19 tabelas; âncora gerada: 14 tabelas.</li>
+</ul>
+<p>Hbench congelado em 2026-11-12T11:53:08-0300 (hash <code>8446365297fc4918…</code>), |Hbench| = 5, DeploymentReduction = 0,00.</p>
+<h3>5. Corretude (E18, E19)</h3>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Concorda com o oráculo V9</th>
+<th>Concorda com a referência V8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>H02</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>H04</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>H05</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>NoSE</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>QPG</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+<tr>
+<td>V8_AUTO_H_norm</td>
+<td>79429/79429</td>
+<td>79429/79429</td>
+</tr>
+</tbody>
+</table>
+<h3>6. Benchmark na coorte (E20, E21)</h3>
+<p>Latência média por requisição (ms, IC 95% t, n = 5), ordem intercalada, mesma tarde (ver janelas abaixo): H01, NoSE, H02, V8_AUTO_H_norm, H03, QPG, H04, H05.</p>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Browsing</th>
+<th>Bidding</th>
+<th>Update10x</th>
+<th>Update100x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01</td>
+<td>1,058 ± 0,050</td>
+<td>1,484 ± 0,175</td>
+<td>2,284 ± 0,177</td>
+<td>2,991 ± 0,134</td>
+</tr>
+<tr>
+<td>NoSE</td>
+<td>1,244 ± 0,146</td>
+<td>2,105 ± 0,243</td>
+<td>3,070 ± 0,180</td>
+<td>3,124 ± 0,408</td>
+</tr>
+<tr>
+<td>H02</td>
+<td>1,066 ± 0,044</td>
+<td>1,954 ± 0,727</td>
+<td>3,027 ± 0,345</td>
+<td>3,654 ± 0,208</td>
+</tr>
+<tr>
+<td>V8_AUTO_H_norm</td>
+<td>1,953 ± 0,200</td>
+<td>2,907 ± 0,649</td>
+<td>3,604 ± 0,307</td>
+<td>3,377 ± 0,238</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>6,689 ± 0,507</td>
+<td>5,098 ± 0,237</td>
+<td>4,100 ± 0,277</td>
+<td>2,739 ± 0,081</td>
+</tr>
+<tr>
+<td>QPG</td>
+<td>1,195 ± 0,063</td>
+<td>1,703 ± 0,133</td>
+<td>2,593 ± 0,149</td>
+<td>2,659 ± 0,038</td>
+</tr>
+<tr>
+<td>H04</td>
+<td>1,939 ± 0,320</td>
+<td>2,334 ± 0,006</td>
+<td>2,925 ± 0,097</td>
+<td>3,178 ± 0,060</td>
+</tr>
+<tr>
+<td>H05</td>
+<td>6,831 ± 0,124</td>
+<td>5,345 ± 0,123</td>
+<td>4,182 ± 0,170</td>
+<td>2,967 ± 0,094</td>
+</tr>
+</tbody>
+</table>
+<p>Contrastes pareados (esquema de H − referência, ms):</p>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Contra</th>
+<th>Browsing</th>
+<th>Bidding</th>
+<th>Update10x</th>
+<th>Update100x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01</td>
+<td>NoSE</td>
+<td>H mais rápido (-0,186; -14,9%)</td>
+<td>H mais rápido (-0,622; -29,5%)</td>
+<td>H mais rápido (-0,786; -25,6%)</td>
+<td>empate (-0,133; -4,3%)</td>
+</tr>
+<tr>
+<td>H01</td>
+<td>QPG</td>
+<td>H mais rápido (-0,137; -11,4%)</td>
+<td>H mais rápido (-0,219; -12,9%)</td>
+<td>H mais rápido (-0,310; -11,9%)</td>
+<td>H mais lento (0,332; 12,5%)</td>
+</tr>
+<tr>
+<td>H01</td>
+<td>V8_AUTO_H_norm</td>
+<td>H mais rápido (-0,895; -45,8%)</td>
+<td>H mais rápido (-1,423; -49,0%)</td>
+<td>H mais rápido (-1,321; -36,6%)</td>
+<td>H mais rápido (-0,386; -11,4%)</td>
+</tr>
+<tr>
+<td>H02</td>
+<td>NoSE</td>
+<td>H mais rápido (-0,179; -14,4%)</td>
+<td>empate (-0,151; -7,2%)</td>
+<td>empate (-0,043; -1,4%)</td>
+<td>H mais lento (0,529; 16,9%)</td>
+</tr>
+<tr>
+<td>H02</td>
+<td>QPG</td>
+<td>H mais rápido (-0,129; -10,8%)</td>
+<td>empate (0,251; 14,8%)</td>
+<td>H mais lento (0,434; 16,7%)</td>
+<td>H mais lento (0,995; 37,4%)</td>
+</tr>
+<tr>
+<td>H02</td>
+<td>V8_AUTO_H_norm</td>
+<td>H mais rápido (-0,888; -45,5%)</td>
+<td>H mais rápido (-0,953; -32,8%)</td>
+<td>H mais rápido (-0,577; -16,0%)</td>
+<td>H mais lento (0,276; 8,2%)</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>NoSE</td>
+<td>H mais lento (5,445; 437,5%)</td>
+<td>H mais lento (2,992; 142,1%)</td>
+<td>H mais lento (1,030; 33,5%)</td>
+<td>H mais rápido (-0,386; -12,3%)</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>QPG</td>
+<td>H mais lento (5,494; 459,8%)</td>
+<td>H mais lento (3,395; 199,4%)</td>
+<td>H mais lento (1,507; 58,1%)</td>
+<td>H mais lento (0,080; 3,0%)</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>V8_AUTO_H_norm</td>
+<td>H mais lento (4,736; 242,4%)</td>
+<td>H mais lento (2,191; 75,4%)</td>
+<td>H mais lento (0,496; 13,8%)</td>
+<td>H mais rápido (-0,639; -18,9%)</td>
+</tr>
+<tr>
+<td>H04</td>
+<td>NoSE</td>
+<td>H mais lento (0,694; 55,8%)</td>
+<td>empate (0,229; 10,9%)</td>
+<td>H mais rápido (-0,145; -4,7%)</td>
+<td>empate (0,053; 1,7%)</td>
+</tr>
+<tr>
+<td>H04</td>
+<td>QPG</td>
+<td>H mais lento (0,744; 62,2%)</td>
+<td>H mais lento (0,631; 37,1%)</td>
+<td>H mais lento (0,332; 12,8%)</td>
+<td>H mais lento (0,519; 19,5%)</td>
+</tr>
+<tr>
+<td>H04</td>
+<td>V8_AUTO_H_norm</td>
+<td>empate (-0,015; -0,8%)</td>
+<td>empate (-0,573; -19,7%)</td>
+<td>H mais rápido (-0,679; -18,8%)</td>
+<td>empate (-0,200; -5,9%)</td>
+</tr>
+<tr>
+<td>H05</td>
+<td>NoSE</td>
+<td>H mais lento (5,587; 449,0%)</td>
+<td>H mais lento (3,240; 153,9%)</td>
+<td>H mais lento (1,112; 36,2%)</td>
+<td>empate (-0,158; -5,0%)</td>
+</tr>
+<tr>
+<td>H05</td>
+<td>QPG</td>
+<td>H mais lento (5,636; 471,6%)</td>
+<td>H mais lento (3,642; 213,9%)</td>
+<td>H mais lento (1,589; 61,3%)</td>
+<td>H mais lento (0,308; 11,6%)</td>
+</tr>
+<tr>
+<td>H05</td>
+<td>V8_AUTO_H_norm</td>
+<td>H mais lento (4,878; 249,7%)</td>
+<td>H mais lento (2,438; 83,9%)</td>
+<td>H mais lento (0,578; 16,0%)</td>
+<td>H mais rápido (-0,411; -12,2%)</td>
+</tr>
+</tbody>
+</table>
+<p>Previsto × medido (dentro de H):</p>
+<table>
+<thead>
+<tr>
+<th>Carga</th>
+<th>Ordem prevista</th>
+<th>Ordem medida</th>
+<th>τ</th>
+<th>Top-1 preservado</th>
+<th>Regret (ms)</th>
+<th>A até 5% do melhor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Browsing</td>
+<td>H01 &lt; H02 &lt; H04 &lt; H03 &lt; H05</td>
+<td>H01 &lt; H02 &lt; H04 &lt; H03 &lt; H05</td>
+<td>0,900</td>
+<td>sim</td>
+<td>0,000</td>
+<td>H01, H02</td>
+</tr>
+<tr>
+<td>Bidding</td>
+<td>H02 &lt; H01 &lt; H04 &lt; H03 &lt; H05</td>
+<td>H01 &lt; H02 &lt; H04 &lt; H03 &lt; H05</td>
+<td>0,800</td>
+<td>não</td>
+<td>0,470</td>
+<td>H01</td>
+</tr>
+<tr>
+<td>Update10x</td>
+<td>H01 &lt; H02 &lt; H04 &lt; H03 &lt; H05</td>
+<td>H01 &lt; H04 &lt; H02 &lt; H03 &lt; H05</td>
+<td>0,800</td>
+<td>sim</td>
+<td>0,000</td>
+<td>H01</td>
+</tr>
+<tr>
+<td>Update100x</td>
+<td>H03 &lt; H05 &lt; H01 &lt; H02 &lt; H04</td>
+<td>H03 &lt; H05 &lt; H01 &lt; H04 &lt; H02</td>
+<td>0,800</td>
+<td>sim</td>
+<td>0,000</td>
+<td>H03</td>
+</tr>
+</tbody>
+</table>
+<p>Htop (não dominados nas 4 cargas, só esquemas de H): H01, H03.</p>
+<p><strong>Piso de ruído (pares de esquemas com trabalho idêntico na carga).</strong> Mesmas leituras, escritas e linhas lidas por requisição; a diferença medida não pode ser efeito de esquema:</p>
+<table>
+<thead>
+<tr>
+<th>Carga</th>
+<th>Par</th>
+<th>Leituras/req</th>
+<th>Diferença medida (ms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Browsing</td>
+<td>H01 × H02</td>
+<td>1,47</td>
+<td>-0,007</td>
+</tr>
+</tbody>
+</table>
+<p>Maior diferença entre esquemas de trabalho idêntico: 0,007 ms. Contrastes menores que isso não devem ser lidos como efeito de esquema.</p>
+<p>Janelas de medição (início–fim): H01 16:57–17:06; NoSE 17:06–17:16; H02 17:16–17:28; V8_AUTO_H_norm 17:28–17:41; H03 17:41–18:00; QPG 18:00–18:10; H04 18:10–18:21; H05 18:21–18:41. Janela contínua única: keyspaces rematerializados de <code>rubis_full</code> antes da janela; qualquer medição invalidada descarta a janela inteira (a medição anterior, em dois blocos, está arquivada em <code>E20_benchmark_run1_two_blocks</code>).</p>
+<h3>7. Ablações dos critérios (E22)</h3>
+<p>Cada critério foi neutralizado (D-V9-013) e o gerador foi rodado de novo (ativação → P → C → H).</p>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Neutralização</th>
+<th>Ativações alteradas</th>
+<th>ΔP</th>
+<th>ΔC</th>
+<th>Esquemas de H alterados</th>
+<th>Resultado nulo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_profile</td>
+<td>expected_rows = rows_read_bound = 1, relaxed_ratio = ∞, nonroot_proj_bytes = 0 (perfil de acesso neutro)</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>canonicalization</td>
+<td>sem canonicalização nem fusão (cada especificação é uma tabela)</td>
+<td>0</td>
+<td>0</td>
+<td>33</td>
+<td>opt_update10x, pareto_1, pareto_6</td>
+<td>não</td>
+</tr>
+<tr>
+<td>cost_selection</td>
+<td>composição sem o modelo calibrado: cada leitura/escrita pesa 1, linhas pesam 0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>—</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>relationships</td>
+<td>reverse_hops = 0 (navegação reversa ignorada)</td>
+<td>8</td>
+<td>-2</td>
+<td>0</td>
+<td>—</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>sharedness</td>
+<td>sharedness fixada em 1 (nenhuma consulta compartilha acesso)</td>
+<td>80</td>
+<td>-4</td>
+<td>0</td>
+<td>pareto_1</td>
+<td>não</td>
+</tr>
+<tr>
+<td>supersedes</td>
+<td>restrições de substituição removidas (famílias viram acréscimo, como na V8)</td>
+<td>0</td>
+<td>0</td>
+<td>-1</td>
+<td>pareto_1</td>
+<td>não</td>
+</tr>
+<tr>
+<td>support_sharing</td>
+<td>support_attrs e missing_maintenance_keys vazios (sem SupportQuery explícita)</td>
+<td>40</td>
+<td>-11</td>
+<td>-4</td>
+<td>—</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>write_exposure</td>
+<td>volatile_proj vazio (nenhum atributo é tratado como volátil)</td>
+<td>3</td>
+<td>-2</td>
+<td>-2</td>
+<td>kbest_1, kbest_2</td>
+<td>não</td>
+</tr>
+</tbody>
+</table>
+<p>Efeito físico na coorte: os esquemas distintos que mudaram foram materializados, conferidos pelo oráculo e medidos na mesma janela, intercalados com H02 (ordem A01, A02, H02, A03, A04, A05). Concordância com o oráculo: A01 PASS, A02 PASS, A03 PASS, A04 PASS, A05 PASS, H02 PASS; esquemas bloqueados pelo oráculo: nenhum.</p>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Origem</th>
+<th>Rótulo</th>
+<th>Browsing</th>
+<th>Bidding</th>
+<th>Update10x</th>
+<th>Update100x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A01</td>
+<td>sharedness, supersedes, canonicalization</td>
+<td>pareto_1</td>
+<td>ablado mais rápido (-0,452 ms)</td>
+<td>ablado mais rápido (-0,749 ms)</td>
+<td>ablado mais rápido (-0,275 ms)</td>
+<td>ablado mais lento (0,390 ms)</td>
+</tr>
+<tr>
+<td>A02</td>
+<td>write_exposure</td>
+<td>kbest_1</td>
+<td>ablado mais rápido (-0,412 ms)</td>
+<td>ablado mais rápido (-0,597 ms)</td>
+<td>empate (-0,075 ms)</td>
+<td>ablado mais lento (0,336 ms)</td>
+</tr>
+<tr>
+<td>A03</td>
+<td>write_exposure</td>
+<td>kbest_2</td>
+<td>ablado mais rápido (-0,350 ms)</td>
+<td>ablado mais rápido (-0,437 ms)</td>
+<td>empate (-0,119 ms)</td>
+<td>ablado mais lento (0,329 ms)</td>
+</tr>
+<tr>
+<td>A04</td>
+<td>B2_all_addition</td>
+<td>B2_all_addition</td>
+<td>ablado mais rápido (-0,357 ms)</td>
+<td>ablado mais rápido (-0,599 ms)</td>
+<td>empate (0,062 ms)</td>
+<td>ablado mais lento (0,639 ms)</td>
+</tr>
+<tr>
+<td>A05</td>
+<td>B3_all_substitution_no_cost</td>
+<td>B3_all_substitution_no_cost</td>
+<td>ablado mais lento (4,418 ms)</td>
+<td>ablado mais lento (2,414 ms)</td>
+<td>ablado mais lento (1,193 ms)</td>
+<td>ablado mais lento (0,324 ms)</td>
+</tr>
+</tbody>
+</table>
+<p>Diferença = esquema ablado − H02 (negativo: o ablado é mais rápido). IC 95% sobre as 5 repetições pareadas.</p>
+<h3>8. Escala completa a frio (E23)</h3>
+<p>Seleção: H01, H03. Regra: os 2 esquemas de H que mais vezes foram o melhor medido na coorte (E21, janela contínua); desempate pela posição média. Vitórias: {'H01': 3, 'H02': 0, 'H03': 1, 'H04': 0, 'H05': 0}.</p>
+<p>Escopo: escala completa (2 M itens / 20 M lances), nó reiniciado e cache zerado antes de cada repetição, mesma janela, intercalado. Ordem: H01, NoSE, H03, QPG. Controle de cache: 84 ciclos, todos aprovados = True, cache máximo após a limpeza 213732 KiB. Concordância com as respostas da V8 em escala completa: H01 PASS, H03 PASS, NoSE PASS, QPG PASS.</p>
+<p>Latência média (ms):</p>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Browsing</th>
+<th>Bidding</th>
+<th>Update10x</th>
+<th>Update100x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01</td>
+<td>1,747</td>
+<td>2,256</td>
+<td>2,871</td>
+<td>3,175</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>6,228</td>
+<td>4,739</td>
+<td>3,858</td>
+<td>2,929</td>
+</tr>
+<tr>
+<td>NoSE</td>
+<td>4,856</td>
+<td>5,005</td>
+<td>4,188</td>
+<td>3,212</td>
+</tr>
+<tr>
+<td>QPG</td>
+<td>5,063</td>
+<td>4,315</td>
+<td>3,725</td>
+<td>2,865</td>
+</tr>
+</tbody>
+</table>
+<p>Contrastes pareados (H − baseline):</p>
+<table>
+<thead>
+<tr>
+<th>Esquema</th>
+<th>Contra</th>
+<th>Browsing</th>
+<th>Bidding</th>
+<th>Update10x</th>
+<th>Update100x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H01</td>
+<td>NoSE</td>
+<td>H mais rápido (-3,110; -64,0%)</td>
+<td>H mais rápido (-2,748; -54,9%)</td>
+<td>H mais rápido (-1,317; -31,4%)</td>
+<td>empate (-0,037; -1,2%)</td>
+</tr>
+<tr>
+<td>H01</td>
+<td>QPG</td>
+<td>H mais rápido (-3,317; -65,5%)</td>
+<td>H mais rápido (-2,059; -47,7%)</td>
+<td>H mais rápido (-0,854; -22,9%)</td>
+<td>H mais lento (0,310; 10,8%)</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>NoSE</td>
+<td>H mais lento (1,371; 28,2%)</td>
+<td>H mais rápido (-0,265; -5,3%)</td>
+<td>H mais rápido (-0,330; -7,9%)</td>
+<td>H mais rápido (-0,282; -8,8%)</td>
+</tr>
+<tr>
+<td>H03</td>
+<td>QPG</td>
+<td>H mais lento (1,164; 23,0%)</td>
+<td>H mais lento (0,424; 9,8%)</td>
+<td>H mais lento (0,133; 3,6%)</td>
+<td>empate (0,064; 2,2%)</td>
+</tr>
+</tbody>
+</table>
+<h3>9. Aceitação (recalculada dos dados brutos)</h3>
+<p>Status: <strong>PASS</strong> (global_pass_hardcoded = False; avaliado em 2026-11-13T08:32:30-0300).</p>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activation</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>cohort_benchmark</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>correctness</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>criteria_ablations</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>full_scale</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>generator_hash</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>mechanisms</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>supersedes</td>
+<td>PASS</td>
+</tr>
+</tbody>
+</table>
+<p>Nível de efeito de cada mecanismo (D-V9-014): access_profile: apenas metadados/especificações; relationships: apenas metadados/especificações; sharedness: composição H; support_sharing: estrutura física de C; write_exposure: estrutura física de C.</p>
+<p>Testes negativos: 11 de 11 rejeitados como esperado.</p>
+<ul>
+<li>esquema mantém tabela marcada como substituída → gate <code>supersedes</code>: rejeitado</li>
+<li>família ativada sem predicado verdadeiro → gate <code>activation</code>: rejeitado</li>
+<li>esquema com hash diferente da saída do gerador (edição manual) → gate <code>generator_hash</code>: rejeitado</li>
+<li>mecanismo declarado usado cujo desligamento não muda a saída → gate <code>mechanisms</code>: rejeitado</li>
+<li>hash de resposta alterado → gate <code>cohort_benchmark</code>: rejeitado</li>
+<li>observação apagada → gate <code>cohort_benchmark</code>: rejeitado</li>
+<li>erro injetado → gate <code>cohort_benchmark</code>: rejeitado</li>
+<li>carga concorrente → gate <code>cohort_benchmark</code>: rejeitado</li>
+<li>estado não restaurado → gate <code>cohort_benchmark</code>: rejeitado</li>
+<li>protocolo reduzido → gate <code>cohort_benchmark</code>: rejeitado</li>
+<li>divergência do oráculo escondida → gate <code>correctness</code>: rejeitado</li>
+</ul>
+<h3>10. Limitações</h3>
+<p>Ver <code>docs/LIMITATIONS.md</code>.</p>
+<div class="part"></div>
+
+<h2>Registro de decisões</h2>
+<p>Decisões herdadas da V8 (citadas, não recriadas): <strong>D-001</strong> fonte <code>rubis_full</code> com semente 42, sem regenerar;
+<strong>D-002</strong> C9 = <code>UNDEFINED_RESERVED</code>; D-003 a D-007 conforme <code>docs/DECISION_LOG.md</code> do repositório antigo.</p>
+<h3>D-V9-001 — Repositório separado (2026-11-12)</h3>
+<p>A V9 roda em <code>~/Documents/schemalens_v9_cassandra</code>. O repositório V1–V8 é somente leitura: o código da V9
+recusa gravar dentro dele (<code>common._guard</code>). Componentes reaproveitados são copiados para <code>reused/</code>, nunca importados do caminho antigo.</p>
+<h3>D-V9-002 — Ambiente Python fixado (2026-11-12)</h3>
+<p><code>.venv</code> próprio, criado a partir do CPython 3.12.16 usado pela V8; <code>cassandra-driver==3.30.1</code> (mesma versão da V8),
+<code>PuLP==2.9.0</code> (composição por programação linear inteira, Fase 4), <code>PyYAML==6.0.2</code> (catálogo).</p>
+<h3>D-V9-003 — Guarda de isolamento estendida (2026-11-12)</h3>
+<p>Mesma regra da V8-012 (amostra a cada 15 s, nó ocioso por 10 min, 0 compactações, medição contaminada =
+<code>INVALID_CONCURRENT_LOAD</code>). Como a V9 roda de um terceiro diretório, os padrões passam a cobrir qualquer
+interpretador do checkout irmão (<code>rubis3</code>) e do checkout da V8 (<code>rubis3_claude</code>), além dos carregadores da V9.
+Implementação em <code>schemalens_v9/isolation.py</code>.</p>
+<h3>D-V9-004 — Contagem de <code>rubis_full</code> por faixas de token (2026-11-12)</h3>
+<p>A E2 conta cada tabela com <code>count(*)</code> em 512 ou 2.048 faixas de token da chave de partição, só leitura.
+Um <code>count(*)</code> único em 20 milhões de linhas excede o tempo-limite de leitura do nó.</p>
+<h3>D-V9-005 — Contrato da instrução 15 (StoreBuyNow) (2026-11-12, aprovado pelo usuário)</h3>
+<p>O <code>rubis.rb</code> declara <code>UPDATE items SET quantity=?, nb_of_bids=?, end_date=?</code>. A V9 mantém a interpretação da V8
+(rota e oráculo): a instrução 15 diminui <code>quantity</code> e não altera <code>nb_of_bids</code> nem <code>end_date</code>. Motivos: comparabilidade
+com o oráculo e com as medições da V8, e evitar que <code>end_date</code> (chave de clustering em quatro tabelas) passe a ser
+volátil por uma ambiguidade da carga. Consequência registrada no contrato (E6): <code>end_date</code> não é volátil na V9.</p>
+<h3>D-V9-006 — Contrato semântico = semântica executada na V8, com oráculo completo (2026-11-12)</h3>
+<p>O "oráculo independente" da V8 só calculava a resposta exata das instruções 34 e 35; as outras 34 eram
+checadas por formato e pela concordância entre os seis desenhos. A V9 escreve o contrato das 36 instruções
+de forma declarativa (<code>schemalens_v9/contract.py</code>) e um oráculo genérico que o interpreta sobre um estado
+lido de <code>rubis_full</code> (<code>schemalens_v9/oracle_v9.py</code>; a coorte da V8 fornece só as identidades). O contrato segue a
+semântica que a V8 executou e que cinco desenhos independentes confirmaram, inclusive onde ela difere do texto
+do NoSE (projeções reduzidas em 32–35, LIMIT 25 em 9/30/32/33/34, desempates explícitos, D-V9-005). Cada desvio
+está em <code>deviation</code>. Verificação (E6): o oráculo reproduz a referência AUTO_H_norm da V8-011 em todas as
+avaliações (ver <code>stages/E06_semantic_contract/ORACLE_VERIFICATION.json</code>). Durante a verificação, duas
+entradas do contrato foram corrigidas (instrução 32: ordem crescente por data e LIMIT 25), antes de qualquer
+geração de esquema.</p>
+<h3>D-V9-007 — Parâmetros dos predicados de ativação (2026-11-12)</h3>
+<p>Os predicados (catálogo, E7) geram candidatos; quem escolhe entre eles é o modelo de custo (E14/E15). Os
+limiares são, portanto, de geração, não de decisão:
+- <code>lambda2_rows = 25</code> (C2): o LIMIT da carga; acima disso o índice + leituras pontuais não é limitado.
+- <code>beta2_bytes = 64</code>, <code>beta8_bytes = 64</code> (C2, C8): projeção ou parte navegada com pelo menos 64 B estimados
+  (tamanhos do modelo NoSE); abaixo disso uma cópia custa menos que uma leitura extra.
+- <code>k3_copies = 2</code> (C3): o atributo volátil precisa estar em pelo menos duas tabelas para que isolá-lo poupe atualizações.
+- <code>theta3_ratio = 0.05</code> (C3): as escritas do volátil precisam somar ao menos 5% das leituras da consulta no mix; abaixo
+  disso (ex.: Browsing, sem escritas) a família não é candidata.
+- <code>rho7_ratio = 4</code> (C7): relaxar a chave pode ler no máximo 4× as linhas necessárias (fan-out medido na E4).
+Nenhum limiar foi ajustado depois de ver latências da V9.</p>
+<h3>D-V9-008 — Fusão segura com ρmax = 0,5 (2026-11-12)</h3>
+<p>Duas especificações só são fundidas se tiverem o mesmo escopo (entidade das linhas, chave de partição e
+clustering), se nenhum membro perder um atributo que a sua família removeu de propósito (C3/C8) e se a
+redundância (bytes a mais por linha / bytes do membro) for ≤ 0,5. Identidade física idêntica sempre funde.</p>
+<h3>D-V9-009 — Aceitação do modelo de custo: τ ≥ 0,6 (2026-11-12)</h3>
+<p>O modelo é aceito se o τ de Kendall entre custo previsto e latência medida for ≥ 0,6 em todas as cargas, com
+os 12 esquemas da V8-012 e também deixando um esquema de fora. O τ só entre os 10 esquemas competitivos
+(sem Normalizado e Especialista) é relatado à parte, porque é onde a escolha de H acontece.</p>
+<h3>D-V9-010 — Cada entidade inserida mantém uma cópia completa (2026-11-12)</h3>
+<p>Na composição, toda entidade que a carga insere precisa de pelo menos uma tabela com todos os atributos
+inseridos. Sem isso, o otimizador poderia descartar dados que nenhuma consulta da carga lê (ex.: <code>comments.item_id</code>),
+o que seria perda de dados, não projeto de esquema.</p>
+<h3>D-V9-011 — Desempate por espaço (2026-11-12)</h3>
+<p>O objetivo da composição soma 1e-4 × GB armazenado. Isso só desempata esquemas de mesmo custo (ex.: no mix
+Browsing, sem escritas, tabelas extras não custariam nada), escolhendo o menor.</p>
+<h3>D-V9-012 — Execuções vazias do runner irmão pausado (2026-11-12)</h3>
+<p>Três medições do E20 (H01, H03, QPG) foram invalidadas porque a guarda viu, em uma amostra cada, o runner
+<code>sequential_baselines_011.py</code> do diretório irmão <code>rubis3</code>. Com o marcador <code>PAUSE_JOB</code> presente (desde 10/11),
+esse runner retorna 75 antes de abrir qualquer sessão no Cassandra (lido no código do irmão, somente leitura).
+A guarda da V9 passa a ter a mesma exceção que a V8-012 já tinha: runner nu, com o marcador presente e sem
+carregador filho, é registrado em <code>ignored_paused_sibling_runner_noops</code> e não conta como carga concorrente.
+As três medições invalidadas continuam descartadas (arquivos <code>*_INVALID_*.json</code>) e foram refeitas.</p>
+<h3>D-V9-013 — Neutralização dos critérios nas ablações (2026-11-12)</h3>
+<p>Cada critério da E22 é desligado por um knob do gerador (descrição em <code>phase7.CRITERIA</code>), e o pipeline inteiro
+(ativação → P → C → H) é rodado de novo. Nenhum esquema é editado à mão. Os baselines de decisão B1/B2/B3 são
+montados a partir do mesmo C. Os esquemas novos são materializados, conferidos pelo oráculo e medidos na mesma
+janela que o H02 (contraparte <code>opt_bidding</code>).</p>
+<h3>D-V9-014 — Declaração de uso dos mecanismos em três níveis (2026-11-13)</h3>
+<p>Na primeira versão, o E13 declarava que um mecanismo "muda a saída" quando o hash de C mudava em qualquer
+campo, inclusive em metadados. O gate <code>mechanisms</code> da aceitação exige que mude a estrutura física. Na primeira
+aceitação, <code>access_profile</code>, <code>relationships</code> e <code>sharedness</code> reprovaram: tinham sido declarados como usados, mas
+não mudam os <code>physical_id</code> de C.
+Correção: o E13 passa a registrar <code>C_physical_changes</code>, <code>H_changes</code> e <code>C_content_changes</code>, mais um <code>level</code>.
+<code>output_changes</code> passa a significar mudança física em C. O gate confere a declaração nos dois sentidos: uso
+declarado sem efeito e efeito não declarado. Resultado:
+- <code>support_sharing</code> e <code>write_exposure</code> mudam a estrutura física de C.
+- <code>sharedness</code> muda só a composição H.
+- <code>access_profile</code> e <code>relationships</code> mudam só os metadados e as especificações; não afetam nenhum esquema.
+Só a declaração do E13 foi refeita. ROUTES_UNIVERSAL, CANONICAL_WITH_COVER e o hash do E13 continuam idênticos.
+A versão anterior está arquivada em <code>MECHANISM_USAGE.v1_content_level.json</code> e <code>RESULT.v1.json</code>.
+Também foi corrigido o teste negativo de <code>supersedes</code>, que procurava a tabela substituída só no primeiro esquema
+de H e quebrava (StopIteration) quando ela não existia em C. Agora ele procura o primeiro par em que ela existe.</p>
+<h2>Limitações declaradas</h2>
+<ol>
+<li><strong>Baselines reconstruídos.</strong> NoSE e QPG são reconstruídos a partir dos artefatos históricos, não executados.
+   A cópia local do QPG não tem metadados git; a fidelidade é verificada pelo hash dos arquivos.</li>
+<li><strong>Domínio de parâmetros.</strong> O domínio (30 usuários, 30 itens, 10 categorias, 10 regiões, sorteio uniforme com semente) é uma hipótese de pesquisa.</li>
+<li><strong>Ambiente.</strong> Nó único (RF = 1, consistência ONE, cliente sequencial), compartilhado com o diretório irmão <code>rubis3</code>.
+   O Cassandra lê os dados por mmap, então em escala completa só o reinício do nó zera o cache.</li>
+<li><strong>Coorte sem manifesto de IDs na V8.</strong> A V9 vai exportar o manifesto a partir dos keyspaces da V8 (E17).</li>
+<li><strong>Piso de ruído do benchmark na coorte.</strong> H01 e H02 fazem trabalho idêntico na carga Browsing e ainda assim diferem 0,46 ms
+   (<code>V9_REPORT.md</code>, seção 6). Contrastes desse tamanho não são evidência de efeito de esquema.</li>
+<li><strong>Janela de medição em dois blocos.</strong> As 8 medições do E20 ocorreram na mesma tarde, mas em dois blocos (13:22–14:41 e 15:44–16:23),
+   por causa de reinícios (D-V9-012 e recriação do QPG). Não é uma janela contínua única.</li>
+<li><strong>Rotas dos baselines.</strong> NoSE, QPG e o SL norm da V8 usam as rotas escritas à mão na V8; algumas leem chaves de manutenção do
+   fechamento em memória do cliente (sem SupportQuery), enquanto as rotas geradas da V9 fazem a leitura de apoio no Cassandra.
+   Isso favorece levemente os baselines nas escritas.</li>
+<li><strong>Escala.</strong> O modelo de custo usa estatísticas de escala completa (E4) para escolher H, mas o benchmark da Fase 6 é feito
+   na coorte. A escala completa (E23) mediu só os 2 esquemas selecionados (H01, H03), contra NoSE e QPG.</li>
+<li><strong>Seleção sensível à janela.</strong> Medida em dois blocos, a coorte apontava o H02 como o melhor na maioria das cargas. Na
+   janela contínua, o melhor passou a ser o H01, em 3 de 4 cargas. H01 e H02 executam trabalho idêntico só em Browsing,
+   onde diferem 0,007 ms. Em Bidding, o modelo previa o H02, mas o H01 foi medido como melhor: regret de 0,47 ms, com o IC
+   do H02 largo (±0,73 ms).</li>
+<li><strong>Mecanismos sem efeito físico.</strong> <code>access_profile</code> e <code>relationships</code> mudam ativações e especificações, mas nenhum esquema
+    (D-V9-014). <code>cost_selection</code> também não mudou H. Nesta carga, esses critérios não justificam ganho por si só.</li>
+<li><strong>Ablações mais rápidas que o H02 nas leituras.</strong> Na E22, os esquemas sem <code>sharedness</code>, <code>supersedes</code> ou <code>write_exposure</code>
+    (A01 a A04) foram mais rápidos que o H02 em Browsing e Bidding, e mais lentos em Update100x. Nas leituras da coorte, esses
+    critérios trocam velocidade de leitura por custo de escrita, e a vantagem só aparece com muitas escritas. O baseline B3
+    (substituição sem custo) foi pior em todas as cargas.</li>
+<li><strong>Update100x.</strong> Em escala completa, o QPG continua 0,31 ms (11%) mais rápido que o H01.</li>
+</ol>
+<h2>Arquivos de evidência</h2>
+<table>
+<thead>
+<tr>
+<th>Arquivo</th>
+<th>Conteúdo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>runs/v9_generation_001/ACCEPTANCE_V9.json</code></td>
+<td>gates e testes negativos</td>
+</tr>
+<tr>
+<td><code>runs/v9_generation_001/reports/V9_REPORT.md</code></td>
+<td>relatório gerado pelo código</td>
+</tr>
+<tr>
+<td><code>runs/v9_generation_001/stages/E15_composition/H.json</code></td>
+<td>esquemas de H, linhagem e DDL</td>
+</tr>
+<tr>
+<td><code>runs/v9_generation_001/stages/E16_hbench_frozen/HBENCH_FROZEN.json</code></td>
+<td>Hbench congelado, com hashes</td>
+</tr>
+<tr>
+<td><code>runs/v9_generation_001/stages/E20_benchmark/</code></td>
+<td>observações brutas da coorte (.jsonl.gz)</td>
+</tr>
+<tr>
+<td><code>runs/v9_generation_001/stages/E22_criteria_ablations/</code></td>
+<td>ablações (analíticas e físicas)</td>
+</tr>
+<tr>
+<td><code>runs/v9_generation_001/stages/E23_full_scale_acceptance/</code></td>
+<td>seleção, construção e medição a frio em escala completa</td>
+</tr>
+<tr>
+<td><code>docs/DECISION_LOG.md</code></td>
+<td>decisões D-V9-001 a D-V9-014</td>
+</tr>
+<tr>
+<td><code>docs/LIMITATIONS.md</code></td>
+<td>limitações declaradas</td>
+</tr>
+</tbody>
+</table></body></html>

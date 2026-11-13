@@ -1,0 +1,25 @@
+{
+  "c9": "UNDEFINED_RESERVED",
+  "catalog": "/Users/hudsonbatista/Documents/schemalens_v9_cassandra/schemalens_v9/catalog.yaml",
+  "families": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9"
+  ],
+  "parameters": {
+    "beta2_bytes": 64,
+    "beta8_bytes": 64,
+    "k3_copies": 2,
+    "lambda2_rows": 25,
+    "rho7_ratio": 4,
+    "theta3_ratio": 0.05
+  },
+  "problems": []
+}

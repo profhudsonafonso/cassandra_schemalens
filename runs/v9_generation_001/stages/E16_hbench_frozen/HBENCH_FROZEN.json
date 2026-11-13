@@ -1,0 +1,241 @@
+{
+  "DeploymentReduction": 0.0,
+  "H_size": 5,
+  "Hbench": [
+    {
+      "canonical_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C007",
+        "C010",
+        "C014",
+        "C016",
+        "C017",
+        "C018",
+        "C020",
+        "C021",
+        "C024"
+      ],
+      "ddl_sha256": "3acfd03479720c17de16794440a0de52bb93d1b76736df1ced1889a9f8e5b90c",
+      "label": "opt_browsing",
+      "predicted_cost": {
+        "bidding": {
+          "read_cost": 1.345774,
+          "total": 1.561248,
+          "write_cost": 0.215474
+        },
+        "browsing": {
+          "read_cost": 1.053204,
+          "total": 1.053204,
+          "write_cost": 0.0
+        },
+        "update100x": {
+          "read_cost": 0.451169,
+          "total": 2.433985,
+          "write_cost": 1.982816
+        },
+        "update10x": {
+          "read_cost": 0.879885,
+          "total": 2.015748,
+          "write_cost": 1.135863
+        }
+      },
+      "schema_id": "H01"
+    },
+    {
+      "canonical_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C007",
+        "C010",
+        "C013",
+        "C014",
+        "C016",
+        "C017",
+        "C018",
+        "C020",
+        "C021",
+        "C024"
+      ],
+      "ddl_sha256": "4f3278ebc5f467345d8c94df0bc6ab31ac8b02326ad411bee9992a7101f9436f",
+      "label": "opt_bidding",
+      "predicted_cost": {
+        "bidding": {
+          "read_cost": 1.33416,
+          "total": 1.55522,
+          "write_cost": 0.22106
+        },
+        "browsing": {
+          "read_cost": 1.053204,
+          "total": 1.053204,
+          "write_cost": 0.0
+        },
+        "update100x": {
+          "read_cost": 0.4501,
+          "total": 2.484325,
+          "write_cost": 2.034224
+        },
+        "update10x": {
+          "read_cost": 0.873763,
+          "total": 2.039075,
+          "write_cost": 1.165312
+        }
+      },
+      "schema_id": "H02"
+    },
+    {
+      "canonical_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C008",
+        "C010",
+        "C014",
+        "C016",
+        "C017",
+        "C018",
+        "C020",
+        "C021",
+        "C024"
+      ],
+      "ddl_sha256": "a26b95a0f2261238e38d62649ab8c05b251584a6b73fa766fe110516055a0132",
+      "label": "opt_update100x",
+      "predicted_cost": {
+        "bidding": {
+          "read_cost": 4.052439,
+          "total": 4.221481,
+          "write_cost": 0.169043
+        },
+        "browsing": {
+          "read_cost": 5.493114,
+          "total": 5.493114,
+          "write_cost": 0.0
+        },
+        "update100x": {
+          "read_cost": 0.70024,
+          "total": 2.255791,
+          "write_cost": 1.555552
+        },
+        "update10x": {
+          "read_cost": 2.306694,
+          "total": 3.197797,
+          "write_cost": 0.891103
+        }
+      },
+      "schema_id": "H03"
+    },
+    {
+      "canonical_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C007",
+        "C011",
+        "C014",
+        "C016",
+        "C017",
+        "C018",
+        "C020",
+        "C021",
+        "C024"
+      ],
+      "ddl_sha256": "86843da996e6c6543ad79b999bf85d596171c284acde2a210f26f2c8637172bf",
+      "label": "pareto_8",
+      "predicted_cost": {
+        "bidding": {
+          "read_cost": 2.05725,
+          "total": 2.272724,
+          "write_cost": 0.215474
+        },
+        "browsing": {
+          "read_cost": 1.758281,
+          "total": 1.758281,
+          "write_cost": 0.0
+        },
+        "update100x": {
+          "read_cost": 0.51664,
+          "total": 2.499456,
+          "write_cost": 1.982816
+        },
+        "update10x": {
+          "read_cost": 1.254937,
+          "total": 2.3908,
+          "write_cost": 1.135863
+        }
+      },
+      "schema_id": "H04"
+    },
+    {
+      "canonical_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C008",
+        "C011",
+        "C014",
+        "C016",
+        "C017",
+        "C018",
+        "C020",
+        "C021",
+        "C024"
+      ],
+      "ddl_sha256": "f03ebd93ff75fb267d68bb6e03b6bfcf3c1d50429ac9b0eb49a44ba73fba796c",
+      "label": "pareto_10",
+      "predicted_cost": {
+        "bidding": {
+          "read_cost": 4.763915,
+          "total": 4.932957,
+          "write_cost": 0.169043
+        },
+        "browsing": {
+          "read_cost": 6.198191,
+          "total": 6.198191,
+          "write_cost": 0.0
+        },
+        "update100x": {
+          "read_cost": 0.76571,
+          "total": 2.321262,
+          "write_cost": 1.555552
+        },
+        "update10x": {
+          "read_cost": 2.681746,
+          "total": 3.57285,
+          "write_cost": 0.891103
+        }
+      },
+      "schema_id": "H05"
+    }
+  ],
+  "Hbench_size": 5,
+  "anchors_not_measured_separately": {
+    "anchor_c5_substitution": [
+      "opt_bidding"
+    ],
+    "anchor_sl_norm": [
+      "opt_bidding"
+    ]
+  },
+  "content_sha256": "8446365297fc491883753a0159193172acd3f7776be9094f075821ef9f2b3cfa",
+  "external_in_same_window": [
+    "SL norm da V8 (AUTO_H_norm)",
+    "NoSE",
+    "QPG"
+  ],
+  "frozen_at": "2026-11-12T11:53:08-0300",
+  "inputs_sha256": {
+    "H.json": "ff370286e4d2bdb28dfa70a78dc464ef2cbe550aba3ce350a7b1c8eebe85b3c2",
+    "cost_model": "28ee9f561ec821b3b1172821e34a5224cd3b38d18bebb79727fd7c55d8748595"
+  },
+  "no_v9_measurement_before_freeze": true,
+  "policy": "Hbench = todos os esquemas distintos de H (saída do otimizador: ótimos por carga, fronteira de Pareto e k-melhores), medidos na coorte com o protocolo congelado, intercalados na mesma janela com o SL norm da V8, NoSE e QPG. Âncoras que coincidem com um esquema de H não são medidas em separado. Nenhuma regra de ativação, parâmetro do catálogo ou coeficiente do modelo de custo pode mudar depois da primeira medição da V9; análises posteriores ficam em arquivo separado marcado como retrospectivo.",
+  "policy_sha256": "19412546fb1e37cb74713d48994c5623993e7f1b1c12217951669c9c385cf6f3",
+  "run_id": "v9-generation-20261112-001"
+}
