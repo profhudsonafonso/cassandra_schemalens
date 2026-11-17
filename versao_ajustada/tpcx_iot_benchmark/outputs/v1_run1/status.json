@@ -1,0 +1,27 @@
+{
+  "ev_s": 375.4612,
+  "guard": true,
+  "mean_read": 4.811,
+  "order": [
+    "h_6745757bf865",
+    "b_tpcx_logical_raw_aa",
+    "h_119222012d4e",
+    "h_aba788b8e7b7",
+    "h_119222012d4e_aa",
+    "h_3f1449e05468",
+    "h_6276d5b68197",
+    "h_977291c72920",
+    "h_bdd6bbdce69f",
+    "h_a9983e2318a9",
+    "b_tpcx_logical_raw",
+    "h_b4bea9150d2e"
+  ],
+  "phase": "complete",
+  "pos": 12,
+  "rep": 5,
+  "restart_s": 17.8,
+  "storage": 168586,
+  "updated_utc": "2026-11-17T18:26:59.894910+00:00",
+  "variant": "h_b4bea9150d2e",
+  "version": "4.1.12"
+}

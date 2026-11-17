@@ -1,0 +1,22 @@
+{
+  "H1": {
+    "detail": "melhor=TS0+TS3m; empatados=['TS0+TS3h', 'TS1h+TS3m', 'TS1h+TS3h', 'TS0+TS3m', 'TS1m+TS3m', 'TS1m', 'TS1m+TS3h']; regret=0.4775",
+    "result": true
+  },
+  "H2": {
+    "detail": "2/18 pares TS3-leitura mais rapidos que leitura direta",
+    "result": false
+  },
+  "H3": {
+    "detail": "min IC inf 1 tabela=nan ev/s; max IC sup 2 tabelas=nan ev/s",
+    "result": false
+  },
+  "H4": {
+    "detail": "Pareto medido=['TS0', 'TS0+TS3m', 'TS1h', 'TS1m']; retencao=0.50",
+    "result": false
+  },
+  "H5": {
+    "detail": "TS0: prev 20 obs 4; TS0+TS3h: prev 3 obs 2; TS1h+TS3h: prev 3 obs 2; TS1h: prev 30 obs 4; TS0+TS3m: prev 3 obs 2;3; TS1h+TS3m: prev 3 obs 2;3; TS1m+TS3h: prev 3 obs 2; TS1m: prev 30 obs 4;6; TS1m+TS3m: prev 3 obs 2;3",
+    "result": false
+  }
+}

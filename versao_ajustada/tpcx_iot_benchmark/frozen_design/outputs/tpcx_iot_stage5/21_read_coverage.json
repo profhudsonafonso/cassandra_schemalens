@@ -1,0 +1,185 @@
+[
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "originated_from_query": true,
+    "read_structural_coverage": true,
+    "read_coverage": "CONDITIONAL_OFFLINE_ONLY",
+    "requirements": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "offline_equivalence_fixture_passed": true,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "originated_from_query": true,
+    "read_structural_coverage": true,
+    "read_coverage": "CONDITIONAL_OFFLINE_ONLY",
+    "requirements": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "offline_equivalence_fixture_passed": true,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "originated_from_query": true,
+    "read_structural_coverage": true,
+    "read_coverage": "CONDITIONAL_OFFLINE_ONLY",
+    "requirements": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "offline_equivalence_fixture_passed": true,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "originated_from_query": true,
+    "read_structural_coverage": true,
+    "read_coverage": "CONDITIONAL_OFFLINE_ONLY",
+    "requirements": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "ts3_projection_correctly_maintained"
+    ],
+    "offline_equivalence_fixture_passed": true,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "originated_from_query": true,
+    "read_structural_coverage": true,
+    "read_coverage": "CONDITIONAL_OFFLINE_ONLY",
+    "requirements": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "ts3_projection_correctly_maintained"
+    ],
+    "offline_equivalence_fixture_passed": true,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "originated_from_query": true,
+    "read_structural_coverage": false,
+    "read_coverage": "NOT_APPLICABLE_WRITE_OPERATION",
+    "requirements": [
+      "stage6_write_plan"
+    ],
+    "offline_equivalence_fixture_passed": false,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "originated_from_query": false,
+    "read_structural_coverage": false,
+    "read_coverage": "NOT_APPLICABLE_WRITE_OPERATION",
+    "requirements": [
+      "stage6_write_plan"
+    ],
+    "offline_equivalence_fixture_passed": false,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "originated_from_query": false,
+    "read_structural_coverage": false,
+    "read_coverage": "NOT_APPLICABLE_WRITE_OPERATION",
+    "requirements": [
+      "stage6_write_plan"
+    ],
+    "offline_equivalence_fixture_passed": false,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "originated_from_query": false,
+    "read_structural_coverage": false,
+    "read_coverage": "NOT_APPLICABLE_WRITE_OPERATION",
+    "requirements": [
+      "stage6_write_plan"
+    ],
+    "offline_equivalence_fixture_passed": false,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "originated_from_query": false,
+    "read_structural_coverage": false,
+    "read_coverage": "NOT_APPLICABLE_WRITE_OPERATION",
+    "requirements": [
+      "stage6_write_plan"
+    ],
+    "offline_equivalence_fixture_passed": false,
+    "dataset_complete": false,
+    "cassandra_executed": false,
+    "write_coverage": "STAGE6_UNVERIFIED",
+    "eligible_for_complete_workload_HBench": false
+  }
+]

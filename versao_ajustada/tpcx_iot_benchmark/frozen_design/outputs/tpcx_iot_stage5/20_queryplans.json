@@ -1,0 +1,268 @@
+[
+  {
+    "plan_id": "qp__q_read_2_windows__ts0_series_raw",
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "physical_table": "ts0_series_raw",
+    "access_mode": "station_and_sensor",
+    "time_bucket_seconds": null,
+    "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts0_series_raw WHERE driver_system_id = ? AND sensor_name = ? AND event_ts >= ? AND event_ts <= ?;",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "logical_time_ranges": 2,
+    "expected_window_lengths_seconds": [
+      5,
+      5
+    ],
+    "interval_bounds": "inclusive",
+    "merge_identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "operators": [
+      "bind_temporal_windows",
+      "split_into_intersecting_partitions",
+      "fan_out_to_all_stations",
+      "read_all_pages_for_each_cql_request",
+      "merge_two_windows_or_semantics",
+      "deduplicate_overlap_by_physical_event_identity",
+      "project_event_ts_and_sensor_reading_preserving_multiplicity",
+      "canonical_sort_for_validation_only"
+    ],
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "read_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_coverage_status": "STAGE6_UNVERIFIED",
+    "live_coverage_status": "STAGE9_UNVERIFIED",
+    "benchmark_used_for_selection": false
+  },
+  {
+    "plan_id": "qp__q_read_2_windows__ts1_series_3600s",
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "physical_table": "ts1_series_3600s",
+    "access_mode": "station_and_sensor",
+    "time_bucket_seconds": 3600,
+    "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_3600s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "logical_time_ranges": 2,
+    "expected_window_lengths_seconds": [
+      5,
+      5
+    ],
+    "interval_bounds": "inclusive",
+    "merge_identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "operators": [
+      "bind_temporal_windows",
+      "split_into_intersecting_partitions",
+      "fan_out_to_all_stations",
+      "enumerate_utc_bucket_starts_floor",
+      "read_all_pages_for_each_cql_request",
+      "merge_two_windows_or_semantics",
+      "deduplicate_overlap_by_physical_event_identity",
+      "project_event_ts_and_sensor_reading_preserving_multiplicity",
+      "canonical_sort_for_validation_only"
+    ],
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "read_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_coverage_status": "STAGE6_UNVERIFIED",
+    "live_coverage_status": "STAGE9_UNVERIFIED",
+    "benchmark_used_for_selection": false
+  },
+  {
+    "plan_id": "qp__q_read_2_windows__ts1_series_60s",
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "physical_table": "ts1_series_60s",
+    "access_mode": "station_and_sensor",
+    "time_bucket_seconds": 60,
+    "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_60s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "logical_time_ranges": 2,
+    "expected_window_lengths_seconds": [
+      5,
+      5
+    ],
+    "interval_bounds": "inclusive",
+    "merge_identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "operators": [
+      "bind_temporal_windows",
+      "split_into_intersecting_partitions",
+      "fan_out_to_all_stations",
+      "enumerate_utc_bucket_starts_floor",
+      "read_all_pages_for_each_cql_request",
+      "merge_two_windows_or_semantics",
+      "deduplicate_overlap_by_physical_event_identity",
+      "project_event_ts_and_sensor_reading_preserving_multiplicity",
+      "canonical_sort_for_validation_only"
+    ],
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "read_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_coverage_status": "STAGE6_UNVERIFIED",
+    "live_coverage_status": "STAGE9_UNVERIFIED",
+    "benchmark_used_for_selection": false
+  },
+  {
+    "plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "physical_table": "ts3_sensor_3600s",
+    "access_mode": "sensor_only",
+    "time_bucket_seconds": 3600,
+    "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_3600s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "partition_key": [
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "driver_system_id",
+      "event_id"
+    ],
+    "logical_time_ranges": 2,
+    "expected_window_lengths_seconds": [
+      5,
+      5
+    ],
+    "interval_bounds": "inclusive",
+    "merge_identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "operators": [
+      "bind_temporal_windows",
+      "split_into_intersecting_partitions",
+      "direct_sensor_lookup",
+      "enumerate_utc_bucket_starts_floor",
+      "read_all_pages_for_each_cql_request",
+      "merge_two_windows_or_semantics",
+      "deduplicate_overlap_by_physical_event_identity",
+      "project_event_ts_and_sensor_reading_preserving_multiplicity",
+      "canonical_sort_for_validation_only"
+    ],
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "ts3_projection_correctly_maintained"
+    ],
+    "read_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_coverage_status": "STAGE6_UNVERIFIED",
+    "live_coverage_status": "STAGE9_UNVERIFIED",
+    "benchmark_used_for_selection": false
+  },
+  {
+    "plan_id": "qp__q_read_2_windows__ts3_sensor_60s",
+    "query_id": "Q_READ_2_WINDOWS",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "physical_table": "ts3_sensor_60s",
+    "access_mode": "sensor_only",
+    "time_bucket_seconds": 60,
+    "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_60s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "partition_key": [
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "driver_system_id",
+      "event_id"
+    ],
+    "logical_time_ranges": 2,
+    "expected_window_lengths_seconds": [
+      5,
+      5
+    ],
+    "interval_bounds": "inclusive",
+    "merge_identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "operators": [
+      "bind_temporal_windows",
+      "split_into_intersecting_partitions",
+      "direct_sensor_lookup",
+      "enumerate_utc_bucket_starts_floor",
+      "read_all_pages_for_each_cql_request",
+      "merge_two_windows_or_semantics",
+      "deduplicate_overlap_by_physical_event_identity",
+      "project_event_ts_and_sensor_reading_preserving_multiplicity",
+      "canonical_sort_for_validation_only"
+    ],
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "ts3_projection_correctly_maintained"
+    ],
+    "read_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_coverage_status": "STAGE6_UNVERIFIED",
+    "live_coverage_status": "STAGE9_UNVERIFIED",
+    "benchmark_used_for_selection": false
+  }
+]

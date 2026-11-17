@@ -1,0 +1,36 @@
+{
+  "ACCEPTED": true,
+  "gates": {
+    "G10_contrabalanco": true,
+    "G11_agenda_identica": true,
+    "G12_leituras_concorrentes": true,
+    "G1_completude": true,
+    "G2_oraculo_e_auditoria": true,
+    "G3_isolamento": true,
+    "G4_gate_flush": true,
+    "G5_ambiente": true,
+    "G6_congelamento": true,
+    "G7_inserts_por_evento_stage7": true,
+    "G8_piso_de_ruido": true,
+    "G9_firewall": true
+  },
+  "info": {
+    "discarded_attempts": 0,
+    "mean_position_spread": 2.1999999999999993,
+    "raw_reads": 7200,
+    "runs": 60
+  },
+  "negative_tests": {
+    "N1_hbench_adulterado_detectado": true,
+    "N1b_codigo_congelado_recusa_hbench_adulterado": true,
+    "N2_codigo_alterado_detectado": true,
+    "N3_oraculo_detecta_valor_errado": true,
+    "N3b_oraculo_detecta_linha_faltante": true,
+    "N4_keyspace_inseguro_recusado": true,
+    "N5_leitura_faltante_detectada": true,
+    "N6_compactacao_invalida_janela": true,
+    "N7_memtable_nao_vazia_reprova": true,
+    "N8_preregistro_nao_sobrescreve": true,
+    "N9_container_existente_recusado": true
+  }
+}

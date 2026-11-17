@@ -1,0 +1,27 @@
+{
+  "ev_s": 378.8128,
+  "guard": true,
+  "mean_read": 5.033,
+  "order": [
+    "b_tpcx_logical_raw",
+    "b_tpcx_logical_raw_aa",
+    "h_aba788b8e7b7",
+    "h_977291c72920",
+    "h_b4bea9150d2e",
+    "h_bdd6bbdce69f",
+    "h_a9983e2318a9",
+    "h_6745757bf865",
+    "h_6276d5b68197",
+    "h_119222012d4e_aa",
+    "h_3f1449e05468",
+    "h_119222012d4e"
+  ],
+  "phase": "complete",
+  "pos": 12,
+  "rep": 1,
+  "restart_s": 17.8,
+  "storage": 52959,
+  "updated_utc": "2026-11-17T18:08:48.606793+00:00",
+  "variant": "h_119222012d4e",
+  "version": "4.1.12"
+}

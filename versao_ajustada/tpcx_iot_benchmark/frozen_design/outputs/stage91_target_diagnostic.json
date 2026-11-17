@@ -1,0 +1,24 @@
+{
+  "container_host_id": "cb4e5df9-6ae5-4c7a-867f-6f687cd196d2",
+  "destructive_actions": false,
+  "docker_command": [
+    "docker",
+    "exec",
+    "schemalens_tpcx_cassandra",
+    "cqlsh",
+    "127.0.0.1",
+    "9042",
+    "-e",
+    "SELECT host_id FROM system.local;"
+  ],
+  "docker_container": "schemalens_tpcx_cassandra",
+  "docker_returncode": 0,
+  "docker_stderr_tail": "",
+  "docker_stdout_tail": "\n host_id\n--------------------------------------\n cb4e5df9-6ae5-4c7a-867f-6f687cd196d2\n\n(1 rows)\n",
+  "driver_cluster_name": "SchemaLensTSBSLocal",
+  "driver_host_id": "fcf5e137-e321-414c-b062-536f4ed05a40",
+  "driver_release_version": "4.1.12",
+  "message": "The Python driver and Docker container target different Cassandra nodes. Check Docker published ports, the CLI --port/--hosts settings, and --nodetool-container BEFORE rerunning the benchmark.",
+  "status": "TARGET_MISMATCH",
+  "tpc_compliant": false
+}

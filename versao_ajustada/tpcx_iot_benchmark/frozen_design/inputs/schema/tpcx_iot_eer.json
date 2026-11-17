@@ -1,0 +1,88 @@
+{
+  "dataset": "TPCx-IoT 2.1.2",
+  "status": "RESEARCH_EER_ABSTRACTION_NOT_OFFICIAL_TPC_SCHEMA",
+  "source": "https://www.tpc.org/TPC_Documents_Current_Versions/pdf/TPCX-IOT_v2.1.2.pdf",
+  "specification": {
+    "sensor_types": 200,
+    "record_approximate_bytes": 1024,
+    "driver_id_represents": "electrical power station",
+    "reading_query": "one randomly selected sensor, two 5-second time intervals"
+  },
+  "entities": {
+    "PowerStation": {
+      "identity": [
+        "driver_system_id"
+      ],
+      "attributes": [
+        "driver_system_id"
+      ]
+    },
+    "SensorStream": {
+      "identity": [
+        "driver_system_id",
+        "sensor_name"
+      ],
+      "attributes": [
+        "driver_system_id",
+        "sensor_name"
+      ]
+    },
+    "Reading": {
+      "identity": [
+        "driver_system_id",
+        "sensor_name",
+        "event_ts"
+      ],
+      "attributes": [
+        "driver_system_id",
+        "sensor_name",
+        "event_ts",
+        "sensor_reading",
+        "padding"
+      ],
+      "temporal": {
+        "series_identity": [
+          "driver_system_id",
+          "sensor_name"
+        ],
+        "time_attribute": "event_ts",
+        "metrics": [
+          "sensor_reading"
+        ],
+        "dimensions": [
+          "driver_system_id",
+          "sensor_name"
+        ],
+        "retention_days": null,
+        "estimated_events_per_day": null,
+        "append_oriented": true,
+        "late_arrival_allowed": false
+      }
+    }
+  },
+  "relationships": [
+    {
+      "name": "station_has_stream",
+      "left": "PowerStation",
+      "right": "SensorStream",
+      "cardinality": "1:N",
+      "semantics": "containment_like",
+      "source": "research_assumption"
+    },
+    {
+      "name": "stream_has_reading",
+      "left": "SensorStream",
+      "right": "Reading",
+      "cardinality": "1:N",
+      "semantics": "time_series_observation",
+      "source": "research_assumption"
+    }
+  ],
+  "known_unknowns": {
+    "sensor_selection_predicate_in_kit": "MUST_VERIFY_AGAINST_KIT_BINDING",
+    "per_series_rate": "NOT_ESTABLISHED_BY_SPECIFICATION",
+    "retention": "NOT_ESTABLISHED",
+    "late_arrival": "NOT_ESTABLISHED",
+    "update_exposure_frequency": "UNSPECIFIED_NO_WORKLOAD_FREQUENCIES"
+  }
+}

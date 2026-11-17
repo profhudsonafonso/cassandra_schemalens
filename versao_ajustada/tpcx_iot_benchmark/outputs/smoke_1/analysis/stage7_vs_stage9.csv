@@ -1,0 +1,10 @@
+deployment,name,pred_read_cql_requests,obs_cql_requests_per_read,pred_inserts_per_event,obs_inserts_per_event,status_inserts,status_cql
+h_119222012d4e,TS0,20,4,1,1,MATCH,MISMATCH
+h_3f1449e05468,TS0+TS3h,3,2,2,2,MATCH,MISMATCH
+h_6745757bf865,TS1h+TS3h,3,2,2,2,MATCH,MISMATCH
+h_aba788b8e7b7,TS1h,30,4,1,1,MATCH,MISMATCH
+h_977291c72920,TS0+TS3m,3,2;3,2,2,MATCH,MISMATCH
+h_6276d5b68197,TS1h+TS3m,3,2;3,2,2,MATCH,MISMATCH
+h_bdd6bbdce69f,TS1m+TS3h,3,2,2,2,MATCH,MISMATCH
+h_b4bea9150d2e,TS1m,30,4;6,1,1,MATCH,MISMATCH
+h_a9983e2318a9,TS1m+TS3m,3,2;3,2,2,MATCH,MISMATCH

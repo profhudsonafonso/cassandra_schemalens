@@ -1,0 +1,89 @@
+{
+  "hbench": [
+    {
+      "deployment_id": "h_119222012d4e",
+      "keyspace": "sl_tpcx_h_119222012d4e",
+      "read_candidate": "ts0_series_raw",
+      "tables": [
+        "ts0_series_raw"
+      ]
+    },
+    {
+      "deployment_id": "h_6745757bf865",
+      "keyspace": "sl_tpcx_h_6745757bf865",
+      "read_candidate": "ts3_sensor_3600s",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "deployment_id": "h_a9983e2318a9",
+      "keyspace": "sl_tpcx_h_a9983e2318a9",
+      "read_candidate": "ts3_sensor_60s",
+      "tables": [
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "deployment_id": "h_3f1449e05468",
+      "keyspace": "sl_tpcx_h_3f1449e05468",
+      "read_candidate": "ts3_sensor_3600s",
+      "tables": [
+        "ts0_series_raw",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "deployment_id": "h_aba788b8e7b7",
+      "keyspace": "sl_tpcx_h_aba788b8e7b7",
+      "read_candidate": "ts1_series_3600s",
+      "tables": [
+        "ts1_series_3600s"
+      ]
+    }
+  ],
+  "manifest": {
+    "database": "Apache Cassandra",
+    "environment": {
+      "cpu_count": 5,
+      "os": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "python": "3.13.5"
+    },
+    "experiment_config": {
+      "bench_steps": 80,
+      "data_source": "deterministic_synthetic_not_official_tpc_generator",
+      "hosts": "127.0.0.1",
+      "main_measurements_include_local_sqlite_outbox": true,
+      "nodetool_container": null,
+      "port": 9042,
+      "prefix": "sl_tpcx",
+      "profile": "sensor-name-only/raw_read (unverified in official kit)",
+      "read_threads": 2,
+      "reset": false,
+      "rf": 1,
+      "seed_steps": 130,
+      "sensors": 3,
+      "stations": 2
+    },
+    "hbench_count": 5,
+    "measured_result_used_to_reselect_hbench": false,
+    "mode": "dry-run",
+    "no_cluster_means_no_real_benchmark_results": true,
+    "official_kit_verification": "PENDING",
+    "research_only": true,
+    "source_sha256": {
+      "config/tpcx_stage8_consolidation_policy.json": "99f3805ce733b5c5e7301586527f5a41ae3404c0516eb872a7867f525a6d9e93",
+      "outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+      "outputs/tpcx_iot_stage5/20_queryplans.json": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+      "outputs/tpcx_iot_stage6/30_writeplans.json": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710",
+      "outputs/tpcx_iot_stage8/54_hbench_selected.json": "2d37758588eea00123e8857c0a1b8ea990d17f5ac93f8c64671a7556796d6f28",
+      "outputs/tpcx_iot_stage8/58_stage8_manifest.json": "01489f3f5bad8500d98da63da12223fd56eac3edb6a9f4b2097e37459d308bea"
+    },
+    "stage": 9,
+    "stage8_hbench_frozen": true,
+    "status": "PREPARED_NOT_MEASURED",
+    "tpc_compliant": false
+  }
+}

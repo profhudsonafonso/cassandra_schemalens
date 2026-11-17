@@ -1,0 +1,6 @@
+# Ledgers SQLite da ingestao (transitorios, ~350 MB); evidencias ficam em manifest.json/raw_reads.csv
+**/outboxes/
+.venv/
+__pycache__/
+*.aux
+*.log.tex

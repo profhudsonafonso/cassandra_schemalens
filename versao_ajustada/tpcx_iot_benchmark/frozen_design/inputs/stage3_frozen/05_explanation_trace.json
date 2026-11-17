@@ -1,0 +1,707 @@
+[
+  {
+    "query_id": "Q_INGEST",
+    "analytical_row": {
+      "query_id": "Q_INGEST",
+      "selected_root": "Reading",
+      "root_rationale": "single entity in query fragment",
+      "root_fallback_scores": {},
+      "query_class": "insert",
+      "touched_entities": [
+        "Reading"
+      ],
+      "touched_relationships": [],
+      "schema_rc": 0,
+      "selected_document_depth": 0,
+      "selected_re_at_d1": 0,
+      "dominant_semantics": "temporal_observation",
+      "sharedness_evidence": "EER_OWNERSHIP_ONLY_NO_INSTANCE_OBSERVATIONS",
+      "update_exposure_evidence": "INGESTION_EXISTS_BUT_QUERY_FREQUENCIES_UNSPECIFIED",
+      "time_series_extension": true
+    },
+    "evidence": {
+      "is_temporal_query": true,
+      "temporal_source_entity": "Reading",
+      "time_attribute": "event_ts",
+      "series_identity_fields": [
+        "driver_system_id",
+        "sensor_name"
+      ],
+      "series_identity_bound": true,
+      "has_time_range": false,
+      "time_ordered": false,
+      "latest_only": false,
+      "metric_fields_projected": [],
+      "metric_count": 0,
+      "dimension_equality_fields": [],
+      "has_dimension_equality_anchor": false,
+      "returns_raw_observations": false,
+      "time_bucketed": false,
+      "non_time_group_dimensions": [],
+      "non_time_group_dimension_count": 0,
+      "series_discovery": false,
+      "model_segment_requested": false,
+      "retention_days": null,
+      "estimated_events_per_day": null,
+      "append_oriented": true,
+      "late_arrival_allowed": false,
+      "hot_series": false,
+      "operation": "INSERT",
+      "aggregate_function_count": 0,
+      "temporal_window_count": 0,
+      "temporal_window_lengths_seconds": [],
+      "historical_lookback_seconds": null,
+      "predicate_confidence": "SOURCE_DEFINED",
+      "schema_rc": 0,
+      "selected_document_depth": 0,
+      "selected_re": 0,
+      "selected_root": "Reading",
+      "sharedness_status": "EER_OWNERSHIP_ONLY_NO_INSTANCE_OBSERVATIONS",
+      "update_exposure_status": "INGESTION_EXISTS_BUT_QUERY_FREQUENCIES_UNSPECIFIED"
+    },
+    "active_ts_families": [
+      "TS0"
+    ],
+    "active_modifiers": [
+      "M3"
+    ],
+    "ts_rule_trace": [
+      {
+        "rule_id": "R_TS0_RAW_BASELINE",
+        "family": "TS0",
+        "passed": true,
+        "reason": "Any temporal query receives a raw-series baseline candidate for comparison with specialized temporal representations.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS1_TIME_BUCKETED_RAW",
+        "family": "TS1",
+        "passed": false,
+        "reason": "A raw temporal range read justifies a time-bucketed raw-series alternative.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "returns_raw_observations=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "has_time_range=False eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS2_COLOCATED_MULTI_METRIC",
+        "family": "TS2",
+        "passed": false,
+        "reason": "Joint access to multiple metrics on the same identified series/time axis justifies co-location.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "returns_raw_observations=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "series_identity_bound=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "metric_count=0 gte 2"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS3_METRIC_ALTERNATE_ACCESS",
+        "family": "TS3",
+        "passed": false,
+        "reason": "A single-metric raw range read anchored by a dimension instead of the canonical series identity justifies an alternate temporal projection.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "returns_raw_observations=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "metric_count=0 eq 1"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "has_dimension_equality_anchor=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "series_identity_bound=True eq False"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS4_LATEST_SNAPSHOT",
+        "family": "TS4",
+        "passed": false,
+        "reason": "ORDER BY the time attribute descending with LIMIT 1 is explicit latest-state evidence.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "latest_only=False eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS5_ROLLUP",
+        "family": "TS5",
+        "passed": false,
+        "reason": "A time-bucket expression plus aggregation justifies a maintained rollup/multi-resolution candidate.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "time_bucketed=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "aggregate_function_count=0 gte 1"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS6_DIMENSION_AGGREGATE",
+        "family": "TS6",
+        "passed": false,
+        "reason": "Temporal aggregation grouped by a non-time dimension justifies a dimension-oriented summary.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "aggregate_function_count=0 gte 1"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "non_time_group_dimension_count=0 gte 1"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS7_SERIES_DISCOVERY",
+        "family": "TS7",
+        "passed": false,
+        "reason": "Distinct discovery of series identities through a dimension predicate justifies a tag/dimension discovery structure.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "series_discovery=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "has_dimension_equality_anchor=False eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS8_MODEL_SEGMENTS",
+        "family": "TS8",
+        "passed": false,
+        "reason": "An explicit model-segment logical operator justifies preserving a model-segment representation candidate.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "model_segment_requested=False eq True"
+          }
+        ]
+      }
+    ],
+    "modifier_rule_trace": [
+      {
+        "rule_id": "R_M1_BUCKET_GRANULARITY",
+        "family": "M1",
+        "passed": false,
+        "reason": "Time-bucketed raw or aggregate families require an explicit bucket-granularity decision later.",
+        "conditions": [
+          {
+            "group": "requires_any_families",
+            "passed": false,
+            "detail": "required_any=['TS1', 'TS5', 'TS6'], active=['TS0']"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M2_RETENTION_TTL",
+        "family": "M2",
+        "passed": false,
+        "reason": "A finite positive retention horizon makes TTL/retention a physical modifier candidate.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "retention_days=None gt 0"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M3_TEMPORAL_COMPACTION",
+        "family": "M3",
+        "passed": true,
+        "reason": "Append-oriented temporal ingestion justifies considering time-series-oriented compaction.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "append_oriented=True eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M4_SHARD_SALT",
+        "family": "M4",
+        "passed": false,
+        "reason": "A prespecified event-volume threshold flags possible hot-partition mitigation.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "hot_series=False eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M5_LATE_BACKFILL",
+        "family": "M5",
+        "passed": false,
+        "reason": "The logical series allows late or backfilled observations, so the physical design must preserve that behavior.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "late_arrival_allowed=False eq True"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "source": "TPCx-IoT v2.1.2 Section 2.2",
+      "logical_sql": "Q_INGEST.sql",
+      "assumptions": [
+        "Sensor query binding must be verified in official kit"
+      ],
+      "benchmark_results_used": false
+    }
+  },
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "analytical_row": {
+      "query_id": "Q_READ_2_WINDOWS",
+      "selected_root": "Reading",
+      "root_rationale": "sensor-name filter across potentially multiple stations",
+      "root_fallback_scores": {},
+      "query_class": "temporal_range",
+      "touched_entities": [
+        "SensorStream",
+        "Reading"
+      ],
+      "touched_relationships": [
+        "stream_has_reading"
+      ],
+      "schema_rc": 1,
+      "selected_document_depth": 1,
+      "selected_re_at_d1": 0,
+      "dominant_semantics": "temporal_observation",
+      "sharedness_evidence": "EER_OWNERSHIP_ONLY_NO_INSTANCE_OBSERVATIONS",
+      "update_exposure_evidence": "INGESTION_EXISTS_BUT_QUERY_FREQUENCIES_UNSPECIFIED",
+      "time_series_extension": true
+    },
+    "evidence": {
+      "is_temporal_query": true,
+      "temporal_source_entity": "Reading",
+      "time_attribute": "event_ts",
+      "series_identity_fields": [
+        "driver_system_id",
+        "sensor_name"
+      ],
+      "series_identity_bound": false,
+      "has_time_range": true,
+      "time_ordered": false,
+      "latest_only": false,
+      "metric_fields_projected": [
+        "Reading.sensor_reading"
+      ],
+      "metric_count": 1,
+      "dimension_equality_fields": [
+        "Reading.sensor_name"
+      ],
+      "has_dimension_equality_anchor": true,
+      "returns_raw_observations": true,
+      "time_bucketed": false,
+      "non_time_group_dimensions": [],
+      "non_time_group_dimension_count": 0,
+      "series_discovery": false,
+      "model_segment_requested": false,
+      "retention_days": null,
+      "estimated_events_per_day": null,
+      "append_oriented": true,
+      "late_arrival_allowed": false,
+      "hot_series": false,
+      "operation": "SELECT",
+      "aggregate_function_count": 0,
+      "temporal_window_count": 2,
+      "temporal_window_lengths_seconds": [
+        5,
+        5
+      ],
+      "historical_lookback_seconds": 1800,
+      "predicate_confidence": "ASSUMPTION_TO_VERIFY_IN_KIT",
+      "schema_rc": 1,
+      "selected_document_depth": 1,
+      "selected_re": 0,
+      "selected_root": "Reading",
+      "sharedness_status": "EER_OWNERSHIP_ONLY_NO_INSTANCE_OBSERVATIONS",
+      "update_exposure_status": "INGESTION_EXISTS_BUT_QUERY_FREQUENCIES_UNSPECIFIED"
+    },
+    "active_ts_families": [
+      "TS0",
+      "TS1",
+      "TS3"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "ts_rule_trace": [
+      {
+        "rule_id": "R_TS0_RAW_BASELINE",
+        "family": "TS0",
+        "passed": true,
+        "reason": "Any temporal query receives a raw-series baseline candidate for comparison with specialized temporal representations.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS1_TIME_BUCKETED_RAW",
+        "family": "TS1",
+        "passed": true,
+        "reason": "A raw temporal range read justifies a time-bucketed raw-series alternative.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "returns_raw_observations=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "has_time_range=True eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS2_COLOCATED_MULTI_METRIC",
+        "family": "TS2",
+        "passed": false,
+        "reason": "Joint access to multiple metrics on the same identified series/time axis justifies co-location.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "returns_raw_observations=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "series_identity_bound=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "metric_count=1 gte 2"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS3_METRIC_ALTERNATE_ACCESS",
+        "family": "TS3",
+        "passed": true,
+        "reason": "A single-metric raw range read anchored by a dimension instead of the canonical series identity justifies an alternate temporal projection.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "returns_raw_observations=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "metric_count=1 eq 1"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "has_dimension_equality_anchor=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "series_identity_bound=False eq False"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS4_LATEST_SNAPSHOT",
+        "family": "TS4",
+        "passed": false,
+        "reason": "ORDER BY the time attribute descending with LIMIT 1 is explicit latest-state evidence.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "latest_only=False eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS5_ROLLUP",
+        "family": "TS5",
+        "passed": false,
+        "reason": "A time-bucket expression plus aggregation justifies a maintained rollup/multi-resolution candidate.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "time_bucketed=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "aggregate_function_count=0 gte 1"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS6_DIMENSION_AGGREGATE",
+        "family": "TS6",
+        "passed": false,
+        "reason": "Temporal aggregation grouped by a non-time dimension justifies a dimension-oriented summary.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "aggregate_function_count=0 gte 1"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "non_time_group_dimension_count=0 gte 1"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS7_SERIES_DISCOVERY",
+        "family": "TS7",
+        "passed": false,
+        "reason": "Distinct discovery of series identities through a dimension predicate justifies a tag/dimension discovery structure.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "series_discovery=False eq True"
+          },
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "has_dimension_equality_anchor=True eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_TS8_MODEL_SEGMENTS",
+        "family": "TS8",
+        "passed": false,
+        "reason": "An explicit model-segment logical operator justifies preserving a model-segment representation candidate.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "is_temporal_query=True eq True"
+          },
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "model_segment_requested=False eq True"
+          }
+        ]
+      }
+    ],
+    "modifier_rule_trace": [
+      {
+        "rule_id": "R_M1_BUCKET_GRANULARITY",
+        "family": "M1",
+        "passed": true,
+        "reason": "Time-bucketed raw or aggregate families require an explicit bucket-granularity decision later.",
+        "conditions": [
+          {
+            "group": "requires_any_families",
+            "passed": true,
+            "detail": "required_any=['TS1', 'TS5', 'TS6'], active=['TS0', 'TS1', 'TS3']"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M2_RETENTION_TTL",
+        "family": "M2",
+        "passed": false,
+        "reason": "A finite positive retention horizon makes TTL/retention a physical modifier candidate.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "retention_days=None gt 0"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M3_TEMPORAL_COMPACTION",
+        "family": "M3",
+        "passed": true,
+        "reason": "Append-oriented temporal ingestion justifies considering time-series-oriented compaction.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": true,
+            "detail": "append_oriented=True eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M4_SHARD_SALT",
+        "family": "M4",
+        "passed": false,
+        "reason": "A prespecified event-volume threshold flags possible hot-partition mitigation.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "hot_series=False eq True"
+          }
+        ]
+      },
+      {
+        "rule_id": "R_M5_LATE_BACKFILL",
+        "family": "M5",
+        "passed": false,
+        "reason": "The logical series allows late or backfilled observations, so the physical design must preserve that behavior.",
+        "conditions": [
+          {
+            "group": "all",
+            "passed": false,
+            "detail": "late_arrival_allowed=False eq True"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "source": "TPCx-IoT v2.1.2 Section 2.2",
+      "logical_sql": "Q_READ_2_WINDOWS.sql",
+      "assumptions": [
+        "Sensor query binding must be verified in official kit"
+      ],
+      "benchmark_results_used": false
+    }
+  }
+]

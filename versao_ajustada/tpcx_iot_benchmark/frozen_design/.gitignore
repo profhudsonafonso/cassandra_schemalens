@@ -1,0 +1,4 @@
+# Per-run SQLite write ledgers (~290 MB); regenerated on every run (--reset)
+outputs/**/outboxes/
+__pycache__/
+.venv/

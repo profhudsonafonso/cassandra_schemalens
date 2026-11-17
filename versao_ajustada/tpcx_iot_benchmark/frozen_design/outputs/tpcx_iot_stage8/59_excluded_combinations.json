@@ -1,0 +1,188 @@
+{
+  "enumerated_nonempty_subsets": 31,
+  "excluded_as_incompatible": [
+    {
+      "candidate_ids": [
+        "ts3_sensor_3600s"
+      ],
+      "reason": "missing_canonical_source"
+    },
+    {
+      "candidate_ids": [
+        "ts3_sensor_60s"
+      ],
+      "reason": "missing_canonical_source"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts1_series_3600s",
+        "ts1_series_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "missing_canonical_source"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts1_series_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts3_sensor_3600s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_60s",
+        "ts3_sensor_3600s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_alternate_projections"
+    },
+    {
+      "candidate_ids": [
+        "ts1_series_3600s",
+        "ts1_series_60s",
+        "ts3_sensor_3600s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts1_series_3600s",
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts1_series_3600s",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_alternate_projections"
+    },
+    {
+      "candidate_ids": [
+        "ts1_series_60s",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_alternate_projections"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts1_series_60s",
+        "ts3_sensor_3600s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_60s",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts1_series_3600s",
+        "ts1_series_60s",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    },
+    {
+      "candidate_ids": [
+        "ts0_series_raw",
+        "ts1_series_3600s",
+        "ts1_series_60s",
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ],
+      "reason": "multiple_canonical_sources"
+    }
+  ],
+  "excluded_as_dominated": [
+    "h_977291c72920",
+    "h_bdd6bbdce69f"
+  ],
+  "pareto_not_selected_under_k": [
+    "h_6276d5b68197",
+    "h_b4bea9150d2e"
+  ]
+}

@@ -1,0 +1,6 @@
+COMMAND: docker exec schemalens_tpcx_cassandra nodetool flush sl_tpcx_h_aba788b8e7b7
+RETURN CODE: 0
+STDOUT:
+
+STDERR:
+

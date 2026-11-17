@@ -1,0 +1,54 @@
+COMMAND: docker exec schemalens_tpcx_cassandra nodetool tablestats sl_tpcx_h_6745757bf865.ts3_sensor_3600s
+RETURN CODE: 0
+STDOUT:
+Total number of tables: 47
+----------------
+Keyspace : sl_tpcx_h_6745757bf865
+	Read Count: 30
+	Read Latency: 0.09333333333333332 ms
+	Write Count: 1920
+	Write Latency: 0.010108854166666667 ms
+	Pending Flushes: 0
+		Table: ts3_sensor_3600s
+		SSTable count: 1
+		Old SSTable count: 0
+		Space used (live): 48303
+		Space used (total): 48303
+		Space used by snapshots (total): 0
+		Off heap memory used (total): 492
+		SSTable Compression Ratio: 0.045204118843280926
+		Number of partitions (estimate): 3
+		Memtable cell count: 0
+		Memtable data size: 0
+		Memtable off heap memory used: 0
+		Memtable switch count: 1
+		Speculative retries: 0
+		Local read count: 30
+		Local read latency: 0.100 ms
+		Local write count: 960
+		Local write latency: 0.011 ms
+		Pending flushes: 0
+		Percent repaired: 0.0
+		Bytes repaired: 0.000KiB
+		Bytes unrepaired: 891.767KiB
+		Bytes pending repair: 0.000KiB
+		Bloom filter false positives: 0
+		Bloom filter false ratio: 0.00000
+		Bloom filter space used: 16
+		Bloom filter off heap memory used: 8
+		Index summary off heap memory used: 36
+		Compression metadata off heap memory used: 448
+		Compacted partition minimum bytes: 263211
+		Compacted partition maximum bytes: 315852
+		Compacted partition mean bytes: 315852
+		Average live cells per slice (last five minutes): 105.39393939393939
+		Maximum live cells per slice (last five minutes): 1109
+		Average tombstones per slice (last five minutes): 1.0
+		Maximum tombstones per slice (last five minutes): 1
+		Dropped Mutations: 0
+		Droppable tombstone ratio: 0.00000
+
+----------------
+
+STDERR:
+

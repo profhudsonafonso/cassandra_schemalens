@@ -1,0 +1,10 @@
+deployment_id,baseline_id,ingest_ratio_vs_baseline,read_p95_ratio_vs_baseline,storage_ratio_vs_baseline
+h_119222012d4e,b_tpcx_logical_raw,1.0024,1.6821,0.9232
+h_3f1449e05468,b_tpcx_logical_raw,0.6436,0.9686,1.9288
+h_6276d5b68197,b_tpcx_logical_raw,0.6364,1.2029,1.9461
+h_6745757bf865,b_tpcx_logical_raw,0.6424,1.0094,1.9296
+h_977291c72920,b_tpcx_logical_raw,0.6394,1.2232,1.9457
+h_a9983e2318a9,b_tpcx_logical_raw,0.6469,1.0801,1.9603
+h_aba788b8e7b7,b_tpcx_logical_raw,1.0159,1.662,0.9244
+h_b4bea9150d2e,b_tpcx_logical_raw,1.0012,1.8773,0.9385
+h_bdd6bbdce69f,b_tpcx_logical_raw,0.6429,1.0645,1.9435

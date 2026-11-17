@@ -1,0 +1,252 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "table": "ts0_series_raw",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "clustering_order": [
+      "ASC",
+      "ASC"
+    ],
+    "columns": {
+      "driver_system_id": "text",
+      "sensor_name": "text",
+      "event_ts": "bigint",
+      "event_id": "uuid",
+      "sensor_reading": "double",
+      "padding": "text"
+    },
+    "purpose": "Raw readings; potentially unbounded partitions; baseline only.",
+    "bucket_seconds": null,
+    "query_filter_mode": "station_and_sensor",
+    "read_cql_template": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts0_series_raw WHERE driver_system_id = ? AND sensor_name = ? AND event_ts >= ? AND event_ts <= ?;",
+    "write_cql_template": "INSERT INTO ts0_series_raw (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding) VALUES (?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "Use original event time as epoch milliseconds; no physical time bucket."
+    ],
+    "access_requirements": [
+      "A sensor-name-only read needs a complete station identity enumeration; no ALLOW FILTERING.",
+      "Perform one read per station and each of two temporal windows; deduplicate by event_id only if same logical event."
+    ],
+    "maintenance_requirements": [
+      "Insert every input observation; preserve payload padding and stable event_id."
+    ],
+    "active_modifiers": [
+      "M3"
+    ],
+    "query_plan_verified": false,
+    "write_plan_verified": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "table": "ts1_series_3600s",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "clustering_order": [
+      "ASC",
+      "ASC"
+    ],
+    "columns": {
+      "driver_system_id": "text",
+      "sensor_name": "text",
+      "event_ts": "bigint",
+      "event_id": "uuid",
+      "sensor_reading": "double",
+      "padding": "text",
+      "bucket_start_ms": "bigint"
+    },
+    "purpose": "Raw observations grouped into 3600-second UTC buckets, by fully identified sensor stream.",
+    "bucket_seconds": 3600,
+    "query_filter_mode": "station_and_sensor",
+    "read_cql_template": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_3600s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "write_cql_template": "INSERT INTO ts1_series_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 3600000) * 3600000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Enumerate stations for sensor-name-only predicate before reads.",
+      "Split BOTH 5-second windows into all intersected UTC bucket partitions.",
+      "Inclusive endpoints require bucket intersection at boundaries; client merges complete result."
+    ],
+    "maintenance_requirements": [
+      "Write each observation to its UTC bucket; stable event_id makes retried inserts idempotent."
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "query_plan_verified": false,
+    "write_plan_verified": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "table": "ts1_series_60s",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "clustering_order": [
+      "ASC",
+      "ASC"
+    ],
+    "columns": {
+      "driver_system_id": "text",
+      "sensor_name": "text",
+      "event_ts": "bigint",
+      "event_id": "uuid",
+      "sensor_reading": "double",
+      "padding": "text",
+      "bucket_start_ms": "bigint"
+    },
+    "purpose": "Raw observations grouped into 60-second UTC buckets, by fully identified sensor stream.",
+    "bucket_seconds": 60,
+    "query_filter_mode": "station_and_sensor",
+    "read_cql_template": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_60s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "write_cql_template": "INSERT INTO ts1_series_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 60000) * 60000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Enumerate stations for sensor-name-only predicate before reads.",
+      "Split BOTH 5-second windows into all intersected UTC bucket partitions.",
+      "Inclusive endpoints require bucket intersection at boundaries; client merges complete result."
+    ],
+    "maintenance_requirements": [
+      "Write each observation to its UTC bucket; stable event_id makes retried inserts idempotent."
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "query_plan_verified": false,
+    "write_plan_verified": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "table": "ts3_sensor_3600s",
+    "partition_key": [
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "driver_system_id",
+      "event_id"
+    ],
+    "clustering_order": [
+      "ASC",
+      "ASC",
+      "ASC"
+    ],
+    "columns": {
+      "driver_system_id": "text",
+      "sensor_name": "text",
+      "event_ts": "bigint",
+      "event_id": "uuid",
+      "sensor_reading": "double",
+      "padding": "text",
+      "bucket_start_ms": "bigint"
+    },
+    "purpose": "Alternate projection across all stations for selected sensor name, 3600-second UTC buckets.",
+    "bucket_seconds": 3600,
+    "query_filter_mode": "sensor_only",
+    "read_cql_template": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_3600s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "write_cql_template": "INSERT INTO ts3_sensor_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 3600000) * 3600000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Direct sensor-name and temporal partition access; no station enumeration.",
+      "Query BOTH 5-second intervals and all intersected buckets, including inclusive endpoints.",
+      "Output includes station identity for correct multistation semantics."
+    ],
+    "maintenance_requirements": [
+      "A complete workload deployment must write each observation to this projection alongside the chosen canonical source.",
+      "Extra storage and fanout are NOT free; quantify in Stages 6/7/9."
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "query_plan_verified": false,
+    "write_plan_verified": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "table": "ts3_sensor_60s",
+    "partition_key": [
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "driver_system_id",
+      "event_id"
+    ],
+    "clustering_order": [
+      "ASC",
+      "ASC",
+      "ASC"
+    ],
+    "columns": {
+      "driver_system_id": "text",
+      "sensor_name": "text",
+      "event_ts": "bigint",
+      "event_id": "uuid",
+      "sensor_reading": "double",
+      "padding": "text",
+      "bucket_start_ms": "bigint"
+    },
+    "purpose": "Alternate projection across all stations for selected sensor name, 60-second UTC buckets.",
+    "bucket_seconds": 60,
+    "query_filter_mode": "sensor_only",
+    "read_cql_template": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_60s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "write_cql_template": "INSERT INTO ts3_sensor_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 60000) * 60000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Direct sensor-name and temporal partition access; no station enumeration.",
+      "Query BOTH 5-second intervals and all intersected buckets, including inclusive endpoints.",
+      "Output includes station identity for correct multistation semantics."
+    ],
+    "maintenance_requirements": [
+      "A complete workload deployment must write each observation to this projection alongside the chosen canonical source.",
+      "Extra storage and fanout are NOT free; quantify in Stages 6/7/9."
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "query_plan_verified": false,
+    "write_plan_verified": false,
+    "benchmarked": false
+  }
+]

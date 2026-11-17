@@ -1,0 +1,88 @@
+{
+  "stage": 4,
+  "benchmark": "TPCx-IoT v2.1.2",
+  "engine": "Apache Cassandra",
+  "scope": "CANDIDATE_SPECS_ONLY",
+  "stage3_source": "UPLOADED_FROZEN_OUTPUT_FILES",
+  "query_count": 2,
+  "candidate_count": 5,
+  "query_family_candidate_links": 6,
+  "candidate_counts_by_family": {
+    "TS0": 1,
+    "TS1": 2,
+    "TS2": 0,
+    "TS3": 2,
+    "TS4": 0,
+    "TS5": 0,
+    "TS6": 0,
+    "TS7": 0,
+    "TS8": 0
+  },
+  "candidate_ids": [
+    "ts0_series_raw",
+    "ts1_series_3600s",
+    "ts1_series_60s",
+    "ts3_sensor_3600s",
+    "ts3_sensor_60s"
+  ],
+  "activated_families": [
+    "TS0",
+    "TS1",
+    "TS3"
+  ],
+  "activated_modifiers": [
+    "M1",
+    "M3"
+  ],
+  "input_sha256": {
+    "analytical": "76acc7937dfc3535d5ca9b995e8019e22171f946036102dd38a3fae9d97e7c6d",
+    "evidence": "a8c31705807b5fad71360db3a3794479a9e2f8540b9fed1dc655e36b70888f9c",
+    "activation": "e08d6c7680c9ef2e0c186c08bfcaf0cb0fbe696112613b0dad425f5057da959a",
+    "modifiers": "6ac0d32ec55a5957ea1643a572965296a4180aebd193f3b75b7149650805294b",
+    "trace": "a96cc4ca6e04aa271a4f8a7a3863c833210e24c0b69308791dbc51fd6c4059ad",
+    "workload_manifest": "c936e3dab55f11e693024245282ee7279344515664bdd57403eef5579f4a5ca7",
+    "eer": "4bedff6b07555ff7ea790fa5ab0bd53daea9bd9c9583dea0512fcd0bfd99af4d",
+    "catalog": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+    "ts_rules": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+    "modifier_rules": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+    "physical_policy": "e4daaa536e43ae72d0b17bf341a21378bf361c34cddabea5f700e5106fac3de6"
+  },
+  "input_paths": {
+    "analytical": "inputs/stage3_frozen/01_analytical_matrix.csv",
+    "evidence": "inputs/stage3_frozen/02_temporal_evidence.csv",
+    "activation": "inputs/stage3_frozen/03_ts_activation_matrix.csv",
+    "modifiers": "inputs/stage3_frozen/04_modifier_matrix.csv",
+    "trace": "inputs/stage3_frozen/05_explanation_trace.json",
+    "workload_manifest": "inputs/workload/query_manifest.csv",
+    "eer": "inputs/schema/tpcx_iot_eer.json",
+    "catalog": "config/tsdb_family_catalog.json",
+    "ts_rules": "config/tsdb_activation_rules.json",
+    "modifier_rules": "config/temporal_modifier_rules.json",
+    "physical_policy": "config/tpcx_stage4_cassandra_policy.json"
+  },
+  "activation_rules_modified": false,
+  "source_stage3_reexecuted": false,
+  "used_benchmark_results": false,
+  "benchmark_executed": false,
+  "query_plan_verified": false,
+  "write_plan_verified": false,
+  "hbench_selected": false,
+  "physical_policy": "Explicit candidate bucket widths; no automatically chosen winner",
+  "major_uncertainties": [
+    "Kit 2.1.2 Java query binding unavailable: sensor-only assumption must be verified.",
+    "Raw-read semantics and optional four aggregate templates are not treated as interchangeable.",
+    "No station-key enumeration implementation yet for TS0/TS1.",
+    "Stable event_id UUID added by experimental adapter; original event format lacks it.",
+    "Replication/consistency and two-run TPC execution not yet implemented.",
+    "TS0 partition growth may be unsafe at high scale; kept as unbucketed reference.",
+    "No physical compaction or TTL chosen from M3/M1 labels.",
+    "Source specifications do not include exact event sampling distribution."
+  ],
+  "next_stages": [
+    "Stage5: ValidEquivalentPlan for each of two windows",
+    "Stage6: WritePlans to maintain chosen tables",
+    "Stage7: Pre-benchmark cost proxies",
+    "Stage8: Canonical fusion, compatible cover, HBench",
+    "Stage9: Joint actual Cassandra benchmark / preserve top-k retrospectively"
+  ]
+}

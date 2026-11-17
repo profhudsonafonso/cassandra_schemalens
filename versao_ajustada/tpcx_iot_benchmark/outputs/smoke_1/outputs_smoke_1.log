@@ -1,0 +1,16 @@
+{"phase": "preflight_ok", "version": "4.1.12"}
+{"phase": "rep_start", "rep": 1, "restart_s": 17.8, "order": ["b_tpcx_logical_raw", "b_tpcx_logical_raw_aa", "h_aba788b8e7b7", "h_977291c72920", "h_b4bea9150d2e", "h_bdd6bbdce69f", "h_a9983e2318a9", "h_6745757bf865", "h_6276d5b68197", "h_119222012d4e_aa", "h_3f1449e05468", "h_119222012d4e"]}
+{"phase": "variant_done", "rep": 1, "pos": 1, "variant": "b_tpcx_logical_raw", "ev_s": 434.3286, "mean_read": 4.61, "storage": 56229, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 2, "variant": "b_tpcx_logical_raw_aa", "ev_s": 438.8809, "mean_read": 3.403, "storage": 56192, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 3, "variant": "h_aba788b8e7b7", "ev_s": 469.9778, "mean_read": 5.053, "storage": 53355, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 4, "variant": "h_977291c72920", "ev_s": 319.0214, "mean_read": 2.088, "storage": 110194, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 5, "variant": "h_b4bea9150d2e", "ev_s": 443.936, "mean_read": 3.137, "storage": 53547, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 6, "variant": "h_bdd6bbdce69f", "ev_s": 259.0422, "mean_read": 3.226, "storage": 110415, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 7, "variant": "h_a9983e2318a9", "ev_s": 259.0925, "mean_read": 3.085, "storage": 110948, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 8, "variant": "h_6745757bf865", "ev_s": 243.8808, "mean_read": 3.329, "storage": 110246, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 9, "variant": "h_6276d5b68197", "ev_s": 240.7283, "mean_read": 3.786, "storage": 110786, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 10, "variant": "h_119222012d4e_aa", "ev_s": 383.4885, "mean_read": 5.482, "storage": 52964, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 11, "variant": "h_3f1449e05468", "ev_s": 244.801, "mean_read": 3.272, "storage": 109857, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 12, "variant": "h_119222012d4e", "ev_s": 378.8128, "mean_read": 5.033, "storage": 52959, "guard": true}
+{"phase": "complete"}
+EXIT 0

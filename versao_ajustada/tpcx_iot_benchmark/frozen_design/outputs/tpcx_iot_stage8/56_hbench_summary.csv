@@ -1,0 +1,6 @@
+selection_order,deployment_id,tables,read_plan_candidate,read_cql_requests,replicated_logical_storage,insert_statements_per_event,maximum_partition_bytes,physical_partition_count,normalized_proxy_score,coverage,real_benchmark_executed
+1,h_119222012d4e,ts0_series_raw,ts0_series_raw,20,6267392000,1,1566848,2000,1.0,CONDITIONAL_OFFLINE_ONLY,false
+2,h_6745757bf865,ts1_series_3600s;ts3_sensor_3600s,ts3_sensor_3600s,3,12547276800,2,652928,52800,2.150306143289,CONDITIONAL_OFFLINE_ONLY,false
+3,h_a9983e2318a9,ts1_series_60s;ts3_sensor_60s,ts3_sensor_60s,3,13344768000,2,11008,3168000,79.987939506576,CONDITIONAL_OFFLINE_ONLY,false
+4,h_3f1449e05468,ts0_series_raw;ts3_sensor_3600s,ts3_sensor_3600s,3,12535500800,2,1566848,6800,1.087517155461,CONDITIONAL_OFFLINE_ONLY,false
+5,h_aba788b8e7b7,ts1_series_3600s,ts1_series_3600s,30,6279168000,1,65408,48000,2.231543583041,CONDITIONAL_OFFLINE_ONLY,false

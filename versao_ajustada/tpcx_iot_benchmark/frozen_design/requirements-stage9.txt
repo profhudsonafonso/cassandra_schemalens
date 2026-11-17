@@ -1,0 +1,2 @@
+# Local Cassandra smoke/bench driver; earlier analytical stages require stdlib only.
+cassandra-driver>=3.29,<4

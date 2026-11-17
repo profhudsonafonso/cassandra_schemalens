@@ -1,0 +1,294 @@
+[
+  {
+    "plan_id": "wp__q_ingest__ts0_series_raw",
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "physical_table": "ts0_series_raw",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "column_order": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id",
+      "sensor_reading",
+      "padding"
+    ],
+    "write_cql": "INSERT INTO ts0_series_raw (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding) VALUES (?, ?, ?, ?, ?, ?);",
+    "bucket_seconds": null,
+    "role": "canonical_series_table",
+    "write_strategy": "raw_idempotent_upsert",
+    "identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "requirements": [
+      "full_immutable_input_event_with_source_unique_identity",
+      "event_time_is_signed_int64_epoch_milliseconds_utc",
+      "external_complete_station_roster_assertion_with_provenance",
+      "same_full_event_replay_must_not_duplicate",
+      "reject_conflicting_identity_updates",
+      "all_selected_table_writes_required_for_complete_deployment"
+    ],
+    "maintenance": [
+      "floor_divide_event_time_into_UTC_bucket_when_applicable",
+      "bind_INSERT_values_in_exact_frozen_Stage4_column_order",
+      "retain_event_reading_and_full_padding",
+      "use_deterministic_UUID_if_source_record_id_is_present",
+      "retry_same_CQL_mutations_after_partial_failure",
+      "document_unbounded_per_stream_partition_size_risk"
+    ],
+    "active_modifiers": [
+      "M3"
+    ],
+    "offline_reference_status": "REFERENCE_ONLY",
+    "cassandra_verified": false,
+    "distributed_atomicity_proven": false,
+    "benchmarked": false
+  },
+  {
+    "plan_id": "wp__q_ingest__ts1_series_3600s",
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "physical_table": "ts1_series_3600s",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "column_order": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id",
+      "sensor_reading",
+      "padding",
+      "bucket_start_ms"
+    ],
+    "write_cql": "INSERT INTO ts1_series_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "bucket_seconds": 3600,
+    "role": "canonical_series_table",
+    "write_strategy": "raw_idempotent_upsert",
+    "identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "requirements": [
+      "full_immutable_input_event_with_source_unique_identity",
+      "event_time_is_signed_int64_epoch_milliseconds_utc",
+      "external_complete_station_roster_assertion_with_provenance",
+      "same_full_event_replay_must_not_duplicate",
+      "reject_conflicting_identity_updates",
+      "all_selected_table_writes_required_for_complete_deployment"
+    ],
+    "maintenance": [
+      "floor_divide_event_time_into_UTC_bucket_when_applicable",
+      "bind_INSERT_values_in_exact_frozen_Stage4_column_order",
+      "retain_event_reading_and_full_padding",
+      "use_deterministic_UUID_if_source_record_id_is_present",
+      "retry_same_CQL_mutations_after_partial_failure"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "offline_reference_status": "REFERENCE_ONLY",
+    "cassandra_verified": false,
+    "distributed_atomicity_proven": false,
+    "benchmarked": false
+  },
+  {
+    "plan_id": "wp__q_ingest__ts1_series_60s",
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "physical_table": "ts1_series_60s",
+    "partition_key": [
+      "driver_system_id",
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "event_id"
+    ],
+    "column_order": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id",
+      "sensor_reading",
+      "padding",
+      "bucket_start_ms"
+    ],
+    "write_cql": "INSERT INTO ts1_series_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "bucket_seconds": 60,
+    "role": "canonical_series_table",
+    "write_strategy": "raw_idempotent_upsert",
+    "identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "requirements": [
+      "full_immutable_input_event_with_source_unique_identity",
+      "event_time_is_signed_int64_epoch_milliseconds_utc",
+      "external_complete_station_roster_assertion_with_provenance",
+      "same_full_event_replay_must_not_duplicate",
+      "reject_conflicting_identity_updates",
+      "all_selected_table_writes_required_for_complete_deployment"
+    ],
+    "maintenance": [
+      "floor_divide_event_time_into_UTC_bucket_when_applicable",
+      "bind_INSERT_values_in_exact_frozen_Stage4_column_order",
+      "retain_event_reading_and_full_padding",
+      "use_deterministic_UUID_if_source_record_id_is_present",
+      "retry_same_CQL_mutations_after_partial_failure"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "offline_reference_status": "REFERENCE_ONLY",
+    "cassandra_verified": false,
+    "distributed_atomicity_proven": false,
+    "benchmarked": false
+  },
+  {
+    "plan_id": "wp__q_ingest__ts3_sensor_3600s",
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "physical_table": "ts3_sensor_3600s",
+    "partition_key": [
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "driver_system_id",
+      "event_id"
+    ],
+    "column_order": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id",
+      "sensor_reading",
+      "padding",
+      "bucket_start_ms"
+    ],
+    "write_cql": "INSERT INTO ts3_sensor_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "bucket_seconds": 3600,
+    "role": "materialized_sensor_projection",
+    "write_strategy": "raw_idempotent_upsert_plus_projection",
+    "identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "requirements": [
+      "full_immutable_input_event_with_source_unique_identity",
+      "event_time_is_signed_int64_epoch_milliseconds_utc",
+      "external_complete_station_roster_assertion_with_provenance",
+      "same_full_event_replay_must_not_duplicate",
+      "reject_conflicting_identity_updates",
+      "all_selected_table_writes_required_for_complete_deployment"
+    ],
+    "maintenance": [
+      "floor_divide_event_time_into_UTC_bucket_when_applicable",
+      "bind_INSERT_values_in_exact_frozen_Stage4_column_order",
+      "retain_event_reading_and_full_padding",
+      "use_deterministic_UUID_if_source_record_id_is_present",
+      "retry_same_CQL_mutations_after_partial_failure",
+      "duplicate_each_input_event_across_all_stations_for_sensor_name_access",
+      "require_canonical_source_and_recovery_protocol_in_complete_deployment"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "offline_reference_status": "REFERENCE_ONLY",
+    "cassandra_verified": false,
+    "distributed_atomicity_proven": false,
+    "benchmarked": false
+  },
+  {
+    "plan_id": "wp__q_ingest__ts3_sensor_60s",
+    "query_id": "Q_INGEST",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "physical_table": "ts3_sensor_60s",
+    "partition_key": [
+      "sensor_name",
+      "bucket_start_ms"
+    ],
+    "clustering_key": [
+      "event_ts",
+      "driver_system_id",
+      "event_id"
+    ],
+    "column_order": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id",
+      "sensor_reading",
+      "padding",
+      "bucket_start_ms"
+    ],
+    "write_cql": "INSERT INTO ts3_sensor_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "bucket_seconds": 60,
+    "role": "materialized_sensor_projection",
+    "write_strategy": "raw_idempotent_upsert_plus_projection",
+    "identity": [
+      "driver_system_id",
+      "sensor_name",
+      "event_ts",
+      "event_id"
+    ],
+    "requirements": [
+      "full_immutable_input_event_with_source_unique_identity",
+      "event_time_is_signed_int64_epoch_milliseconds_utc",
+      "external_complete_station_roster_assertion_with_provenance",
+      "same_full_event_replay_must_not_duplicate",
+      "reject_conflicting_identity_updates",
+      "all_selected_table_writes_required_for_complete_deployment"
+    ],
+    "maintenance": [
+      "floor_divide_event_time_into_UTC_bucket_when_applicable",
+      "bind_INSERT_values_in_exact_frozen_Stage4_column_order",
+      "retain_event_reading_and_full_padding",
+      "use_deterministic_UUID_if_source_record_id_is_present",
+      "retry_same_CQL_mutations_after_partial_failure",
+      "duplicate_each_input_event_across_all_stations_for_sensor_name_access",
+      "require_canonical_source_and_recovery_protocol_in_complete_deployment"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "offline_reference_status": "REFERENCE_ONLY",
+    "cassandra_verified": false,
+    "distributed_atomicity_proven": false,
+    "benchmarked": false
+  }
+]

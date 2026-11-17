@@ -1,0 +1,68 @@
+{"phase": "preflight_ok", "version": "4.1.12"}
+{"phase": "rep_start", "rep": 1, "restart_s": 17.8, "order": ["b_tpcx_logical_raw", "h_6745757bf865", "h_977291c72920", "b_tpcx_logical_raw_aa", "h_a9983e2318a9", "h_b4bea9150d2e", "h_bdd6bbdce69f", "h_119222012d4e", "h_3f1449e05468", "h_6276d5b68197", "h_aba788b8e7b7", "h_119222012d4e_aa"]}
+{"phase": "variant_done", "rep": 1, "pos": 1, "variant": "b_tpcx_logical_raw", "ev_s": 435.7895, "mean_read": 3.451, "storage": 178768, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 2, "variant": "h_6745757bf865", "ev_s": 247.0476, "mean_read": 2.785, "storage": 346651, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 3, "variant": "h_977291c72920", "ev_s": 240.7776, "mean_read": 3.056, "storage": 349423, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 4, "variant": "b_tpcx_logical_raw_aa", "ev_s": 395.9711, "mean_read": 2.489, "storage": 178765, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 5, "variant": "h_a9983e2318a9", "ev_s": 247.5878, "mean_read": 3.101, "storage": 351361, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 6, "variant": "h_b4bea9150d2e", "ev_s": 373.0698, "mean_read": 5.284, "storage": 168579, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 7, "variant": "h_bdd6bbdce69f", "ev_s": 241.6552, "mean_read": 2.961, "storage": 348588, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 8, "variant": "h_119222012d4e", "ev_s": 386.6168, "mean_read": 4.287, "storage": 166423, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 9, "variant": "h_3f1449e05468", "ev_s": 238.115, "mean_read": 2.836, "storage": 346513, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 10, "variant": "h_6276d5b68197", "ev_s": 247.3331, "mean_read": 2.623, "storage": 349778, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 11, "variant": "h_aba788b8e7b7", "ev_s": 378.1279, "mean_read": 4.473, "storage": 166808, "guard": true}
+{"phase": "variant_done", "rep": 1, "pos": 12, "variant": "h_119222012d4e_aa", "ev_s": 386.1985, "mean_read": 4.221, "storage": 166463, "guard": true}
+{"phase": "rep_start", "rep": 2, "restart_s": 17.9, "order": ["h_119222012d4e_aa", "h_aba788b8e7b7", "h_6276d5b68197", "h_3f1449e05468", "h_119222012d4e", "h_bdd6bbdce69f", "h_b4bea9150d2e", "h_a9983e2318a9", "b_tpcx_logical_raw_aa", "h_977291c72920", "h_6745757bf865", "b_tpcx_logical_raw"]}
+{"phase": "variant_done", "rep": 2, "pos": 1, "variant": "h_119222012d4e_aa", "ev_s": 382.0475, "mean_read": 5.143, "storage": 166466, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 2, "variant": "h_aba788b8e7b7", "ev_s": 385.8731, "mean_read": 4.249, "storage": 166770, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 3, "variant": "h_6276d5b68197", "ev_s": 240.0647, "mean_read": 3.12, "storage": 349844, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 4, "variant": "h_3f1449e05468", "ev_s": 242.2053, "mean_read": 2.817, "storage": 346588, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 5, "variant": "h_119222012d4e", "ev_s": 372.0469, "mean_read": 4.687, "storage": 166466, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 6, "variant": "h_bdd6bbdce69f", "ev_s": 241.6908, "mean_read": 2.853, "storage": 348615, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 7, "variant": "h_b4bea9150d2e", "ev_s": 386.3688, "mean_read": 4.357, "storage": 168570, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 8, "variant": "h_a9983e2318a9", "ev_s": 241.6867, "mean_read": 2.899, "storage": 351554, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 9, "variant": "b_tpcx_logical_raw_aa", "ev_s": 375.6733, "mean_read": 2.824, "storage": 178810, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 10, "variant": "h_977291c72920", "ev_s": 243.8048, "mean_read": 2.865, "storage": 349430, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 11, "variant": "h_6745757bf865", "ev_s": 238.7061, "mean_read": 2.862, "storage": 346933, "guard": true}
+{"phase": "variant_done", "rep": 2, "pos": 12, "variant": "b_tpcx_logical_raw", "ev_s": 390.5237, "mean_read": 2.554, "storage": 178752, "guard": true}
+{"phase": "rep_start", "rep": 3, "restart_s": 18.0, "order": ["h_6276d5b68197", "h_3f1449e05468", "b_tpcx_logical_raw_aa", "h_bdd6bbdce69f", "h_119222012d4e_aa", "h_977291c72920", "h_6745757bf865", "h_119222012d4e", "h_aba788b8e7b7", "b_tpcx_logical_raw", "h_a9983e2318a9", "h_b4bea9150d2e"]}
+{"phase": "variant_done", "rep": 3, "pos": 1, "variant": "h_6276d5b68197", "ev_s": 250.9274, "mean_read": 3.301, "storage": 349722, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 2, "variant": "h_3f1449e05468", "ev_s": 247.5925, "mean_read": 2.971, "storage": 346537, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 3, "variant": "b_tpcx_logical_raw_aa", "ev_s": 388.2637, "mean_read": 2.828, "storage": 178818, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 4, "variant": "h_bdd6bbdce69f", "ev_s": 242.6097, "mean_read": 3.098, "storage": 348591, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 5, "variant": "h_119222012d4e_aa", "ev_s": 374.9914, "mean_read": 4.686, "storage": 166434, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 6, "variant": "h_977291c72920", "ev_s": 244.9317, "mean_read": 3.028, "storage": 349494, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 7, "variant": "h_6745757bf865", "ev_s": 240.376, "mean_read": 2.937, "storage": 346970, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 8, "variant": "h_119222012d4e", "ev_s": 367.9548, "mean_read": 4.874, "storage": 166439, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 9, "variant": "h_aba788b8e7b7", "ev_s": 383.5756, "mean_read": 4.41, "storage": 166792, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 10, "variant": "b_tpcx_logical_raw", "ev_s": 378.6532, "mean_read": 2.789, "storage": 178775, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 11, "variant": "h_a9983e2318a9", "ev_s": 238.1847, "mean_read": 2.965, "storage": 351486, "guard": true}
+{"phase": "variant_done", "rep": 3, "pos": 12, "variant": "h_b4bea9150d2e", "ev_s": 382.5771, "mean_read": 5.019, "storage": 168607, "guard": true}
+{"phase": "rep_start", "rep": 4, "restart_s": 18.0, "order": ["h_b4bea9150d2e", "h_a9983e2318a9", "b_tpcx_logical_raw", "h_aba788b8e7b7", "h_119222012d4e", "h_6745757bf865", "h_977291c72920", "h_119222012d4e_aa", "h_bdd6bbdce69f", "b_tpcx_logical_raw_aa", "h_3f1449e05468", "h_6276d5b68197"]}
+{"phase": "variant_done", "rep": 4, "pos": 1, "variant": "h_b4bea9150d2e", "ev_s": 367.9661, "mean_read": 5.836, "storage": 168592, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 2, "variant": "h_a9983e2318a9", "ev_s": 249.3478, "mean_read": 2.871, "storage": 351377, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 3, "variant": "b_tpcx_logical_raw", "ev_s": 389.0055, "mean_read": 2.77, "storage": 178787, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 4, "variant": "h_aba788b8e7b7", "ev_s": 378.3197, "mean_read": 4.74, "storage": 166819, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 5, "variant": "h_119222012d4e", "ev_s": 379.9941, "mean_read": 4.768, "storage": 166446, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 6, "variant": "h_6745757bf865", "ev_s": 244.9379, "mean_read": 2.824, "storage": 346860, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 7, "variant": "h_977291c72920", "ev_s": 239.6703, "mean_read": 3.045, "storage": 349508, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 8, "variant": "h_119222012d4e_aa", "ev_s": 380.3023, "mean_read": 4.373, "storage": 166419, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 9, "variant": "h_bdd6bbdce69f", "ev_s": 232.1658, "mean_read": 2.924, "storage": 348732, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 10, "variant": "b_tpcx_logical_raw_aa", "ev_s": 367.535, "mean_read": 2.705, "storage": 178802, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 11, "variant": "h_3f1449e05468", "ev_s": 241.8045, "mean_read": 2.909, "storage": 346516, "guard": true}
+{"phase": "variant_done", "rep": 4, "pos": 12, "variant": "h_6276d5b68197", "ev_s": 243.3089, "mean_read": 2.909, "storage": 349755, "guard": true}
+{"phase": "rep_start", "rep": 5, "restart_s": 17.8, "order": ["h_6745757bf865", "b_tpcx_logical_raw_aa", "h_119222012d4e", "h_aba788b8e7b7", "h_119222012d4e_aa", "h_3f1449e05468", "h_6276d5b68197", "h_977291c72920", "h_bdd6bbdce69f", "h_a9983e2318a9", "b_tpcx_logical_raw", "h_b4bea9150d2e"]}
+{"phase": "variant_done", "rep": 5, "pos": 1, "variant": "h_6745757bf865", "ev_s": 245.7534, "mean_read": 3.231, "storage": 346933, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 2, "variant": "b_tpcx_logical_raw_aa", "ev_s": 383.5567, "mean_read": 3.191, "storage": 178823, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 3, "variant": "h_119222012d4e", "ev_s": 381.2456, "mean_read": 4.74, "storage": 166453, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 4, "variant": "h_aba788b8e7b7", "ev_s": 372.401, "mean_read": 4.972, "storage": 166844, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 5, "variant": "h_119222012d4e_aa", "ev_s": 385.2131, "mean_read": 4.375, "storage": 166446, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 6, "variant": "h_3f1449e05468", "ev_s": 233.0051, "mean_read": 3.025, "storage": 346653, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 7, "variant": "h_6276d5b68197", "ev_s": 241.9632, "mean_read": 2.831, "storage": 349786, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 8, "variant": "h_977291c72920", "ev_s": 245.8331, "mean_read": 2.756, "storage": 349450, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 9, "variant": "h_bdd6bbdce69f", "ev_s": 245.7766, "mean_read": 2.854, "storage": 348636, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 10, "variant": "h_a9983e2318a9", "ev_s": 247.2305, "mean_read": 2.698, "storage": 351527, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 11, "variant": "b_tpcx_logical_raw", "ev_s": 382.0262, "mean_read": 2.719, "storage": 178811, "guard": true}
+{"phase": "variant_done", "rep": 5, "pos": 12, "variant": "h_b4bea9150d2e", "ev_s": 375.4612, "mean_read": 4.811, "storage": 168586, "guard": true}
+{"phase": "complete"}
+EXIT 0

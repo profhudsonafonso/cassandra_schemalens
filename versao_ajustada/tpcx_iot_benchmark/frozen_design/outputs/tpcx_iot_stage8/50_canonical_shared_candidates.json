@@ -1,0 +1,135 @@
+[
+  {
+    "shared_candidate_id": "c_8acc537c1162",
+    "signature": "8acc537c11621611c3e38fe4bc1a05e4c388f316fd6e1c8159ec20267c1680b6",
+    "source_candidate_ids": [
+      "ts1_series_60s"
+    ],
+    "representative_candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "materialization_scope": {
+      "owner_entity": "Reading",
+      "partition_key": [
+        "driver_system_id",
+        "sensor_name",
+        "bucket_start_ms"
+      ],
+      "bucket_seconds": 60,
+      "table_role": "canonical_series_table"
+    },
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "live_coverage_verified": false
+  },
+  {
+    "shared_candidate_id": "c_95b78904d017",
+    "signature": "95b78904d017226fd56c4b25268175851b8de687b27b26bdfec6553a83198cf5",
+    "source_candidate_ids": [
+      "ts0_series_raw"
+    ],
+    "representative_candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "materialization_scope": {
+      "owner_entity": "Reading",
+      "partition_key": [
+        "driver_system_id",
+        "sensor_name"
+      ],
+      "bucket_seconds": null,
+      "table_role": "canonical_series_table"
+    },
+    "origin_queries": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "live_coverage_verified": false
+  },
+  {
+    "shared_candidate_id": "c_a3f5ccc0ea4e",
+    "signature": "a3f5ccc0ea4e2f73d840ed596db9512dfe07e1dd206797f83a63b1c3d29796e4",
+    "source_candidate_ids": [
+      "ts3_sensor_60s"
+    ],
+    "representative_candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "materialization_scope": {
+      "owner_entity": "Reading",
+      "partition_key": [
+        "sensor_name",
+        "bucket_start_ms"
+      ],
+      "bucket_seconds": 60,
+      "table_role": "materialized_sensor_projection"
+    },
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "live_coverage_verified": false
+  },
+  {
+    "shared_candidate_id": "c_f39c03909a44",
+    "signature": "f39c03909a449c2772646b2f946b65e97fcfdba177bb85eecb118a6bcf32f641",
+    "source_candidate_ids": [
+      "ts3_sensor_3600s"
+    ],
+    "representative_candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "materialization_scope": {
+      "owner_entity": "Reading",
+      "partition_key": [
+        "sensor_name",
+        "bucket_start_ms"
+      ],
+      "bucket_seconds": 3600,
+      "table_role": "materialized_sensor_projection"
+    },
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "live_coverage_verified": false
+  },
+  {
+    "shared_candidate_id": "c_fafdd4084d6d",
+    "signature": "fafdd4084d6d0ef441acd706467bc109e1868720d37db1ad2282120b3c546a98",
+    "source_candidate_ids": [
+      "ts1_series_3600s"
+    ],
+    "representative_candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "materialization_scope": {
+      "owner_entity": "Reading",
+      "partition_key": [
+        "driver_system_id",
+        "sensor_name",
+        "bucket_start_ms"
+      ],
+      "bucket_seconds": 3600,
+      "table_role": "canonical_series_table"
+    },
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "live_coverage_verified": false
+  }
+]

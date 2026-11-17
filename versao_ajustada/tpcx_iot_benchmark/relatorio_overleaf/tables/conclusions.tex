@@ -1,0 +1,6 @@
+\begin{enumerate}
+\item \textbf{Comparabilidade.} O TPCx-IoT passa a usar a mesma imagem, as mesmas métricas, a mesma estatística, o mesmo controle físico e os mesmos indicadores de preservação que o IoT-Benchmark.
+\item \textbf{Confirmado:} a projeção TS3 por sensor reduz a latência de leitura em $\approx$37\%, ao custo de $\approx$36\% de ingestão e 2$\times$ de disco; o HBench preserva o melhor (regret 0) e o Pareto 2D.
+\item \textbf{Novo e importante para o artigo:} (i) o escore do seletor não prediz a leitura ($\tau=-0{,}06$), e a preservação depende da diversidade; (ii) o baseline lógico do TPC (uma tabela por sensor) empata em leitura com o melhor deployment do SchemaLens e é melhor em escrita e disco. A restrição ``TS3 não pode ser fonte canônica'' do catálogo exclui exatamente esse desenho. É uma limitação do espaço de candidatos, não da medição.
+\item \textbf{Para o artigo.} Não escrever que o SchemaLens supera o baseline TPCx. Escrever que a redução 9 $\rightarrow$ 5 preservou os melhores deployments do espaço SchemaLens e que, nesta carga, o baseline lógico é competitivo. Recomenda-se revisar a política de fonte canônica (permitir TS3 canônico quando a carga só filtra por sensor) e recalcular os proxies na escala executada.
+\end{enumerate}

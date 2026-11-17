@@ -1,0 +1,230 @@
+{
+  "baseline_id": "b_tpcx_logical_raw",
+  "baseline_official_cassandra": false,
+  "hbench_frozen": true,
+  "n_runs": 30,
+  "reason": "Full nine compatible deployments are evaluated only in verification mode.",
+  "retrospective_quality": {
+    "all_reference_2d_pareto_retained": true,
+    "deployment_space_reduction": 0.4444444444444444,
+    "limitations": "One workload and one scale, median of repetitions; 5% is operational, not statistical equivalence; storage omitted from 2D Pareto",
+    "near_best_within_5_percent": true,
+    "objectives": "Median ingest events/sec maximize, median per-run p95 minimize",
+    "p95_relative_regret": 0.0,
+    "reference_2d_pareto_designs": [
+      "h_3f1449e05468",
+      "h_a9983e2318a9",
+      "h_aba788b8e7b7"
+    ],
+    "reference_2d_pareto_retained": [
+      "h_3f1449e05468",
+      "h_a9983e2318a9",
+      "h_aba788b8e7b7"
+    ],
+    "reference_designs": 9,
+    "reference_p95_best": "h_3f1449e05468",
+    "retained_designs": 5,
+    "retained_p95_best": "h_3f1449e05468",
+    "selection_modified_after_measurement": false,
+    "top1_preserved": true,
+    "top3_intersection": true
+  },
+  "summary": [
+    {
+      "baseline_kind": "EXTERNAL_TPC_LOGICAL_PORT",
+      "deployment_id": "b_tpcx_logical_raw",
+      "max_ingest_events_per_s": 451.617,
+      "max_read_p95_ms": 1.547611,
+      "median_ingest_events_per_s": 450.6078,
+      "median_read_p95_ms": 1.536344,
+      "median_storage_live_bytes": 173343,
+      "min_ingest_events_per_s": 444.2024,
+      "min_read_p95_ms": 1.446906,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_119222012d4e",
+      "max_ingest_events_per_s": 486.5072,
+      "max_read_p95_ms": 2.794561,
+      "median_ingest_events_per_s": 451.6883,
+      "median_read_p95_ms": 2.584274,
+      "median_storage_live_bytes": 160026,
+      "min_ingest_events_per_s": 450.3999,
+      "min_read_p95_ms": 2.571653,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_3f1449e05468",
+      "max_ingest_events_per_s": 291.2127,
+      "max_read_p95_ms": 1.554716,
+      "median_ingest_events_per_s": 290.0203,
+      "median_read_p95_ms": 1.488169,
+      "median_storage_live_bytes": 334337,
+      "min_ingest_events_per_s": 289.7845,
+      "min_read_p95_ms": 1.422082,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_6276d5b68197",
+      "max_ingest_events_per_s": 288.4673,
+      "max_read_p95_ms": 1.90282,
+      "median_ingest_events_per_s": 286.7515,
+      "median_read_p95_ms": 1.848123,
+      "median_storage_live_bytes": 337345,
+      "min_ingest_events_per_s": 285.3523,
+      "min_read_p95_ms": 1.811153,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_6745757bf865",
+      "max_ingest_events_per_s": 292.451,
+      "max_read_p95_ms": 1.6374,
+      "median_ingest_events_per_s": 289.4737,
+      "median_read_p95_ms": 1.550768,
+      "median_storage_live_bytes": 334480,
+      "min_ingest_events_per_s": 289.391,
+      "min_read_p95_ms": 1.527176,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_977291c72920",
+      "max_ingest_events_per_s": 291.8039,
+      "max_read_p95_ms": 1.888974,
+      "median_ingest_events_per_s": 288.1139,
+      "median_read_p95_ms": 1.879324,
+      "median_storage_live_bytes": 337268,
+      "min_ingest_events_per_s": 284.0655,
+      "min_read_p95_ms": 1.778647,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_a9983e2318a9",
+      "max_ingest_events_per_s": 296.5479,
+      "max_read_p95_ms": 1.816535,
+      "median_ingest_events_per_s": 291.5091,
+      "median_read_p95_ms": 1.659424,
+      "median_storage_live_bytes": 339799,
+      "min_ingest_events_per_s": 287.7186,
+      "min_read_p95_ms": 1.645482,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_aba788b8e7b7",
+      "max_ingest_events_per_s": 459.356,
+      "max_read_p95_ms": 2.591998,
+      "median_ingest_events_per_s": 457.7916,
+      "median_read_p95_ms": 2.553374,
+      "median_storage_live_bytes": 160241,
+      "min_ingest_events_per_s": 452.1179,
+      "min_read_p95_ms": 2.376197,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_b4bea9150d2e",
+      "max_ingest_events_per_s": 460.7564,
+      "max_read_p95_ms": 3.055037,
+      "median_ingest_events_per_s": 451.1435,
+      "median_read_p95_ms": 2.884173,
+      "median_storage_live_bytes": 162685,
+      "min_ingest_events_per_s": 449.9499,
+      "min_read_p95_ms": 2.306298,
+      "runs": 3,
+      "storage_runs": 3
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_bdd6bbdce69f",
+      "max_ingest_events_per_s": 291.4652,
+      "max_read_p95_ms": 1.712825,
+      "median_ingest_events_per_s": 289.6771,
+      "median_read_p95_ms": 1.635487,
+      "median_storage_live_bytes": 336893,
+      "min_ingest_events_per_s": 287.9064,
+      "min_read_p95_ms": 1.59358,
+      "runs": 3,
+      "storage_runs": 3
+    }
+  ],
+  "topk_regret_evaluated": false,
+  "vs_baseline": [
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_119222012d4e",
+      "ingest_ratio_vs_baseline": 1.0024,
+      "read_p95_ratio_vs_baseline": 1.6821,
+      "storage_ratio_vs_baseline": 0.9232
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_3f1449e05468",
+      "ingest_ratio_vs_baseline": 0.6436,
+      "read_p95_ratio_vs_baseline": 0.9686,
+      "storage_ratio_vs_baseline": 1.9288
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_6276d5b68197",
+      "ingest_ratio_vs_baseline": 0.6364,
+      "read_p95_ratio_vs_baseline": 1.2029,
+      "storage_ratio_vs_baseline": 1.9461
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_6745757bf865",
+      "ingest_ratio_vs_baseline": 0.6424,
+      "read_p95_ratio_vs_baseline": 1.0094,
+      "storage_ratio_vs_baseline": 1.9296
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_977291c72920",
+      "ingest_ratio_vs_baseline": 0.6394,
+      "read_p95_ratio_vs_baseline": 1.2232,
+      "storage_ratio_vs_baseline": 1.9457
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_a9983e2318a9",
+      "ingest_ratio_vs_baseline": 0.6469,
+      "read_p95_ratio_vs_baseline": 1.0801,
+      "storage_ratio_vs_baseline": 1.9603
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_aba788b8e7b7",
+      "ingest_ratio_vs_baseline": 1.0159,
+      "read_p95_ratio_vs_baseline": 1.662,
+      "storage_ratio_vs_baseline": 0.9244
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_b4bea9150d2e",
+      "ingest_ratio_vs_baseline": 1.0012,
+      "read_p95_ratio_vs_baseline": 1.8773,
+      "storage_ratio_vs_baseline": 0.9385
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_bdd6bbdce69f",
+      "ingest_ratio_vs_baseline": 0.6429,
+      "read_p95_ratio_vs_baseline": 1.0645,
+      "storage_ratio_vs_baseline": 1.9435
+    }
+  ]
+}

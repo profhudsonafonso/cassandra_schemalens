@@ -1,0 +1,46 @@
+{
+  "stage": 5,
+  "engine": "Apache Cassandra",
+  "benchmark": "TPCx-IoT 2.1.2 adapted research profile",
+  "query_count": 2,
+  "read_query_count": 1,
+  "write_query_count": 1,
+  "read_plan_count": 5,
+  "conditional_read_plan_count": 5,
+  "offline_probe_count": 25,
+  "offline_probes_passed": 25,
+  "conditionally_covered_families": [
+    "TS0",
+    "TS1",
+    "TS3"
+  ],
+  "source_assumption": "sensor_name_only; unverified against official Java kit",
+  "logical_intervals": "two 5-second closed intervals; OR semantics; no order guarantee",
+  "source_hashes": {
+    "stage4_manifest_sha256": "f6cb5add65c34addf9ac558994e777972e8ddbab2abdd94e44874026f0ff7f4b",
+    "stage4_specs_sha256": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+    "stage4_primitives_sha256": "b18410cc9d7b98474fc45f53ae7011c6fde160feeec67b2f4e4fee769a9cb020",
+    "logical_sql_sha256": "e361857483bc9b130712f2259ce2bc9c8b1b1c787e37906d8d9ee56abd724636",
+    "frozen_stage3_sha256": {
+      "analytical": "76acc7937dfc3535d5ca9b995e8019e22171f946036102dd38a3fae9d97e7c6d",
+      "evidence": "a8c31705807b5fad71360db3a3794479a9e2f8540b9fed1dc655e36b70888f9c",
+      "activation": "e08d6c7680c9ef2e0c186c08bfcaf0cb0fbe696112613b0dad425f5057da959a",
+      "modifiers": "6ac0d32ec55a5957ea1643a572965296a4180aebd193f3b75b7149650805294b",
+      "trace": "a96cc4ca6e04aa271a4f8a7a3863c833210e24c0b69308791dbc51fd6c4059ad",
+      "workload_manifest": "c936e3dab55f11e693024245282ee7279344515664bdd57403eef5579f4a5ca7",
+      "eer": "4bedff6b07555ff7ea790fa5ab0bd53daea9bd9c9583dea0512fcd0bfd99af4d",
+      "catalog": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+      "ts_rules": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+      "modifier_rules": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+      "physical_policy": "e4daaa536e43ae72d0b17bf341a21378bf361c34cddabea5f700e5106fac3de6"
+    }
+  },
+  "stage3_reexecuted": false,
+  "activation_rules_changed": false,
+  "benchmark_results_used": false,
+  "cassandra_cluster_used": false,
+  "operational_coverage_claimed": false,
+  "write_plans_completed": false,
+  "hbench_selected": false,
+  "next": "Stage6 write plans and complete roster/projection maintenance"
+}

@@ -1,0 +1,60 @@
+{
+  "analysis_code_sha256": {
+    "common/cassandra_env.py": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+    "common/method_eval.py": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+    "common/slstats.py": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+    "tpcx_iot_benchmark/tpcx_v1/ablation.py": "d2de910766e6fc7c5fa47f588ee563f5ef9d20cf8b80e97d23b84f0ec027c881",
+    "tpcx_iot_benchmark/tpcx_v1/acceptance.py": "2df126f3ecbb730a73f498b45243f1d640cc816c16c3d9c66150cdd81729060f",
+    "tpcx_iot_benchmark/tpcx_v1/analyze.py": "dcadaa0219f7b8f9efa57934972fb91d07945a17bfff461ee9912f1e69428fdc",
+    "tpcx_iot_benchmark/tpcx_v1/common_paths.py": "922479f5b3e5e3db39b264bd625403e603204a632b05ab07a1a672f5408f59b6",
+    "tpcx_iot_benchmark/tpcx_v1/freeze.py": "16039321f3915aeaf479b10fc4e04013be29fa82f1d1c8422bb90fb2e87e16ef",
+    "tpcx_iot_benchmark/tpcx_v1/make_tables.py": "b38c682fc3980f5c3436ab090b534d9dc8582903dbdb47411ffe1fe010a407f1",
+    "tpcx_iot_benchmark/tpcx_v1/measure.py": "2292a475e34ed3c0904a8a7ce1b166c3e010bff1152e3de95be17138f5e01956"
+  },
+  "best": "h_a9983e2318a9",
+  "bootstrap_resamples": 2000,
+  "ingest_aa": [
+    {
+      "a": "h_119222012d4e",
+      "b": "h_119222012d4e_aa",
+      "ingest_ratio": 0.989053270805942,
+      "storage_ratio": 0.9999987984062059
+    },
+    {
+      "a": "b_tpcx_logical_raw",
+      "b": "b_tpcx_logical_raw_aa",
+      "ingest_ratio": 1.0340127194152504,
+      "storage_ratio": 0.9998601817860491
+    }
+  ],
+  "ingest_noise_floor_abs_ln": 0.03344707718586909,
+  "noise_floor": {
+    "noise_floor_abs_ln": 0.05952864290972883,
+    "noise_floor_pct": 6.133616030000333,
+    "pairs": [
+      {
+        "a": "h_119222012d4e",
+        "abs_ln_ci_hi": 0.058545532434247725,
+        "b": "h_119222012d4e_aa",
+        "ci_hi": 1.0654170730653445,
+        "ci_lo": 0.982126322152465,
+        "ln_ratio": 0.024157340129281852,
+        "ratio": 1.0244514925409482
+      },
+      {
+        "a": "b_tpcx_logical_raw",
+        "abs_ln_ci_hi": 0.05952864290972883,
+        "b": "b_tpcx_logical_raw_aa",
+        "ci_hi": 1.0690165404455476,
+        "ci_lo": 0.9687126812687704,
+        "ln_ratio": 0.017411196291689093,
+        "ratio": 1.0175636547123585
+      }
+    ]
+  },
+  "rank1": "h_119222012d4e",
+  "raw_reads": 7200,
+  "runs_accepted": 60,
+  "runs_total": 60,
+  "seed": 20261117
+}

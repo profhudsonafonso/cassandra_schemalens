@@ -1,0 +1,436 @@
+{
+  "aa_note": "Nenhum par natural de trabalho identico no espaco TPCx (projecoes diferentes na ingestao); replicas explicitas do rank-1 e do baseline em keyspaces distintos",
+  "aa_pairs": [
+    [
+      "h_119222012d4e",
+      "h_119222012d4e_aa"
+    ],
+    [
+      "b_tpcx_logical_raw",
+      "b_tpcx_logical_raw_aa"
+    ]
+  ],
+  "admissible_space_size": 9,
+  "benchmark": "TPCx-IoT v2.1.2 (adaptacao de pesquisa; nao oficial) - Stages 1-8 congelados",
+  "code_sha256": {
+    "common/cassandra_env.py": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+    "common/protocol_v1.json": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+    "tpcx_iot_benchmark/tpcx_v1/common_paths.py": "922479f5b3e5e3db39b264bd625403e603204a632b05ab07a1a672f5408f59b6",
+    "tpcx_iot_benchmark/tpcx_v1/freeze.py": "16039321f3915aeaf479b10fc4e04013be29fa82f1d1c8422bb90fb2e87e16ef",
+    "tpcx_iot_benchmark/tpcx_v1/measure.py": "2292a475e34ed3c0904a8a7ce1b166c3e010bff1152e3de95be17138f5e01956"
+  },
+  "container": "sl_v1_tpcx_cassandra",
+  "created_utc": "2026-11-17T18:08:56.168407+00:00",
+  "decision_metric": "media da latencia de leitura Q_READ_2_WINDOWS sob ingestao concorrente",
+  "design_phase": {
+    "design_phase_rerun": false,
+    "frozen_files": 109,
+    "frozen_sha256": {
+      "config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+      "config/temporal_policy.json": "51ec73e955688ae8c93871f8e310f64852b3fe2184eaccf108ad0272f98fd755",
+      "config/tpcx_stage4_cassandra_policy.json": "e4daaa536e43ae72d0b17bf341a21378bf361c34cddabea5f700e5106fac3de6",
+      "config/tpcx_stage6_write_policy.json": "638a05d8bc344f587e650b1dc0f4c7455f6abbff001676cc47fc32381ca2dcb3",
+      "config/tpcx_stage7_cost_policy.json": "03d8382d6572ec5392908b41d5e2a08c91e9734cf277e4efbb7119f0d289d46e",
+      "config/tpcx_stage8_consolidation_policy.json": "99f3805ce733b5c5e7301586527f5a41ae3404c0516eb872a7867f525a6d9e93",
+      "config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+      "config/tsdb_family_catalog.json": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+      "inputs/baselines/tpcx_logical_raw_cassandra.json": "37a6f0aeec92b9989899e8a3a9d0fde2d9ec1e992c0b720735cae88d633f774c",
+      "inputs/schema/tpcx_iot_eer.json": "4bedff6b07555ff7ea790fa5ab0bd53daea9bd9c9583dea0512fcd0bfd99af4d",
+      "inputs/stage3_frozen/01_analytical_matrix.csv": "76acc7937dfc3535d5ca9b995e8019e22171f946036102dd38a3fae9d97e7c6d",
+      "inputs/stage3_frozen/02_temporal_evidence.csv": "a8c31705807b5fad71360db3a3794479a9e2f8540b9fed1dc655e36b70888f9c",
+      "inputs/stage3_frozen/03_ts_activation_matrix.csv": "e08d6c7680c9ef2e0c186c08bfcaf0cb0fbe696112613b0dad425f5057da959a",
+      "inputs/stage3_frozen/04_modifier_matrix.csv": "6ac0d32ec55a5957ea1643a572965296a4180aebd193f3b75b7149650805294b",
+      "inputs/stage3_frozen/05_explanation_trace.json": "a96cc4ca6e04aa271a4f8a7a3863c833210e24c0b69308791dbc51fd6c4059ad",
+      "inputs/workload/query_manifest.csv": "c936e3dab55f11e693024245282ee7279344515664bdd57403eef5579f4a5ca7",
+      "inputs/workload/sql/Q_INGEST.sql": "2dbade456805527c082104501d28cc3efaa992962b5d5971f39dc1ae802d6688",
+      "inputs/workload/sql/Q_READ_2_WINDOWS.sql": "e361857483bc9b130712f2259ce2bc9c8b1b1c787e37906d8d9ee56abd724636",
+      "inputs/workload/sql/Q_READ_AVG.sql": "57396e1b212725931c0e09154d0fc22d9bb2a64264d12bca39c0d0b6d87b1aea",
+      "inputs/workload/sql/Q_READ_COUNT.sql": "4b7dc82ccf8ddbfd4c9499edde6cf31b3a6201c9854c342e40e8bc17c0605a7b",
+      "inputs/workload/sql/Q_READ_MAX.sql": "dd31e35e31c768656134cd6a52fd7c9d93472ad13eef54e39c150d23174129b9",
+      "inputs/workload/sql/Q_READ_MIN.sql": "1361f471388b2a22e1f3c10c0c2ffafe8aa892289d85bb0dd8a4b9e43c16cbc7",
+      "methodology/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "methodology/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "methodology/common/rule_engine.py": "cb04df0ae46c8856068cbcf0d6690a980aa8c7c1829d13c9094d2ce3e18cc3be",
+      "methodology/smart_retail/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "methodology/smart_retail/evidence_builder.py": "bf3d2510cd801227268931d0dedb01d8da6962e790fe72e96231deaaf630bb96",
+      "methodology/smart_retail/sql_evidence.py": "cf44c46b45d8e1f0a3538846c091c484aeab7a52c21adf3a7138e332eafd0e1e",
+      "methodology/tpcx_iot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "methodology/tpcx_iot/pipeline.py": "b2484a9577256198e3f03cf9a97c017f60663f2583f2bbb8148b62c7b6fd6d8c",
+      "methodology/tpcx_iot/stage4/__init__.py": "262141884be1798ee057ebf6ad0e55c6e2d87f558d67a7532ab05621f98b8ad4",
+      "methodology/tpcx_iot/stage4/candidates.py": "0cbb66e6f60343d151cad27050e2c6c5128c6415e0c846bb2179206d8f33d747",
+      "methodology/tpcx_iot/stage4/cli.py": "59c9781f27095bdd6ec3d21ef442987785ba21d52206b07354777fc8cdf87fd4",
+      "methodology/tpcx_iot/stage5/__init__.py": "e9a7900c74d80dc8328857675cbb391912eb3b24eeb15567158fd35e88abc160",
+      "methodology/tpcx_iot/stage5/cli.py": "96d92fc9d25bd03acd672f41484f0b40f93ff4db19bda638db039be9adc7ddfd",
+      "methodology/tpcx_iot/stage5/offline.py": "1a8c70d230e785450804e65e088ec8f16b5a0a385bc1fbee747d6734941561eb",
+      "methodology/tpcx_iot/stage5/planner.py": "7a8606cb065cb31381627ef80eeb1da94155dc713e895004d52c80319e922cf7",
+      "methodology/tpcx_iot/stage5/runtime.py": "a30d1647ccbd13706dad361bcfe6eef746fae00ff9cbde34dd86bcf3686b6b04",
+      "methodology/tpcx_iot/stage6/__init__.py": "dff25c29feef554624a3fdfb9606d3662b6e03b59f355a74cf4fd2173315bb80",
+      "methodology/tpcx_iot/stage6/cli.py": "da5c4630de5924ce6be06755506bef33e8ee2f0789d1217fcaac0d260e8f5023",
+      "methodology/tpcx_iot/stage6/materializer.py": "c2bd61043b256fc7ee9c3559690c9263f86d9ec60990fd3437fb2be74c9b40e1",
+      "methodology/tpcx_iot/stage6/offline.py": "37e8d9b97b8b94b22f6dd382309671d356058981182db5eefcd230a47ad7cfa9",
+      "methodology/tpcx_iot/stage6/planner.py": "60ff70496be49ad9298e178716b17cdda5d36886bdd96434a416139cda69ca6b",
+      "methodology/tpcx_iot/stage7/__init__.py": "7c42ccb5646fdb5eb9d8cce643a7140b4d517623811fe81f085d8504e1ebfb72",
+      "methodology/tpcx_iot/stage7/cli.py": "19095ee07c7af6218d04ec529215a5e17b328cd607b53ee2a9d708f320bac942",
+      "methodology/tpcx_iot/stage7/estimator.py": "0e463c5a4d888422e2cd7672f22e17ac5f0300f299a2b2058e5c6305ed21c9b3",
+      "methodology/tpcx_iot/stage8/__init__.py": "e977f2608debb87a5f707c562155fc7c77d2a070c2295a900d3cb680f532a14e",
+      "methodology/tpcx_iot/stage8/cli.py": "194fbe4ea30ae72caee8443962e3ea97a2304873987bb11ede6fb216828c2f6a",
+      "methodology/tpcx_iot/stage8/consolidator.py": "99c9c2a0b3a427eb29da5178315ead23a3767458a6d30f6b3595827aac58a86e",
+      "methodology/tpcx_iot/stage9/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "methodology/tpcx_iot/stage9/cli.py": "7793ed7c8bbddba6e6110371ee1d8560a500c270bcf6e47c0000b9c606d4a942",
+      "methodology/tpcx_iot/stage9/experiment.py": "1af4e4568888a9544b153196c96062e50fae40e6a2eeb5ce121cd6c02ebdf183",
+      "methodology/tpcx_iot/stage91/__init__.py": "bee7d01ae831d6506532b91449d825fb53a09b115bfd4a626be0b89b681f6842",
+      "methodology/tpcx_iot/stage91/cli.py": "bd6419239493a2878862246d0b3d66b1322fda0fc489fab9e37b1de93594b383",
+      "methodology/tpcx_iot/stage91/experiment.py": "75401d59bb5ad36fe80ba9ef74399ff95122c713b81a2151139644a58466ebd2",
+      "methodology/tpcx_iot/stage91/storage_diagnostic.py": "ba2b8cfe5aae86cc63de0ed73077785ccbce0a664cae9c4ecf7971cb3935ebcb",
+      "methodology/tpcx_iot/stage91/target_diagnostic.py": "cbb25f930646fddc5b4bd97e5978b94b3162a27c16ae8aa8a74e196044aabef9",
+      "outputs/tpcx_iot_stage1_3/00_inputs_sha256.csv": "49efb04cf095b01d6cb624891c303bf460f5240facb9752bf60d0dfce2270c3c",
+      "outputs/tpcx_iot_stage1_3/01_analytical_matrix.csv": "76acc7937dfc3535d5ca9b995e8019e22171f946036102dd38a3fae9d97e7c6d",
+      "outputs/tpcx_iot_stage1_3/02_temporal_evidence.csv": "a8c31705807b5fad71360db3a3794479a9e2f8540b9fed1dc655e36b70888f9c",
+      "outputs/tpcx_iot_stage1_3/03_ts_activation_matrix.csv": "e08d6c7680c9ef2e0c186c08bfcaf0cb0fbe696112613b0dad425f5057da959a",
+      "outputs/tpcx_iot_stage1_3/04_modifier_matrix.csv": "6ac0d32ec55a5957ea1643a572965296a4180aebd193f3b75b7149650805294b",
+      "outputs/tpcx_iot_stage1_3/05_explanation_trace.json": "a96cc4ca6e04aa271a4f8a7a3863c833210e24c0b69308791dbc51fd6c4059ad",
+      "outputs/tpcx_iot_stage1_3/06_run_manifest.json": "86febfb8977e61d9a422f977a6e14756ae8c175319c916925890c440a8643242",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/config/temporal_policy.json": "51ec73e955688ae8c93871f8e310f64852b3fe2184eaccf108ad0272f98fd755",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/config/tsdb_family_catalog.json": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/inputs/schema/tpcx_iot_eer.json": "4bedff6b07555ff7ea790fa5ab0bd53daea9bd9c9583dea0512fcd0bfd99af4d",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/inputs/workload/query_manifest.csv": "c936e3dab55f11e693024245282ee7279344515664bdd57403eef5579f4a5ca7",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/inputs/workload/sql/Q_INGEST.sql": "2dbade456805527c082104501d28cc3efaa992962b5d5971f39dc1ae802d6688",
+      "outputs/tpcx_iot_stage1_3/inputs_snapshot/inputs/workload/sql/Q_READ_2_WINDOWS.sql": "e361857483bc9b130712f2259ce2bc9c8b1b1c787e37906d8d9ee56abd724636",
+      "outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+      "outputs/tpcx_iot_stage4/11_query_candidate_map.json": "078f52ea58ae02eed8a14342fefdaf09939b6761691594d1910056b4e7587629",
+      "outputs/tpcx_iot_stage4/12_query_read_primitives.json": "b18410cc9d7b98474fc45f53ae7011c6fde160feeec67b2f4e4fee769a9cb020",
+      "outputs/tpcx_iot_stage4/12b_write_primitives.json": "7b7ea235c37128b87907cd82ca6d05a9e7910a14f105bff40abcd2b06249bdce",
+      "outputs/tpcx_iot_stage4/13_query_candidate_map.csv": "3d066e53d24bd4aedb8d7ace1aaa6be8615c88e90b46f097a2790f3b9e5a2356",
+      "outputs/tpcx_iot_stage4/14_stage4_manifest.json": "f6cb5add65c34addf9ac558994e777972e8ddbab2abdd94e44874026f0ff7f4b",
+      "outputs/tpcx_iot_stage4/cql/schemas/ts0_series_raw.cql": "0146c8307e7b08a00b20ec76203cad911ac9e2626885b3bb8c289b9187cd74f1",
+      "outputs/tpcx_iot_stage4/cql/schemas/ts1_series_3600s.cql": "06e8e6b35dab35b5b8811ccd9657059e05ff3a5c89d9c0a9a86694aebc17f6c0",
+      "outputs/tpcx_iot_stage4/cql/schemas/ts1_series_60s.cql": "f3bb83aa8a77e9e8be134c64f4eadaaff48aa0c60eb339f3cf04f9243630a901",
+      "outputs/tpcx_iot_stage4/cql/schemas/ts3_sensor_3600s.cql": "9202a4a1adc1a80a18dbbbb602d2e416435a313c0e76bfdfe962b0b0fff5f7f5",
+      "outputs/tpcx_iot_stage4/cql/schemas/ts3_sensor_60s.cql": "8fdb9291e8695a56793d7e3b31eb9bd46e13841f250a114b2e231938c72452d7",
+      "outputs/tpcx_iot_stage5/20_queryplans.json": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+      "outputs/tpcx_iot_stage5/21_read_coverage.json": "29737378e772535f83a826c1d2d73b81b42542453f8238e360d743b2e07c3e08",
+      "outputs/tpcx_iot_stage5/22_offline_equivalence_probes.json": "cac3a48b0d8fc298ca977a29cd1b7adcf043b78af4fe29615c702decfe878200",
+      "outputs/tpcx_iot_stage5/23_queryplan_manifest.json": "f4f38f241466530594d43800921e75d050e47a2ee84834fa72499bb6591ab6bc",
+      "outputs/tpcx_iot_stage6/30_writeplans.json": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710",
+      "outputs/tpcx_iot_stage6/31_write_coverage.json": "001bc816da4ed37e54d7e03384f1a906cd9b1d9fc3592c8e0ccff1f81de7a79d",
+      "outputs/tpcx_iot_stage6/32_offline_write_probes.json": "dc92adebbd0c11a7995d58a6a71656b61116b171eb939cfe670d5fbca655c499",
+      "outputs/tpcx_iot_stage6/33_writeplan_manifest.json": "cdd537c48313b79fef1ff56ad874444dac1d11602b69dea01ccd3c6b67efc132",
+      "outputs/tpcx_iot_stage6/34_example_mutations.json": "9090636236632822d6f6bb772b69aee7b2fc255d3bed748471bbec4d0ed6400e",
+      "outputs/tpcx_iot_stage7/40_scenario_evidence.json": "cd9a47fceb58d25d8699bdf6617ac881cc212adb6f4c6955d47c90454cb5b2ff",
+      "outputs/tpcx_iot_stage7/41_physical_footprint_proxies.json": "6e5c6243657bd1f120a5acbb91b51aafb435ea21aa992712e9323056ed0afb8f",
+      "outputs/tpcx_iot_stage7/42_read_cost_proxies.json": "ad71fa60adeb8029e1cbe5155632f221442f5cb2bff7a88b3920535f32c4440e",
+      "outputs/tpcx_iot_stage7/43_write_cost_proxies.json": "e70d3c2c674712b847e70e4fa118bb6fdb8e9357f97c382e19fb005809790887",
+      "outputs/tpcx_iot_stage7/44_feasibility_diagnostics.json": "d33499b887caefef76ef112b549597aa315ba9ff650e7852a1f7d2c8c5a720fd",
+      "outputs/tpcx_iot_stage7/45_candidate_cost_matrix.csv": "461a7200c89eb3570747cea86fb5d7491d21e9c6f3b7eef02b7639e276d30bff",
+      "outputs/tpcx_iot_stage7/46_cost_manifest.json": "97086daa1e94311a7dd3e5bdf19e4d8a8f65a17a7c967524db3b7c81e41ef747",
+      "outputs/tpcx_iot_stage8/50_canonical_shared_candidates.json": "cd17ad6641c311365a32ba79bd24a6d20c5cd551be756449453218df715f346f",
+      "outputs/tpcx_iot_stage8/51_validated_conditional_coverage.json": "6f38fb50a6c633866a0c194d8383e5bfdece868679504cc9819a26caaa3d2481",
+      "outputs/tpcx_iot_stage8/52_complete_compatible_deployments.json": "4a9e74f48c9e0a05aea2646ec491fb85a805e7d95a41142c8ae10dc759377c6a",
+      "outputs/tpcx_iot_stage8/53_pareto_preselection.json": "b96753f8ff2bc490676553d2973c4a08b2cfc0b69d347a5979a5fe4c248bfc51",
+      "outputs/tpcx_iot_stage8/54_hbench_selected.json": "2d37758588eea00123e8857c0a1b8ea990d17f5ac93f8c64671a7556796d6f28",
+      "outputs/tpcx_iot_stage8/55_hbench_query_routes.json": "1021e0352bdbe694dff3ce2edcfade7d14a467f98d5961270b0ab68458dde52e",
+      "outputs/tpcx_iot_stage8/56_hbench_summary.csv": "b70a9af772f38fc3e5d69b20e7463c143ac822f25c091fc402516902d95192a9",
+      "outputs/tpcx_iot_stage8/57_stage9_execution_plan.csv": "21601ba3319372f72dcdb2e3552e1c9cdd7964de24ff5a199f55f13f15d55a02",
+      "outputs/tpcx_iot_stage8/58_stage8_manifest.json": "01489f3f5bad8500d98da63da12223fd56eac3edb6a9f4b2097e37459d308bea",
+      "outputs/tpcx_iot_stage8/59_excluded_combinations.json": "b116118d9a653c50d8648b032feffc1e22ed066aa32921ffca3108aca9d1e99d"
+    },
+    "snapshot_equals_repository_bytes": true,
+    "stage8_inputs_sha256": {
+      "config/tpcx_stage8_consolidation_policy.json": "99f3805ce733b5c5e7301586527f5a41ae3404c0516eb872a7867f525a6d9e93",
+      "outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+      "outputs/tpcx_iot_stage5/20_queryplans.json": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+      "outputs/tpcx_iot_stage6/30_writeplans.json": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710",
+      "outputs/tpcx_iot_stage8/54_hbench_selected.json": "2d37758588eea00123e8857c0a1b8ea990d17f5ac93f8c64671a7556796d6f28",
+      "outputs/tpcx_iot_stage8/58_stage8_manifest.json": "01489f3f5bad8500d98da63da12223fd56eac3edb6a9f4b2097e37459d308bea"
+    }
+  },
+  "firewall": {
+    "hbench_selection_modified": false,
+    "selection_uses_measured_results": false
+  },
+  "hbench_ids_ranked": [
+    "h_119222012d4e",
+    "h_6745757bf865",
+    "h_a9983e2318a9",
+    "h_3f1449e05468",
+    "h_aba788b8e7b7"
+  ],
+  "hypotheses": {
+    "H1": "O HBench (5 de 9) contem um deployment empatado (piso de ruido) com o melhor medido em media de leitura",
+    "H2": "Deployments que leem de uma projecao TS3 (3 requisicoes CQL) tem media de leitura menor que os que leem de TS0/TS1 (20-30 requisicoes)",
+    "H3": "Deployments de uma tabela (1 insert/evento) ingerem mais eventos/s que os de duas tabelas (2 inserts/evento)",
+    "H4": "O HBench retem 100% da fronteira de Pareto medida (leitura, bytes, tempo de ingestao)",
+    "H5": "Requisicoes CQL por leitura observadas coincidem com read_cql_requests do Stage 7/8 em todos os deployments"
+  },
+  "measurement_seed_base": 20261117,
+  "port": 9062,
+  "protocol_file_sha256": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+  "run_tag": "51860a",
+  "secondary_metrics": [
+    "p50/p95/p99 de leitura",
+    "eventos/s de ingestao",
+    "bytes live apos flush"
+  ],
+  "status": "PREREGISTERED_BEFORE_MEASUREMENT",
+  "variants": [
+    {
+      "deployment_id": "h_119222012d4e",
+      "families": [
+        "TS0"
+      ],
+      "hbench_rank": 1,
+      "in_hbench": true,
+      "kind": "cover",
+      "label": "h_119222012d4e",
+      "normalized_proxy_score": 1.0,
+      "objectives": {
+        "insert_statements_per_event": 1,
+        "maximum_partition_bytes": 1566848,
+        "physical_partition_count": 2000,
+        "read_cql_requests": 20,
+        "replicated_logical_storage": 6267392000
+      },
+      "pareto_analytic": true,
+      "read_table": "ts0_series_raw",
+      "tables": [
+        "ts0_series_raw"
+      ]
+    },
+    {
+      "deployment_id": "h_3f1449e05468",
+      "families": [
+        "TS0",
+        "TS3"
+      ],
+      "hbench_rank": 4,
+      "in_hbench": true,
+      "kind": "cover",
+      "label": "h_3f1449e05468",
+      "normalized_proxy_score": 1.087517155461,
+      "objectives": {
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 1566848,
+        "physical_partition_count": 6800,
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12535500800
+      },
+      "pareto_analytic": true,
+      "read_table": "ts3_sensor_3600s",
+      "tables": [
+        "ts0_series_raw",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "deployment_id": "h_6745757bf865",
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "hbench_rank": 2,
+      "in_hbench": true,
+      "kind": "cover",
+      "label": "h_6745757bf865",
+      "normalized_proxy_score": 2.150306143289,
+      "objectives": {
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 652928,
+        "physical_partition_count": 52800,
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12547276800
+      },
+      "pareto_analytic": true,
+      "read_table": "ts3_sensor_3600s",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "deployment_id": "h_aba788b8e7b7",
+      "families": [
+        "TS1"
+      ],
+      "hbench_rank": 5,
+      "in_hbench": true,
+      "kind": "cover",
+      "label": "h_aba788b8e7b7",
+      "normalized_proxy_score": 2.231543583041,
+      "objectives": {
+        "insert_statements_per_event": 1,
+        "maximum_partition_bytes": 65408,
+        "physical_partition_count": 48000,
+        "read_cql_requests": 30,
+        "replicated_logical_storage": 6279168000
+      },
+      "pareto_analytic": true,
+      "read_table": "ts1_series_3600s",
+      "tables": [
+        "ts1_series_3600s"
+      ]
+    },
+    {
+      "deployment_id": "h_977291c72920",
+      "families": [
+        "TS0",
+        "TS3"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "kind": "cover",
+      "label": "h_977291c72920",
+      "normalized_proxy_score": 8.169252307818,
+      "objectives": {
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 1566848,
+        "physical_partition_count": 290000,
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12608000000
+      },
+      "pareto_analytic": false,
+      "read_table": "ts3_sensor_60s",
+      "tables": [
+        "ts0_series_raw",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "deployment_id": "h_6276d5b68197",
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "kind": "cover",
+      "label": "h_6276d5b68197",
+      "normalized_proxy_score": 9.175795890859,
+      "objectives": {
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 65408,
+        "physical_partition_count": 336000,
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12619776000
+      },
+      "pareto_analytic": true,
+      "read_table": "ts3_sensor_60s",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "deployment_id": "h_bdd6bbdce69f",
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "kind": "cover",
+      "label": "h_bdd6bbdce69f",
+      "normalized_proxy_score": 72.967657666857,
+      "objectives": {
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 652928,
+        "physical_partition_count": 2884800,
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 13272268800
+      },
+      "pareto_analytic": false,
+      "read_table": "ts3_sensor_3600s",
+      "tables": [
+        "ts1_series_60s",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "deployment_id": "h_b4bea9150d2e",
+      "families": [
+        "TS1"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "kind": "cover",
+      "label": "h_b4bea9150d2e",
+      "normalized_proxy_score": 73.042749775345,
+      "objectives": {
+        "insert_statements_per_event": 1,
+        "maximum_partition_bytes": 1216,
+        "physical_partition_count": 2880000,
+        "read_cql_requests": 30,
+        "replicated_logical_storage": 7004160000
+      },
+      "pareto_analytic": true,
+      "read_table": "ts1_series_60s",
+      "tables": [
+        "ts1_series_60s"
+      ]
+    },
+    {
+      "deployment_id": "h_a9983e2318a9",
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "hbench_rank": 3,
+      "in_hbench": true,
+      "kind": "cover",
+      "label": "h_a9983e2318a9",
+      "normalized_proxy_score": 79.987939506576,
+      "objectives": {
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 11008,
+        "physical_partition_count": 3168000,
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 13344768000
+      },
+      "pareto_analytic": true,
+      "read_table": "ts3_sensor_60s",
+      "tables": [
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "deployment_id": "b_tpcx_logical_raw",
+      "description": "TPCx-IoT logical-record baseline portado ao Cassandra (pesquisa)",
+      "kind": "baseline",
+      "label": "b_tpcx_logical_raw",
+      "tables": [
+        "b_tpcx_logical_raw"
+      ]
+    },
+    {
+      "deployment_id": "h_119222012d4e",
+      "kind": "aa_replica",
+      "label": "h_119222012d4e_aa",
+      "replica_of": "h_119222012d4e",
+      "tables": [
+        "ts0_series_raw"
+      ]
+    },
+    {
+      "deployment_id": "b_tpcx_logical_raw",
+      "kind": "aa_replica",
+      "label": "b_tpcx_logical_raw_aa",
+      "replica_of": "b_tpcx_logical_raw",
+      "tables": [
+        "b_tpcx_logical_raw"
+      ]
+    }
+  ],
+  "workload": {
+    "bench_steps": 500,
+    "pad_bytes": 900,
+    "read_operations": 120,
+    "read_threads": 2,
+    "seed_steps": 130,
+    "sensors": 3,
+    "stations": 2,
+    "tick_ms": 1000,
+    "warmup_reads": 10
+  }
+}

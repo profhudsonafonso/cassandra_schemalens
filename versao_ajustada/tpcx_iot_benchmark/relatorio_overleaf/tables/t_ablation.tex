@@ -1,0 +1,20 @@
+nenhuma (HBench congelado) & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & Stages 1-4 regenerados + Stage 8 reaplicado = congelado\\
+sem TS0 & --- & inviável & não & perde TS0; controle ausente\\
+sem TS1 & TS0, TS0+TS3h & 0{,}002 & \textbf{sim} & perde TS1\\
+sem TS2 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem TS3 & TS0, TS1h, TS1m & 0{,}572 & não & perde TS3\\
+sem TS4 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem TS5 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem TS6 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem TS7 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem TS8 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem M1 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & ativação perdida; mesmos candidatos\\
+sem M2 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem M3 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & ativação perdida; mesmos candidatos\\
+sem M4 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem M5 & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & regra não ativa: sem efeito\\
+sem diversidade (top-5 do Pareto por escore) & TS0, TS0+TS3h, TS1h+TS3h, TS1h, TS1h+TS3m & 0{,}002 & \textbf{sim} & ordem por escore normalizado\\
+sem Pareto (top-5 por escore ponderado) & TS0, TS0+TS3h, TS1h+TS3h, TS1h, TS0+TS3m & 0{,}002 & \textbf{sim} & pesos 45/15/20/15/5\\
+sem controle TS0 obrigatorio & TS0, TS1h+TS3h, TS1m+TS3m, TS0+TS3h, TS1h & 0{,}000 & \textbf{sim} & diversidade a partir do melhor escore\\
+so o rank-1 (k=1) & TS0 & 0{,}607 & não & menor escore normalizado\\
+aleatorio k=5 & sorteio & 0{,}002 & --- & P(contem melhor)=0.556; 126 combinacoes\\
