@@ -1,0 +1,5 @@
+variant,keyspace,physical_write_operations,metric_cells,load_seconds,caution
+BASELINE_ORIGINAL,sl_conf_r3_e0d081d6f1_reference,27000,54000,7.954167773,Sequential Python loader; NOT official ingestion throughput
+R3H_38939db96444,sl_conf_r3_e0d081d6f1_r3h_38939db96444,27000,54000,8.597731297,Sequential Python loader; NOT official ingestion throughput
+R3H_934e5af2474c,sl_conf_r3_e0d081d6f1_r3h_934e5af2474c,54000,54000,16.498474635,Sequential Python loader; NOT official ingestion throughput
+R3H_d2ea1974de53,sl_conf_r3_e0d081d6f1_r3h_d2ea1974de53,27000,54000,8.816568689,Sequential Python loader; NOT official ingestion throughput

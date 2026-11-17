@@ -1,0 +1,323 @@
+{
+  "aa_pairs": [
+    [
+      "R3H_0cb71e472e90",
+      "R3H_38939db96444"
+    ],
+    [
+      "R3H_69bc46506e7b",
+      "R3H_d2ea1974de53"
+    ]
+  ],
+  "admissible_space_size": 6,
+  "benchmark": "IoT-Benchmark (thulab, commit 62e0dc10) - campanha B Rev3",
+  "code_sha256": {
+    "common/cassandra_env.py": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+    "common/protocol_v1.json": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+    "iot_benchmark_tsdb/iot_v1/common_paths.py": "238e8efbe521e6554ff8dc63547ec31e4161075d3890586f0dee197845b78020",
+    "iot_benchmark_tsdb/iot_v1/freeze.py": "6023a82e17356c7420ee679d126684b2844f8fa2e12751dd7be21f943801a253",
+    "iot_benchmark_tsdb/iot_v1/measure.py": "3da39638c5ed9eef188a7dc47c4b069d0e8217e5e52669019c1d86bf0edeeae3"
+  },
+  "container": "sl_v1_iot_cassandra",
+  "created_utc": "2026-11-17T17:49:34.036927+00:00",
+  "decision_metric": "mean of per-class mean latency (uniform 12-class mix)",
+  "design_phase": {
+    "design_phase_rerun": false,
+    "frozen_sha256": {
+      "SchemaLens_V4_Rev2_Confirmatory/v4_auto/selector.py": "79c8d33fd191b1d465274eaef0839d12895ef7463d8688e7274e78463cf71db7",
+      "SchemaLens_V4_Rev2_Confirmatory/v4_rev2/cost.py": "f93285132ffa6915b15096866806fc28d96d5c5e3ceb20fea9e6a8795847ee9f",
+      "SchemaLens_V4_Rev2_Confirmatory/v4_rev2/runtime_helpers.py": "e6e35f1f062f8c2ed6a90a3203329dde98cd71f46f1a68c2beec380885c30384",
+      "SchemaLens_V4_Rev3_PlanAware/rev3/core.py": "420caac9e8626c4f20435a80abecb0b958f2f73bd8ee883cfd9b512fd1a88518",
+      "SchemaLens_V4_Rev3_PlanAware/rev3/prebenchmark.py": "5ebedc07f231f863eb96946e3195c710d12bb6c45b9f108a6e6e67e445268fad",
+      "SchemaLens_V4_Rev3_PlanAware/rev3/runtime.py": "7cbb1b95657dc9bd432a8b568df92b6b7048f85597c0513c97d948749bafebf4",
+      "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+      "iot_pipeline/native_reference_v3.py": "ce922a37672c7ade84fd2776e2c0d2a994eb37be3a9874a7e3f5f9eaed6e3dd1",
+      "iot_pipeline/offline.py": "3dd61965dfb1087eaeaf296be92e325feffbe38c5a3b4bc218d8eb379361a88e",
+      "iot_pipeline/reference_baseline.py": "656fe1fdd151e342a5f9cbe8cfa72f04185c8948d4d9d3cc6aa12e81e3987d08",
+      "iot_pipeline/shared.py": "5391ddbeeb9725a5cacc06894239df102a2b733db766dbbb860865d90e2cc504",
+      "iot_pipeline/stage9.py": "615390a60d3fc683b67d92359652781cf857b845b46ad40f57dcbefa251d01f3",
+      "outputs/stage4/10_candidate_specs.json": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+      "outputs/v4_rev2_prebenchmark/stage4/10_v4_candidate_specs.json": "4cf763022c4c7b93dfe69aadd70aeba875db008d20293e5c4adac9e2e49aa91e",
+      "outputs/v4_rev2_prebenchmark/stage5/15_cross_query_coverage.json": "fd4b075e968499d087dfad30e4ad308d0ae6230518bad911223871092d4e18b5",
+      "outputs/v4_rev2_prebenchmark/stage7/21_storage_proxies.json": "6cc0f8ef2dad97380c300ed8cd77a23901d5210f58680d3efc71c72d444ac47e",
+      "outputs/v4_rev2_prebenchmark/stage7/22_write_proxies.json": "044298a658276e11806479945aeb12203ab3d8ec77d5ddb52c3a8cfef654f21e",
+      "outputs/v4_rev2_prebenchmark/stage7/23_read_proxies_rev2.json": "af84bdd1de6564271f833f8a4c53b06965044e52002b8b2940ae95e5120b12c0",
+      "outputs/v4_rev2_prebenchmark/stage8/28_hbench_v4_rev2_frozen.json": "46d9a18c3490bddb6b0da770ec2a7e8c9134e42cdec859eda3453bc4bacd3708",
+      "outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa",
+      "outputs/v4_rev3_planaware_prebenchmark/stage8/28_hbench_v4_rev3_frozen.json": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+      "outputs/v4_rev3_planaware_prebenchmark/stage8/29_all_compatible_covers.json": "8ac4c699f1b6f346de0e24ae614a75c3823a3b23caf7bea79badd70522ac0452",
+      "outputs/v4_rev3_planaware_prebenchmark/stage8/manifest.json": "5a26734dba6b1598ee7843db261f36b3e815ec54d4b68727ade95625af3959ed",
+      "phase_a1/core/bridge.py": "8a1ee732451eb55b3c605791ac076028641a09157ad51529b86e56b7c03183a5",
+      "phase_a1/outputs/activation_ts_only.json": "04e73e0e342353ed787b6b74ee3e55a6c5c8cfc9514ea92e14d61f240f874eaa",
+      "phase_a1/outputs/normalized_double_readings.csv": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+      "phase_a1/outputs/query_instances_pilot.json": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5",
+      "phase_a1/vendor/tsdb_base/config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+      "phase_a1/vendor/tsdb_base/config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+      "phase_a1/vendor/tsdb_base/config/tsdb_family_catalog.json": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+      "phase_a1/vendor/tsdb_base/methodology/common/rule_engine.py": "cb04df0ae46c8856068cbcf0d6690a980aa8c7c1829d13c9094d2ce3e18cc3be"
+    },
+    "reason": "Analise de consistencia: fase de projeto ja consistente; so a medicao e refeita sob o protocolo v1",
+    "rev3_hbench_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+    "snapshot_equals_original_bytes": true,
+    "source": "campanha B Rev3 (DATA_SEED 531101, QUERY_SEED 531107; 9 dispositivos, 54.000 celulas)"
+  },
+  "firewall": {
+    "hbench_selection_modified": false,
+    "selection_uses_measured_results": false
+  },
+  "hbench_ids_ranked": [
+    "R3H_38939db96444",
+    "R3H_934e5af2474c",
+    "R3H_d2ea1974de53"
+  ],
+  "hypotheses": {
+    "H1": "TS2-U (rank 1 do seletor) tem a menor media do mix ou empata, pelo piso de ruido, com o melhor medido do espaco admissivel",
+    "H2": "O HBench (3 de 6) contem um deployment a ate 5% do melhor medido (near-best 5%)",
+    "H3": "TS2-U empata com BASELINE_Q8_OPTIMIZED (mesmo DDL e mesmos planos; par A/A)",
+    "H4": "TS2-D e TS0 sao mais lentos que TS2-U na media do mix (fora do piso de ruido)",
+    "H5": "Previsoes do Stage 7 (chamadas e linhas) coincidem com o observado em todas as rotas"
+  },
+  "keyspace_prefix": "sl_v1_iot_d4e52478_",
+  "measurement_seed_base": 20261117,
+  "port": 9061,
+  "protocol_file_sha256": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+  "reference_ddl_equals_ts2u": false,
+  "run_tag": "d4e52478",
+  "status": "PREREGISTERED_BEFORE_MEASUREMENT",
+  "variants": [
+    {
+      "description": "Traducao Cassandra do modelo table do IoTDB; Q8 por varredura completa",
+      "keyspace_tail": "reference",
+      "kind": "baseline",
+      "label": "BASELINE_ORIGINAL"
+    },
+    {
+      "description": "Mesma tabela da referencia; Q8 em ordem DESC parando no ultimo nao nulo",
+      "keyspace_tail": "reference",
+      "kind": "baseline",
+      "label": "BASELINE_Q8_OPTIMIZED"
+    },
+    {
+      "analytic_cost": {
+        "read": 34.66286458333333,
+        "storage": 2376000,
+        "write": 27000
+      },
+      "candidates": [
+        "ts2_iot_wide_unbucketed"
+      ],
+      "canonical_source": "ts2_iot_wide_unbucketed",
+      "families": [
+        "TS2"
+      ],
+      "hbench_rank": 1,
+      "in_hbench": true,
+      "keyspace_tail": "r3h_38939db96444",
+      "kind": "cover",
+      "label": "R3H_38939db96444",
+      "preselection_score": 1.0,
+      "routes": {
+        "Q1": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q10": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q11": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q12": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q2": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q3": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q4": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q5": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q6": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q7": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q8": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+        "Q9": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN"
+      },
+      "selection_reason": "PARETO_FRONT",
+      "selection_status": "PARETO"
+    },
+    {
+      "analytic_cost": {
+        "read": 34.66286458333333,
+        "storage": 2377152,
+        "write": 27018
+      },
+      "candidates": [
+        "ts2_iot_wide_unbucketed",
+        "ts4_iot_latest"
+      ],
+      "canonical_source": "ts2_iot_wide_unbucketed",
+      "families": [
+        "TS2",
+        "TS4"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "keyspace_tail": "r3h_0cb71e472e90",
+      "kind": "cover",
+      "label": "R3H_0cb71e472e90",
+      "preselection_score": 1.00011515,
+      "routes": {
+        "Q1": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q10": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q11": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q12": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q2": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q3": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q4": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q5": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q6": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q7": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "Q8": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+        "Q9": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN"
+      },
+      "selection_reason": "NOT_SELECTED",
+      "selection_status": "DOMINATED_ANALYTICALLY"
+    },
+    {
+      "analytic_cost": {
+        "read": 72.73354166666667,
+        "storage": 3456000,
+        "write": 54000
+      },
+      "candidates": [
+        "ts0_iot_raw"
+      ],
+      "canonical_source": "ts0_iot_raw",
+      "families": [
+        "TS0"
+      ],
+      "hbench_rank": 2,
+      "in_hbench": true,
+      "keyspace_tail": "r3h_934e5af2474c",
+      "kind": "cover",
+      "label": "R3H_934e5af2474c",
+      "preselection_score": 2.024105,
+      "routes": {
+        "Q1": "Q1__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q10": "Q10__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q11": "Q11__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q12": "Q12__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q2": "Q2__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q3": "Q3__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q4": "Q4__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q5": "Q5__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q6": "Q6__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q7": "Q7__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q8": "Q8__ts0_iot_raw__TS0_DESC_LIMIT1",
+        "Q9": "Q9__ts0_iot_raw__TS0_RANGE_SCAN"
+      },
+      "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD",
+      "selection_status": "DOMINATED_ANALYTICALLY"
+    },
+    {
+      "analytic_cost": {
+        "read": 72.73302083333333,
+        "storage": 3457152,
+        "write": 54018
+      },
+      "candidates": [
+        "ts0_iot_raw",
+        "ts4_iot_latest"
+      ],
+      "canonical_source": "ts0_iot_raw",
+      "families": [
+        "TS0",
+        "TS4"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "keyspace_tail": "r3h_99b27982cb5a",
+      "kind": "cover",
+      "label": "R3H_99b27982cb5a",
+      "preselection_score": 2.02420813,
+      "routes": {
+        "Q1": "Q1__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q10": "Q10__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q11": "Q11__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q12": "Q12__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q2": "Q2__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q3": "Q3__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q4": "Q4__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q5": "Q5__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q6": "Q6__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q7": "Q7__ts0_iot_raw__TS0_RANGE_SCAN",
+        "Q8": "Q8__ts4_iot_latest__TS4_SNAPSHOT_LOOKUP",
+        "Q9": "Q9__ts0_iot_raw__TS0_RANGE_SCAN"
+      },
+      "selection_reason": "NOT_SELECTED",
+      "selection_status": "DOMINATED_ANALYTICALLY"
+    },
+    {
+      "analytic_cost": {
+        "read": 79.66286458333333,
+        "storage": 2376000,
+        "write": 27000
+      },
+      "candidates": [
+        "ts2_iot_wide"
+      ],
+      "canonical_source": "ts2_iot_wide",
+      "families": [
+        "TS2"
+      ],
+      "hbench_rank": 3,
+      "in_hbench": true,
+      "keyspace_tail": "r3h_d2ea1974de53",
+      "kind": "cover",
+      "label": "R3H_d2ea1974de53",
+      "preselection_score": 2.03857544,
+      "routes": {
+        "Q1": "Q1__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q10": "Q10__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q11": "Q11__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q12": "Q12__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q2": "Q2__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q3": "Q3__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q4": "Q4__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q5": "Q5__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q6": "Q6__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q7": "Q7__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q8": "Q8__ts2_iot_wide__TS2D_DESC_SPARSE",
+        "Q9": "Q9__ts2_iot_wide__TS2D_BUCKET_SCAN"
+      },
+      "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD",
+      "selection_status": "DOMINATED_ANALYTICALLY"
+    },
+    {
+      "analytic_cost": {
+        "read": 79.66286458333333,
+        "storage": 2377152,
+        "write": 27018
+      },
+      "candidates": [
+        "ts2_iot_wide",
+        "ts4_iot_latest"
+      ],
+      "canonical_source": "ts2_iot_wide",
+      "families": [
+        "TS2",
+        "TS4"
+      ],
+      "hbench_rank": null,
+      "in_hbench": false,
+      "keyspace_tail": "r3h_69bc46506e7b",
+      "kind": "cover",
+      "label": "R3H_69bc46506e7b",
+      "preselection_score": 2.0386906,
+      "routes": {
+        "Q1": "Q1__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q10": "Q10__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q11": "Q11__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q12": "Q12__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q2": "Q2__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q3": "Q3__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q4": "Q4__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q5": "Q5__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q6": "Q6__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q7": "Q7__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "Q8": "Q8__ts2_iot_wide__TS2D_DESC_SPARSE",
+        "Q9": "Q9__ts2_iot_wide__TS2D_BUCKET_SCAN"
+      },
+      "selection_reason": "NOT_SELECTED",
+      "selection_status": "DOMINATED_ANALYTICALLY"
+    }
+  ]
+}

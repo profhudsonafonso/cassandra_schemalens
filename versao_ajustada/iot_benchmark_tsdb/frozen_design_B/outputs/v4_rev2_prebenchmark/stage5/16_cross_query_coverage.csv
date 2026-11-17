@@ -1,0 +1,38 @@
+query_id,candidate_id,family,route_status,verification,cross_query_reuse,method
+Q1,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q2,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q3,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q4,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q5,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q6,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q7,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q8,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q9,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q10,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q11,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q12,ts0_iot_raw,TS0,DIRECT,IN_MEMORY_ORACLE_ONLY,False,direct metric-point lookup
+Q1,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q2,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q3,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q4,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q5,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q6,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q7,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q8,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,descending sparse-null-aware latest scan
+Q9,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q10,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q11,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q12,ts2_iot_wide_unbucketed,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q1,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q2,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q3,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q4,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q5,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q6,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q7,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q8,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,descending sparse-null-aware latest scan
+Q9,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q10,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q11,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,True,canonical point reconstruction
+Q12,ts2_iot_wide,TS2,DIRECT,IN_MEMORY_ORACLE_ONLY,False,canonical point reconstruction
+Q8,ts4_iot_latest,TS4,DIRECT,IN_MEMORY_ORACLE_ONLY,False,precomputed_latest_snapshot; concurrent updates not supported

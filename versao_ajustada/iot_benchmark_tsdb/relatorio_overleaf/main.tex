@@ -1,0 +1,271 @@
+% =====================================================================
+%  SchemaLens-Cassandra (TSDB / IoT-Benchmark) -- Versao ajustada v1
+%  Compilar no Overleaf com pdfLaTeX. Tabelas em tables/ (geradas por
+%  iot_v1/make_tables.py a partir dos dados brutos), figuras em figs/.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\IfFileExists{brazil.ldf}{\usepackage[brazil]{babel}}{}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[table]{xcolor}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=green!40!black]{hyperref}
+
+\definecolor{boxbg}{RGB}{243,246,250}
+\definecolor{warnbg}{RGB}{253,244,232}
+\definecolor{okbg}{RGB}{236,247,240}
+\newcommand{\caixa}[2][boxbg]{\par\smallskip\noindent\colorbox{#1}{\parbox{\dimexpr\linewidth-2\fboxsep}{#2}}\par\smallskip}
+\newcommand{\just}[1]{\caixa{\textbf{Justificativa.} #1}}
+\newcommand{\limit}[1]{\caixa[warnbg]{\textbf{Limitação.} #1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\input{tables/env.tex}
+\makeatletter\newcommand{\tabin}[1]{\@@input #1 }\makeatother
+
+\pagestyle{fancy}\fancyhf{}
+\lhead{\small SchemaLens--Cassandra (TSDB/IoT) --- versão ajustada v1}\rhead{\small Relatório de execução}
+\cfoot{\thepage}
+
+\title{\textbf{SchemaLens--Cassandra com o IoT-Benchmark}\\[4pt]
+\large Versão ajustada: nova execução da fase de medição sob o protocolo comum v1\\
+(correções da análise de consistência metodológica entre benchmarks)}
+\author{Projeto SchemaLens / Cassandra}
+\date{Execução: \envstarted--\envfinished{} UTC \quad--\quad relatório gerado em 17/11/2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent A análise de consistência metodológica entre os quatro benchmarks do SchemaLens no Cassandra concluiu que a \emph{fase de projeto} é comum, mas a \emph{fase de execução} não: mudavam a versão do Cassandra, a métrica e a estatística, o número de deployments medidos, o controle de estado físico, a avaliação de preservação e as ablações. Este relatório documenta a versão ajustada do experimento IoT-Benchmark. Mantivemos congelada a fase de projeto da campanha B Rev3 (Stages 1--8, HBench de 3 deployments) e refizemos só a medição, sob um protocolo comum (v1) que valerá também para o TPCx-IoT e o TSBS. O protocolo fixa a imagem por digest (Cassandra \envversion), usa um container dedicado, mede os 6 deployments admissíveis e as 2 variantes de referência, faz 5 repetições com reinício a frio, decide pela média do mix uniforme com IC por bootstrap e piso de ruído por pares A/A, aplica gate de flush e guarda de isolamento, avalia Top-$k$, regret e retenção de Pareto, roda ablações das regras TS0--TS8/M1--M5 e de critérios do seletor e recalcula 10 gates de aceitação a partir dos dados brutos. Foram \envrawrows{} latências, todas conferidas pelo oráculo. \input{tables/abstract_result.tex}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% =====================================================================
+\section{Resumo executivo}
+% =====================================================================
+\input{tables/exec_summary.tex}
+
+% =====================================================================
+\section{O que a análise de consistência apontou e o que foi ajustado}
+% =====================================================================
+A análise (\texttt{docs/Analise\_Consistencia\_Metodologica\_Benchmarks.pdf}) classificou 15 divergências. A Tabela~\ref{tab:ajustes} mostra como cada uma que se aplica ao IoT-Benchmark foi tratada nesta versão.
+
+\begin{longtable}{@{}p{3.6cm}p{4.6cm}p{6.8cm}@{}}
+\caption{Divergências da análise de consistência e tratamento na versão ajustada.}\label{tab:ajustes}\\
+\toprule
+\textbf{Divergência} & \textbf{Situação anterior (IoT)} & \textbf{Versão ajustada (protocolo v1)}\\\midrule\endfirsthead
+\toprule\textbf{Divergência} & \textbf{Antes} & \textbf{v1}\\\midrule\endhead
+Crítico 2 -- versão do Cassandra & tag flutuante \texttt{cassandra:4.1} (resolvia para 4.1.12), container compartilhado com outros experimentos & imagem fixada por digest \texttt{sha256:25f6a4d5\ldots} (release \envversion), container novo e dedicado, CPUs \envcpuset, \envmem{}\,GB, heap 2\,GB; cliente nas CPUs 8--11; preflight grava versão, digest, driver e ambiente\\
+Crítico 3 -- métrica e estatística & p95 nearest rank de 60 amostras, uma sessão, sem IC & média, p50, p95 e p99; \textbf{métrica de decisão pré-declarada: média do mix uniforme}; IC 95\% por bootstrap estratificado; IC $t$ entre 5 repetições; contrastes pareados; piso de ruído por pares A/A\\
+Crítico 4 -- avaliação de preservação & ``espaço pequeno demais para regret'' & \textbf{modo verification}: os 6 deployments admissíveis são medidos; Top-1, Top-3, near-best 5\%, regret, retenção de Pareto, $\tau$ de Kendall e comparação com escolha aleatória\\
+Importante 8 -- tipo de carga & só leitura; escrita e armazenamento não medidos & tempo de carga e escritas físicas por deployment; bytes de SSTable por \texttt{nodetool tablestats}; Pareto medido em três objetivos\\
+Importante 10 -- ablações & nenhuma & 14 ablações de regra (TS0--TS8, M1--M5) com o motor de ativação e o Stage 8 originais, mais 6 ablações de critério\\
+Importante 11 -- estado físico, cache e isolamento & gate de flush só em S3; cache parcialmente frio em E6 & gate de flush antes de \emph{cada} repetição; reinício a frio do container; guarda de isolamento a cada 15\,s mais \texttt{compaction\_history}\\
+Repetições e ordem & 60 rodadas AB/BA por consulta & 5 repetições $\times$ (10 aquecimentos + 60 rodadas); janela contínua; consultas e variantes em ordem sorteada, invertida nas rodadas pares\\
+Aceitação & testes + auditoria Stage 7$\times$9 & 10 gates recalculados dos dados brutos + 10 testes negativos\\
+Importantes 5, 6, 9 (custo, seletor, baseline) & próprios do benchmark & \textbf{não alterados} (fazem parte da fase de projeto congelada); o efeito deles agora é medido por Top-$k$, regret e ablações\\
+\bottomrule
+\end{longtable}
+
+\just{A análise recomendou ``congelar um protocolo de execução v1 e reexecutar a fase de medição'', mantendo a fase de projeto, que já é consistente entre os TSDB (mesmo motor e mesmas regras, verificados por SHA-256). Refazer a fase de projeto mudaria a pergunta; manter o HBench congelado preserva o firewall entre seleção e medição.}
+
+% =====================================================================
+\section{Fase de projeto congelada (entrada da medição)}
+% =====================================================================
+\paragraph{Origem.} Campanha B Rev3 (05/11/2026): dados e objetos de consulta gerados pelo código Java oficial do IoT-Benchmark (commit \texttt{62e0dc10}), \texttt{DATA\_SEED}=531101, \texttt{QUERY\_SEED}=531107, 9 dispositivos, 2 sensores DOUBLE, 54.000 células (27.000 linhas largas, $\approx$20,8 dias), uma amostra de parâmetros por classe Q1--Q12, janela de consulta de 7 dias. A pasta \texttt{frozen\_design\_B/} é uma cópia byte a byte da campanha (verificada contra o original em 31 artefatos), e o código Rev3 confere com os hashes auditados.
+
+\paragraph{Ativação e espaço admissível.} Cinco famílias ativam (TS0, TS1, TS2, TS4, TS5) e dois modificadores (M1, M3). O Stage 8 Rev3 enumera 6 coberturas completas (\{TS0, TS2-U, TS2-D\} $\times$ \{com, sem TS4\}); a fronteira de Pareto analítica tem só TS2-U, e a salvaguarda de diversidade estrutural acrescenta TS0 e TS2-D. HBench congelado (ordem do seletor): \textbf{TS2-U} (escore 1,000), \textbf{TS0} (2,024), \textbf{TS2-D} (2,039).
+
+\paragraph{Pares A/A (trabalho idêntico).} Detectados automaticamente antes de medir: TS2-U $\equiv$ TS2-U+TS4 e TS2-D $\equiv$ TS2-D+TS4 (as rotas não usam TS4, porque Q8 é atendida por leitura descendente na tabela larga), e TS2-U $\equiv$ REF-Q8opt (mesmo DDL e mesmos planos em keyspaces diferentes). Esses pares definem o piso de ruído.
+
+\paragraph{Pré-registro.} \texttt{PREREGISTRATION\_IOT\_V1.json} grava os SHA-256 do código de medição, do protocolo e dos 31 artefatos de projeto, as 8 variantes, os pares A/A, as sementes e as hipóteses H1--H5. Foi gravado em modo exclusivo antes da medição. Um primeiro pré-registro foi substituído antes de qualquer medição oficial, porque a normalização de DDL não reconheceu o par TS2-U $\equiv$ REF-Q8opt; a versão superada e a nota estão em \texttt{preregistration\_history/}.
+
+% =====================================================================
+\section{Protocolo v1 aplicado}
+% =====================================================================
+\begin{table}[H]\centering\small
+\caption{Execução realizada.}
+\begin{tabularx}{\linewidth}{@{}lY@{}}\toprule
+Cassandra & \envversion, nó único, RF=1, imagem por digest, container \texttt{sl\_v1\_iot\_cassandra} (porta 9061), CPUs \envcpuset, \envmem\,GB\\
+Cliente & Python \envpython, \texttt{cassandra-driver} \envdriver, afinidade CPUs 8--11; kernel \envkernel\\
+Host & \envothers{} outros containers ativos (ociosos), loadavg no preflight \envloadavg\\
+Variantes & 6 coberturas admissíveis (keyspace próprio cada) + REF e REF-Q8opt (mesma tabela de referência, planos diferentes)\\
+Carga & carregador sequencial original (\texttt{\_materialize}/\texttt{load\_wide}), cronometrado por deployment; \texttt{nodetool flush}; espera de compactações\\
+Repetições & 5 $\times$ [reinício a frio (média \envrestart\,s) $\rightarrow$ gate de flush $\rightarrow$ pré-checagem do oráculo em 96 rotas $\rightarrow$ 10 aquecimentos $\rightarrow$ 60 rodadas]; janela média \envwinsec\,s\\
+Isolamento & \envguardsamples{} amostras de \texttt{system\_views.sstable\_tasks}; \texttt{compaction\_history} antes/depois; janelas descartadas: \envdiscarded\\
+Volume & \envrawrows{} latências cronometradas ($5\times60\times12\times8$), todas conferidas pelo oráculo\\
+\bottomrule\end{tabularx}\end{table}
+
+\just{O reinício a frio entre repetições descarta caches da JVM (key cache, chunk cache, estado do JIT) e torna as repetições estatisticamente independentes; o gate garante que todas as variantes leem de SSTable, e não de memtable. Isso corrige a assimetria física observada em S2. A média do mix foi escolhida como métrica de decisão antes de medir porque o p95 de poucas dezenas de amostras se mostrou instável em consultas de 1--5\,ms (Fase 4) e porque a média é aditiva num mix, que é o critério do RUBiS V9.}
+\limit{Os dados (\,$\approx$3\,MB) cabem inteiros no page cache do host, então ``frio'' aqui significa JVM e caches do Cassandra frios, não disco frio. A latência é ponta a ponta no cliente Python (driver + pós-processamento).}
+
+% =====================================================================
+\section{Resultados}
+% =====================================================================
+\subsection{Média do mix (métrica de decisão)}
+\begin{table}[H]\centering\small
+\caption{Métricas do mix uniforme Q1--Q12 (ms), ordenadas pela média. IC boot: bootstrap estratificado (2.000 reamostras); IC $t$: sobre as 5 médias por repetição; CV rep: variação entre repetições.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}llrcccrrr@{}}\toprule
+Variante & Papel & Média & IC 95\% boot & IC 95\% $t$ & p95 médio & p50 & p99 & CV rep \%\\\midrule
+\tabin{tables/t_mix.tex}
+\bottomrule\end{tabular}}\end{table}
+
+\begin{figure}[H]\centering
+\includegraphics[width=0.8\linewidth]{figs/fig_v1_mix.pdf}
+\caption{Média do mix com IC 95\% (bootstrap). Verde: rank 1 do seletor (TS2-U).}
+\end{figure}
+
+\subsection{Piso de ruído e contrastes pareados}
+\begin{table}[H]\centering\small
+\caption{Pares A/A (trabalho idêntico em keyspaces diferentes). Piso de ruído = maior quantil 95\% de $|\ln \text{razão}|$ = \envnoise{}.}
+\begin{tabular}{@{}lccc@{}}\toprule
+Par & Razão das médias & IC 95\% & q95 $|\ln r|$\\\midrule
+\tabin{tables/t_noise.tex}
+\bottomrule\end{tabular}\end{table}
+
+\begin{longtable}{@{}llccl@{}}
+\caption{Contrastes pareados da média do mix (razão A/B). Empate: o IC contém 1 ou $|\ln r|$ fica abaixo do piso de ruído.}\\
+\toprule A & B & Razão A/B & IC 95\% & Veredito\\\midrule\endhead
+\tabin{tables/t_contrasts.tex}
+\bottomrule
+\end{longtable}
+
+\subsection{Por classe de consulta}
+\begin{longtable}{@{}lrrrrrr@{}}
+\caption{Média e p95 de TS2-U (ms) e razão das médias de outras variantes sobre TS2-U, por classe. Em negrito: IC que exclui 1 e $|\ln r|$ acima do piso de ruído por classe (\envnoiseq{}, derivado do par A/A REF-Q8opt $\equiv$ TS2-U).}\\
+\toprule Q & média U & p95 U & TS2-D/U & TS0/U & REF/U & REF-Q8opt/U\\\midrule\endhead
+\tabin{tables/t_perquery.tex}
+\bottomrule
+\end{longtable}
+\begin{figure}[H]\centering
+\includegraphics[width=0.9\linewidth]{figs/fig_v1_perquery.pdf}
+\caption{Razão das médias por classe em relação a TS2-U (escala log). Faixa cinza: piso de ruído.}
+\end{figure}
+\input{tables/perquery_text.tex}
+
+\subsection{Armazenamento e escrita (objetivos do Pareto)}
+\begin{table}[H]\centering\small
+\caption{Custos físicos medidos por deployment. Armazenamento: \texttt{Space used (live)} após flush; escrita: carregador sequencial (mesmo para todos). Proxy: estimativa do Stage 7.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}llrrrr@{}}\toprule
+Variante & Tabelas & KiB em disco & Carga (s) & Escritas & Proxy (KiB)\\\midrule
+\tabin{tables/t_cost.tex}
+\bottomrule\end{tabular}}\end{table}
+\input{tables/cost_text.tex}
+
+\subsection{Previsão estrutural (Stage 7 $\times$ Stage 9)}
+Chamadas \texttt{execute} e linhas iteradas previstas pelo Stage 7 coincidiram com as observadas em \textbf{\envsseven{}} rotas (6 deployments $\times$ 12 consultas), em todas as repetições.
+
+\subsection{Avaliação do método no espaço admissível}
+\begin{table}[H]\centering\small
+\caption{Indicadores de preservação (modo verification, 6 deployments medidos).}
+\begin{tabularx}{\linewidth}{@{}lY@{}}\toprule
+\tabin{tables/t_method.tex}
+\bottomrule\end{tabularx}\end{table}
+\input{tables/method_text.tex}
+
+\subsection{Ablações}
+\begin{longtable}{@{}p{4.3cm}p{4.2cm}rcp{3.6cm}@{}}
+\caption{Ablações de regra (motor de ativação original, sem a regra) e de critério do seletor. Regret e near-best calculados com as medições do modo verification.}\\
+\toprule Ablação & HBench resultante & Regret & Near-best 5\% & Observação\\\midrule\endhead
+\tabin{tables/t_ablation.tex}
+\bottomrule
+\end{longtable}
+\input{tables/ablation_text.tex}
+
+\subsection{Campanha B original recalculada com a estatística v1}
+A estatística comum também foi aplicada às latências brutas já gravadas da campanha B confirmatória (60 rodadas, uma sessão, sem reinício), sem medir de novo, como recomendou a análise (prioridade 3).
+\begin{table}[H]\centering\small
+\caption{Campanha B (05/11) recalculada $\times$ v1 (17/11). Mesmo HBench, mesmos dados, mesmas consultas.}
+\begin{tabular}{@{}lrrcrr@{}}\toprule
+ & \multicolumn{3}{c}{B original (recalculada)} & \multicolumn{2}{c}{v1}\\\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Variante & p95 médio & Média & IC 95\% & Média & p95 médio\\\midrule
+\tabin{tables/t_legacy.tex}
+\bottomrule\end{tabular}\end{table}
+\input{tables/legacy_text.tex}
+
+% =====================================================================
+\section{Hipóteses pré-registradas}
+% =====================================================================
+\begin{longtable}{@{}p{0.7cm}p{6.2cm}p{1.9cm}p{5.8cm}@{}}
+\toprule & Hipótese & Resultado & Evidência\\\midrule\endhead
+\tabin{tables/t_hyp.tex}
+\bottomrule
+\end{longtable}
+
+% =====================================================================
+\section{Aceitação}
+% =====================================================================
+\begin{minipage}[t]{0.48\linewidth}\centering\small
+\begin{tabular}[t]{@{}lc@{}}\toprule Gate (dados brutos) & \\\midrule
+\tabin{tables/t_gates.tex}
+\bottomrule\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.5\linewidth}\centering\small
+\begin{tabular}[t]{@{}lc@{}}\toprule Teste negativo & \\\midrule
+\tabin{tables/t_neg.tex}
+\bottomrule\end{tabular}
+\end{minipage}
+
+\medskip
+\input{tables/acceptance_text.tex}
+
+% =====================================================================
+\section{O que muda nas conclusões do IoT-Benchmark}
+% =====================================================================
+\input{tables/conclusions.tex}
+
+% =====================================================================
+\section{Limitações e ameaças à validade}
+% =====================================================================
+\begin{itemize}
+\item \textbf{Interna.} Latência no cliente Python (driver + pós-processamento); nó único; os dados cabem no page cache do host (frio = JVM/caches do Cassandra); outros containers estavam ativos, embora ociosos e em outras CPUs. O Q1 devolve resposta vazia, porque o ponto amostrado pelo gerador Java não coincide com um timestamp armazenado, então a checagem de corretude do Q1 só confirma a ausência de linhas.
+\item \textbf{Construto.} A média do mix uniforme pressupõe frequências iguais (\texttt{OPERATION\_PROPORTION} não é reproduzido); ``escrita'' é o carregador sequencial, não a ingestão concorrente; armazenamento é \texttt{Space used (live)} após flush, sem compactação de longo prazo.
+\item \textbf{Externa.} Um workload estreito (2 sensores DOUBLE, 1 dispositivo por consulta, 54 mil células); o espaço admissível tem só 6 deployments, então Top-$k$ e regret são pouco discriminantes (escolher 3 de 6 ao acaso já contém o melhor com probabilidade 0,5).
+\item \textbf{Conclusão.} O HBench e as regras foram desenvolvidos iterativamente com dados anteriores (V3 $\rightarrow$ Rev3). A v1 mede de novo uma seleção congelada; não é um holdout novo de dados.
+\item \textbf{Não harmonizado.} Modelo de custo, seletor e natureza do baseline seguem próprios do benchmark (importantes 5, 6 e 9).
+\end{itemize}
+
+% =====================================================================
+\appendix
+\section{Reprodução passo a passo}
+\begin{verbatim}
+cd versao_ajustada/iot_benchmark_tsdb
+python3 -m venv ../.venv && ../.venv/bin/pip install cassandra-driver numpy matplotlib
+./run_all.sh smoke      # opcional, container descartavel
+./run_all.sh freeze     # pre-registro (exclusivo)
+./run_all.sh measure    # ~10 min -> outputs/v1_run1/
+./run_all.sh analyze    # metricas, bootstrap, Top-k/regret, figuras
+./run_all.sh ablation   # ablacoes (offline)
+./run_all.sh accept     # gates + testes negativos
+../.venv/bin/python iot_v1/make_tables.py --run outputs/v1_run1
+./run_all.sh report     # compila este PDF
+\end{verbatim}
+
+\section{Artefatos}
+\begin{longtable}{@{}p{6cm}p{8.6cm}@{}}\toprule
+\texttt{../common/protocol\_v1.json} & protocolo comum congelado\\
+\texttt{PREREGISTRATION\_IOT\_V1.json} & pré-registro (hashes, variantes, A/A, H1--H5)\\
+\texttt{frozen\_design\_B/} & fase de projeto congelada (campanha B Rev3)\\
+\texttt{outputs/v1\_run1/raw\_latencies.csv} & \envrawrows{} latências com chamadas, linhas, plano e oráculo\\
+\texttt{outputs/v1\_run1/manifest.json} & preflight, por repetição: reinício, gate, guarda, janela\\
+\texttt{outputs/v1\_run1/load.csv}, \texttt{storage\_tables.csv} & escrita e armazenamento\\
+\texttt{outputs/v1\_run1/analysis/} & todas as tabelas deste relatório em CSV/JSON\\\bottomrule
+\end{longtable}
+
+\begin{thebibliography}{9}\small
+\bibitem{iotbench} thulab/iot-benchmark. \url{https://github.com/thulab/iot-benchmark}, commit \texttt{62e0dc10}.
+\bibitem{efron} B.~Efron, R.~J.~Tibshirani. \emph{An Introduction to the Bootstrap}. Chapman \& Hall, 1993.
+\bibitem{hyndman} R.~J.~Hyndman, Y.~Fan. Sample quantiles in statistical packages. \emph{The American Statistician}, 50(4), 1996.
+\bibitem{nosek} B.~A.~Nosek et al. The preregistration revolution. \emph{PNAS}, 115(11), 2018.
+\bibitem{kalibera} T.~Kalibera, R.~Jones. Rigorous benchmarking in reasonable time. \emph{ISMM}, 2013.
+\end{thebibliography}
+\end{document}

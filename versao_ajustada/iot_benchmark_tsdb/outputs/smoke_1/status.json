@@ -1,0 +1,19 @@
+{
+  "attempt": 1,
+  "loaded": "R3H_69bc46506e7b",
+  "of": 2,
+  "phase": "complete",
+  "rep": 2,
+  "reps": 2,
+  "restart_s": 17.9,
+  "rounds": 3,
+  "seconds": 5.3,
+  "smoke": true,
+  "started_utc": "2026-11-17T17:46:17.664651+00:00",
+  "tables": 10,
+  "updated_utc": "2026-11-17T17:49:15.838490+00:00",
+  "variants": 8,
+  "version": "4.1.12",
+  "warmup": 1,
+  "writes": 27018
+}

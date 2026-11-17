@@ -1,0 +1,11 @@
+keyspace,table,sstable_count,memtable_cell_count,memtable_data_size,space_used_live_bytes,space_used_total_bytes,number_of_partitions,compacted_partition_mean_bytes,compacted_partition_max_bytes
+sl_v1_iot_d4e52478_r3h_0cb71e472e90,ts2_iot_wide_unbucketed,1,0,0,377564,377564,9,105778,105778
+sl_v1_iot_d4e52478_r3h_0cb71e472e90,ts4_iot_latest,1,0,0,5835,5835,18,50,50
+sl_v1_iot_d4e52478_r3h_38939db96444,ts2_iot_wide_unbucketed,1,0,0,377683,377683,9,105778,105778
+sl_v1_iot_d4e52478_r3h_69bc46506e7b,ts2_iot_wide,1,0,0,386531,386531,189,5662,5722
+sl_v1_iot_d4e52478_r3h_69bc46506e7b,ts4_iot_latest,1,0,0,5831,5831,18,50,50
+sl_v1_iot_d4e52478_r3h_934e5af2474c,ts0_iot_raw,1,0,0,683543,683543,18,85700,88148
+sl_v1_iot_d4e52478_r3h_99b27982cb5a,ts0_iot_raw,1,0,0,683476,683476,18,85700,88148
+sl_v1_iot_d4e52478_r3h_99b27982cb5a,ts4_iot_latest,1,0,0,5832,5832,18,50,50
+sl_v1_iot_d4e52478_r3h_d2ea1974de53,ts2_iot_wide,1,0,0,386433,386433,189,5662,5722
+sl_v1_iot_d4e52478_reference,iot_reference_table,1,0,0,377573,377573,9,105778,105778

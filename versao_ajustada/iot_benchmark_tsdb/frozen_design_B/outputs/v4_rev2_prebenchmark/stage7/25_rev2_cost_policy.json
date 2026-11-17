@@ -1,0 +1,20 @@
+{
+  "extra_bucket_coordination_units": 2.0,
+  "metric_double_bytes_proxy": 8,
+  "notes": {
+    "bytes": "Simplified payload/partition size proxy, NOT real on-disk bytes",
+    "extra_bucket_coordination": "Independent fan-out merge/group cost: max(0, bucket_scans - logical operands)",
+    "partition_pressure": "Only applies above 32MiB estimated partition size; no price advantage granted arbitrarily at tiny scale",
+    "policy": "Uniform Q1-Q12 weights because native scheduler frequencies were not captured",
+    "provenance": "V4 Rev2 prospectively declared engineering assumptions, NOT fitted to observed p95",
+    "requests": "CQL round trip estimated from schema key constraints"
+  },
+  "partition_hard_limit_bytes": 134217728,
+  "partition_pressure_cost_units": 5.0,
+  "partition_soft_limit_bytes": 33554432,
+  "physical_row_cost_units": 0.02,
+  "request_cost_units": 4.0,
+  "returned_kib_cost_units": 0.2,
+  "row_header_bytes_proxy": 24,
+  "ts0_cell_bytes_proxy": 48
+}

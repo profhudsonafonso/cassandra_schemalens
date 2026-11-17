@@ -1,0 +1,9 @@
+variant,name,storage_live_bytes,tables,load_seconds,physical_writes,pred_storage_proxy,pred_write_proxy
+BASELINE_ORIGINAL,REF,377573,iot_reference_table,6.4425,27000,,
+BASELINE_Q8_OPTIMIZED,REF-Q8opt,377573,iot_reference_table,6.4425,27000,,
+R3H_38939db96444,TS2-U,377683,ts2_iot_wide_unbucketed,6.8329,27000,2376000,27000
+R3H_0cb71e472e90,TS2-U+TS4,383399,ts2_iot_wide_unbucketed+ts4_iot_latest,7.1648,27018,2377152,27018
+R3H_934e5af2474c,TS0,683543,ts0_iot_raw,15.1946,54000,3456000,54000
+R3H_99b27982cb5a,TS0+TS4,689308,ts0_iot_raw+ts4_iot_latest,13.8988,54018,3457152,54018
+R3H_d2ea1974de53,TS2-D,386433,ts2_iot_wide,7.9249,27000,2376000,27000
+R3H_69bc46506e7b,TS2-D+TS4,392362,ts2_iot_wide+ts4_iot_latest,8.259,27018,2377152,27018

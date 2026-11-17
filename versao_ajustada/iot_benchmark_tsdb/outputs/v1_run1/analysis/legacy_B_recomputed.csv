@@ -1,0 +1,6 @@
+variant,name,mix_mean_ms,ci_lo,ci_hi,mix_mean_p95_ms,source
+BASELINE_ORIGINAL,REF,6.241757809722222,6.071151325833335,6.428262303784723,9.8670105,outputs/rev3_independent_confirmatory/batch_e0d081d6f1/raw_latencies.csv
+BASELINE_Q8_OPTIMIZED,REF-Q8opt,5.129502937499999,4.994967000520834,5.272734847395833,7.910941583333334,outputs/rev3_independent_confirmatory/batch_e0d081d6f1/raw_latencies.csv
+R3H_38939db96444,TS2-U,5.175346448611111,5.0281463855208335,5.321294923715277,7.824142250000001,outputs/rev3_independent_confirmatory/batch_e0d081d6f1/raw_latencies.csv
+R3H_934e5af2474c,TS0,6.374675327777779,6.20098304267361,6.543365186701389,9.151040416666666,outputs/rev3_independent_confirmatory/batch_e0d081d6f1/raw_latencies.csv
+R3H_d2ea1974de53,TS2-D,8.539862195833333,8.360856972812499,8.720454684340279,11.47696025,outputs/rev3_independent_confirmatory/batch_e0d081d6f1/raw_latencies.csv

@@ -1,0 +1,27 @@
+{
+  "H1": {
+    "detail": "melhor medido=TS2-U; empatados=['TS2-U+TS4', 'TS2-U']",
+    "result": true
+  },
+  "H2": {
+    "detail": "regret=0.0000",
+    "result": true
+  },
+  "H3": {
+    "detail": "razao=0.9147 IC=[0.8388,1.0020]",
+    "result": true
+  },
+  "H4": {
+    "detail": {
+      "TS0": "1.356 [1.265,1.452] B_MAIS_RAPIDO",
+      "TS0+TS4": "1.397 [1.323,1.476] B_MAIS_RAPIDO",
+      "TS2-D": "2.240 [2.080,2.409] B_MAIS_RAPIDO",
+      "TS2-D+TS4": "2.218 [2.083,2.362] B_MAIS_RAPIDO"
+    },
+    "result": true
+  },
+  "H5": {
+    "detail": "72/72 MATCH",
+    "result": true
+  }
+}

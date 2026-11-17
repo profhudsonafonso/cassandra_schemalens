@@ -1,0 +1,6 @@
+variant,mean_12_query_p95_ms,mean_11_query_p95_excluding_q8_ms,mean_11_query_p95_excluding_q5_ms,scope
+BASELINE_ORIGINAL,9.8670105,8.888809727272728,8.824106,Unweighted per-class nearest-rank p95 means; not a workload-mix p95
+BASELINE_Q8_OPTIMIZED,7.910941583333333,8.57633590909091,6.612178909090909,Unweighted per-class nearest-rank p95 means; not a workload-mix p95
+R3H_38939db96444,7.82414225,8.480179545454545,6.525832090909091,Unweighted per-class nearest-rank p95 means; not a workload-mix p95
+R3H_934e5af2474c,9.151040416666666,9.886840818181819,7.504725363636363,Unweighted per-class nearest-rank p95 means; not a workload-mix p95
+R3H_d2ea1974de53,11.47696025,12.463649272727272,8.993843545454546,Unweighted per-class nearest-rank p95 means; not a workload-mix p95

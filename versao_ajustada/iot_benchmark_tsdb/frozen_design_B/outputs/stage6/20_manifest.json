@@ -1,0 +1,18 @@
+{
+  "stage": 6,
+  "status": "WRITE_PLANS_GENERATED_NOT_LIVE_TESTED",
+  "scope": "TS_ONLY_IOT_CASSANDRA",
+  "C0_C9_used": false,
+  "benchmark_measured": false,
+  "inputs_sha256": {
+    "outputs/stage5/15_query_plans.json": "59d8ce21bb1c6dfb421d8d4a6fc4cf7dc24287b4aa26f5f8887e1fec2ceb5c14",
+    "outputs/stage4/10_candidate_specs.json": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9"
+  },
+  "limitations": [
+    "QUERY_SEED not replayed in A1 fixture; official native parameter-object capture utility is supplied separately, not wired into Stage8",
+    "Live Cassandra results unavailable until user performs Stage9"
+  ],
+  "write_plans": 6,
+  "compatible_links": 30
+}

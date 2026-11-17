@@ -1,0 +1,15 @@
+{
+  "benchmark_manifest_sha256": "75e3a4f5380207e58c762e400c2ef397565eab9a0d69a821f19c5ce426fe50b2",
+  "disk_measurements_interpretation": "SSTables current at collection; compression and compaction dependent",
+  "keys_are_strictly_from_benchmark_manifest": true,
+  "no_automatic_flush": true,
+  "rev3_selection_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "snapshots_sha256": {
+    "sl_conf_r3_e0d081d6f1_r3h_38939db96444": "5011a5aac3b541c9d11b3c3f7ff994214eee31a3f2d46b7e2b0a62b115885d15",
+    "sl_conf_r3_e0d081d6f1_r3h_934e5af2474c": "9b3b1769bb23867fab6c71bdd37de74e54a46a32fa07d4f3d2b25c3b3e168865",
+    "sl_conf_r3_e0d081d6f1_r3h_d2ea1974de53": "4a142cbfaf7bc98eb705df710ec6289b3dce6552ffee94749c2be660d2e816e8",
+    "sl_conf_r3_e0d081d6f1_reference": "487a1f6d613b427d9a8fddcb6d24b3d615a6674beaf89279a8015ff92c193dc3"
+  },
+  "status": "READ_ONLY_REV3_STORAGE_SNAPSHOT",
+  "timestamp_utc": "2026-11-05T22:42:41.877746+00:00"
+}

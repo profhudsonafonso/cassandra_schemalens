@@ -1,0 +1,58 @@
+{
+  "artifact_sha256": {
+    "stage5/15_executable_plan_catalog.json": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa",
+    "stage5/16_executable_plan_catalog.csv": "2b94436244e9dcd474f5951fcc858c943bd118ae67a8a9b1f76809f8c2d06ea1",
+    "stage7/23_per_plan_read_proxies.json": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa",
+    "stage7/25_cost_policy.json": "8455c132198b48949a5bb541256e380783592ed4ebb35e045487df3a464466b6",
+    "stage8/28_hbench_v4_rev3_frozen.json": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+    "stage8/29_all_compatible_covers.json": "8ac4c699f1b6f346de0e24ae614a75c3823a3b23caf7bea79badd70522ac0452",
+    "stage8/30_hbench_summary.csv": "e79e17994f6084d65aaf0dc4224c6bb56072d381af57cb315046d37c066ba89f",
+    "stage8/31_plan_aware_routes.csv": "9887d84aab36b4edc81aa44734c6fb5d79be3c33b85533db471e9376b3597f52"
+  },
+  "candidate_count": 4,
+  "compatible_configurations": 6,
+  "implementation_sha256": {
+    "core.py": "420caac9e8626c4f20435a80abecb0b958f2f73bd8ee883cfd9b512fd1a88518",
+    "prebenchmark.py": "5ebedc07f231f863eb96946e3195c710d12bb6c45b9f108a6e6e67e445268fad",
+    "runtime.py": "7cbb1b95657dc9bd432a8b568df92b6b7048f85597c0513c97d948749bafebf4"
+  },
+  "limitations": [
+    "Inherited logical correctness from Rev2; new TS0 LIMIT1 was independently checked in E5 only",
+    "IoT Benchmark Java representative objects; no official CQL/IoTDB frequency replay",
+    "Bytes proxies are not SSTable bytes; Cassandra read metrics are driver-level",
+    "Model evolution was informed by E5, so existing Rev2 data is not new holdout",
+    "No runtime latency may be used to change this frozen selection"
+  ],
+  "new_measurements_required_for_independent_confirmation": true,
+  "no_Cassandra_used": true,
+  "no_measured_latency_used": true,
+  "parent_frozen_artifacts_sha256": {
+    "candidates": "4cf763022c4c7b93dfe69aadd70aeba875db008d20293e5c4adac9e2e49aa91e",
+    "coverage": "fd4b075e968499d087dfad30e4ad308d0ae6230518bad911223871092d4e18b5",
+    "partition": "800bf0969270257bbd63fba005f54fcb1da6a9edfc128423e54f2f693611672b",
+    "policy": "4cd978922d4734cb3ab00a2bc59b204884670787bfe88709e04c817c5c3b4a37",
+    "read": "af84bdd1de6564271f833f8a4c53b06965044e52002b8b2940ae95e5120b12c0",
+    "rev2_hbench": "46d9a18c3490bddb6b0da770ec2a7e8c9134e42cdec859eda3453bc4bacd3708",
+    "rev2_manifest": "8bf9055aef71eacbea174ec77547c719ad826d27f8720923674a8c0eefccb7d7",
+    "storage": "6cc0f8ef2dad97380c300ed8cd77a23901d5210f58680d3efc71c72d444ac47e",
+    "writes": "044298a658276e11806479945aeb12203ab3d8ec77d5ddb52c3a8cfef654f21e"
+  },
+  "parent_rev2_manifest_sha256": "8bf9055aef71eacbea174ec77547c719ad826d27f8720923674a8c0eefccb7d7",
+  "parent_rev2_selection_sha256": "46d9a18c3490bddb6b0da770ec2a7e8c9134e42cdec859eda3453bc4bacd3708",
+  "pareto_count": 1,
+  "plan_count": 40,
+  "prior_e5_has_informed_plan_family": "YES; NO E5 LATENCY READ BY SELECTOR",
+  "revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+  "scope": "POST_E5_OFFLINE_METHODOLOGICAL_PROTOTYPE_NOT_INDEPENDENT_HOLDOUT",
+  "selected_count": 3,
+  "selected_ids": [
+    "R3H_38939db96444",
+    "R3H_934e5af2474c",
+    "R3H_d2ea1974de53"
+  ],
+  "source_sha256": {
+    "data": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+    "queries": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5"
+  },
+  "status": "FROZEN_REV3_EXPLORATORY_PLAN_AWARE"
+}

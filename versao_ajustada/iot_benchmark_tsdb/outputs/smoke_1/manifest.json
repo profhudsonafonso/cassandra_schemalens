@@ -1,0 +1,148 @@
+{
+  "container": "sl_v1_iot_cassandra_smoke",
+  "finished_utc": "2026-11-17T17:49:13.761926+00:00",
+  "port": 9161,
+  "postflight": {
+    "cassandra_release_version": "4.1.12",
+    "client_affinity": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "container": "sl_v1_iot_cassandra_smoke",
+    "cpu_count": 24,
+    "cpuset": "0-3",
+    "docker_stats": [
+      "sl_v1_iot_cassandra_smoke\t0.98%\t2.333GiB / 6GiB",
+      "schemalens-rubis-cassandra\t0.74%\t1.419GiB / 62.38GiB",
+      "schemalens_tpcx_cassandra\t0.97%\t1.178GiB / 62.38GiB",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\t0.79%\t8.75GiB / 62.38GiB",
+      "imdb_mongodb_alt\t1.43%\t249.3MiB / 62.38GiB",
+      "fiben_mongodb_bench\t0.94%\t253.5MiB / 62.38GiB"
+    ],
+    "driver": "3.30.1",
+    "host": "ceos-PC",
+    "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+    "image_id": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+    "kernel": "7.0.0-38-generic",
+    "loadavg": [
+      1.12646484375,
+      0.70849609375,
+      0.47998046875
+    ],
+    "meminfo": [
+      "MemTotal:       65407552 kB",
+      "MemFree:         5320940 kB",
+      "MemAvailable:   40020388 kB"
+    ],
+    "memory_limit_bytes": 6442450944,
+    "port": 9161,
+    "python": "3.12.3",
+    "running_containers": [
+      "sl_v1_iot_cassandra_smoke\tcassandra\tUp 18 seconds",
+      "schemalens-rubis-cassandra\tcassandra:4.1\tUp 7 days",
+      "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 7 days (healthy)",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 6 days (healthy)",
+      "imdb_mongodb_alt\tmongo:8\tUp 7 days",
+      "fiben_mongodb_bench\tmongo:8.0\tUp 7 days"
+    ],
+    "utc": "2026-11-17T17:49:15.837666+00:00"
+  },
+  "prefix": "sl_smoke_iot_050d3d10_",
+  "preflight": {
+    "cassandra_release_version": "4.1.12",
+    "client_affinity": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "container": "sl_v1_iot_cassandra_smoke",
+    "cpu_count": 24,
+    "cpuset": "0-3",
+    "docker_stats": [
+      "sl_v1_iot_cassandra_smoke\t1.92%\t2.293GiB / 6GiB",
+      "schemalens-rubis-cassandra\t0.92%\t1.419GiB / 62.38GiB",
+      "schemalens_tpcx_cassandra\t0.99%\t1.178GiB / 62.38GiB",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\t1.11%\t8.751GiB / 62.38GiB",
+      "imdb_mongodb_alt\t0.76%\t250.2MiB / 62.38GiB",
+      "fiben_mongodb_bench\t0.92%\t253.2MiB / 62.38GiB"
+    ],
+    "driver": "3.30.1",
+    "host": "ceos-PC",
+    "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+    "image_id": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+    "kernel": "7.0.0-38-generic",
+    "loadavg": [
+      0.46728515625,
+      0.4130859375,
+      0.36669921875
+    ],
+    "meminfo": [
+      "MemTotal:       65407552 kB",
+      "MemFree:         5455560 kB",
+      "MemAvailable:   40100688 kB"
+    ],
+    "memory_limit_bytes": 6442450944,
+    "port": 9161,
+    "python": "3.12.3",
+    "running_containers": [
+      "sl_v1_iot_cassandra_smoke\tcassandra\tUp About a minute",
+      "schemalens-rubis-cassandra\tcassandra:4.1\tUp 7 days",
+      "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 7 days (healthy)",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 6 days (healthy)",
+      "imdb_mongodb_alt\tmongo:8\tUp 7 days",
+      "fiben_mongodb_bench\tmongo:8.0\tUp 7 days"
+    ],
+    "utc": "2026-11-17T17:47:19.955272+00:00"
+  },
+  "protocol": "SCHEMALENS_CASSANDRA_EXEC_PROTOCOL_V1",
+  "repetitions": [
+    {
+      "attempt": 1,
+      "flush_gate": {
+        "passed": true,
+        "tables": 10
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 1.263671875,
+        "passed": true,
+        "samples": 1,
+        "window_seconds": 2.8
+      },
+      "raw_rows": 288,
+      "rep": 1,
+      "restart_seconds": 17.587239503860474,
+      "window_seconds": 2.8
+    },
+    {
+      "attempt": 1,
+      "flush_gate": {
+        "passed": true,
+        "tables": 10
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 1.224609375,
+        "passed": true,
+        "samples": 1,
+        "window_seconds": 3.1
+      },
+      "raw_rows": 288,
+      "rep": 2,
+      "restart_seconds": 17.857619047164917,
+      "window_seconds": 3.1
+    }
+  ],
+  "reps_planned": 2,
+  "rounds": 3,
+  "smoke": true,
+  "status": "COMPLETE",
+  "warmup": 1
+}

@@ -1,0 +1,73 @@
+{
+  "analysis_code_sha256": {
+    "common/cassandra_env.py": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+    "common/method_eval.py": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+    "common/slstats.py": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+    "iot_benchmark_tsdb/iot_v1/ablation.py": "1192a46cef9b5a114e93193495efad446f5367022d7bac94022fc64913fb83c2",
+    "iot_benchmark_tsdb/iot_v1/acceptance.py": "243eac4c4a4579eeffeda720f7c3bc9c12558f4c01707e417111179181601af8",
+    "iot_benchmark_tsdb/iot_v1/analyze.py": "d7c29e48eecfc1fdf16ebaa00ff308e2b0febeffc814361267742c5110a4af01",
+    "iot_benchmark_tsdb/iot_v1/common_paths.py": "238e8efbe521e6554ff8dc63547ec31e4161075d3890586f0dee197845b78020",
+    "iot_benchmark_tsdb/iot_v1/freeze.py": "79d341ee7e30068e86eb66b8e29248ed9a18911d258448a2d33f60fe7e92e7af",
+    "iot_benchmark_tsdb/iot_v1/make_tables.py": "9699b42b5dd71d0dfc522653c73809d68d1f8d2a337eea75c977f3f9be8bc47d",
+    "iot_benchmark_tsdb/iot_v1/measure.py": "3da39638c5ed9eef188a7dc47c4b069d0e8217e5e52669019c1d86bf0edeeae3"
+  },
+  "best": "R3H_38939db96444",
+  "bootstrap_resamples": 2000,
+  "noise_floor": {
+    "noise_floor_abs_ln": 0.021288121326450922,
+    "noise_floor_pct": 2.1516329881530627,
+    "pairs": [
+      {
+        "a": "R3H_0cb71e472e90",
+        "abs_ln_ci_hi": 0.01849848422408782,
+        "b": "R3H_38939db96444",
+        "ci_hi": 1.0201082319149017,
+        "ci_lo": 0.9850468264749948,
+        "ln_ratio": 0.003062653966434263,
+        "ratio": 1.0030673486826336
+      },
+      {
+        "a": "R3H_69bc46506e7b",
+        "abs_ln_ci_hi": 0.011854432644239094,
+        "b": "R3H_d2ea1974de53",
+        "ci_hi": 1.0082053305543615,
+        "ci_lo": 0.9868928364555803,
+        "ln_ratio": -0.0026032213654959193,
+        "ratio": 0.9974001640769204
+      },
+      {
+        "a": "R3H_38939db96444",
+        "abs_ln_ci_hi": 0.021288121326450922,
+        "b": "BASELINE_Q8_OPTIMIZED",
+        "ci_hi": 1.0245297745296258,
+        "ci_lo": 0.9897187960855076,
+        "ln_ratio": 0.006850088752523941,
+        "ratio": 1.006873604274288
+      }
+    ]
+  },
+  "queries": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12"
+  ],
+  "rank1": "R3H_38939db96444",
+  "raw_rows": 28800,
+  "reps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "seed": 20261117
+}

@@ -1,0 +1,77 @@
+{
+  "protocol_id": "SCHEMALENS_CASSANDRA_EXEC_PROTOCOL_V1",
+  "frozen_on": "2026-11-17",
+  "scope": "Fase de medicao comum aos benchmarks TSDB (IoT-Benchmark, TPCx-IoT, TSBS); RUBiS fora de escopo nesta rodada",
+  "environment": {
+    "cassandra_image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+    "cassandra_release_version": "4.1.12",
+    "topology": "single node, RF=1, SimpleStrategy",
+    "dedicated_container": true,
+    "container_cpuset": "0-3",
+    "container_memory_limit": "6g",
+    "max_heap_size": "2G",
+    "heap_newsize": "400M",
+    "client_cpu_affinity": [8, 9, 10, 11],
+    "python_driver": "cassandra-driver 3.30.1",
+    "preflight_must_record": ["ReleaseVersion", "image digest", "driver version", "python version", "host CPU/RAM", "other running containers", "host loadavg"]
+  },
+  "deployments": {
+    "measure_full_hbench": true,
+    "measure_benchmark_baselines": true,
+    "verification_mode_if_admissible_space_at_most": 12,
+    "keyspace_per_deployment": true,
+    "create_only": true
+  },
+  "repetitions": {
+    "repetitions": 5,
+    "cold_restart_between_repetitions": true,
+    "warmup_per_query_variant_per_repetition": 10,
+    "timed_rounds_per_query_variant_per_repetition": 60,
+    "order": "single continuous window per repetition; each round visits every query (seeded shuffle) and, inside each query, every variant in a seeded random permutation reversed on even rounds (counterbalanced)",
+    "interrupted_window_policy": "a repetition whose window is interrupted or violates the isolation guard is discarded entirely and rerun with a new seed (max 2 reruns); the discarded raw data is kept under discarded/"
+  },
+  "metrics": {
+    "reported": ["mean", "p50", "p95", "p99"],
+    "percentile_method": "nearest rank",
+    "decision_metric": "mean end-to-end client latency of the uniform query mix (unweighted mean of per-class means)",
+    "decision_metric_rationale": "p95 of tens of samples is unstable for 1-5 ms queries (IoT Fase 4); the mean is additive over a mix and is the RUBiS V9 metric",
+    "secondary_metric": "mean of per-class p95 (comparability with previous campaigns)"
+  },
+  "statistics": {
+    "ci": "95% percentile bootstrap on raw latencies, resampling within each (query, repetition) stratum",
+    "bootstrap_resamples": 2000,
+    "paired_contrasts": "ratio of mix means between two variants, paired bootstrap that resamples round indices shared by both variants",
+    "noise_floor": "A/A pairs (deployments that execute byte-identical work on different keyspaces); noise floor = max over A/A pairs of the upper 95% CI bound of |ln ratio| of the decision metric",
+    "tie_rule": "two variants are tied when |ln ratio| < noise floor or the paired CI contains 1",
+    "bootstrap_seed": 20261117
+  },
+  "correctness": {
+    "oracle": "layout-independent logical evaluator computed from source rows in memory",
+    "check_every_timed_response": true,
+    "check_outside_timer": true,
+    "precheck_all_routes_before_each_repetition": true
+  },
+  "physical_state": {
+    "flush_gate": "nodetool flush per measured keyspace after loading; every table SSTable count >= 1 and memtable cell count = 0 before every repetition",
+    "isolation_guard": "sample system_views.sstable_tasks every 15 s during the window (0 active compactions required) and compare system.compaction_history before/after (0 new entries for measured keyspaces)",
+    "storage": "nodetool tablestats 'Space used (live)' per table after flush and compaction settle; summed per deployment",
+    "write_metric": "sequential loader wall time and physical write count per deployment (same loader for all variants)"
+  },
+  "method_evaluation": {
+    "reference_space": "all admissible deployments measured in verification mode",
+    "indicators": ["Top-1 (selector rank-1 is the measured best, or tied with it)", "Top-3 (measured best within the first 3 of HBench)", "near-best 5% (HBench contains a deployment within 5% of the measured best)", "regret = best measured in HBench / best measured overall - 1", "Pareto retention = fraction of the measured Pareto front (read mean, storage bytes, write time) present in HBench", "Kendall tau between selector score and measured decision metric"]
+  },
+  "ablations": {
+    "rule_ablation": "neutralize each activation rule TS0..TS8 and each modifier M1..M5, regenerate candidates and rerun the frozen Stage 8 code",
+    "criteria_ablation": ["no diversity safeguard", "no Pareto (top-k by weighted score)", "no plan-awareness (previous revision)", "random-k baseline (expected regret)"],
+    "evaluation": "measured regret / Top-k of each ablated HBench using verification-mode measurements (no new timing)"
+  },
+  "acceptance": {
+    "gates_recomputed_from_raw": true,
+    "negative_tests": true
+  },
+  "firewall": {
+    "selection_uses_measured_results": false,
+    "design_phase_frozen_by_sha256_before_measurement": true
+  }
+}

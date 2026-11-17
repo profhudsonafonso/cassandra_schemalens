@@ -1,0 +1,6 @@
+\begin{enumerate}
+\item \textbf{Comparabilidade.} O IoT-Benchmark passa a ter fase de medição idêntica, em protocolo, à que será aplicada ao TPCx-IoT e ao TSBS: mesma imagem, mesmas métricas, mesma estatística, mesmo controle físico e mesmos indicadores de preservação. A afirmação ``esquema A melhor que B'' passa a ter o mesmo critério (média do mix, IC bootstrap, piso A/A).
+\item \textbf{Conclusões anteriores confirmadas:} TS2-U é a melhor escolha para esta carga; o bucket diário custa uma chamada por dia; o seletor ordena corretamente; e o vencedor coincide com a referência (mesmo DDL).
+\item \textbf{Conclusões novas:} (i) o HBench preserva o melhor e toda a fronteira de Pareto medida (antes ``espaço pequeno demais''); (ii) a decisão depende das regras TS2 e M1, e a ablação quantifica isso (regret de 31,6\% sem elas); (iii) TS0 e TS2-D também perdem em armazenamento e em escrita, então o Pareto de três objetivos tem um único ponto; (iv) diferenças por classe abaixo de $\approx$17\% estão dentro do ruído A/A.
+\item \textbf{Para o artigo.} Escrever ``redução explicável que preservou o melhor deployment e a fronteira de Pareto medida (6 $\rightarrow$ 3, regret 0), sob o protocolo comum v1''. Não afirmar ganho de desempenho sobre a referência.
+\end{enumerate}

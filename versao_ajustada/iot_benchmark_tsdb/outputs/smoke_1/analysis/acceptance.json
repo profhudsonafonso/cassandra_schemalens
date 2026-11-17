@@ -1,0 +1,33 @@
+{
+  "ACCEPTED": false,
+  "gates": {
+    "G10_contrabalanco": false,
+    "G1_completude": false,
+    "G2_oraculo_100pct": false,
+    "G3_isolamento": false,
+    "G4_gate_flush": true,
+    "G5_ambiente": true,
+    "G6_congelamento": true,
+    "G7_stage7_vs_stage9": true,
+    "G8_piso_de_ruido": true,
+    "G9_firewall": false
+  },
+  "info": {
+    "discarded_windows": 0,
+    "position_max_min_ratio": 5.333333333333333,
+    "raw_rows": 576
+  },
+  "negative_tests": {
+    "N1_dado_adulterado_detectado": true,
+    "N2_codigo_alterado_detectado": true,
+    "N3_oraculo_detecta_erro": false,
+    "N3b_oraculo_detecta_linha_faltante": true,
+    "N4_keyspace_inseguro_recusado": true,
+    "N5_amostra_faltante_detectada": true,
+    "N6_compactacao_invalida_janela": true,
+    "N7_memtable_nao_vazia_reprova": true,
+    "N7b_sem_sstable_reprova": true,
+    "N8_preregistro_nao_sobrescreve": true,
+    "N9_container_existente_recusado": true
+  }
+}

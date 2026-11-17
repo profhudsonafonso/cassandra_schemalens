@@ -1,0 +1,33 @@
+plan_id,query_id,candidate_id,family,route_status,guard
+Q1__ts0_iot_raw,Q1,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q1__ts2_iot_wide,Q1,ts2_iot_wide,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+Q1__ts2_iot_wide_unbucketed,Q1,ts2_iot_wide_unbucketed,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+Q2__ts0_iot_raw,Q2,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q2__ts1_iot_bucket,Q2,ts1_iot_bucket,TS1,DIRECT,enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days
+Q2__ts2_iot_wide,Q2,ts2_iot_wide,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+Q2__ts2_iot_wide_unbucketed,Q2,ts2_iot_wide_unbucketed,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+Q3__ts0_iot_raw,Q3,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q3__ts1_iot_bucket,Q3,ts1_iot_bucket,TS1,DIRECT,enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days
+Q3__ts2_iot_wide,Q3,ts2_iot_wide,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+Q3__ts2_iot_wide_unbucketed,Q3,ts2_iot_wide_unbucketed,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+Q4__ts0_iot_raw,Q4,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q5__ts0_iot_raw,Q5,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q6__ts0_iot_raw,Q6,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q7__ts0_iot_raw,Q7,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q7__ts5_iot_rollup,Q7,ts5_iot_rollup,TS5,INELIGIBLE,window boundaries unaligned: TS5 rollup cannot answer exactly without raw partial-window reads; only aligned groups; full correct mutation plan not implemented
+Q8__ts0_iot_raw,Q8,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q8__ts4_iot_latest,Q8,ts4_iot_latest,TS4,CONDITIONAL,"Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; native Q8 is global last/last_by, with missing-value and update semantics requiring verification"
+Q9__ts0_iot_raw,Q9,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q9__ts1_iot_bucket,Q9,ts1_iot_bucket,TS1,DIRECT,enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days
+Q9__ts2_iot_wide,Q9,ts2_iot_wide,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+Q9__ts2_iot_wide_unbucketed,Q9,ts2_iot_wide_unbucketed,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+Q10__ts0_iot_raw,Q10,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q10__ts1_iot_bucket,Q10,ts1_iot_bucket,TS1,DIRECT,enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days
+Q10__ts2_iot_wide,Q10,ts2_iot_wide,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+Q10__ts2_iot_wide_unbucketed,Q10,ts2_iot_wide_unbucketed,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+Q11__ts0_iot_raw,Q11,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q11__ts5_iot_rollup,Q11,ts5_iot_rollup,TS5,INELIGIBLE,window boundaries unaligned: TS5 rollup cannot answer exactly without raw partial-window reads; only aligned groups; full correct mutation plan not implemented
+Q12__ts0_iot_raw,Q12,ts0_iot_raw,TS0,DIRECT,"read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+Q12__ts1_iot_bucket,Q12,ts1_iot_bucket,TS1,DIRECT,enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days
+Q12__ts2_iot_wide,Q12,ts2_iot_wide,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+Q12__ts2_iot_wide_unbucketed,Q12,ts2_iot_wide_unbucketed,TS2,DIRECT,"enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"

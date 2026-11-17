@@ -1,0 +1,44 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "family": "TS0",
+    "estimated_rows": 54000,
+    "estimated_bytes_proxy": 3456000,
+    "estimate_kind": "uncompressed logical byte proxy, NOT Cassandra disk storage"
+  },
+  {
+    "candidate_id": "ts1_iot_bucket",
+    "family": "TS1",
+    "estimated_rows": 54000,
+    "estimated_bytes_proxy": 3888000,
+    "estimate_kind": "uncompressed logical byte proxy, NOT Cassandra disk storage"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "family": "TS2",
+    "estimated_rows": 27000,
+    "estimated_bytes_proxy": 2376000,
+    "estimate_kind": "uncompressed logical byte proxy, NOT Cassandra disk storage"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "family": "TS2",
+    "estimated_rows": 27000,
+    "estimated_bytes_proxy": 2376000,
+    "estimate_kind": "uncompressed logical byte proxy, NOT Cassandra disk storage"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "family": "TS4",
+    "estimated_rows": 18,
+    "estimated_bytes_proxy": 1152,
+    "estimate_kind": "uncompressed logical byte proxy, NOT Cassandra disk storage"
+  },
+  {
+    "candidate_id": "ts5_iot_rollup",
+    "family": "TS5",
+    "estimated_rows": 54000,
+    "estimated_bytes_proxy": 4752000,
+    "estimate_kind": "uncompressed logical byte proxy, NOT Cassandra disk storage"
+  }
+]

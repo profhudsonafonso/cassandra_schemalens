@@ -1,0 +1,60 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "family": "TS0",
+    "table": "ts0_iot_raw",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts0_iot_raw (device_id text, sensor_name text, timestamp_ms bigint, value_double double, PRIMARY KEY ((device_id,sensor_name),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "guard": "always baseline; unbucketed growth risk",
+    "partition_variant": "unchanged",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED"
+  },
+  {
+    "candidate_id": "ts1_iot_bucket",
+    "family": "TS1",
+    "table": "ts1_iot_bucket",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts1_iot_bucket (device_id text, sensor_name text, bucket_day date, timestamp_ms bigint, value_double double, PRIMARY KEY ((device_id,sensor_name,bucket_day),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "guard": "enumerate all UTC days including boundary days",
+    "partition_variant": "unchanged",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "family": "TS2",
+    "table": "ts2_iot_wide",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts2_iot_wide (device_id text, bucket_day date, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id,bucket_day),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "guard": "M1 evidenced in workload; enumerate all UTC day partitions in time range",
+    "partition_variant": "daily",
+    "exclusive_group": "TS2_partition_granularity",
+    "max_rows_per_device_guard": null,
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "family": "TS2",
+    "table": "ts2_iot_wide_unbucketed",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts2_iot_wide_unbucketed (device_id text, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "guard": "one device partition with bounded estimated rows; unbucketed partition may become too large under growth",
+    "partition_variant": "unbucketed",
+    "exclusive_group": "TS2_partition_granularity",
+    "max_rows_per_device_guard": 100000,
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "family": "TS4",
+    "table": "ts4_iot_latest",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts4_iot_latest (device_id text, sensor_name text, latest_timestamp_ms bigint, value_double double, PRIMARY KEY ((device_id,sensor_name)));",
+    "guard": "native Q8 is global last/last_by, with missing-value and update semantics requiring verification",
+    "partition_variant": "unchanged",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED"
+  },
+  {
+    "candidate_id": "ts5_iot_rollup",
+    "family": "TS5",
+    "table": "ts5_iot_rollup",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts5_iot_rollup (device_id text, sensor_name text, bucket_day date, window_start_ms bigint, value_sum double, sample_count bigint, minimum double, maximum double, PRIMARY KEY ((device_id,sensor_name,bucket_day),window_start_ms)) WITH CLUSTERING ORDER BY (window_start_ms DESC);",
+    "guard": "only aligned groups; full correct mutation plan not implemented",
+    "partition_variant": "unchanged",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED"
+  }
+]

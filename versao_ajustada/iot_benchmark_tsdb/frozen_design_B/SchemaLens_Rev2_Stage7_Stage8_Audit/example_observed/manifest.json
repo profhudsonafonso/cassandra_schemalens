@@ -1,0 +1,60 @@
+{
+  "baseline_original_and_optimized_share_same_table": true,
+  "correctness_checked_before_timing": true,
+  "dataset_sha256": "0fdc042b576c031ff156421d115dedabf5fb3f94d8c25605692821ddd40f6c77",
+  "frozen_HBench_sha256": "15eadb0f1e19bde6e721fa3829c9686c7a1ea063a33751597c9b31c0744c202d",
+  "frozen_manifest_sha256": "c684adc46af5d31bb922ae95f9ff441996a96ac4c85e2903ad0e78e8f98672d4",
+  "is_official_iot_benchmark_result": false,
+  "keyspaces": {
+    "BASELINE_ORIGINAL": "sl_conf_r2_15eadb0f_reference",
+    "BASELINE_Q8_OPTIMIZED": "sl_conf_r2_15eadb0f_reference",
+    "R2H_6355f4e57096": "sl_conf_r2_15eadb0f_r2h_6355f4e57096",
+    "R2H_bdc993acdde3": "sl_conf_r2_15eadb0f_r2h_bdc993acdde3",
+    "R2H_e72ef4d8529d": "sl_conf_r2_15eadb0f_r2h_e72ef4d8529d"
+  },
+  "limitations": [
+    "One Java object sample per query class, not native IoTDB SQL replay",
+    "Dataset generated independently using original Java generateDataMode",
+    "Only 2 aligned DOUBLE sensors unless upstream profile is further extended",
+    "No workload operation-frequency replay",
+    "TS4 only snapshot maintenance",
+    "Per-query p95 mean is not the global workload p95"
+  ],
+  "measurement_seed": 80421,
+  "new_generator_capture_sha256": "54e5b440c721c8572cecbab7786613aee2759a42eb6a530fa548fe0d84dc5970",
+  "oracle_result_cardinality_per_query": {
+    "Q1": 0,
+    "Q10": 290,
+    "Q11": 50,
+    "Q12": 56,
+    "Q2": 288,
+    "Q3": 288,
+    "Q4": 2,
+    "Q5": 2,
+    "Q6": 2,
+    "Q7": 50,
+    "Q8": 2,
+    "Q9": 290
+  },
+  "parent_v3_sha256": "ed4e6edbdbfea90c2d0d817f10eb13da2f88b33fb976749e464a5001f9436304",
+  "queries_sha256": "c9edbb906f97b30563f0def542a5828c7fd77b9181b28d7f4bc083a94d215799",
+  "query_classes": 12,
+  "records": 2400,
+  "revision": "V4_REV2_FROZEN_BEFORE_MEASUREMENT",
+  "rounds": 40,
+  "runtime_code_sha256": {
+    "benchmark": "2fe2dfd64c19378eef8c21b3afc87e16689f65b7e1e79b6ee14fbbc7b4a69c24",
+    "runtime_helpers": "e6e35f1f062f8c2ed6a90a3203329dde98cd71f46f1a68c2beec380885c30384"
+  },
+  "selected_ids": [
+    "R2H_e72ef4d8529d",
+    "R2H_bdc993acdde3",
+    "R2H_6355f4e57096"
+  ],
+  "status": "CONFIRMATORY_CASSANDRA_COMPLETE",
+  "time_units": "client end-to-end milliseconds; includes driver+Python processing",
+  "warmup": 5,
+  "zero_cardinality_classes": [
+    "Q1"
+  ]
+}

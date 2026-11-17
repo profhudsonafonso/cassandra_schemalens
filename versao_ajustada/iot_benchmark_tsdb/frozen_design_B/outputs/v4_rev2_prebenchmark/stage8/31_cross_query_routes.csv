@@ -1,0 +1,37 @@
+deployment_id,query_id,candidate_id,family,plan_id,route_status,reason
+R2H_e72ef4d8529d,Q1,ts2_iot_wide_unbucketed,TS2,Q1__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q2,ts2_iot_wide_unbucketed,TS2,Q2__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q3,ts2_iot_wide_unbucketed,TS2,Q3__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q4,ts2_iot_wide_unbucketed,TS2,Q4__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q5,ts2_iot_wide_unbucketed,TS2,Q5__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q6,ts2_iot_wide_unbucketed,TS2,Q6__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q7,ts2_iot_wide_unbucketed,TS2,Q7__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q8,ts2_iot_wide_unbucketed,TS2,Q8__ts2_iot_wide_unbucketed,DIRECT,descending sparse-null-aware latest scan
+R2H_e72ef4d8529d,Q9,ts2_iot_wide_unbucketed,TS2,Q9__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q10,ts2_iot_wide_unbucketed,TS2,Q10__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q11,ts2_iot_wide_unbucketed,TS2,Q11__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_e72ef4d8529d,Q12,ts2_iot_wide_unbucketed,TS2,Q12__ts2_iot_wide_unbucketed,DIRECT,canonical point reconstruction
+R2H_6355f4e57096,Q1,ts0_iot_raw,TS0,Q1__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q2,ts0_iot_raw,TS0,Q2__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q3,ts0_iot_raw,TS0,Q3__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q4,ts0_iot_raw,TS0,Q4__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q5,ts0_iot_raw,TS0,Q5__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q6,ts0_iot_raw,TS0,Q6__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q7,ts0_iot_raw,TS0,Q7__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q8,ts0_iot_raw,TS0,Q8__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q9,ts0_iot_raw,TS0,Q9__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q10,ts0_iot_raw,TS0,Q10__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q11,ts0_iot_raw,TS0,Q11__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_6355f4e57096,Q12,ts0_iot_raw,TS0,Q12__ts0_iot_raw,DIRECT,direct metric-point lookup
+R2H_bdc993acdde3,Q1,ts2_iot_wide,TS2,Q1__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q2,ts2_iot_wide,TS2,Q2__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q3,ts2_iot_wide,TS2,Q3__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q4,ts2_iot_wide,TS2,Q4__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q5,ts2_iot_wide,TS2,Q5__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q6,ts2_iot_wide,TS2,Q6__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q7,ts2_iot_wide,TS2,Q7__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q8,ts2_iot_wide,TS2,Q8__ts2_iot_wide,DIRECT,descending sparse-null-aware latest scan
+R2H_bdc993acdde3,Q9,ts2_iot_wide,TS2,Q9__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q10,ts2_iot_wide,TS2,Q10__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q11,ts2_iot_wide,TS2,Q11__ts2_iot_wide,DIRECT,canonical point reconstruction
+R2H_bdc993acdde3,Q12,ts2_iot_wide,TS2,Q12__ts2_iot_wide,DIRECT,canonical point reconstruction

@@ -1,0 +1,34 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "canonical_candidate": true,
+    "guard": "always baseline; unbucketed growth risk",
+    "incremental_maintenance": "BATCH_SNAPSHOT_ONLY",
+    "physical_writes_proxy": 54000,
+    "source_of_truth": "self"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "canonical_candidate": true,
+    "guard": "one device partition with bounded estimated rows; unbucketed partition may become too large under growth",
+    "incremental_maintenance": "BATCH_SNAPSHOT_ONLY",
+    "physical_writes_proxy": 27000,
+    "source_of_truth": "self"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "canonical_candidate": true,
+    "guard": "M1 evidenced in workload; enumerate all UTC day partitions in time range",
+    "incremental_maintenance": "BATCH_SNAPSHOT_ONLY",
+    "physical_writes_proxy": 27000,
+    "source_of_truth": "self"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "canonical_candidate": false,
+    "guard": "native Q8 is global last/last_by, with missing-value and update semantics requiring verification",
+    "incremental_maintenance": "UNVALIDATED_FOR_CONCURRENT_UPDATES",
+    "physical_writes_proxy": 18,
+    "source_of_truth": "chosen canonical source"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "estimated_partition_count": 18,
+    "hard_guard_pass": true,
+    "max_partition_bytes_proxy": 144000,
+    "max_partition_rows_proxy": 3000,
+    "partition_hard_limit_bytes": 134217728,
+    "partition_soft_limit_bytes": 33554432,
+    "row_size_bytes_proxy": 48
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "estimated_partition_count": 9,
+    "hard_guard_pass": true,
+    "max_partition_bytes_proxy": 120000,
+    "max_partition_rows_proxy": 3000,
+    "partition_hard_limit_bytes": 134217728,
+    "partition_soft_limit_bytes": 33554432,
+    "row_size_bytes_proxy": 40
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "estimated_partition_count": 189,
+    "hard_guard_pass": true,
+    "max_partition_bytes_proxy": 5760,
+    "max_partition_rows_proxy": 144,
+    "partition_hard_limit_bytes": 134217728,
+    "partition_soft_limit_bytes": 33554432,
+    "row_size_bytes_proxy": 40
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "estimated_partition_count": 18,
+    "hard_guard_pass": true,
+    "max_partition_bytes_proxy": 48,
+    "max_partition_rows_proxy": 1,
+    "partition_hard_limit_bytes": 134217728,
+    "partition_soft_limit_bytes": 33554432,
+    "row_size_bytes_proxy": 48
+  }
+]

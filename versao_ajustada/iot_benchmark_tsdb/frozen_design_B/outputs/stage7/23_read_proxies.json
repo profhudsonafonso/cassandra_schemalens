@@ -1,0 +1,302 @@
+[
+  {
+    "plan_id": "Q1__ts0_iot_raw",
+    "query_id": "Q1",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 1.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q1__ts2_iot_wide",
+    "query_id": "Q1",
+    "candidate_id": "ts2_iot_wide",
+    "request_count_proxy": 21,
+    "logical_rows_proxy": 0.62,
+    "route_status": "DIRECT",
+    "partition_variant": "daily",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q1__ts2_iot_wide_unbucketed",
+    "query_id": "Q1",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "request_count_proxy": 1,
+    "logical_rows_proxy": 0.62,
+    "route_status": "DIRECT",
+    "partition_variant": "unbucketed",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q2__ts0_iot_raw",
+    "query_id": "Q2",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2016.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q2__ts1_iot_bucket",
+    "query_id": "Q2",
+    "candidate_id": "ts1_iot_bucket",
+    "request_count_proxy": 16,
+    "logical_rows_proxy": 1713.6,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q2__ts2_iot_wide",
+    "query_id": "Q2",
+    "candidate_id": "ts2_iot_wide",
+    "request_count_proxy": 8,
+    "logical_rows_proxy": 1249.92,
+    "route_status": "DIRECT",
+    "partition_variant": "daily",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q2__ts2_iot_wide_unbucketed",
+    "query_id": "Q2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "request_count_proxy": 1,
+    "logical_rows_proxy": 1249.92,
+    "route_status": "DIRECT",
+    "partition_variant": "unbucketed",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q3__ts0_iot_raw",
+    "query_id": "Q3",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2016.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q3__ts1_iot_bucket",
+    "query_id": "Q3",
+    "candidate_id": "ts1_iot_bucket",
+    "request_count_proxy": 16,
+    "logical_rows_proxy": 1713.6,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q3__ts2_iot_wide",
+    "query_id": "Q3",
+    "candidate_id": "ts2_iot_wide",
+    "request_count_proxy": 8,
+    "logical_rows_proxy": 1249.92,
+    "route_status": "DIRECT",
+    "partition_variant": "daily",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q3__ts2_iot_wide_unbucketed",
+    "query_id": "Q3",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "request_count_proxy": 1,
+    "logical_rows_proxy": 1249.92,
+    "route_status": "DIRECT",
+    "partition_variant": "unbucketed",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q4__ts0_iot_raw",
+    "query_id": "Q4",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2016.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q5__ts0_iot_raw",
+    "query_id": "Q5",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 54000.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q6__ts0_iot_raw",
+    "query_id": "Q6",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2016.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q7__ts0_iot_raw",
+    "query_id": "Q7",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2016.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q8__ts0_iot_raw",
+    "query_id": "Q8",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 54000.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q8__ts4_iot_latest",
+    "query_id": "Q8",
+    "candidate_id": "ts4_iot_latest",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 6480.0,
+    "route_status": "CONDITIONAL",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q9__ts0_iot_raw",
+    "query_id": "Q9",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2018.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q9__ts1_iot_bucket",
+    "query_id": "Q9",
+    "candidate_id": "ts1_iot_bucket",
+    "request_count_proxy": 16,
+    "logical_rows_proxy": 1715.3,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q9__ts2_iot_wide",
+    "query_id": "Q9",
+    "candidate_id": "ts2_iot_wide",
+    "request_count_proxy": 8,
+    "logical_rows_proxy": 1251.16,
+    "route_status": "DIRECT",
+    "partition_variant": "daily",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q9__ts2_iot_wide_unbucketed",
+    "query_id": "Q9",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "request_count_proxy": 1,
+    "logical_rows_proxy": 1251.16,
+    "route_status": "DIRECT",
+    "partition_variant": "unbucketed",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q10__ts0_iot_raw",
+    "query_id": "Q10",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2018.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q10__ts1_iot_bucket",
+    "query_id": "Q10",
+    "candidate_id": "ts1_iot_bucket",
+    "request_count_proxy": 16,
+    "logical_rows_proxy": 1715.3,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q10__ts2_iot_wide",
+    "query_id": "Q10",
+    "candidate_id": "ts2_iot_wide",
+    "request_count_proxy": 8,
+    "logical_rows_proxy": 1251.16,
+    "route_status": "DIRECT",
+    "partition_variant": "daily",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q10__ts2_iot_wide_unbucketed",
+    "query_id": "Q10",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "request_count_proxy": 1,
+    "logical_rows_proxy": 1251.16,
+    "route_status": "DIRECT",
+    "partition_variant": "unbucketed",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q11__ts0_iot_raw",
+    "query_id": "Q11",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 2,
+    "logical_rows_proxy": 2018.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q12__ts0_iot_raw",
+    "query_id": "Q12",
+    "candidate_id": "ts0_iot_raw",
+    "request_count_proxy": 8,
+    "logical_rows_proxy": 4036.0,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q12__ts1_iot_bucket",
+    "query_id": "Q12",
+    "candidate_id": "ts1_iot_bucket",
+    "request_count_proxy": 64,
+    "logical_rows_proxy": 3430.6,
+    "route_status": "DIRECT",
+    "partition_variant": "unchanged",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q12__ts2_iot_wide",
+    "query_id": "Q12",
+    "candidate_id": "ts2_iot_wide",
+    "request_count_proxy": 32,
+    "logical_rows_proxy": 2502.32,
+    "route_status": "DIRECT",
+    "partition_variant": "daily",
+    "estimate_kind": "policy-driven, not observed latency"
+  },
+  {
+    "plan_id": "Q12__ts2_iot_wide_unbucketed",
+    "query_id": "Q12",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "request_count_proxy": 4,
+    "logical_rows_proxy": 2502.32,
+    "route_status": "DIRECT",
+    "partition_variant": "unbucketed",
+    "estimate_kind": "policy-driven, not observed latency"
+  }
+]

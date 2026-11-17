@@ -1,0 +1,5 @@
+variant,keyspace,physical_write_operations,load_seconds,metric_cells
+BASELINE_ORIGINAL,sl_conf_r2_15eadb0f_reference,9000,2.69830935,18000
+R2H_e72ef4d8529d,sl_conf_r2_15eadb0f_r2h_e72ef4d8529d,9000,2.83491677,18000
+R2H_bdc993acdde3,sl_conf_r2_15eadb0f_r2h_bdc993acdde3,9000,3.6534468,18000
+R2H_6355f4e57096,sl_conf_r2_15eadb0f_r2h_6355f4e57096,18000,5.41002715,18000

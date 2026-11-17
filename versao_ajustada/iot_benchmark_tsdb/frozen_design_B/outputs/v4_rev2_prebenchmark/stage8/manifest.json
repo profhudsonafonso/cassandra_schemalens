@@ -1,0 +1,98 @@
+{
+  "artifact_sha256": {
+    "stage4/10_v4_candidate_specs.json": "4cf763022c4c7b93dfe69aadd70aeba875db008d20293e5c4adac9e2e49aa91e",
+    "stage4/11_not_instantiated.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "stage5/15_cross_query_coverage.json": "fd4b075e968499d087dfad30e4ad308d0ae6230518bad911223871092d4e18b5",
+    "stage5/16_cross_query_coverage.csv": "aece00c3dd555fdcb79344a4f710ddff89e7e5c6efb052961387778c286aabae",
+    "stage6/18_v4_write_plans.json": "044298a658276e11806479945aeb12203ab3d8ec77d5ddb52c3a8cfef654f21e",
+    "stage7/21_storage_proxies.json": "6cc0f8ef2dad97380c300ed8cd77a23901d5210f58680d3efc71c72d444ac47e",
+    "stage7/22_write_proxies.json": "044298a658276e11806479945aeb12203ab3d8ec77d5ddb52c3a8cfef654f21e",
+    "stage7/23_read_proxies_rev2.json": "af84bdd1de6564271f833f8a4c53b06965044e52002b8b2940ae95e5120b12c0",
+    "stage7/24_partition_proxies_rev2.json": "800bf0969270257bbd63fba005f54fcb1da6a9edfc128423e54f2f693611672b",
+    "stage7/25_rev2_cost_policy.json": "4cd978922d4734cb3ab00a2bc59b204884670787bfe88709e04c817c5c3b4a37",
+    "stage8/28_hbench_v4_rev2_frozen.json": "46d9a18c3490bddb6b0da770ec2a7e8c9134e42cdec859eda3453bc4bacd3708",
+    "stage8/29_all_compatible_covers.json": "1199b7586bb04d9cd0ab412941c80e0532c4989ab71e5b19fcb1cd33fad47b44",
+    "stage8/30_hbench_v4_rev2_summary.csv": "5920e33ada6e48fd68790c94c513837bee95b50726d8b5c040a933d012a1b5a4",
+    "stage8/31_cross_query_routes.csv": "5fec40255a984867876b7aae17133ed017e7c4128ac4ebe8be3d3b069b526aa7",
+    "stage8/32_selection_explanations_rev2.json": "032afc293110a1a8ce095aeed19dfc5dbf5d68d3ce6cd7bc0fb171132e395ac9"
+  },
+  "candidate_count": 4,
+  "code_sha256": {
+    "cost": "f93285132ffa6915b15096866806fc28d96d5c5e3ceb20fea9e6a8795847ee9f",
+    "prebenchmark": "8d4e96376f08ee37fc62c32d267e689a1054bffeb4c99b8fe2737096ec81ce72",
+    "v4_auto_selector": "79c8d33fd191b1d465274eaef0839d12895ef7463d8688e7274e78463cf71db7"
+  },
+  "cover_count": 6,
+  "dataset_query_hashes": {
+    "data": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+    "queries": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5"
+  },
+  "independent_from_original_v3": true,
+  "inputs_sha256": {
+    "activation": "04e73e0e342353ed787b6b74ee3e55a6c5c8cfc9514ea92e14d61f240f874eaa",
+    "candidate_specs": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "data": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+    "policy": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+    "queries": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5"
+  },
+  "java_capture": {
+    "file": "/home/hudson/Documents/schemalens_cassandra/schemalens_rev3_new_java_B_20261105_193618/java_work/runs/v3_20261105T223620Z_pid3665162/native_queries_q12fixed_rev3_B_recovery.jsonl",
+    "sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0"
+  },
+  "limitation": [
+    "A1 Java query-object samples, not official SQL or operation-frequency sequence",
+    "TS4 maintenance concurrency not tested",
+    "Proxy bytes are analytical, not SSTable bytes",
+    "Rev2 coefficients fixed by engineering hypotheses; not empirically fitted"
+  ],
+  "metric_cells": 54000,
+  "mode": "INDEPENDENT_HOLDOUT_FROZEN_BEFORE_MEASUREMENT",
+  "native_sample_count": 12,
+  "no_Cassandra_used": true,
+  "no_Stage9_results_used": true,
+  "no_measured_latency_used": true,
+  "official_sql_or_frequency_replay": false,
+  "original_historical_v3_hbench_hash": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+  "parent_v3_files_sha256": {
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+    "iot_pipeline/offline.py": "3dd61965dfb1087eaeaf296be92e325feffbe38c5a3b4bc218d8eb379361a88e",
+    "iot_pipeline/stage4.py": "3c4a32d1b468887ba05b81c66c84d1ac1d710351f9183b51feda517c71c0dde4",
+    "iot_pipeline/stage5.py": "9f7bb5aa7d26472d1933d431621039482a87c940982caad8ddd274ce11a1e9e7",
+    "iot_pipeline/stage6.py": "06f3778c7b286c8586c47d925fe712ad2cb949e59ad47147fba04fb3ee3d1cfc",
+    "iot_pipeline/stage7.py": "81a5d1088372b07ec336ef2217a21cfe5135a6dc667d221361af08a229dc7d4a",
+    "iot_pipeline/stage8.py": "0d1e8ec6c56412429f9f320121743c83714e3d5b602ab6318bdac0df20a81b3d",
+    "iot_pipeline/stage9.py": "615390a60d3fc683b67d92359652781cf857b845b46ad40f57dcbefa251d01f3",
+    "java_bridge/cn/edu/tsinghua/iot/benchmark/tools/SchemaLensQueryCapture.java": "d992ac423d454e6d3bf1e1351fbe11fa0571618a52569e50de987113b591fbb2",
+    "outputs/stage4/10_candidate_specs.json": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "outputs/stage5/15_query_plans.json": "59d8ce21bb1c6dfb421d8d4a6fc4cf7dc24287b4aa26f5f8887e1fec2ceb5c14",
+    "outputs/stage6/18_write_plans.json": "1a639ffc15121e8800f47da14ee62c0a3bbf2370b912e23d2f61f8a4e1794f4f",
+    "outputs/stage7/21_storage_proxies.json": "140c4126695cc069dbc4f8b01cde0c65359b457268c83fc9f734cd79ead180bb",
+    "outputs/stage7/22_write_proxies.json": "1e823a17153b373f87acfc4022fc0087792799dd2a805494886fbb49438bb8c8",
+    "outputs/stage7/23_read_proxies.json": "fe790970c0349d62b1f30f8f5a511135fb76933b5573f3e38bdb274ba13d092e",
+    "outputs/stage8/28_hbench_frozen.json": "253a5d86d963b0ac5a723b8a06e59df8c861ba3da5ee9e95ba9bc1935b341478",
+    "outputs/stage8/32_frozen_manifest.json": "51d4a684aaaecbc006daefc477f0cdf22bd0ce53392d184748b94a5db9d0f4db",
+    "phase_a1/core/bridge.py": "8a1ee732451eb55b3c605791ac076028641a09157ad51529b86e56b7c03183a5",
+    "phase_a1/outputs/normalized_double_readings.csv": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+    "phase_a1/outputs/query_instances_pilot.json": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5",
+    "phase_a1/tools/official_query_capture.py": "26cc2e8930ae00a1300d474995e9f4c9e6c66c0e2b43f7ca10d3f93a7ef11bb6",
+    "phase_a1/tools/run_a1.py": "8f4eeb95201d5e98869666bb5b951fe1eb35d5dfa8011634df89c5162f3d2ca4",
+    "phase_a1/vendor/tsdb_base/config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+    "phase_a1/vendor/tsdb_base/config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd"
+  },
+  "parent_v3_hbench_sha256": "253a5d86d963b0ac5a723b8a06e59df8c861ba3da5ee9e95ba9bc1935b341478",
+  "pareto_count": 1,
+  "reference_v3_data_hash": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+  "reference_v3_path_at_freeze": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748",
+  "reference_v3_query_hash": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c",
+  "revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+  "same_dataset_as_V3": false,
+  "selected_count": 3,
+  "selected_ids": [
+    "R2H_e72ef4d8529d",
+    "R2H_6355f4e57096",
+    "R2H_bdc993acdde3"
+  ],
+  "stage": 8,
+  "status": "FROZEN_V4_REV2_PREBENCH",
+  "top_k": 5
+}

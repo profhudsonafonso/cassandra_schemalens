@@ -1,0 +1,115 @@
+{
+  "aggregates": [
+    {
+      "mean_p95_excluding_q5_ms": 2.956497364,
+      "mean_p95_excluding_q8_ms": 3.105541455,
+      "mean_per_query_p95_ms": 3.857697083,
+      "variant": "BASELINE_ORIGINAL"
+    },
+    {
+      "mean_p95_excluding_q5_ms": 1.888467091,
+      "mean_p95_excluding_q8_ms": 2.508642364,
+      "mean_per_query_p95_ms": 2.342030333,
+      "variant": "BASELINE_Q8_OPTIMIZED"
+    },
+    {
+      "mean_p95_excluding_q5_ms": 3.568821,
+      "mean_p95_excluding_q8_ms": 4.110906455,
+      "mean_per_query_p95_ms": 4.515435917,
+      "variant": "R2H_6355f4e57096"
+    },
+    {
+      "mean_p95_excluding_q5_ms": 2.594522455,
+      "mean_p95_excluding_q8_ms": 4.355748182,
+      "mean_per_query_p95_ms": 4.036445083,
+      "variant": "R2H_bdc993acdde3"
+    },
+    {
+      "mean_p95_excluding_q5_ms": 1.897389909,
+      "mean_p95_excluding_q8_ms": 2.869986091,
+      "mean_per_query_p95_ms": 2.67291225,
+      "variant": "R2H_e72ef4d8529d"
+    }
+  ],
+  "checked_hash_files": 0,
+  "cross_query_reuse_selected_routes": null,
+  "deployments": [],
+  "frozen_code_hashes_verified": false,
+  "measured_manifest": {
+    "baseline_original_and_optimized_share_same_table": true,
+    "correctness_checked_before_timing": true,
+    "dataset_sha256": "0fdc042b576c031ff156421d115dedabf5fb3f94d8c25605692821ddd40f6c77",
+    "frozen_HBench_sha256": "15eadb0f1e19bde6e721fa3829c9686c7a1ea063a33751597c9b31c0744c202d",
+    "frozen_manifest_sha256": "c684adc46af5d31bb922ae95f9ff441996a96ac4c85e2903ad0e78e8f98672d4",
+    "is_official_iot_benchmark_result": false,
+    "keyspaces": {
+      "BASELINE_ORIGINAL": "sl_conf_r2_15eadb0f_reference",
+      "BASELINE_Q8_OPTIMIZED": "sl_conf_r2_15eadb0f_reference",
+      "R2H_6355f4e57096": "sl_conf_r2_15eadb0f_r2h_6355f4e57096",
+      "R2H_bdc993acdde3": "sl_conf_r2_15eadb0f_r2h_bdc993acdde3",
+      "R2H_e72ef4d8529d": "sl_conf_r2_15eadb0f_r2h_e72ef4d8529d"
+    },
+    "limitations": [
+      "One Java object sample per query class, not native IoTDB SQL replay",
+      "Dataset generated independently using original Java generateDataMode",
+      "Only 2 aligned DOUBLE sensors unless upstream profile is further extended",
+      "No workload operation-frequency replay",
+      "TS4 only snapshot maintenance",
+      "Per-query p95 mean is not the global workload p95"
+    ],
+    "measurement_seed": 80421,
+    "new_generator_capture_sha256": "54e5b440c721c8572cecbab7786613aee2759a42eb6a530fa548fe0d84dc5970",
+    "oracle_result_cardinality_per_query": {
+      "Q1": 0,
+      "Q10": 290,
+      "Q11": 50,
+      "Q12": 56,
+      "Q2": 288,
+      "Q3": 288,
+      "Q4": 2,
+      "Q5": 2,
+      "Q6": 2,
+      "Q7": 50,
+      "Q8": 2,
+      "Q9": 290
+    },
+    "parent_v3_sha256": "ed4e6edbdbfea90c2d0d817f10eb13da2f88b33fb976749e464a5001f9436304",
+    "queries_sha256": "c9edbb906f97b30563f0def542a5828c7fd77b9181b28d7f4bc083a94d215799",
+    "query_classes": 12,
+    "records": 2400,
+    "revision": "V4_REV2_FROZEN_BEFORE_MEASUREMENT",
+    "rounds": 40,
+    "runtime_code_sha256": {
+      "benchmark": "2fe2dfd64c19378eef8c21b3afc87e16689f65b7e1e79b6ee14fbbc7b4a69c24",
+      "runtime_helpers": "e6e35f1f062f8c2ed6a90a3203329dde98cd71f46f1a68c2beec380885c30384"
+    },
+    "selected_ids": [
+      "R2H_e72ef4d8529d",
+      "R2H_bdc993acdde3",
+      "R2H_6355f4e57096"
+    ],
+    "status": "CONFIRMATORY_CASSANDRA_COMPLETE",
+    "time_units": "client end-to-end milliseconds; includes driver+Python processing",
+    "warmup": 5,
+    "zero_cardinality_classes": [
+      "Q1"
+    ]
+  },
+  "observed": {
+    "orders": 480,
+    "query_summaries": 60,
+    "raw_rows": 2400
+  },
+  "plan_status_counts": {},
+  "results_sha256": {
+    "aggregated.csv": "d0b8100484e75ba0c39ddc26cef6af7196f59106fefeb7ea076bf3543f80f95f",
+    "load.csv": "a3e001d25e5fb4ff0fd7e3209c58a5d7b2be683c7706d144cf5d3e522e033c8a",
+    "manifest.json": "f0b2d6c87e8d26b5655cd4bcd763cadc47dce81962a5caae43030878401e8fd5",
+    "orders.csv": "09797785f89d7fb128c2337939df1e8ae9718bd03180eae1e04bb307031c909d",
+    "query_p95.csv": "6699f0affbeafba193533e7c5d3ff6a69daf6c4bc249c0e36696ed207d6160f4",
+    "raw_latencies.csv": "440f9fb5e7f91acbad8e0b1cc7c0462049fd41786ae6a88f60357843d9e05c1d"
+  },
+  "source_code_version": "STAGE78_AUDIT_READONLY_V1",
+  "stage7_8_experiment": null,
+  "status": "AUDIT_PARTIAL_NEEDS_FROZEN_STAGE7_8"
+}

@@ -1,0 +1,5 @@
+keyspace,table,sstable_count,sstable_live_bytes,sstable_total_bytes,memtable_bytes,estimated_partitions,max_compacted_partition_bytes,mean_compacted_partition_bytes,compression_ratio
+sl_conf_r3_e0d081d6f1_r3h_38939db96444,ts2_iot_wide_unbucketed,0,0,0,2079072,8,0,0,-1.0
+sl_conf_r3_e0d081d6f1_r3h_934e5af2474c,ts0_iot_raw,0,0,0,2862144,17,0,0,-1.0
+sl_conf_r3_e0d081d6f1_r3h_d2ea1974de53,ts2_iot_wide,0,0,0,2080512,188,0,0,-1.0
+sl_conf_r3_e0d081d6f1_reference,iot_reference_table,0,0,0,2079072,8,0,0,-1.0

@@ -1,0 +1,302 @@
+[
+  {
+    "query_id": "Q1",
+    "name": "Precise point query",
+    "devices": [
+      "d_5"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067800000,
+    "end_ms_exclusive": 1705867200001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q2",
+    "name": "Time range query",
+    "devices": [
+      "d_5"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704672000001,
+    "point_ms": 1704067800000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q3",
+    "name": "Time range with value filter",
+    "devices": [
+      "d_6"
+    ],
+    "sensors": [
+      "s_1",
+      "s_0"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704672000001,
+    "point_ms": 1704067800000,
+    "aggregation": null,
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q4",
+    "name": "Aggregation with time filter",
+    "devices": [
+      "d_0"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704672000001,
+    "point_ms": 1704067800000,
+    "aggregation": "count",
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q5",
+    "name": "Aggregation with value filter",
+    "devices": [
+      "d_6"
+    ],
+    "sensors": [
+      "s_1",
+      "s_0"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 4704067200001,
+    "point_ms": 1704067800000,
+    "aggregation": "count",
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q6",
+    "name": "Aggregation with time and value filters",
+    "devices": [
+      "d_7"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704672000001,
+    "point_ms": 1704067800000,
+    "aggregation": "count",
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q7",
+    "name": "Time-grouped aggregation",
+    "devices": [
+      "d_2"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704672000001,
+    "point_ms": 1704067800000,
+    "aggregation": "count",
+    "value_lower": null,
+    "group_by_ms": 3600000,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q8",
+    "name": "Latest point per selected device",
+    "devices": [
+      "d_8"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704672000001,
+    "point_ms": 1704067800000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q9",
+    "name": "Descending time-range query",
+    "devices": [
+      "d_7"
+    ],
+    "sensors": [
+      "s_0",
+      "s_1"
+    ],
+    "start_ms": 1704067800000,
+    "end_ms_exclusive": 1704672600001,
+    "point_ms": 1704067800000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q10",
+    "name": "Descending range with value filter",
+    "devices": [
+      "d_8"
+    ],
+    "sensors": [
+      "s_1",
+      "s_0"
+    ],
+    "start_ms": 1704067800000,
+    "end_ms_exclusive": 1704672600001,
+    "point_ms": 1704067800000,
+    "aggregation": null,
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q11",
+    "name": "Descending time-grouped aggregation",
+    "devices": [
+      "d_3"
+    ],
+    "sensors": [
+      "s_1",
+      "s_0"
+    ],
+    "start_ms": 1704067800000,
+    "end_ms_exclusive": 1704672600001,
+    "point_ms": 1704067800000,
+    "aggregation": "count",
+    "value_lower": null,
+    "group_by_ms": 3600000,
+    "set_op": null,
+    "set_children": null,
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  },
+  {
+    "query_id": "Q12",
+    "name": "Set operation over time-range subqueries (table only)",
+    "devices": [
+      "d_0",
+      "d_7"
+    ],
+    "sensors": [
+      "s_1",
+      "s_0"
+    ],
+    "start_ms": 1704068400000,
+    "end_ms_exclusive": 1704673200001,
+    "point_ms": 1704067800000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": "union",
+    "set_children": [
+      {
+        "devices": [
+          "d_0"
+        ],
+        "sensors": [
+          "s_1",
+          "s_0"
+        ],
+        "start_ms": 1704068400000,
+        "end_ms_exclusive": 1704673200001
+      },
+      {
+        "devices": [
+          "d_7"
+        ],
+        "sensors": [
+          "s_1",
+          "s_0"
+        ],
+        "start_ms": 1704068400000,
+        "end_ms_exclusive": 1704673200001
+      }
+    ],
+    "parameter_origin": "sample from official GenerateQueryWorkLoad Java API, not SQL or mixed-workload sequence",
+    "capture_sha256": "59e3056b34c3795585b6c22eefd68df5ff3161deaf55e3b32b99a54aa6d3e7d0",
+    "native_sample_index": 0,
+    "correctness_status": "parameter-object translated; dialect SQL equivalence not independently verified"
+  }
+]

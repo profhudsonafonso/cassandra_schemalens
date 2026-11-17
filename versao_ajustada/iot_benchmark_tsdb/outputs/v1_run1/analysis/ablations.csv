@@ -1,0 +1,22 @@
+kind,ablation,hbench_size,admissible_covers,changed_vs_frozen,top1_within_noise,top3,near_best_5pct,regret,pareto_retention,hbench,unmeasured_ids,detail
+reference,nenhuma (HBench congelado),3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,Stage 8 Rev3 congelado reproduzido
+regra,sem TS0,2,4,True,True,True,True,0.0,1.0,R3H_38939db96444|R3H_d2ea1974de53,,"familias perdidas=['TS0']; modificadores perdidos=-; candidatos=['ts1_iot_bucket', 'ts2_iot_wide', 'ts2_iot_wide_unbucketed', 'ts4_iot_latest', 'ts5_iot_rollup']"
+regra,sem TS1,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,"familias perdidas=['TS1']; modificadores perdidos=-; candidatos=['ts0_iot_raw', 'ts2_iot_wide', 'ts2_iot_wide_unbucketed', 'ts4_iot_latest', 'ts5_iot_rollup']"
+regra,sem TS2,2,2,True,False,False,False,0.31607949913513855,0.0,R3H_934e5af2474c|R3H_99b27982cb5a,,"familias perdidas=['TS2']; modificadores perdidos=-; candidatos=['ts0_iot_raw', 'ts1_iot_bucket', 'ts4_iot_latest', 'ts5_iot_rollup']"
+regra,sem TS3,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+regra,sem TS4,3,3,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,"familias perdidas=['TS4']; modificadores perdidos=-; candidatos=['ts0_iot_raw', 'ts1_iot_bucket', 'ts2_iot_wide', 'ts2_iot_wide_unbucketed', 'ts5_iot_rollup']"
+regra,sem TS5,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,"familias perdidas=['TS5']; modificadores perdidos=-; candidatos=['ts0_iot_raw', 'ts1_iot_bucket', 'ts2_iot_wide', 'ts2_iot_wide_unbucketed', 'ts4_iot_latest']"
+regra,sem TS6,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+regra,sem TS7,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+regra,sem TS8,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+regra,sem M1,3,4,True,False,False,False,0.31607949913513855,0.0,R3H_d2ea1974de53|R3H_934e5af2474c|R3H_99b27982cb5a,,"familias perdidas=-; modificadores perdidos=['M1']; candidatos=['ts0_iot_raw', 'ts1_iot_bucket', 'ts2_iot_wide', 'ts4_iot_latest', 'ts5_iot_rollup']"
+regra,sem M2,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+regra,sem M3,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,"familias perdidas=-; modificadores perdidos=['M3']; candidatos=['ts0_iot_raw', 'ts1_iot_bucket', 'ts2_iot_wide', 'ts2_iot_wide_unbucketed', 'ts4_iot_latest', 'ts5_iot_rollup']"
+regra,sem M4,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+regra,sem M5,3,6,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,regra nao ativa nesta carga: ablacao sem efeito (no-op)
+criterio,sem salvaguarda de diversidade,1,6,True,True,True,True,0.0,1.0,R3H_38939db96444,,apenas fronteira de Pareto (top_k=5)
+criterio,sem Pareto (top-3 por escore ponderado),3,6,True,True,True,True,0.0,1.0,R3H_38939db96444|R3H_0cb71e472e90|R3H_934e5af2474c,,"pesos 0,8/0,1/0,1 sem filtro de dominancia"
+criterio,"so o rank-1 (sem diversidade, k=1)",1,6,True,True,True,True,0.0,1.0,R3H_38939db96444,,k=1
+criterio,TS0 obrigatoria (regra V3),2,6,True,False,False,False,0.31607949913513855,0.0,R3H_934e5af2474c|R3H_99b27982cb5a,,so coberturas com ts0_iot_raw; Pareto entre elas
+criterio,sem plan-awareness (HBench Rev2),3,,False,True,True,True,0.0,1.0,R3H_38939db96444|R3H_934e5af2474c|R3H_d2ea1974de53,,conjunto de tabelas da Rev2 mapeado para as rotas Rev3 medidas (aproximacao declarada)
+criterio,aleatorio k=3,3,,,,,,0.06421193510058469,,,,P(contem melhor)=0.500; 20 combinacoes

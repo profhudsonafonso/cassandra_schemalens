@@ -1,0 +1,66 @@
+{
+  "data_sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+  "finished_epoch_seconds": 1793918517,
+  "frozen_rev3_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "keyspaces": {
+    "BASELINE_ORIGINAL": "sl_conf_r3_e0d081d6f1_reference",
+    "BASELINE_Q8_OPTIMIZED": "sl_conf_r3_e0d081d6f1_reference",
+    "R3H_38939db96444": "sl_conf_r3_e0d081d6f1_r3h_38939db96444",
+    "R3H_934e5af2474c": "sl_conf_r3_e0d081d6f1_r3h_934e5af2474c",
+    "R3H_d2ea1974de53": "sl_conf_r3_e0d081d6f1_r3h_d2ea1974de53"
+  },
+  "latency_scope": "End-to-end Python client/driver, not Cassandra server latency",
+  "load_scope": "Sequential Python inserts, not realistic ingestion throughput",
+  "measurement_seed": 131117,
+  "metric_cells": 54000,
+  "not_frequency_replay": true,
+  "not_official_IoT_Benchmark_score": true,
+  "observed_vs_stage7": {
+    "MATCH": 36,
+    "MISMATCH": 0,
+    "VARIABLE_OBSERVED": 0
+  },
+  "oracle": "PASS_ALL_ROUTES_BEFORE_AND_DURING_TIMING",
+  "oracle_cardinality": {
+    "Q1": 0,
+    "Q10": 2018,
+    "Q11": 338,
+    "Q12": 7,
+    "Q2": 2016,
+    "Q3": 2016,
+    "Q4": 2,
+    "Q5": 2,
+    "Q6": 2,
+    "Q7": 338,
+    "Q8": 2,
+    "Q9": 2018
+  },
+  "output_sha256": {
+    "aggregated.csv": "efa2ae2e8cf5199a0a714270e7a730b5affbd4086ad4687160db9b4881325b84",
+    "load.csv": "5cba43d97066cbe61b95926d125985e30b0329a8cd750508caec31be89c60648",
+    "orders.csv": "1b9adb4ab99ac8f6a79f7264e814cc13664beb66f622d0c586cd854ebf6494ea",
+    "query_p95.csv": "2e8ee123f28248619ecde33b861c3b2277cd02161f9e546f317f802dd1930dfe",
+    "raw_latencies.csv": "15e2a82e0fdf92a0ab99ab4a22d5e9d48a3aea812ee42704c32ba72e90d7d344",
+    "stage7_vs_stage9.csv": "c739cc8db8fde7e4061fc46bc30a83792c2a5f185dacef48cb59e5d92aab63a4"
+  },
+  "page_size": 16,
+  "post_E5_method_development": true,
+  "premeasurement_protocol_sha256": "6c438225bbdc8b66ff6c61548e93087b1330b76e6d3e9f1a88279262433e3907",
+  "queries_sha256": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5",
+  "query_count": 12,
+  "raw_measurements": 3600,
+  "revision": "SCHEMALENS_REV3_PLAN_AWARE_V1",
+  "rounds": 60,
+  "run_tag": "rev3B_20261105",
+  "selected_ids": [
+    "R3H_38939db96444",
+    "R3H_934e5af2474c",
+    "R3H_d2ea1974de53"
+  ],
+  "sensor_count": 2,
+  "started_epoch_seconds": 1793918445,
+  "status": "REV3_INDEPENDENT_JAVA_CONFIRMATION_COMPLETE",
+  "storage_scope": "NOT MEASURED HERE; separate postflush SSTable run required",
+  "telemetry_scope": "Session.execute calls and Python-iterated rows, not server SSTable reads",
+  "warmup": 5
+}

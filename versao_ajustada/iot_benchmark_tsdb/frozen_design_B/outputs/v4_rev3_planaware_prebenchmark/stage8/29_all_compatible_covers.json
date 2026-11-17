@@ -1,0 +1,869 @@
+[
+  {
+    "analytic_cost": {
+      "read": 72.73354166666667,
+      "storage": 3456000,
+      "write": 54000
+    },
+    "candidates": [
+      "ts0_iot_raw"
+    ],
+    "canonical_source": "ts0_iot_raw",
+    "deployment_id": "R3H_934e5af2474c",
+    "families": [
+      "TS0"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 2.024105,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q1__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 8.0,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q10__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.27875,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q11__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.27875,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q12__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 134.5575,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q2__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q3__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q4__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q5__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 184.25,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q6__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q7__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_DESC_LIMIT1",
+        "family": "TS0",
+        "physical_plan": "TS0_DESC_LIMIT1",
+        "plan_id": "Q8__ts0_iot_raw__TS0_DESC_LIMIT1",
+        "read_proxy": 8.05875,
+        "reason": "TS0_DESC_LIMIT1; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q9__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.27875,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+    "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD",
+    "selection_scope": "EXPLORATORY_POST_E5_PLAN_AWARE_SELECTION",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 72.73302083333333,
+      "storage": 3457152,
+      "write": 54018
+    },
+    "candidates": [
+      "ts0_iot_raw",
+      "ts4_iot_latest"
+    ],
+    "canonical_source": "ts0_iot_raw",
+    "deployment_id": "R3H_99b27982cb5a",
+    "families": [
+      "TS0",
+      "TS4"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 2.02420813,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q1__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 8.0,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q10__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.27875,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q11__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.27875,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q12__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 134.5575,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q2__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q3__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q4__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q5__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 184.25,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q6__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q7__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.22,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "executor_contract": "TS4_SNAPSHOT_LOOKUP",
+        "family": "TS4",
+        "physical_plan": "TS4_SNAPSHOT_LOOKUP",
+        "plan_id": "Q8__ts4_iot_latest__TS4_SNAPSHOT_LOOKUP",
+        "read_proxy": 8.0525,
+        "reason": "TS4_SNAPSHOT_LOOKUP; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "executor_contract": "TS0_RANGE_SCAN",
+        "family": "TS0",
+        "physical_plan": "TS0_RANGE_SCAN",
+        "plan_id": "Q9__ts0_iot_raw__TS0_RANGE_SCAN",
+        "read_proxy": 67.27875,
+        "reason": "TS0_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+    "selection_scope": "EXPLORATORY_POST_E5_PLAN_AWARE_SELECTION",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 34.66286458333333,
+      "storage": 2376000,
+      "write": 27000
+    },
+    "candidates": [
+      "ts2_iot_wide_unbucketed"
+    ],
+    "canonical_source": "ts2_iot_wide_unbucketed",
+    "deployment_id": "R3H_38939db96444",
+    "families": [
+      "TS2"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.0,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 4.0,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.0628125,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.0628125,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 64.125625,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 87.4375,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_DESC_SPARSE",
+        "family": "TS2",
+        "physical_plan": "TS2U_DESC_SPARSE",
+        "plan_id": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+        "read_proxy": 4.0278125,
+        "reason": "TS2U_DESC_SPARSE; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.0628125,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+    "selection_reason": "PARETO_FRONT",
+    "selection_scope": "EXPLORATORY_POST_E5_PLAN_AWARE_SELECTION",
+    "selection_status": "PARETO",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 34.66286458333333,
+      "storage": 2377152,
+      "write": 27018
+    },
+    "candidates": [
+      "ts2_iot_wide_unbucketed",
+      "ts4_iot_latest"
+    ],
+    "canonical_source": "ts2_iot_wide_unbucketed",
+    "deployment_id": "R3H_0cb71e472e90",
+    "families": [
+      "TS2",
+      "TS4"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.00011515,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 4.0,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.0628125,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.0628125,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 64.125625,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 87.4375,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.035,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_DESC_SPARSE",
+        "family": "TS2",
+        "physical_plan": "TS2U_DESC_SPARSE",
+        "plan_id": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+        "read_proxy": 4.0278125,
+        "reason": "TS2U_DESC_SPARSE; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "executor_contract": "TS2U_RANGE_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2U_RANGE_SCAN",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+        "read_proxy": 32.0628125,
+        "reason": "TS2U_RANGE_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+    "selection_scope": "EXPLORATORY_POST_E5_PLAN_AWARE_SELECTION",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 79.66286458333333,
+      "storage": 2376000,
+      "write": 27000
+    },
+    "candidates": [
+      "ts2_iot_wide"
+    ],
+    "canonical_source": "ts2_iot_wide",
+    "deployment_id": "R3H_d2ea1974de53",
+    "families": [
+      "TS2"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 2.03857544,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q1__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 4.0,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q10__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.0628125,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q11__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.0628125,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q12__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 148.125625,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q2__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q3__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q4__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q5__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 207.4375,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q6__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q7__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_DESC_SPARSE",
+        "family": "TS2",
+        "physical_plan": "TS2D_DESC_SPARSE",
+        "plan_id": "Q8__ts2_iot_wide__TS2D_DESC_SPARSE",
+        "read_proxy": 4.0278125,
+        "reason": "TS2D_DESC_SPARSE; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q9__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.0628125,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+    "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD",
+    "selection_scope": "EXPLORATORY_POST_E5_PLAN_AWARE_SELECTION",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 79.66286458333333,
+      "storage": 2377152,
+      "write": 27018
+    },
+    "candidates": [
+      "ts2_iot_wide",
+      "ts4_iot_latest"
+    ],
+    "canonical_source": "ts2_iot_wide",
+    "deployment_id": "R3H_69bc46506e7b",
+    "families": [
+      "TS2",
+      "TS4"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 2.0386906,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q1__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 4.0,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q10__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.0628125,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q11__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.0628125,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q12__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 148.125625,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q2__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q3__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q4__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q5__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 207.4375,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q6__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q7__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.035,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_DESC_SPARSE",
+        "family": "TS2",
+        "physical_plan": "TS2D_DESC_SPARSE",
+        "plan_id": "Q8__ts2_iot_wide__TS2D_DESC_SPARSE",
+        "read_proxy": 4.0278125,
+        "reason": "TS2D_DESC_SPARSE; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "executor_contract": "TS2D_BUCKET_SCAN",
+        "family": "TS2",
+        "physical_plan": "TS2D_BUCKET_SCAN",
+        "plan_id": "Q9__ts2_iot_wide__TS2D_BUCKET_SCAN",
+        "read_proxy": 74.0628125,
+        "reason": "TS2D_BUCKET_SCAN; executable plan from explicit catalog",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "SCHEMALENS_CASSANDRA_REV3_PLAN_AWARE_V1",
+    "selection_scope": "EXPLORATORY_POST_E5_PLAN_AWARE_SELECTION",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  }
+]

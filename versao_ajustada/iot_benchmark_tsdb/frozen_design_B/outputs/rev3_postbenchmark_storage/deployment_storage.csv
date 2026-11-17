@@ -1,0 +1,6 @@
+variant,keyspace,tables,sstable_count,sstable_live_bytes,sstable_total_bytes,memtable_bytes,estimated_partitions
+BASELINE_ORIGINAL,sl_conf_r3_e0d081d6f1_reference,1,0,0,0,2079072,8
+BASELINE_Q8_OPTIMIZED,sl_conf_r3_e0d081d6f1_reference,1,0,0,0,2079072,8
+R3H_38939db96444,sl_conf_r3_e0d081d6f1_r3h_38939db96444,1,0,0,0,2079072,8
+R3H_934e5af2474c,sl_conf_r3_e0d081d6f1_r3h_934e5af2474c,1,0,0,0,2862144,17
+R3H_d2ea1974de53,sl_conf_r3_e0d081d6f1_r3h_d2ea1974de53,1,0,0,0,2080512,188

@@ -1,0 +1,9 @@
+{
+  "fix": "V4_IMPORT_PATH_ONLY",
+  "scope": "launcher scripts only; no frozen V3 changes",
+  "smoke_test": "13/13 tests PASS from conflicting outer working directory; absolute and --experiment= path handling verified; sample V3 fixture deliberately rejected by native frozen SHA guard",
+  "sha256": {
+    "SchemaLens_V4_Canonical_CrossReuse/run_tests.sh": "20124984ad4cde39c6ecedc8bb585f0e3454b816f0b5c5992565674a332c59d0",
+    "SchemaLens_V4_Canonical_CrossReuse/run_v4.sh": "5159c1621e2bc82ac65e859513b214340a8235a78364f557e4921d92320a6c9c"
+  }
+}
