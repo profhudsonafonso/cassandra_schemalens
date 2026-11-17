@@ -1,0 +1,64 @@
+{
+  "stage": 9,
+  "scope": "TSDB_ONLY_POST_SELECTION_CASSANDRA_BENCHMARK",
+  "mode": "REAL_CASSANDRA",
+  "tsbs_native_go_runner_used": false,
+  "go_generator_byte_identical_instances": false,
+  "tsbs_original_structure_baseline_adapted": true,
+  "all_selected_deployments_tested": false,
+  "selected_deployment_ids": [
+    "H_815d3cd1f0cb"
+  ],
+  "query_alignment_cohort": "natural",
+  "source_input_sha256": "1939ff8dfc0c15c91a70423a5bb59c2ee94b2a7475f700aa78172717aa55753d",
+  "source_lines_sha256": "1939ff8dfc0c15c91a70423a5bb59c2ee94b2a7475f700aa78172717aa55753d",
+  "observations": 1440,
+  "metric_cells": 14400,
+  "source_start_ns": 1577836800000000000,
+  "source_last_ns": 1577962800000000000,
+  "source_host_count": 40,
+  "query_instances": 48,
+  "upstream_sha256": {
+    "deployments": "0fa7128806786aa73942eb5669965a8c72704f62bd54a29c19ae219d2c49413f",
+    "stage8_manifest": "0ff873b510dbc89755ded2ad224898e63d55f6fc303c51d41c78a296a84bb0e1",
+    "specs": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+    "plans": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+    "writes": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87",
+    "policy": "14d4b1ee80d547981768ee597a0210800ae852051b7149b84e13d45f625aa2fc"
+  },
+  "benchmark_verified": true,
+  "performance_claims_allowed": true,
+  "hbench_selection_modified": false,
+  "go_tsbs_baseline_ran": false,
+  "benchmark_limitations": [
+    "Small bounded all-in-memory source; not scalable TSBS bulk loading",
+    "Sequential single-worker client; no crash-safe or distributed aggregate maintenance",
+    "Stage 5 shared logical evaluator is not an independent oracle; validate with TSBS -print-responses too",
+    "Unaligned conditional TS5/TS6 routes fall back to TS0; count fallback rates",
+    "Physical footprint in bytes unavailable without server measurements",
+    "Do not infer near-best/optimal regret without a separate enumerated evaluation oracle"
+  ],
+  "results": [
+    {
+      "deployment_id": "H_815d3cd1f0cb",
+      "status": "PASS",
+      "instances_validated": 48,
+      "instances_required": 48,
+      "fallbacks": 0,
+      "errors": [],
+      "cassandra_executed": true,
+      "selection_changed_by_benchmark": false,
+      "keyspace": "sl_tsbs_h815d3cd1f0cb",
+      "ingest_seconds": 8.611384427989833,
+      "write_mutations_executed": 15840,
+      "baseline_metric_rows_written": 14400,
+      "table_rows_verified": 8,
+      "read_benchmark_seconds": 59.107293466920964,
+      "reference_materialization_seconds": 0.05144030100200325,
+      "dataset_observations": 1440,
+      "ingest_observations_per_second": 167.22049886886086,
+      "storage_bytes": null,
+      "note": "Storage requires server-side nodetool snapshots/table statistics"
+    }
+  ]
+}
