@@ -1,0 +1,33 @@
+{
+  "policy_version": "tsbs-stage8-cover-v1",
+  "scope": "TSDB_ONLY_WORKLOAD_CONSOLIDATION_BEFORE_BENCHMARK",
+  "top_k": 5,
+  "exact_enumeration_limit_candidates": 16,
+  "max_tables_per_deployment": 9,
+  "profiles": ["conservative", "conditional_aligned"],
+  "canonical_source_candidate_id": "ts0_metric_raw",
+  "assume_equal_query_frequencies": true,
+  "assumed_query_frequency_note": "Illustrative uniform weighting (1/16). TSBS query workload frequencies are NOT supplied in Stage 3/7; change only before collecting benchmark outcomes.",
+  "read_proxy_weights": {
+    "cql_requests": 0.20,
+    "logical_rows_read": 0.80
+  },
+  "deployment_proxy_weights": {
+    "normalized_read": 0.80,
+    "normalized_storage": 0.10,
+    "normalized_touched_write_keys": 0.10
+  },
+  "dominance": "pareto_read_storage_touched_write",
+  "allow_duplicate_family_variants": true,
+  "partition_warning_policy": "REPORT_ONLY_NOT_PROVEN_INFEASIBLE",
+  "derived_maintenance": "REFERENCE_ONLY_REQUIRES_DURABLE_SOURCE_AND_CASSANDRA_VALIDATION",
+  "conditional_alignment_mode": "REQUIRES_RUNTIME_BINDING_AND_ALIGNMENT_VALIDATION_BEFORE_EXPERIMENT",
+  "benchmark_metrics_allowed_for_selection": false,
+  "notes": [
+    "All scores are explicit analytic proxies, not latency or monetary cost.",
+    "No query plan is asserted runnable on real Cassandra: runtime guards persist.",
+    "Required derived canonical source is included in deployed tables, not free.",
+    "Every feasible deployment covers all 16 query templates with one selected read plan per template.",
+    "The Stage 8 HBench list is an experimental plan: only Stage 9 can measure and validate it."
+  ]
+}

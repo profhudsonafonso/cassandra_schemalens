@@ -36,3 +36,15 @@ acréscimos, nunca substituições. A V9 refaz o pipeline E1–E23 de forma que:
 ```
 
 Run id: `v9-generation-20261112-001`. Keyspaces criados pela V9 começam com `rubis_v9_`.
+
+## SchemaLens TSBS (TSDB only)
+
+A pasta `SchemaLens_TSBS_TSDB_Only/` contém a metodologia SchemaLens aplicada ao TSBS (cpu-only) com
+as etapas 1–9. Para reproduzir (Python 3.12, somente biblioteca padrão; `cassandra-driver` apenas para `--live`):
+
+```
+cd SchemaLens_TSBS_TSDB_Only
+bash run_all.sh        # gera outputs/ (etapas 1–8 + etapa 9 dry-run) e roda os testes
+```
+
+A execução contra Cassandra real (etapa 9 `--live`) está descrita em `README_STAGE9_ADDON.md`.
