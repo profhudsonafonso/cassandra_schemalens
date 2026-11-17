@@ -1,0 +1,115 @@
+[
+  {
+    "deployment_id": "h_119222012d4e",
+    "selection_order": 1,
+    "query_id": "Q_INGEST",
+    "selected_read_candidate": null,
+    "read_plan_id": null,
+    "required_write_plan_ids": [
+      "wp__q_ingest__ts0_series_raw"
+    ],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_119222012d4e",
+    "selection_order": 1,
+    "query_id": "Q_READ_2_WINDOWS",
+    "selected_read_candidate": "ts0_series_raw",
+    "read_plan_id": "qp__q_read_2_windows__ts0_series_raw",
+    "required_write_plan_ids": [],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_6745757bf865",
+    "selection_order": 2,
+    "query_id": "Q_INGEST",
+    "selected_read_candidate": null,
+    "read_plan_id": null,
+    "required_write_plan_ids": [
+      "wp__q_ingest__ts1_series_3600s",
+      "wp__q_ingest__ts3_sensor_3600s"
+    ],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_6745757bf865",
+    "selection_order": 2,
+    "query_id": "Q_READ_2_WINDOWS",
+    "selected_read_candidate": "ts3_sensor_3600s",
+    "read_plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+    "required_write_plan_ids": [],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_a9983e2318a9",
+    "selection_order": 3,
+    "query_id": "Q_INGEST",
+    "selected_read_candidate": null,
+    "read_plan_id": null,
+    "required_write_plan_ids": [
+      "wp__q_ingest__ts1_series_60s",
+      "wp__q_ingest__ts3_sensor_60s"
+    ],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_a9983e2318a9",
+    "selection_order": 3,
+    "query_id": "Q_READ_2_WINDOWS",
+    "selected_read_candidate": "ts3_sensor_60s",
+    "read_plan_id": "qp__q_read_2_windows__ts3_sensor_60s",
+    "required_write_plan_ids": [],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_3f1449e05468",
+    "selection_order": 4,
+    "query_id": "Q_INGEST",
+    "selected_read_candidate": null,
+    "read_plan_id": null,
+    "required_write_plan_ids": [
+      "wp__q_ingest__ts0_series_raw",
+      "wp__q_ingest__ts3_sensor_3600s"
+    ],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_3f1449e05468",
+    "selection_order": 4,
+    "query_id": "Q_READ_2_WINDOWS",
+    "selected_read_candidate": "ts3_sensor_3600s",
+    "read_plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+    "required_write_plan_ids": [],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_aba788b8e7b7",
+    "selection_order": 5,
+    "query_id": "Q_INGEST",
+    "selected_read_candidate": null,
+    "read_plan_id": null,
+    "required_write_plan_ids": [
+      "wp__q_ingest__ts1_series_3600s"
+    ],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  },
+  {
+    "deployment_id": "h_aba788b8e7b7",
+    "selection_order": 5,
+    "query_id": "Q_READ_2_WINDOWS",
+    "selected_read_candidate": "ts1_series_3600s",
+    "read_plan_id": "qp__q_read_2_windows__ts1_series_3600s",
+    "required_write_plan_ids": [],
+    "status": "CONDITIONAL_OFFLINE_ONLY",
+    "operational_coverage_proven": false
+  }
+]

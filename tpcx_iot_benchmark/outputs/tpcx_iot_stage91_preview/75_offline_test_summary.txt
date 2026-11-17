@@ -1,0 +1,6 @@
+SchemaLens TPCx-IoT Cassandra Stage 9.1
+Executed locally, without Cassandra/Docker:
+    python3 -m unittest discover -s tests
+Result: Ran 142 tests; OK
+These are unit/in-memory consistency tests only. No new live benchmark results
+have been measured in this environment. Live performance numbers remain pending.

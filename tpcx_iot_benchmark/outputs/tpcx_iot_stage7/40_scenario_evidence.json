@@ -1,0 +1,55 @@
+{
+  "scenario": {
+    "policy_version": "tpcx-iot-cassandra-stage7-v1",
+    "research_only": true,
+    "scenario_is_measured": false,
+    "source_profile": "sensor-name-only/raw_read",
+    "scenario_label": "Illustrative 10-station uniform IoT stream (NOT official TPCx-IoT scale)",
+    "station_count": 10,
+    "sensor_types_per_station": 200,
+    "sample_interval_seconds_per_stream": 60,
+    "horizon_seconds": 86400,
+    "starting_epoch_ms_utc": 0,
+    "logical_record_bytes_assumed": 1024,
+    "row_storage_overhead_bytes_assumed": 64,
+    "partition_storage_overhead_bytes_assumed": 128,
+    "replication_factor_assumed": 2,
+    "query_sensor_name": "sensor_0001",
+    "two_closed_query_windows_seconds_from_start": [
+      [
+        7199,
+        7204
+      ],
+      [
+        6200,
+        6205
+      ]
+    ],
+    "max_partition_rows_warning": 100000,
+    "max_total_partition_count_warning": 500000,
+    "max_partition_bytes_warning": 16777216,
+    "max_cql_requests_per_logical_read_warning": 1000,
+    "max_expected_rows_per_logical_read_warning": 1000000,
+    "station_roster_status": "DECLARED_NOT_EXTERNALLY_VERIFIED",
+    "system_compaction": "NOT_SELECTED_M3_ACTIVE_ONLY",
+    "retention_ttl": "NOT_SELECTED",
+    "benchmark_results_used": false,
+    "rank_candidates": false,
+    "select_hbench": false,
+    "notes": [
+      "All quantities in this policy are synthetic, pre-benchmark parameters, not observations.",
+      "Assume every station carries every one of 200 named sensors, synchronised sampling, and complete historical coverage.",
+      "Use both endpoints of each five-second window; source event timestamps are equally spaced from the scenario start.",
+      "Storage estimates are uncompressed logical proxies and ignore memtables, SSTable layout, tombstones, compaction, indexes and protocol IO.",
+      "CQL request counts represent generated request fanout, not network latency or physical disk reads.",
+      "TS3 needs a canonical source and a durable replay mechanism in complete deployments; no such system is proved here.",
+      "TS0 is retained as a baseline despite a structurally unbounded partition horizon.",
+      "Official Java-kit sensor predicate and aggregation semantics remain unverified."
+    ]
+  },
+  "scenario_file_sha256": "03d8382d6572ec5392908b41d5e2a08c91e9734cf277e4efbb7119f0d289d46e",
+  "not_tpcx_official_sf": true,
+  "logical_source_events": 2880000,
+  "unverified_source_predicate": "sensor_name_only/raw_read",
+  "scenario_is_measured": false
+}

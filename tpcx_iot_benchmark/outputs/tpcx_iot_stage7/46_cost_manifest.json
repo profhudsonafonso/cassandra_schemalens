@@ -1,0 +1,43 @@
+{
+  "stage": 7,
+  "engine": "Apache Cassandra",
+  "benchmark": "TPCx-IoT 2.1.2 adapted research profile",
+  "candidate_count": 5,
+  "scenario_is_measured": false,
+  "only_prebenchmark_analytical_proxies": true,
+  "query_frequency_weights_available": false,
+  "score_estimated_workload": null,
+  "ranked_candidates": false,
+  "hbench_selected": false,
+  "source_coverage": "CONDITIONAL_OFFLINE_ONLY",
+  "official_tpcx_iot_kit_verified": false,
+  "source_hashes": {
+    "stage4_candidate_specs_sha256": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+    "stage5_plans_sha256": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+    "stage5_coverage_sha256": "29737378e772535f83a826c1d2d73b81b42542453f8238e360d743b2e07c3e08",
+    "stage5_probes_sha256": "cac3a48b0d8fc298ca977a29cd1b7adcf043b78af4fe29615c702decfe878200",
+    "stage5_manifest_sha256": "f4f38f241466530594d43800921e75d050e47a2ee84834fa72499bb6591ab6bc",
+    "stage6_writeplans_sha256": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710",
+    "stage6_writecoverage_sha256": "001bc816da4ed37e54d7e03384f1a906cd9b1d9fc3592c8e0ccff1f81de7a79d",
+    "stage6_offlineprobes_sha256": "dc92adebbd0c11a7995d58a6a71656b61116b171eb939cfe670d5fbca655c499",
+    "stage6_manifest_sha256": "cdd537c48313b79fef1ff56ad874444dac1d11602b69dea01ccd3c6b67efc132"
+  },
+  "cost_policy_sha256": "03d8382d6572ec5392908b41d5e2a08c91e9734cf277e4efbb7119f0d289d46e",
+  "upstream_outputs_modified": false,
+  "stage3_reexecuted": false,
+  "activation_rules_changed": false,
+  "benchmark_results_used": false,
+  "live_cassandra_executed": false,
+  "measured_latency_or_throughput_reported": false,
+  "operational_coverage_claimed": false,
+  "files": [
+    "40_scenario_evidence.json",
+    "41_physical_footprint_proxies.json",
+    "42_read_cost_proxies.json",
+    "43_write_cost_proxies.json",
+    "44_feasibility_diagnostics.json",
+    "45_candidate_cost_matrix.csv",
+    "46_cost_manifest.json"
+  ],
+  "next": "Stage8 canonical consolidation and compatible workload-level covers; use only non-measured evidence"
+}

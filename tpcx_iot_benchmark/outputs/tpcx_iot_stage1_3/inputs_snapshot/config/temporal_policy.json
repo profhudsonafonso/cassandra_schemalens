@@ -1,0 +1,16 @@
+{
+  "policy_version": "smart-retail-temporal-policy-v1-demo",
+  "status": "DEMO_POLICY_NOT_BENCHMARK_TUNED",
+  "notes": [
+    "Thresholds in this file are demonstration policy values and are not learned from benchmark outcomes.",
+    "Exact time-bucket widths, partition keys, clustering keys, and CQL are deliberately deferred beyond this running example."
+  ],
+  "hot_series_events_per_day_threshold": 1000000,
+  "modifier_rules": {
+    "M1": "activate when TS1, TS5, or TS6 is active",
+    "M2": "activate when series retention_days is a positive finite value",
+    "M3": "activate when series append_oriented is true",
+    "M4": "activate when estimated_events_per_day >= hot_series_events_per_day_threshold",
+    "M5": "activate when late_arrival_allowed is true"
+  }
+}

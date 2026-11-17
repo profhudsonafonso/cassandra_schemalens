@@ -1,0 +1,136 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "shared_candidate_id": "c_95b78904d017",
+    "origin_queries": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "read_query_id": "Q_READ_2_WINDOWS",
+    "read_plan_id": "qp__q_read_2_windows__ts0_series_raw",
+    "read_status": "CONDITIONAL_OFFLINE_ONLY",
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "write_query_id": "Q_INGEST",
+    "write_plan_id": "wp__q_ingest__ts0_series_raw",
+    "write_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_maintenance_role": "canonical_series_table",
+    "cross_query_validated_conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "operational_coverage_proven": false
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "shared_candidate_id": "c_fafdd4084d6d",
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "read_query_id": "Q_READ_2_WINDOWS",
+    "read_plan_id": "qp__q_read_2_windows__ts1_series_3600s",
+    "read_status": "CONDITIONAL_OFFLINE_ONLY",
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "write_query_id": "Q_INGEST",
+    "write_plan_id": "wp__q_ingest__ts1_series_3600s",
+    "write_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_maintenance_role": "canonical_series_table",
+    "cross_query_validated_conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "operational_coverage_proven": false
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "shared_candidate_id": "c_8acc537c1162",
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "read_query_id": "Q_READ_2_WINDOWS",
+    "read_plan_id": "qp__q_read_2_windows__ts1_series_60s",
+    "read_status": "CONDITIONAL_OFFLINE_ONLY",
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "complete_station_roster",
+      "complete_roster_provenance"
+    ],
+    "write_query_id": "Q_INGEST",
+    "write_plan_id": "wp__q_ingest__ts1_series_60s",
+    "write_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_maintenance_role": "canonical_series_table",
+    "cross_query_validated_conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "operational_coverage_proven": false
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "shared_candidate_id": "c_f39c03909a44",
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "read_query_id": "Q_READ_2_WINDOWS",
+    "read_plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+    "read_status": "CONDITIONAL_OFFLINE_ONLY",
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "ts3_projection_correctly_maintained"
+    ],
+    "write_query_id": "Q_INGEST",
+    "write_plan_id": "wp__q_ingest__ts3_sensor_3600s",
+    "write_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_maintenance_role": "materialized_sensor_projection",
+    "cross_query_validated_conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "operational_coverage_proven": false
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "shared_candidate_id": "c_a3f5ccc0ea4e",
+    "origin_queries": [
+      "Q_READ_2_WINDOWS"
+    ],
+    "read_query_id": "Q_READ_2_WINDOWS",
+    "read_plan_id": "qp__q_read_2_windows__ts3_sensor_60s",
+    "read_status": "CONDITIONAL_OFFLINE_ONLY",
+    "read_preconditions": [
+      "two_explicit_5s_inclusive_windows",
+      "stable_event_identity",
+      "all_candidate_rows_materialized",
+      "correct_utc_epoch_milliseconds",
+      "ts3_projection_correctly_maintained"
+    ],
+    "write_query_id": "Q_INGEST",
+    "write_plan_id": "wp__q_ingest__ts3_sensor_60s",
+    "write_status": "CONDITIONAL_OFFLINE_ONLY",
+    "write_maintenance_role": "materialized_sensor_projection",
+    "cross_query_validated_conditional_coverage": [
+      "Q_INGEST",
+      "Q_READ_2_WINDOWS"
+    ],
+    "operational_coverage_proven": false
+  }
+]

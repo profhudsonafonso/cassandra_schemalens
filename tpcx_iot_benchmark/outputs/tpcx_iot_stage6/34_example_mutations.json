@@ -1,0 +1,326 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "table": "ts0_series_raw",
+    "operation": "INSERT",
+    "primary_key": [
+      "A",
+      "temp",
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a"
+    ],
+    "cql": "INSERT INTO ts0_series_raw (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding) VALUES (?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      1.5,
+      "retained_padding"
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 59000,
+      "event_id": "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      "sensor_reading": 1.5,
+      "padding": "retained_padding"
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "table": "ts1_series_3600s",
+    "operation": "INSERT",
+    "primary_key": [
+      "A",
+      "temp",
+      0,
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a"
+    ],
+    "cql": "INSERT INTO ts1_series_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      1.5,
+      "retained_padding",
+      0
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 59000,
+      "event_id": "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      "sensor_reading": 1.5,
+      "padding": "retained_padding",
+      "bucket_start_ms": 0
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "table": "ts1_series_60s",
+    "operation": "INSERT",
+    "primary_key": [
+      "A",
+      "temp",
+      0,
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a"
+    ],
+    "cql": "INSERT INTO ts1_series_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      1.5,
+      "retained_padding",
+      0
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 59000,
+      "event_id": "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      "sensor_reading": 1.5,
+      "padding": "retained_padding",
+      "bucket_start_ms": 0
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "table": "ts3_sensor_3600s",
+    "operation": "INSERT",
+    "primary_key": [
+      "temp",
+      0,
+      59000,
+      "A",
+      "0095e699-73a1-50a1-a567-89bca90d1a1a"
+    ],
+    "cql": "INSERT INTO ts3_sensor_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      1.5,
+      "retained_padding",
+      0
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 59000,
+      "event_id": "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      "sensor_reading": 1.5,
+      "padding": "retained_padding",
+      "bucket_start_ms": 0
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "table": "ts3_sensor_60s",
+    "operation": "INSERT",
+    "primary_key": [
+      "temp",
+      0,
+      59000,
+      "A",
+      "0095e699-73a1-50a1-a567-89bca90d1a1a"
+    ],
+    "cql": "INSERT INTO ts3_sensor_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      59000,
+      "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      1.5,
+      "retained_padding",
+      0
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 59000,
+      "event_id": "0095e699-73a1-50a1-a567-89bca90d1a1a",
+      "sensor_reading": 1.5,
+      "padding": "retained_padding",
+      "bucket_start_ms": 0
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "table": "ts0_series_raw",
+    "operation": "INSERT",
+    "primary_key": [
+      "A",
+      "temp",
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6"
+    ],
+    "cql": "INSERT INTO ts0_series_raw (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding) VALUES (?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      2.0,
+      "retained_padding"
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 60000,
+      "event_id": "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      "sensor_reading": 2.0,
+      "padding": "retained_padding"
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "table": "ts1_series_3600s",
+    "operation": "INSERT",
+    "primary_key": [
+      "A",
+      "temp",
+      0,
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6"
+    ],
+    "cql": "INSERT INTO ts1_series_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      2.0,
+      "retained_padding",
+      0
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 60000,
+      "event_id": "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      "sensor_reading": 2.0,
+      "padding": "retained_padding",
+      "bucket_start_ms": 0
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "table": "ts1_series_60s",
+    "operation": "INSERT",
+    "primary_key": [
+      "A",
+      "temp",
+      60000,
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6"
+    ],
+    "cql": "INSERT INTO ts1_series_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      2.0,
+      "retained_padding",
+      60000
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 60000,
+      "event_id": "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      "sensor_reading": 2.0,
+      "padding": "retained_padding",
+      "bucket_start_ms": 60000
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "table": "ts3_sensor_3600s",
+    "operation": "INSERT",
+    "primary_key": [
+      "temp",
+      0,
+      60000,
+      "A",
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6"
+    ],
+    "cql": "INSERT INTO ts3_sensor_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      2.0,
+      "retained_padding",
+      0
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 60000,
+      "event_id": "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      "sensor_reading": 2.0,
+      "padding": "retained_padding",
+      "bucket_start_ms": 0
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "table": "ts3_sensor_60s",
+    "operation": "INSERT",
+    "primary_key": [
+      "temp",
+      60000,
+      60000,
+      "A",
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6"
+    ],
+    "cql": "INSERT INTO ts3_sensor_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "parameters": [
+      "A",
+      "temp",
+      60000,
+      "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      2.0,
+      "retained_padding",
+      60000
+    ],
+    "row": {
+      "driver_system_id": "A",
+      "sensor_name": "temp",
+      "event_ts": 60000,
+      "event_id": "3564dbfe-44eb-5627-9df2-37d4f29ce8a6",
+      "sensor_reading": 2.0,
+      "padding": "retained_padding",
+      "bucket_start_ms": 60000
+    },
+    "execution_status": "NOT_EXECUTED_REFERENCE_ONLY"
+  }
+]

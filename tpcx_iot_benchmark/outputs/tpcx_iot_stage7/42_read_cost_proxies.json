@@ -1,0 +1,122 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "per_window_partition_groups": [
+      1,
+      1
+    ],
+    "per_window_cql_requests": [
+      10,
+      10
+    ],
+    "total_cql_requests_per_logical_read": 20,
+    "expected_matching_rows_per_window": [
+      10,
+      0
+    ],
+    "expected_matching_rows_total": 10,
+    "expected_cql_selected_payload_bytes_proxy": 10240,
+    "expected_final_projected_bytes_proxy": 160,
+    "partition_fanout_for_station_roster": 10,
+    "estimated_latency_ms": null,
+    "actual_rows_scanned": null,
+    "requires_full_roster": true
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "per_window_partition_groups": [
+      2,
+      1
+    ],
+    "per_window_cql_requests": [
+      20,
+      10
+    ],
+    "total_cql_requests_per_logical_read": 30,
+    "expected_matching_rows_per_window": [
+      10,
+      0
+    ],
+    "expected_matching_rows_total": 10,
+    "expected_cql_selected_payload_bytes_proxy": 10240,
+    "expected_final_projected_bytes_proxy": 160,
+    "partition_fanout_for_station_roster": 10,
+    "estimated_latency_ms": null,
+    "actual_rows_scanned": null,
+    "requires_full_roster": true
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "per_window_partition_groups": [
+      2,
+      1
+    ],
+    "per_window_cql_requests": [
+      20,
+      10
+    ],
+    "total_cql_requests_per_logical_read": 30,
+    "expected_matching_rows_per_window": [
+      10,
+      0
+    ],
+    "expected_matching_rows_total": 10,
+    "expected_cql_selected_payload_bytes_proxy": 10240,
+    "expected_final_projected_bytes_proxy": 160,
+    "partition_fanout_for_station_roster": 10,
+    "estimated_latency_ms": null,
+    "actual_rows_scanned": null,
+    "requires_full_roster": true
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "per_window_partition_groups": [
+      2,
+      1
+    ],
+    "per_window_cql_requests": [
+      2,
+      1
+    ],
+    "total_cql_requests_per_logical_read": 3,
+    "expected_matching_rows_per_window": [
+      10,
+      0
+    ],
+    "expected_matching_rows_total": 10,
+    "expected_cql_selected_payload_bytes_proxy": 10240,
+    "expected_final_projected_bytes_proxy": 160,
+    "partition_fanout_for_station_roster": 1,
+    "estimated_latency_ms": null,
+    "actual_rows_scanned": null,
+    "requires_full_roster": false
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "per_window_partition_groups": [
+      2,
+      1
+    ],
+    "per_window_cql_requests": [
+      2,
+      1
+    ],
+    "total_cql_requests_per_logical_read": 3,
+    "expected_matching_rows_per_window": [
+      10,
+      0
+    ],
+    "expected_matching_rows_total": 10,
+    "expected_cql_selected_payload_bytes_proxy": 10240,
+    "expected_final_projected_bytes_proxy": 160,
+    "partition_fanout_for_station_roster": 1,
+    "estimated_latency_ms": null,
+    "actual_rows_scanned": null,
+    "requires_full_roster": false
+  }
+]

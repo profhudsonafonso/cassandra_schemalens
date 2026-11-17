@@ -1,0 +1,64 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "insert_cql_primitive": "INSERT INTO ts0_series_raw (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding) VALUES (?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "Use original event time as epoch milliseconds; no physical time bucket."
+    ],
+    "maintenance_requirements": [
+      "Insert every input observation; preserve payload padding and stable event_id."
+    ],
+    "status": "NO_VALIDATED_WRITEPLAN_YET"
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "insert_cql_primitive": "INSERT INTO ts1_series_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 3600000) * 3600000; floor for negative epochs."
+    ],
+    "maintenance_requirements": [
+      "Write each observation to its UTC bucket; stable event_id makes retried inserts idempotent."
+    ],
+    "status": "NO_VALIDATED_WRITEPLAN_YET"
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "insert_cql_primitive": "INSERT INTO ts1_series_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 60000) * 60000; floor for negative epochs."
+    ],
+    "maintenance_requirements": [
+      "Write each observation to its UTC bucket; stable event_id makes retried inserts idempotent."
+    ],
+    "status": "NO_VALIDATED_WRITEPLAN_YET"
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "insert_cql_primitive": "INSERT INTO ts3_sensor_3600s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 3600000) * 3600000; floor for negative epochs."
+    ],
+    "maintenance_requirements": [
+      "A complete workload deployment must write each observation to this projection alongside the chosen canonical source.",
+      "Extra storage and fanout are NOT free; quantify in Stages 6/7/9."
+    ],
+    "status": "NO_VALIDATED_WRITEPLAN_YET"
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "insert_cql_primitive": "INSERT INTO ts3_sensor_60s (driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding, bucket_start_ms) VALUES (?, ?, ?, ?, ?, ?, ?);",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 60000) * 60000; floor for negative epochs."
+    ],
+    "maintenance_requirements": [
+      "A complete workload deployment must write each observation to this projection alongside the chosen canonical source.",
+      "Extra storage and fanout are NOT free; quantify in Stages 6/7/9."
+    ],
+    "status": "NO_VALIDATED_WRITEPLAN_YET"
+  }
+]

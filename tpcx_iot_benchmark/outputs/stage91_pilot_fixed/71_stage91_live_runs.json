@@ -1,0 +1,652 @@
+{
+  "baseline_not_official_schema": true,
+  "hbench_frozen": true,
+  "runs": [
+    {
+      "audit": {
+        "all_source_events_checked": true,
+        "expected_records": 960,
+        "max_events": 50000,
+        "status": "PASS_ALL_RECORDS_ALL_PHYSICAL_TABLES",
+        "tables": {
+          "ts0_series_raw": {
+            "full_content_match": true,
+            "rows_checked": 960
+          }
+        }
+      },
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "cassandra_version": "4.1.8",
+      "completed_utc": "2026-10-19T20:38:31.510499+00:00",
+      "deployment_id": "h_119222012d4e",
+      "dynamic": {
+        "all_query_results_verified": true,
+        "ingest_wall_seconds": 0.371397,
+        "logical_read_requests_total": 48,
+        "method_note": "Time advances with committed synthetic event-time; not wall-clock TPC timing.",
+        "official_IoTps": null,
+        "overlap_reads_completed_during_ingestion": 11,
+        "physical_insert_statements": 180,
+        "query_fixed_count": true,
+        "query_schedule_sha256": "0fc3c11163dd66d3779cf875437c07ec28956e6e83798a313e720b26c7b2724c",
+        "query_windows_dynamic": true,
+        "read_latency": {
+          "max_ms": 3.674149,
+          "mean_ms": 3.038939,
+          "n": 12,
+          "p50_ms": 3.03228,
+          "p95_ms": 3.575376,
+          "p99_ms": 3.654394
+        },
+        "read_operations": 12,
+        "read_threads": 2,
+        "research_events_per_second": 484.6565,
+        "snapshot_bound_to_committed_data": true,
+        "source_events": 180,
+        "status": "PASS_DYNAMIC_RESEARCH",
+        "tpc_compliant": false
+      },
+      "keyspace": "sl_tpcx_h_119222012d4e",
+      "official_IoTps": null,
+      "repeat_index": 0,
+      "status": "COMPLETE_RESEARCH_ONLY",
+      "storage": {
+        "commands": [
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "flush",
+              "sl_tpcx_h_119222012d4e"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_flush_sl_tpcx_h_119222012d4e.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_119222012d4e.ts0_series_raw"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_119222012d4e_ts0_series_raw.txt"
+          }
+        ],
+        "container": "schemalens_tpcx_cassandra",
+        "diagnostic_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/storage_diagnostic.json",
+        "keyspace": "sl_tpcx_h_119222012d4e",
+        "live_bytes": 45131,
+        "per_table_live_bytes": {
+          "ts0_series_raw": 45131
+        },
+        "status": "MEASURED_NODETOOL_LIVE_BYTES",
+        "storage_metric": "Sum of nodetool Space used (live) per table after flush"
+      },
+      "table_counts": {
+        "ts0_series_raw": 960
+      },
+      "tpc_compliant": false
+    },
+    {
+      "audit": {
+        "all_source_events_checked": true,
+        "expected_records": 960,
+        "max_events": 50000,
+        "status": "PASS_ALL_RECORDS_ALL_PHYSICAL_TABLES",
+        "tables": {
+          "ts1_series_3600s": {
+            "full_content_match": true,
+            "rows_checked": 960
+          },
+          "ts3_sensor_3600s": {
+            "full_content_match": true,
+            "rows_checked": 960
+          }
+        }
+      },
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "cassandra_version": "4.1.8",
+      "completed_utc": "2026-10-19T20:38:36.783582+00:00",
+      "deployment_id": "h_6745757bf865",
+      "dynamic": {
+        "all_query_results_verified": true,
+        "ingest_wall_seconds": 0.583081,
+        "logical_read_requests_total": 24,
+        "method_note": "Time advances with committed synthetic event-time; not wall-clock TPC timing.",
+        "official_IoTps": null,
+        "overlap_reads_completed_during_ingestion": 11,
+        "physical_insert_statements": 360,
+        "query_fixed_count": true,
+        "query_schedule_sha256": "0fc3c11163dd66d3779cf875437c07ec28956e6e83798a313e720b26c7b2724c",
+        "query_windows_dynamic": true,
+        "read_latency": {
+          "max_ms": 2.260573,
+          "mean_ms": 1.832049,
+          "n": 12,
+          "p50_ms": 1.815516,
+          "p95_ms": 2.168383,
+          "p99_ms": 2.242135
+        },
+        "read_operations": 12,
+        "read_threads": 2,
+        "research_events_per_second": 308.7051,
+        "snapshot_bound_to_committed_data": true,
+        "source_events": 180,
+        "status": "PASS_DYNAMIC_RESEARCH",
+        "tpc_compliant": false
+      },
+      "keyspace": "sl_tpcx_h_6745757bf865",
+      "official_IoTps": null,
+      "repeat_index": 0,
+      "status": "COMPLETE_RESEARCH_ONLY",
+      "storage": {
+        "commands": [
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "flush",
+              "sl_tpcx_h_6745757bf865"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_flush_sl_tpcx_h_6745757bf865.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_6745757bf865.ts1_series_3600s"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_6745757bf865_ts1_series_3600s.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_6745757bf865.ts3_sensor_3600s"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_6745757bf865_ts3_sensor_3600s.txt"
+          }
+        ],
+        "container": "schemalens_tpcx_cassandra",
+        "diagnostic_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/storage_diagnostic.json",
+        "keyspace": "sl_tpcx_h_6745757bf865",
+        "live_bytes": 93863,
+        "per_table_live_bytes": {
+          "ts1_series_3600s": 45560,
+          "ts3_sensor_3600s": 48303
+        },
+        "status": "MEASURED_NODETOOL_LIVE_BYTES",
+        "storage_metric": "Sum of nodetool Space used (live) per table after flush"
+      },
+      "table_counts": {
+        "ts1_series_3600s": 960,
+        "ts3_sensor_3600s": 960
+      },
+      "tpc_compliant": false
+    },
+    {
+      "audit": {
+        "all_source_events_checked": true,
+        "expected_records": 960,
+        "max_events": 50000,
+        "status": "PASS_ALL_RECORDS_ALL_PHYSICAL_TABLES",
+        "tables": {
+          "ts1_series_60s": {
+            "full_content_match": true,
+            "rows_checked": 960
+          },
+          "ts3_sensor_60s": {
+            "full_content_match": true,
+            "rows_checked": 960
+          }
+        }
+      },
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "cassandra_version": "4.1.8",
+      "completed_utc": "2026-10-19T20:38:42.145506+00:00",
+      "deployment_id": "h_a9983e2318a9",
+      "dynamic": {
+        "all_query_results_verified": true,
+        "ingest_wall_seconds": 0.653087,
+        "logical_read_requests_total": 24,
+        "method_note": "Time advances with committed synthetic event-time; not wall-clock TPC timing.",
+        "official_IoTps": null,
+        "overlap_reads_completed_during_ingestion": 11,
+        "physical_insert_statements": 360,
+        "query_fixed_count": true,
+        "query_schedule_sha256": "0fc3c11163dd66d3779cf875437c07ec28956e6e83798a313e720b26c7b2724c",
+        "query_windows_dynamic": true,
+        "read_latency": {
+          "max_ms": 2.485094,
+          "mean_ms": 1.636208,
+          "n": 12,
+          "p50_ms": 1.544698,
+          "p95_ms": 2.188242,
+          "p99_ms": 2.425724
+        },
+        "read_operations": 12,
+        "read_threads": 2,
+        "research_events_per_second": 275.614,
+        "snapshot_bound_to_committed_data": true,
+        "source_events": 180,
+        "status": "PASS_DYNAMIC_RESEARCH",
+        "tpc_compliant": false
+      },
+      "keyspace": "sl_tpcx_h_a9983e2318a9",
+      "official_IoTps": null,
+      "repeat_index": 0,
+      "status": "COMPLETE_RESEARCH_ONLY",
+      "storage": {
+        "commands": [
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "flush",
+              "sl_tpcx_h_a9983e2318a9"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_flush_sl_tpcx_h_a9983e2318a9.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_a9983e2318a9.ts1_series_60s"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_a9983e2318a9_ts1_series_60s.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_a9983e2318a9.ts3_sensor_60s"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_a9983e2318a9_ts3_sensor_60s.txt"
+          }
+        ],
+        "container": "schemalens_tpcx_cassandra",
+        "diagnostic_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/storage_diagnostic.json",
+        "keyspace": "sl_tpcx_h_a9983e2318a9",
+        "live_bytes": 94473,
+        "per_table_live_bytes": {
+          "ts1_series_60s": 45416,
+          "ts3_sensor_60s": 49057
+        },
+        "status": "MEASURED_NODETOOL_LIVE_BYTES",
+        "storage_metric": "Sum of nodetool Space used (live) per table after flush"
+      },
+      "table_counts": {
+        "ts1_series_60s": 960,
+        "ts3_sensor_60s": 960
+      },
+      "tpc_compliant": false
+    },
+    {
+      "audit": {
+        "all_source_events_checked": true,
+        "expected_records": 960,
+        "max_events": 50000,
+        "status": "PASS_ALL_RECORDS_ALL_PHYSICAL_TABLES",
+        "tables": {
+          "ts0_series_raw": {
+            "full_content_match": true,
+            "rows_checked": 960
+          },
+          "ts3_sensor_3600s": {
+            "full_content_match": true,
+            "rows_checked": 960
+          }
+        }
+      },
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "cassandra_version": "4.1.8",
+      "completed_utc": "2026-10-19T20:38:47.741629+00:00",
+      "deployment_id": "h_3f1449e05468",
+      "dynamic": {
+        "all_query_results_verified": true,
+        "ingest_wall_seconds": 0.62916,
+        "logical_read_requests_total": 24,
+        "method_note": "Time advances with committed synthetic event-time; not wall-clock TPC timing.",
+        "official_IoTps": null,
+        "overlap_reads_completed_during_ingestion": 11,
+        "physical_insert_statements": 360,
+        "query_fixed_count": true,
+        "query_schedule_sha256": "0fc3c11163dd66d3779cf875437c07ec28956e6e83798a313e720b26c7b2724c",
+        "query_windows_dynamic": true,
+        "read_latency": {
+          "max_ms": 1.917146,
+          "mean_ms": 1.394839,
+          "n": 12,
+          "p50_ms": 1.385485,
+          "p95_ms": 1.769265,
+          "p99_ms": 1.88757
+        },
+        "read_operations": 12,
+        "read_threads": 2,
+        "research_events_per_second": 286.0955,
+        "snapshot_bound_to_committed_data": true,
+        "source_events": 180,
+        "status": "PASS_DYNAMIC_RESEARCH",
+        "tpc_compliant": false
+      },
+      "keyspace": "sl_tpcx_h_3f1449e05468",
+      "official_IoTps": null,
+      "repeat_index": 0,
+      "status": "COMPLETE_RESEARCH_ONLY",
+      "storage": {
+        "commands": [
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "flush",
+              "sl_tpcx_h_3f1449e05468"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_flush_sl_tpcx_h_3f1449e05468.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_3f1449e05468.ts0_series_raw"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_3f1449e05468_ts0_series_raw.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_3f1449e05468.ts3_sensor_3600s"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_3f1449e05468_ts3_sensor_3600s.txt"
+          }
+        ],
+        "container": "schemalens_tpcx_cassandra",
+        "diagnostic_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/storage_diagnostic.json",
+        "keyspace": "sl_tpcx_h_3f1449e05468",
+        "live_bytes": 93670,
+        "per_table_live_bytes": {
+          "ts0_series_raw": 45364,
+          "ts3_sensor_3600s": 48306
+        },
+        "status": "MEASURED_NODETOOL_LIVE_BYTES",
+        "storage_metric": "Sum of nodetool Space used (live) per table after flush"
+      },
+      "table_counts": {
+        "ts0_series_raw": 960,
+        "ts3_sensor_3600s": 960
+      },
+      "tpc_compliant": false
+    },
+    {
+      "audit": {
+        "all_source_events_checked": true,
+        "expected_records": 960,
+        "max_events": 50000,
+        "status": "PASS_ALL_RECORDS_ALL_PHYSICAL_TABLES",
+        "tables": {
+          "ts1_series_3600s": {
+            "full_content_match": true,
+            "rows_checked": 960
+          }
+        }
+      },
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "cassandra_version": "4.1.8",
+      "completed_utc": "2026-10-19T20:38:51.395604+00:00",
+      "deployment_id": "h_aba788b8e7b7",
+      "dynamic": {
+        "all_query_results_verified": true,
+        "ingest_wall_seconds": 0.39351,
+        "logical_read_requests_total": 48,
+        "method_note": "Time advances with committed synthetic event-time; not wall-clock TPC timing.",
+        "official_IoTps": null,
+        "overlap_reads_completed_during_ingestion": 11,
+        "physical_insert_statements": 180,
+        "query_fixed_count": true,
+        "query_schedule_sha256": "0fc3c11163dd66d3779cf875437c07ec28956e6e83798a313e720b26c7b2724c",
+        "query_windows_dynamic": true,
+        "read_latency": {
+          "max_ms": 2.349982,
+          "mean_ms": 1.957816,
+          "n": 12,
+          "p50_ms": 1.99385,
+          "p95_ms": 2.274679,
+          "p99_ms": 2.334921
+        },
+        "read_operations": 12,
+        "read_threads": 2,
+        "research_events_per_second": 457.4217,
+        "snapshot_bound_to_committed_data": true,
+        "source_events": 180,
+        "status": "PASS_DYNAMIC_RESEARCH",
+        "tpc_compliant": false
+      },
+      "keyspace": "sl_tpcx_h_aba788b8e7b7",
+      "official_IoTps": null,
+      "repeat_index": 0,
+      "status": "COMPLETE_RESEARCH_ONLY",
+      "storage": {
+        "commands": [
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "flush",
+              "sl_tpcx_h_aba788b8e7b7"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_flush_sl_tpcx_h_aba788b8e7b7.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_h_aba788b8e7b7.ts1_series_3600s"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_h_aba788b8e7b7_ts1_series_3600s.txt"
+          }
+        ],
+        "container": "schemalens_tpcx_cassandra",
+        "diagnostic_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/storage_diagnostic.json",
+        "keyspace": "sl_tpcx_h_aba788b8e7b7",
+        "live_bytes": 45435,
+        "per_table_live_bytes": {
+          "ts1_series_3600s": 45435
+        },
+        "status": "MEASURED_NODETOOL_LIVE_BYTES",
+        "storage_metric": "Sum of nodetool Space used (live) per table after flush"
+      },
+      "table_counts": {
+        "ts1_series_3600s": 960
+      },
+      "tpc_compliant": false
+    },
+    {
+      "audit": {
+        "all_source_events_checked": true,
+        "expected_records": 960,
+        "max_events": 50000,
+        "status": "PASS_ALL_RECORDS_ALL_PHYSICAL_TABLES",
+        "tables": {
+          "b_tpcx_logical_raw": {
+            "full_content_match": true,
+            "rows_checked": 960
+          }
+        }
+      },
+      "baseline_kind": "RESEARCH_DERIVED_NOT_OFFICIAL_PHYSICAL_SCHEMA",
+      "cassandra_version": "4.1.8",
+      "completed_utc": "2026-10-19T20:38:54.713578+00:00",
+      "deployment_id": "b_tpcx_logical_raw",
+      "dynamic": {
+        "all_query_results_verified": true,
+        "ingest_wall_seconds": 0.392995,
+        "logical_read_requests_total": 24,
+        "method_note": "Time advances with committed synthetic event-time; not wall-clock TPC timing.",
+        "official_IoTps": null,
+        "overlap_reads_completed_during_ingestion": 11,
+        "physical_insert_statements": 180,
+        "query_fixed_count": true,
+        "query_schedule_sha256": "0fc3c11163dd66d3779cf875437c07ec28956e6e83798a313e720b26c7b2724c",
+        "query_windows_dynamic": true,
+        "read_latency": {
+          "max_ms": 4.935991,
+          "mean_ms": 1.637377,
+          "n": 12,
+          "p50_ms": 1.26392,
+          "p95_ms": 3.152328,
+          "p99_ms": 4.579258
+        },
+        "read_operations": 12,
+        "read_threads": 2,
+        "research_events_per_second": 458.0212,
+        "snapshot_bound_to_committed_data": true,
+        "source_events": 180,
+        "status": "PASS_DYNAMIC_RESEARCH",
+        "tpc_compliant": false
+      },
+      "keyspace": "sl_tpcx_b_tpcx_raw",
+      "official_IoTps": null,
+      "repeat_index": 0,
+      "status": "COMPLETE_RESEARCH_ONLY",
+      "storage": {
+        "commands": [
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "flush",
+              "sl_tpcx_b_tpcx_raw"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_flush_sl_tpcx_b_tpcx_raw.txt"
+          },
+          {
+            "command": [
+              "docker",
+              "exec",
+              "schemalens_tpcx_cassandra",
+              "nodetool",
+              "tablestats",
+              "sl_tpcx_b_tpcx_raw.b_tpcx_logical_raw"
+            ],
+            "exception": "",
+            "returncode": 0,
+            "stderr_tail": "",
+            "stdout_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/nodetool_sl_tpcx_b_tpcx_raw_b_tpcx_logical_raw.txt"
+          }
+        ],
+        "container": "schemalens_tpcx_cassandra",
+        "diagnostic_path": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_TPCx_IoT_Cassandra_Stage9_1_TARGET_FIX/outputs/stage91_pilot_fixed/storage/repeat0/storage_diagnostic.json",
+        "keyspace": "sl_tpcx_b_tpcx_raw",
+        "live_bytes": 48022,
+        "per_table_live_bytes": {
+          "b_tpcx_logical_raw": 48022
+        },
+        "status": "MEASURED_NODETOOL_LIVE_BYTES",
+        "storage_metric": "Sum of nodetool Space used (live) per table after flush"
+      },
+      "table_counts": {
+        "b_tpcx_logical_raw": 960
+      },
+      "tpc_compliant": false
+    }
+  ],
+  "settings": {
+    "bench_steps": 30,
+    "hosts": "127.0.0.1",
+    "keyspace_prefix": "sl_tpcx",
+    "max_full_audit_events": 50000,
+    "mode": "benchmark",
+    "nodetool_container": "schemalens_tpcx_cassandra",
+    "pad_bytes": 900,
+    "port": 9044,
+    "read_operations": 12,
+    "read_threads": 2,
+    "repetitions": 1,
+    "replication_factor": 1,
+    "require_full_audit": true,
+    "require_storage": true,
+    "reset": true,
+    "seed_steps": 130,
+    "sensors": 3,
+    "stations": 2,
+    "tick_ms": 1000
+  },
+  "status": "COMPLETE_RESEARCH_ONLY"
+}

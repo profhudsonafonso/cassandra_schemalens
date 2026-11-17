@@ -1,0 +1,57 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "query_id": "Q_INGEST",
+    "logical_insert_write_plan_present": true,
+    "offline_write_fixture_passed": true,
+    "live_write_coverage_verified": false,
+    "write_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "complete_deployment_proven": false,
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "query_id": "Q_INGEST",
+    "logical_insert_write_plan_present": true,
+    "offline_write_fixture_passed": true,
+    "live_write_coverage_verified": false,
+    "write_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "complete_deployment_proven": false,
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "query_id": "Q_INGEST",
+    "logical_insert_write_plan_present": true,
+    "offline_write_fixture_passed": true,
+    "live_write_coverage_verified": false,
+    "write_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "complete_deployment_proven": false,
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "query_id": "Q_INGEST",
+    "logical_insert_write_plan_present": true,
+    "offline_write_fixture_passed": true,
+    "live_write_coverage_verified": false,
+    "write_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "complete_deployment_proven": false,
+    "eligible_for_complete_workload_HBench": false
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "query_id": "Q_INGEST",
+    "logical_insert_write_plan_present": true,
+    "offline_write_fixture_passed": true,
+    "live_write_coverage_verified": false,
+    "write_coverage_status": "CONDITIONAL_OFFLINE_ONLY",
+    "complete_deployment_proven": false,
+    "eligible_for_complete_workload_HBench": false
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "baseline_id": "b_tpcx_logical_raw",
+  "label": "TPCx-IoT logical-record baseline ported to Cassandra",
+  "status": "RESEARCH_DERIVED_NOT_OFFICIAL_PHYSICAL_SCHEMA",
+  "source_specification": "https://www.tpc.org/TPC_Documents_Current_Versions/pdf/TPCX-IOT_v2.1.2.pdf",
+  "source_clause": "Clause 2.2: driver system id, sensor name, timestamp, sensor reading, padding",
+  "qualification": "The official TPCx-IoT is technology-agnostic and has database-specific bindings. This is a new Cassandra implementation of the specified flat logical record, not an official TPC Cassandra binding or canonical physical schema.",
+  "physical_table": "b_tpcx_logical_raw",
+  "partition_key": ["sensor_name"],
+  "clustering_key": ["event_ts", "driver_system_id", "event_id"],
+  "query_key": "sensor_name",
+  "event_identity": ["driver_system_id", "sensor_name", "event_ts", "event_id"],
+  "schema_cql": "CREATE TABLE IF NOT EXISTS b_tpcx_logical_raw (driver_system_id text, sensor_name text, event_ts bigint, event_id uuid, sensor_reading double, padding text, PRIMARY KEY ((sensor_name), event_ts, driver_system_id, event_id)) WITH CLUSTERING ORDER BY (event_ts ASC, driver_system_id ASC, event_id ASC);",
+  "limitations": [
+    "Unbounded partition growth by sensor: requires scale feasibility assessment.",
+    "Event ID is a study-specific surrogate to preserve equal-timestamp multiplicity.",
+    "No official Cassandra-specific original schema exists in the referenced TPC specification.",
+    "Not selected through SchemaLens; measured only after HBench is frozen."
+  ]
+}

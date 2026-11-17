@@ -1,0 +1,125 @@
+{
+  "baseline_id": "b_tpcx_logical_raw",
+  "baseline_official_cassandra": false,
+  "hbench_frozen": true,
+  "n_runs": 6,
+  "reason": "Full nine compatible deployments are evaluated only in verification mode.",
+  "summary": [
+    {
+      "baseline_kind": "EXTERNAL_TPC_LOGICAL_PORT",
+      "deployment_id": "b_tpcx_logical_raw",
+      "max_ingest_events_per_s": 458.0212,
+      "max_read_p95_ms": 3.152328,
+      "median_ingest_events_per_s": 458.0212,
+      "median_read_p95_ms": 3.152328,
+      "median_storage_live_bytes": 48022,
+      "min_ingest_events_per_s": 458.0212,
+      "min_read_p95_ms": 3.152328,
+      "runs": 1,
+      "storage_runs": 1
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_119222012d4e",
+      "max_ingest_events_per_s": 484.6565,
+      "max_read_p95_ms": 3.575376,
+      "median_ingest_events_per_s": 484.6565,
+      "median_read_p95_ms": 3.575376,
+      "median_storage_live_bytes": 45131,
+      "min_ingest_events_per_s": 484.6565,
+      "min_read_p95_ms": 3.575376,
+      "runs": 1,
+      "storage_runs": 1
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_3f1449e05468",
+      "max_ingest_events_per_s": 286.0955,
+      "max_read_p95_ms": 1.769265,
+      "median_ingest_events_per_s": 286.0955,
+      "median_read_p95_ms": 1.769265,
+      "median_storage_live_bytes": 93670,
+      "min_ingest_events_per_s": 286.0955,
+      "min_read_p95_ms": 1.769265,
+      "runs": 1,
+      "storage_runs": 1
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_6745757bf865",
+      "max_ingest_events_per_s": 308.7051,
+      "max_read_p95_ms": 2.168383,
+      "median_ingest_events_per_s": 308.7051,
+      "median_read_p95_ms": 2.168383,
+      "median_storage_live_bytes": 93863,
+      "min_ingest_events_per_s": 308.7051,
+      "min_read_p95_ms": 2.168383,
+      "runs": 1,
+      "storage_runs": 1
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_a9983e2318a9",
+      "max_ingest_events_per_s": 275.614,
+      "max_read_p95_ms": 2.188242,
+      "median_ingest_events_per_s": 275.614,
+      "median_read_p95_ms": 2.188242,
+      "median_storage_live_bytes": 94473,
+      "min_ingest_events_per_s": 275.614,
+      "min_read_p95_ms": 2.188242,
+      "runs": 1,
+      "storage_runs": 1
+    },
+    {
+      "baseline_kind": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_aba788b8e7b7",
+      "max_ingest_events_per_s": 457.4217,
+      "max_read_p95_ms": 2.274679,
+      "median_ingest_events_per_s": 457.4217,
+      "median_read_p95_ms": 2.274679,
+      "median_storage_live_bytes": 45435,
+      "min_ingest_events_per_s": 457.4217,
+      "min_read_p95_ms": 2.274679,
+      "runs": 1,
+      "storage_runs": 1
+    }
+  ],
+  "topk_regret_evaluated": false,
+  "vs_baseline": [
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_119222012d4e",
+      "ingest_ratio_vs_baseline": 1.0582,
+      "read_p95_ratio_vs_baseline": 1.1342,
+      "storage_ratio_vs_baseline": 0.9398
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_3f1449e05468",
+      "ingest_ratio_vs_baseline": 0.6246,
+      "read_p95_ratio_vs_baseline": 0.5613,
+      "storage_ratio_vs_baseline": 1.9506
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_6745757bf865",
+      "ingest_ratio_vs_baseline": 0.674,
+      "read_p95_ratio_vs_baseline": 0.6879,
+      "storage_ratio_vs_baseline": 1.9546
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_a9983e2318a9",
+      "ingest_ratio_vs_baseline": 0.6017,
+      "read_p95_ratio_vs_baseline": 0.6942,
+      "storage_ratio_vs_baseline": 1.9673
+    },
+    {
+      "baseline_id": "b_tpcx_logical_raw",
+      "deployment_id": "h_aba788b8e7b7",
+      "ingest_ratio_vs_baseline": 0.9987,
+      "read_p95_ratio_vs_baseline": 0.7216,
+      "storage_ratio_vs_baseline": 0.9461
+    }
+  ]
+}

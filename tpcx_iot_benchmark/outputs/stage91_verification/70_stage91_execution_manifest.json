@@ -1,0 +1,119 @@
+{
+  "baseline_is_official_cassandra_schema": false,
+  "designs": [
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_119222012d4e",
+      "tables": [
+        "ts0_series_raw"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_3f1449e05468",
+      "tables": [
+        "ts0_series_raw",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_6276d5b68197",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_6745757bf865",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_977291c72920",
+      "tables": [
+        "ts0_series_raw",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_a9983e2318a9",
+      "tables": [
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_aba788b8e7b7",
+      "tables": [
+        "ts1_series_3600s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_b4bea9150d2e",
+      "tables": [
+        "ts1_series_60s"
+      ]
+    },
+    {
+      "baseline_type": "SCHEMALENS_HBENCH",
+      "deployment_id": "h_bdd6bbdce69f",
+      "tables": [
+        "ts1_series_60s",
+        "ts3_sensor_3600s"
+      ]
+    },
+    {
+      "baseline_type": "RESEARCH_DERIVED_NOT_OFFICIAL_PHYSICAL_SCHEMA",
+      "deployment_id": "b_tpcx_logical_raw",
+      "tables": [
+        "b_tpcx_logical_raw"
+      ]
+    }
+  ],
+  "hbench_frozen": true,
+  "metric_note": "Event-time-driven dynamic windows; equal query count/parameters, append-only sealed checkpoints",
+  "mode": "verification",
+  "notational_note": "TPCx-IoT logical record mapped to new Cassandra flat-table baseline; not a canonical TPC physical schema",
+  "official_tpcx_iot": false,
+  "provenance": {
+    "baseline_sha256": "37a6f0aeec92b9989899e8a3a9d0fde2d9ec1e992c0b720735cae88d633f774c",
+    "frozen_hashes": {
+      "config/tpcx_stage8_consolidation_policy.json": "99f3805ce733b5c5e7301586527f5a41ae3404c0516eb872a7867f525a6d9e93",
+      "outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+      "outputs/tpcx_iot_stage5/20_queryplans.json": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+      "outputs/tpcx_iot_stage6/30_writeplans.json": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710",
+      "outputs/tpcx_iot_stage8/54_hbench_selected.json": "2d37758588eea00123e8857c0a1b8ea990d17f5ac93f8c64671a7556796d6f28",
+      "outputs/tpcx_iot_stage8/58_stage8_manifest.json": "01489f3f5bad8500d98da63da12223fd56eac3edb6a9f4b2097e37459d308bea"
+    }
+  },
+  "settings": {
+    "bench_steps": 500,
+    "hosts": "127.0.0.1",
+    "keyspace_prefix": "sl_tpcx",
+    "max_full_audit_events": 50000,
+    "mode": "verification",
+    "nodetool_container": "schemalens_tpcx_cassandra",
+    "pad_bytes": 900,
+    "port": 9044,
+    "read_operations": 120,
+    "read_threads": 2,
+    "repetitions": 3,
+    "replication_factor": 1,
+    "require_full_audit": true,
+    "require_storage": true,
+    "reset": true,
+    "seed_steps": 130,
+    "sensors": 3,
+    "stations": 2,
+    "tick_ms": 1000
+  },
+  "status": "PREPARED_NO_MEASUREMENTS"
+}

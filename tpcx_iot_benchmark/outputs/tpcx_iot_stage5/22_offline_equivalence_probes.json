@@ -1,0 +1,252 @@
+[
+  {
+    "fixture": "multiple_stations_and_equal_readings",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "cql_request_count": 4,
+    "actual_result_count": 7,
+    "logical_oracle_result_count": 7,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "bucket_boundary_60s",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "cql_request_count": 4,
+    "actual_result_count": 6,
+    "logical_oracle_result_count": 6,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "touching_windows_dedup",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "cql_request_count": 4,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "negative_epoch_floor",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "cql_request_count": 4,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "empty_windows",
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "cql_request_count": 4,
+    "actual_result_count": 0,
+    "logical_oracle_result_count": 0,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "multiple_stations_and_equal_readings",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 7,
+    "logical_oracle_result_count": 7,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "bucket_boundary_60s",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 6,
+    "logical_oracle_result_count": 6,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "touching_windows_dedup",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "negative_epoch_floor",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "empty_windows",
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 0,
+    "logical_oracle_result_count": 0,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "multiple_stations_and_equal_readings",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 7,
+    "logical_oracle_result_count": 7,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "bucket_boundary_60s",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "cql_request_count": 6,
+    "actual_result_count": 6,
+    "logical_oracle_result_count": 6,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "touching_windows_dedup",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "cql_request_count": 6,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "negative_epoch_floor",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "cql_request_count": 6,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "empty_windows",
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "cql_request_count": 4,
+    "actual_result_count": 0,
+    "logical_oracle_result_count": 0,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "multiple_stations_and_equal_readings",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 7,
+    "logical_oracle_result_count": 7,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "bucket_boundary_60s",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 6,
+    "logical_oracle_result_count": 6,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "touching_windows_dedup",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "negative_epoch_floor",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "empty_windows",
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 0,
+    "logical_oracle_result_count": 0,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "multiple_stations_and_equal_readings",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 7,
+    "logical_oracle_result_count": 7,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "bucket_boundary_60s",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "cql_request_count": 3,
+    "actual_result_count": 6,
+    "logical_oracle_result_count": 6,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "touching_windows_dedup",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "cql_request_count": 3,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "negative_epoch_floor",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "cql_request_count": 3,
+    "actual_result_count": 4,
+    "logical_oracle_result_count": 4,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  },
+  {
+    "fixture": "empty_windows",
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "cql_request_count": 2,
+    "actual_result_count": 0,
+    "logical_oracle_result_count": 0,
+    "passed": true,
+    "validation_scope": "DETERMINISTIC_OFFLINE_FIXTURE_NOT_LIVE_CASSANDRA"
+  }
+]

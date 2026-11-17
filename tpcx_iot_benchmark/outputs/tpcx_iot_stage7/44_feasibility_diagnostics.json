@@ -1,0 +1,66 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "status": "CONDITIONAL_ANALYTICAL_ONLY",
+    "warnings": [
+      "UNBOUNDED_PARTITION_OVER_TIME",
+      "COMPLETE_STATION_ROSTER_REQUIRED",
+      "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+      "NO_LIVE_CASSANDRA_VALIDATION"
+    ],
+    "hard_rejection": false,
+    "true_feasibility_not_proven": true
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "status": "CONDITIONAL_ANALYTICAL_ONLY",
+    "warnings": [
+      "COMPLETE_STATION_ROSTER_REQUIRED",
+      "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+      "NO_LIVE_CASSANDRA_VALIDATION"
+    ],
+    "hard_rejection": false,
+    "true_feasibility_not_proven": true
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "status": "CONDITIONAL_ANALYTICAL_ONLY",
+    "warnings": [
+      "TOTAL_PARTITION_COUNT_WARNING",
+      "COMPLETE_STATION_ROSTER_REQUIRED",
+      "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+      "NO_LIVE_CASSANDRA_VALIDATION"
+    ],
+    "hard_rejection": false,
+    "true_feasibility_not_proven": true
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "status": "CONDITIONAL_ANALYTICAL_ONLY",
+    "warnings": [
+      "CANONICAL_SOURCE_REQUIRED",
+      "DURABLE_PROJECTION_REPAIR_REQUIRED",
+      "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+      "NO_LIVE_CASSANDRA_VALIDATION"
+    ],
+    "hard_rejection": false,
+    "true_feasibility_not_proven": true
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "status": "CONDITIONAL_ANALYTICAL_ONLY",
+    "warnings": [
+      "CANONICAL_SOURCE_REQUIRED",
+      "DURABLE_PROJECTION_REPAIR_REQUIRED",
+      "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+      "NO_LIVE_CASSANDRA_VALIDATION"
+    ],
+    "hard_rejection": false,
+    "true_feasibility_not_proven": true
+  }
+]

@@ -1,0 +1,3 @@
+query_id,query_name,operation,query_class,official_workload_operation,predicate_confidence,frequency_status,sql_file
+Q_INGEST,Ingest sensor reading,INSERT,insert,continuous_sensor_ingestion,SOURCE_DEFINED,NOT_SPECIFIED_AS_QUERY_MIX_WEIGHT,Q_INGEST.sql
+Q_READ_2_WINDOWS,Read recent and historical windows,SELECT,temporal_range,one_query_two_intervals,ASSUMPTION_TO_VERIFY_IN_KIT,NOT_SPECIFIED_AS_QUERY_MIX_WEIGHT,Q_READ_2_WINDOWS.sql

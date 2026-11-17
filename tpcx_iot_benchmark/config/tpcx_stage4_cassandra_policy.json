@@ -1,0 +1,26 @@
+{
+  "version": "tpcx-iot-cassandra-stage4-v1",
+  "research_only": true,
+  "source_profile": "sensor-name-only/raw_read",
+  "bucket_width_seconds": [
+    60,
+    3600
+  ],
+  "ts3_bucket_width_seconds": [
+    60,
+    3600
+  ],
+  "timestamp_representation": "bigint_epoch_milliseconds_utc",
+  "event_identity": "stable_event_id_uuid_added_by_ingestion_adapter",
+  "query_interval_bounds": "inclusive",
+  "select_winner_by_latency": false,
+  "apply_compaction_automatically": false,
+  "apply_ttl_automatically": false,
+  "notes": [
+    "Physical alternatives fixed before performance measurement.",
+    "Times and original padding retained in every candidate; TS3 duplicates data.",
+    "TS0 has unbounded partitions, retained as control only.",
+    "M3 remains a flag; no compaction option is silently selected.",
+    "TS1/TS3 bucket sizes are physical layout choices, not TPC requirements."
+  ]
+}

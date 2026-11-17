@@ -25,6 +25,7 @@ acréscimos, nunca substituições. A V9 refaz o pipeline E1–E23 de forma que:
 | `runs/v9_generation_001/` | todas as saídas desta execução (`stages/Exx_*/RESULT.json`, inventário, proveniência) |
 | `monitor/` | `MONITOR.html` (abre com duplo clique) e `status.json`, atualizados a cada 15 s |
 | `docs/` | `DECISION_LOG.md`, `METHOD_V9.md`, `LIMITATIONS.md` |
+| `tpcx_iot_benchmark/` | experimento SchemaLens com o benchmark TPCx-IoT no Cassandra (Etapas 1–9.1), ver `tpcx_iot_benchmark/README_REPO.md` |
 
 ## Como rodar
 

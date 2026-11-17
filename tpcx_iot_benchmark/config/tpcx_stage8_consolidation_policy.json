@@ -1,0 +1,31 @@
+{
+  "policy_version": "tpcx-iot-cassandra-stage8-v1",
+  "research_only": true,
+  "source_profile": "sensor-name-only/raw_read",
+  "selection_uses_measured_results": false,
+  "allow_conditional_offline_coverage": true,
+  "require_live_coverage_for_measured_claims": true,
+  "top_k": 5,
+  "exact_enumeration_limit_candidates": 12,
+  "required_control_candidate": "ts0_series_raw",
+  "max_one_canonical_source": true,
+  "max_one_projection_per_materialization": true,
+  "require_projection_canonical_source": true,
+  "partition_warning_policy": "REPORT_ONLY_NOT_HARD_EXCLUSION",
+  "preselection_mode": "PARETO_THEN_CONTROL_AND_PHYSICAL_VARIANT_DIVERSITY",
+  "normalized_score_weights": {
+    "read_cql_requests": 0.45,
+    "replicated_logical_storage": 0.15,
+    "insert_statements_per_event": 0.20,
+    "maximum_partition_bytes": 0.15,
+    "physical_partition_count": 0.05
+  },
+  "notes": [
+    "Exactly one canonical raw-series table is required. Any TS3 projection requires that canonical table and a durable repair process, unverified so far.",
+    "The mandatory standalone TS0 control permits comparisons with the canonical source alone.",
+    "Dominance is established over five independently normalized structural proxies, not estimated latency or actual disk storage.",
+    "Read routing uses a Stage5 executable-template CQL plan only after its Stage9 runtime preconditions are met.",
+    "The preselection covers a diversity of distinct physical variants where the Pareto family allows it; not guaranteed exhaustive or optimal.",
+    "Official TPCx-IoT kit predicates and live Cassandra equivalence are still unverified."
+  ]
+}

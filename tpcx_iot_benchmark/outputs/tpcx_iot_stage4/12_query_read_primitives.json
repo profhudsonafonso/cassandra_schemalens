@@ -1,0 +1,81 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "query_filter_mode": "station_and_sensor",
+    "query_cql_primitive": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts0_series_raw WHERE driver_system_id = ? AND sensor_name = ? AND event_ts >= ? AND event_ts <= ?;",
+    "two_window_execution": "Two independent intervals, each split across all intersected UTC buckets; do not combine as CQL OR",
+    "preprocessing": [
+      "Use original event time as epoch milliseconds; no physical time bucket."
+    ],
+    "access_requirements": [
+      "A sensor-name-only read needs a complete station identity enumeration; no ALLOW FILTERING.",
+      "Perform one read per station and each of two temporal windows; deduplicate by event_id only if same logical event."
+    ],
+    "status": "NO_EXECUTABLE_PLAN_YET"
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "query_filter_mode": "station_and_sensor",
+    "query_cql_primitive": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_3600s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "two_window_execution": "Two independent intervals, each split across all intersected UTC buckets; do not combine as CQL OR",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 3600000) * 3600000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Enumerate stations for sensor-name-only predicate before reads.",
+      "Split BOTH 5-second windows into all intersected UTC bucket partitions.",
+      "Inclusive endpoints require bucket intersection at boundaries; client merges complete result."
+    ],
+    "status": "NO_EXECUTABLE_PLAN_YET"
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "query_filter_mode": "station_and_sensor",
+    "query_cql_primitive": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_60s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "two_window_execution": "Two independent intervals, each split across all intersected UTC buckets; do not combine as CQL OR",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 60000) * 60000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Enumerate stations for sensor-name-only predicate before reads.",
+      "Split BOTH 5-second windows into all intersected UTC bucket partitions.",
+      "Inclusive endpoints require bucket intersection at boundaries; client merges complete result."
+    ],
+    "status": "NO_EXECUTABLE_PLAN_YET"
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "query_filter_mode": "sensor_only",
+    "query_cql_primitive": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_3600s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "two_window_execution": "Two independent intervals, each split across all intersected UTC buckets; do not combine as CQL OR",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 3600000) * 3600000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Direct sensor-name and temporal partition access; no station enumeration.",
+      "Query BOTH 5-second intervals and all intersected buckets, including inclusive endpoints.",
+      "Output includes station identity for correct multistation semantics."
+    ],
+    "status": "NO_EXECUTABLE_PLAN_YET"
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "query_filter_mode": "sensor_only",
+    "query_cql_primitive": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_60s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+    "two_window_execution": "Two independent intervals, each split across all intersected UTC buckets; do not combine as CQL OR",
+    "preprocessing": [
+      "bucket_start_ms = (event_ts // 60000) * 60000; floor for negative epochs."
+    ],
+    "access_requirements": [
+      "Direct sensor-name and temporal partition access; no station enumeration.",
+      "Query BOTH 5-second intervals and all intersected buckets, including inclusive endpoints.",
+      "Output includes station identity for correct multistation semantics."
+    ],
+    "status": "NO_EXECUTABLE_PLAN_YET"
+  }
+]

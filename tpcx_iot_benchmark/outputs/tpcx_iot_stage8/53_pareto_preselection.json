@@ -1,0 +1,488 @@
+{
+  "objective_axes": [
+    "read_cql_requests",
+    "replicated_logical_storage",
+    "insert_statements_per_event",
+    "maximum_partition_bytes",
+    "physical_partition_count"
+  ],
+  "normalizer": "frozen_standalone_TS0_structural_proxy",
+  "control_objectives": {
+    "read_cql_requests": 20,
+    "replicated_logical_storage": 6267392000,
+    "insert_statements_per_event": 1,
+    "maximum_partition_bytes": 1566848,
+    "physical_partition_count": 2000
+  },
+  "pareto_deployment_ids": [
+    "h_119222012d4e",
+    "h_3f1449e05468",
+    "h_6745757bf865",
+    "h_aba788b8e7b7",
+    "h_6276d5b68197",
+    "h_b4bea9150d2e",
+    "h_a9983e2318a9"
+  ],
+  "dominated_deployment_ids": [
+    "h_977291c72920",
+    "h_bdd6bbdce69f"
+  ],
+  "exact_enumeration": true,
+  "latency_not_used": true,
+  "preselected_only_conditional_coverage": true,
+  "pareto_rows": [
+    {
+      "deployment_id": "h_119222012d4e",
+      "tables": [
+        "ts0_series_raw"
+      ],
+      "families": [
+        "TS0"
+      ],
+      "canonical_source": "ts0_series_raw",
+      "materialized_projections": [],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts0_series_raw",
+          "plan_id": "qp__q_read_2_windows__ts0_series_raw",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts0_series_raw WHERE driver_system_id = ? AND sensor_name = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "complete_station_roster",
+            "complete_roster_provenance"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts0_series_raw",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts0_series_raw"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 20,
+        "replicated_logical_storage": 6267392000,
+        "insert_statements_per_event": 1,
+        "maximum_partition_bytes": 1566848,
+        "physical_partition_count": 2000
+      },
+      "warnings": [
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+        "UNBOUNDED_PARTITION_OVER_TIME"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 1.0,
+      "hbench_selection_order": 1
+    },
+    {
+      "deployment_id": "h_3f1449e05468",
+      "tables": [
+        "ts0_series_raw",
+        "ts3_sensor_3600s"
+      ],
+      "families": [
+        "TS0",
+        "TS3"
+      ],
+      "canonical_source": "ts0_series_raw",
+      "materialized_projections": [
+        "ts3_sensor_3600s"
+      ],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts3_sensor_3600s",
+          "plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_3600s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "ts3_projection_correctly_maintained"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts0_series_raw",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts0_series_raw",
+            "wp__q_ingest__ts3_sensor_3600s"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12535500800,
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 1566848,
+        "physical_partition_count": 6800
+      },
+      "warnings": [
+        "CANONICAL_SOURCE_REQUIRED",
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "DURABLE_PROJECTION_REPAIR_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+        "UNBOUNDED_PARTITION_OVER_TIME"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 1.087517155461,
+      "hbench_selection_order": 4
+    },
+    {
+      "deployment_id": "h_6745757bf865",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_3600s"
+      ],
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "canonical_source": "ts1_series_3600s",
+      "materialized_projections": [
+        "ts3_sensor_3600s"
+      ],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts3_sensor_3600s",
+          "plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_3600s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "ts3_projection_correctly_maintained"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts1_series_3600s",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts1_series_3600s",
+            "wp__q_ingest__ts3_sensor_3600s"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12547276800,
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 652928,
+        "physical_partition_count": 52800
+      },
+      "warnings": [
+        "CANONICAL_SOURCE_REQUIRED",
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "DURABLE_PROJECTION_REPAIR_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 2.150306143289,
+      "hbench_selection_order": 2
+    },
+    {
+      "deployment_id": "h_aba788b8e7b7",
+      "tables": [
+        "ts1_series_3600s"
+      ],
+      "families": [
+        "TS1"
+      ],
+      "canonical_source": "ts1_series_3600s",
+      "materialized_projections": [],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts1_series_3600s",
+          "plan_id": "qp__q_read_2_windows__ts1_series_3600s",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_3600s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "complete_station_roster",
+            "complete_roster_provenance"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts1_series_3600s",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts1_series_3600s"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 30,
+        "replicated_logical_storage": 6279168000,
+        "insert_statements_per_event": 1,
+        "maximum_partition_bytes": 65408,
+        "physical_partition_count": 48000
+      },
+      "warnings": [
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 2.231543583041,
+      "hbench_selection_order": 5
+    },
+    {
+      "deployment_id": "h_6276d5b68197",
+      "tables": [
+        "ts1_series_3600s",
+        "ts3_sensor_60s"
+      ],
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "canonical_source": "ts1_series_3600s",
+      "materialized_projections": [
+        "ts3_sensor_60s"
+      ],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts3_sensor_60s",
+          "plan_id": "qp__q_read_2_windows__ts3_sensor_60s",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_60s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "ts3_projection_correctly_maintained"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts1_series_3600s",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts1_series_3600s",
+            "wp__q_ingest__ts3_sensor_60s"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 12619776000,
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 65408,
+        "physical_partition_count": 336000
+      },
+      "warnings": [
+        "CANONICAL_SOURCE_REQUIRED",
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "DURABLE_PROJECTION_REPAIR_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 9.175795890859
+    },
+    {
+      "deployment_id": "h_b4bea9150d2e",
+      "tables": [
+        "ts1_series_60s"
+      ],
+      "families": [
+        "TS1"
+      ],
+      "canonical_source": "ts1_series_60s",
+      "materialized_projections": [],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts1_series_60s",
+          "plan_id": "qp__q_read_2_windows__ts1_series_60s",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts1_series_60s WHERE driver_system_id = ? AND sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "complete_station_roster",
+            "complete_roster_provenance"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts1_series_60s",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts1_series_60s"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 30,
+        "replicated_logical_storage": 7004160000,
+        "insert_statements_per_event": 1,
+        "maximum_partition_bytes": 1216,
+        "physical_partition_count": 2880000
+      },
+      "warnings": [
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+        "TOTAL_PARTITION_COUNT_WARNING"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 73.042749775345
+    },
+    {
+      "deployment_id": "h_a9983e2318a9",
+      "tables": [
+        "ts1_series_60s",
+        "ts3_sensor_60s"
+      ],
+      "families": [
+        "TS1",
+        "TS3"
+      ],
+      "canonical_source": "ts1_series_60s",
+      "materialized_projections": [
+        "ts3_sensor_60s"
+      ],
+      "conditional_query_coverage": [
+        "Q_INGEST",
+        "Q_READ_2_WINDOWS"
+      ],
+      "route": {
+        "Q_READ_2_WINDOWS": {
+          "candidate_id": "ts3_sensor_60s",
+          "plan_id": "qp__q_read_2_windows__ts3_sensor_60s",
+          "read_cql": "SELECT driver_system_id, sensor_name, event_ts, event_id, sensor_reading, padding FROM ts3_sensor_60s WHERE sensor_name = ? AND bucket_start_ms = ? AND event_ts >= ? AND event_ts <= ?;",
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "two_explicit_5s_inclusive_windows",
+            "stable_event_identity",
+            "all_candidate_rows_materialized",
+            "correct_utc_epoch_milliseconds",
+            "ts3_projection_correctly_maintained"
+          ]
+        },
+        "Q_INGEST": {
+          "source_write_plan_id": "wp__q_ingest__ts1_series_60s",
+          "all_required_write_plans": [
+            "wp__q_ingest__ts1_series_60s",
+            "wp__q_ingest__ts3_sensor_60s"
+          ],
+          "status": "CONDITIONAL_OFFLINE_ONLY",
+          "requirements": [
+            "no_partial_commit_silently_accepted",
+            "durable_replay_and_reconciliation_required_for_TS3",
+            "stable_event_id_and_full_payload"
+          ]
+        }
+      },
+      "objectives": {
+        "read_cql_requests": 3,
+        "replicated_logical_storage": 13344768000,
+        "insert_statements_per_event": 2,
+        "maximum_partition_bytes": 11008,
+        "physical_partition_count": 3168000
+      },
+      "warnings": [
+        "CANONICAL_SOURCE_REQUIRED",
+        "COMPLETE_STATION_ROSTER_REQUIRED",
+        "DURABLE_PROJECTION_REPAIR_REQUIRED",
+        "NO_LIVE_CASSANDRA_VALIDATION",
+        "OFFICIAL_KIT_PREDICATE_UNVERIFIED",
+        "TOTAL_PARTITION_COUNT_WARNING"
+      ],
+      "deployment_completeness_status": "CONDITIONALLY_COMPLETE_NOT_LIVE_VALIDATED",
+      "atomicity_verified": false,
+      "durable_repair_verified": false,
+      "benchmark_used_for_selection": false,
+      "normalized_proxy_score": 79.987939506576,
+      "hbench_selection_order": 3
+    }
+  ]
+}

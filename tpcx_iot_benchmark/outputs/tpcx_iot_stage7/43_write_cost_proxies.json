@@ -1,0 +1,57 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "family": "TS0",
+    "single_candidate_inserts_per_logical_event": 1,
+    "single_candidate_insert_statements_for_scenario": 2880000,
+    "projected_copy_needs_canonical_source": false,
+    "writes_if_combined_with_one_canonical_table": 1,
+    "cross_partition_atomicity_proven": false,
+    "durable_recovery_proven": false,
+    "estimated_iotps": null
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "family": "TS1",
+    "single_candidate_inserts_per_logical_event": 1,
+    "single_candidate_insert_statements_for_scenario": 2880000,
+    "projected_copy_needs_canonical_source": false,
+    "writes_if_combined_with_one_canonical_table": 1,
+    "cross_partition_atomicity_proven": false,
+    "durable_recovery_proven": false,
+    "estimated_iotps": null
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "family": "TS1",
+    "single_candidate_inserts_per_logical_event": 1,
+    "single_candidate_insert_statements_for_scenario": 2880000,
+    "projected_copy_needs_canonical_source": false,
+    "writes_if_combined_with_one_canonical_table": 1,
+    "cross_partition_atomicity_proven": false,
+    "durable_recovery_proven": false,
+    "estimated_iotps": null
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "family": "TS3",
+    "single_candidate_inserts_per_logical_event": 1,
+    "single_candidate_insert_statements_for_scenario": 2880000,
+    "projected_copy_needs_canonical_source": true,
+    "writes_if_combined_with_one_canonical_table": 2,
+    "cross_partition_atomicity_proven": false,
+    "durable_recovery_proven": false,
+    "estimated_iotps": null
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "family": "TS3",
+    "single_candidate_inserts_per_logical_event": 1,
+    "single_candidate_insert_statements_for_scenario": 2880000,
+    "projected_copy_needs_canonical_source": true,
+    "writes_if_combined_with_one_canonical_table": 2,
+    "cross_partition_atomicity_proven": false,
+    "durable_recovery_proven": false,
+    "estimated_iotps": null
+  }
+]

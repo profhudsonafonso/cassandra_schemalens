@@ -1,0 +1,47 @@
+{
+  "status": "OFFLINE_ANALYTICAL_ONLY_STAGES_1_TO_3",
+  "benchmark": "TPCx-IoT",
+  "specification_version": "2.1.2",
+  "read_access_mode": "sensor-name-only",
+  "read_semantics": "raw_read",
+  "read_access_assumption": "NEEDS_OFFICIAL_KIT_VALIDATION",
+  "schema_lens_reference": "DKE From Workloads to Explainable Document Schema Design Alternatives",
+  "queries": 2,
+  "temporal_families": [
+    "TS0",
+    "TS1",
+    "TS2",
+    "TS3",
+    "TS4",
+    "TS5",
+    "TS6",
+    "TS7",
+    "TS8"
+  ],
+  "activated_counts": {
+    "TS0": 2,
+    "TS1": 1,
+    "TS3": 1
+  },
+  "modifier_counts": {
+    "M3": 2,
+    "M1": 1
+  },
+  "note": "TS0-TS8 and M1-M5 rules reused unchanged from supplied TSBS package.",
+  "uncertainties": [
+    "Official kit not included; precise sensor query key and aggregate query templates still unverified",
+    "No MongoDB binding or physical schema produced",
+    "M3 is a technology-dependent compaction consideration, not a MongoDB DDL directive",
+    "No ranking, HBench, measured latency or IoTps",
+    "No workload operation frequencies are assumed"
+  ],
+  "artifacts": [
+    "00_inputs_sha256.csv",
+    "01_analytical_matrix.csv",
+    "02_temporal_evidence.csv",
+    "03_ts_activation_matrix.csv",
+    "04_modifier_matrix.csv",
+    "05_explanation_trace.json",
+    "06_run_manifest.json"
+  ]
+}

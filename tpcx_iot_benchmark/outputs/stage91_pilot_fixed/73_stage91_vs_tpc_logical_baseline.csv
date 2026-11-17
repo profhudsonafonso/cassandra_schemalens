@@ -1,0 +1,6 @@
+deployment_id,baseline_id,ingest_ratio_vs_baseline,read_p95_ratio_vs_baseline,storage_ratio_vs_baseline
+h_119222012d4e,b_tpcx_logical_raw,1.0582,1.1342,0.9398
+h_3f1449e05468,b_tpcx_logical_raw,0.6246,0.5613,1.9506
+h_6745757bf865,b_tpcx_logical_raw,0.674,0.6879,1.9546
+h_a9983e2318a9,b_tpcx_logical_raw,0.6017,0.6942,1.9673
+h_aba788b8e7b7,b_tpcx_logical_raw,0.9987,0.7216,0.9461

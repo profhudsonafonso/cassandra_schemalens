@@ -1,0 +1,49 @@
+[
+  {
+    "query_id": "Q_INGEST",
+    "selected_root": "Reading",
+    "active_families": [
+      "TS0"
+    ],
+    "active_modifiers": [
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_series_raw"
+      ]
+    },
+    "candidate_origin_does_not_imply_query_coverage": true,
+    "stage5_query_coverage_verified": false,
+    "stage6_write_coverage_verified": false
+  },
+  {
+    "query_id": "Q_READ_2_WINDOWS",
+    "selected_root": "Reading",
+    "active_families": [
+      "TS0",
+      "TS1",
+      "TS3"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_series_raw"
+      ],
+      "TS1": [
+        "ts1_series_3600s",
+        "ts1_series_60s"
+      ],
+      "TS3": [
+        "ts3_sensor_3600s",
+        "ts3_sensor_60s"
+      ]
+    },
+    "candidate_origin_does_not_imply_query_coverage": true,
+    "stage5_query_coverage_verified": false,
+    "stage6_write_coverage_verified": false
+  }
+]

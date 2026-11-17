@@ -1,0 +1,36 @@
+{
+  "stage": 6,
+  "engine": "Apache Cassandra",
+  "benchmark": "TPCx-IoT 2.1.2 adapted research profile",
+  "source_assumption": "sensor_name_only; unverified against official Java kit",
+  "candidate_count": 5,
+  "write_plan_count": 5,
+  "conditional_write_plan_count": 5,
+  "offline_probe_count": 32,
+  "offline_probes_passed": 32,
+  "families": [
+    "TS0",
+    "TS1",
+    "TS3"
+  ],
+  "write_fanout_if_all_five_are_materialized": 5,
+  "note_on_fanout": "Demonstration only; Stage8 must select compatible complete deployments",
+  "reference_maintenance_only": true,
+  "source_sha256": {
+    "stage4_candidate_specs_sha256": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+    "stage5_plans_sha256": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+    "stage5_coverage_sha256": "29737378e772535f83a826c1d2d73b81b42542453f8238e360d743b2e07c3e08",
+    "stage5_probes_sha256": "cac3a48b0d8fc298ca977a29cd1b7adcf043b78af4fe29615c702decfe878200",
+    "stage5_manifest_sha256": "f4f38f241466530594d43800921e75d050e47a2ee84834fa72499bb6591ab6bc",
+    "stage6_policy_sha256": "638a05d8bc344f587e650b1dc0f4c7455f6abbff001676cc47fc32381ca2dcb3"
+  },
+  "stage3_reexecuted": false,
+  "activation_rules_changed": false,
+  "upstream_outputs_modified": false,
+  "benchmark_results_used": false,
+  "live_cassandra_executed": false,
+  "distributed_atomicity_proven": false,
+  "operational_coverage_claimed": false,
+  "hbench_selected": false,
+  "next": "Stage7 analytical physical costs and feasibility, Stage8 compatible covers and HBench"
+}

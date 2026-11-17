@@ -1,0 +1,22 @@
+{
+  "policy_version": "tpcx-iot-cassandra-stage6-v1",
+  "research_only": true,
+  "source_profile": "sensor-name-only/raw_read",
+  "logical_operation": "INSERT",
+  "identity_policy": "stable_uuid_or_deterministic_uuid5_from_unique_source_record_id",
+  "replay_semantics": "identical_full_event_is_noop",
+  "same_identity_different_payload": "reject_conflicting_rewrite",
+  "require_external_station_roster": true,
+  "do_not_auto_select_ttl": true,
+  "do_not_auto_select_compaction": true,
+  "do_not_auto_select_bucket_width": true,
+  "do_not_use_logged_cross_partition_batches": true,
+  "use_benchmark_to_choose_candidates": false,
+  "allow_live_driver": false,
+  "notes": [
+    "Write plans do not change Stage 3 activation, Stage 4 physical schemes or Stage 5 QueryPlans.",
+    "TS3 copies must be written together with each selected canonical source in a complete deployment; Stage 8 chooses which tables coexist.",
+    "In-memory atomic preparation and replay simulation are not an atomic cross-partition guarantee in Cassandra.",
+    "Sensor filter and raw-versus-aggregation semantics remain to be verified in the official TPCx-IoT Java kit."
+  ]
+}
