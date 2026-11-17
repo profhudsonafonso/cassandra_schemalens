@@ -1,0 +1,9 @@
+{
+  "tsbs_commit": "8323e59c74027b108f4ad5ec5d3e498b0101a02e",
+  "go_image": "golang:1.22.5",
+  "go_image_digest": "[\"golang@sha256:86a3c48a61915a8c62c0e1d7594730399caa3feb73655dfe96c7bc17710e96cf\"]",
+  "command": "tsbs_generate_data --use-case=cpu-only --seed=20261117 --scale=40 --timestamp-start=2020-01-01T00:00:00Z --timestamp-end=2020-01-02T12:00:00Z --log-interval=600s --format=cassandra",
+  "sha256": "aa9578585fb0817d6a9711869665e4696f030ec6a530cd39f8bdd8faecf1c4f1",
+  "bytes": 652805,
+  "go_version": "go version go1.22.5 linux/amd64"
+}

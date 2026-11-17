@@ -1,0 +1,22 @@
+{
+  "H1": {
+    "detail": "7/7 deployments do HBench validados pelo oraculo independente em todas as 32 classes; fallbacks TS0 por variante: A:TS0+TS2+TS5gm+TS6=12, A:TS0+TS2+TS5gm+TS5hh+TS6=21, A:TS0+TS5gm+TS6=12, A:TS0+TS5gm+TS5hh+TS6=21, A:TS0+TS6=9, A:TS0+TS5hh+TS6=18, A:TS0+TS5gm=3",
+    "result": true
+  },
+  "H2": {
+    "detail": "melhor=A:TS0+TS5gm; empatados=['A:TS0+TS5gm+TS6', 'A:TS0+TS5gm']",
+    "result": true
+  },
+  "H3": {
+    "detail": "6/7 condicionais mais rapidos que C:TS0+TS2 (aligned); razoes A:TS0+TS2+TS5gm+TS6=0.56, A:TS0+TS2+TS5gm+TS5hh+TS6=0.42, A:TS0+TS5gm+TS6=0.59, A:TS0+TS5gm+TS5hh+TS6=0.45, A:TS0+TS6=0.58, A:TS0+TS5hh+TS6=0.55, A:TS0+TS5gm=0.85",
+    "result": false
+  },
+  "H4": {
+    "detail": "razoes natural: A:TS0+TS2+TS5gm+TS6=0.97, A:TS0+TS2+TS5gm+TS5hh+TS6=0.97, A:TS0+TS5gm+TS6=0.93, A:TS0+TS5gm+TS5hh+TS6=1.07, A:TS0+TS6=1.04, A:TS0+TS5hh+TS6=0.97, A:TS0+TS5gm=0.78",
+    "result": false
+  },
+  "H5": {
+    "detail": "TSBS-orig/C:TS0+TS2 = 1.650 [1.471; 1.853]",
+    "result": true
+  }
+}

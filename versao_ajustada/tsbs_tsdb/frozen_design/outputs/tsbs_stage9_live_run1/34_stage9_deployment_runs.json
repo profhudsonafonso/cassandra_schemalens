@@ -1,0 +1,23 @@
+[
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "status": "PASS",
+    "instances_validated": 48,
+    "instances_required": 48,
+    "fallbacks": 0,
+    "errors": [],
+    "cassandra_executed": true,
+    "selection_changed_by_benchmark": false,
+    "keyspace": "sl_tsbs_h815d3cd1f0cb",
+    "ingest_seconds": 8.611384427989833,
+    "write_mutations_executed": 15840,
+    "baseline_metric_rows_written": 14400,
+    "table_rows_verified": 8,
+    "read_benchmark_seconds": 59.107293466920964,
+    "reference_materialization_seconds": 0.05144030100200325,
+    "dataset_observations": 1440,
+    "ingest_observations_per_second": 167.22049886886086,
+    "storage_bytes": null,
+    "note": "Storage requires server-side nodetool snapshots/table statistics"
+  }
+]

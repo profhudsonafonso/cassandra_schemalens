@@ -1,0 +1,20 @@
+kind,ablation,hbench_size,changed_vs_frozen,natural_regret,natural_upper_bound,natural_contains_best,aligned_regret,aligned_upper_bound,aligned_contains_best,hbench,unmeasured,detail
+reference,nenhuma (HBench congelado),7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,pipeline regenerado = congelado
+regra,sem TS0,0,True,INVIAVEL,,,INVIAVEL,,,,,methodology.tsbs.stage5.cli falhou: ValueError: No physical read candidate for query Q15
+regra,sem TS1,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,perde ['TS1']
+regra,sem TS2,6,True,0.0,False,True,0.03544454256508378,False,True,H_df2016403111|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4|H_7cf22eeb5c25|H_831bb1a8c5cd,,perde ['TS2']
+regra,sem TS3,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+regra,sem TS4,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+regra,sem TS5,5,True,0.001667703586950564,True,True,0.33078450691031547,True,False,H_815d3cd1f0cb|H_df2016403111|H_5b60a949ea6c|H_b6f44ac379f4|H_f2dabbed8f70,H_5b60a949ea6c,perde ['TS5']
+regra,sem TS6,7,True,0.001667703586950564,True,True,0.8752293439152741,True,False,H_815d3cd1f0cb|H_df2016403111|H_80157a582b13|H_dc536c051d8a|H_831bb1a8c5cd|H_0f5135ec7ea2|H_e7daf6f78730,H_80157a582b13|H_dc536c051d8a|H_0f5135ec7ea2|H_e7daf6f78730,perde ['TS6']
+regra,sem TS7,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+regra,sem TS8,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+regra,sem M1,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,perde ['M1']
+regra,sem M2,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+regra,sem M3,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,perde ['M3']
+regra,sem M4,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+regra,sem M5,7,False,0.001667703586950564,False,True,0.0,False,True,H_815d3cd1f0cb|H_df2016403111|H_077824c77c40|H_ea367cb023b3|H_69cc46e6ed43|H_e08177e1a2a8|H_b6f44ac379f4,,regra nao ativa nesta carga: sem efeito (no-op)
+criterio,aleatorio k=7 entre as 10 medidas (natural),7,,0.0007622204331858174,,,,,,,,P(contem melhor)=0.700
+criterio,aleatorio k=7 entre as 10 medidas (aligned),7,,,,,0.015439663297216761,,,,,P(contem melhor)=0.700
+criterio,so o menor escore (k=1) (natural),1,,0.02328117439693278,,True,,,,H_077824c77c40,,sem diversidade de perfis
+criterio,so o menor escore (k=1) (aligned),1,,,,,0.2596390635653767,,False,H_077824c77c40,,sem diversidade de perfis

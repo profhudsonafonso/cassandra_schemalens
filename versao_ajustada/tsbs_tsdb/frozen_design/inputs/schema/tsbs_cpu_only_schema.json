@@ -1,0 +1,109 @@
+{
+  "dataset": "TSBS cpu-only (DevOps)",
+  "model_status": "CONCEPTUAL_ADAPTATION_NOT_OFFICIAL_EER",
+  "tsbs_source_commit": "8323e59c74027b108f4ad5ec5d3e498b0101a02e",
+  "scenario": {
+    "scale_hosts": 100,
+    "log_interval_seconds": 60,
+    "days": 3,
+    "observations_per_host_day_estimated": 1440.0,
+    "all_hosts_observations_per_day_estimated": 144000.0,
+    "metrics_per_observation": 10,
+    "default_retention": "NOT_SPECIFIED_BY_TSBS",
+    "default_late_arrivals": "NOT_SPECIFIED_BY_TSBS"
+  },
+  "entities": {
+    "Host": {
+      "identity": [
+        "hostname"
+      ],
+      "attributes": [
+        "hostname",
+        "region",
+        "datacenter",
+        "rack",
+        "os",
+        "arch",
+        "team",
+        "service",
+        "service_version",
+        "service_environment"
+      ],
+      "note": "Host tag metadata as defined in TSBS host.go; no separate HostMetadata entity required."
+    },
+    "CPUReading": {
+      "identity": [
+        "hostname",
+        "event_ts"
+      ],
+      "attributes": [
+        "hostname",
+        "event_ts",
+        "region",
+        "datacenter",
+        "rack",
+        "os",
+        "arch",
+        "team",
+        "service",
+        "service_version",
+        "service_environment",
+        "usage_user",
+        "usage_system",
+        "usage_idle",
+        "usage_nice",
+        "usage_iowait",
+        "usage_irq",
+        "usage_softirq",
+        "usage_steal",
+        "usage_guest",
+        "usage_guest_nice"
+      ],
+      "note": "Logical observation; TSBS Cassandra baseline physically splits metric fields by series.",
+      "temporal": {
+        "series_identity": [
+          "hostname"
+        ],
+        "time_attribute": "event_ts",
+        "metrics": [
+          "usage_user",
+          "usage_system",
+          "usage_idle",
+          "usage_nice",
+          "usage_iowait",
+          "usage_irq",
+          "usage_softirq",
+          "usage_steal",
+          "usage_guest",
+          "usage_guest_nice"
+        ],
+        "dimensions": [
+          "hostname",
+          "region",
+          "datacenter",
+          "rack",
+          "os",
+          "arch",
+          "team",
+          "service",
+          "service_version",
+          "service_environment"
+        ],
+        "retention_days": null,
+        "estimated_events_per_day": 1440.0,
+        "append_oriented": true,
+        "late_arrival_allowed": null
+      }
+    }
+  },
+  "relationships": [
+    {
+      "name": "host_generates_cpu_reading",
+      "left": "Host",
+      "right": "CPUReading",
+      "cardinality": "1:N",
+      "semantic": "measurement_generated_by_host",
+      "note": "TSDB-only activation ignores generic Cassandra containment families."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{"phase": "start", "variants": 12, "classes": 32, "rounds": 2, "reps": 1}
+{"phase": "load", "variant": "H_077824c77c40", "seconds": 19.7, "writes": 96696}
+{"phase": "load", "variant": "H_ea367cb023b3", "seconds": 30.1, "writes": 111096}
+{"phase": "load", "variant": "H_69cc46e6ed43", "seconds": 26.3, "writes": 88056}
+{"phase": "load", "variant": "H_e08177e1a2a8", "seconds": 31.0, "writes": 102456}
+{"phase": "load", "variant": "H_b6f44ac379f4", "seconds": 24.4, "writes": 87840}
+{"phase": "load", "variant": "H_7cf22eeb5c25", "seconds": 31.5, "writes": 102240}
+{"phase": "load", "variant": "H_831bb1a8c5cd", "seconds": 20.6, "writes": 86616}
+{"phase": "load", "variant": "H_f2dabbed8f70", "seconds": 23.2, "writes": 86400}
+{"phase": "load", "variant": "H_815d3cd1f0cb", "seconds": 25.7, "writes": 95040}
+{"phase": "load", "variant": "H_df2016403111", "seconds": 23.4, "writes": 86400}
+{"phase": "load", "variant": "B_tsbs_series_bigint", "seconds": 22.8, "writes": 86400}
+{"phase": "load", "variant": "H_815d3cd1f0cb_aa", "seconds": 21.4, "writes": 95040}
+{"phase": "flushed", "tables": 30}
+{"phase": "failed", "error": "NoHostAvailable('Unable to complete the operation against any hosts', {<Host: 127.0.0.1:9163 datacenter1>: ConnectionShutdown('Connection to 127.0.0.1:9163 was closed')})"}
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py", line 275, in <module>
+    main()
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py", line 215, in main
+    got, n, route = run_query(sess[l], dep_of[l], inst, plans, ds, reg['interval_s'], isbase[l])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py", line 90, in run_query
+    return execute_mock_rows(plan, [(r, fetcher(r)) for r in reqs]), len(reqs), label
+                                        ^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py", line 55, in fetch
+    return [r._asdict() for r in self.exec(req['cql'], req['parameters'])]
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py", line 52, in exec
+    return self.session.execute(self.prepared[cql], tuple(vals))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cassandra/cluster.py", line 2642, in cassandra.cluster.Session.execute
+  File "cassandra/cluster.py", line 5013, in cassandra.cluster.ResponseFuture.result
+cassandra.cluster.NoHostAvailable: ('Unable to complete the operation against any hosts', {<Host: 127.0.0.1:9163 datacenter1>: ConnectionShutdown('Connection to 127.0.0.1:9163 was closed')})
+EXIT 1

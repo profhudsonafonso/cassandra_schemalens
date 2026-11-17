@@ -1,0 +1,79 @@
+{
+  "aligned": {
+    "hbench_size": 7,
+    "kendall_tau_score_vs_read": 0.6292532049656926,
+    "measured_best": "H_ea367cb023b3",
+    "measured_best_read_ms": 36.837038875,
+    "measured_pareto": [
+      "H_077824c77c40",
+      "H_69cc46e6ed43",
+      "H_7cf22eeb5c25",
+      "H_831bb1a8c5cd",
+      "H_b6f44ac379f4",
+      "H_e08177e1a2a8",
+      "H_ea367cb023b3",
+      "H_f2dabbed8f70"
+    ],
+    "names": {
+      "H_077824c77c40": "A:TS0+TS2+TS5gm+TS6",
+      "H_69cc46e6ed43": "A:TS0+TS5gm+TS6",
+      "H_7cf22eeb5c25": "A:TS0+TS5hh+TS6",
+      "H_815d3cd1f0cb": "C:TS0+TS2",
+      "H_831bb1a8c5cd": "A:TS0+TS5gm",
+      "H_b6f44ac379f4": "A:TS0+TS6",
+      "H_df2016403111": "C:TS0",
+      "H_e08177e1a2a8": "A:TS0+TS5gm+TS5hh+TS6",
+      "H_ea367cb023b3": "A:TS0+TS2+TS5gm+TS5hh+TS6",
+      "H_f2dabbed8f70": "A:TS0"
+    },
+    "near_best_5pct": true,
+    "pareto_retention": 0.625,
+    "reduction": 0.30000000000000004,
+    "reference_space_note": "espaco de referencia = coberturas medidas (HBench + Pareto nao selecionados); 16 dominadas nao medidas",
+    "regret": 0.0,
+    "space_size": 10,
+    "tied_with_best": [
+      "H_e08177e1a2a8",
+      "H_ea367cb023b3"
+    ],
+    "top1_strict": false,
+    "top1_within_noise": false,
+    "top3": true
+  },
+  "natural": {
+    "hbench_size": 7,
+    "kendall_tau_score_vs_read": -0.26967994498529685,
+    "measured_best": "H_831bb1a8c5cd",
+    "measured_best_read_ms": 61.936941000000004,
+    "measured_pareto": [
+      "H_69cc46e6ed43",
+      "H_831bb1a8c5cd",
+      "H_f2dabbed8f70"
+    ],
+    "names": {
+      "H_077824c77c40": "A:TS0+TS2+TS5gm+TS6",
+      "H_69cc46e6ed43": "A:TS0+TS5gm+TS6",
+      "H_7cf22eeb5c25": "A:TS0+TS5hh+TS6",
+      "H_815d3cd1f0cb": "C:TS0+TS2",
+      "H_831bb1a8c5cd": "A:TS0+TS5gm",
+      "H_b6f44ac379f4": "A:TS0+TS6",
+      "H_df2016403111": "C:TS0",
+      "H_e08177e1a2a8": "A:TS0+TS5gm+TS5hh+TS6",
+      "H_ea367cb023b3": "A:TS0+TS2+TS5gm+TS5hh+TS6",
+      "H_f2dabbed8f70": "A:TS0"
+    },
+    "near_best_5pct": false,
+    "pareto_retention": 0.3333333333333333,
+    "reduction": 0.30000000000000004,
+    "reference_space_note": "espaco de referencia = coberturas medidas (HBench + Pareto nao selecionados); 16 dominadas nao medidas",
+    "regret": 0.1637594174210184,
+    "space_size": 10,
+    "tied_with_best": [
+      "H_69cc46e6ed43",
+      "H_831bb1a8c5cd"
+    ],
+    "top1_strict": false,
+    "top1_within_noise": false,
+    "top3": true
+  }
+}

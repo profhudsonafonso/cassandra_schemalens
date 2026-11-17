@@ -1,0 +1,22 @@
+# OPTIONAL local *test-only* Cassandra service. No deployment on production.
+# Never use official TSBS legacy WITH COMPACT STORAGE tables with this version.
+services:
+  cassandra:
+    image: cassandra:4.1
+    container_name: schemalens-tsbs-stage9-cassandra
+    environment:
+      CASSANDRA_CLUSTER_NAME: SchemaLensTSBSLocal
+      MAX_HEAP_SIZE: 1G
+      HEAP_NEWSIZE: 256M
+    ports:
+      - "127.0.0.1:9042:9042"
+    volumes:
+      - schemalens_tsbs_stage9_data:/var/lib/cassandra
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'DESCRIBE KEYSPACES' >/dev/null 2>&1"]
+      interval: 15s
+      timeout: 10s
+      retries: 30
+      start_period: 60s
+volumes:
+  schemalens_tsbs_stage9_data:

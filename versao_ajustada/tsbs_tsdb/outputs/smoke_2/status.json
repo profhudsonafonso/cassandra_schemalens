@@ -1,0 +1,16 @@
+{
+  "attempt": 1,
+  "classes": 32,
+  "of": 1,
+  "phase": "complete",
+  "rep": 1,
+  "reps": 1,
+  "restart_s": 19.9,
+  "rounds": 2,
+  "seconds": 28.2,
+  "tables": 30,
+  "updated_utc": "2026-11-17T18:46:38.594107+00:00",
+  "variant": "H_815d3cd1f0cb_aa",
+  "variants": 12,
+  "writes": 95040
+}

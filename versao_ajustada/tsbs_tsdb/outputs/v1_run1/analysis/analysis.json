@@ -1,0 +1,89 @@
+{
+  "analysis_code_sha256": {
+    "common/cassandra_env.py": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+    "common/method_eval.py": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+    "common/slstats.py": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+    "tsbs_tsdb/tsbs_v1/ablation.py": "014b4e8729c6322299477b5f212777045e5a516e80a78a5e1f0117d66ff6b7b0",
+    "tsbs_tsdb/tsbs_v1/acceptance.py": "5f5f9080eb220ecd8b88a61bf6fecfb6c597fa40aff41d5049c1f79ddc018718",
+    "tsbs_tsdb/tsbs_v1/analyze.py": "a98de196e7980e4718d2a1a2b624cf628041a1f47fbbfcbef131b80e217455e0",
+    "tsbs_tsdb/tsbs_v1/common_paths.py": "5d0abf3ffa544e6b558ed3fd661e4845d79bc430f62b3b294b5583aace6caf9a",
+    "tsbs_tsdb/tsbs_v1/freeze.py": "a43883709f1ac281e144e9e895dceea1bbe385859f434272a84dde72a132255d",
+    "tsbs_tsdb/tsbs_v1/make_tables.py": "04e48ed4f2020cda98df5f009213303b0b5282a488729b55a0af1e1fa7839932",
+    "tsbs_tsdb/tsbs_v1/measure.py": "84a4b1399ec1cb0a8402e0f0c5560bc83868437bd0fbc2db197c9861238a05b8",
+    "tsbs_tsdb/tsbs_v1/oracle.py": "ffdfe7e87c653caa9fe4758c5ee1d8f1318013a81dd4b96718f7199077aefc4c"
+  },
+  "bootstrap_resamples": 2000,
+  "classes": {
+    "aligned": [
+      "AQ01",
+      "AQ02",
+      "AQ03",
+      "AQ04",
+      "AQ05",
+      "AQ06",
+      "AQ07",
+      "AQ08",
+      "AQ09",
+      "AQ10",
+      "AQ11",
+      "AQ12",
+      "AQ13",
+      "AQ14",
+      "AQ15",
+      "AQ16"
+    ],
+    "natural": [
+      "NQ01",
+      "NQ02",
+      "NQ03",
+      "NQ04",
+      "NQ05",
+      "NQ06",
+      "NQ07",
+      "NQ08",
+      "NQ09",
+      "NQ10",
+      "NQ11",
+      "NQ12",
+      "NQ13",
+      "NQ14",
+      "NQ15",
+      "NQ16"
+    ]
+  },
+  "noise_floor": {
+    "aligned": {
+      "noise_floor_abs_ln": 0.06350901573388762,
+      "noise_floor_pct": 6.556909264553856,
+      "pairs": [
+        {
+          "a": "H_815d3cd1f0cb",
+          "abs_ln_ci_hi": 0.06350901573388762,
+          "b": "H_815d3cd1f0cb_aa",
+          "ci_hi": 1.0711292185400925,
+          "ci_lo": 1.0009514451378774,
+          "ln_ratio": 0.03497541824292443,
+          "ratio": 1.0355942517604095
+        }
+      ]
+    },
+    "natural": {
+      "noise_floor_abs_ln": 0.03365407455606718,
+      "noise_floor_pct": 3.422677948309194,
+      "pairs": [
+        {
+          "a": "H_815d3cd1f0cb",
+          "abs_ln_ci_hi": 0.03365407455606718,
+          "b": "H_815d3cd1f0cb_aa",
+          "ci_hi": 1.0353863955640252,
+          "ci_lo": 0.9695497771098047,
+          "ln_ratio": 0.0028672981402249353,
+          "ratio": 1.0028714127712222
+        }
+      ]
+    }
+  },
+  "rank1_conservative": "H_815d3cd1f0cb",
+  "raw_rows": 23040,
+  "seed": 20261117
+}

@@ -1,0 +1,21 @@
+{
+  "policy_version": "tsbs-stage6-write-v1",
+  "status": "REFERENCE_SINGLE_WRITER_NOT_DISTRIBUTED_SAFE",
+  "source_event_identity": ["hostname", "timestamp_ns"],
+  "write_semantics": "last_input_event_wins_for_same_host_and_timestamp",
+  "require_dense_ten_cpu_metrics": true,
+  "reject_nan_and_infinity": true,
+  "use_cassandra_counter_columns": false,
+  "write_consistency": "NOT_CHOSEN_FOR_EXPERIMENT",
+  "automatic_ttl_selection": false,
+  "automatic_compaction_selection": false,
+  "automatic_sharding_selection": false,
+  "runtime_materializer": "in_memory_reference_only",
+  "live_cassandra_execution_default": false,
+  "notes": [
+    "The reference materializer computes correct results after duplicate delivery, backfill, replacements, and deletions.",
+    "It is NOT a distributed, crash-recoverable, atomic or TSBS-scale ingestion service.",
+    "To execute real Cassandra writes, a dedicated loader with durable replay/checkpoints is required.",
+    "No benchmark measurement or TS-family activation is involved."
+  ]
+}

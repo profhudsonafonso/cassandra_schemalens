@@ -1,0 +1,26 @@
+{
+  "policy_version": "tsbs-stage7-analytical-v1",
+  "scope": "TSDB_ONLY_NON_RANKING_EXPLANATORY_COST_AND_CONSTRAINTS",
+  "scenario_source": "inputs/schema/tsbs_cpu_only_schema.json",
+  "scenario_is_measured": false,
+  "scenario_note": "Synthetic CPU-only scenario from Stage 3: 100 hosts, 60-second samples, three days. Not TSBS default, not benchmark evidence.",
+  "scenario_start_utc": "2016-01-01T00:00:00Z",
+  "partition_rows_warning": 100000,
+  "partition_proxy_bytes_warning": 16777216,
+  "text_value_bytes_assumption": 24,
+  "logical_row_overhead_bytes_assumption": 24,
+  "max_read_request_warning": 1000,
+  "max_estimated_rows_read_warning": 1000000,
+  "require_full_host_roster_for_all_hosts": true,
+  "rollup_alignment_must_be_verified_at_runtime": true,
+  "cost_unit": "analytical row, partition and byte PROXIES ONLY",
+  "rank_candidates": false,
+  "use_benchmark_latencies": false,
+  "notes": [
+    "No p95, runtime, throughput, actual network IO, SSTable size or monetary cost is predicted.",
+    "Storage proxy omits SSTable overhead, compaction, tombstones, compression, replication, and actual varchar lengths.",
+    "Derived groups require canonical input and reference recomputation; this is not a durable Cassandra materializer.",
+    "Workload relative_frequency is missing; no aggregated workload cost or weighted score is calculated.",
+    "FR/FU/RC/TI from Mozaffari cannot be inferred from sampling interval or EER cardinality."
+  ]
+}

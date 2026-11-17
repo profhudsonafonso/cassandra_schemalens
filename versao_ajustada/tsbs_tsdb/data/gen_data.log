@@ -1,0 +1,99 @@
+Unable to find image 'golang:1.22.5' locally
+1.22.5: Pulling from library/golang
+ca4e5d672725: Pulling fs layer
+30b93c12a9c9: Pulling fs layer
+10d643a5fa82: Pulling fs layer
+5e53f8e7a11a: Pulling fs layer
+32a2f51ff3dd: Pulling fs layer
+ddb1467b736f: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+32a2f51ff3dd: Waiting
+ddb1467b736f: Waiting
+5e53f8e7a11a: Waiting
+4f4fb700ef54: Waiting
+30b93c12a9c9: Verifying Checksum
+30b93c12a9c9: Download complete
+10d643a5fa82: Verifying Checksum
+10d643a5fa82: Download complete
+ca4e5d672725: Verifying Checksum
+ca4e5d672725: Download complete
+ddb1467b736f: Verifying Checksum
+ddb1467b736f: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+ca4e5d672725: Pull complete
+30b93c12a9c9: Pull complete
+32a2f51ff3dd: Verifying Checksum
+32a2f51ff3dd: Download complete
+5e53f8e7a11a: Verifying Checksum
+5e53f8e7a11a: Download complete
+10d643a5fa82: Pull complete
+5e53f8e7a11a: Pull complete
+32a2f51ff3dd: Pull complete
+ddb1467b736f: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:86a3c48a61915a8c62c0e1d7594730399caa3feb73655dfe96c7bc17710e96cf
+Status: Downloaded newer image for golang:1.22.5
+go: downloading github.com/timescale/tsbs v0.0.0-20260527045238-8323e59c7402
+go: downloading github.com/blagojts/viper v1.6.3-0.20200313094124-068f44cf5e69
+go: downloading github.com/spf13/pflag v1.0.5
+go: downloading github.com/gocql/gocql v0.0.0-20190810123941-df4b9cc33030
+go: downloading github.com/jmoiron/sqlx v1.2.1-0.20190826204134-d7d95172beb5
+go: downloading github.com/kshvakov/clickhouse v1.3.11
+go: downloading github.com/google/flatbuffers v1.11.0
+go: downloading github.com/golang/protobuf v1.4.2
+go: downloading github.com/golang/snappy v0.0.1
+go: downloading github.com/prometheus/common v0.13.0
+go: downloading github.com/timescale/promscale v0.0.0-20201006153045-6a66a36f5c84
+go: downloading go.uber.org/atomic v1.6.0
+go: downloading github.com/transceptor-technology/go-qpack v0.0.0-20190116123619-49a14b216a45
+go: downloading github.com/aws/aws-sdk-go v1.35.13
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/jackc/pgx/v4 v4.8.0
+go: downloading golang.org/x/net v0.0.0-20200904194848-62affa334b73
+go: downloading github.com/lib/pq v1.3.0
+go: downloading github.com/HdrHistogram/hdrhistogram-go v1.0.0
+go: downloading github.com/globalsign/mgo v0.0.0-20181015135952-eeefdecb41b8
+go: downloading golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
+go: downloading google.golang.org/protobuf v1.25.0
+go: downloading github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed
+go: downloading gopkg.in/inf.v0 v0.9.1
+go: downloading github.com/gogo/protobuf v1.3.1
+go: downloading github.com/grpc-ecosystem/grpc-gateway v1.14.8
+go: downloading google.golang.org/genproto v0.0.0-20200904004341-0bd0a958aa1d
+go: downloading google.golang.org/grpc v1.32.0
+go: downloading github.com/jackc/pgconn v1.6.3
+go: downloading github.com/jackc/pgio v1.0.0
+go: downloading github.com/jackc/pgproto3/v2 v2.0.2
+go: downloading github.com/jackc/pgtype v1.4.2
+go: downloading golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+go: downloading github.com/fsnotify/fsnotify v1.4.9
+go: downloading github.com/hashicorp/hcl v1.0.0
+go: downloading github.com/magiconair/properties v1.8.1
+go: downloading github.com/mitchellh/mapstructure v1.2.2
+go: downloading github.com/pelletier/go-toml v1.4.0
+go: downloading github.com/spf13/afero v1.2.2
+go: downloading github.com/spf13/cast v1.3.0
+go: downloading github.com/spf13/jwalterweatherman v1.0.0
+go: downloading github.com/subosito/gotenv v1.2.0
+go: downloading github.com/jackc/pgproto3 v1.1.0
+go: downloading gopkg.in/ini.v1 v1.51.0
+go: downloading gopkg.in/yaml.v2 v2.3.0
+go: downloading golang.org/x/text v0.3.3
+go: downloading golang.org/x/sys v0.0.0-20210316164454-77fc1eacc6aa
+go: downloading github.com/jackc/chunkreader/v2 v2.0.1
+go: downloading github.com/jackc/pgpassfile v1.0.0
+go: downloading github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b
+go: downloading golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
+go: downloading github.com/jackc/chunkreader v1.0.0
+go: downloading github.com/jmespath/go-jmespath v0.4.0
+{
+  "tsbs_commit": "8323e59c74027b108f4ad5ec5d3e498b0101a02e",
+  "go_image": "golang:1.22.5",
+  "go_image_digest": "[\"golang@sha256:86a3c48a61915a8c62c0e1d7594730399caa3feb73655dfe96c7bc17710e96cf\"]",
+  "command": "tsbs_generate_data --use-case=cpu-only --seed=20261117 --scale=40 --timestamp-start=2020-01-01T00:00:00Z --timestamp-end=2020-01-02T12:00:00Z --log-interval=600s --format=cassandra",
+  "sha256": "aa9578585fb0817d6a9711869665e4696f030ec6a530cd39f8bdd8faecf1c4f1",
+  "bytes": 652805,
+  "go_version": "go version go1.22.5 linux/amd64"
+}
+EXIT 0

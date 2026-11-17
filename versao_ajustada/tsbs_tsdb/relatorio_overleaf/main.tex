@@ -1,0 +1,191 @@
+% =====================================================================
+%  SchemaLens-Cassandra (TSDB / TSBS) -- Versao ajustada v1
+%  Compilar no Overleaf com pdfLaTeX. Tabelas em tables/ (geradas por
+%  tsbs_v1/make_tables.py a partir dos dados brutos), figuras em figs/.
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\IfFileExists{brazil.ldf}{\usepackage[brazil]{babel}}{}
+\usepackage[a4paper,margin=2.1cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[table]{xcolor}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+
+\definecolor{boxbg}{RGB}{243,246,250}
+\definecolor{warnbg}{RGB}{253,244,232}
+\newcommand{\caixa}[2][boxbg]{\par\smallskip\noindent\colorbox{#1}{\parbox{\dimexpr\linewidth-2\fboxsep}{#2}}\par\smallskip}
+\newcommand{\just}[1]{\caixa{\textbf{Justificativa.} #1}}
+\newcommand{\limit}[1]{\caixa[warnbg]{\textbf{Limitação.} #1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\input{tables/env.tex}
+\makeatletter\newcommand{\tabin}[1]{\@@input #1 }\makeatother
+
+\pagestyle{fancy}\fancyhf{}
+\lhead{\small SchemaLens--Cassandra (TSDB/TSBS) --- versão ajustada v1}\rhead{\small Relatório de execução}
+\cfoot{\thepage}
+
+\title{\textbf{SchemaLens--Cassandra com o TSBS (cpu-only)}\\[4pt]
+\large Versão ajustada: primeira execução completa do HBench sob o protocolo comum v1}
+\author{Projeto SchemaLens / Cassandra}
+\date{Execução: \envstarted--\envfinished{} UTC \quad--\quad relatório gerado em 17/11/2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent A análise de consistência apontou o TSBS como o caso mais incompleto entre os benchmarks: só 1 dos 7 deployments do HBench tinha sido executado no Cassandra, com um \textit{fixture} sintético de 1.440 observações, um oráculo não independente e sem medir armazenamento. Esta versão corrige essas lacunas:
+\begin{itemize}
+\item os dados vêm do \textbf{gerador oficial do TSBS} (Go, commit \texttt{8323e59c}, compilado num container descartável): \envhosts{} hosts, \envobs{} observações, \envcells{} células;
+\item os \textbf{7 deployments do HBench} são medidos, junto com os 3 deployments do Pareto analítico que o top-$k$ deixou de fora, o esquema original do TSBS (\texttt{series\_bigint}) e uma réplica A/A;
+\item um \textbf{oráculo independente}, escrito a partir da semântica dos 16 templates, confere cada resposta;
+\item a medição segue o protocolo comum v1: imagem 4.1.12 por digest, 5 repetições a frio, gate de flush, guarda de isolamento, armazenamento e estatística comum.
+\end{itemize}
+Há duas coortes de consultas: a \emph{natural} (janelas TSBS arbitrárias; métrica de decisão) e a \emph{aligned} (a premissa do perfil \texttt{conditional\_aligned}). Ao todo foram \envrawrows{} latências. \input{tables/abstract_result.tex}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Resumo executivo}
+\input{tables/exec_summary.tex}
+
+\section{O que a análise de consistência apontou e o que foi ajustado}
+\begin{longtable}{@{}p{3.4cm}p{4.9cm}p{6.9cm}@{}}
+\caption{Divergências e tratamento no TSBS.}\\
+\toprule \textbf{Divergência} & \textbf{Antes (Etapa 9)} & \textbf{Versão ajustada (v1)}\\\midrule\endhead
+Crítico 1 -- HBench não executado & 1 de 7 deployments (\texttt{H\_815d3cd1f0cb}); fixture sintético de 1.440 observações; \texttt{storage\_bytes: null} & \textbf{7/7 do HBench} + 3 do Pareto não selecionados + baseline + A/A; dados do \textbf{gerador oficial Go} (commit fixado); bytes por \texttt{tablestats}\\
+Importante 7 -- oráculo & avaliador lógico do Stage 5 sobre TS0 em memória (não independente, admitido no manifesto) & \textbf{oráculo independente} (\texttt{tsbs\_v1/oracle.py}) que implementa os 16 templates sobre os eventos-fonte, sem importar planner, runtime ou materializer; validado em 960/960 respostas antes de medir\\
+Crítico 2 -- versão & tag flutuante \texttt{cassandra:4.1} & imagem por digest (4.1.12), container dedicado, CPUs \envcpuset\\
+Crítico 3 -- métrica e estatística & mean/p95 de 3 amostras por instância, sem IC & média do mix (decisão), p50/p95/p99, IC bootstrap, IC $t$ entre repetições, piso de ruído A/A\\
+Crítico 4 -- preservação & não avaliada & Top-$k$/regret/Pareto no conjunto medido (HBench + Pareto não selecionados), nas duas coortes\\
+Importante 10 -- ablações & previstas para a ``Etapa 10'' & 14 regras neutralizadas com o pipeline inteiro regenerado + critérios\\
+Importante 11 -- estado físico & nenhum controle & flush + gate antes de cada repetição, reinício a frio, guarda de isolamento\\
+Coortes & só \emph{natural} (rollups condicionais caem em TS0) & natural (primária) \textbf{e} aligned (secundária), pré-registradas\\\bottomrule
+\end{longtable}
+
+\section{Fase de projeto, dados e instâncias}
+\paragraph{Fase de projeto.} As saídas dos Stages 1--8 não eram versionadas. Elas foram regeneradas a partir do código do repositório, de forma determinística: os SHA-256 de specs, planos, writes e deployments coincidem com os registrados na execução anterior. Ativação: TS0 (16 templates), TS5 (13), TS6 (3), TS1 (2), TS2 (1); M1 e M3. Há 9 candidatos físicos. Espaço admissível: 2 coberturas no perfil \texttt{conservative} (sem rollups) e 24 no \texttt{conditional\_aligned} (com rollups TS5/TS6 que só respondem a janelas alinhadas). O Pareto analítico tem 2 + 8; o top-$k$ seleciona 2 + 5 = 7.
+
+\paragraph{Escopo de verificação.} São 26 deployments admissíveis, mais que o limite de 12 do protocolo para medir o espaço inteiro. Pelo protocolo v1 mede-se o HBench + baseline. Pré-registramos também os 3 deployments do Pareto analítico cortados pelo top-$k$, para avaliar o corte. Os 16 dominados não são medidos, então o regret é relativo ao conjunto medido.
+
+\paragraph{Dados.} \texttt{tsbs\_generate\_data --use-case=cpu-only --scale=40 --log-interval=600s}, 36\,h, semente fixa, formato \texttt{cassandra} (SHA-256 \texttt{\envdatasha\ldots}). \textbf{Achado:} no commit fixado, o gerador emite \texttt{series\_bigint}, com uso de CPU inteiro, enquanto o loader do Stage 9 aceitava só \texttt{series\_double}, uma premissa herdada do fixture sintético. Um adaptador converte o tipo sem perda (verificado linha a linha); os dois arquivos e os dois hashes ficam registrados, e o baseline usa a tabela fiel \texttt{series\_bigint}.
+
+\paragraph{Instâncias.} \texttt{generate\_instances} do Stage 9: 3 instâncias por template e coorte (96 no total), geradas e gravadas com hash antes de medir.
+
+\section{Execução realizada}
+\begin{table}[H]\centering\small
+\caption{Execução v1.}
+\begin{tabularx}{\linewidth}{@{}lY@{}}\toprule
+Cassandra & \envversion, nó único, RF=1, container \texttt{sl\_v1\_tsbs\_cassandra} (porta 9063), CPUs \envcpuset; cliente Python \envpython, driver \envdriver\\
+Variantes & 12: 7 HBench + 3 Pareto não selecionados + \texttt{series\_bigint} (TSBS) + réplica A/A do conservative rank 1; um keyspace por variante\\
+Classes & 32 = 16 templates $\times$ 2 coortes; em cada rodada a instância é escolhida em rodízio entre as 3\\
+Repetições & 5 $\times$ [reinício a frio $\rightarrow$ gate $\rightarrow$ pré-checagem do oráculo nas 96 instâncias $\times$ 12 variantes $\rightarrow$ 2 aquecimentos $\rightarrow$ 12 rodadas]; janela média \envwinsec\,s; janelas descartadas: \envdiscarded\\
+Volume & \envrawrows{} latências, todas conferidas pelo oráculo independente\\
+\bottomrule\end{tabularx}\end{table}
+\limit{\textbf{Desvio declarado do protocolo v1.} São 12 rodadas por repetição, e não 60: cada rodada executa 384 consultas ($\approx$29\,s no smoke), e 60 rodadas levariam $\approx$3,5\,h. Cada classe e variante tem 60 amostras no total (5 $\times$ 12), registradas antes de medir. A escala dos dados (40 hosts, 36\,h, 600\,s) é limitada pelo oráculo em memória. As consultas são executadas pelo cliente Python do SchemaLens, não pelo \texttt{tsbs\_run\_queries\_cassandra} original.}
+
+\section{Resultados}
+\subsection{Média do mix por coorte}
+\begin{table}[H]\centering
+\caption{Média do mix uniforme dos 16 templates (ms). N = coorte natural (decisão); A = coorte aligned. FB = instâncias em fallback TS0 (de 96). KiB em disco após flush; carga em segundos.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}llrcrrcrrr@{}}\toprule Variante & Papel & N média & IC 95\% & N p95 & A média & IC 95\% & FB & KiB & Carga\\\midrule
+\tabin{tables/t_summary.tex}
+\bottomrule\end{tabular}}\end{table}
+\begin{figure}[H]\centering
+\includegraphics[width=0.95\linewidth]{figs/fig_v1_tsbs_mix.pdf}
+\caption{Média do mix por coorte (escala log), IC 95\% bootstrap. ``C:'' perfil conservative; ``A:'' perfil conditional\_aligned.}
+\end{figure}
+\input{tables/summary_text.tex}
+
+\subsection{Piso de ruído}
+\begin{table}[H]\centering\small
+\caption{Par A/A (mesmo deployment em keyspaces diferentes). Piso de ruído: natural \envnoiseN; aligned \envnoiseA.}
+\begin{tabular}{@{}llccc@{}}\toprule Coorte & Par & Razão & IC 95\% & Piso\\\midrule
+\tabin{tables/t_noise.tex}
+\bottomrule\end{tabular}\end{table}
+
+\subsection{Contrastes}
+{\small\begin{longtable}{@{}lllccl@{}}
+\caption{Contrastes pareados da média do mix (A/B).}\\
+\toprule Coorte & A & B & A/B & IC 95\% & Veredito\\\midrule\endhead
+\tabin{tables/t_contrasts.tex}
+\bottomrule
+\end{longtable}}
+
+\subsection{Por template}
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}lrrrrrrc@{}}
+\caption{Média por template (ms) nas coortes N e A: conservative rank 1, baseline TSBS e conditional rank 1. CQL: requisições do conservative rank 1.}\\
+\toprule & \tabin{tables/perclass_head.tex} & \\
+Template & N & A & N & A & N & A & CQL\\\midrule\endhead
+\tabin{tables/t_perclass.tex}
+\bottomrule
+\end{longtable}}
+\input{tables/perclass_text.tex}
+
+\subsection{Avaliação do método}
+\begin{table}[H]\centering\small
+\caption{Preservação no conjunto medido (10 coberturas: HBench + Pareto não selecionados).}
+\begin{tabularx}{\linewidth}{@{}lY@{}}\toprule
+\tabin{tables/t_method.tex}
+\bottomrule\end{tabularx}\end{table}
+\input{tables/method_text.tex}
+
+\subsection{Ablações}
+{\small\begin{longtable}{@{}p{3.4cm}rrcrrp{4.6cm}@{}}
+\caption{Ablações: regra neutralizada e pipeline inteiro (Stages 1--8) regenerado. $|H|$ = tamanho do HBench; n/m = membros não medidos; $\le$ = limite superior do regret (só membros medidos).}\\
+\toprule Ablação & $|H|$ & n/m & Mudou & Regret N & Regret A & Efeito\\\midrule\endhead
+\tabin{tables/t_ablation.tex}
+\bottomrule
+\end{longtable}}
+\input{tables/ablation_text.tex}
+
+\section{Hipóteses pré-registradas}
+\begin{longtable}{@{}p{0.7cm}p{5.6cm}p{1.8cm}p{6.7cm}@{}}
+\toprule & Hipótese & Resultado & Evidência\\\midrule\endhead
+\tabin{tables/t_hyp.tex}
+\bottomrule
+\end{longtable}
+
+\section{Aceitação}
+\begin{minipage}[t]{0.5\linewidth}\centering\small
+\begin{tabular}[t]{@{}lc@{}}\toprule Gate & \\\midrule
+\tabin{tables/t_gates.tex}
+\bottomrule\end{tabular}\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}\centering\small
+\begin{tabular}[t]{@{}lc@{}}\toprule Teste negativo & \\\midrule
+\tabin{tables/t_neg.tex}
+\bottomrule\end{tabular}\end{minipage}
+
+\medskip
+\input{tables/acceptance_text.tex}
+
+\section{O que muda nas conclusões do TSBS}
+\input{tables/conclusions.tex}
+
+\section{Limitações}
+\begin{itemize}
+\item A escala é limitada pelo oráculo em memória (40 hosts, 36\,h, 600\,s), menor que o cenário analítico de 100 hosts, 60\,s e 3 dias usado na ativação.
+\item As consultas vêm de \texttt{generate\_instances} (semântica dos templates TSBS) e são executadas pelo cliente Python; não houve replay dos bytes do \texttt{tsbs\_generate\_queries} nem do executor Go.
+\item O regret é relativo às 10 coberturas medidas, e os 16 deployments dominados não foram medidos. Há 12 rodadas por repetição (desvio declarado).
+\item A escrita é o carregador sequencial do Stage 6, sem manutenção incremental dos rollups.
+\end{itemize}
+
+\appendix
+\section{Reprodução}
+\begin{verbatim}
+cd versao_ajustada/tsbs_tsdb
+./gen_data.sh                   # gerador oficial TSBS (Go, commit fixado) em container golang
+./run_all.sh smoke | freeze | measure | analyze | ablation | accept
+../.venv/bin/python tsbs_v1/make_tables.py --run outputs/v1_run1
+./run_all.sh report
+\end{verbatim}
+\end{document}

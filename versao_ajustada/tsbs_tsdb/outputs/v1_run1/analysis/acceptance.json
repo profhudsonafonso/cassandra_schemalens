@@ -1,0 +1,32 @@
+{
+  "ACCEPTED": true,
+  "gates": {
+    "G10_todas_instancias_cobertas": true,
+    "G1_completude": true,
+    "G2_oraculo_independente_100pct": true,
+    "G3_isolamento": true,
+    "G4_gate_flush": true,
+    "G5_ambiente": true,
+    "G6_congelamento": true,
+    "G7_piso_de_ruido": true,
+    "G8_firewall": true,
+    "G9_contrabalanco": true
+  },
+  "info": {
+    "discarded_windows": 0,
+    "position_max_min_ratio": 1.465648854961832,
+    "raw_rows": 23040
+  },
+  "negative_tests": {
+    "N10_container_existente_recusado": true,
+    "N1_oraculo_detecta_valor_errado": true,
+    "N2_oraculo_detecta_linha_faltante": true,
+    "N3_oraculo_detecta_ordem_trocada": true,
+    "N4_codigo_alterado_detectado": true,
+    "N5_keyspace_inseguro_recusado": true,
+    "N6_amostra_faltante_detectada": true,
+    "N7_compactacao_invalida_janela": true,
+    "N8_memtable_nao_vazia_reprova": true,
+    "N9_preregistro_nao_sobrescreve": true
+  }
+}

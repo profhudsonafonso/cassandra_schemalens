@@ -1,0 +1,17 @@
+{
+  "policy_version": "tsbs-stage4-physical-v1",
+  "status": "EXPLICIT_RESEARCH_CANDIDATES_NOT_BENCHMARK_TUNED",
+  "raw_bucket_days": [1, 7],
+  "wide_bucket_days": [1],
+  "rollup_storage_bucket_days": 1,
+  "timestamp_representation": "bigint_nanoseconds_utc",
+  "automatic_ttl_selection": false,
+  "automatic_compaction_selection": false,
+  "select_winner_by_latency": false,
+  "notes": [
+    "Raw TS1/TS2 storage buckets are physical alternatives; intervals must be aligned to UTC.",
+    "TS5 MAX/AVG resolution is part of the query semantics (1 minute / 1 hour). It is not the same as the storage partition bucket.",
+    "M2/M3/M4/M5 are carried forward as activated modifiers; this stage does not silently invent concrete settings.",
+    "No compaction, TTL, salt, benchmark score or throughput estimate is inferred here."
+  ]
+}

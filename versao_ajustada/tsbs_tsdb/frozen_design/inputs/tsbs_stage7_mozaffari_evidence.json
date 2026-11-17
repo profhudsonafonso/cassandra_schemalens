@@ -1,0 +1,28 @@
+{
+  "evidence_version": "tsbs-stage7-moz-v1",
+  "status": "NOT_MEASURED_NO_PUBLISHED_COST_MODEL_IMPLEMENTED",
+  "records": [
+    {
+      "relationship": "host_generates_cpu_reading",
+      "direction": "host_to_reading",
+      "FR": null,
+      "FU": null,
+      "RC": null,
+      "TI": null,
+      "source": null
+    },
+    {
+      "relationship": "host_generates_cpu_reading",
+      "direction": "reading_to_host",
+      "FR": null,
+      "FU": null,
+      "RC": null,
+      "TI": null,
+      "source": null
+    }
+  ],
+  "notes": [
+    "FR/FU/RC/TI remain unknown; even with measured values, Mozaffari Cost_R/Cost_D is NOT implemented.",
+    "Read frequency, update/delete frequency, directional relationship cardinality and temporal multiplicity require separately documented evidence."
+  ]
+}

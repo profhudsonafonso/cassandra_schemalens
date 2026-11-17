@@ -1,0 +1,6 @@
+\begin{enumerate}
+\item \textbf{O TSBS deixa de ser o caso incompleto.} Agora tem execução completa do HBench, oráculo independente, dados do gerador oficial, armazenamento medido e a mesma estatística e o mesmo controle físico do IoT e do TPCx.
+\item \textbf{Resultado principal.} O SchemaLens supera o esquema Cassandra original do TSBS por 1,7$\times$ na coorte natural e por até 3,2$\times$ na aligned. Parte do ganho vem do plano de leitura (\texttt{lastpoint}).
+\item \textbf{Os perfis importam.} Os rollups só valem com janelas alinhadas; com janelas TSBS arbitrárias, um deployment só com TS0 é tão bom quanto qualquer outro. Escrever no artigo que o perfil \texttt{conditional\_aligned} depende de uma premissa de alinhamento que o gerador TSBS não garante.
+\item \textbf{Achado de engenharia.} O gerador oficial no commit fixado emite \texttt{series\_bigint}; a premissa \texttt{series\_double} do Stage 9 só se sustentava com o fixture sintético.
+\end{enumerate}

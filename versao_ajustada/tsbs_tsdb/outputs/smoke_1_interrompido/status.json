@@ -1,0 +1,13 @@
+{
+  "classes": 32,
+  "error": "NoHostAvailable('Unable to complete the operation against any hosts', {<Host: 127.0.0.1:9163 datacenter1>: ConnectionShutdown('Connection to 127.0.0.1:9163 was closed')})",
+  "phase": "failed",
+  "reps": 1,
+  "rounds": 2,
+  "seconds": 21.4,
+  "tables": 30,
+  "updated_utc": "2026-11-17T18:37:02.898542+00:00",
+  "variant": "H_815d3cd1f0cb_aa",
+  "variants": 12,
+  "writes": 95040
+}
