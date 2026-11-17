@@ -1,0 +1,10 @@
+variant,keyspace,scale_days,physical_writes,load_seconds,logical_cells
+BASELINE_ORIGINAL,sl_diag_v4_d01_ref,1,900,0.299893175,1800
+V4_TS2U,sl_diag_v4_d01_ts2u,1,900,0.518520274,1800
+V4_TS2U_TS4,sl_diag_v4_d01_ts2u_ts4,1,906,0.613387129,1800
+V4_TS2D,sl_diag_v4_d01_ts2d,1,900,0.473196791,1800
+V4_TS2D_TS4,sl_diag_v4_d01_ts2d_ts4,1,906,0.527398633,1800
+H_2641c9751dce,sl_diag_v4_d01_h_2641c9751dce,1,1806,0.571689257,1800
+H_4f73edf0446d,sl_diag_v4_d01_h_4f73edf0446d,1,2706,1.120155385,1800
+H_c7646ce7d864,sl_diag_v4_d01_h_c7646ce7d864,1,2706,1.178533794,1800
+H_0bd185590c5a,sl_diag_v4_d01_h_0bd185590c5a,1,1800,0.756943819,1800

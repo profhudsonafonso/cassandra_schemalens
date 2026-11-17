@@ -1,0 +1,11 @@
+{
+  "campaign": "e4r2",
+  "captured_utc": "2026-11-12T14:37:24+00:00",
+  "dataset": "n18",
+  "dataset_sha256": "22558f21cc643f7b8997243409b11e070a451bc32a48e104facdecd18444a89d",
+  "new_keyspaces": {
+    "sst:REF": "sl_f2_e4r2_n18_sst_ref",
+    "sst:TS2-D": "sl_f2_e4r2_n18_sst_d",
+    "sst:TS2-U": "sl_f2_e4r2_n18_sst_u"
+  }
+}

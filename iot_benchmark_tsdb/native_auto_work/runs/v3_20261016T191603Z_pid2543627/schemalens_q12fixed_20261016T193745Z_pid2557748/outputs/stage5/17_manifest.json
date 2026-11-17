@@ -1,0 +1,23 @@
+{
+  "stage": 5,
+  "status": "STRUCTURAL_COVERAGE_ONLY",
+  "scope": "TS_ONLY_IOT_CASSANDRA",
+  "C0_C9_used": false,
+  "benchmark_measured": false,
+  "inputs_sha256": {
+    "outputs/stage4/10_candidate_specs.json": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "outputs/stage4/11_activated_candidate_map.json": "7234b0eef379fb5f1c2a6c0773e66853c1d6c094277b01270d6124ea3242439b",
+    "phase_a1/outputs/activation_ts_only.json": "04e73e0e342353ed787b6b74ee3e55a6c5c8cfc9514ea92e14d61f240f874eaa",
+    "phase_a1/outputs/query_instances_pilot.json": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c",
+    "phase_a1/outputs/normalized_double_readings.csv": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+    "phase_a1/outputs/cassandra_ddl_blueprints.json": "77d292bf30d1ab4a5445581f35884e052d74c9f63bec5675edc26ae536cbbb2c"
+  },
+  "limitations": [
+    "QUERY_SEED not replayed in A1 fixture; official native parameter-object capture utility is supplied separately, not wired into Stage8",
+    "Live Cassandra results unavailable until user performs Stage9"
+  ],
+  "classes": 12,
+  "plans": 32,
+  "eligible_plan_links": 30,
+  "conditional_plans": 1
+}

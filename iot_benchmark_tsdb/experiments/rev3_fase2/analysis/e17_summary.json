@@ -1,0 +1,147 @@
+{
+  "status": "E17_CONFIRMATORY",
+  "created_utc": "2026-11-12T19:29:45.679799+00:00",
+  "rules": {
+    "T5": {
+      "n": 80,
+      "firm": 61,
+      "firm_correct": 47,
+      "firm_accuracy": 0.7705,
+      "severe": 7,
+      "severe_rate": 0.1148,
+      "coverage": 0.7625,
+      "regret_median": 0.0,
+      "regret_p90": 0.1014,
+      "regret_max": 1.5018
+    },
+    "Rev5": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 62,
+      "firm_accuracy": 0.775,
+      "severe": 8,
+      "severe_rate": 0.1,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.0986,
+      "regret_max": 1.5018
+    },
+    "Rev4": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 62,
+      "firm_accuracy": 0.775,
+      "severe": 8,
+      "severe_rate": 0.1,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.0986,
+      "regret_max": 1.5018
+    },
+    "sempre U": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 64,
+      "firm_accuracy": 0.8,
+      "severe": 5,
+      "severe_rate": 0.0625,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.075,
+      "regret_max": 0.3283
+    },
+    "menos chamadas": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 62,
+      "firm_accuracy": 0.775,
+      "severe": 8,
+      "severe_rate": 0.1,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.0986,
+      "regret_max": 1.5018
+    }
+  },
+  "measured_ties": 23,
+  "hypotheses": {
+    "H5.1": {
+      "value": 0.1148,
+      "threshold": "<= 0.05",
+      "ok": false
+    },
+    "H5.2": {
+      "value": 0.7705,
+      "threshold": ">= 0.90",
+      "ok": false
+    },
+    "H5.3": {
+      "value": 0.1014,
+      "threshold": "<= 0.10",
+      "ok": false
+    },
+    "H5.4": {
+      "value": 0.1014,
+      "threshold": "<= 0.075 (sempre U)",
+      "ok": false
+    }
+  },
+  "replica_rows": [
+    {
+      "dataset": "h2b",
+      "n": 20,
+      "r1_median_du": 1.4566,
+      "r2_median_du": 1.4372,
+      "r1_wins_d": 3,
+      "r2_wins_d": 2,
+      "same_winner": 17
+    },
+    {
+      "dataset": "h3b",
+      "n": 24,
+      "r1_median_du": 1.4182,
+      "r2_median_du": 1.3502,
+      "r1_wins_d": 5,
+      "r2_wins_d": 4,
+      "same_winner": 19
+    },
+    {
+      "dataset": "n6",
+      "n": 16,
+      "r1_median_du": 1.0865,
+      "r2_median_du": 1.2183,
+      "r1_wins_d": 7,
+      "r2_wins_d": 5,
+      "same_winner": 10
+    },
+    {
+      "dataset": "p1",
+      "n": 20,
+      "r1_median_du": 1.1292,
+      "r2_median_du": 1.1029,
+      "r1_wins_d": 4,
+      "r2_wins_d": 5,
+      "same_winner": 13
+    }
+  ],
+  "winner_agreement": {
+    "agree": 59,
+    "total": 80
+  },
+  "p1_w1": {
+    "median_du": 1.016,
+    "values": [
+      1.1036,
+      0.9284,
+      0.8795,
+      1.1933
+    ],
+    "verdict": "não reproduzida"
+  },
+  "findings": [
+    "Teste confirmatório da regra T5 em e9r2: 0 de 4 hipóteses atendidas (H5.1 ✘, H5.2 ✘, H5.3 ✘, H5.4 ✘).",
+    "T5: decisão firme em 61 de 80 casos, acerto firme 47/61, erros graves 7; arrependimento p90 0.101 (sempre U 0.075).",
+    "Réplica E9 × e9r2: mesmo vencedor em 59 de 80 casos temporais.",
+    "Anomalia P1 janela de 1 dia: mediana D/U em e9r2 = 1.016 → não reproduzida (critério EMENDA_05: ≤1,10 não; ≥1,30 sim)."
+  ]
+}

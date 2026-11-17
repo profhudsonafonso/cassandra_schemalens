@@ -1,0 +1,81 @@
+{
+  "B_already_postflush_when_S1_runs": "Verify before timing; do not compare absolute p95 to B preflush",
+  "actual_history_days": 20.82639,
+  "baseline_label": "BASELINE_Q8_OPTIMIZED",
+  "caution": "21d nearly saturates the 20.8d source; no 30d test, no 32MiB partition stress",
+  "device_count": 9,
+  "expected_observations": 3240,
+  "first_observation_ms": 1704067800000,
+  "frozen_rev3_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "interpretation": "Client p95 and execute/iterated rows only; not internal server reads",
+  "last_observation_ms": 1705867200000,
+  "measurement_seed": 20261127,
+  "no_cassandra_used_in_preregistration": true,
+  "not_an_independent_confirmatory_holdout": true,
+  "not_official_Java_query_generation_for_S1_windows": true,
+  "oracle_cardinality_by_case": {
+    "Q12_W01": 7,
+    "Q12_W07": 7,
+    "Q12_W14": 7,
+    "Q12_W21": 7,
+    "Q2_W01": 286,
+    "Q2_W07": 2014,
+    "Q2_W14": 4030,
+    "Q2_W21": 6000,
+    "Q5_CONTROL": 2,
+    "Q7_W01": 48,
+    "Q7_W07": 336,
+    "Q7_W14": 672,
+    "Q7_W21": 1002,
+    "Q8_CONTROL": 2,
+    "Q9_W01": 286,
+    "Q9_W07": 2014,
+    "Q9_W14": 4030,
+    "Q9_W21": 6000
+  },
+  "original_B_benchmark_manifest_sha256": "75e3a4f5380207e58c762e400c2ef397565eab9a0d69a821f19c5ce426fe50b2",
+  "original_B_experiment": "/home/hudson/Documents/schemalens_cassandra/schemalens_rev3_new_java_B_20261105_193618/java_work/runs/v3_20261105T223620Z_pid3665162/schemalens_rev3_ts5_contract_validated_B",
+  "original_B_keyspaces": {
+    "BASELINE_Q8_OPTIMIZED": "sl_conf_r3_e0d081d6f1_reference",
+    "R3H_38939db96444": "sl_conf_r3_e0d081d6f1_r3h_38939db96444",
+    "R3H_d2ea1974de53": "sl_conf_r3_e0d081d6f1_r3h_d2ea1974de53"
+  },
+  "original_B_protocol_sha256": "6c438225bbdc8b66ff6c61548e93087b1330b76e6d3e9f1a88279262433e3907",
+  "original_B_workspace": "/home/hudson/Documents/schemalens_cassandra/schemalens_rev3_new_java_B_20261105_193618",
+  "page_size": 16,
+  "protocol": "CONTROLLED_WINDOW_SWEEP_POST_A_B_EXPLORATORY",
+  "read_only_no_ddl_dml_or_flush": true,
+  "reuse_frozen_schema_plans_no_reselection": true,
+  "rounds_per_case_and_variant": 60,
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "s1_code_sha256": "1efd4b03bd33cf46bb526965a19adbd25cac89fc20d60053f1c79492139fc172",
+  "s1_query_samples": "Deterministically modified time windows of Java B query objects",
+  "selected_ids": {
+    "ts2_iot_wide": "R3H_d2ea1974de53",
+    "ts2_iot_wide_unbucketed": "R3H_38939db96444"
+  },
+  "sensor_count": 2,
+  "source_cells": 54000,
+  "source_data_sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+  "source_queries_sha256": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5",
+  "source_stage5_catalog_sha256": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa",
+  "status": "S1_PREREGISTERED_BEFORE_NEW_TIMING",
+  "time_varying_query_classes": [
+    "Q2",
+    "Q7",
+    "Q9",
+    "Q12"
+  ],
+  "unchanged_control_classes": [
+    "Q5",
+    "Q8"
+  ],
+  "warmup_per_case_and_variant": 5,
+  "window_anchor_utc_ms": 1704067200000,
+  "windows_days": [
+    1,
+    7,
+    14,
+    21
+  ]
+}

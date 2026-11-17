@@ -1,0 +1,93 @@
+{
+  "rules_version": "schemalens-ts-ts0-ts8-v1-demo",
+  "statement": "Rules are evidence-driven. Query IDs, query names, and benchmark results are forbidden from activation decisions.",
+  "rules": [
+    {
+      "rule_id": "R_TS0_RAW_BASELINE",
+      "family": "TS0",
+      "reason": "Any temporal query receives a raw-series baseline candidate for comparison with specialized temporal representations.",
+      "all": [{"field": "is_temporal_query", "op": "eq", "value": true}]
+    },
+    {
+      "rule_id": "R_TS1_TIME_BUCKETED_RAW",
+      "family": "TS1",
+      "reason": "A raw temporal range read justifies a time-bucketed raw-series alternative.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "returns_raw_observations", "op": "eq", "value": true},
+        {"field": "has_time_range", "op": "eq", "value": true}
+      ]
+    },
+    {
+      "rule_id": "R_TS2_COLOCATED_MULTI_METRIC",
+      "family": "TS2",
+      "reason": "Joint access to multiple metrics on the same identified series/time axis justifies co-location.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "returns_raw_observations", "op": "eq", "value": true},
+        {"field": "series_identity_bound", "op": "eq", "value": true},
+        {"field": "metric_count", "op": "gte", "value": 2}
+      ]
+    },
+    {
+      "rule_id": "R_TS3_METRIC_ALTERNATE_ACCESS",
+      "family": "TS3",
+      "reason": "A single-metric raw range read anchored by a dimension instead of the canonical series identity justifies an alternate temporal projection.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "returns_raw_observations", "op": "eq", "value": true},
+        {"field": "metric_count", "op": "eq", "value": 1},
+        {"field": "has_dimension_equality_anchor", "op": "eq", "value": true},
+        {"field": "series_identity_bound", "op": "eq", "value": false}
+      ]
+    },
+    {
+      "rule_id": "R_TS4_LATEST_SNAPSHOT",
+      "family": "TS4",
+      "reason": "ORDER BY the time attribute descending with LIMIT 1 is explicit latest-state evidence.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "latest_only", "op": "eq", "value": true}
+      ]
+    },
+    {
+      "rule_id": "R_TS5_ROLLUP",
+      "family": "TS5",
+      "reason": "A time-bucket expression plus aggregation justifies a maintained rollup/multi-resolution candidate.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "time_bucketed", "op": "eq", "value": true},
+        {"field": "aggregate_function_count", "op": "gte", "value": 1}
+      ]
+    },
+    {
+      "rule_id": "R_TS6_DIMENSION_AGGREGATE",
+      "family": "TS6",
+      "reason": "Temporal aggregation grouped by a non-time dimension justifies a dimension-oriented summary.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "aggregate_function_count", "op": "gte", "value": 1},
+        {"field": "non_time_group_dimension_count", "op": "gte", "value": 1}
+      ]
+    },
+    {
+      "rule_id": "R_TS7_SERIES_DISCOVERY",
+      "family": "TS7",
+      "reason": "Distinct discovery of series identities through a dimension predicate justifies a tag/dimension discovery structure.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "series_discovery", "op": "eq", "value": true},
+        {"field": "has_dimension_equality_anchor", "op": "eq", "value": true}
+      ]
+    },
+    {
+      "rule_id": "R_TS8_MODEL_SEGMENTS",
+      "family": "TS8",
+      "reason": "An explicit model-segment logical operator justifies preserving a model-segment representation candidate.",
+      "all": [
+        {"field": "is_temporal_query", "op": "eq", "value": true},
+        {"field": "model_segment_requested", "op": "eq", "value": true}
+      ]
+    }
+  ]
+}

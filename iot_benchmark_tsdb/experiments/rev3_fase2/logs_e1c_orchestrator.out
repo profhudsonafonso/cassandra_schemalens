@@ -1,0 +1,80 @@
+QUARANTINED e1r2b:run:d4 -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/e1r2b/d4/aborted_attempts/01_20261111T185325
+FAILED e1r2b:run:d4     main()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 749, in main
+    {'materialize': lambda: cmd_materialize(a.campaign, a.dataset, a.confirm),
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 754, in <lambda>
+    'run': lambda: cmd_run(a.campaign, a.dataset),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 568, in cmd_run
+    cluster, session = connect()
+                       ^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 257, in connect
+    return S3.connect()
+           ^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/s3_physical.py", line 416, in connect
+    from cassandra.cluster import Cluster
+ModuleNotFoundError: No module named 'cassandra'
+QUARANTINED e1r2b:run:d4 -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/e1r2b/d4/aborted_attempts/02_20261111T185357
+FAILED e1r2b:run:d4     main()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 749, in main
+    {'materialize': lambda: cmd_materialize(a.campaign, a.dataset, a.confirm),
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 754, in <lambda>
+    'run': lambda: cmd_run(a.campaign, a.dataset),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 568, in cmd_run
+    cluster, session = connect()
+                       ^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 257, in connect
+    return S3.connect()
+           ^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/s3_physical.py", line 416, in connect
+    from cassandra.cluster import Cluster
+ModuleNotFoundError: No module named 'cassandra'
+QUARANTINED e1r2b:run:d4 -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/e1r2b/d4/aborted_attempts/03_20261111T185448
+DONE e1r2b:run:d4 359.7 s
+DONE e1r2b:audit:d4 0.1 s
+DONE e1r2b:retire:d4 2.1 s
+DONE e1r2b:mat:d8 424.6 s
+DONE e1r2b:flush:d8 21.4 s
+DONE e1r2b:val:d8 12.4 s
+DONE e1r2b:prereg:d8 0.1 s
+DONE e1r2b:run:d8 744.6 s
+DONE e1r2b:audit:d8 0.1 s
+DONE e1r2b:retire:d8 2.4 s
+DONE e1r3:mat:d1 56.2 s
+DONE e1r3:flush:d1 22.0 s
+DONE e1r3:val:d1 1.9 s
+DONE e1r3:prereg:d1 0.1 s
+DONE e1r3:run:d1 109.6 s
+DONE e1r3:audit:d1 0.1 s
+DONE e1r3:retire:d1 2.0 s
+DONE e1r3:mat:d2 107.2 s
+DONE e1r3:flush:d2 21.4 s
+DONE e1r3:val:d2 3.1 s
+DONE e1r3:prereg:d2 0.1 s
+DONE e1r3:run:d2 190.2 s
+DONE e1r3:audit:d2 0.1 s
+DONE e1r3:retire:d2 2.1 s
+DONE e1r3:mat:d4 212.9 s
+DONE e1r3:flush:d4 21.3 s
+DONE e1r3:val:d4 6.2 s
+DONE e1r3:prereg:d4 0.1 s
+DONE e1r3:run:d4 362.6 s
+DONE e1r3:audit:d4 0.1 s
+DONE e1r3:retire:d4 2.3 s
+DONE e1r3:mat:d8 424.6 s
+DONE e1r3:flush:d8 21.7 s
+DONE e1r3:val:d8 12.5 s
+DONE e1r3:prereg:d8 0.1 s
+DONE e1r3:run:d8 749.0 s
+DONE e1r3:audit:d8 0.1 s
+DONE e1r3:retire:d8 2.2 s
+FAILED e1:analysis Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_analysis.py", line 210, in <module>
+    {'e1': e1, 'e345': e345, 'e6': e6}[sys.argv[1]]()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_analysis.py", line 115, in e1
+    f"r2 {fmt(bf['1']['r2']['sst_median_du'])} → {fmt(bf['8']['r2']['sst_median_du'])}; "
+              ~~~~~~~^^^^^^
+KeyError: 'r2'
+DONE e1:analysis 0.1 s
+COMPLETE ['e1']

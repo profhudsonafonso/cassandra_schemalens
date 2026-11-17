@@ -1,0 +1,75 @@
+{
+  "amendments": {
+    "EMENDA_01_E1_por_fator.md": "cec0a21558858cd1ef1cf9ff8e62cade765500e5486add7d1fc322b718310eee",
+    "EMENDA_02_medicao_interrompida.md": "52820bbe6c26b1d33f815e5f3778648dfe36b982c7328f12255fd84a236e6e27",
+    "EMENDA_03_preregistro_campanhas_unicas.md": "95e78640a4dfaad2f88b99f930a0643fec6bd36f3fa4de841a5456c6f0e4d2b0",
+    "EMENDA_04_FASE3.md": "3470434ede0978c5ccf82b79b2eaa8557f35be07405fc5dcc419afc1f790e1a4"
+  },
+  "arms": [
+    "sst:REF",
+    "sst:TS2-U",
+    "sst:TS2-D"
+  ],
+  "campaign": "e9",
+  "core_sha256": "f7e3433079d5c46b7c8657e7086a28e0885691d96013c9cd59f15f3b29418b64",
+  "created_utc": "2026-11-12T15:15:12+00:00",
+  "dataset": null,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "h2b": {
+      "dataset_sha256": "913c1878856f3d78da0b2f967494fc61032698bde489549b0eab24ce8b5be124",
+      "flush": "1c922a435282fee0f62925c751b8a78337a27df7ccfa4e996295e9539cb6503e",
+      "materialization": "ca00ffef40e2c2ec792b40581ef5f80729b6c848068dda3282acaca1b09a5eb5",
+      "storage_post_flush": "9199d3d49efcfa90245bc29a07e187aa5088d0af3afc438b544a1bd05cfdb179",
+      "validation": "d0d4dd4b0ebcc2c57f54e871c80dd5a71354e5b84475f4e7887030760287ee99"
+    },
+    "h3b": {
+      "dataset_sha256": "f37eebde18513b280ac565bfdc4ef92659ff32b6f2ad91b82e3929a01f5bfc33",
+      "flush": "1f4149d2fe4171a86222629d4ede88e2509b69d6d1c9cff32b82dfe980e50c28",
+      "materialization": "381b1f906e713f1974a740330dda2f0effd19ddc33cb8bf2f791cd7459268f62",
+      "storage_post_flush": "5eef278fd19781de617a78a80c0ce2910ea97550d43a38dc59c50326c9bb2fa2",
+      "validation": "543f13f7541244f70df6635513dd0d1e05601011cdfdb88acebaba09cd416a22"
+    },
+    "n6": {
+      "dataset_sha256": "469e9e4484c798a80e1f6487c4327c1a8e10b14d204c9ac702f4fe17323164eb",
+      "flush": "ca8fd1235f027786c2946de867a2edee94e51e80811bd84de457e928666d31ba",
+      "materialization": "b234a80e791dc5406f46c713fa94e4556df50aff1e25f41296b7b24529e6f038",
+      "storage_post_flush": "1495191a5d91fb029d8c0d6a66935854135a4185eafdbe0e0ef48a2423dded73",
+      "validation": "62473cd50a59b8335aeffbb73670cd580cd6ccd02b272069155b2d180bddf731"
+    },
+    "p1": {
+      "dataset_sha256": "859ca6cfc3d69ae0645fce13ca73f08593614f70319dce5e6198a9d7b8542215",
+      "flush": "a2316bc2dfeb92acba43c36dc75423693df1f2283ab281c427745dca00618e5f",
+      "materialization": "b016a0fde8c3a79f75e2260ab12d2d8d616dfc9225a993d9ad9291d4a38ef22c",
+      "storage_post_flush": "7a9c96d03969ff8b549fa6acf0ea35003eb1f47fba9b65c6763cd833593f1133",
+      "validation": "02e968f898b77aef3ea0a3c2201d4219d82cee0c7311c3238960c4ab369b2f53"
+    }
+  },
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "randomization": "per round: shuffle cases; per case shuffle arms, reverse on even rounds; Random(seed + dataset index)",
+  "rev4": {
+    "frozen_sha256": "dc4b90f615d4f88e4885cd784b6bb6c568d2d7eec2bd1bc88706b15b6e99a81e",
+    "predictions_sha256": "0ab61b22532942c086ee2b949fd3fcb6e1b026d65825d12e3ff005e50f7b9f73"
+  },
+  "s3_runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "spec": {
+    "conds": [
+      "sst"
+    ],
+    "datasets": [
+      "h2b",
+      "h3b",
+      "n6",
+      "p1"
+    ],
+    "rev4": true,
+    "rev5": true,
+    "rounds": 60,
+    "seed": 20261501,
+    "stage": "E9"
+  },
+  "status": "F2_PREREGISTERED_BEFORE_TIMING",
+  "warmups": 5
+}

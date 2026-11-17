@@ -1,0 +1,78 @@
+{
+  "campaigns": {
+    "e1r2": {
+      "conds": [
+        "mem",
+        "sst"
+      ],
+      "datasets": [
+        "d1",
+        "d2",
+        "d4",
+        "d8"
+      ],
+      "rounds": 60,
+      "seed": 20261211,
+      "stage": "E1"
+    },
+    "e1r3": {
+      "conds": [
+        "mem",
+        "sst"
+      ],
+      "datasets": [
+        "d1",
+        "d2",
+        "d4",
+        "d8"
+      ],
+      "rounds": 60,
+      "seed": 20261223,
+      "stage": "E1"
+    },
+    "e3": {
+      "conds": [
+        "sst"
+      ],
+      "datasets": [
+        "h1",
+        "h2",
+        "h3"
+      ],
+      "rev4": true,
+      "rounds": 60,
+      "seed": 20261301,
+      "stage": "E3"
+    },
+    "e4": {
+      "conds": [
+        "sst"
+      ],
+      "datasets": [
+        "n3",
+        "n18"
+      ],
+      "rev4": true,
+      "rounds": 60,
+      "seed": 20261401,
+      "stage": "E4"
+    },
+    "e6": {
+      "cache": true,
+      "conds": [
+        "sst"
+      ],
+      "datasets": [
+        "h1",
+        "h3"
+      ],
+      "ks_campaign": "e3",
+      "rounds": 30,
+      "seed": 20261601,
+      "stage": "E6"
+    }
+  },
+  "created_utc": "2026-11-11T20:49:11+00:00",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "status": "FASE2_PROTOCOL_FROZEN_BEFORE_DDL"
+}

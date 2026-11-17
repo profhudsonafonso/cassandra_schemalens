@@ -1,0 +1,6 @@
+{
+  "generate": "OK",
+  "capture": "OK",
+  "isolate": "OK",
+  "prebenchmark": "FAILED"
+}

@@ -1,0 +1,41 @@
+Patched only tests/test_stage4_rev2.py
+Original test saved as: /mnt/data/_v3_native_testfix_validation/tests/test_stage4_rev2.py.before_native_fix
+Running: -m iot_pipeline.stage9 --dry-run
+OFFLINE ONLY: 48 selected route semantic checks passed across 4 deployments
+Running: -m unittest discover -s tests -p test_iot_stages_4_to_9.py -v
+test_16_offline_reference_validation (test_iot_stages_4_to_9.PipelineTests.test_16_offline_reference_validation) ... ok
+test_17_unconfirmed_keyspace_rejected (test_iot_stages_4_to_9.PipelineTests.test_17_unconfirmed_keyspace_rejected) ... ok
+test_18_percentiles (test_iot_stages_4_to_9.PipelineTests.test_18_percentiles) ... ok
+test_19_nonsensical_relative_regret_not_generated (test_iot_stages_4_to_9.PipelineTests.test_19_nonsensical_relative_regret_not_generated) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.129s
+
+OK
+Running: -m unittest discover -s tests -p test_stage4_rev2.py -v
+test_no_cover_contains_both_ts2_granularities (test_stage4_rev2.Stage4Rev2Tests.test_no_cover_contains_both_ts2_granularities) ... ok
+test_ts2_variant_columns_partition_keys (test_stage4_rev2.Stage4Rev2Tests.test_ts2_variant_columns_partition_keys) ... ok
+test_unbucketed_guard_is_predeclared_and_enforced (test_stage4_rev2.Stage4Rev2Tests.test_unbucketed_guard_is_predeclared_and_enforced) ... ok
+test_unbucketed_query_across_midnight_in_memory (test_stage4_rev2.Stage4Rev2Tests.test_unbucketed_query_across_midnight_in_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.057s
+
+OK
+Running: -m unittest discover -s tests -p test_official_bridge_v3.py -v
+test_native_capture_validates_full_set_and_projected_operands (test_official_bridge_v3.OfficialBridgeV3Tests.test_native_capture_validates_full_set_and_projected_operands) ... ok
+test_no_silent_external_device (test_official_bridge_v3.OfficialBridgeV3Tests.test_no_silent_external_device) ... ok
+test_set_ops_use_only_projected_field_values (test_official_bridge_v3.OfficialBridgeV3Tests.test_set_ops_use_only_projected_field_values) ... ok
+test_value_filter_uses_AND_on_wide_rows (test_official_bridge_v3.OfficialBridgeV3Tests.test_value_filter_uses_AND_on_wide_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK
+
+Frozen HBench SHA-256: a4b5940c0c00335b61dd2130dea3f9b52e34eec078c657f01439190e6444839d
+Stage4-8 output files preserved: 20
+Report: /mnt/data/_v3_native_testfix_validation/outputs/validation_native_stage8/VALIDATION_RESULT.json
+HBench: /mnt/data/_v3_native_testfix_validation/outputs/stage8/30_hbench_summary.csv
+Frozen manifest: /mnt/data/_v3_native_testfix_validation/outputs/stage8/32_frozen_manifest.json
+SUCCESS: Native Stage8 validation PASS; NO benchmark executed.

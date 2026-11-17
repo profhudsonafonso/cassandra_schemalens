@@ -1,0 +1,57 @@
+{
+  "scope": "SCHEMALENS_TS_ONLY_IOT_CASSANDRA",
+  "target": "Cassandra",
+  "families": [
+    "TS0",
+    "TS1",
+    "TS2",
+    "TS3",
+    "TS4",
+    "TS5",
+    "TS6",
+    "TS7",
+    "TS8"
+  ],
+  "supported_physical_families": [
+    "TS0",
+    "TS1",
+    "TS2",
+    "TS4",
+    "TS5"
+  ],
+  "top_k": 5,
+  "max_candidates_per_deployment": 5,
+  "rollup_window_ms": 20000,
+  "raw_reference_required": true,
+  "read_proxy_weights": {
+    "request_count": 0.25,
+    "logical_rows": 0.75
+  },
+  "preselect_weights": {
+    "read": 0.8,
+    "storage": 0.1,
+    "write": 0.1
+  },
+  "read_family_factors": {
+    "TS0": 1.0,
+    "TS1": 0.85,
+    "TS2": 0.62,
+    "TS4": 0.12,
+    "TS5": 0.15
+  },
+  "benchmark_metrics_allowed_for_selection": false,
+  "query_frequency_mode": "uniform_assumed",
+  "claim_official_iot_benchmark": false,
+  "execution_requirements": "Never execute Cassandra before Stage8 is frozen. Live Stage9 requires explicit reset confirmation.",
+  "ts2_physical_variants": [
+    "daily",
+    "unbucketed"
+  ],
+  "max_unbucketed_rows_per_device": 100000,
+  "revised_design_space_note": "Hypothesis-driven physical TS2 granularity variants (not fitted to Stage9 pilot measured latency). Re-evaluate as NEW experiment, never relabel Pilot 1.",
+  "experiment_revision": "iot_stage4_rev3_official_semantics_diagnostic",
+  "official_sql_equivalence_verified": false,
+  "capture_method": "Native GenerateQueryWorkLoad parameter-object sampler provided, no SQL/operational sequence capture",
+  "iot_benchmark_repo_commit_inspected": "62e0dc100e56443978c8b4c66472b1d8a7ef0238",
+  "pilot_q8_q12_semantics_rev3": "Q8 global latest (no WHERE time); Q12 set operation on projected FIELD tuples (no device/time projection in normal table query)."
+}

@@ -1,0 +1,35 @@
+DONE e1r2:retire:d1 2.1 s
+DONE e1r2:retire:d2 2.2 s
+DONE e1r2:retire:d4 2.2 s
+DONE e1r2:retire:d8 2.2 s
+DONE e1r2b:mat:d1 58.2 s
+DONE e1r2b:flush:d1 20.9 s
+FAILED e1r2b:val:d1 Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 760, in <module>
+    main()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 748, in main
+    {'materialize': lambda: cmd_materialize(a.campaign, a.dataset, a.confirm),
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 750, in <lambda>
+    'validate': lambda: cmd_validate(a.campaign, a.dataset),
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 443, in cmd_validate
+    info, sensors, days, oracle, compare, cases, expected = oracle_bundle(ds)
+                                                            ^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 425, in oracle_bundle
+    from iot_pipeline.native_reference_v3 import source_oracle
+ModuleNotFoundError: No module named 'iot_pipeline.native_reference_v3'
+DONE e1r2b:prereg:d1 0.1 s
+DONE e1r2b:run:d1 109.7 s
+DONE e1r2b:audit:d1 0.1 s
+DONE e1r2b:retire:d1 2.1 s
+DONE e1r2b:mat:d2 108.6 s
+DONE e1r2b:flush:d2 21.7 s
+DONE e1r2b:val:d2 3.4 s
+DONE e1r2b:prereg:d2 0.1 s
+DONE e1r2b:run:d2 189.0 s
+DONE e1r2b:audit:d2 0.1 s
+DONE e1r2b:retire:d2 2.2 s
+DONE e1r2b:mat:d4 212.2 s
+DONE e1r2b:flush:d4 21.4 s
+DONE e1r2b:val:d4 6.0 s
+DONE e1r2b:prereg:d4 0.1 s

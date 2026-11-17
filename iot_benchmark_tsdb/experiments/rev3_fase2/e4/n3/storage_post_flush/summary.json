@@ -1,0 +1,92 @@
+{
+  "campaign": "e4",
+  "captured_utc": "2026-11-11T23:26:01+00:00",
+  "compaction_active": false,
+  "compaction_pending": 0,
+  "dataset": "n3",
+  "gate": "PASS",
+  "tag": "post_flush",
+  "variants": {
+    "sst:REF": {
+      "cond": "sst",
+      "gate": "PASS",
+      "keyspace": "sl_f2_e4_n3_sst_ref",
+      "label": "BASELINE_Q8_OPTIMIZED",
+      "metrics": {
+        "bloom_bytes": 16,
+        "compression_ratio": 0.48540692172955996,
+        "data_db_bytes": 144660,
+        "data_db_files": 1,
+        "local_read_count": 0,
+        "local_write_count": 9000,
+        "memtable_bytes": 0,
+        "memtable_cells": 0,
+        "memtable_switch_count": 1,
+        "offheap_bytes": 175,
+        "partition_max_bytes": 105778,
+        "partition_mean_bytes": 105778,
+        "partition_min_bytes": 88149,
+        "partitions_estimate": 3,
+        "pending_flushes": 0,
+        "space_live_bytes": 150141,
+        "space_total_bytes": 150141,
+        "sstable_count": 1
+      },
+      "problems": []
+    },
+    "sst:TS2-D": {
+      "cond": "sst",
+      "gate": "PASS",
+      "keyspace": "sl_f2_e4_n3_sst_d",
+      "label": "R3H_d2ea1974de53",
+      "metrics": {
+        "bloom_bytes": 96,
+        "compression_ratio": 0.47200474614459076,
+        "data_db_bytes": 141617,
+        "data_db_files": 1,
+        "local_read_count": 0,
+        "local_write_count": 9000,
+        "memtable_bytes": 0,
+        "memtable_cells": 0,
+        "memtable_switch_count": 1,
+        "offheap_bytes": 265,
+        "partition_max_bytes": 5722,
+        "partition_mean_bytes": 5632,
+        "partition_min_bytes": 3974,
+        "partitions_estimate": 63,
+        "pending_flushes": 0,
+        "space_live_bytes": 148438,
+        "space_total_bytes": 148438,
+        "sstable_count": 1
+      },
+      "problems": []
+    },
+    "sst:TS2-U": {
+      "cond": "sst",
+      "gate": "PASS",
+      "keyspace": "sl_f2_e4_n3_sst_u",
+      "label": "R3H_38939db96444",
+      "metrics": {
+        "bloom_bytes": 16,
+        "compression_ratio": 0.4845765733103719,
+        "data_db_bytes": 144351,
+        "data_db_files": 1,
+        "local_read_count": 0,
+        "local_write_count": 9000,
+        "memtable_bytes": 0,
+        "memtable_cells": 0,
+        "memtable_switch_count": 1,
+        "offheap_bytes": 175,
+        "partition_max_bytes": 105778,
+        "partition_mean_bytes": 105778,
+        "partition_min_bytes": 88149,
+        "partitions_estimate": 3,
+        "pending_flushes": 0,
+        "space_live_bytes": 149831,
+        "space_total_bytes": 149831,
+        "sstable_count": 1
+      },
+      "problems": []
+    }
+  }
+}

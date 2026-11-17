@@ -1,0 +1,14 @@
+{
+  "campaign": "e1r2",
+  "captured_utc": "2026-11-11T20:49:11+00:00",
+  "dataset": "d1",
+  "dataset_sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+  "new_keyspaces": {
+    "mem:REF": "sl_f2_e1r2_d1_mem_ref",
+    "mem:TS2-D": "sl_f2_e1r2_d1_mem_d",
+    "mem:TS2-U": "sl_f2_e1r2_d1_mem_u",
+    "sst:REF": "sl_f2_e1r2_d1_sst_ref",
+    "sst:TS2-D": "sl_f2_e1r2_d1_sst_d",
+    "sst:TS2-U": "sl_f2_e1r2_d1_sst_u"
+  }
+}

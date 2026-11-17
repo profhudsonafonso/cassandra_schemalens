@@ -1,0 +1,54 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts0_iot_raw (device_id text, sensor_name text, timestamp_ms bigint, value_double double, PRIMARY KEY ((device_id,sensor_name),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "family": "TS0",
+    "guard": "always baseline; unbucketed growth risk",
+    "partition_variant": "unchanged",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED",
+    "table": "ts0_iot_raw",
+    "v4_estimated_max_rows_per_device": 300,
+    "v4_evidence": "reused V3 activated candidate; no new TS family",
+    "v4_role": "eligible_canonical"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts2_iot_wide_unbucketed (device_id text, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "exclusive_group": "TS2_partition_granularity",
+    "family": "TS2",
+    "guard": "one device partition with bounded estimated rows; unbucketed partition may become too large under growth",
+    "max_rows_per_device_guard": 100000,
+    "partition_variant": "unbucketed",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED",
+    "table": "ts2_iot_wide_unbucketed",
+    "v4_estimated_max_rows_per_device": 300,
+    "v4_evidence": "reused V3 activated candidate; no new TS family",
+    "v4_role": "eligible_canonical"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts2_iot_wide (device_id text, bucket_day date, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id,bucket_day),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+    "exclusive_group": "TS2_partition_granularity",
+    "family": "TS2",
+    "guard": "M1 evidenced in workload; enumerate all UTC day partitions in time range",
+    "max_rows_per_device_guard": null,
+    "partition_variant": "daily",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED",
+    "table": "ts2_iot_wide",
+    "v4_estimated_max_rows_per_device": 300,
+    "v4_evidence": "reused V3 activated candidate; no new TS family",
+    "v4_role": "eligible_canonical"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "ddl": "CREATE TABLE IF NOT EXISTS ts4_iot_latest (device_id text, sensor_name text, latest_timestamp_ms bigint, value_double double, PRIMARY KEY ((device_id,sensor_name)));",
+    "family": "TS4",
+    "guard": "native Q8 is global last/last_by, with missing-value and update semantics requiring verification",
+    "partition_variant": "unchanged",
+    "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED",
+    "table": "ts4_iot_latest",
+    "v4_estimated_max_rows_per_device": 300,
+    "v4_evidence": "reused V3 activated candidate; no new TS family",
+    "v4_role": "optional_latest"
+  }
+]

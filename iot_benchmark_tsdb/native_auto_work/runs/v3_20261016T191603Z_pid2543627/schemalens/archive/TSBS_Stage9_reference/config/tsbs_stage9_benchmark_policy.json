@@ -1,0 +1,25 @@
+{
+  "version": "tsbs-stage9-controlled-v1",
+  "scope": "TSDB_ONLY_POST_SELECTION_CASSANDRA_BENCHMARK",
+  "benchmark_results_may_affect_stage8_selection": false,
+  "max_observations_in_memory": 5000,
+  "queries_per_template": 3,
+  "warmup_repetitions": 1,
+  "measured_repetitions": 3,
+  "sample_interval_seconds": 3600,
+  "consistency": "ONE",
+  "replication_factor": 1,
+  "compare_to_baseline_series": true,
+  "max_errors": 10,
+  "float_rel_tol": 1e-9,
+  "float_abs_tol": 1e-8,
+  "allow_approximate_answers": false,
+  "worker_count": 1,
+  "notes": [
+    "Read benchmark is end-to-end client QueryPlan elapsed time; single-process single-worker.",
+    "All records are loaded through Stage 6 reference materializer; not a production TSBS loader.",
+    "The baseline uses the original TSBS series_id partition definition, without legacy COMPACT STORAGE.",
+    "Generated query instances match TSBS query template semantics but are not a replay of Go generator bytes.",
+    "All outputs are post-selection only: never reuse latency to modify activation, weights or HBench."
+  ]
+}

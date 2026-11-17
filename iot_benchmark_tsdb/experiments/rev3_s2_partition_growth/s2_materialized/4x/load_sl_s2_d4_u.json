@@ -1,0 +1,8 @@
+{
+  "keyspace": "sl_s2_d4_u",
+  "load_scope": "Python sequential loader; not official ingestion throughput",
+  "logical_cells": 216000,
+  "physical_write_operations": 108000,
+  "sequential_load_seconds": 28.90993,
+  "variant": "R3H_38939db96444"
+}

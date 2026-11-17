@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "dataset": "h1",
+      "label": "H1 · 21 dias · 9 disp.",
+      "cold_over_warm": {
+        "ref": 1.2032,
+        "u": 1.0595,
+        "d": 1.1236
+      },
+      "warm_median_du": 1.4941,
+      "cold_median_du": 1.4688,
+      "cold_wins_d": 3,
+      "n": 16,
+      "resident_pct": 92.6770836106157
+    },
+    {
+      "dataset": "h3",
+      "label": "H3 · 333 dias · 9 disp.",
+      "cold_over_warm": {
+        "ref": 1.194,
+        "u": 1.2198,
+        "d": 1.0783
+      },
+      "warm_median_du": 1.7181,
+      "cold_median_du": 1.6411,
+      "cold_wins_d": 3,
+      "n": 24,
+      "resident_pct": 48.1890197759366
+    }
+  ],
+  "findings": [
+    "H1 · 21 dias · 9 disp.: frio/quente U +6%, D +12%; D/U 1,494 quente → 1,469 frio; D venceu 3/16 no frio; 93% dos bytes continuavam no page cache após a evicção (mmap).",
+    "H3 · 333 dias · 9 disp.: frio/quente U +22%, D +8%; D/U 1,718 quente → 1,641 frio; D venceu 3/24 no frio; 48% dos bytes continuavam no page cache após a evicção (mmap)."
+  ],
+  "created": "2026-11-11T21:26:04-03:00"
+}

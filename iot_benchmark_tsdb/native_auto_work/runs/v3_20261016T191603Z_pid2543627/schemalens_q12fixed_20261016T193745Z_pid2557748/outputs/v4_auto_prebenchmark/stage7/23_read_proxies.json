@@ -1,0 +1,335 @@
+[
+  {
+    "analytic_read_proxy": 0.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 0,
+    "plan_id": "Q1__ts0_iot_raw",
+    "query_id": "Q1",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 90.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 120,
+    "plan_id": "Q2__ts0_iot_raw",
+    "query_id": "Q2",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 90.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 120,
+    "plan_id": "Q3__ts0_iot_raw",
+    "query_id": "Q3",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 90.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 120,
+    "plan_id": "Q4__ts0_iot_raw",
+    "query_id": "Q4",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 450.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 600,
+    "plan_id": "Q5__ts0_iot_raw",
+    "query_id": "Q5",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 90.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 120,
+    "plan_id": "Q6__ts0_iot_raw",
+    "query_id": "Q6",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 90.5,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 120,
+    "plan_id": "Q7__ts0_iot_raw",
+    "query_id": "Q7",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 2.0,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 2,
+    "plan_id": "Q8__ts0_iot_raw",
+    "query_id": "Q8",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 92.0,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 122,
+    "plan_id": "Q9__ts0_iot_raw",
+    "query_id": "Q9",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 92.0,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 122,
+    "plan_id": "Q10__ts0_iot_raw",
+    "query_id": "Q10",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 92.0,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 122,
+    "plan_id": "Q11__ts0_iot_raw",
+    "query_id": "Q11",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 184.0,
+    "candidate_id": "ts0_iot_raw",
+    "physical_rows_proxy": 244,
+    "plan_id": "Q12__ts0_iot_raw",
+    "query_id": "Q12",
+    "request_count_proxy": 4,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 0.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 0,
+    "plan_id": "Q1__ts2_iot_wide_unbucketed",
+    "query_id": "Q1",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q2__ts2_iot_wide_unbucketed",
+    "query_id": "Q2",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q3__ts2_iot_wide_unbucketed",
+    "query_id": "Q3",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q4__ts2_iot_wide_unbucketed",
+    "query_id": "Q4",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 225.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 300,
+    "plan_id": "Q5__ts2_iot_wide_unbucketed",
+    "query_id": "Q5",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q6__ts2_iot_wide_unbucketed",
+    "query_id": "Q6",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q7__ts2_iot_wide_unbucketed",
+    "query_id": "Q7",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 1.0,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 1,
+    "plan_id": "Q8__ts2_iot_wide_unbucketed",
+    "query_id": "Q8",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 46.0,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 61,
+    "plan_id": "Q9__ts2_iot_wide_unbucketed",
+    "query_id": "Q9",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 46.0,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 61,
+    "plan_id": "Q10__ts2_iot_wide_unbucketed",
+    "query_id": "Q10",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 46.0,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 61,
+    "plan_id": "Q11__ts2_iot_wide_unbucketed",
+    "query_id": "Q11",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 92.0,
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "physical_rows_proxy": 122,
+    "plan_id": "Q12__ts2_iot_wide_unbucketed",
+    "query_id": "Q12",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 0.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 0,
+    "plan_id": "Q1__ts2_iot_wide",
+    "query_id": "Q1",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q2__ts2_iot_wide",
+    "query_id": "Q2",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q3__ts2_iot_wide",
+    "query_id": "Q3",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q4__ts2_iot_wide",
+    "query_id": "Q4",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 225.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 300,
+    "plan_id": "Q5__ts2_iot_wide",
+    "query_id": "Q5",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q6__ts2_iot_wide",
+    "query_id": "Q6",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 45.25,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 60,
+    "plan_id": "Q7__ts2_iot_wide",
+    "query_id": "Q7",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 1.0,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 1,
+    "plan_id": "Q8__ts2_iot_wide",
+    "query_id": "Q8",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 46.0,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 61,
+    "plan_id": "Q9__ts2_iot_wide",
+    "query_id": "Q9",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 46.0,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 61,
+    "plan_id": "Q10__ts2_iot_wide",
+    "query_id": "Q10",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 46.0,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 61,
+    "plan_id": "Q11__ts2_iot_wide",
+    "query_id": "Q11",
+    "request_count_proxy": 1,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 92.0,
+    "candidate_id": "ts2_iot_wide",
+    "physical_rows_proxy": 122,
+    "plan_id": "Q12__ts2_iot_wide",
+    "query_id": "Q12",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  },
+  {
+    "analytic_read_proxy": 2.0,
+    "candidate_id": "ts4_iot_latest",
+    "physical_rows_proxy": 2,
+    "plan_id": "Q8__ts4_iot_latest",
+    "query_id": "Q8",
+    "request_count_proxy": 2,
+    "rule": "original V3 policy coefficients applied to physical CQL plan counts"
+  }
+]

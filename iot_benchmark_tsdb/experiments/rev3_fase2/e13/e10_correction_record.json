@@ -1,0 +1,19 @@
+{
+  "status": "E13_E10_CORRECTION_RECORDED",
+  "created_utc": "2026-11-12T18:23:16.581459+00:00",
+  "amendment_sha256": "a65569397c4a1ae60b3d9d696c5b12b2ecd831f790b429a18c5b68a9d3431bb3",
+  "cause": "fase3_trace.py read naive-UTC system_traces.sessions.started_at as local time (UTC-3): 0 sessions matched",
+  "correction": "sessions re-read before TTL expiry and matched as UTC; originals untouched; fase3_trace.py unchanged",
+  "sessions_total": 1779,
+  "matched": 1891,
+  "limitation": "+-2 ms non-exclusive window: matched > sessions; only windows >= 7 days used as evidence",
+  "rematch_files": {
+    "system_traces_sessions_dump.csv": "ade987c1049328e9e5be1b7ec6197214a02f1ac8b222dec7d0ea6a23cf82b7b1",
+    "trace_raw_utc.csv": "b75e3624f93bfa499fdadc57dbb82606660672d127fcdee2bd2c9236b4ffa846",
+    "trace_summary_utc.json": "bdfc233baaec587ac24fe6429ea704c2548d19cb2dbbf1c28c389cef35bd8e51"
+  },
+  "original_files": {
+    "trace_raw.csv": "e6aa1bdcf38458a6c9c4411af29d200d6bd22c184cb316433ba85de588bec39d",
+    "trace_summary.json": "10485abf44ae28acd0a4637e617a50ca1139254c02fb603a4700fd239d353a8a"
+  }
+}

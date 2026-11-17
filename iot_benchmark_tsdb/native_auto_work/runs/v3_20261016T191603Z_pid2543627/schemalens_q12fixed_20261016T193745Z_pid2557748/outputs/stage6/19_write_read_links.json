@@ -1,0 +1,152 @@
+[
+  {
+    "plan_id": "Q1__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q1"
+  },
+  {
+    "plan_id": "Q1__ts2_iot_wide",
+    "write_plan": "ts2_iot_wide",
+    "query_id": "Q1"
+  },
+  {
+    "plan_id": "Q1__ts2_iot_wide_unbucketed",
+    "write_plan": "ts2_iot_wide_unbucketed",
+    "query_id": "Q1"
+  },
+  {
+    "plan_id": "Q2__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q2"
+  },
+  {
+    "plan_id": "Q2__ts1_iot_bucket",
+    "write_plan": "ts1_iot_bucket",
+    "query_id": "Q2"
+  },
+  {
+    "plan_id": "Q2__ts2_iot_wide",
+    "write_plan": "ts2_iot_wide",
+    "query_id": "Q2"
+  },
+  {
+    "plan_id": "Q2__ts2_iot_wide_unbucketed",
+    "write_plan": "ts2_iot_wide_unbucketed",
+    "query_id": "Q2"
+  },
+  {
+    "plan_id": "Q3__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q3"
+  },
+  {
+    "plan_id": "Q3__ts1_iot_bucket",
+    "write_plan": "ts1_iot_bucket",
+    "query_id": "Q3"
+  },
+  {
+    "plan_id": "Q3__ts2_iot_wide",
+    "write_plan": "ts2_iot_wide",
+    "query_id": "Q3"
+  },
+  {
+    "plan_id": "Q3__ts2_iot_wide_unbucketed",
+    "write_plan": "ts2_iot_wide_unbucketed",
+    "query_id": "Q3"
+  },
+  {
+    "plan_id": "Q4__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q4"
+  },
+  {
+    "plan_id": "Q5__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q5"
+  },
+  {
+    "plan_id": "Q6__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q6"
+  },
+  {
+    "plan_id": "Q7__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q7"
+  },
+  {
+    "plan_id": "Q8__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q8"
+  },
+  {
+    "plan_id": "Q8__ts4_iot_latest",
+    "write_plan": "ts4_iot_latest",
+    "query_id": "Q8"
+  },
+  {
+    "plan_id": "Q9__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q9"
+  },
+  {
+    "plan_id": "Q9__ts1_iot_bucket",
+    "write_plan": "ts1_iot_bucket",
+    "query_id": "Q9"
+  },
+  {
+    "plan_id": "Q9__ts2_iot_wide",
+    "write_plan": "ts2_iot_wide",
+    "query_id": "Q9"
+  },
+  {
+    "plan_id": "Q9__ts2_iot_wide_unbucketed",
+    "write_plan": "ts2_iot_wide_unbucketed",
+    "query_id": "Q9"
+  },
+  {
+    "plan_id": "Q10__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q10"
+  },
+  {
+    "plan_id": "Q10__ts1_iot_bucket",
+    "write_plan": "ts1_iot_bucket",
+    "query_id": "Q10"
+  },
+  {
+    "plan_id": "Q10__ts2_iot_wide",
+    "write_plan": "ts2_iot_wide",
+    "query_id": "Q10"
+  },
+  {
+    "plan_id": "Q10__ts2_iot_wide_unbucketed",
+    "write_plan": "ts2_iot_wide_unbucketed",
+    "query_id": "Q10"
+  },
+  {
+    "plan_id": "Q11__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q11"
+  },
+  {
+    "plan_id": "Q12__ts0_iot_raw",
+    "write_plan": "ts0_iot_raw",
+    "query_id": "Q12"
+  },
+  {
+    "plan_id": "Q12__ts1_iot_bucket",
+    "write_plan": "ts1_iot_bucket",
+    "query_id": "Q12"
+  },
+  {
+    "plan_id": "Q12__ts2_iot_wide",
+    "write_plan": "ts2_iot_wide",
+    "query_id": "Q12"
+  },
+  {
+    "plan_id": "Q12__ts2_iot_wide_unbucketed",
+    "write_plan": "ts2_iot_wide_unbucketed",
+    "query_id": "Q12"
+  }
+]

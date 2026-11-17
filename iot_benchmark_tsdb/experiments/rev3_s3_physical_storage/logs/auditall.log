@@ -1,0 +1,7 @@
+
+===== 2026-11-10T18:01:52.294281 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'audit-all']
+PASS audit 1x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+PASS audit 2x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+PASS audit 4x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+PASS audit 8x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+PASS ALL S3: 12,960 observations, 4,320 orders audited -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/all_density_comparison.csv

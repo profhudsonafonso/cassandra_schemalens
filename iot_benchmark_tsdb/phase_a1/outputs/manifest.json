@@ -1,0 +1,52 @@
+{
+  "status": "A1_ANALYTICAL_AND_REFERENCE_ONLY",
+  "database_target": "Cassandra",
+  "dataset_origin": "native format: fixture unless --native-data points to genuine IoT Benchmark generation",
+  "devices": [
+    "device_0",
+    "device_1",
+    "device_2"
+  ],
+  "sensors": [
+    "s0",
+    "s1"
+  ],
+  "metric_cells": 35,
+  "batch_headers": 6,
+  "queries": 12,
+  "physical_blueprints": 5,
+  "activation_occurrences": 26,
+  "schema_source_sha256": {
+    "schema.txt": "9ac241e21b3bd9fca323bf2abaf85e293c5aa996874b071b9b6fce394a9faccd",
+    "device_0/BigBatch_0.csv": "0d8baac0e4d93ef3e7c6938de1bde8aebd865de15be9d5594d75851219c02bad",
+    "device_1/BigBatch_0.csv": "6813ebe79227d9290173d608f019fb7f810620f56285d6cf456cdafefdae0123",
+    "device_2/BigBatch_0.csv": "454a09fb6698759b724c6a5d208b7831bcb1fae9458c5062ec847582151db5fd"
+  },
+  "rules_sha256": {
+    "ts_rules_sha256": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+    "modifier_rules_sha256": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+    "ts_catalog_sha256": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+    "base_rule_engine_sha256": "cb04df0ae46c8856068cbcf0d6690a980aa8c7c1829d13c9094d2ce3e18cc3be"
+  },
+  "config_sha256": "a8df3d3ad80f85511db7ca0269a32b93338dd56d43a735b9e4a62067ac628b34",
+  "inputs_sha256": {
+    "operations.json": "cead501c6953fd32b4eff63f34cb9bbf1ae27290061b8941e16399b81cbccd70",
+    "scenario.json": "ea41284f8a13848d2529c484fd6fba8466f97e660277ef3b3100e2fcffbed4af"
+  },
+  "native_query_seed_replayed": false,
+  "iot_benchmark_sql_verified": false,
+  "C0_C9_used": false,
+  "physical_coverage_verified": false,
+  "HBench_selected": false,
+  "Cassandra_live_execution": false,
+  "benchmark_measured": false,
+  "stage4_9_legacy_integrated": false,
+  "blocking_issues": [
+    "Rebuild Stage4 candidate generator for generic IoT sensors (CPU-only ten usage_* restriction)",
+    "Implement general Stage5 QueryPlans incl Q12 client set operations",
+    "Implement Stage6 exact WritePlans incl TS4/latest and TS5 rollup",
+    "Adapt Stage7+8 cost model and coverage to generic metrics and Q1-Q12",
+    "Stage9 Cassandra driver currently only reads native TSBS CPU pseudoCSV",
+    "Replay actual benchmark query parameter sequence and verify SQL semantics before formal evaluation"
+  ]
+}

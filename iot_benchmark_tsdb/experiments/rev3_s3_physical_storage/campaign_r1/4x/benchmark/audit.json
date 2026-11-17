@@ -1,0 +1,11 @@
+{
+  "data_sha256": "b5aa8eb7570d8100e211a5eaa0131f189428c993e9695148c5009176ab49ac37",
+  "factor": 4,
+  "groups": 54,
+  "orders": 1080,
+  "randomization_identical_to_s2": true,
+  "recomputed_metrics": "PASS",
+  "samples": 3240,
+  "status": "PASS",
+  "storage_pre_timing_gate": "PASS"
+}

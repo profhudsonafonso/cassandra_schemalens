@@ -1,0 +1,440 @@
+{
+  "Q1": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067200000,
+      "value_double": 0.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067200000,
+      "value_double": 1.0
+    }
+  ],
+  "Q2": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067200000,
+      "value_double": 0.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067201000,
+      "value_double": 5.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067202000,
+      "value_double": 10.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067203000,
+      "value_double": 15.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067204000,
+      "value_double": 20.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067205000,
+      "value_double": 25.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067200000,
+      "value_double": 1.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067201000,
+      "value_double": 3.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067202000,
+      "value_double": 5.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067203000,
+      "value_double": 7.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067204000,
+      "value_double": 9.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067205000,
+      "value_double": 11.0
+    }
+  ],
+  "Q3": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067203000,
+      "value_double": 15.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067204000,
+      "value_double": 20.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067205000,
+      "value_double": 25.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067205000,
+      "value_double": 11.0
+    }
+  ],
+  "Q4": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "aggregate": 6
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "aggregate": 6
+    }
+  ],
+  "Q5": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "aggregate": 3
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "aggregate": 1
+    }
+  ],
+  "Q6": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "aggregate": 3
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "aggregate": 1
+    }
+  ],
+  "Q7": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "window_start_ms": 1704067200000,
+      "aggregate": 6
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "window_start_ms": 1704067200000,
+      "aggregate": 6
+    }
+  ],
+  "Q8": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067205000,
+      "value_double": 25.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067205000,
+      "value_double": 11.0
+    }
+  ],
+  "Q9": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067205000,
+      "value_double": 25.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067204000,
+      "value_double": 20.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067203000,
+      "value_double": 15.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067202000,
+      "value_double": 10.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067201000,
+      "value_double": 5.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067200000,
+      "value_double": 0.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067205000,
+      "value_double": 11.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067204000,
+      "value_double": 9.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067203000,
+      "value_double": 7.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067202000,
+      "value_double": 5.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067201000,
+      "value_double": 3.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067200000,
+      "value_double": 1.0
+    }
+  ],
+  "Q10": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067205000,
+      "value_double": 25.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067204000,
+      "value_double": 20.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "timestamp": 1704067203000,
+      "value_double": 15.0
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "timestamp": 1704067205000,
+      "value_double": 11.0
+    }
+  ],
+  "Q11": [
+    {
+      "device_id": "device_0",
+      "sensor_name": "s0",
+      "window_start_ms": 1704067200000,
+      "aggregate": 6
+    },
+    {
+      "device_id": "device_0",
+      "sensor_name": "s1",
+      "window_start_ms": 1704067200000,
+      "aggregate": 6
+    }
+  ],
+  "Q12": [
+    [
+      "device_0",
+      "s0",
+      1704067200000,
+      0.0
+    ],
+    [
+      "device_0",
+      "s0",
+      1704067201000,
+      5.0
+    ],
+    [
+      "device_0",
+      "s0",
+      1704067202000,
+      10.0
+    ],
+    [
+      "device_0",
+      "s0",
+      1704067203000,
+      15.0
+    ],
+    [
+      "device_0",
+      "s0",
+      1704067204000,
+      20.0
+    ],
+    [
+      "device_0",
+      "s0",
+      1704067205000,
+      25.0
+    ],
+    [
+      "device_0",
+      "s1",
+      1704067200000,
+      1.0
+    ],
+    [
+      "device_0",
+      "s1",
+      1704067201000,
+      3.0
+    ],
+    [
+      "device_0",
+      "s1",
+      1704067202000,
+      5.0
+    ],
+    [
+      "device_0",
+      "s1",
+      1704067203000,
+      7.0
+    ],
+    [
+      "device_0",
+      "s1",
+      1704067204000,
+      9.0
+    ],
+    [
+      "device_0",
+      "s1",
+      1704067205000,
+      11.0
+    ],
+    [
+      "device_1",
+      "s0",
+      1704067200000,
+      1.0
+    ],
+    [
+      "device_1",
+      "s0",
+      1704067201000,
+      6.0
+    ],
+    [
+      "device_1",
+      "s0",
+      1704067202000,
+      11.0
+    ],
+    [
+      "device_1",
+      "s0",
+      1704067203000,
+      16.0
+    ],
+    [
+      "device_1",
+      "s0",
+      1704067204000,
+      21.0
+    ],
+    [
+      "device_1",
+      "s0",
+      1704067205000,
+      26.0
+    ],
+    [
+      "device_1",
+      "s1",
+      1704067200000,
+      4.0
+    ],
+    [
+      "device_1",
+      "s1",
+      1704067201000,
+      6.0
+    ],
+    [
+      "device_1",
+      "s1",
+      1704067202000,
+      8.0
+    ],
+    [
+      "device_1",
+      "s1",
+      1704067203000,
+      10.0
+    ],
+    [
+      "device_1",
+      "s1",
+      1704067204000,
+      12.0
+    ],
+    [
+      "device_1",
+      "s1",
+      1704067205000,
+      14.0
+    ]
+  ]
+}

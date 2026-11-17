@@ -1,0 +1,24 @@
+{
+  "arms": [
+    "sst:REF",
+    "sst:TS2-U",
+    "sst:TS2-D"
+  ],
+  "campaign": "e9",
+  "cases": 18,
+  "dataset": "n6",
+  "dataset_sha256": "469e9e4484c798a80e1f6487c4327c1a8e10b14d204c9ac702f4fe17323164eb",
+  "ended_epoch": 1794497236.2459128,
+  "expected": 3240,
+  "files_sha256": {
+    "orders.csv": "663a52006155aa13c6577832685adad126287e1b28827f693c9f4f495376114c",
+    "query_p95.csv": "09c8dc80b13e997dcda3b717069d4466ecc17b5b1ecda65680c2d74b9b676b8e",
+    "raw_latencies.csv": "2c8b639e22ce830679a8120307d5bd8739ab0fd7405489d363dfe106143a675f"
+  },
+  "observations": 3240,
+  "pre_timing_gate": "PASS",
+  "preregistration_sha256": "d1a7d0adef193f742d1b3a5a84ede54ba39485b27bace7f6a13b36b7e860ccb3",
+  "rounds": 60,
+  "started_epoch": 1794497194.2919064,
+  "status": "F2_BENCHMARK_COMPLETE"
+}

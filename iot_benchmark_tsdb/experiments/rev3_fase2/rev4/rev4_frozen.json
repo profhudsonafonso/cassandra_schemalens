@@ -1,0 +1,24 @@
+{
+  "status": "REV4_FROZEN_BEFORE_HOLDOUT_TIMING",
+  "created_utc": "2026-11-11T23:01:08.668817+00:00",
+  "model": "ln(p95_ms) = t0 + t1*ln(calls) + t2*ln(rows+1) + t3*ln(partition_mean_bytes) + t4*[sst]",
+  "coefficients": {
+    "intercept": -4.735409,
+    "ln_calls": 0.116509,
+    "ln_rows_plus_1": 0.929458,
+    "ln_partition_mean_bytes": 0.014473,
+    "sst": 0.106919
+  },
+  "n_dev": 768,
+  "dev_sources": {
+    "S2": 128,
+    "S3r1": 128,
+    "e1r2b": 256,
+    "e1r3": 256
+  },
+  "r2": 0.9849,
+  "dev_winner_accuracy": "320/384",
+  "code_sha256": "7396756054d0a2794b3a4a20defb9f54a9177084ad63c6b25c4586d23b2da598",
+  "decision_rule": "predict TS2-D if predicted p95_D < predicted p95_U, else TS2-U",
+  "inputs_at_prediction": "execute_calls/iterated_rows from semantic validation; partition_mean_bytes from post-flush tablestats"
+}

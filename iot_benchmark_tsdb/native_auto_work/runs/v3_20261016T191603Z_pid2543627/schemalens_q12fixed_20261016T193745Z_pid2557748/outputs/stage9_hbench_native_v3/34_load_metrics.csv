@@ -1,0 +1,5 @@
+deployment_id,logical_metric_cells,physical_rows_written,load_elapsed_seconds,logical_points_per_second,scope
+H_2641c9751dce,1800,1806,0.512365582,3513.1165387295664,sequential Python loader; not official IoT Benchmark ingestion throughput
+H_4f73edf0446d,1800,2706,0.846205451,2127.142998042446,sequential Python loader; not official IoT Benchmark ingestion throughput
+H_c7646ce7d864,1800,2706,0.873964707,2059.5797354091555,sequential Python loader; not official IoT Benchmark ingestion throughput
+H_0bd185590c5a,1800,1800,0.455712971,3949.8546553330384,sequential Python loader; not official IoT Benchmark ingestion throughput

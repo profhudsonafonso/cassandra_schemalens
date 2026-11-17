@@ -1,0 +1,2 @@
+
+COMMAND: ['mvn', '-B', '-q', '-f', 'core/pom.xml', 'dependency:build-classpath', '-Dmdep.outputFile=/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/build_cache/core_classpath.txt']

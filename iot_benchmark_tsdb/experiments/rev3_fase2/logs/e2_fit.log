@@ -1,0 +1,12 @@
+{
+  "coefficients": {
+    "intercept": -4.735409,
+    "ln_calls": 0.116509,
+    "ln_rows_plus_1": 0.929458,
+    "ln_partition_mean_bytes": 0.014473,
+    "sst": 0.106919
+  },
+  "n_dev": 768,
+  "r2": 0.9849,
+  "dev_winner_accuracy": "320/384"
+}

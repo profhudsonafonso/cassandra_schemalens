@@ -1,0 +1,292 @@
+[
+    {
+        "Id": "18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63",
+        "Created": "2026-10-16T16:10:06.332462491Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "cassandra",
+            "-f"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 255,
+            "Error": "",
+            "StartedAt": "2026-10-16T16:10:11.189593861Z",
+            "FinishedAt": "2026-11-10T14:52:39.981710205Z",
+            "Health": {
+                "Status": "starting",
+                "FailingStreak": 0,
+                "Log": []
+            }
+        },
+        "Image": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+        "ResolvConfPath": "/var/snap/docker/common/var-lib-docker/containers/18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63/resolv.conf",
+        "HostnamePath": "/var/snap/docker/common/var-lib-docker/containers/18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63/hostname",
+        "HostsPath": "/var/snap/docker/common/var-lib-docker/containers/18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63/hosts",
+        "LogPath": "/var/snap/docker/common/var-lib-docker/containers/18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63/18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63-json.log",
+        "Name": "/schemalens_iot_cassandra_pipeline-cassandra-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "schemalens_iot_cassandra_pipeline_default",
+            "PortBindings": {
+                "9042/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9043"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "volume",
+                    "Source": "ad3d5df9129631bc974077a5cf61671d6e4764c406a7b0f260d86c120077e8a5",
+                    "Target": "/var/lib/cassandra"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware",
+                "/sys/devices/system/cpu/cpu0/thermal_throttle",
+                "/sys/devices/system/cpu/cpu1/thermal_throttle",
+                "/sys/devices/system/cpu/cpu2/thermal_throttle",
+                "/sys/devices/system/cpu/cpu3/thermal_throttle",
+                "/sys/devices/system/cpu/cpu4/thermal_throttle",
+                "/sys/devices/system/cpu/cpu5/thermal_throttle",
+                "/sys/devices/system/cpu/cpu6/thermal_throttle",
+                "/sys/devices/system/cpu/cpu7/thermal_throttle",
+                "/sys/devices/system/cpu/cpu8/thermal_throttle",
+                "/sys/devices/system/cpu/cpu9/thermal_throttle",
+                "/sys/devices/system/cpu/cpu10/thermal_throttle",
+                "/sys/devices/system/cpu/cpu11/thermal_throttle",
+                "/sys/devices/system/cpu/cpu12/thermal_throttle",
+                "/sys/devices/system/cpu/cpu13/thermal_throttle",
+                "/sys/devices/system/cpu/cpu14/thermal_throttle",
+                "/sys/devices/system/cpu/cpu15/thermal_throttle",
+                "/sys/devices/system/cpu/cpu16/thermal_throttle",
+                "/sys/devices/system/cpu/cpu17/thermal_throttle",
+                "/sys/devices/system/cpu/cpu18/thermal_throttle",
+                "/sys/devices/system/cpu/cpu19/thermal_throttle",
+                "/sys/devices/system/cpu/cpu20/thermal_throttle",
+                "/sys/devices/system/cpu/cpu21/thermal_throttle",
+                "/sys/devices/system/cpu/cpu22/thermal_throttle",
+                "/sys/devices/system/cpu/cpu23/thermal_throttle"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "18de699424e3d19c86207808f3817e8d838ac5d459e61975dae2b865f295da63",
+                "LowerDir": "/var/snap/docker/common/var-lib-docker/overlay2/41d301f5b20cb96e2c645b512d017ab0d870aee434323dec5086c3db33f642e4-init/diff:/var/snap/docker/common/var-lib-docker/overlay2/d0ecebe1ce46d38fdec8673b3446828aebf940740d204ee0ee6a31455e8493c4/diff:/var/snap/docker/common/var-lib-docker/overlay2/ba701be4777dee6e5d5e5fa1c62f42c5a588bf935e222ce5a0dfe8015fbd003b/diff:/var/snap/docker/common/var-lib-docker/overlay2/c5f8572e63a0467362f473029fe584441ed7f1e0c0e063d3295b64b76b5f6fbd/diff:/var/snap/docker/common/var-lib-docker/overlay2/cd8e3413e23b4ed86510a2daef3d8e9aaff62cd59e3c1ffe48346f3f026f95b4/diff:/var/snap/docker/common/var-lib-docker/overlay2/bc39aad1544f640f7eba3ead1b39535eac1e158ad1a05160c2f20c42509b1d79/diff:/var/snap/docker/common/var-lib-docker/overlay2/ec5ade7670666b87dd48bd414ac971abd899977d23833f7fc6fb4fadb1b00d4c/diff:/var/snap/docker/common/var-lib-docker/overlay2/4f61bacd19384235f7f2373545a38018b0fc68148ca04423ba72953b9ad9276f/diff:/var/snap/docker/common/var-lib-docker/overlay2/6f3c9158013067a23face46f6faae73c9946bdb4539cbaea4ebe086feef211bf/diff",
+                "MergedDir": "/var/snap/docker/common/var-lib-docker/overlay2/41d301f5b20cb96e2c645b512d017ab0d870aee434323dec5086c3db33f642e4/merged",
+                "UpperDir": "/var/snap/docker/common/var-lib-docker/overlay2/41d301f5b20cb96e2c645b512d017ab0d870aee434323dec5086c3db33f642e4/diff",
+                "WorkDir": "/var/snap/docker/common/var-lib-docker/overlay2/41d301f5b20cb96e2c645b512d017ab0d870aee434323dec5086c3db33f642e4/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "ad3d5df9129631bc974077a5cf61671d6e4764c406a7b0f260d86c120077e8a5",
+                "Source": "/var/snap/docker/common/var-lib-docker/volumes/ad3d5df9129631bc974077a5cf61671d6e4764c406a7b0f260d86c120077e8a5/_data",
+                "Destination": "/var/lib/cassandra",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "18de699424e3",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "7000/tcp": {},
+                "7001/tcp": {},
+                "7199/tcp": {},
+                "9042/tcp": {},
+                "9160/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "CASSANDRA_DC=datacenter1",
+                "CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch",
+                "CASSANDRA_CLUSTER_NAME=schemalens_iot_research",
+                "PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.19",
+                "JAVA_HOME=/opt/java/openjdk",
+                "CASSANDRA_HOME=/opt/cassandra",
+                "CASSANDRA_CONF=/etc/cassandra",
+                "GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 \tC4965EE9E3015D192CCCF2B6F758CE318D77295D \t5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 \t514A2AD631A57A16DD0047EC749D6EEC0353B12C \tA26E528B271F19B9E5D8E19EA278B781FE4B2BDA \tA4C465FEA0C552561A392A61E91335D77E3E87CB \t9E66CEC6106D578D0B1EB9BFF1000962B7F6840C \tC4009872C59B49561310D966D0062876AF30F054 \tB7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 \t3E9C876907A560ACA00964F363E9BAD215BBF5F0 \tF8B7FD00E05C932991A2CD6150EE103D162C5A55 \t7464AAD9068241C50BA6A26232F35CB2F546D93E \tCEC5C50B9C629EF0F5AB2706650B72EB14CCD622",
+                "CASSANDRA_VERSION=4.1.12",
+                "CASSANDRA_SHA512=cea0acc8aa52b44798dc45ff5edc26f910f5e4025f40d5f4a3b6728ac8d2aaacf9da0aebeb997c0d0039e7034a9478b9af57e1546b45428d7a7638fc61e75dc8"
+            ],
+            "Cmd": [
+                "cassandra",
+                "-f"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    "cqlsh -e 'DESCRIBE KEYSPACES' >/dev/null 2>&1"
+                ],
+                "Interval": 25000000000,
+                "Timeout": 10000000000,
+                "StartPeriod": 70000000000,
+                "Retries": 25
+            },
+            "Image": "cassandra:4.1",
+            "Volumes": {
+                "/var/lib/cassandra": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "5dbcc36bc84740c6862d04e653373b2835b32b7737bc552f940bcb8ce5d8af6c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "schemalens_iot_cassandra_pipeline",
+                "com.docker.compose.project.config_files": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_Pipeline/docker-compose.cassandra.yml",
+                "com.docker.compose.project.working_dir": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_Pipeline",
+                "com.docker.compose.replace": "cassandra-1",
+                "com.docker.compose.service": "cassandra",
+                "com.docker.compose.version": "5.1.0"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "schemalens_iot_cassandra_pipeline_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "schemalens_iot_cassandra_pipeline-cassandra-1",
+                        "cassandra"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "aa34d54c8358670a82cfdbbb009d7e8b1ee0c4ace981fab25c4665558b2852b6",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "schemalens_iot_cassandra_pipeline-cassandra-1",
+                        "cassandra",
+                        "18de699424e3"
+                    ]
+                }
+            }
+        }
+    }
+]

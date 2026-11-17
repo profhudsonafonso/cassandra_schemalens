@@ -1,0 +1,5 @@
+deployment_id,families,candidate_count,score,read_proxy,storage_proxy,write_proxy
+H_1a4021026980,TS0|TS2|TS4,3,1.15642857,8.5825,4208,59
+H_a78b496c4183,TS0|TS2,2,1.18366339,9.2425,3824,53
+H_c24a6bb2e5e8,TS0|TS4,2,1.21558487,10.5275,2624,41
+H_82128d56aeb2,TS0,1,1.24281969,11.1875,2240,35

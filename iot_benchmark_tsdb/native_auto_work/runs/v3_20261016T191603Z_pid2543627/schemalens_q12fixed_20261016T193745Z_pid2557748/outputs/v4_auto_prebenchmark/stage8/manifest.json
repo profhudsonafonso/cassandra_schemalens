@@ -1,0 +1,92 @@
+{
+  "candidate_families_reused": [
+    "TS0",
+    "TS2",
+    "TS4"
+  ],
+  "cross_query_coverage_tests": 37,
+  "eligible_candidates": 4,
+  "file_sha256": {
+    "stage4/10_v4_candidate_specs.json": "7ac07b72a9cd2ecaf0fefce27b06c5b5d6b57fee456abacbc4352efacd5faf0c",
+    "stage4/11_not_instantiated.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "stage5/15_cross_query_coverage.json": "fd4b075e968499d087dfad30e4ad308d0ae6230518bad911223871092d4e18b5",
+    "stage5/16_cross_query_coverage.csv": "f3bad14b79022af4f4fc4c44de243c3602cbb12d61e5f0217bea3b296247e8e1",
+    "stage6/18_v4_write_plans.json": "1f703a4f8a5deeb57be34fa00d61a9ee170cf624e433822e6140e3ff9a4f142c",
+    "stage7/21_storage_proxies.json": "02bac731b09b371d4a1d7275cc76cf25098a2017c0889e4a69f4c68c3aabccac",
+    "stage7/22_write_proxies.json": "1f703a4f8a5deeb57be34fa00d61a9ee170cf624e433822e6140e3ff9a4f142c",
+    "stage7/23_read_proxies.json": "5de2001f5ab90069225072abe846d33b11cd735dc10f0abb76ca5d89fbbd2718",
+    "stage8/28_hbench_v4_auto_frozen.json": "671439d83e4f5754304a4b0390e7785d1c875f9bf9c5c1f4b16372e7797673fa",
+    "stage8/29_all_valid_covers.json": "46801acf00c6aff936189677de46dbf732437d00621118149daf418bed7687fe",
+    "stage8/30_hbench_v4_auto_summary.csv": "7aff0126be7be29b018f83fb7d9d4cc9fe9718cc12dffb75b3ab68e9ea842d20",
+    "stage8/31_cross_query_routes.csv": "07ede77243891842644e6872f24b0aa72b3f2a29ab6523d79e71d67da6cfeb59"
+  },
+  "future_benchmark_only": "Existing V4 live results are exploratory, not independent hold-out. New validation must use independent generation/seed.",
+  "implementation_sha256": {
+    "cli.py": "346eb8d355cf035d85fabd4336477070605f27955e13fe24bde85a4879aa57c6",
+    "selector.py": "79c8d33fd191b1d465274eaef0839d12895ef7463d8688e7274e78463cf71db7"
+  },
+  "limitations": [
+    "Table schema and query parameter objects from native Java sampler; not official IoTDB SQL/frequency replay",
+    "Cross-query correctness is against in-memory logical oracle, not official SQL engine",
+    "TS4 batch snapshot semantics only; concurrent writes/unordered updates not validated",
+    "Physical scan cost is an analytical approximation, not Cassandra profiling",
+    "No automatically integrated V4 Stage9 runner is supplied; selection is OFFLINE ONLY"
+  ],
+  "manual_V4_1_7_30_day_benchmarks_not_input": true,
+  "metric_cells": 1800,
+  "native_capture_file": "native_queries_q12fixed_20261016T193745Z_pid2557748.jsonl",
+  "native_capture_sha256": "e5da8bb7382edbb6e50acc010fe553473758d615759a179641bfd74a5de50aeb",
+  "native_java_parameter_objects": 12,
+  "no_cassandra_used": true,
+  "no_measured_latency_or_throughput_used": true,
+  "no_stage9_or_diagnostics_used": true,
+  "number_of_compatible_covers": 6,
+  "number_on_pareto_front": 2,
+  "number_selected": 3,
+  "original_inputs_sha256": {
+    "activation": "04e73e0e342353ed787b6b74ee3e55a6c5c8cfc9514ea92e14d61f240f874eaa",
+    "candidate_specs": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "data": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+    "policy": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+    "queries": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c"
+  },
+  "revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV1",
+  "selected_ids": [
+    "V4H_294935eb5c3c",
+    "V4H_42fa8de84321",
+    "V4H_a044c6eaae78"
+  ],
+  "selection_policy": "Pareto first; one best canonical architecture each when capacity remains",
+  "stage": 8,
+  "status": "FROZEN_V4_AUTO_PREBENCH",
+  "top_k": 5,
+  "v3_hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+  "v3_parent_file_sha256": {
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+    "iot_pipeline/offline.py": "3dd61965dfb1087eaeaf296be92e325feffbe38c5a3b4bc218d8eb379361a88e",
+    "iot_pipeline/stage4.py": "3c4a32d1b468887ba05b81c66c84d1ac1d710351f9183b51feda517c71c0dde4",
+    "iot_pipeline/stage5.py": "9f7bb5aa7d26472d1933d431621039482a87c940982caad8ddd274ce11a1e9e7",
+    "iot_pipeline/stage6.py": "06f3778c7b286c8586c47d925fe712ad2cb949e59ad47147fba04fb3ee3d1cfc",
+    "iot_pipeline/stage7.py": "81a5d1088372b07ec336ef2217a21cfe5135a6dc667d221361af08a229dc7d4a",
+    "iot_pipeline/stage8.py": "0d1e8ec6c56412429f9f320121743c83714e3d5b602ab6318bdac0df20a81b3d",
+    "iot_pipeline/stage9.py": "615390a60d3fc683b67d92359652781cf857b845b46ad40f57dcbefa251d01f3",
+    "java_bridge/cn/edu/tsinghua/iot/benchmark/tools/SchemaLensQueryCapture.java": "d992ac423d454e6d3bf1e1351fbe11fa0571618a52569e50de987113b591fbb2",
+    "outputs/stage4/10_candidate_specs.json": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "outputs/stage5/15_query_plans.json": "59d8ce21bb1c6dfb421d8d4a6fc4cf7dc24287b4aa26f5f8887e1fec2ceb5c14",
+    "outputs/stage6/18_write_plans.json": "1a639ffc15121e8800f47da14ee62c0a3bbf2370b912e23d2f61f8a4e1794f4f",
+    "outputs/stage7/21_storage_proxies.json": "e9fc6d16148d76e56844a936ec2483bfa3e1137e7fd440445157df24e3921ca5",
+    "outputs/stage7/22_write_proxies.json": "b989cab786b4bfba3a7beea09acd89ebe45b5d9035e0834abad6ad4e8e52fc9b",
+    "outputs/stage7/23_read_proxies.json": "aaa8d6b5aebdfca0183efc1cb2888eb2d31b84bbec05191338cb84732a776e4f",
+    "outputs/stage8/28_hbench_frozen.json": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+    "outputs/stage8/30_hbench_summary.csv": "8ade5d3582c850a2a44c07ea29f7cdcb2b42bce794bbac79f3d8b784a47f2f43",
+    "outputs/stage8/32_frozen_manifest.json": "e0b39258aa77c6f158ae78af76376a192c2b8d5f77d2ffa66357d6113dab12c8",
+    "phase_a1/core/bridge.py": "8a1ee732451eb55b3c605791ac076028641a09157ad51529b86e56b7c03183a5",
+    "phase_a1/outputs/normalized_double_readings.csv": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+    "phase_a1/outputs/query_instances_pilot.json": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c",
+    "phase_a1/tools/official_query_capture.py": "26cc2e8930ae00a1300d474995e9f4c9e6c66c0e2b43f7ca10d3f93a7ef11bb6",
+    "phase_a1/tools/run_a1.py": "8f4eeb95201d5e98869666bb5b951fe1eb35d5dfa8011634df89c5162f3d2ca4",
+    "phase_a1/vendor/tsdb_base/config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+    "phase_a1/vendor/tsdb_base/config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd"
+  },
+  "v3_stage4_8_outputs_unchanged": true
+}

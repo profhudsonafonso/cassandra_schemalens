@@ -1,0 +1,251 @@
+[preflight] PASS preflight (read-only). S2 inputs verified, B gate PASS, no sl_s3_* keyspace present.
+[preflight] Saved: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/preflight/environment_before.json
+[tests] test_guarded_session (experiments.rev3_s3_physical_storage.tests.test_s3.Guard.test_guarded_session) ... ok
+[tests] test_nearest_rank (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_nearest_rank) ... ok
+[tests] test_parse_and_gate_on_real_s2_snapshot (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_parse_and_gate_on_real_s2_snapshot) ... ok
+[tests] test_protocol_constants (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_protocol_constants) ... ok
+[tests] test_write_new_refuses_overwrite (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_write_new_refuses_overwrite) ... ok
+[tests] test_regex_rejects_foreign (experiments.rev3_s3_physical_storage.tests.test_s3.Naming.test_regex_rejects_foreign) ... ok
+[tests] test_twelve_names (experiments.rev3_s3_physical_storage.tests.test_s3.Naming.test_twelve_names) ... ok
+[tests] test_refused (experiments.rev3_s3_physical_storage.tests.test_s3.NodetoolWhitelist.test_refused) ... ok
+[tests] test_no_destructive_statements_in_source (experiments.rev3_s3_physical_storage.tests.test_s3.SourceSafety.test_no_destructive_statements_in_source) ... ok
+[tests] test_s2_artifacts_never_opened_for_writing (experiments.rev3_s3_physical_storage.tests.test_s3.SourceSafety.test_s2_artifacts_never_opened_for_writing) ... ok
+[tests] 
+[tests] ----------------------------------------------------------------------
+[tests] Ran 10 tests in 0.003s
+[tests] 
+[tests] OK
+[draft] PASS S3 draft frozen: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/s3_preregister_draft.json
+[mat1] LOADED sl_s3_r1_d1_ref writes= 27000 seconds= 7.963128
+[mat1] LOADED sl_s3_r1_d1_u writes= 27000 seconds= 7.962978
+[mat1] LOADED sl_s3_r1_d1_d writes= 27000 seconds= 7.372592
+[mat1] COMPLETE 1x materialization (3 new keyspaces). Not flushed, not benchmarked.
+[mat2] LOADED sl_s3_r1_d2_ref writes= 54000 seconds= 16.530711
+[mat2] LOADED sl_s3_r1_d2_u writes= 54000 seconds= 17.708989
+[mat2] LOADED sl_s3_r1_d2_d writes= 54000 seconds= 18.336619
+[mat2] COMPLETE 2x materialization (3 new keyspaces). Not flushed, not benchmarked.
+[mat4] LOADED sl_s3_r1_d4_ref writes= 108000 seconds= 34.414173
+[mat4] LOADED sl_s3_r1_d4_u writes= 108000 seconds= 34.300336
+[mat4] LOADED sl_s3_r1_d4_d writes= 108000 seconds= 32.189514
+[mat4] COMPLETE 4x materialization (3 new keyspaces). Not flushed, not benchmarked.
+[mat8] LOADED sl_s3_r1_d8_ref writes= 216000 seconds= 69.563976
+[mat8] LOADED sl_s3_r1_d8_u writes= 216000 seconds= 68.876281
+[mat8] LOADED sl_s3_r1_d8_d writes= 216000 seconds= 65.088405
+[mat8] COMPLETE 8x materialization (3 new keyspaces). Not flushed, not benchmarked.
+[flush1] FLUSHED sl_s3_r1_d1_ref
+[flush1] FLUSHED sl_s3_r1_d1_u
+[flush1] FLUSHED sl_s3_r1_d1_d
+[flush1] Compaction quiescence: QUIESCENT after 12.1s
+[flush1]   [post_flush] sl_s3_r1_d1_ref    sstables=1 live=377879 memtable_cells=0 part_mean=105778 part_max=105778 gate=PASS
+[flush1]   [post_flush] sl_s3_r1_d1_u      sstables=1 live=377838 memtable_cells=0 part_mean=105778 part_max=105778 gate=PASS
+[flush1]   [post_flush] sl_s3_r1_d1_d      sstables=1 live=386340 memtable_cells=0 part_mean=5662 part_max=5722 gate=PASS
+[flush1] PASS 1x flushed: all 3 tables persisted in SSTables, memtables empty.
+[flush2] FLUSHED sl_s3_r1_d2_ref
+[flush2] FLUSHED sl_s3_r1_d2_u
+[flush2] FLUSHED sl_s3_r1_d2_d
+[flush2] Compaction quiescence: QUIESCENT after 12.0s
+[flush2]   [post_flush] sl_s3_r1_d2_ref    sstables=1 live=772090 memtable_cells=0 part_mean=219342 part_max=219342 gate=PASS
+[flush2]   [post_flush] sl_s3_r1_d2_u      sstables=1 live=771728 memtable_cells=0 part_mean=219342 part_max=219342 gate=PASS
+[flush2]   [post_flush] sl_s3_r1_d2_d      sstables=1 live=785540 memtable_cells=0 part_mean=9887 part_max=9887 gate=PASS
+[flush2] PASS 2x flushed: all 3 tables persisted in SSTables, memtables empty.
+[flush4] FLUSHED sl_s3_r1_d4_ref
+[flush4] FLUSHED sl_s3_r1_d4_u
+[flush4] FLUSHED sl_s3_r1_d4_d
+[flush4] Compaction quiescence: QUIESCENT after 11.9s
+[flush4]   [post_flush] sl_s3_r1_d4_ref    sstables=1 live=1598246 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS
+[flush4]   [post_flush] sl_s3_r1_d4_u      sstables=1 live=1598026 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS
+[flush4]   [post_flush] sl_s3_r1_d4_d      sstables=1 live=1631575 memtable_cells=0 part_mean=20339 part_max=20501 gate=PASS
+[flush4] PASS 4x flushed: all 3 tables persisted in SSTables, memtables empty.
+[flush8] FLUSHED sl_s3_r1_d8_ref
+[flush8] FLUSHED sl_s3_r1_d8_u
+[flush8] FLUSHED sl_s3_r1_d8_d
+[flush8] Compaction quiescence: QUIESCENT after 11.8s
+[flush8]   [post_flush] sl_s3_r1_d8_ref    sstables=1 live=3430635 memtable_cells=0 part_mean=943127 part_max=943127 gate=PASS
+[flush8]   [post_flush] sl_s3_r1_d8_u      sstables=1 live=3430274 memtable_cells=0 part_mean=943127 part_max=943127 gate=PASS
+[flush8]   [post_flush] sl_s3_r1_d8_d      sstables=1 live=3478050 memtable_cells=0 part_mean=42173 part_max=42510 gate=PASS
+[flush8] PASS 8x flushed: all 3 tables persisted in SSTables, memtables empty.
+[val1] PASS Q2_W01 3/3 (oracle + trace identical to S2)
+[val1] PASS Q7_W01 3/3 (oracle + trace identical to S2)
+[val1] PASS Q9_W01 3/3 (oracle + trace identical to S2)
+[val1] PASS Q12_W01 3/3 (oracle + trace identical to S2)
+[val1] PASS Q2_W07 3/3 (oracle + trace identical to S2)
+[val1] PASS Q7_W07 3/3 (oracle + trace identical to S2)
+[val1] PASS Q9_W07 3/3 (oracle + trace identical to S2)
+[val1] PASS Q12_W07 3/3 (oracle + trace identical to S2)
+[val1] PASS Q2_W14 3/3 (oracle + trace identical to S2)
+[val1] PASS Q7_W14 3/3 (oracle + trace identical to S2)
+[val1] PASS Q9_W14 3/3 (oracle + trace identical to S2)
+[val1] PASS Q12_W14 3/3 (oracle + trace identical to S2)
+[val1] PASS Q2_W21 3/3 (oracle + trace identical to S2)
+[val1] PASS Q7_W21 3/3 (oracle + trace identical to S2)
+[val1] PASS Q9_W21 3/3 (oracle + trace identical to S2)
+[val1] PASS Q12_W21 3/3 (oracle + trace identical to S2)
+[val1] PASS Q5_CONTROL 3/3 (oracle + trace identical to S2)
+[val1] PASS Q8_CONTROL 3/3 (oracle + trace identical to S2)
+[val1] PASS ALL 1x: 54/54 semantic validations, traces identical to S2.
+[val2] PASS Q2_W01 3/3 (oracle + trace identical to S2)
+[val2] PASS Q7_W01 3/3 (oracle + trace identical to S2)
+[val2] PASS Q9_W01 3/3 (oracle + trace identical to S2)
+[val2] PASS Q12_W01 3/3 (oracle + trace identical to S2)
+[val2] PASS Q2_W07 3/3 (oracle + trace identical to S2)
+[val2] PASS Q7_W07 3/3 (oracle + trace identical to S2)
+[val2] PASS Q9_W07 3/3 (oracle + trace identical to S2)
+[val2] PASS Q12_W07 3/3 (oracle + trace identical to S2)
+[val2] PASS Q2_W14 3/3 (oracle + trace identical to S2)
+[val2] PASS Q7_W14 3/3 (oracle + trace identical to S2)
+[val2] PASS Q9_W14 3/3 (oracle + trace identical to S2)
+[val2] PASS Q12_W14 3/3 (oracle + trace identical to S2)
+[val2] PASS Q2_W21 3/3 (oracle + trace identical to S2)
+[val2] PASS Q7_W21 3/3 (oracle + trace identical to S2)
+[val2] PASS Q9_W21 3/3 (oracle + trace identical to S2)
+[val2] PASS Q12_W21 3/3 (oracle + trace identical to S2)
+[val2] PASS Q5_CONTROL 3/3 (oracle + trace identical to S2)
+[val2] PASS Q8_CONTROL 3/3 (oracle + trace identical to S2)
+[val2] PASS ALL 2x: 54/54 semantic validations, traces identical to S2.
+[val4] PASS Q2_W01 3/3 (oracle + trace identical to S2)
+[val4] PASS Q7_W01 3/3 (oracle + trace identical to S2)
+[val4] PASS Q9_W01 3/3 (oracle + trace identical to S2)
+[val4] PASS Q12_W01 3/3 (oracle + trace identical to S2)
+[val4] PASS Q2_W07 3/3 (oracle + trace identical to S2)
+[val4] PASS Q7_W07 3/3 (oracle + trace identical to S2)
+[val4] PASS Q9_W07 3/3 (oracle + trace identical to S2)
+[val4] PASS Q12_W07 3/3 (oracle + trace identical to S2)
+[val4] PASS Q2_W14 3/3 (oracle + trace identical to S2)
+[val4] PASS Q7_W14 3/3 (oracle + trace identical to S2)
+[val4] PASS Q9_W14 3/3 (oracle + trace identical to S2)
+[val4] PASS Q12_W14 3/3 (oracle + trace identical to S2)
+[val4] PASS Q2_W21 3/3 (oracle + trace identical to S2)
+[val4] PASS Q7_W21 3/3 (oracle + trace identical to S2)
+[val4] PASS Q9_W21 3/3 (oracle + trace identical to S2)
+[val4] PASS Q12_W21 3/3 (oracle + trace identical to S2)
+[val4] PASS Q5_CONTROL 3/3 (oracle + trace identical to S2)
+[val4] PASS Q8_CONTROL 3/3 (oracle + trace identical to S2)
+[val4] PASS ALL 4x: 54/54 semantic validations, traces identical to S2.
+[val8] PASS Q2_W01 3/3 (oracle + trace identical to S2)
+[val8] PASS Q7_W01 3/3 (oracle + trace identical to S2)
+[val8] PASS Q9_W01 3/3 (oracle + trace identical to S2)
+[val8] PASS Q12_W01 3/3 (oracle + trace identical to S2)
+[val8] PASS Q2_W07 3/3 (oracle + trace identical to S2)
+[val8] PASS Q7_W07 3/3 (oracle + trace identical to S2)
+[val8] PASS Q9_W07 3/3 (oracle + trace identical to S2)
+[val8] PASS Q12_W07 3/3 (oracle + trace identical to S2)
+[val8] PASS Q2_W14 3/3 (oracle + trace identical to S2)
+[val8] PASS Q7_W14 3/3 (oracle + trace identical to S2)
+[val8] PASS Q9_W14 3/3 (oracle + trace identical to S2)
+[val8] PASS Q12_W14 3/3 (oracle + trace identical to S2)
+[val8] PASS Q2_W21 3/3 (oracle + trace identical to S2)
+[val8] PASS Q7_W21 3/3 (oracle + trace identical to S2)
+[val8] PASS Q9_W21 3/3 (oracle + trace identical to S2)
+[val8] PASS Q12_W21 3/3 (oracle + trace identical to S2)
+[val8] PASS Q5_CONTROL 3/3 (oracle + trace identical to S2)
+[val8] PASS Q8_CONTROL 3/3 (oracle + trace identical to S2)
+[val8] PASS ALL 8x: 54/54 semantic validations, traces identical to S2.
+[prereg] PASS S3 preregistration BEFORE any timing: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/s3_benchmark_preregister.json
+[run1] Storage pre-timing snapshot 1x ...
+[run1]   [pre_timing] sl_s3_r1_d1_ref    sstables=1 live=377879 memtable_cells=0 part_mean=105778 part_max=105778 gate=PASS
+[run1]   [pre_timing] sl_s3_r1_d1_u      sstables=1 live=377838 memtable_cells=0 part_mean=105778 part_max=105778 gate=PASS
+[run1]   [pre_timing] sl_s3_r1_d1_d      sstables=1 live=386340 memtable_cells=0 part_mean=5662 part_max=5722 gate=PASS
+[run1] PASS 1x pretiming oracles 54/54
+[run1] Warm-ups done (270). Timing starts.
+[run1] S3 factor=1x rounds=5/60 observations=270
+[run1] S3 factor=1x rounds=10/60 observations=540
+[run1] S3 factor=1x rounds=15/60 observations=810
+[run1] S3 factor=1x rounds=20/60 observations=1080
+[run1] S3 factor=1x rounds=25/60 observations=1350
+[run1] S3 factor=1x rounds=30/60 observations=1620
+[run1] S3 factor=1x rounds=35/60 observations=1890
+[run1] S3 factor=1x rounds=40/60 observations=2160
+[run1] S3 factor=1x rounds=45/60 observations=2430
+[run1] S3 factor=1x rounds=50/60 observations=2700
+[run1] S3 factor=1x rounds=55/60 observations=2970
+[run1] S3 factor=1x rounds=60/60 observations=3240
+[run1] COMPLETE factor=1x 3240 observations in 49s
+[run1]   [post_timing] sl_s3_r1_d1_ref    sstables=1 live=377879 memtable_cells=0 part_mean=105778 part_max=105778 gate=PASS
+[run1]   [post_timing] sl_s3_r1_d1_u      sstables=1 live=377838 memtable_cells=0 part_mean=105778 part_max=105778 gate=PASS
+[run1]   [post_timing] sl_s3_r1_d1_d      sstables=1 live=386340 memtable_cells=0 part_mean=5662 part_max=5722 gate=PASS
+[run1] Physical state unchanged during timing: True
+[run2] Storage pre-timing snapshot 2x ...
+[run2]   [pre_timing] sl_s3_r1_d2_ref    sstables=1 live=772090 memtable_cells=0 part_mean=219342 part_max=219342 gate=PASS
+[run2]   [pre_timing] sl_s3_r1_d2_u      sstables=1 live=771728 memtable_cells=0 part_mean=219342 part_max=219342 gate=PASS
+[run2]   [pre_timing] sl_s3_r1_d2_d      sstables=1 live=785540 memtable_cells=0 part_mean=9887 part_max=9887 gate=PASS
+[run2] PASS 2x pretiming oracles 54/54
+[run2] Warm-ups done (270). Timing starts.
+[run2] S3 factor=2x rounds=5/60 observations=270
+[run2] S3 factor=2x rounds=10/60 observations=540
+[run2] S3 factor=2x rounds=15/60 observations=810
+[run2] S3 factor=2x rounds=20/60 observations=1080
+[run2] S3 factor=2x rounds=25/60 observations=1350
+[run2] S3 factor=2x rounds=30/60 observations=1620
+[run2] S3 factor=2x rounds=35/60 observations=1890
+[run2] S3 factor=2x rounds=40/60 observations=2160
+[run2] S3 factor=2x rounds=45/60 observations=2430
+[run2] S3 factor=2x rounds=50/60 observations=2700
+[run2] S3 factor=2x rounds=55/60 observations=2970
+[run2] S3 factor=2x rounds=60/60 observations=3240
+[run2] COMPLETE factor=2x 3240 observations in 92s
+[run2]   [post_timing] sl_s3_r1_d2_ref    sstables=1 live=772090 memtable_cells=0 part_mean=219342 part_max=219342 gate=PASS
+[run2]   [post_timing] sl_s3_r1_d2_u      sstables=1 live=771728 memtable_cells=0 part_mean=219342 part_max=219342 gate=PASS
+[run2]   [post_timing] sl_s3_r1_d2_d      sstables=1 live=785540 memtable_cells=0 part_mean=9887 part_max=9887 gate=PASS
+[run2] Physical state unchanged during timing: True
+[run4] Storage pre-timing snapshot 4x ...
+[run4]   [pre_timing] sl_s3_r1_d4_ref    sstables=1 live=1598246 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS
+[run4]   [pre_timing] sl_s3_r1_d4_u      sstables=1 live=1598026 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS
+[run4]   [pre_timing] sl_s3_r1_d4_d      sstables=1 live=1631575 memtable_cells=0 part_mean=20339 part_max=20501 gate=PASS
+[run4] PASS 4x pretiming oracles 54/54
+[run4] Warm-ups done (270). Timing starts.
+[run4] S3 factor=4x rounds=5/60 observations=270
+[run4] S3 factor=4x rounds=10/60 observations=540
+[run4] S3 factor=4x rounds=15/60 observations=810
+[run4] S3 factor=4x rounds=20/60 observations=1080
+[run4] S3 factor=4x rounds=25/60 observations=1350
+[run4] S3 factor=4x rounds=30/60 observations=1620
+[run4] S3 factor=4x rounds=35/60 observations=1890
+[run4] S3 factor=4x rounds=40/60 observations=2160
+[run4] S3 factor=4x rounds=45/60 observations=2430
+[run4] S3 factor=4x rounds=50/60 observations=2700
+[run4] S3 factor=4x rounds=55/60 observations=2970
+[run4] S3 factor=4x rounds=60/60 observations=3240
+[run4] COMPLETE factor=4x 3240 observations in 188s
+[run4]   [post_timing] sl_s3_r1_d4_ref    sstables=1 live=1598246 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS
+[run4]   [post_timing] sl_s3_r1_d4_u      sstables=1 live=1598026 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS
+[run4]   [post_timing] sl_s3_r1_d4_d      sstables=1 live=1631575 memtable_cells=0 part_mean=20339 part_max=20501 gate=PASS
+[run4] Physical state unchanged during timing: True
+[run8] Storage pre-timing snapshot 8x ...
+[run8]   [pre_timing] sl_s3_r1_d8_ref    sstables=1 live=3430635 memtable_cells=0 part_mean=943127 part_max=943127 gate=PASS
+[run8]   [pre_timing] sl_s3_r1_d8_u      sstables=1 live=3430274 memtable_cells=0 part_mean=943127 part_max=943127 gate=PASS
+[run8]   [pre_timing] sl_s3_r1_d8_d      sstables=1 live=3478050 memtable_cells=0 part_mean=42173 part_max=42510 gate=PASS
+[run8] PASS 8x pretiming oracles 54/54
+[run8] Warm-ups done (270). Timing starts.
+[run8] S3 factor=8x rounds=5/60 observations=270
+[run8] S3 factor=8x rounds=10/60 observations=540
+[run8] S3 factor=8x rounds=15/60 observations=810
+[run8] S3 factor=8x rounds=20/60 observations=1080
+[run8] S3 factor=8x rounds=25/60 observations=1350
+[run8] S3 factor=8x rounds=30/60 observations=1620
+[run8] S3 factor=8x rounds=35/60 observations=1890
+[run8] S3 factor=8x rounds=40/60 observations=2160
+[run8] S3 factor=8x rounds=45/60 observations=2430
+[run8] S3 factor=8x rounds=50/60 observations=2700
+[run8] S3 factor=8x rounds=55/60 observations=2970
+[run8] S3 factor=8x rounds=60/60 observations=3240
+[run8] COMPLETE factor=8x 3240 observations in 409s
+[run8]   [post_timing] sl_s3_r1_d8_ref    sstables=1 live=3430635 memtable_cells=0 part_mean=943127 part_max=943127 gate=PASS
+[run8]   [post_timing] sl_s3_r1_d8_u      sstables=1 live=3430274 memtable_cells=0 part_mean=943127 part_max=943127 gate=PASS
+[run8]   [post_timing] sl_s3_r1_d8_d      sstables=1 live=3478050 memtable_cells=0 part_mean=42173 part_max=42510 gate=PASS
+[run8] Physical state unchanged during timing: True
+[audit1] PASS audit 1x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[audit2] PASS audit 2x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[audit4] PASS audit 4x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[audit8] PASS audit 8x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[auditall] PASS audit 1x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[auditall] PASS audit 2x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[auditall] PASS audit 4x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[auditall] PASS audit 8x: 3240 latencies, 54 groups, 1080 orders, order identical to S2
+[auditall] PASS ALL S3: 12,960 observations, 4,320 orders audited -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/all_density_comparison.csv
+[compare] PASS S3 vs S2 comparison -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/s3_vs_s2_comparison.csv
+[compare]   1x  S2 U/D wins 14/2 median D/U 1.3296  |  S3 U/D wins 11/5 median D/U 1.2819
+[compare]   2x  S2 U/D wins 12/4 median D/U 1.2365  |  S3 U/D wins 12/4 median D/U 1.1673
+[compare]   4x  S2 U/D wins 15/1 median D/U 1.1656  |  S3 U/D wins 13/3 median D/U 1.1195
+[compare]   8x  S2 U/D wins 13/3 median D/U 1.0646  |  S3 U/D wins 12/4 median D/U 1.0951
+[report] Report written: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/FINAL_AUDIT_PT.md
+S3 orchestrator finished: COMPLETE | dashboard: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/dashboard.html

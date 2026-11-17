@@ -1,0 +1,48 @@
+Total number of tables: 291
+----------------
+Keyspace : sl_f2_e9_h3b_sst_d
+	Read Count: 124888
+	Read Latency: 0.23437234962526424 ms
+	Write Count: 432000
+	Write Latency: 0.0019017569444444444 ms
+	Pending Flushes: 0
+		Table: ts2_iot_wide
+		SSTable count: 1
+		Old SSTable count: 0
+		Space used (live): 6500532
+		Space used (total): 6500532
+		Space used by snapshots (total): 0
+		Off heap memory used (total): 11576
+		SSTable Compression Ratio: 0.4345605420728209
+		Number of partitions (estimate): 3005
+		Memtable cell count: 0
+		Memtable data size: 0
+		Memtable off heap memory used: 0
+		Memtable switch count: 1
+		Speculative retries: 0
+		Local read count: 124888
+		Local read latency: 0.259 ms
+		Local write count: 432000
+		Local write latency: NaN ms
+		Pending flushes: 0
+		Percent repaired: 0.0
+		Bytes repaired: 0.000KiB
+		Bytes unrepaired: 14.082MiB
+		Bytes pending repair: 0.000KiB
+		Bloom filter false positives: 0
+		Bloom filter false ratio: 0.00000
+		Bloom filter space used: 3768
+		Bloom filter off heap memory used: 3760
+		Index summary off heap memory used: 600
+		Compression metadata off heap memory used: 7216
+		Compacted partition minimum bytes: 1598
+		Compacted partition maximum bytes: 5722
+		Compacted partition mean bytes: 5711
+		Average live cells per slice (last five minutes): 148.88070646560627
+		Maximum live cells per slice (last five minutes): 149
+		Average tombstones per slice (last five minutes): 1.0
+		Maximum tombstones per slice (last five minutes): 1
+		Dropped Mutations: 0
+		Droppable tombstone ratio: 0.00000
+
+----------------

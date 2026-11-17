@@ -1,0 +1,10 @@
+
+===== 2026-11-10T17:47:43.074805 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'flush', '--factor', '4', '--confirm', 'FLUSH_S3_KEYSPACES_ONLY']
+FLUSHED sl_s3_r1_d4_ref
+FLUSHED sl_s3_r1_d4_u
+FLUSHED sl_s3_r1_d4_d
+Compaction quiescence: QUIESCENT after 11.9s
+  [post_flush] sl_s3_r1_d4_ref    sstables=1 live=1598246 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS 
+  [post_flush] sl_s3_r1_d4_u      sstables=1 live=1598026 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS 
+  [post_flush] sl_s3_r1_d4_d      sstables=1 live=1631575 memtable_cells=0 part_mean=20339 part_max=20501 gate=PASS 
+PASS 4x flushed: all 3 tables persisted in SSTables, memtables empty.

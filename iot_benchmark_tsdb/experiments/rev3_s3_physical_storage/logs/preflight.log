@@ -1,0 +1,4 @@
+
+===== 2026-11-10T17:40:29.717279 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'preflight']
+PASS preflight (read-only). S2 inputs verified, B gate PASS, no sl_s3_* keyspace present.
+Saved: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/preflight/environment_before.json

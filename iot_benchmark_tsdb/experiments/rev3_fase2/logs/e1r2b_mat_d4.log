@@ -1,0 +1,6 @@
+LOADED sl_f2_e1r2b_d4_sst_ref 108000 rows in 34.565 s (flushed)
+LOADED sl_f2_e1r2b_d4_sst_u 108000 rows in 35.014 s (flushed)
+LOADED sl_f2_e1r2b_d4_sst_d 108000 rows in 35.979 s (flushed)
+LOADED sl_f2_e1r2b_d4_mem_ref 108000 rows in 32.758 s 
+LOADED sl_f2_e1r2b_d4_mem_u 108000 rows in 33.915 s 
+LOADED sl_f2_e1r2b_d4_mem_d 108000 rows in 35.25 s 

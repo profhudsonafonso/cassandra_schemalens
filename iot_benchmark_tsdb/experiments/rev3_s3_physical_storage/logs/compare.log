@@ -1,0 +1,7 @@
+
+===== 2026-11-10T18:01:52.414886 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'compare-s2']
+PASS S3 vs S2 comparison -> /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/s3_vs_s2_comparison.csv
+  1x  S2 U/D wins 14/2 median D/U 1.3296  |  S3 U/D wins 11/5 median D/U 1.2819
+  2x  S2 U/D wins 12/4 median D/U 1.2365  |  S3 U/D wins 12/4 median D/U 1.1673
+  4x  S2 U/D wins 15/1 median D/U 1.1656  |  S3 U/D wins 13/3 median D/U 1.1195
+  8x  S2 U/D wins 13/3 median D/U 1.0646  |  S3 U/D wins 12/4 median D/U 1.0951

@@ -1,0 +1,31 @@
+trace probability -> Current trace probability: 1.0
+h3 Q2_W01 TS2-U: 5 traced executions
+h3 Q2_W01 TS2-D: 5 traced executions
+h3 Q12_W01 TS2-U: 5 traced executions
+h3 Q12_W01 TS2-D: 5 traced executions
+h3 Q2_W07 TS2-U: 5 traced executions
+h3 Q2_W07 TS2-D: 5 traced executions
+h3 Q12_W07 TS2-U: 5 traced executions
+h3 Q12_W07 TS2-D: 5 traced executions
+h3 Q2_W21 TS2-U: 5 traced executions
+h3 Q2_W21 TS2-D: 5 traced executions
+h3 Q12_W21 TS2-U: 5 traced executions
+h3 Q12_W21 TS2-D: 5 traced executions
+h3 Q2_W80 TS2-U: 5 traced executions
+h3 Q2_W80 TS2-D: 5 traced executions
+h3 Q12_W80 TS2-U: 5 traced executions
+h3 Q12_W80 TS2-D: 5 traced executions
+p1 Q2_W01 TS2-U: 5 traced executions
+p1 Q2_W01 TS2-D: 5 traced executions
+p1 Q12_W01 TS2-U: 5 traced executions
+p1 Q12_W01 TS2-D: 5 traced executions
+p1 Q2_W07 TS2-U: 5 traced executions
+p1 Q2_W07 TS2-D: 5 traced executions
+p1 Q12_W07 TS2-U: 5 traced executions
+p1 Q12_W07 TS2-D: 5 traced executions
+p1 Q2_W21 TS2-U: 5 traced executions
+p1 Q2_W21 TS2-D: 5 traced executions
+p1 Q12_W21 TS2-U: 5 traced executions
+p1 Q12_W21 TS2-D: 5 traced executions
+trace probability -> Current trace probability: 0.0
+PASS trace: 140 executions, 0 traced requests matched of 1779

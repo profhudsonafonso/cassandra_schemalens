@@ -1,0 +1,7 @@
+FLUSHED sl_f2_e3r2_h1_sst_ref
+FLUSHED sl_f2_e3r2_h1_sst_u
+FLUSHED sl_f2_e3r2_h1_sst_d
+  [post_flush] sl_f2_e3r2_h1_sst_ref      sst=1 mem_cells=0 part_mean=105778 gate=PASS
+  [post_flush] sl_f2_e3r2_h1_sst_u        sst=1 mem_cells=0 part_mean=105778 gate=PASS
+  [post_flush] sl_f2_e3r2_h1_sst_d        sst=1 mem_cells=0 part_mean=5662 gate=PASS
+PASS flush+gate e3r2/h1

@@ -1,0 +1,6 @@
+scale_days,variant,logical_metric_cells,physical_writes,load_seconds,keyspace
+30,BASELINE,54000,27000,9.547235703,sl_diag_e3_reference_d30
+30,H_2641c9751dce,54000,54006,17.977972767,sl_diag_e3_h_2641c9751dce_d30
+30,H_4f73edf0446d,54000,81006,24.795398207,sl_diag_e3_h_4f73edf0446d_d30
+30,H_c7646ce7d864,54000,81006,25.758566737,sl_diag_e3_h_c7646ce7d864_d30
+30,H_0bd185590c5a,54000,54000,17.617322236,sl_diag_e3_h_0bd185590c5a_d30

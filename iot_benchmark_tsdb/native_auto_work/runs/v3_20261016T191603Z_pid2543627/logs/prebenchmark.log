@@ -1,0 +1,16 @@
+
+COMMAND: ['bash', 'scripts/run_native_prebenchmark.sh', '/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/native_data', '/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/native_queries.jsonl', '/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/java_config/config.properties', '500000']
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens/phase_a1/tools/run_a1.py", line 99, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens/phase_a1/tools/run_a1.py", line 47, in main
+    queries=representative_queries(events,data,scenario,operations,args.official_query_objects)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens/phase_a1/tools/official_query_capture.py", line 114, in representative_queries
+    ds,ss=parse_devices(ch.get('deviceSchema'),'Q12 child')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens/phase_a1/tools/official_query_capture.py", line 98, in parse_devices
+    if n not in sensors:raise ValueError(label+': unknown sensor: '+str(n))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Q12 child: unknown sensor: None

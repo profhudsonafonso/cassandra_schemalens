@@ -1,0 +1,24 @@
+# --- SchemaLens IoT/Cassandra (TSDB) experiment ---
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Upstream IoT Benchmark clone and Maven build (reproducible from the pinned commit
+# 62e0dc100e56443978c8b4c66472b1d8a7ef0238 via ./run_v3_auto.sh)
+native_auto_work/upstream_iot_benchmark/
+native_auto_work/build_cache/
+
+# Generated datasets (~260 MB). They can be regenerated from the seeds and their SHA-256
+# hashes are recorded in each manifest.json / generation_manifest.json.
+experiments/rev3_fase2/data/**/*.csv
+experiments/rev3_s2_partition_growth/generated/*.csv
+
+# LaTeX build artifacts (main.tex, figures and main.pdf are kept)
+docs/relatorio_overleaf/*.aux
+docs/relatorio_overleaf/*.log
+docs/relatorio_overleaf/*.out
+docs/relatorio_overleaf/*.toc
+docs/relatorio_overleaf/*.synctex.gz

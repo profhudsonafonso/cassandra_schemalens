@@ -1,0 +1,9 @@
+{
+  "amendment_sha256": "3470434ede0978c5ccf82b79b2eaa8557f35be07405fc5dcc419afc1f790e1a4",
+  "campaign": "e9",
+  "created_utc": "2026-11-12T15:15:12+00:00",
+  "fase3_core_sha256": "6de492563e4122bc22aa4f4ae3aecc511de0bcd280a361dead9073a83d947bfc",
+  "rev5_frozen_sha256": "73d98132f1e1eba7ff84acb20aa85997423f22e8648b436ed1830c291c843c83",
+  "rev5_predictions_sha256": "f08328424dc8a139aa50456eabe4358b1413e148e7f0dfac80d32b5f04fe8d4a",
+  "status": "F3_PREREGISTRATION_SIDECAR"
+}

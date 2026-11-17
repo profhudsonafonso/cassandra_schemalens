@@ -1,0 +1,81 @@
+{
+  "by_dataset": {
+    "h1": {
+      "label": "H1 · 21 dias · 9 disp.",
+      "n": 16,
+      "wins_u": 14,
+      "wins_d": 2,
+      "rev4_hits": 14,
+      "always_u_hits": 14,
+      "fewer_calls_hits": 14,
+      "u_partition_kb": 103.298828125,
+      "d_partition_kb": 5.529296875,
+      "median_du": 1.3065
+    },
+    "h2": {
+      "label": "H2 · 83 dias · 9 disp.",
+      "n": 20,
+      "wins_u": 18,
+      "wins_d": 2,
+      "rev4_hits": 14,
+      "always_u_hits": 18,
+      "fewer_calls_hits": 14,
+      "u_partition_kb": 444.166015625,
+      "d_partition_kb": 5.54296875,
+      "median_du": 1.3723
+    },
+    "h3": {
+      "label": "H3 · 333 dias · 9 disp.",
+      "n": 24,
+      "wins_u": 19,
+      "wins_d": 5,
+      "rev4_hits": 19,
+      "always_u_hits": 19,
+      "fewer_calls_hits": 19,
+      "u_partition_kb": 1874.462890625,
+      "d_partition_kb": 5.5771484375,
+      "median_du": 1.3543
+    },
+    "n3": {
+      "label": "N3 · 21 dias · 3 disp.",
+      "n": 16,
+      "wins_u": 12,
+      "wins_d": 4,
+      "rev4_hits": 14,
+      "always_u_hits": 12,
+      "fewer_calls_hits": 14,
+      "u_partition_kb": 103.298828125,
+      "d_partition_kb": 5.5,
+      "median_du": 1.5182
+    },
+    "n18": {
+      "label": "N18 · 21 dias · 18 disp.",
+      "n": 16,
+      "wins_u": 13,
+      "wins_d": 3,
+      "rev4_hits": 15,
+      "always_u_hits": 13,
+      "fewer_calls_hits": 15,
+      "u_partition_kb": 103.298828125,
+      "d_partition_kb": 5.5361328125,
+      "median_du": 1.4143
+    }
+  },
+  "totals": {
+    "n": 92,
+    "wins_u": 76,
+    "wins_d": 16,
+    "rev4_hits": 76,
+    "always_u_hits": 76,
+    "fewer_calls_hits": 76
+  },
+  "median_abs_log_error": 0.1382,
+  "findings": [
+    "Holdout: TS2-U venceu 76 e TS2-D 16 de 92 casos temporais.",
+    "Acerto do vencedor: Rev4 76/92, 'sempre U' 76/92, 'menos chamadas' 76/92.",
+    "Erro absoluto mediano de ln(D/U) da Rev4: 0.138 (≈ ×1.15 na razão).",
+    "Partição média de U: 103 KB (21 d) → 1874 KB (333 d); mediana D/U 1,306 → 1,354.",
+    "Janelas longas (80 e 330 dias): mediana D/U 2,060; D venceu 0 de 12."
+  ],
+  "created": "2026-11-11T20:28:25-03:00"
+}

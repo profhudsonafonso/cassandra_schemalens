@@ -1,0 +1,27 @@
+{
+  "scenario_id": "iot_benchmark_v2_table_documentation_demo",
+  "source_url": "https://iotdb.apache.org/UserGuide/latest/Tools-System/Benchmark.html",
+  "source_scope": "Official documented operation descriptions Q1-Q12, not a replay of generated SQL",
+  "database_target": "CASSANDRA",
+  "dialect": "table",
+  "query_device_num": 1,
+  "query_sensor_num": 2,
+  "append_oriented": true,
+  "assumptions": [
+    "Queries select a concrete device/series identity for this illustrative activation.",
+    "Raw-point/range/set queries request two measurements: QUERY_SENSOR_NUM=2.",
+    "Q8 is semantically newest single point for a selected device; exact generated SQL has not been parsed.",
+    "Q7 and Q11 group by time, not an additional categorical dimension.",
+    "Q12 is table dialect only and is a set operation over time range subqueries.",
+    "M3 is allowed as a proposal because the chosen scenario is append-oriented; actual DB compaction strategy is not chosen.",
+    "TTL, late arrival, hot-series rate, sampling correctness, and workload query frequencies are UNKNOWN: no M2/M4/M5 activation is inferred.",
+    "Activation is NOT executable candidate coverage: especially Q12 set operations and TS5 alignment must be validated later.",
+    "A1 pilot uses DOUBLE sensors only; no official QUERY_SEED replay.",
+    "Time predicates for reference answers use [start,end) as a declared pilot convention, not verified IoTDB SQL.",
+    "Do not infer coverage from activated family or CQL DDL."
+  ],
+  "benchmark_used_to_activate": false,
+  "query_aggregate_fun": "count",
+  "group_by_time_unit_ms": 20000,
+  "query_lower_value": 10.0
+}

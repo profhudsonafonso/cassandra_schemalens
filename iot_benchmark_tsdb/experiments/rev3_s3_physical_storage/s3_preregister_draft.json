@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-11-10T20:40:34+00:00",
+  "expected": {
+    "observations_per_factor": 3240,
+    "orders_per_factor": 1080,
+    "semantic_validations": 216,
+    "total_observations": 12960,
+    "total_orders": 4320
+  },
+  "factor_order": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "factors": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "keyspaces": {
+    "1": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d1_ref",
+      "R3H_38939db96444": "sl_s3_r1_d1_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d1_d"
+    },
+    "2": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d2_ref",
+      "R3H_38939db96444": "sl_s3_r1_d2_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d2_d"
+    },
+    "4": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d4_ref",
+      "R3H_38939db96444": "sl_s3_r1_d4_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d4_d"
+    },
+    "8": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d8_ref",
+      "R3H_38939db96444": "sl_s3_r1_d8_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d8_d"
+    }
+  },
+  "labels": [
+    "BASELINE_Q8_OPTIMIZED",
+    "R3H_38939db96444",
+    "R3H_d2ea1974de53"
+  ],
+  "method": "POST_AB_EXPLORATORY_SYNTHETIC_FIXED_HISTORY_DENSITY_SWEEP_FLUSHED_SSTABLE_STATE",
+  "not_applied": [
+    "manual compaction",
+    "cache clearing",
+    "autocompaction toggling",
+    "schema option changes"
+  ],
+  "page_size": 16,
+  "per_factor_rng": "random.Random(seed + factor) - identical to S2",
+  "percentile": "nearest_rank",
+  "protocol_sha256": "842e7df478de6e3a402b15fa6dffa4eff274c57aa316d3a64db8d0b74c2aaa2b",
+  "quiescence": {
+    "max_s": 600,
+    "poll_s": 5,
+    "stable_polls": 3
+  },
+  "replicate": "r1",
+  "rounds": 60,
+  "runner_sha256_at_draft": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "s2_dataset_sha256": {
+    "1": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+    "2": "7389fcdf0504676be94fd557f057a46f8c210f97db34386c59d8e62f7ba41cf3",
+    "4": "b5aa8eb7570d8100e211a5eaa0131f189428c993e9695148c5009176ab49ac37",
+    "8": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91"
+  },
+  "s2_generation_manifest_sha256": "6e7ef76b9115d5ddb8d9eb3f52d9e2a890b1e51bb387ff1f92fea6006b58aad8",
+  "s2_runner_sha256": "c5aa668f04bf79a5d6e52f7f3c5f5ba58575a322d70308e6dbf55f659eb4f11b",
+  "seed": 20261127,
+  "status": "S3_DRAFT_FROZEN_BEFORE_ANY_S3_DDL",
+  "storage_gate": "every table: SSTable count >= 1, Space used (live) > 0, Memtable cell count == 0",
+  "strategy": "A: materialize all 12, flush all, gate, validate, preregister, then time in factor order",
+  "treatment": "nodetool flush <S3 keyspace> after load, before validation and timing",
+  "warmups": 5
+}

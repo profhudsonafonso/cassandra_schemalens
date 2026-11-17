@@ -1,0 +1,45 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "schema_class": "CASSANDRA_TRANSLATED_IOTDB_TABLE",
+  "selection_modified": false,
+  "Cassandra_used": false,
+  "baseline_part_of_hbench": false,
+  "query_semantics": "Java parameter-object sample; not SQL replay",
+  "baseline_ddl": "CREATE TABLE IF NOT EXISTS iot_reference_table (device_id text, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id), timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+  "physical_device_time_rows": 900,
+  "validated_queries": 12,
+  "frozen_deployment_ids": [
+    "H_2641c9751dce",
+    "H_4f73edf0446d",
+    "H_c7646ce7d864",
+    "H_0bd185590c5a"
+  ],
+  "frozen_hashes": {
+    "hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+    "source_rows_sha256": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+    "query_instances_sha256": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c"
+  },
+  "native_capture": {
+    "query_classes": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12"
+    ],
+    "capture_sha256": "e5da8bb7382edbb6e50acc010fe553473758d615759a179641bfd74a5de50aeb",
+    "capture_bytes_verified": true,
+    "sensor_columns": [
+      "m_s_0",
+      "m_s_1"
+    ],
+    "logical_metric_cells": 1800
+  }
+}

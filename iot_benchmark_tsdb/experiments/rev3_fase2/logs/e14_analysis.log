@@ -1,0 +1,4 @@
+WROTE /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/analysis/e14_summary.json
+EXPLORATÓRIO (E9 já visto): T5 decidiu firme em 61 de 80 casos e acertou 48; erros graves 8; 19 declarados empate.
+Arrependimento p90: T5 0.119, sempre U 0.119, Rev5 0.293, Rev4 0.293.
+Casos com empate medido (|ln D/U| < 0.1): 17 de 80.

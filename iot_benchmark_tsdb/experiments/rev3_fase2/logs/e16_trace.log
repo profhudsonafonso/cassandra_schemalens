@@ -1,0 +1,19 @@
+trace probability -> Current trace probability: 1.0
+e9 p1 Q2_W01 TS2-U: 30 traced executions
+e9 p1 Q2_W01 TS2-D: 30 traced executions
+e9 p1 Q12_W01 TS2-U: 30 traced executions
+e9 p1 Q12_W01 TS2-D: 30 traced executions
+e9 p1 Q2_W07 TS2-U: 30 traced executions
+e9 p1 Q2_W07 TS2-D: 30 traced executions
+e9 p1 Q12_W07 TS2-U: 30 traced executions
+e9 p1 Q12_W07 TS2-D: 30 traced executions
+e9r2 p1 Q2_W01 TS2-U: 30 traced executions
+e9r2 p1 Q2_W01 TS2-D: 30 traced executions
+e9r2 p1 Q12_W01 TS2-U: 30 traced executions
+e9r2 p1 Q12_W01 TS2-D: 30 traced executions
+e9r2 p1 Q2_W07 TS2-U: 30 traced executions
+e9r2 p1 Q2_W07 TS2-D: 30 traced executions
+e9r2 p1 Q12_W07 TS2-U: 30 traced executions
+e9r2 p1 Q12_W07 TS2-D: 30 traced executions
+trace probability -> Current trace probability: 0.0
+PASS trace: 480 executions, 2064 sessions matched, 92 unassigned of 2156

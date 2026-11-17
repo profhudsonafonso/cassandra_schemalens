@@ -1,0 +1,25 @@
+{
+  "benchmark_preregister_sha256": "eb010fb873317ac546ec98f6a40d1e9a258558bf55334bb35def8477f03e8675",
+  "case_variant_groups": 54,
+  "comparison_scope": "S3 flushed-SSTable state, synthetic densification, client end-to-end latency",
+  "dataset_sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91",
+  "ended_epoch_seconds": 1794344505.8973842,
+  "expected_measurements": 3240,
+  "factor": 8,
+  "files_sha256": {
+    "orders.csv": "8fc12e92bfea177039b0724491cf04de93039139a62702dd80246e41f0286c0d",
+    "query_p95.csv": "b883a453cba7686a9d5efb1ea332d4cb327c928a02c7bac897d5556ce650beb6",
+    "raw_latencies.csv": "28f5b4e7a4cc1e73bb542d220ebb7b2ffd12f47c9117054b9f82be5b70a8cfcd"
+  },
+  "frozen_selection_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "host": "127.0.0.1",
+  "port": 9043,
+  "raw_measurements": 3240,
+  "replicate": "r1",
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "started_epoch_seconds": 1794344096.8438838,
+  "status": "S3_BENCHMARK_COMPLETE",
+  "storage_pre_timing_gate": "PASS",
+  "storage_pre_timing_summary_sha256": "d3150383a136d2700e94d9692b46435536fbfdc4efa91425a1dd2bb677eed539",
+  "warmups": 270
+}

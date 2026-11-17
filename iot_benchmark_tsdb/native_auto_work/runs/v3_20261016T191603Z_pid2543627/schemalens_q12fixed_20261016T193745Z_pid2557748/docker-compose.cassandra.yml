@@ -1,0 +1,17 @@
+# OPTIONAL; not executed in the authoring environment.
+# Never connect this experiment to production Cassandra services.
+services:
+  cassandra:
+    image: cassandra:4.1
+    ports:
+      - "127.0.0.1:9043:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: schemalens_iot_research
+      CASSANDRA_DC: datacenter1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'DESCRIBE KEYSPACES' >/dev/null 2>&1"]
+      interval: 25s
+      timeout: 10s
+      retries: 25
+      start_period: 70s

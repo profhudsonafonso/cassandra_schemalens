@@ -1,0 +1,7 @@
+Protocol frozen: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/_protocol/protocol_freeze.json
+LOADED sl_f2_e1r2_d1_mem_ref 27000 rows in 8.606 s
+LOADED sl_f2_e1r2_d1_mem_u 27000 rows in 8.819 s
+LOADED sl_f2_e1r2_d1_mem_d 27000 rows in 7.913 s
+LOADED sl_f2_e1r2_d1_sst_ref 27000 rows in 8.577 s
+LOADED sl_f2_e1r2_d1_sst_u 27000 rows in 9.276 s
+LOADED sl_f2_e1r2_d1_sst_d 27000 rows in 8.177 s

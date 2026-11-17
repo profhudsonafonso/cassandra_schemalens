@@ -1,0 +1,25 @@
+test_20_live_read_templates_against_fake_session (test_iot_stages_4_to_9.LiveQueryCompilerContractTests.test_20_live_read_templates_against_fake_session) ... ok
+test_01_original_activation_ts_only (test_iot_stages_4_to_9.PipelineTests.test_01_original_activation_ts_only) ... ok
+test_02_instantiation_follows_activation (test_iot_stages_4_to_9.PipelineTests.test_02_instantiation_follows_activation) ... ok
+test_03_no_physical_selection_unactivated (test_iot_stages_4_to_9.PipelineTests.test_03_no_physical_selection_unactivated) ... ok
+test_04_q12_set_op_must_have_raw (test_iot_stages_4_to_9.PipelineTests.test_04_q12_set_op_must_have_raw) ... ok
+test_05_non_aligned_rollup_rejected (test_iot_stages_4_to_9.PipelineTests.test_05_non_aligned_rollup_rejected) ... ok
+test_06_aligned_rollup_allowed_with_right_granularity (test_iot_stages_4_to_9.PipelineTests.test_06_aligned_rollup_allowed_with_right_granularity) ... ok
+test_07_ts4_historical_window_fallback (test_iot_stages_4_to_9.PipelineTests.test_07_ts4_historical_window_fallback) ... ok
+test_08_ts0_complete_queries (test_iot_stages_4_to_9.PipelineTests.test_08_ts0_complete_queries) ... ok
+test_09_ts1_day_boundaries (test_iot_stages_4_to_9.PipelineTests.test_09_ts1_day_boundaries) ... ok
+test_10_ts2_sparse_values (test_iot_stages_4_to_9.PipelineTests.test_10_ts2_sparse_values) ... ok
+test_11_stage6_writes_have_canonical_source (test_iot_stages_4_to_9.PipelineTests.test_11_stage6_writes_have_canonical_source) ... ok
+test_12_costs_not_latency (test_iot_stages_4_to_9.PipelineTests.test_12_costs_not_latency) ... ok
+test_13_stage8_hashes_and_selection (test_iot_stages_4_to_9.PipelineTests.test_13_stage8_hashes_and_selection) ... ok
+test_14_stage8_full_valid_cover (test_iot_stages_4_to_9.PipelineTests.test_14_stage8_full_valid_cover) ... ok
+test_15_stage8_no_oracle (test_iot_stages_4_to_9.PipelineTests.test_15_stage8_no_oracle) ... ok
+test_16_offline_reference_validation (test_iot_stages_4_to_9.PipelineTests.test_16_offline_reference_validation) ... ok
+test_17_unconfirmed_keyspace_rejected (test_iot_stages_4_to_9.PipelineTests.test_17_unconfirmed_keyspace_rejected) ... ok
+test_18_percentiles (test_iot_stages_4_to_9.PipelineTests.test_18_percentiles) ... ok
+test_19_nonsensical_relative_regret_not_generated (test_iot_stages_4_to_9.PipelineTests.test_19_nonsensical_relative_regret_not_generated) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.076s
+
+OK

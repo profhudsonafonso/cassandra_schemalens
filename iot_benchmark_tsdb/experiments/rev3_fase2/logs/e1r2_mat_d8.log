@@ -1,0 +1,6 @@
+LOADED sl_f2_e1r2_d8_mem_ref 216000 rows in 65.208 s
+LOADED sl_f2_e1r2_d8_mem_u 216000 rows in 69.326 s
+LOADED sl_f2_e1r2_d8_mem_d 216000 rows in 69.815 s
+LOADED sl_f2_e1r2_d8_sst_ref 216000 rows in 69.299 s
+LOADED sl_f2_e1r2_d8_sst_u 216000 rows in 70.518 s
+LOADED sl_f2_e1r2_d8_sst_d 216000 rows in 65.955 s

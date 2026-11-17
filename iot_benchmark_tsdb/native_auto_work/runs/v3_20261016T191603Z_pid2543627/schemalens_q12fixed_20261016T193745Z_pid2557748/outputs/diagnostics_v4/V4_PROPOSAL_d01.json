@@ -1,0 +1,402 @@
+{
+  "C0_C9_used": false,
+  "all_variants": [
+    "BASELINE_ORIGINAL",
+    "BASELINE_Q8_OPTIMIZED",
+    "V4_TS2U",
+    "V4_TS2U_TS4",
+    "V4_TS2D",
+    "V4_TS2D_TS4",
+    "H_2641c9751dce",
+    "H_4f73edf0446d",
+    "H_c7646ce7d864",
+    "H_0bd185590c5a"
+  ],
+  "candidate_specification_mode": "FIXED_PREDECLARED_NO_PERFORMANCE_INPUT",
+  "candidate_specs": [
+    {
+      "candidate_activation_changed": false,
+      "canonical_source": "ts2_iot_wide_unbucketed",
+      "deployment_id": "V4_TS2U",
+      "families": [
+        "TS2"
+      ],
+      "original_V3_frozen_routes_unchanged": true,
+      "query_routes": {
+        "Q1": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q10": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q11": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q12": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q2": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q3": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q4": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q5": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q6": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q7": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q8": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q9": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        }
+      },
+      "stage": "V4_EXPLORATORY_NOT_AUTOMATIC_HBENCH"
+    },
+    {
+      "candidate_activation_changed": false,
+      "canonical_source": "ts2_iot_wide_unbucketed",
+      "deployment_id": "V4_TS2U_TS4",
+      "families": [
+        "TS2",
+        "TS4"
+      ],
+      "original_V3_frozen_routes_unchanged": true,
+      "query_routes": {
+        "Q1": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q10": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q11": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q12": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q2": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q3": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q4": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q5": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q6": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q7": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q8": {
+          "candidate_id": "ts4_iot_latest",
+          "family": "TS4",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q9": {
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        }
+      },
+      "stage": "V4_EXPLORATORY_NOT_AUTOMATIC_HBENCH"
+    },
+    {
+      "candidate_activation_changed": false,
+      "canonical_source": "ts2_iot_wide",
+      "deployment_id": "V4_TS2D",
+      "families": [
+        "TS2"
+      ],
+      "original_V3_frozen_routes_unchanged": true,
+      "query_routes": {
+        "Q1": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q10": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q11": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q12": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q2": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q3": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q4": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q5": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q6": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q7": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q8": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q9": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        }
+      },
+      "stage": "V4_EXPLORATORY_NOT_AUTOMATIC_HBENCH"
+    },
+    {
+      "candidate_activation_changed": false,
+      "canonical_source": "ts2_iot_wide",
+      "deployment_id": "V4_TS2D_TS4",
+      "families": [
+        "TS2",
+        "TS4"
+      ],
+      "original_V3_frozen_routes_unchanged": true,
+      "query_routes": {
+        "Q1": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q10": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q11": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q12": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q2": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q3": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q4": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q5": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q6": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q7": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q8": {
+          "candidate_id": "ts4_iot_latest",
+          "family": "TS4",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        },
+        "Q9": {
+          "candidate_id": "ts2_iot_wide",
+          "family": "TS2",
+          "reason": "cross-query semantic reuse; verified by oracle"
+        }
+      },
+      "stage": "V4_EXPLORATORY_NOT_AUTOMATIC_HBENCH"
+    }
+  ],
+  "canonical_partition_rows_per_device": {
+    "d_0": 300,
+    "d_1": 300,
+    "d_2": 300
+  },
+  "coverage_pass_count": 48,
+  "coverage_verification": "logical in-memory oracle, live checks required separately",
+  "derived_full_span_probe_count": 0,
+  "derived_synthetic_days": false,
+  "evidence": "E1-E3 diagnostic motivated design; NEW protocol; not retrospective V3 HBench",
+  "frequency_replay": false,
+  "limitations": [
+    "Reference is an independent Cassandra translation, not official IoTDB or official IoT Benchmark score",
+    "Original 12 queries are one captured Java DTO per class, not observed workload sequence",
+    "New 7/30-day datasets repeat native values with deterministic time shifts",
+    "Do not use V3 observations to claim independent V4 family selection",
+    "Sequential loader timings are not official ingestion throughput",
+    "TS4 latest materialization assumes offline batch load, not arbitrary concurrent writes",
+    "Optimized last-value scan assumes Cassandra clustering timestamp DESC and retains sparse-sensor null semantics"
+  ],
+  "native_capture": {
+    "capture_bytes_verified": true,
+    "capture_filename": "native_queries_q12fixed_20261016T193745Z_pid2557748.jsonl",
+    "capture_sha256": "e5da8bb7382edbb6e50acc010fe553473758d615759a179641bfd74a5de50aeb",
+    "logical_metric_cells": 1800,
+    "query_classes": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12"
+    ],
+    "sensor_columns": [
+      "m_s_0",
+      "m_s_1"
+    ]
+  },
+  "official_Java_query_objects_original": 12,
+  "official_sql_replay": false,
+  "old_stage8_or_stage9_modified": false,
+  "original_v3_files_sha256": {
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+    "iot_pipeline/offline.py": "3dd61965dfb1087eaeaf296be92e325feffbe38c5a3b4bc218d8eb379361a88e",
+    "iot_pipeline/stage4.py": "3c4a32d1b468887ba05b81c66c84d1ac1d710351f9183b51feda517c71c0dde4",
+    "iot_pipeline/stage5.py": "9f7bb5aa7d26472d1933d431621039482a87c940982caad8ddd274ce11a1e9e7",
+    "iot_pipeline/stage6.py": "06f3778c7b286c8586c47d925fe712ad2cb949e59ad47147fba04fb3ee3d1cfc",
+    "iot_pipeline/stage7.py": "81a5d1088372b07ec336ef2217a21cfe5135a6dc667d221361af08a229dc7d4a",
+    "iot_pipeline/stage8.py": "0d1e8ec6c56412429f9f320121743c83714e3d5b602ab6318bdac0df20a81b3d",
+    "iot_pipeline/stage9.py": "615390a60d3fc683b67d92359652781cf857b845b46ad40f57dcbefa251d01f3",
+    "java_bridge/cn/edu/tsinghua/iot/benchmark/tools/SchemaLensQueryCapture.java": "d992ac423d454e6d3bf1e1351fbe11fa0571618a52569e50de987113b591fbb2",
+    "outputs/stage4/10_candidate_specs.json": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+    "outputs/stage5/15_query_plans.json": "59d8ce21bb1c6dfb421d8d4a6fc4cf7dc24287b4aa26f5f8887e1fec2ceb5c14",
+    "outputs/stage6/18_write_plans.json": "1a639ffc15121e8800f47da14ee62c0a3bbf2370b912e23d2f61f8a4e1794f4f",
+    "outputs/stage7/21_storage_proxies.json": "e9fc6d16148d76e56844a936ec2483bfa3e1137e7fd440445157df24e3921ca5",
+    "outputs/stage7/22_write_proxies.json": "b989cab786b4bfba3a7beea09acd89ebe45b5d9035e0834abad6ad4e8e52fc9b",
+    "outputs/stage7/23_read_proxies.json": "aaa8d6b5aebdfca0183efc1cb2888eb2d31b84bbec05191338cb84732a776e4f",
+    "outputs/stage8/28_hbench_frozen.json": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+    "outputs/stage8/30_hbench_summary.csv": "8ade5d3582c850a2a44c07ea29f7cdcb2b42bce794bbac79f3d8b784a47f2f43",
+    "outputs/stage8/32_frozen_manifest.json": "e0b39258aa77c6f158ae78af76376a192c2b8d5f77d2ffa66357d6113dab12c8",
+    "outputs/stage9_hbench_native_v3/37_manifest.json": "845c3ba17ca8769f5498a54ec6c0db10c200bf7e22d98933606d3a4c43f8f20d",
+    "outputs/stage9_native_reference_v3/37_manifest.json": "b094b86271ae21964b26e3fa3faed596d656451b10112d58da3183c38ad814f8",
+    "phase_a1/core/bridge.py": "8a1ee732451eb55b3c605791ac076028641a09157ad51529b86e56b7c03183a5",
+    "phase_a1/outputs/normalized_double_readings.csv": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+    "phase_a1/outputs/query_instances_pilot.json": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c",
+    "phase_a1/tools/official_query_capture.py": "26cc2e8930ae00a1300d474995e9f4c9e6c66c0e2b43f7ca10d3f93a7ef11bb6",
+    "phase_a1/tools/run_a1.py": "8f4eeb95201d5e98869666bb5b951fe1eb35d5dfa8011634df89c5162f3d2ca4",
+    "phase_a1/vendor/tsdb_base/config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+    "phase_a1/vendor/tsdb_base/config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd"
+  },
+  "original_v3_hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+  "physical_metric_cells": 1800,
+  "revision": "V4_EXPLORATORY_CROSS_REUSE_AND_CANONICAL_SOURCE",
+  "scale_days": 1,
+  "sensor_names": [
+    "s_0",
+    "s_1"
+  ],
+  "source_hashes": {
+    "hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+    "query_instances_sha256": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c",
+    "source_rows_sha256": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b"
+  },
+  "v4_source_sha256": {
+    "diagnostic_v4/cli.py": "953179b88c6fbacf1e2f25dc5f3507f60a25e6b6bb1e17feacffec9914ff20fe",
+    "diagnostic_v4/core.py": "1100103584c2e13ec8897db9bec298ab8e1ba2256399739c36ae018f9ef5a3d9",
+    "diagnostic_v4/report.py": "09da521a8ba8d86feb28f03fe1a373ca0c8990264e39d0f8e15870a126e27fcf"
+  }
+}

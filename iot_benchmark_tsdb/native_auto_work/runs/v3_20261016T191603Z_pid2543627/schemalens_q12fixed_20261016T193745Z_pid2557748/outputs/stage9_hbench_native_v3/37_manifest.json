@@ -1,0 +1,22 @@
+{
+  "scope": "PILOT_IOT_CASSANDRA_LIVE_POST_SELECTION",
+  "official_iot_benchmark_score": false,
+  "native_query_sql_replay": false,
+  "hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+  "source_rows_sha256": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+  "deployments": [
+    "H_2641c9751dce",
+    "H_4f73edf0446d",
+    "H_c7646ce7d864",
+    "H_0bd185590c5a"
+  ],
+  "correctness": "PASS_ALL",
+  "measurement_rounds": 20,
+  "warmup": 5,
+  "limitations": [
+    "Client-side postprocessing and uniform illustrative query parameters",
+    "No official QUERY_SEED replay, no official IoT Benchmark client throughput",
+    "Sequential bounded pilot, Cassandra writes included only in load not throughput",
+    "No query parameter randomization; Cassandra cache/order effects are possible"
+  ]
+}

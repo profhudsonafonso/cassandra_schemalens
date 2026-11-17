@@ -1,0 +1,11 @@
+{
+  "campaign": "e9",
+  "captured_utc": "2026-11-12T14:40:57+00:00",
+  "dataset": "h2b",
+  "dataset_sha256": "913c1878856f3d78da0b2f967494fc61032698bde489549b0eab24ce8b5be124",
+  "new_keyspaces": {
+    "sst:REF": "sl_f2_e9_h2b_sst_ref",
+    "sst:TS2-D": "sl_f2_e9_h2b_sst_d",
+    "sst:TS2-U": "sl_f2_e9_h2b_sst_u"
+  }
+}

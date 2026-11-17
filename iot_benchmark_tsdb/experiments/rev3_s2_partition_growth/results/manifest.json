@@ -1,0 +1,21 @@
+{
+  "csv_sha256": {
+    "s1_orders.csv": "0db6b5ae5f79fe1fe3092ea50dbac55dbdae39714f063e217d3e5fde16f1325d",
+    "s1_query_p95.csv": "d9b0b523da10a3785c4ad7d86d219c17c99df4aa1d7f865d368cdabce97b301f",
+    "s1_raw_latencies.csv": "f381982f5a7e9b1ad2b5fffd2fc3b5e56cc0c44ac54edd631b44f45a048c85fb",
+    "s1_window_comparison.csv": "414d6ec5171d23722fb0a6bcba24e7e1be999b7451d75df655d8ed0155410396"
+  },
+  "finished_epoch_seconds": 1793922457,
+  "host": "127.0.0.1",
+  "independence": "POST_A_B_EXPLORATORY_DIAGNOSTIC",
+  "latency_context": "Post-flush B snapshot; DO NOT compare directly with preflush B p95",
+  "original_B_rev3_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "port": 9043,
+  "premeasurement_prereg_sha256": "fc82e28750ebaf1593750ea204768f06418b703e52a94b7d3c9b0f2fdcf3e59c",
+  "query_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "query_variant_oracles": "PASS_ALL_PRE_AND_POST_TIMING",
+  "raw_measurements": 3240,
+  "started_epoch_seconds": 1793922407,
+  "status": "S1_WINDOW_SWEEP_COMPLETE",
+  "telemetry_scope": "Python Session.execute calls/iterated rows, not Cassandra server IO"
+}

@@ -1,0 +1,27 @@
+{
+  "stage": 4,
+  "status": "SCHEMA_INSTANTIATED_NOT_DEPLOYED",
+  "scope": "TS_ONLY_IOT_CASSANDRA",
+  "C0_C9_used": false,
+  "benchmark_measured": false,
+  "inputs_sha256": {
+    "phase_a1/outputs/activation_ts_only.json": "04e73e0e342353ed787b6b74ee3e55a6c5c8cfc9514ea92e14d61f240f874eaa",
+    "phase_a1/outputs/query_instances_pilot.json": "bad0833b8e351b1fdfd1053a8861ddad32ea376978a7e2492a64ddc4c9c82bf4",
+    "phase_a1/outputs/normalized_double_readings.csv": "ec8c2d88882e24cb71a8b0856d423f28bbb1ea96c3edb56f4fa7ba88b4ee11bd",
+    "phase_a1/outputs/cassandra_ddl_blueprints.json": "0e47ad69f3c53c43f33945f5be5c740a9d759c269f76dd59b1c83fead124dfea",
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9"
+  },
+  "limitations": [
+    "QUERY_SEED not replayed in A1 fixture; official native parameter-object capture utility is supplied separately, not wired into Stage8",
+    "Live Cassandra results unavailable until user performs Stage9"
+  ],
+  "candidate_count": 6,
+  "activation_links": 32,
+  "unmaterialized_activations": [],
+  "ts2_variants": [
+    "daily",
+    "unbucketed"
+  ],
+  "stage9_benchmark_used_in_design_space": false,
+  "current_workload_is_illustrative": true
+}

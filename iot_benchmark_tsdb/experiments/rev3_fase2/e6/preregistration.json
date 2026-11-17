@@ -1,0 +1,58 @@
+{
+  "amendments": {
+    "EMENDA_01_E1_por_fator.md": "cec0a21558858cd1ef1cf9ff8e62cade765500e5486add7d1fc322b718310eee",
+    "EMENDA_02_medicao_interrompida.md": "52820bbe6c26b1d33f815e5f3778648dfe36b982c7328f12255fd84a236e6e27",
+    "EMENDA_03_preregistro_campanhas_unicas.md": "95e78640a4dfaad2f88b99f930a0643fec6bd36f3fa4de841a5456c6f0e4d2b0"
+  },
+  "arms": [
+    "sst:REF:warm",
+    "sst:REF:cold",
+    "sst:TS2-U:warm",
+    "sst:TS2-U:cold",
+    "sst:TS2-D:warm",
+    "sst:TS2-D:cold"
+  ],
+  "campaign": "e6",
+  "core_sha256": "f7e3433079d5c46b7c8657e7086a28e0885691d96013c9cd59f15f3b29418b64",
+  "created_utc": "2026-11-11T23:28:45+00:00",
+  "dataset": null,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "h1": {
+      "dataset_sha256": "935ad847e01089fb27b8e653acf80778923b575c8fc39fca8fdac686d4862211",
+      "flush": "c7ab80260cda32b823a6b62dfd264d8a5e5f441b59375b5ec0d45ab3cf399043",
+      "materialization": "e1a9ae19ef239a127845ecdc774599f3ad3be45d98929de638a094945b05de18",
+      "storage_post_flush": "a791097eed15c1f453c08444dc5971059297bcb5ce790d99d007d9b83a393a80",
+      "validation": "04fa427936254042824d3cf23d2c0056356d671e85f900724ca9a2ce44d7879d"
+    },
+    "h3": {
+      "dataset_sha256": "e8d1b4aaa71bcbeb105071c92dd2f94accd447d22c97c76f5fffd976794cd199",
+      "flush": "99d29ff7d234d19e9de3939118af35f6cff96ad33a96353826eb17caea338459",
+      "materialization": "a0408122842a314846a8fbe6c4843735f952914e8b9149ad08ee2626fb049fc8",
+      "storage_post_flush": "beedcac4fa143a68de4ddeea7d022cd803bd9ea9e8d1de3fe7556a859eb2a97d",
+      "validation": "3a83a2e751c037220e1a6908b4edb47f0bd1fd0b5d001bc5911ef75d2fad96ae"
+    }
+  },
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "randomization": "per round: shuffle cases; per case shuffle arms, reverse on even rounds; Random(seed + dataset index)",
+  "rev4": null,
+  "s3_runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "spec": {
+    "cache": true,
+    "conds": [
+      "sst"
+    ],
+    "datasets": [
+      "h1",
+      "h3"
+    ],
+    "ks_campaign": "e3",
+    "rounds": 30,
+    "seed": 20261601,
+    "stage": "E6"
+  },
+  "status": "F2_PREREGISTERED_BEFORE_TIMING",
+  "warmups": 5
+}

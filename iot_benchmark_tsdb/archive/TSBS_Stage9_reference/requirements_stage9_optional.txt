@@ -1,0 +1,2 @@
+# Optional: required only for --live. Dry-run and tests use Python stdlib.
+cassandra-driver>=3.29,<4

@@ -1,0 +1,9 @@
+{
+  "keyspace": "sl_s3_r1_d8_ref",
+  "load_scope": "Python sequential loader; not official ingestion throughput",
+  "logical_cells": 432000,
+  "physical_write_operations": 216000,
+  "sequential_load_seconds": 69.563976,
+  "table": "iot_reference_table",
+  "variant": "BASELINE_Q8_OPTIMIZED"
+}

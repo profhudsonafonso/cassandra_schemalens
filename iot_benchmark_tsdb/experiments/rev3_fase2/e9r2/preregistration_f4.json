@@ -1,0 +1,14 @@
+{
+  "amendment_sha256": "a65569397c4a1ae60b3d9d696c5b12b2ecd831f790b429a18c5b68a9d3431bb3",
+  "campaign": "e9r2",
+  "created_utc": "2026-11-12T18:58:02+00:00",
+  "fase3_core_sha256": "6de492563e4122bc22aa4f4ae3aecc511de0bcd280a361dead9073a83d947bfc",
+  "fase4_core_sha256": "9bdaf5d6366a84440697c80b8717e9f39e201647b0f41e9259dcbb152556d09c",
+  "files": {
+    "rev5_frozen": "73d98132f1e1eba7ff84acb20aa85997423f22e8648b436ed1830c291c843c83",
+    "rev5_predictions": "78d2a7813da3d64220df3233be24f08d6d5292d0661465b11c40a2dc38a336c6",
+    "tie_predictions": "9de28c963726d211c25139745e7aaad4f4ea6803926e73981ba86718d7f7bbef",
+    "tie_rule": "65da89f43faaabb8a4ec3c730fc7d845271d426e96d1a2695e0c91119ad3f325"
+  },
+  "status": "F4_PREREGISTRATION_SIDECAR"
+}

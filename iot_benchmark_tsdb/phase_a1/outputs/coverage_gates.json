@@ -1,0 +1,244 @@
+[
+  {
+    "query_id": "Q1",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q1",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "wide metric alignment and client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "multi-bucket enumeration + client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "wide metric alignment and client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "multi-bucket enumeration + client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "wide metric alignment and client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q4",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q5",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q6",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q7",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q7",
+    "family": "TS5",
+    "candidate_id": "ts5_iot_rollup",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": {
+      "query_start_aligned": true,
+      "full_window_covered": false,
+      "aggregate_supported": true
+    },
+    "explanation": "time groups must align with pre-aggregation; updates must maintain aggregates exactly"
+  },
+  {
+    "query_id": "Q8",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q8",
+    "family": "TS4",
+    "candidate_id": "ts4_iot_latest",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "only newest global snapshot; historical Q8 needs TS0 fallback and safe update protocol"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "multi-bucket enumeration + client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "wide metric alignment and client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "multi-bucket enumeration + client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "wide metric alignment and client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q11",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q11",
+    "family": "TS5",
+    "candidate_id": "ts5_iot_rollup",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": {
+      "query_start_aligned": true,
+      "full_window_covered": false,
+      "aggregate_supported": true
+    },
+    "explanation": "time groups must align with pre-aggregation; updates must maintain aggregates exactly"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "raw reference-query interpretation; physical reader not implemented"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "multi-bucket enumeration + client filtering needed; reader not implemented"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "provenance": "activator TS-only; no benchmark inputs",
+    "coverage": "NOT_VALIDATED",
+    "gates": null,
+    "explanation": "wide metric alignment and client filtering needed; reader not implemented"
+  }
+]

@@ -1,0 +1,3 @@
+
+===== 2026-11-10T18:01:52.224853 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'audit', '--factor', '8']
+PASS audit 8x: 3240 latencies, 54 groups, 1080 orders, order identical to S2

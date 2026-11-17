@@ -1,0 +1,74 @@
+{
+  "status": "E14_EXPLORATORY",
+  "created_utc": "2026-11-12T18:23:17.095367+00:00",
+  "delta": 0.1,
+  "tie_rule_sha256": "65da89f43faaabb8a4ec3c730fc7d845271d426e96d1a2695e0c91119ad3f325",
+  "rules": {
+    "T5": {
+      "n": 80,
+      "firm": 61,
+      "firm_correct": 48,
+      "firm_accuracy": 0.7869,
+      "severe": 8,
+      "severe_rate": 0.1311,
+      "coverage": 0.7625,
+      "regret_median": 0.0,
+      "regret_p90": 0.1191,
+      "regret_max": 1.8767
+    },
+    "Rev5": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 59,
+      "firm_accuracy": 0.7375,
+      "severe": 12,
+      "severe_rate": 0.15,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.2926,
+      "regret_max": 1.8767
+    },
+    "Rev4": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 59,
+      "firm_accuracy": 0.7375,
+      "severe": 12,
+      "severe_rate": 0.15,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.2926,
+      "regret_max": 1.8767
+    },
+    "sempre U": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 61,
+      "firm_accuracy": 0.7625,
+      "severe": 9,
+      "severe_rate": 0.1125,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.1191,
+      "regret_max": 1.1635
+    },
+    "menos chamadas": {
+      "n": 80,
+      "firm": 80,
+      "firm_correct": 59,
+      "firm_accuracy": 0.7375,
+      "severe": 12,
+      "severe_rate": 0.15,
+      "coverage": 1.0,
+      "regret_median": 0.0,
+      "regret_p90": 0.2926,
+      "regret_max": 1.8767
+    }
+  },
+  "measured_ties": 17,
+  "findings": [
+    "EXPLORATÓRIO (E9 já visto): T5 decidiu firme em 61 de 80 casos e acertou 48; erros graves 8; 19 declarados empate.",
+    "Arrependimento p90: T5 0.119, sempre U 0.119, Rev5 0.293, Rev4 0.293.",
+    "Casos com empate medido (|ln D/U| < 0.1): 17 de 80."
+  ]
+}

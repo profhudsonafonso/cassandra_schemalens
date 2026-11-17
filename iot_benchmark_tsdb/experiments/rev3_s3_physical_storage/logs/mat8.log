@@ -1,0 +1,6 @@
+
+===== 2026-11-10T17:43:35.800209 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'materialize', '--factor', '8', '--confirm', 'CREATE_NEW_S3_KEYSPACES']
+LOADED sl_s3_r1_d8_ref writes= 216000 seconds= 69.563976
+LOADED sl_s3_r1_d8_u writes= 216000 seconds= 68.876281
+LOADED sl_s3_r1_d8_d writes= 216000 seconds= 65.088405
+COMPLETE 8x materialization (3 new keyspaces). Not flushed, not benchmarked.

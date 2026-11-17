@@ -1,0 +1,37 @@
+== commitlog
+total 275248
+drwxr-xr-x 2 cassandra cassandra     4096 Nov  7 11:10 .
+drwxrwxrwt 6 cassandra cassandra     4096 Oct 16 16:06 ..
+-rw-r--r-- 1 cassandra cassandra 33554432 Oct 17 12:25 CommitLog-7-1792167014400.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Oct 26 17:15 CommitLog-7-1792167014412.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Oct 26 18:55 CommitLog-7-1792167014413.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Oct 26 19:31 CommitLog-7-1792167014414.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Nov  6 02:08 CommitLog-7-1792167014463.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Nov  6 02:10 CommitLog-7-1792167014464.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Nov  6 02:11 CommitLog-7-1792167014465.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Nov  6 03:52 CommitLog-7-1792167014466.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Nov  7 12:00 CommitLog-7-1792167014474.log
+-rw-r--r-- 1 cassandra cassandra 33554432 Nov  7 10:17 CommitLog-7-1792167014475.log
+== s2/s3 data dirs
+/v/data/sl_s2_d1_d
+/v/data/sl_s2_d1_ref
+/v/data/sl_s2_d1_u
+/v/data/sl_s2_d2_d
+/v/data/sl_s2_d2_ref
+/v/data/sl_s2_d2_u
+/v/data/sl_s2_d4_d
+/v/data/sl_s2_d4_ref
+/v/data/sl_s2_d4_u
+/v/data/sl_s2_d8_d
+/v/data/sl_s2_d8_ref
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-CompressionInfo.db
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-Data.db
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-Digest.crc32
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-Filter.db
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-Index.db
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-Statistics.db
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-Summary.db
+   /v/data/sl_s2_d8_ref/iot_reference_table-22eee550d98711f18746abdb5004ebe1/nb-1-big-TOC.txt
+/v/data/sl_s2_d8_u
+9.1M	/v/data
+269M	/v/commitlog

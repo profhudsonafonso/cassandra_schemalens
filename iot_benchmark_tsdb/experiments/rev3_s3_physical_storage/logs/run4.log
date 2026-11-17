@@ -1,0 +1,25 @@
+
+===== 2026-11-10T17:51:27.252519 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'run', '--factor', '4']
+Storage pre-timing snapshot 4x ...
+  [pre_timing] sl_s3_r1_d4_ref    sstables=1 live=1598246 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS 
+  [pre_timing] sl_s3_r1_d4_u      sstables=1 live=1598026 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS 
+  [pre_timing] sl_s3_r1_d4_d      sstables=1 live=1631575 memtable_cells=0 part_mean=20339 part_max=20501 gate=PASS 
+PASS 4x pretiming oracles 54/54
+Warm-ups done (270). Timing starts.
+S3 factor=4x rounds=5/60 observations=270
+S3 factor=4x rounds=10/60 observations=540
+S3 factor=4x rounds=15/60 observations=810
+S3 factor=4x rounds=20/60 observations=1080
+S3 factor=4x rounds=25/60 observations=1350
+S3 factor=4x rounds=30/60 observations=1620
+S3 factor=4x rounds=35/60 observations=1890
+S3 factor=4x rounds=40/60 observations=2160
+S3 factor=4x rounds=45/60 observations=2430
+S3 factor=4x rounds=50/60 observations=2700
+S3 factor=4x rounds=55/60 observations=2970
+S3 factor=4x rounds=60/60 observations=3240
+COMPLETE factor=4x 3240 observations in 188s
+  [post_timing] sl_s3_r1_d4_ref    sstables=1 live=1598246 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS 
+  [post_timing] sl_s3_r1_d4_u      sstables=1 live=1598026 memtable_cells=0 part_mean=454826 part_max=454826 gate=PASS 
+  [post_timing] sl_s3_r1_d4_d      sstables=1 live=1631575 memtable_cells=0 part_mean=20339 part_max=20501 gate=PASS 
+Physical state unchanged during timing: True 

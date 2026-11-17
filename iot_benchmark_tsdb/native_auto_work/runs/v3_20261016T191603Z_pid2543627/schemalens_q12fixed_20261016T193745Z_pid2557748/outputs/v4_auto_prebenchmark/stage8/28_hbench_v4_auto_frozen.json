@@ -1,0 +1,320 @@
+[
+  {
+    "analytic_cost": {
+      "read": 56.895833333333336,
+      "storage": 79200,
+      "write": 900
+    },
+    "candidates": [
+      "ts2_iot_wide_unbucketed"
+    ],
+    "canonical_source": "ts2_iot_wide_unbucketed",
+    "deployment_id": "V4H_294935eb5c3c",
+    "families": [
+      "TS2"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.0,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q11__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q4__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q5__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q6__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q7__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q8__ts2_iot_wide_unbucketed",
+        "reason": "descending sparse-null-aware latest scan",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_reason": "PARETO_FRONT",
+    "selection_status": "PARETO",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 56.895833333333336,
+      "storage": 79200,
+      "write": 900
+    },
+    "candidates": [
+      "ts2_iot_wide"
+    ],
+    "canonical_source": "ts2_iot_wide",
+    "deployment_id": "V4H_42fa8de84321",
+    "families": [
+      "TS2"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.0,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q11__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q4__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q5__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q6__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q7__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q8__ts2_iot_wide",
+        "reason": "descending sparse-null-aware latest scan",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_reason": "PARETO_FRONT",
+    "selection_status": "PARETO",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 113.79166666666667,
+      "storage": 115200,
+      "write": 1800
+    },
+    "candidates": [
+      "ts0_iot_raw"
+    ],
+    "canonical_source": "ts0_iot_raw",
+    "deployment_id": "V4H_a044c6eaae78",
+    "families": [
+      "TS0"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.94545455,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  }
+]

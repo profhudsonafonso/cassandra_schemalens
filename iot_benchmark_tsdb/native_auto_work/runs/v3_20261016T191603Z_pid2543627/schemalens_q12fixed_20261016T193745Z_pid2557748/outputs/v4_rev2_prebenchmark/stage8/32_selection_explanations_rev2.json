@@ -1,0 +1,797 @@
+[
+  {
+    "canonical_source": "ts2_iot_wide_unbucketed",
+    "costs": {
+      "read": 6.433177083333334,
+      "storage": 79200,
+      "write": 900
+    },
+    "deployment_id": "R2H_e72ef4d8529d",
+    "query_explanations": [
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 4.0,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 0,
+          "plan_id": "Q1__ts2_iot_wide_unbucketed",
+          "query_id": "Q1",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 0
+        },
+        "query_id": "Q1",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.6965625,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 61,
+          "plan_id": "Q10__ts2_iot_wide_unbucketed",
+          "query_id": "Q10",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2440
+        },
+        "query_id": "Q10",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.6965625,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 61,
+          "plan_id": "Q11__ts2_iot_wide_unbucketed",
+          "query_id": "Q11",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2440
+        },
+        "query_id": "Q11",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.393125,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 2,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 122,
+          "plan_id": "Q12__ts2_iot_wide_unbucketed",
+          "query_id": "Q12",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 4880
+        },
+        "query_id": "Q12",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q2__ts2_iot_wide_unbucketed",
+          "query_id": "Q2",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q2",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q3__ts2_iot_wide_unbucketed",
+          "query_id": "Q3",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q3",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q4__ts2_iot_wide_unbucketed",
+          "query_id": "Q4",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q4",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 12.34375,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 300,
+          "plan_id": "Q5__ts2_iot_wide_unbucketed",
+          "query_id": "Q5",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 12000
+        },
+        "query_id": "Q5",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q6__ts2_iot_wide_unbucketed",
+          "query_id": "Q6",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q6",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q7__ts2_iot_wide_unbucketed",
+          "query_id": "Q7",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q7",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 4.0278125,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 1,
+          "plan_id": "Q8__ts2_iot_wide_unbucketed",
+          "query_id": "Q8",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 40
+        },
+        "query_id": "Q8",
+        "reason": "descending sparse-null-aware latest scan"
+      },
+      {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.6965625,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts2_iot_wide_unbucketed",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 61,
+          "plan_id": "Q9__ts2_iot_wide_unbucketed",
+          "query_id": "Q9",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2440
+        },
+        "query_id": "Q9",
+        "reason": "canonical point reconstruction"
+      }
+    ],
+    "score": 1.0,
+    "selection_reason": "PARETO_FRONT"
+  },
+  {
+    "canonical_source": "ts2_iot_wide",
+    "costs": {
+      "read": 6.433177083333334,
+      "storage": 79200,
+      "write": 900
+    },
+    "deployment_id": "R2H_bdc993acdde3",
+    "query_explanations": [
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 4.0,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 0,
+          "plan_id": "Q1__ts2_iot_wide",
+          "query_id": "Q1",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 0
+        },
+        "query_id": "Q1",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.6965625,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 61,
+          "plan_id": "Q10__ts2_iot_wide",
+          "query_id": "Q10",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2440
+        },
+        "query_id": "Q10",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.6965625,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 61,
+          "plan_id": "Q11__ts2_iot_wide",
+          "query_id": "Q11",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2440
+        },
+        "query_id": "Q11",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.393125,
+          "bucket_count_proxy": 2,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 2,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 122,
+          "plan_id": "Q12__ts2_iot_wide",
+          "query_id": "Q12",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 4880
+        },
+        "query_id": "Q12",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q2__ts2_iot_wide",
+          "query_id": "Q2",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q2",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q3__ts2_iot_wide",
+          "query_id": "Q3",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q3",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q4__ts2_iot_wide",
+          "query_id": "Q4",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q4",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 12.34375,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 300,
+          "plan_id": "Q5__ts2_iot_wide",
+          "query_id": "Q5",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 12000
+        },
+        "query_id": "Q5",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q6__ts2_iot_wide",
+          "query_id": "Q6",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q6",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.66875,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 60,
+          "plan_id": "Q7__ts2_iot_wide",
+          "query_id": "Q7",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2400
+        },
+        "query_id": "Q7",
+        "reason": "canonical point reconstruction"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 4.0278125,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 1,
+          "plan_id": "Q8__ts2_iot_wide",
+          "query_id": "Q8",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 40
+        },
+        "query_id": "Q8",
+        "reason": "descending sparse-null-aware latest scan"
+      },
+      {
+        "candidate_id": "ts2_iot_wide",
+        "plan_cost_features": {
+          "analytic_read_proxy": 5.6965625,
+          "bucket_count_proxy": 1,
+          "candidate_id": "ts2_iot_wide",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 12000,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 61,
+          "plan_id": "Q9__ts2_iot_wide",
+          "query_id": "Q9",
+          "request_count_proxy": 1,
+          "returned_bytes_proxy": 2440
+        },
+        "query_id": "Q9",
+        "reason": "canonical point reconstruction"
+      }
+    ],
+    "score": 1.0,
+    "selection_reason": "PARETO_FRONT"
+  },
+  {
+    "canonical_source": "ts0_iot_raw",
+    "costs": {
+      "read": 13.102291666666666,
+      "storage": 115200,
+      "write": 1800
+    },
+    "deployment_id": "R2H_6355f4e57096",
+    "query_explanations": [
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 8.0,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 0,
+          "plan_id": "Q1__ts0_iot_raw",
+          "query_id": "Q1",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 0
+        },
+        "query_id": "Q1",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.58375,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 122,
+          "plan_id": "Q10__ts0_iot_raw",
+          "query_id": "Q10",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5856
+        },
+        "query_id": "Q10",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.58375,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 122,
+          "plan_id": "Q11__ts0_iot_raw",
+          "query_id": "Q11",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5856
+        },
+        "query_id": "Q11",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 23.1675,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 2,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 244,
+          "plan_id": "Q12__ts0_iot_raw",
+          "query_id": "Q12",
+          "request_count_proxy": 4,
+          "returned_bytes_proxy": 11712
+        },
+        "query_id": "Q12",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.525,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 120,
+          "plan_id": "Q2__ts0_iot_raw",
+          "query_id": "Q2",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5760
+        },
+        "query_id": "Q2",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.525,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 120,
+          "plan_id": "Q3__ts0_iot_raw",
+          "query_id": "Q3",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5760
+        },
+        "query_id": "Q3",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.525,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 120,
+          "plan_id": "Q4__ts0_iot_raw",
+          "query_id": "Q4",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5760
+        },
+        "query_id": "Q4",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 25.625,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 600,
+          "plan_id": "Q5__ts0_iot_raw",
+          "query_id": "Q5",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 28800
+        },
+        "query_id": "Q5",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.525,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 120,
+          "plan_id": "Q6__ts0_iot_raw",
+          "query_id": "Q6",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5760
+        },
+        "query_id": "Q6",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.525,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 120,
+          "plan_id": "Q7__ts0_iot_raw",
+          "query_id": "Q7",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5760
+        },
+        "query_id": "Q7",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 8.05875,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 2,
+          "plan_id": "Q8__ts0_iot_raw",
+          "query_id": "Q8",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 96
+        },
+        "query_id": "Q8",
+        "reason": "direct metric-point lookup"
+      },
+      {
+        "candidate_id": "ts0_iot_raw",
+        "plan_cost_features": {
+          "analytic_read_proxy": 11.58375,
+          "bucket_count_proxy": 0,
+          "candidate_id": "ts0_iot_raw",
+          "coefficient_policy": "V4_REV2_PREDECLARED_NO_MEASURED_PERFORMANCE",
+          "estimation_only": true,
+          "extra_bucket_fanout_proxy": 0,
+          "logical_operand_count": 1,
+          "max_partition_bytes_proxy": 14400,
+          "partition_pressure_proxy": 0,
+          "physical_rows_proxy": 122,
+          "plan_id": "Q9__ts0_iot_raw",
+          "query_id": "Q9",
+          "request_count_proxy": 2,
+          "returned_bytes_proxy": 5856
+        },
+        "query_id": "Q9",
+        "reason": "direct metric-point lookup"
+      }
+    ],
+    "score": 1.97479464,
+    "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD"
+  }
+]

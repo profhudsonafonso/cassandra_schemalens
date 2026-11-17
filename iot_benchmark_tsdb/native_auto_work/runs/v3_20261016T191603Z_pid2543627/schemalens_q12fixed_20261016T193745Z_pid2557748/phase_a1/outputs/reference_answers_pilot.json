@@ -1,0 +1,1653 @@
+{
+  "Q1": [],
+  "Q2": [
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067201000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067202000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067203000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067204000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067205000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067206000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067207000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067208000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067209000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067210000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067211000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067212000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067213000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067214000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067215000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067216000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067217000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067218000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067219000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067220000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067221000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067222000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067223000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067224000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067225000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067226000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067227000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067228000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067229000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067230000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067231000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067232000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067233000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067234000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067235000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067236000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067237000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067238000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067239000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067240000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067241000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067242000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067243000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067244000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067245000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067246000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067247000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067248000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067249000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067250000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067251000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067252000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067253000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067254000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067255000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067256000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067257000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067258000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067259000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "timestamp": 1704067260000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067201000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067202000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067203000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067204000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067205000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067206000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067207000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067208000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067209000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067210000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067211000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067212000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067213000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067214000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067215000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067216000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067217000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067218000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067219000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067220000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067221000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067222000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067223000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067224000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067225000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067226000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067227000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067228000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067229000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067230000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067231000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067232000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067233000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067234000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067235000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067236000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067237000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067238000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067239000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067240000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067241000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067242000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067243000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067244000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067245000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067246000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067247000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067248000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067249000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067250000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067251000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067252000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067253000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067254000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067255000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067256000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067257000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067258000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067259000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "timestamp": 1704067260000,
+      "value_double": 6.59
+    }
+  ],
+  "Q3": [],
+  "Q4": [
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "aggregate": 60
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "aggregate": 60
+    }
+  ],
+  "Q5": [
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_0",
+      "aggregate": null
+    },
+    {
+      "device_id": "d_1",
+      "sensor_name": "s_1",
+      "aggregate": null
+    }
+  ],
+  "Q6": [
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "aggregate": null
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "aggregate": null
+    }
+  ],
+  "Q7": [
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067200000,
+      "aggregate": 19
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067220000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067240000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067260000,
+      "aggregate": 1
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067200000,
+      "aggregate": 19
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067220000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067240000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067260000,
+      "aggregate": 1
+    }
+  ],
+  "Q8": [
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_0",
+      "timestamp": 1704067500000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_0",
+      "sensor_name": "s_1",
+      "timestamp": 1704067500000,
+      "value_double": 6.65
+    }
+  ],
+  "Q9": [
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067261000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067260000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067259000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067258000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067257000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067256000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067255000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067254000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067253000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067252000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067251000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067250000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067249000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067248000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067247000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067246000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067245000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067244000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067243000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067242000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067241000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067240000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067239000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067238000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067237000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067236000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067235000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067234000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067233000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067232000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067231000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067230000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067229000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067228000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067227000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067226000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067225000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067224000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067223000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067222000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067221000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067220000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067219000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067218000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067217000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067216000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067215000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067214000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067213000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067212000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067211000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067210000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067209000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067208000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067207000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067206000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067205000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067204000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067203000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067202000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "timestamp": 1704067201000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067261000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067260000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067259000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067258000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067257000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067256000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067255000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067254000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067253000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067252000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067251000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067250000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067249000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067248000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067247000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067246000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067245000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067244000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067243000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067242000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067241000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067240000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067239000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067238000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067237000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067236000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067235000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067234000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067233000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067232000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067231000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067230000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067229000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067228000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067227000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067226000,
+      "value_double": 6.65
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067225000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067224000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067223000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067222000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067221000,
+      "value_double": 6.64
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067220000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067219000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067218000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067217000,
+      "value_double": 6.63
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067216000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067215000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067214000,
+      "value_double": 6.62
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067213000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067212000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067211000,
+      "value_double": 6.61
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067210000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067209000,
+      "value_double": 6.6
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067208000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067207000,
+      "value_double": 6.59
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067206000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067205000,
+      "value_double": 6.58
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067204000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067203000,
+      "value_double": 6.57
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067202000,
+      "value_double": 6.56
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "timestamp": 1704067201000,
+      "value_double": 6.56
+    }
+  ],
+  "Q10": [],
+  "Q11": [
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067260000,
+      "aggregate": 2
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067240000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067220000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_0",
+      "window_start_ms": 1704067200000,
+      "aggregate": 19
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067260000,
+      "aggregate": 2
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067240000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067220000,
+      "aggregate": 20
+    },
+    {
+      "device_id": "d_2",
+      "sensor_name": "s_1",
+      "window_start_ms": 1704067200000,
+      "aggregate": 19
+    }
+  ],
+  "Q12": [
+    [
+      6.56,
+      6.56
+    ],
+    [
+      6.57,
+      6.57
+    ],
+    [
+      6.58,
+      6.58
+    ],
+    [
+      6.59,
+      6.59
+    ],
+    [
+      6.6,
+      6.6
+    ],
+    [
+      6.61,
+      6.61
+    ],
+    [
+      6.62,
+      6.62
+    ],
+    [
+      6.63,
+      6.63
+    ],
+    [
+      6.64,
+      6.64
+    ],
+    [
+      6.65,
+      6.65
+    ]
+  ]
+}

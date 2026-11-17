@@ -1,0 +1,11 @@
+{
+ "coefficients": {
+  "b0_fixed_ms": -0.22237784,
+  "b1_per_call_ms": 0.191788142,
+  "b2_per_call_per_ln_partition_ms": 0.043062132,
+  "b3_per_row_ms": 0.006276809
+ },
+ "n_dev": 752,
+ "dev_median_abs_rel_error": 0.1189,
+ "dev_winner_accuracy": "319/376"
+}

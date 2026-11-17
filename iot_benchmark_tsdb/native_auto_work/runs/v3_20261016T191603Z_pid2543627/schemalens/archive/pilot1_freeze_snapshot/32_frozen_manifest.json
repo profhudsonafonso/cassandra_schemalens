@@ -1,0 +1,35 @@
+{
+  "stage": 8,
+  "status": "FROZEN_PREBENCH_SELECTION",
+  "scope": "TS_ONLY_IOT_CASSANDRA",
+  "C0_C9_used": false,
+  "benchmark_measured": false,
+  "inputs_sha256": {
+    "outputs/stage4/10_candidate_specs.json": "846ee383a87d1460e513d46ca8064cae9f803cccf157f9a34d3e801894740d17",
+    "outputs/stage5/15_query_plans.json": "ab22a252ce4611ef540c72e9c740600467fb32b3f753aa1d4603b69ff1d07deb",
+    "outputs/stage6/18_write_plans.json": "1406629a463009bd88e3decade3044323974fa61eac93e18f4b69a1d628e5154",
+    "outputs/stage7/23_read_proxies.json": "31ba0df82529550b9e2e1a2302940fa07dc8db62f8cf913bb0ac243ca83ef4a0",
+    "outputs/stage7/21_storage_proxies.json": "2380d80457ce671cc46b926358b8bfe16222e447d705ab3c5b805452fef89f0e",
+    "outputs/stage7/22_write_proxies.json": "2b83d89432c744d25b254d23c45863c87811ef12f6dfcff288358768b8dac291",
+    "phase_a1/outputs/query_instances_pilot.json": "bad0833b8e351b1fdfd1053a8861ddad32ea376978a7e2492a64ddc4c9c82bf4",
+    "phase_a1/outputs/normalized_double_readings.csv": "ec8c2d88882e24cb71a8b0856d423f28bbb1ea96c3edb56f4fa7ba88b4ee11bd",
+    "config/pipeline_policy.json": "5aef8e86830191a565f264d03f236af5f3a8fa8de6b7067645aca2467d186028"
+  },
+  "limitations": [
+    "QUERY_SEED not replayed; illustrative A1 operation parameters (NOT official SQL)",
+    "Live Cassandra results unavailable until user performs Stage9"
+  ],
+  "number_of_compatible_covers": 16,
+  "number_on_pareto_front": 4,
+  "number_selected": 4,
+  "chosen_ids": [
+    "H_1a4021026980",
+    "H_a78b496c4183",
+    "H_c24a6bb2e5e8",
+    "H_82128d56aeb2"
+  ],
+  "frozen_hbench_sha256": "6b42f590d623af4ecbf35eb9d40a2147884392419440530a3960fbdff935c7d2",
+  "candidate_costs_analytical_only": true,
+  "official_iot_query_sequence_verified": false,
+  "selection_is_not_observed_performance": true
+}

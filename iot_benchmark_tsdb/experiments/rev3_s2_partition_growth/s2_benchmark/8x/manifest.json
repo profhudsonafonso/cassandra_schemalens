@@ -1,0 +1,23 @@
+{
+  "benchmark_preregister_sha256": "02f3c2b67a287cbd766c28a1fa791399f141828917513fe621b41302414ca26b",
+  "case_variant_groups": 54,
+  "comparison_scope": "S2 synthetic densification, post-A/B exploratory, client end-to-end latency",
+  "dataset_sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91",
+  "ended_epoch_seconds": 1793932259.151235,
+  "expected_measurements": 3240,
+  "factor": 8,
+  "files_sha256": {
+    "orders.csv": "8fc12e92bfea177039b0724491cf04de93039139a62702dd80246e41f0286c0d",
+    "query_p95.csv": "ec8ed776bb8ed3a4c292c30b41f16b4444b192813610bbd2968471db460b22d5",
+    "raw_latencies.csv": "2f41622976758777ac275d181408972b83d5d73562a53fdf25f24c4a6d150588"
+  },
+  "frozen_selection_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "host": "127.0.0.1",
+  "performance_not_equivalent_to_official_java_benchmark": true,
+  "port": 9043,
+  "raw_measurements": 3240,
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "started_epoch_seconds": 1793931883.355115,
+  "status": "S2_BENCHMARK_COMPLETE",
+  "warmups": 270
+}

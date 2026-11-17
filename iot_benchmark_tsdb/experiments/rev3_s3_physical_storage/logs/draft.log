@@ -1,0 +1,3 @@
+
+===== 2026-11-10T17:40:34.066656 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'draft']
+PASS S3 draft frozen: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/s3_preregister_draft.json

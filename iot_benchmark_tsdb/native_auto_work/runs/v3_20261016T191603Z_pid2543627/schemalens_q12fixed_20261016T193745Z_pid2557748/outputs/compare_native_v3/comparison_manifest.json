@@ -1,0 +1,19 @@
+{
+  "status": "POST_SELECTION_COMPARISON",
+  "frozen_hashes": {
+    "hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+    "source_rows_sha256": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+    "query_instances_sha256": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c"
+  },
+  "selection_modified": false,
+  "baseline_independent": true,
+  "native_sql_replay": false,
+  "metric": "UNWEIGHTED_MEAN_OF_12_PER_QUERY_P95",
+  "baseline_rounds": 20,
+  "hbench_query_sha256_explicitly_attested": false,
+  "caveats": [
+    "Original Stage9 manifest does not explicitly include a native query-file checksum; frozen inputs are checked now, but past query provenance cannot be independently proven by that manifest.",
+    "Different sequential runs are subject to order/JVM/cache bias; no statistical significance claim.",
+    "SQL and mixed frequency replay from official IoT Benchmark are not performed."
+  ]
+}

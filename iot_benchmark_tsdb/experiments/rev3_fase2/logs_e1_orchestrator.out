@@ -1,0 +1,22 @@
+DONE e1r2:mat:d1 54.1 s
+DONE e1r2:mat:d2 104.0 s
+DONE e1r2:mat:d4 213.1 s
+DONE e1r2:mat:d8 413.5 s
+DONE e1r2:flush:d1 22.2 s
+DONE e1r2:flush:d2 21.7 s
+DONE e1r2:flush:d4 21.8 s
+FAILED e1r2:flush:d8   [post_flush] sl_f2_e1r2_d8_mem_d        sst=0 mem_cells=216000 part_mean=0 gate=PASS
+  [post_flush] sl_f2_e1r2_d8_sst_ref      sst=1 mem_cells=0 part_mean=943127 gate=PASS
+  [post_flush] sl_f2_e1r2_d8_sst_u        sst=1 mem_cells=0 part_mean=943127 gate=PASS
+  [post_flush] sl_f2_e1r2_d8_sst_d        sst=1 mem_cells=0 part_mean=42173 gate=PASS
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 715, in <module>
+    main()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 704, in main
+    {'materialize': lambda: cmd_materialize(a.campaign, a.dataset, a.confirm),
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 705, in <lambda>
+    'flush': lambda: cmd_flush(a.campaign, a.dataset, a.confirm),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 407, in cmd_flush
+    raise AssertionError(f'flush/gate FAILED for {campaign}/{ds}')
+AssertionError: flush/gate FAILED for e1r2/d8

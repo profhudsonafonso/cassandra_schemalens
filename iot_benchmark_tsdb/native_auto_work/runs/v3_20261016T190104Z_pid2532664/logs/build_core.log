@@ -1,0 +1,2 @@
+
+COMMAND: ['mvn', '-B', '-q', '-pl', 'core', '-am', 'package', '-Dmaven.test.skip=true', '-Dspotless.skip=true']

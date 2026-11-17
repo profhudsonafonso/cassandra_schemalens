@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "dataset": "h1",
+      "label": "H1 · 21 dias · 9 disp.",
+      "n": 16,
+      "r1_median_du": 1.3065,
+      "r2_median_du": 1.2961,
+      "r1_wins_u": 14,
+      "r2_wins_u": 12,
+      "same_winner": 14
+    },
+    {
+      "dataset": "h2",
+      "label": "H2 · 83 dias · 9 disp.",
+      "n": 20,
+      "r1_median_du": 1.3723,
+      "r2_median_du": 1.3637,
+      "r1_wins_u": 18,
+      "r2_wins_u": 16,
+      "same_winner": 16
+    },
+    {
+      "dataset": "h3",
+      "label": "H3 · 333 dias · 9 disp.",
+      "n": 24,
+      "r1_median_du": 1.3543,
+      "r2_median_du": 1.3891,
+      "r1_wins_u": 19,
+      "r2_wins_u": 20,
+      "same_winner": 17
+    },
+    {
+      "dataset": "n3",
+      "label": "N3 · 21 dias · 3 disp.",
+      "n": 16,
+      "r1_median_du": 1.5182,
+      "r2_median_du": 1.4891,
+      "r1_wins_u": 12,
+      "r2_wins_u": 14,
+      "same_winner": 12
+    },
+    {
+      "dataset": "n18",
+      "label": "N18 · 21 dias · 18 disp.",
+      "n": 16,
+      "r1_median_du": 1.4143,
+      "r2_median_du": 1.3769,
+      "r1_wins_u": 13,
+      "r2_wins_u": 13,
+      "same_winner": 12
+    }
+  ],
+  "winner_agreement": {
+    "agree": 71,
+    "total": 92
+  },
+  "replicate_noise_rel": {
+    "ref": 0.0531,
+    "u": 0.0547,
+    "d": 0.083
+  },
+  "findings": [
+    "Mesmo vencedor U/D nas duas réplicas em 71 de 92 casos temporais.",
+    "Diferença típica de p95 entre réplicas (mediana de |ln r2/r1|): REF 5.3%, U 5.5%, D 8.3%.",
+    "H1 · 21 dias · 9 disp.: mediana D/U 1,306 (r1) e 1,296 (r2); U venceu 14 e 12 de 16.",
+    "H2 · 83 dias · 9 disp.: mediana D/U 1,372 (r1) e 1,364 (r2); U venceu 18 e 16 de 20.",
+    "H3 · 333 dias · 9 disp.: mediana D/U 1,354 (r1) e 1,389 (r2); U venceu 19 e 20 de 24.",
+    "N3 · 21 dias · 3 disp.: mediana D/U 1,518 (r1) e 1,489 (r2); U venceu 12 e 14 de 16.",
+    "N18 · 21 dias · 18 disp.: mediana D/U 1,414 (r1) e 1,377 (r2); U venceu 13 e 13 de 16."
+  ],
+  "created": "2026-11-12T11:40:56-03:00"
+}

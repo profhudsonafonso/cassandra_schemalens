@@ -1,0 +1,9 @@
+{
+  "keyspace": "sl_s3_r1_d8_d",
+  "load_scope": "Python sequential loader; not official ingestion throughput",
+  "logical_cells": 432000,
+  "physical_write_operations": 216000,
+  "sequential_load_seconds": 65.088405,
+  "table": "ts2_iot_wide",
+  "variant": "R3H_d2ea1974de53"
+}

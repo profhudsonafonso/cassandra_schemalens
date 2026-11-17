@@ -1,0 +1,35 @@
+{
+  "rules_version": "schemalens-ts-modifiers-v1-demo",
+  "rules": [
+    {
+      "rule_id": "R_M1_BUCKET_GRANULARITY",
+      "family": "M1",
+      "reason": "Time-bucketed raw or aggregate families require an explicit bucket-granularity decision later.",
+      "requires_any_families": ["TS1", "TS5", "TS6"]
+    },
+    {
+      "rule_id": "R_M2_RETENTION_TTL",
+      "family": "M2",
+      "reason": "A finite positive retention horizon makes TTL/retention a physical modifier candidate.",
+      "all": [{"field": "retention_days", "op": "gt", "value": 0}]
+    },
+    {
+      "rule_id": "R_M3_TEMPORAL_COMPACTION",
+      "family": "M3",
+      "reason": "Append-oriented temporal ingestion justifies considering time-series-oriented compaction.",
+      "all": [{"field": "append_oriented", "op": "eq", "value": true}]
+    },
+    {
+      "rule_id": "R_M4_SHARD_SALT",
+      "family": "M4",
+      "reason": "A prespecified event-volume threshold flags possible hot-partition mitigation.",
+      "all": [{"field": "hot_series", "op": "eq", "value": true}]
+    },
+    {
+      "rule_id": "R_M5_LATE_BACKFILL",
+      "family": "M5",
+      "reason": "The logical series allows late or backfilled observations, so the physical design must preserve that behavior.",
+      "all": [{"field": "late_arrival_allowed", "op": "eq", "value": true}]
+    }
+  ]
+}

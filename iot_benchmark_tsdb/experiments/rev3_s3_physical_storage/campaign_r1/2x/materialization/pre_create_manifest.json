@@ -1,0 +1,16 @@
+{
+  "captured_utc": "2026-11-10T20:40:59+00:00",
+  "dataset_sha256": "7389fcdf0504676be94fd557f057a46f8c210f97db34386c59d8e62f7ba41cf3",
+  "factor": 2,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "new_keyspaces": {
+    "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d2_ref",
+    "R3H_38939db96444": "sl_s3_r1_d2_u",
+    "R3H_d2ea1974de53": "sl_s3_r1_d2_d"
+  },
+  "no_drop_truncate_or_alter": true,
+  "prior_keyspaces_untouched": true,
+  "stage4_catalog": "/home/hudson/Documents/schemalens_cassandra/schemalens_rev3_new_java_B_20261105_193618/java_work/runs/v3_20261105T223620Z_pid3665162/schemalens_rev3_ts5_contract_validated_B/outputs/stage4/10_candidate_specs.json",
+  "stage4_catalog_sha256": "176060f34c821529c984928b1c6998f4b850f8d85d5f271a9a82e4b7e15f658f",
+  "status": "S3_PRECREATE_VERIFIED"
+}

@@ -1,0 +1,58 @@
+{
+  "status": "DRAFT_NOT_EXECUTED",
+  "protocol": "S2_FIXED_HISTORY_DENSITY_SWEEP",
+  "source_s1_archive": "rev3_S1_window_sweep_results(2).zip",
+  "baseline_label": "BASELINE_Q8_OPTIMIZED",
+  "frozen_variants": {
+    "ts2_iot_wide": "R3H_d2ea1974de53",
+    "ts2_iot_wide_unbucketed": "R3H_38939db96444"
+  },
+  "original_B_rev3_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "source_data_sha256_s1": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+  "source_queries_sha256_s1": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5",
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "actual_history_days": 20.82639,
+  "source_cells_at_1x": 54000,
+  "fixed_devices": 9,
+  "fixed_sensors": 2,
+  "density_factors": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "target_source_cells": [
+    54000,
+    108000,
+    216000,
+    432000
+  ],
+  "windows_days": [
+    1,
+    7,
+    14,
+    21
+  ],
+  "windowed_queries": [
+    "Q2",
+    "Q7",
+    "Q9",
+    "Q12"
+  ],
+  "controls": [
+    "Q5",
+    "Q8"
+  ],
+  "rounds_per_combo": 60,
+  "warmups_per_combo": 5,
+  "query_cases_per_density": 18,
+  "variants": 3,
+  "total_combinations": 216,
+  "expected_measured_rows": 12960,
+  "expected_warmups": 1080,
+  "page_size": 16,
+  "measurement_seed": "FREEZE_BEFORE_EXECUTION",
+  "density_generation": "INSPECT_JAVA_GENERATOR_FIRST; OTHERWISE DOCUMENT_SYNTHETIC_DERIVATION",
+  "primary_outcome": "hot_p95_ratio_D_over_U",
+  "notes": "No new performance claims or deployment performed."
+}

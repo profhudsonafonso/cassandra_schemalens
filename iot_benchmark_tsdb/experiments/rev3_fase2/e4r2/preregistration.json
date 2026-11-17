@@ -1,0 +1,54 @@
+{
+  "amendments": {
+    "EMENDA_01_E1_por_fator.md": "cec0a21558858cd1ef1cf9ff8e62cade765500e5486add7d1fc322b718310eee",
+    "EMENDA_02_medicao_interrompida.md": "52820bbe6c26b1d33f815e5f3778648dfe36b982c7328f12255fd84a236e6e27",
+    "EMENDA_03_preregistro_campanhas_unicas.md": "95e78640a4dfaad2f88b99f930a0643fec6bd36f3fa4de841a5456c6f0e4d2b0",
+    "EMENDA_04_FASE3.md": "3470434ede0978c5ccf82b79b2eaa8557f35be07405fc5dcc419afc1f790e1a4"
+  },
+  "arms": [
+    "sst:REF",
+    "sst:TS2-U",
+    "sst:TS2-D"
+  ],
+  "campaign": "e4r2",
+  "core_sha256": "f7e3433079d5c46b7c8657e7086a28e0885691d96013c9cd59f15f3b29418b64",
+  "created_utc": "2026-11-12T14:39:01+00:00",
+  "dataset": null,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "n18": {
+      "dataset_sha256": "22558f21cc643f7b8997243409b11e070a451bc32a48e104facdecd18444a89d",
+      "flush": "f57b3591fe026fd91925560ef291467e6eadeab49817b944ef46b5f36e0629c2",
+      "materialization": "c14050c6b430af6d78d4468e01c850b41a2eb45af1c76bf75a6b09ae43ccdbc3",
+      "storage_post_flush": "fa20d763824968be7f7de34a453afa45e91859f2937ad72a786d04fa20babf11",
+      "validation": "9fbe52512c92a2678a8742ca34d01f6238da73bb51568178f567a4ed6b13df89"
+    },
+    "n3": {
+      "dataset_sha256": "f3deb5d973724fc8b938c7eead2e9e4e9652f745ccc954924b40a660102a2665",
+      "flush": "fbd02a926e941d449bb4cf0f2089d713759ddd70c746318ac22aeab74c61ad06",
+      "materialization": "aee379a65bf596497ea9af7af87355f47ec665ec824af8a0142499ef9ea5094d",
+      "storage_post_flush": "f506e869afdae2479f2eaf088e77be89580a6bc0c2f0451d28ec1912b884094c",
+      "validation": "c32451e348b636dab647a32759a242b2dccf58a6748ee35b49e2ca4d8305f70f"
+    }
+  },
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "randomization": "per round: shuffle cases; per case shuffle arms, reverse on even rounds; Random(seed + dataset index)",
+  "rev4": null,
+  "s3_runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "spec": {
+    "conds": [
+      "sst"
+    ],
+    "datasets": [
+      "n3",
+      "n18"
+    ],
+    "rounds": 60,
+    "seed": 20261411,
+    "stage": "E7"
+  },
+  "status": "F2_PREREGISTERED_BEFORE_TIMING",
+  "warmups": 5
+}

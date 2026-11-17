@@ -1,0 +1,41 @@
+{
+  "cassandra_changes": false,
+  "datasets": {
+    "1": {
+      "cells": 54000,
+      "file": "s2_density_1x.csv",
+      "sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a"
+    },
+    "2": {
+      "cells": 108000,
+      "file": "s2_density_2x.csv",
+      "sha256": "7389fcdf0504676be94fd557f057a46f8c210f97db34386c59d8e62f7ba41cf3"
+    },
+    "4": {
+      "cells": 216000,
+      "file": "s2_density_4x.csv",
+      "sha256": "b5aa8eb7570d8100e211a5eaa0131f189428c993e9695148c5009176ab49ac37"
+    },
+    "8": {
+      "cells": 432000,
+      "file": "s2_density_8x.csv",
+      "sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91"
+    }
+  },
+  "device_count": 9,
+  "generation_method": "DETERMINISTIC_INTERPOLATION_WITH_ORIGINAL_POINTS_RETAINED",
+  "not_independent_holdout": true,
+  "not_new_java_generated_data": true,
+  "original_B_freeze_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "original_max_ms": 1705867200000,
+  "original_min_ms": 1704067800000,
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "s2_protocol_sha256": "86bff504c50567952af0f10fd87e1c0d93103b90f25d929e70edebcf75ae3f54",
+  "sensors": [
+    "s_0",
+    "s_1"
+  ],
+  "source_sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+  "status": "S2_SYNTHETIC_DENSITY_DATA_PREPARED_NOT_BENCHMARKED",
+  "terminal_interpolation": "factor-1 extra points in final original timestamp interval"
+}

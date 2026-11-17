@@ -1,0 +1,36 @@
+{
+  "campaign": "e4",
+  "completed_utc": "2026-11-11T23:25:47+00:00",
+  "dataset": "n18",
+  "dataset_sha256": "22558f21cc643f7b8997243409b11e070a451bc32a48e104facdecd18444a89d",
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "keyspaces": [
+    "sl_f2_e4_n18_sst_ref",
+    "sl_f2_e4_n18_sst_u",
+    "sl_f2_e4_n18_sst_d"
+  ],
+  "loads": [
+    {
+      "cond": "sst",
+      "keyspace": "sl_f2_e4_n18_sst_ref",
+      "seconds": 17.988,
+      "variant": "BASELINE_Q8_OPTIMIZED",
+      "writes": 54000
+    },
+    {
+      "cond": "sst",
+      "keyspace": "sl_f2_e4_n18_sst_u",
+      "seconds": 18.094,
+      "variant": "R3H_38939db96444",
+      "writes": 54000
+    },
+    {
+      "cond": "sst",
+      "keyspace": "sl_f2_e4_n18_sst_d",
+      "seconds": 17.509,
+      "variant": "R3H_d2ea1974de53",
+      "writes": 54000
+    }
+  ],
+  "status": "F2_MATERIALIZED"
+}

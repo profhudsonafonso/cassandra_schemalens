@@ -1,0 +1,32 @@
+{
+  "scope": "POST_FREEZE_VALIDATION_ONLY",
+  "experiment": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748",
+  "status": "PASS",
+  "no_stage1_8_rerun": true,
+  "no_stage9_live_run": true,
+  "Cassandra_used": false,
+  "hbench_sha256_unchanged": true,
+  "hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+  "stage4_8_outputs_unchanged": true,
+  "input_metric_cells": 1800,
+  "checks": {
+    "stage9_dryrun.log": {
+      "returncode": 0,
+      "log": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/outputs/validation_native_stage8/stage9_dryrun.log"
+    },
+    "test_iot_stages_4_to_9.log": {
+      "returncode": 0,
+      "log": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/outputs/validation_native_stage8/test_iot_stages_4_to_9.log"
+    },
+    "test_stage4_rev2.log": {
+      "returncode": 0,
+      "log": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/outputs/validation_native_stage8/test_stage4_rev2.log"
+    },
+    "test_official_bridge_v3.log": {
+      "returncode": 0,
+      "log": "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/outputs/validation_native_stage8/test_official_bridge_v3.log"
+    }
+  },
+  "failed_checks": [],
+  "note": "Only fixture-specific tests were generalized to native sensor names and row counts. This is not an official SQL replay or a performance measurement."
+}

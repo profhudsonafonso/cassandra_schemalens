@@ -1,0 +1,3 @@
+
+===== 2026-11-10T17:48:40.433125 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'preregister']
+PASS S3 preregistration BEFORE any timing: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_s3_physical_storage/s3_benchmark_preregister.json

@@ -1,0 +1,134 @@
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_analysis.py", line 210, in <module>
+    {'e1': e1, 'e345': e345, 'e6': e6}[sys.argv[1]]()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_analysis.py", line 115, in e1
+    f"r2 {fmt(bf['1']['r2']['sst_median_du'])} → {fmt(bf['8']['r2']['sst_median_du'])}; "
+              ~~~~~~~^^^^^^
+KeyError: 'r2'
+{
+ "by_factor": {
+  "1": {
+   "s2_median_du": 1.3296,
+   "s3_median_du": 1.2819,
+   "s3_over_s2": {
+    "d": 1.0367,
+    "ref": 1.054,
+    "u": 1.0469
+   },
+   "r2": {
+    "mem_median_du": 1.459,
+    "sst_median_du": 1.5054,
+    "mem_wins_u": 15,
+    "sst_wins_u": 12
+   },
+   "r3": {
+    "mem_median_du": 1.3052,
+    "sst_median_du": 1.3186,
+    "mem_wins_u": 14,
+    "sst_wins_u": 11
+   },
+   "flush_effect": {
+    "ref": 1.076,
+    "u": 1.082,
+    "d": 1.0772
+   },
+   "wins_sst_u": 23,
+   "wins_sst_d": 9
+  },
+  "2": {
+   "s2_median_du": 1.2365,
+   "s3_median_du": 1.1673,
+   "s3_over_s2": {
+    "d": 1.0702,
+    "ref": 1.0943,
+    "u": 1.1081
+   },
+   "r2": {
+    "mem_median_du": 1.183,
+    "sst_median_du": 1.2414,
+    "mem_wins_u": 12,
+    "sst_wins_u": 11
+   },
+   "r3": {
+    "mem_median_du": 1.2479,
+    "sst_median_du": 1.2167,
+    "mem_wins_u": 13,
+    "sst_wins_u": 10
+   },
+   "flush_effect": {
+    "ref": 1.0887,
+    "u": 1.099,
+    "d": 1.0718
+   },
+   "wins_sst_u": 21,
+   "wins_sst_d": 11
+  },
+  "4": {
+   "s2_median_du": 1.1656,
+   "s3_median_du": 1.1195,
+   "s3_over_s2": {
+    "d": 1.1148,
+    "ref": 1.1023,
+    "u": 1.1082
+   },
+   "r2": {
+    "mem_median_du": 1.1806,
+    "sst_median_du": 1.1888,
+    "mem_wins_u": 13,
+    "sst_wins_u": 16
+   },
+   "r3": {
+    "mem_median_du": 1.1685,
+    "sst_median_du": 1.1593,
+    "mem_wins_u": 14,
+    "sst_wins_u": 13
+   },
+   "flush_effect": {
+    "ref": 1.0982,
+    "u": 1.1043,
+    "d": 1.1108
+   },
+   "wins_sst_u": 29,
+   "wins_sst_d": 3
+  },
+  "8": {
+   "s2_median_du": 1.0646,
+   "s3_median_du": 1.0951,
+   "s3_over_s2": {
+    "d": 1.1467,
+    "ref": 1.0285,
+    "u": 1.113
+   },
+   "r2": {
+    "mem_median_du": 1.1234,
+    "sst_median_du": 1.1289,
+    "mem_wins_u": 15,
+    "sst_wins_u": 12
+   },
+   "r3": {
+    "mem_median_du": 1.0861,
+    "sst_median_du": 1.1361,
+    "mem_wins_u": 12,
+    "sst_wins_u": 15
+   },
+   "flush_effect": {
+    "ref": 1.1414,
+    "u": 1.1551,
+    "d": 1.1556
+   },
+   "wins_sst_u": 27,
+   "wins_sst_d": 5
+  }
+ },
+ "winner_consistency": {
+  "agree": 47,
+  "total": 64
+ },
+ "findings": [
+  "Mediana D/U em SSTable no 1× → 8×: r1 1,282 → 1,095; r2 1,505 → 1,129; r3 1,319 → 1,136.",
+  "Mesmo vencedor U/D nas três réplicas SSTable (r1, r2, r3) em 47 de 64 casos temporais.",
+  "Vitórias em SSTable somando r2 e r3: TS2-U 100, TS2-D 28 (de 128).",
+  "Efeito isolado do flush no 8× (SSTable/memtable, mesma sessão): REF +14.1%, U +15.5%, D +15.6%; a diferença S3/S2 (dias diferentes) era REF +2.8%, U +11.3%, D +14.7%."
+ ],
+ "created": "2026-11-11T20:00:19-03:00"
+}

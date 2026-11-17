@@ -1,0 +1,9 @@
+{
+  "data_sha256": "7389fcdf0504676be94fd557f057a46f8c210f97db34386c59d8e62f7ba41cf3",
+  "factor": 2,
+  "groups": 54,
+  "orders": 1080,
+  "recomputed_metrics": "PASS",
+  "samples": 3240,
+  "status": "PASS"
+}

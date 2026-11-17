@@ -1,0 +1,17 @@
+
+===== 2026-11-10T17:40:34.012148 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', '-m', 'unittest', '-v', 'experiments.rev3_s3_physical_storage.tests.test_s3']
+test_guarded_session (experiments.rev3_s3_physical_storage.tests.test_s3.Guard.test_guarded_session) ... ok
+test_nearest_rank (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_nearest_rank) ... ok
+test_parse_and_gate_on_real_s2_snapshot (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_parse_and_gate_on_real_s2_snapshot) ... ok
+test_protocol_constants (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_protocol_constants) ... ok
+test_write_new_refuses_overwrite (experiments.rev3_s3_physical_storage.tests.test_s3.Helpers.test_write_new_refuses_overwrite) ... ok
+test_regex_rejects_foreign (experiments.rev3_s3_physical_storage.tests.test_s3.Naming.test_regex_rejects_foreign) ... ok
+test_twelve_names (experiments.rev3_s3_physical_storage.tests.test_s3.Naming.test_twelve_names) ... ok
+test_refused (experiments.rev3_s3_physical_storage.tests.test_s3.NodetoolWhitelist.test_refused) ... ok
+test_no_destructive_statements_in_source (experiments.rev3_s3_physical_storage.tests.test_s3.SourceSafety.test_no_destructive_statements_in_source) ... ok
+test_s2_artifacts_never_opened_for_writing (experiments.rev3_s3_physical_storage.tests.test_s3.SourceSafety.test_s2_artifacts_never_opened_for_writing) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK

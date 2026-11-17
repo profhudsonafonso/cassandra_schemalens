@@ -1,0 +1,59 @@
+{
+  "stage_files": {
+    "4": {
+      "zip_filename": "SchemaLens_TSBS_Stage4_ADDON(1).zip",
+      "zip_sha256": "daff6d47faad910b14e974be6f95be3e292260006241275c18ffc68fed0026e4",
+      "source": "methodology/tsbs/stage4/candidate_generator.py",
+      "checks": {
+        "hardcoded_10_usage_metrics": true,
+        "hardcoded_cpu_tables": true,
+        "requires_tsbs_cpu_schema": true
+      }
+    },
+    "5": {
+      "zip_filename": "SchemaLens_TSBS_Stage5_ADDON(1).zip",
+      "zip_sha256": "4a6fb22bb0ec2450cc50b11d6962f0a88fc6b9134ab1952ba419040e8a11d6b3",
+      "source": "methodology/tsbs/stage5/planner.py",
+      "checks": {
+        "cpu_only_workload": true
+      }
+    },
+    "6": {
+      "zip_filename": "SchemaLens_TSBS_Stage6_ADDON(1).zip",
+      "zip_sha256": "bd7470828054c9362ad14d01266533650f96be6b637ce4d66f5785a95301e8bb",
+      "source": "methodology/tsbs/stage6/tsbs_adapter.py",
+      "checks": {
+        "tsbs_native_input": true
+      }
+    },
+    "7": {
+      "zip_filename": "SchemaLens_TSBS_Stage7_ADDON(1).zip",
+      "zip_sha256": "90082b4995e5747e6ca518938bf28450a131484b024da908017665b9f6ace96d",
+      "source": "methodology/tsbs/stage7/estimator.py",
+      "checks": {
+        "tsbs_proxies": true
+      }
+    },
+    "8": {
+      "zip_filename": "SchemaLens_TSBS_Stage8_ADDON(1).zip",
+      "zip_sha256": "b2ff1545bc62176f423e701ca8025a05203b357e690318f79c5e74e9fe96af1b",
+      "source": "methodology/tsbs/stage8/consolidator.py",
+      "checks": {
+        "family_whitelist_excludes_TS4": true,
+        "tsbs_path_contract": true
+      }
+    },
+    "9": {
+      "zip_filename": "SchemaLens_TSBS_Stage9_ADDON(1).zip",
+      "zip_sha256": "e61196be41bb30d7f7b8497ec1c00fbce98d5fecc29c44c2ba4718f9a9b4a346",
+      "source": "methodology/tsbs/stage9/dataset.py",
+      "checks": {
+        "cpu_only_native_tsbs_reader": true,
+        "16_columns_tsbs_serialization": true
+      }
+    }
+  },
+  "status": "LEGACY_TSBS_STAGES_NOT_DIRECTLY_COMPATIBLE_WITH_IOT_BENCHMARK",
+  "no_legacy_source_modified": true,
+  "requires_new_iot_adapters": true
+}

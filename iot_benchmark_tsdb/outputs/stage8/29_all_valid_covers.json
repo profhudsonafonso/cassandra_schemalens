@@ -1,0 +1,2602 @@
+[
+  {
+    "deployment_id": "H_0bd185590c5a",
+    "candidates": [
+      "ts0_iot_raw"
+    ],
+    "families": [
+      "TS0"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      }
+    },
+    "analytic_cost": {
+      "read": 12.625,
+      "storage": 2240,
+      "write": 35
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.3536265
+  },
+  {
+    "deployment_id": "H_692b49207812",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket"
+    ],
+    "families": [
+      "TS0",
+      "TS1"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q2__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q3": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q3__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q9__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q10": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q10__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q12__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      }
+    },
+    "analytic_cost": {
+      "read": 11.949999999999998,
+      "storage": 4760,
+      "write": 70
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.50444746
+  },
+  {
+    "deployment_id": "H_6be2f0a60be2",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide"
+    ],
+    "families": [
+      "TS0",
+      "TS2"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 3824,
+      "write": 53
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.29804234
+  },
+  {
+    "deployment_id": "H_a4edb9c17006",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide_unbucketed"
+    ],
+    "families": [
+      "TS0",
+      "TS2"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 3824,
+      "write": 53
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide_unbucketed",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.29804234
+  },
+  {
+    "deployment_id": "H_2641c9751dce",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts4_iot_latest"
+    ],
+    "families": [
+      "TS0",
+      "TS4"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.700000000000001,
+      "storage": 2624,
+      "write": 41
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts4_iot_latest",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.21201273
+  },
+  {
+    "deployment_id": "H_8c5089b1e9f8",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      }
+    },
+    "analytic_cost": {
+      "read": 12.625,
+      "storage": 2768,
+      "write": 41
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.39434078
+  },
+  {
+    "deployment_id": "H_ee2104e348dd",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 6344,
+      "write": 88
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.51054234
+  },
+  {
+    "deployment_id": "H_e3cbad20bea0",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide_unbucketed"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 6344,
+      "write": 88
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide_unbucketed",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.51054234
+  },
+  {
+    "deployment_id": "H_bd087edcec59",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts4_iot_latest"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS4"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q2__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q3": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q3__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q9__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q10": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q10__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q12__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.025,
+      "storage": 5144,
+      "write": 76
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts4_iot_latest",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.36283369
+  },
+  {
+    "deployment_id": "H_6b341010a16b",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q2__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q3": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q3__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q9__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q10": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q10__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q12__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      }
+    },
+    "analytic_cost": {
+      "read": 11.949999999999998,
+      "storage": 5288,
+      "write": 76
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.54516174
+  },
+  {
+    "deployment_id": "H_c7646ce7d864",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide",
+      "ts4_iot_latest"
+    ],
+    "families": [
+      "TS0",
+      "TS2",
+      "TS4"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 4208,
+      "write": 59
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide|ts4_iot_latest",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.15642857
+  },
+  {
+    "deployment_id": "H_7676530a36ac",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS2",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 4352,
+      "write": 59
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.33875663
+  },
+  {
+    "deployment_id": "H_4f73edf0446d",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide_unbucketed",
+      "ts4_iot_latest"
+    ],
+    "families": [
+      "TS0",
+      "TS2",
+      "TS4"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 4208,
+      "write": 59
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide_unbucketed|ts4_iot_latest",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.15642857
+  },
+  {
+    "deployment_id": "H_2f345eed97b1",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide_unbucketed",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS2",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 4352,
+      "write": 59
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide_unbucketed|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.33875663
+  },
+  {
+    "deployment_id": "H_e3b892fc987e",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts4_iot_latest",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS4",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.700000000000001,
+      "storage": 3152,
+      "write": 47
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts4_iot_latest|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.25272701
+  },
+  {
+    "deployment_id": "H_58d702aeb79d",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide",
+      "ts4_iot_latest"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2",
+      "TS4"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 6728,
+      "write": 94
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide|ts4_iot_latest",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.36892857
+  },
+  {
+    "deployment_id": "H_646178c068cf",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 6872,
+      "write": 94
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.55125663
+  },
+  {
+    "deployment_id": "H_7f3a81121e65",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide_unbucketed",
+      "ts4_iot_latest"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2",
+      "TS4"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 6728,
+      "write": 94
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide_unbucketed|ts4_iot_latest",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.36892857
+  },
+  {
+    "deployment_id": "H_7ec0d76f93e3",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide_unbucketed",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.68,
+      "storage": 6872,
+      "write": 94
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide_unbucketed|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.55125663
+  },
+  {
+    "deployment_id": "H_083c9e415e3e",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts4_iot_latest",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS4",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q2": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q2__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q3": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q3__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q9__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q10": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q10__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts1_iot_bucket",
+        "family": "TS1",
+        "plan_id": "Q12__ts1_iot_bucket",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate UTC day buckets for every queried device/sensor; enumerate all UTC days including boundary days"
+      }
+    },
+    "analytic_cost": {
+      "read": 10.025,
+      "storage": 5672,
+      "write": 82
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts4_iot_latest|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.40354797
+  },
+  {
+    "deployment_id": "H_ef4d75c767c0",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide",
+      "ts4_iot_latest",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS2",
+      "TS4",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 4736,
+      "write": 65
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide|ts4_iot_latest|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.19714286
+  },
+  {
+    "deployment_id": "H_b523d938c455",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts2_iot_wide_unbucketed",
+      "ts4_iot_latest",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS2",
+      "TS4",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 4736,
+      "write": 65
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts2_iot_wide_unbucketed|ts4_iot_latest|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.19714286
+  },
+  {
+    "deployment_id": "H_fd1417113ca5",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide",
+      "ts4_iot_latest",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2",
+      "TS4",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; M1 evidenced in workload; enumerate all UTC day partitions in time range"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 7256,
+      "write": 100
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide|ts4_iot_latest|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.40964286
+  },
+  {
+    "deployment_id": "H_360b09a62d8c",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts1_iot_bucket",
+      "ts2_iot_wide_unbucketed",
+      "ts4_iot_latest",
+      "ts5_iot_rollup"
+    ],
+    "families": [
+      "TS0",
+      "TS1",
+      "TS2",
+      "TS4",
+      "TS5"
+    ],
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "route_status": "CONDITIONAL",
+        "runtime_guard": "Q8 uses global latest from TableStrategy last/last_by; exact null and sensor-row semantics require official verification; historical-window Q8 needs raw fallback; maintenance not implemented"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "route_status": "DIRECT",
+        "runtime_guard": "read canonical raw points, client aggregate/set/direction; all partitions scanned when needed; always baseline; unbucketed growth risk"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "route_status": "DIRECT",
+        "runtime_guard": "enumerate device/day buckets, project requested columns with sparse NULL semantics; one device partition with bounded estimated rows; unbucketed partition may become too large under growth"
+      }
+    },
+    "analytic_cost": {
+      "read": 8.755,
+      "storage": 7256,
+      "write": 100
+    },
+    "canonical_signature": "iot_stage4_rev3_official_semantics_diagnostic|ts0_iot_raw|ts1_iot_bucket|ts2_iot_wide_unbucketed|ts4_iot_latest|ts5_iot_rollup",
+    "semantically_complete": true,
+    "validated_live": false,
+    "preselection_score": 1.40964286
+  }
+]

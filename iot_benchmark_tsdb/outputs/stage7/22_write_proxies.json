@@ -1,0 +1,44 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "family": "TS0",
+    "write_keys_proxy": 35,
+    "estimated_rebuild_pressure": 0,
+    "estimate_kind": "batch materialization/write-key proxy; no measured I/O"
+  },
+  {
+    "candidate_id": "ts1_iot_bucket",
+    "family": "TS1",
+    "write_keys_proxy": 35,
+    "estimated_rebuild_pressure": 0,
+    "estimate_kind": "batch materialization/write-key proxy; no measured I/O"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "family": "TS2",
+    "write_keys_proxy": 18,
+    "estimated_rebuild_pressure": 0,
+    "estimate_kind": "batch materialization/write-key proxy; no measured I/O"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "family": "TS2",
+    "write_keys_proxy": 18,
+    "estimated_rebuild_pressure": 0,
+    "estimate_kind": "batch materialization/write-key proxy; no measured I/O"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "family": "TS4",
+    "write_keys_proxy": 6,
+    "estimated_rebuild_pressure": 35.0,
+    "estimate_kind": "batch materialization/write-key proxy; no measured I/O"
+  },
+  {
+    "candidate_id": "ts5_iot_rollup",
+    "family": "TS5",
+    "write_keys_proxy": 6,
+    "estimated_rebuild_pressure": 35.0,
+    "estimate_kind": "batch materialization/write-key proxy; no measured I/O"
+  }
+]

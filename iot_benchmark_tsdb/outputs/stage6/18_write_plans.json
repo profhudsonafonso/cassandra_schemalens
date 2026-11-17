@@ -1,0 +1,62 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "family": "TS0",
+    "insert_template": "INSERT INTO ts0_iot_raw (device_id,sensor_name,timestamp_ms,value_double) VALUES (?,?,?,?)",
+    "maintenance": "one CQL row per non-null measurement",
+    "partition_variant": "unchanged",
+    "source_of_truth": "canonical TS0",
+    "incremental_write_support": true,
+    "live_write_status": "BATCH_LOAD_IMPLEMENTED; concurrent correction/update protocol not implemented"
+  },
+  {
+    "candidate_id": "ts1_iot_bucket",
+    "family": "TS1",
+    "insert_template": "INSERT INTO ts1_iot_bucket (device_id,sensor_name,bucket_day,timestamp_ms,value_double) VALUES (?,?,?,?,?)",
+    "maintenance": "one CQL row per non-null measurement and UTC day",
+    "partition_variant": "unchanged",
+    "source_of_truth": "canonical TS0",
+    "incremental_write_support": true,
+    "live_write_status": "BATCH_LOAD_IMPLEMENTED; concurrent correction/update protocol not implemented"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "family": "TS2",
+    "insert_template": "INSERT INTO ts2_iot_wide (device_id,bucket_day,timestamp_ms,columns...) VALUES (?,?,?,...)",
+    "maintenance": "one CQL row per device/day/timestamp; sparse columns skipped",
+    "partition_variant": "daily",
+    "source_of_truth": "canonical TS0",
+    "incremental_write_support": true,
+    "live_write_status": "BATCH_LOAD_IMPLEMENTED; concurrent correction/update protocol not implemented"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "family": "TS2",
+    "insert_template": "INSERT INTO ts2_iot_wide_unbucketed (device_id,timestamp_ms,columns...) VALUES (?,?,...)",
+    "maintenance": "one CQL row per device/day/timestamp; sparse columns skipped",
+    "partition_variant": "unbucketed",
+    "source_of_truth": "canonical TS0",
+    "incremental_write_support": true,
+    "live_write_status": "BATCH_LOAD_IMPLEMENTED; concurrent correction/update protocol not implemented"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "family": "TS4",
+    "insert_template": "INSERT INTO ts4_iot_latest (device_id,sensor_name,latest_timestamp_ms,value_double) VALUES (?,?,?,?)",
+    "maintenance": "latest materialized after snapshot canonical load; out-of-order and replay handled by deterministic rebuild",
+    "partition_variant": "unchanged",
+    "source_of_truth": "canonical TS0",
+    "incremental_write_support": false,
+    "live_write_status": "BATCH_LOAD_IMPLEMENTED; concurrent correction/update protocol not implemented"
+  },
+  {
+    "candidate_id": "ts5_iot_rollup",
+    "family": "TS5",
+    "insert_template": "INSERT INTO ts5_iot_rollup (device_id,sensor_name,bucket_day,window_start_ms,value_sum,sample_count,minimum,maximum) VALUES (?,?,?,?,?,?,?,?)",
+    "maintenance": "rebuild sum/count/min/max from canonical observations; no unsafe counter deltas",
+    "partition_variant": "unchanged",
+    "source_of_truth": "canonical TS0",
+    "incremental_write_support": false,
+    "live_write_status": "BATCH_LOAD_IMPLEMENTED; concurrent correction/update protocol not implemented"
+  }
+]

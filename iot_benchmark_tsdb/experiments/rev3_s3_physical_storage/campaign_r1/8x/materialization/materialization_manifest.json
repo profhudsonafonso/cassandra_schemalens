@@ -1,0 +1,48 @@
+{
+  "completed_utc": "2026-11-10T20:47:01+00:00",
+  "dataset_sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91",
+  "describe_sha256": {
+    "sl_s3_r1_d8_d": "d6b75263dca8061be880b0d72a0c1a4674f21912a25044734cf59fdb0fa987cb",
+    "sl_s3_r1_d8_ref": "71c7d6ef0c317276895e919971d1043a5bfa7c89bc17a4e9c15fdd6b27557034",
+    "sl_s3_r1_d8_u": "a0173ff32c0c9c1d1fa98afe204075a76db78081304269d5512a65e2dca867da"
+  },
+  "factor": 8,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "keyspaces": {
+    "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d8_ref",
+    "R3H_38939db96444": "sl_s3_r1_d8_u",
+    "R3H_d2ea1974de53": "sl_s3_r1_d8_d"
+  },
+  "loads": [
+    {
+      "keyspace": "sl_s3_r1_d8_ref",
+      "load_scope": "Python sequential loader; not official ingestion throughput",
+      "logical_cells": 432000,
+      "physical_write_operations": 216000,
+      "sequential_load_seconds": 69.563976,
+      "table": "iot_reference_table",
+      "variant": "BASELINE_Q8_OPTIMIZED"
+    },
+    {
+      "keyspace": "sl_s3_r1_d8_u",
+      "load_scope": "Python sequential loader; not official ingestion throughput",
+      "logical_cells": 432000,
+      "physical_write_operations": 216000,
+      "sequential_load_seconds": 68.876281,
+      "table": "ts2_iot_wide_unbucketed",
+      "variant": "R3H_38939db96444"
+    },
+    {
+      "keyspace": "sl_s3_r1_d8_d",
+      "load_scope": "Python sequential loader; not official ingestion throughput",
+      "logical_cells": 432000,
+      "physical_write_operations": 216000,
+      "sequential_load_seconds": 65.088405,
+      "table": "ts2_iot_wide",
+      "variant": "R3H_d2ea1974de53"
+    }
+  ],
+  "no_official_java_data_generation": true,
+  "no_prior_keyspace_modified": true,
+  "status": "S3_MATERIALIZATION_COMPLETE_NOT_FLUSHED"
+}

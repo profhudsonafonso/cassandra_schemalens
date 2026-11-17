@@ -1,0 +1,78 @@
+  [pre_timing] sl_f2_e1r2b_d4_mem_ref     sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_u       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_d       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_ref     sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_u       sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_d       sst=1 mem_cells=0 part_mean=20339 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_ref     sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_u       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_d       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_ref     sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_u       sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_d       sst=1 mem_cells=0 part_mean=20339 gate=PASS
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 761, in <module>
+    main()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 749, in main
+    {'materialize': lambda: cmd_materialize(a.campaign, a.dataset, a.confirm),
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 754, in <lambda>
+    'run': lambda: cmd_run(a.campaign, a.dataset),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 568, in cmd_run
+    cluster, session = connect()
+                       ^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 257, in connect
+    return S3.connect()
+           ^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/s3_physical.py", line 416, in connect
+    from cassandra.cluster import Cluster
+ModuleNotFoundError: No module named 'cassandra'
+  [pre_timing] sl_f2_e1r2b_d4_mem_ref     sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_u       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_d       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_ref     sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_u       sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_d       sst=1 mem_cells=0 part_mean=20339 gate=PASS
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 761, in <module>
+    main()
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 749, in main
+    {'materialize': lambda: cmd_materialize(a.campaign, a.dataset, a.confirm),
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 754, in <lambda>
+    'run': lambda: cmd_run(a.campaign, a.dataset),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 568, in cmd_run
+    cluster, session = connect()
+                       ^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/fase2_core.py", line 257, in connect
+    return S3.connect()
+           ^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/s3_physical.py", line 416, in connect
+    from cassandra.cluster import Cluster
+ModuleNotFoundError: No module named 'cassandra'
+  [pre_timing] sl_f2_e1r2b_d4_mem_ref     sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_u       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_mem_d       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_ref     sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_u       sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [pre_timing] sl_f2_e1r2b_d4_sst_d       sst=1 mem_cells=0 part_mean=20339 gate=PASS
+e1r2b/d4: pretiming oracles + warm-ups done; timing 18 cases x 6 arms x 60
+e1r2b/d4 round 5/60 observations=540
+e1r2b/d4 round 10/60 observations=1080
+e1r2b/d4 round 15/60 observations=1620
+e1r2b/d4 round 20/60 observations=2160
+e1r2b/d4 round 25/60 observations=2700
+e1r2b/d4 round 30/60 observations=3240
+e1r2b/d4 round 35/60 observations=3780
+e1r2b/d4 round 40/60 observations=4320
+e1r2b/d4 round 45/60 observations=4860
+e1r2b/d4 round 50/60 observations=5400
+e1r2b/d4 round 55/60 observations=5940
+e1r2b/d4 round 60/60 observations=6480
+  [post_timing] sl_f2_e1r2b_d4_mem_ref     sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [post_timing] sl_f2_e1r2b_d4_mem_u       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [post_timing] sl_f2_e1r2b_d4_mem_d       sst=0 mem_cells=108000 part_mean=0 gate=PASS
+  [post_timing] sl_f2_e1r2b_d4_sst_ref     sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [post_timing] sl_f2_e1r2b_d4_sst_u       sst=1 mem_cells=0 part_mean=454826 gate=PASS
+  [post_timing] sl_f2_e1r2b_d4_sst_d       sst=1 mem_cells=0 part_mean=20339 gate=PASS
+COMPLETE e1r2b/d4: 6480 observations in 343s; state unchanged=True 

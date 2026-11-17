@@ -1,0 +1,10 @@
+FLUSHED sl_f2_e1r2_d2_sst_ref
+FLUSHED sl_f2_e1r2_d2_sst_u
+FLUSHED sl_f2_e1r2_d2_sst_d
+  [post_flush] sl_f2_e1r2_d2_mem_ref      sst=0 mem_cells=54000 part_mean=0 gate=PASS
+  [post_flush] sl_f2_e1r2_d2_mem_u        sst=0 mem_cells=54000 part_mean=0 gate=PASS
+  [post_flush] sl_f2_e1r2_d2_mem_d        sst=0 mem_cells=54000 part_mean=0 gate=PASS
+  [post_flush] sl_f2_e1r2_d2_sst_ref      sst=1 mem_cells=0 part_mean=219342 gate=PASS
+  [post_flush] sl_f2_e1r2_d2_sst_u        sst=1 mem_cells=0 part_mean=219342 gate=PASS
+  [post_flush] sl_f2_e1r2_d2_sst_d        sst=1 mem_cells=0 part_mean=9879 gate=PASS
+PASS flush+gate e1r2/d2

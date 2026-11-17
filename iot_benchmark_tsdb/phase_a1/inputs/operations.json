@@ -1,0 +1,14 @@
+[
+  {"id":"Q1","name":"Precise point query","returns_raw":true,"time_range":false,"time_bucketed":false,"aggregate":false,"latest":false,"set_op":false},
+  {"id":"Q2","name":"Time range query","returns_raw":true,"time_range":true,"time_bucketed":false,"aggregate":false,"latest":false,"set_op":false},
+  {"id":"Q3","name":"Time range with value filter","returns_raw":true,"time_range":true,"time_bucketed":false,"aggregate":false,"latest":false,"set_op":false},
+  {"id":"Q4","name":"Aggregation with time filter","returns_raw":false,"time_range":true,"time_bucketed":false,"aggregate":true,"latest":false,"set_op":false},
+  {"id":"Q5","name":"Aggregation with value filter","returns_raw":false,"time_range":false,"time_bucketed":false,"aggregate":true,"latest":false,"set_op":false},
+  {"id":"Q6","name":"Aggregation with time and value filters","returns_raw":false,"time_range":true,"time_bucketed":false,"aggregate":true,"latest":false,"set_op":false},
+  {"id":"Q7","name":"Time-grouped aggregation","returns_raw":false,"time_range":true,"time_bucketed":true,"aggregate":true,"latest":false,"set_op":false},
+  {"id":"Q8","name":"Latest point per selected device","returns_raw":false,"time_range":false,"time_bucketed":false,"aggregate":false,"latest":true,"set_op":false},
+  {"id":"Q9","name":"Descending time-range query","returns_raw":true,"time_range":true,"time_bucketed":false,"aggregate":false,"latest":false,"set_op":false},
+  {"id":"Q10","name":"Descending range with value filter","returns_raw":true,"time_range":true,"time_bucketed":false,"aggregate":false,"latest":false,"set_op":false},
+  {"id":"Q11","name":"Descending time-grouped aggregation","returns_raw":false,"time_range":true,"time_bucketed":true,"aggregate":true,"latest":false,"set_op":false},
+  {"id":"Q12","name":"Set operation over time-range subqueries (table only)","returns_raw":true,"time_range":true,"time_bucketed":false,"aggregate":false,"latest":false,"set_op":true}
+]

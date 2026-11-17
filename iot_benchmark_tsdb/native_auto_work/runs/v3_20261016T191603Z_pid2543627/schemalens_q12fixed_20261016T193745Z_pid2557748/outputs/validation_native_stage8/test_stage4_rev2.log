@@ -1,0 +1,12 @@
+test_candidate_aware_live_cql_uses_no_bucket_for_unbucketed (test_stage4_rev2.Stage4Rev2Tests.test_candidate_aware_live_cql_uses_no_bucket_for_unbucketed) ... ok
+test_daily_requires_m1_evidence (test_stage4_rev2.Stage4Rev2Tests.test_daily_requires_m1_evidence) ... ok
+test_materializer_uses_candidate_spec (test_stage4_rev2.Stage4Rev2Tests.test_materializer_uses_candidate_spec) ... ok
+test_no_cover_contains_both_ts2_granularities (test_stage4_rev2.Stage4Rev2Tests.test_no_cover_contains_both_ts2_granularities) ... ok
+test_ts2_variant_columns_partition_keys (test_stage4_rev2.Stage4Rev2Tests.test_ts2_variant_columns_partition_keys) ... ok
+test_unbucketed_guard_is_predeclared_and_enforced (test_stage4_rev2.Stage4Rev2Tests.test_unbucketed_guard_is_predeclared_and_enforced) ... ok
+test_unbucketed_query_across_midnight_in_memory (test_stage4_rev2.Stage4Rev2Tests.test_unbucketed_query_across_midnight_in_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.010s
+
+OK

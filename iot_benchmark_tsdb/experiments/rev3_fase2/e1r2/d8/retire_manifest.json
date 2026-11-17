@@ -1,0 +1,10 @@
+{
+  "flushed": [
+    "sl_f2_e1r2_d8_mem_ref",
+    "sl_f2_e1r2_d8_mem_u",
+    "sl_f2_e1r2_d8_mem_d"
+  ],
+  "reason": "abandoned campaign",
+  "status": "MEM_KEYSPACES_RETIRED_BY_FLUSH",
+  "utc": "2026-11-11T21:05:44+00:00"
+}

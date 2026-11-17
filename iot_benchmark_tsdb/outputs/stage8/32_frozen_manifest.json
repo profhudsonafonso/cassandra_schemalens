@@ -1,0 +1,50 @@
+{
+  "stage": 8,
+  "status": "FROZEN_PREBENCH_SELECTION",
+  "scope": "TS_ONLY_IOT_CASSANDRA",
+  "C0_C9_used": false,
+  "benchmark_measured": false,
+  "inputs_sha256": {
+    "outputs/stage4/10_candidate_specs.json": "6aaeb68989f2b047843cdbd8bcc3faeb1afd59deb150a60714d7623c69e65812",
+    "outputs/stage5/15_query_plans.json": "f39aba0804d7a6031da0c7fc319b551e675b3de2f414aecf8c6ae7f3ee736f80",
+    "outputs/stage6/18_write_plans.json": "1a639ffc15121e8800f47da14ee62c0a3bbf2370b912e23d2f61f8a4e1794f4f",
+    "outputs/stage7/23_read_proxies.json": "885aa59843e8bf7e1aa756cf40fa8a65c7c6d26339766044499f5429f4fdec20",
+    "outputs/stage7/21_storage_proxies.json": "9f859c7201f84ea817f204b11b0a45c23eaf582750ae7fdcd2a36f2684ba1ad6",
+    "outputs/stage7/22_write_proxies.json": "99bfceff35a5b10dddbd8b3f3ba90c1d0fff96b09489d8a6abe756b669927608",
+    "phase_a1/outputs/query_instances_pilot.json": "bad0833b8e351b1fdfd1053a8861ddad32ea376978a7e2492a64ddc4c9c82bf4",
+    "phase_a1/outputs/normalized_double_readings.csv": "ec8c2d88882e24cb71a8b0856d423f28bbb1ea96c3edb56f4fa7ba88b4ee11bd",
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9",
+    "iot_pipeline/stage4.py": "3c4a32d1b468887ba05b81c66c84d1ac1d710351f9183b51feda517c71c0dde4",
+    "iot_pipeline/stage5.py": "9f7bb5aa7d26472d1933d431621039482a87c940982caad8ddd274ce11a1e9e7",
+    "iot_pipeline/stage6.py": "06f3778c7b286c8586c47d925fe712ad2cb949e59ad47147fba04fb3ee3d1cfc",
+    "iot_pipeline/stage7.py": "81a5d1088372b07ec336ef2217a21cfe5135a6dc667d221361af08a229dc7d4a",
+    "iot_pipeline/stage8.py": "0d1e8ec6c56412429f9f320121743c83714e3d5b602ab6318bdac0df20a81b3d",
+    "iot_pipeline/stage9.py": "615390a60d3fc683b67d92359652781cf857b845b46ad40f57dcbefa251d01f3",
+    "iot_pipeline/offline.py": "3dd61965dfb1087eaeaf296be92e325feffbe38c5a3b4bc218d8eb379361a88e",
+    "phase_a1/core/bridge.py": "8a1ee732451eb55b3c605791ac076028641a09157ad51529b86e56b7c03183a5",
+    "phase_a1/tools/run_a1.py": "8f4eeb95201d5e98869666bb5b951fe1eb35d5dfa8011634df89c5162f3d2ca4",
+    "phase_a1/tools/official_query_capture.py": "94e1fc5838e0dfe0308549b6a147c6252a1d55ec330d63f47f11fd1f8d0eef9e",
+    "java_bridge/cn/edu/tsinghua/iot/benchmark/tools/SchemaLensQueryCapture.java": "4b76a3fe2e6b54ce7f255d828516698e9725d868f2bf017df32320452d472eea",
+    "phase_a1/vendor/tsdb_base/config/tsdb_activation_rules.json": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+    "phase_a1/vendor/tsdb_base/config/temporal_modifier_rules.json": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545"
+  },
+  "limitations": [
+    "QUERY_SEED not replayed in A1 fixture; official native parameter-object capture utility is supplied separately, not wired into Stage8",
+    "Live Cassandra results unavailable until user performs Stage9"
+  ],
+  "number_of_compatible_covers": 24,
+  "number_on_pareto_front": 6,
+  "number_selected": 5,
+  "chosen_ids": [
+    "H_4f73edf0446d",
+    "H_c7646ce7d864",
+    "H_2641c9751dce",
+    "H_6be2f0a60be2",
+    "H_a4edb9c17006"
+  ],
+  "frozen_hbench_sha256": "c44945c9455c60df8eae212323a02a8e6992e54761ae0efa7df528521c123482",
+  "candidate_costs_analytical_only": true,
+  "official_iot_query_sequence_verified": false,
+  "official_java_sampler_wired_as_stage8_input": false,
+  "selection_is_not_observed_performance": true
+}

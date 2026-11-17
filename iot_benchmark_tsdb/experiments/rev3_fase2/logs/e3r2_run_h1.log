@@ -1,0 +1,20 @@
+  [pre_timing] sl_f2_e3r2_h1_sst_ref      sst=1 mem_cells=0 part_mean=105778 gate=PASS
+  [pre_timing] sl_f2_e3r2_h1_sst_u        sst=1 mem_cells=0 part_mean=105778 gate=PASS
+  [pre_timing] sl_f2_e3r2_h1_sst_d        sst=1 mem_cells=0 part_mean=5662 gate=PASS
+e3r2/h1: pretiming oracles + warm-ups done; timing 18 cases x 3 arms x 60
+e3r2/h1 round 5/60 observations=270
+e3r2/h1 round 10/60 observations=540
+e3r2/h1 round 15/60 observations=810
+e3r2/h1 round 20/60 observations=1080
+e3r2/h1 round 25/60 observations=1350
+e3r2/h1 round 30/60 observations=1620
+e3r2/h1 round 35/60 observations=1890
+e3r2/h1 round 40/60 observations=2160
+e3r2/h1 round 45/60 observations=2430
+e3r2/h1 round 50/60 observations=2700
+e3r2/h1 round 55/60 observations=2970
+e3r2/h1 round 60/60 observations=3240
+  [post_timing] sl_f2_e3r2_h1_sst_ref      sst=1 mem_cells=0 part_mean=105778 gate=PASS
+  [post_timing] sl_f2_e3r2_h1_sst_u        sst=1 mem_cells=0 part_mean=105778 gate=PASS
+  [post_timing] sl_f2_e3r2_h1_sst_d        sst=1 mem_cells=0 part_mean=5662 gate=PASS
+COMPLETE e3r2/h1: 3240 observations in 49s; state unchanged=True 

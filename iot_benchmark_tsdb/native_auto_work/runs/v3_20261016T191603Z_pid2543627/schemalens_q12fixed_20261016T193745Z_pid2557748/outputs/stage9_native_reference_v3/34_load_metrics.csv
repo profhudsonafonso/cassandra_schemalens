@@ -1,0 +1,2 @@
+deployment_id,logical_metric_cells,physical_rows_written,load_elapsed_seconds,logical_points_per_second,scope
+REF_NATIVE_IOT_TABLE_CASSANDRA_V3,1800,900,0.191397018,9404.535236802905,sequential Python Cassandra loader; not official ingestion throughput

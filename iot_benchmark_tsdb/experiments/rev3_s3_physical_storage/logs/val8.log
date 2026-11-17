@@ -1,0 +1,21 @@
+
+===== 2026-11-10T17:48:32.136094 ['/home/hudson/Documents/schemalens_cassandra/venv/bin/python', '-u', 's3_physical.py', 'validate', '--factor', '8']
+PASS Q2_W01 3/3 (oracle + trace identical to S2)
+PASS Q7_W01 3/3 (oracle + trace identical to S2)
+PASS Q9_W01 3/3 (oracle + trace identical to S2)
+PASS Q12_W01 3/3 (oracle + trace identical to S2)
+PASS Q2_W07 3/3 (oracle + trace identical to S2)
+PASS Q7_W07 3/3 (oracle + trace identical to S2)
+PASS Q9_W07 3/3 (oracle + trace identical to S2)
+PASS Q12_W07 3/3 (oracle + trace identical to S2)
+PASS Q2_W14 3/3 (oracle + trace identical to S2)
+PASS Q7_W14 3/3 (oracle + trace identical to S2)
+PASS Q9_W14 3/3 (oracle + trace identical to S2)
+PASS Q12_W14 3/3 (oracle + trace identical to S2)
+PASS Q2_W21 3/3 (oracle + trace identical to S2)
+PASS Q7_W21 3/3 (oracle + trace identical to S2)
+PASS Q9_W21 3/3 (oracle + trace identical to S2)
+PASS Q12_W21 3/3 (oracle + trace identical to S2)
+PASS Q5_CONTROL 3/3 (oracle + trace identical to S2)
+PASS Q8_CONTROL 3/3 (oracle + trace identical to S2)
+PASS ALL 8x: 54/54 semantic validations, traces identical to S2.

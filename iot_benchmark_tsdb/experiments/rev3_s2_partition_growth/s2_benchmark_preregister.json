@@ -1,0 +1,55 @@
+{
+  "cases_per_factor": 18,
+  "expected_total_observations": 12960,
+  "factors": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "generation_manifest_sha256": "6e7ef76b9115d5ddb8d9eb3f52d9e2a890b1e51bb387ff1f92fea6006b58aad8",
+  "inputs": {
+    "1": {
+      "dataset_sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+      "materialization_manifest_sha256": "41612e693e2f20c4cf45df3be120373e2ee180dcc68d83cc04bfc8581e35f98b",
+      "semantic_validation_sha256": "8752ca561f9eefe84b0eac2e1130ac992efd5a7cd6d34de947527d822a7a67e6"
+    },
+    "2": {
+      "dataset_sha256": "7389fcdf0504676be94fd557f057a46f8c210f97db34386c59d8e62f7ba41cf3",
+      "materialization_manifest_sha256": "86cad5c0a6127df6971e5a81811afbfd380a1f3d3edb933237d2b7613310b357",
+      "semantic_validation_sha256": "89e8d326eba60207ba173c1a5a81f95c544bc4cb6823564344a939e623d3ad45"
+    },
+    "4": {
+      "dataset_sha256": "b5aa8eb7570d8100e211a5eaa0131f189428c993e9695148c5009176ab49ac37",
+      "materialization_manifest_sha256": "d731dc44e314dacd50f56eadf4b00bd4c3e877a0c985defc7f095e9113792c0e",
+      "semantic_validation_sha256": "415d1e238bd15529d90d19318ab3bacc11774f70e386c12ba4d1b3f8b4c3dbba"
+    },
+    "8": {
+      "dataset_sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91",
+      "materialization_manifest_sha256": "4988ec0eea24b091c3854f1f75a748681bec75f10297311c43265e3c63e3cd40",
+      "semantic_validation_sha256": "dd38a4840bd8dcc4bc78d0d245b898fc34d672769a94c6d4fdd3562130c71e70"
+    }
+  },
+  "interpretation": "synthetic densification of Java-derived source; not independent official IoT Benchmark replay",
+  "labels": [
+    "BASELINE_Q8_OPTIMIZED",
+    "R3H_38939db96444",
+    "R3H_d2ea1974de53"
+  ],
+  "measurement_seed": 20261127,
+  "method": "POST_AB_EXPLORATORY_SYNTHETIC_FIXED_HISTORY_DENSITY_SWEEP",
+  "no_ddl_dml_flush_or_compaction": true,
+  "original_B_experiment": "/home/hudson/Documents/schemalens_cassandra/schemalens_rev3_new_java_B_20261105_193618/java_work/runs/v3_20261105T223620Z_pid3665162/schemalens_rev3_ts5_contract_validated_B",
+  "original_B_workspace": "/home/hudson/Documents/schemalens_cassandra/schemalens_rev3_new_java_B_20261105_193618",
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "randomization": "shuffle cases and variant order on every round; alternate variant reversal",
+  "rounds": 60,
+  "runner_sha256": "c5aa668f04bf79a5d6e52f7f3c5f5ba58575a322d70308e6dbf55f659eb4f11b",
+  "s2_draft_sha256": "86bff504c50567952af0f10fd87e1c0d93103b90f25d929e70edebcf75ae3f54",
+  "source_s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "status": "S2_BENCHMARK_PREREGISTERED_BEFORE_TIMING",
+  "timing": "perf_counter_ns of client dispatch, full fetch and postprocessing; oracle comparison excluded",
+  "warmups": 5
+}

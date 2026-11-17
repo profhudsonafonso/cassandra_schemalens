@@ -1,0 +1,51 @@
+{
+  "cache_cleared": false,
+  "compaction_before": {
+    "active": false,
+    "pending": 0,
+    "raw": "pending tasks: 0\n\n"
+  },
+  "factor": 4,
+  "flushed": [
+    {
+      "keyspace": "sl_s3_r1_d4_ref",
+      "seconds": 0.571,
+      "utc": "2026-11-10T20:47:44+00:00"
+    },
+    {
+      "keyspace": "sl_s3_r1_d4_u",
+      "seconds": 0.698,
+      "utc": "2026-11-10T20:47:45+00:00"
+    },
+    {
+      "keyspace": "sl_s3_r1_d4_d",
+      "seconds": 0.965,
+      "utc": "2026-11-10T20:47:46+00:00"
+    }
+  ],
+  "manual_compaction": false,
+  "quiescence": {
+    "polls": [
+      {
+        "active": false,
+        "pending": 0,
+        "t": "2026-11-10T20:47:46+00:00"
+      },
+      {
+        "active": false,
+        "pending": 0,
+        "t": "2026-11-10T20:47:52+00:00"
+      },
+      {
+        "active": false,
+        "pending": 0,
+        "t": "2026-11-10T20:47:57+00:00"
+      }
+    ],
+    "seconds": 11.9,
+    "status": "QUIESCENT"
+  },
+  "status": "PASS",
+  "storage_gate": "PASS",
+  "storage_summary_sha256": "7c1ecd88e33e8c9de7911da5c9b13fc2f49e39794d33de9cb43283ee81790150"
+}

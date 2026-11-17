@@ -1,0 +1,11 @@
+test_date_bin_uses_epoch_alignment_not_query_start (test_official_bridge_v3.OfficialBridgeV3Tests.test_date_bin_uses_epoch_alignment_not_query_start) ... ok
+test_latest_is_global_and_ignores_query_range (test_official_bridge_v3.OfficialBridgeV3Tests.test_latest_is_global_and_ignores_query_range) ... ok
+test_native_capture_validates_full_set_and_projected_operands (test_official_bridge_v3.OfficialBridgeV3Tests.test_native_capture_validates_full_set_and_projected_operands) ... ok
+test_no_silent_external_device (test_official_bridge_v3.OfficialBridgeV3Tests.test_no_silent_external_device) ... ok
+test_set_ops_use_only_projected_field_values (test_official_bridge_v3.OfficialBridgeV3Tests.test_set_ops_use_only_projected_field_values) ... ok
+test_value_filter_uses_AND_on_wide_rows (test_official_bridge_v3.OfficialBridgeV3Tests.test_value_filter_uses_AND_on_wide_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

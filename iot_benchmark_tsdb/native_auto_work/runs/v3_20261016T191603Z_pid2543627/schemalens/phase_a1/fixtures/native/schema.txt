@@ -1,0 +1,6 @@
+device_0 s0 4
+device_0 s1 4
+device_1 s0 4
+device_1 s1 4
+device_2 s0 4
+device_2 s1 4

@@ -1,0 +1,21 @@
+{
+  "stage": 7,
+  "status": "ANALYTIC_PROXIES_ONLY",
+  "scope": "TS_ONLY_IOT_CASSANDRA",
+  "C0_C9_used": false,
+  "benchmark_measured": false,
+  "inputs_sha256": {
+    "outputs/stage4/10_candidate_specs.json": "6aaeb68989f2b047843cdbd8bcc3faeb1afd59deb150a60714d7623c69e65812",
+    "outputs/stage5/15_query_plans.json": "f39aba0804d7a6031da0c7fc319b551e675b3de2f414aecf8c6ae7f3ee736f80",
+    "outputs/stage6/18_write_plans.json": "1a639ffc15121e8800f47da14ee62c0a3bbf2370b912e23d2f61f8a4e1794f4f",
+    "phase_a1/outputs/normalized_double_readings.csv": "ec8c2d88882e24cb71a8b0856d423f28bbb1ea96c3edb56f4fa7ba88b4ee11bd",
+    "config/pipeline_policy.json": "99753c789715029ac6c4f5a31e426017f5f45ca3bf2369edc3aeb5d926b820f9"
+  },
+  "limitations": [
+    "QUERY_SEED not replayed in A1 fixture; official native parameter-object capture utility is supplied separately, not wired into Stage8",
+    "Live Cassandra results unavailable until user performs Stage9"
+  ],
+  "estimated_physical_candidates": 6,
+  "read_proxies": 30,
+  "no_runtime_or_latency_observations_used": true
+}

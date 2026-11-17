@@ -1,0 +1,653 @@
+[
+  {
+    "analytic_cost": {
+      "read": 13.102291666666666,
+      "storage": 115200,
+      "write": 1800
+    },
+    "analytical_tie_note": "Same estimated features can yield a Pareto tie; do not use measured p95 to break it",
+    "candidates": [
+      "ts0_iot_raw"
+    ],
+    "canonical_source": "ts0_iot_raw",
+    "deployment_id": "R2H_6355f4e57096",
+    "families": [
+      "TS0"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.97479464,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q8__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+    "selection_reason": "STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 13.101770833333333,
+      "storage": 115584,
+      "write": 1806
+    },
+    "analytical_tie_note": "Same estimated features can yield a Pareto tie; do not use measured p95 to break it",
+    "candidates": [
+      "ts0_iot_raw",
+      "ts4_iot_latest"
+    ],
+    "canonical_source": "ts0_iot_raw",
+    "deployment_id": "R2H_d34a5f12226d",
+    "families": [
+      "TS0",
+      "TS4"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.97588138,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q1__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q10__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q11__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q12__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q2__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q3__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q4__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q5__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q6__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q7__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts4_iot_latest",
+        "family": "TS4",
+        "plan_id": "Q8__ts4_iot_latest",
+        "reason": "precomputed_latest_snapshot; concurrent updates not supported",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts0_iot_raw",
+        "family": "TS0",
+        "plan_id": "Q9__ts0_iot_raw",
+        "reason": "direct metric-point lookup",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 6.433177083333334,
+      "storage": 79200,
+      "write": 900
+    },
+    "analytical_tie_note": "Same estimated features can yield a Pareto tie; do not use measured p95 to break it",
+    "candidates": [
+      "ts2_iot_wide_unbucketed"
+    ],
+    "canonical_source": "ts2_iot_wide_unbucketed",
+    "deployment_id": "R2H_e72ef4d8529d",
+    "families": [
+      "TS2"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.0,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q11__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q4__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q5__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q6__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q7__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q8__ts2_iot_wide_unbucketed",
+        "reason": "descending sparse-null-aware latest scan",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+    "selection_reason": "PARETO_FRONT",
+    "selection_status": "PARETO",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 6.433177083333334,
+      "storage": 79584,
+      "write": 906
+    },
+    "analytical_tie_note": "Same estimated features can yield a Pareto tie; do not use measured p95 to break it",
+    "candidates": [
+      "ts2_iot_wide_unbucketed",
+      "ts4_iot_latest"
+    ],
+    "canonical_source": "ts2_iot_wide_unbucketed",
+    "deployment_id": "R2H_5552114bc924",
+    "families": [
+      "TS2",
+      "TS4"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.00115152,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q11__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q4__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q5__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q6__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q7__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q8__ts2_iot_wide_unbucketed",
+        "reason": "descending sparse-null-aware latest scan",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide_unbucketed",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide_unbucketed",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 6.433177083333334,
+      "storage": 79200,
+      "write": 900
+    },
+    "analytical_tie_note": "Same estimated features can yield a Pareto tie; do not use measured p95 to break it",
+    "candidates": [
+      "ts2_iot_wide"
+    ],
+    "canonical_source": "ts2_iot_wide",
+    "deployment_id": "R2H_bdc993acdde3",
+    "families": [
+      "TS2"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.0,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q11__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q4__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q5__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q6__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q7__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q8__ts2_iot_wide",
+        "reason": "descending sparse-null-aware latest scan",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+    "selection_reason": "PARETO_FRONT",
+    "selection_status": "PARETO",
+    "semantically_complete_offline": true
+  },
+  {
+    "analytic_cost": {
+      "read": 6.433177083333334,
+      "storage": 79584,
+      "write": 906
+    },
+    "analytical_tie_note": "Same estimated features can yield a Pareto tie; do not use measured p95 to break it",
+    "candidates": [
+      "ts2_iot_wide",
+      "ts4_iot_latest"
+    ],
+    "canonical_source": "ts2_iot_wide",
+    "deployment_id": "R2H_a09a8eb708d8",
+    "families": [
+      "TS2",
+      "TS4"
+    ],
+    "measured_performance_used": false,
+    "preselection_score": 1.00115152,
+    "query_routes": {
+      "Q1": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q1__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q10": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q10__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q11": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q11__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q12": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q12__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q2": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q2__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q3": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q3__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q4": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q4__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q5": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q5__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q6": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q6__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q7": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q7__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      },
+      "Q8": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q8__ts2_iot_wide",
+        "reason": "descending sparse-null-aware latest scan",
+        "route_status": "DIRECT"
+      },
+      "Q9": {
+        "candidate_id": "ts2_iot_wide",
+        "family": "TS2",
+        "plan_id": "Q9__ts2_iot_wide",
+        "reason": "canonical point reconstruction",
+        "route_status": "DIRECT"
+      }
+    },
+    "selection_policy_revision": "V4_AUTO_CANONICAL_CROSS_QUERY_REV2",
+    "selection_status": "DOMINATED_ANALYTICALLY",
+    "semantically_complete_offline": true
+  }
+]

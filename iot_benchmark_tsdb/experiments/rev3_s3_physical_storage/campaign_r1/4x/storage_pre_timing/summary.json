@@ -1,0 +1,90 @@
+{
+  "captured_utc": "2026-11-10T20:51:28+00:00",
+  "compaction_active": false,
+  "compaction_pending": 0,
+  "container": "schemalens_iot_cassandra_pipeline-cassandra-1",
+  "factor": 4,
+  "gate": "PASS",
+  "gate_required": true,
+  "tag": "pre_timing",
+  "variants": {
+    "BASELINE_Q8_OPTIMIZED": {
+      "gate": "PASS",
+      "keyspace": "sl_s3_r1_d4_ref",
+      "metrics": {
+        "bloom_bytes": 24,
+        "compression_ratio": 0.4334995457140418,
+        "data_db_bytes": 1589293,
+        "data_db_files": 1,
+        "local_read_count": 39,
+        "local_write_count": 108000,
+        "memtable_bytes": 0,
+        "memtable_cells": 0,
+        "memtable_switch_count": 1,
+        "offheap_bytes": 1823,
+        "partition_max_bytes": 454826,
+        "partition_mean_bytes": 454826,
+        "partition_min_bytes": 379023,
+        "partitions_estimate": 9,
+        "pending_flushes": 0,
+        "space_live_bytes": 1598246,
+        "space_total_bytes": 1598246,
+        "sstable_count": 1
+      },
+      "problems": [],
+      "table": "iot_reference_table"
+    },
+    "R3H_38939db96444": {
+      "gate": "PASS",
+      "keyspace": "sl_s3_r1_d4_u",
+      "metrics": {
+        "bloom_bytes": 24,
+        "compression_ratio": 0.43354143652588895,
+        "data_db_bytes": 1589072,
+        "data_db_files": 1,
+        "local_read_count": 39,
+        "local_write_count": 108000,
+        "memtable_bytes": 0,
+        "memtable_cells": 0,
+        "memtable_switch_count": 1,
+        "offheap_bytes": 1823,
+        "partition_max_bytes": 454826,
+        "partition_mean_bytes": 454826,
+        "partition_min_bytes": 379023,
+        "partitions_estimate": 9,
+        "pending_flushes": 0,
+        "space_live_bytes": 1598026,
+        "space_total_bytes": 1598026,
+        "sstable_count": 1
+      },
+      "problems": [],
+      "table": "ts2_iot_wide_unbucketed"
+    },
+    "R3H_d2ea1974de53": {
+      "gate": "PASS",
+      "keyspace": "sl_s3_r1_d4_d",
+      "metrics": {
+        "bloom_bytes": 248,
+        "compression_ratio": 0.4413940152180594,
+        "data_db_bytes": 1620082,
+        "data_db_files": 1,
+        "local_read_count": 237,
+        "local_write_count": 108000,
+        "memtable_bytes": 0,
+        "memtable_cells": 0,
+        "memtable_switch_count": 1,
+        "offheap_bytes": 2090,
+        "partition_max_bytes": 20501,
+        "partition_mean_bytes": 20339,
+        "partition_min_bytes": 14238,
+        "partitions_estimate": 189,
+        "pending_flushes": 0,
+        "space_live_bytes": 1631575,
+        "space_total_bytes": 1631575,
+        "sstable_count": 1
+      },
+      "problems": [],
+      "table": "ts2_iot_wide"
+    }
+  }
+}

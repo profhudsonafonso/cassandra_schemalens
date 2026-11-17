@@ -1,0 +1,52 @@
+{
+  "amendments": {
+    "EMENDA_01_E1_por_fator.md": "cec0a21558858cd1ef1cf9ff8e62cade765500e5486add7d1fc322b718310eee",
+    "EMENDA_02_medicao_interrompida.md": "52820bbe6c26b1d33f815e5f3778648dfe36b982c7328f12255fd84a236e6e27"
+  },
+  "arms": [
+    "mem:REF",
+    "mem:TS2-U",
+    "mem:TS2-D",
+    "sst:REF",
+    "sst:TS2-U",
+    "sst:TS2-D"
+  ],
+  "campaign": "e1r3",
+  "core_sha256": "e347cad58880e6e7870502420f71839f331ddc05cc60b189b438e5c243919398",
+  "created_utc": "2026-11-11T22:33:36+00:00",
+  "dataset": "d4",
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "d4": {
+      "dataset_sha256": "b5aa8eb7570d8100e211a5eaa0131f189428c993e9695148c5009176ab49ac37",
+      "flush": "100663fea1cf18e05fac303bc727cf695bdde8cb4566bcbdbc8b175a1c478982",
+      "materialization": "794aeaa4e787ea52858e54f5b2bcb7156f6c28beef354cd4c84902440054e844",
+      "storage_post_flush": "3d7e703f35a42c06f3bfdf2ada37a7bf160538087089ca86694adbcb83680237",
+      "validation": "164351387b82815e50516c5aae9aa988e35d68ad1785d206871491dc585acaa1"
+    }
+  },
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "randomization": "per round: shuffle cases; per case shuffle arms, reverse on even rounds; Random(seed + dataset index)",
+  "rev4": null,
+  "s3_runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "spec": {
+    "conds": [
+      "mem",
+      "sst"
+    ],
+    "datasets": [
+      "d1",
+      "d2",
+      "d4",
+      "d8"
+    ],
+    "per_dataset": true,
+    "rounds": 60,
+    "seed": 20261223,
+    "stage": "E1"
+  },
+  "status": "F2_PREREGISTERED_BEFORE_TIMING",
+  "warmups": 5
+}

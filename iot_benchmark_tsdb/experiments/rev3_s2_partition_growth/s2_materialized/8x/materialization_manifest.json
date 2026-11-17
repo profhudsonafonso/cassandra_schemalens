@@ -1,0 +1,40 @@
+{
+  "client_side_load_not_throughput": true,
+  "dataset_sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91",
+  "factor": 8,
+  "keyspaces": {
+    "BASELINE_Q8_OPTIMIZED": "sl_s2_d8_ref",
+    "R3H_38939db96444": "sl_s2_d8_u",
+    "R3H_d2ea1974de53": "sl_s2_d8_d"
+  },
+  "loads": [
+    {
+      "keyspace": "sl_s2_d8_ref",
+      "load_scope": "Python sequential loader; not official ingestion throughput",
+      "logical_cells": 432000,
+      "physical_write_operations": 216000,
+      "sequential_load_seconds": 65.720211,
+      "variant": "BASELINE_Q8_OPTIMIZED"
+    },
+    {
+      "keyspace": "sl_s2_d8_u",
+      "load_scope": "Python sequential loader; not official ingestion throughput",
+      "logical_cells": 432000,
+      "physical_write_operations": 216000,
+      "sequential_load_seconds": 62.272597,
+      "variant": "R3H_38939db96444"
+    },
+    {
+      "keyspace": "sl_s2_d8_d",
+      "load_scope": "Python sequential loader; not official ingestion throughput",
+      "logical_cells": 432000,
+      "physical_write_operations": 216000,
+      "sequential_load_seconds": 57.684876,
+      "variant": "R3H_d2ea1974de53"
+    }
+  ],
+  "no_official_java_data_generation": true,
+  "no_prior_keyspace_modified": true,
+  "original_B_selection_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "status": "S2_MATERIALIZATION_COMPLETE_NOT_BENCHMARKED"
+}

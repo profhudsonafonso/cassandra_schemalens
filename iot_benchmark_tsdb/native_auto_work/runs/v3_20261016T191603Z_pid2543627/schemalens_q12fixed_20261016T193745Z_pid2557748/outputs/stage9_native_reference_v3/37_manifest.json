@@ -1,0 +1,29 @@
+{
+  "status": "NATIVE_REFERENCE_POST_FREEZE",
+  "deployment_id": "REF_NATIVE_IOT_TABLE_CASSANDRA_V3",
+  "official_iot_benchmark_score": false,
+  "official_cassandra_schema": false,
+  "Cassandra_used": true,
+  "baseline_part_of_hbench": false,
+  "baseline_ddl": "CREATE TABLE IF NOT EXISTS iot_reference_table (device_id text, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id), timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);",
+  "native_query_sql_replay": false,
+  "mixed_workload_frequency_replay": false,
+  "semantic_scope": "JAVA_QUERY_OBJECT_SAMPLE_NOT_SQL_REPLAY",
+  "keyspace": "sl_iot_ref_native_v3",
+  "hbench_sha256": "2c4f46c70fc272046b42d1c7a8e6fc7c20c4ca9d8b63cef707ff7f89fa3fa6eb",
+  "source_rows_sha256": "ff3a2e3fa38d933e35516ad11898f2c58d7278ac591fbc29f0a12649050ac65b",
+  "query_instances_sha256": "94ddf757690ff9aab280871a353c94252e7b28ee93c98ef4b67726c7cda3408c",
+  "capture_sha256": "e5da8bb7382edbb6e50acc010fe553473758d615759a179641bfd74a5de50aeb",
+  "native_capture_file_verified": false,
+  "correctness": "PASS_ALL_12_QUERIES",
+  "row_count": 900,
+  "logical_metric_cells": 1800,
+  "measurement_rounds": 20,
+  "warmup": 5,
+  "limitations": [
+    "Native IoT Benchmark query-object SAMPLE, not the Java query order/frequency or SQL replay",
+    "No official Cassandra driver or official IoT Benchmark score",
+    "Client-side Python postprocessing, fixed query order; caches/order bias possible",
+    "DOUBLE/ms/homogeneous sensors only; sequential Python load is not throughput"
+  ]
+}

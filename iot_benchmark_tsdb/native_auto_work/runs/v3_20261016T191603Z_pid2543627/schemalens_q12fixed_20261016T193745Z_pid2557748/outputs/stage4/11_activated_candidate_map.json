@@ -1,0 +1,226 @@
+[
+  {
+    "query_id": "Q1",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q1",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q1",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q2",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q3",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q4",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q5",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q6",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q7",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q7",
+    "family": "TS5",
+    "candidate_id": "ts5_iot_rollup",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q8",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q8",
+    "family": "TS4",
+    "candidate_id": "ts4_iot_latest",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q9",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q10",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q11",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q11",
+    "family": "TS5",
+    "candidate_id": "ts5_iot_rollup",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS0",
+    "candidate_id": "ts0_iot_raw",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS1",
+    "candidate_id": "ts1_iot_bucket",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  },
+  {
+    "query_id": "Q12",
+    "family": "TS2",
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "state": "PHYSICAL_CANDIDATE",
+    "explanation": "Activated; query coverage not yet validated"
+  }
+]

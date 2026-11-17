@@ -1,0 +1,26 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "estimated_bytes_proxy": 115200,
+    "estimated_rows": 1800,
+    "units": "analytical uncompressed bytes proxy, not disk bytes"
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "estimated_bytes_proxy": 79200,
+    "estimated_rows": 900,
+    "units": "analytical uncompressed bytes proxy, not disk bytes"
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "estimated_bytes_proxy": 79200,
+    "estimated_rows": 900,
+    "units": "analytical uncompressed bytes proxy, not disk bytes"
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "estimated_bytes_proxy": 384,
+    "estimated_rows": 6,
+    "units": "analytical uncompressed bytes proxy, not disk bytes"
+  }
+]

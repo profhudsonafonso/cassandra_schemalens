@@ -1,0 +1,54 @@
+{
+  "status": "A1_ANALYTICAL_AND_REFERENCE_ONLY",
+  "database_target": "Cassandra",
+  "dataset_origin": "native format: fixture unless --native-data points to genuine IoT Benchmark generation",
+  "devices": [
+    "d_0",
+    "d_1",
+    "d_2"
+  ],
+  "sensors": [
+    "s_0",
+    "s_1"
+  ],
+  "metric_cells": 1800,
+  "batch_headers": 180,
+  "queries": 12,
+  "physical_blueprints": 5,
+  "activation_occurrences": 26,
+  "schema_source_sha256": {
+    "schema.txt": "98f9e08350577929819549483dfc03c972347c5d3e48344ed4477ad88c96e789",
+    "d_0/BigBatch_0.csv": "90d0cc87718e92af18d5bc1cd5e2c6c8a59fbbb81e6d8c4a546b1d1d9f99a97f",
+    "d_1/BigBatch_0.csv": "73312bb89ae6bb4073e53fa22fb47aa85ec14394dcc902109a453e59fa385354",
+    "d_2/BigBatch_0.csv": "f02c3db81abd8a50df7e941e30bcb54c320fae3af32184ac97c0af138c0e420b"
+  },
+  "rules_sha256": {
+    "ts_rules_sha256": "8c150807b56f306670902be98967966c50de76394310cc681fca6893f50e8afd",
+    "modifier_rules_sha256": "a8d202ce751d4b8d67d650570dcabe619d7ebec024040d521d0ebc855b0be545",
+    "ts_catalog_sha256": "2302870f029e69761baefdbacdeae3db8bb619fb1e76c5e00abf68ea2e732ebd",
+    "base_rule_engine_sha256": "cb04df0ae46c8856068cbcf0d6690a980aa8c7c1829d13c9094d2ce3e18cc3be"
+  },
+  "config_sha256": "bc6a26e6727f96cc24b08e3387d7d2462a6c97ff6d4689415a2163c4cfcb4abb",
+  "parameter_capture_sha256": "e5da8bb7382edbb6e50acc010fe553473758d615759a179641bfd74a5de50aeb",
+  "java_generator_parameter_objects_sampled": true,
+  "inputs_sha256": {
+    "scenario.json": "ea41284f8a13848d2529c484fd6fba8466f97e660277ef3b3100e2fcffbed4af",
+    "operations.json": "cead501c6953fd32b4eff63f34cb9bbf1ae27290061b8941e16399b81cbccd70"
+  },
+  "native_query_seed_replayed": false,
+  "iot_benchmark_sql_verified": false,
+  "C0_C9_used": false,
+  "physical_coverage_verified": false,
+  "HBench_selected": false,
+  "Cassandra_live_execution": false,
+  "benchmark_measured": false,
+  "stage4_9_legacy_integrated": false,
+  "blocking_issues": [
+    "Rebuild Stage4 candidate generator for generic IoT sensors (CPU-only ten usage_* restriction)",
+    "Implement general Stage5 QueryPlans incl Q12 client set operations",
+    "Implement Stage6 exact WritePlans incl TS4/latest and TS5 rollup",
+    "Adapt Stage7+8 cost model and coverage to generic metrics and Q1-Q12",
+    "Stage9 Cassandra driver currently only reads native TSBS CPU pseudoCSV",
+    "Replay actual benchmark query parameter sequence and verify SQL semantics before formal evaluation"
+  ]
+}

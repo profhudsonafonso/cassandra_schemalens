@@ -1,0 +1,4 @@
+deployment_id,canonical_source,families,selection_reason,read_proxy,storage_proxy,write_proxy,score
+R2H_e72ef4d8529d,ts2_iot_wide_unbucketed,TS2,PARETO_FRONT,6.433177,79200,900,1.0
+R2H_bdc993acdde3,ts2_iot_wide,TS2,PARETO_FRONT,6.433177,79200,900,1.0
+R2H_6355f4e57096,ts0_iot_raw,TS0,STRUCTURAL_CANONICAL_DIVERSITY_SAFEGUARD,13.102292,115200,1800,1.97479464

@@ -1,0 +1,8 @@
+{
+  "keyspace": "sl_s2_d2_ref",
+  "load_scope": "Python sequential loader; not official ingestion throughput",
+  "logical_cells": 108000,
+  "physical_write_operations": 54000,
+  "sequential_load_seconds": 13.658867,
+  "variant": "BASELINE_Q8_OPTIMIZED"
+}

@@ -1,0 +1,31 @@
+{
+  "flushed": [
+    "sl_f2_e1r3_d1_sst_ref",
+    "sl_f2_e1r3_d1_sst_u",
+    "sl_f2_e1r3_d1_sst_d"
+  ],
+  "manual_compaction": false,
+  "quiescence": {
+    "polls": [
+      {
+        "active": false,
+        "pending": 0,
+        "t": "2026-11-11T22:21:56+00:00"
+      },
+      {
+        "active": false,
+        "pending": 0,
+        "t": "2026-11-11T22:22:01+00:00"
+      },
+      {
+        "active": false,
+        "pending": 0,
+        "t": "2026-11-11T22:22:07+00:00"
+      }
+    ],
+    "seconds": 12.1,
+    "status": "QUIESCENT"
+  },
+  "status": "PASS",
+  "storage_gate": "PASS"
+}

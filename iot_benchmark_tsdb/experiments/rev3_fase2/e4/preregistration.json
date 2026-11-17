@@ -1,0 +1,57 @@
+{
+  "amendments": {
+    "EMENDA_01_E1_por_fator.md": "cec0a21558858cd1ef1cf9ff8e62cade765500e5486add7d1fc322b718310eee",
+    "EMENDA_02_medicao_interrompida.md": "52820bbe6c26b1d33f815e5f3778648dfe36b982c7328f12255fd84a236e6e27",
+    "EMENDA_03_preregistro_campanhas_unicas.md": "95e78640a4dfaad2f88b99f930a0643fec6bd36f3fa4de841a5456c6f0e4d2b0"
+  },
+  "arms": [
+    "sst:REF",
+    "sst:TS2-U",
+    "sst:TS2-D"
+  ],
+  "campaign": "e4",
+  "core_sha256": "f7e3433079d5c46b7c8657e7086a28e0885691d96013c9cd59f15f3b29418b64",
+  "created_utc": "2026-11-11T23:26:29+00:00",
+  "dataset": null,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "n18": {
+      "dataset_sha256": "22558f21cc643f7b8997243409b11e070a451bc32a48e104facdecd18444a89d",
+      "flush": "ff4666aea852273574b03d1abfb17219331c3cc7565eefdb4ba79c462187c3bf",
+      "materialization": "1708265c827b4b04b6cebd8395a5776f8bebddd8e55e00384e61985cc4acaf15",
+      "storage_post_flush": "985b5e73917ed90c71eb770e8de6ec051d2a0a9e4a85bc2f4a1490eaee11302b",
+      "validation": "e0fb4d5bb27b4b871b7f3cb99502c1451d428f569b1ec4efe0140f0ed5253676"
+    },
+    "n3": {
+      "dataset_sha256": "f3deb5d973724fc8b938c7eead2e9e4e9652f745ccc954924b40a660102a2665",
+      "flush": "e27bc1d0a9aff7345348a6861b501369e297cc89470cf92daee974cbfdc8200b",
+      "materialization": "50e20c267a858381311409a2703022d919738a6f90eb9452778a9841fc36a281",
+      "storage_post_flush": "ebb86cf7920204aa8c73804640d4246aea765c977072029cb153cbe83959d42c",
+      "validation": "0a2f5d12ed43b72a277d8ab19c10d8338ef27c608f5fa6f52667cf4380107c53"
+    }
+  },
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "randomization": "per round: shuffle cases; per case shuffle arms, reverse on even rounds; Random(seed + dataset index)",
+  "rev4": {
+    "frozen_sha256": "dc4b90f615d4f88e4885cd784b6bb6c568d2d7eec2bd1bc88706b15b6e99a81e",
+    "predictions_sha256": "7304de061d0246c21208c4acbe1c18e48483e9618f1ce32a49601db306ad34b2"
+  },
+  "s3_runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "spec": {
+    "conds": [
+      "sst"
+    ],
+    "datasets": [
+      "n3",
+      "n18"
+    ],
+    "rev4": true,
+    "rounds": 60,
+    "seed": 20261401,
+    "stage": "E4"
+  },
+  "status": "F2_PREREGISTERED_BEFORE_TIMING",
+  "warmups": 5
+}

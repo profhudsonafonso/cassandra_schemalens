@@ -1,0 +1,13 @@
+2026-11-11 17:44:09,477 INFO  App:41 - Initial Heap Size: 1065353216 bytes, Max Heap Size: 16752050176 bytes. 
+2026-11-11 17:44:09,485 INFO  ConfigDescriptor:1071 - Init SensorTypes: BOOLEAN:INT32:INT64:FLOAT:DOUBLE:TEXT:STRING:BLOB:TIMESTAMP:DATE:OBJECT= 0:0:0:0:1:0:0:0:0:0:0
+2026-11-11 17:44:09,553 INFO  CSVSchemaWriter:66 - Finish record schema.
+2026-11-11 17:44:09,572 INFO  GenerateDataWorkLoad:187 - Start Generating WorkLoad
+2026-11-11 17:44:09,589 INFO  GenerateDataWorkLoad:243 - Finish 0.0 % WorkLoad Buffer
+2026-11-11 17:44:09,590 INFO  GenerateDataWorkLoad:250 - Finish Generating WorkLoad
+2026-11-11 17:44:09,807 INFO  GenerateDataMode:43 - Data Location: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/data/n18/native_data
+2026-11-11 17:44:09,807 INFO  GenerateDataMode:44 - Schema Location: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/data/n18/native_data/schema.txt
+2026-11-11 17:44:09,807 INFO  GenerateDataMode:45 - Generate Info Location: /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/data/n18/native_data/info.txt
+
+----------------------------------------------------------------------------SQL Statements Example---------------------------------------------------------------------
+Operation                          SQL                                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------

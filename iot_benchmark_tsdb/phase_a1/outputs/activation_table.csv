@@ -1,0 +1,13 @@
+query_id,operation_name,ts_families,modifiers,coverage
+Q1,Precise point query,TS0|TS2,M3,NOT_VALIDATED
+Q2,Time range query,TS0|TS1|TS2,M1|M3,NOT_VALIDATED
+Q3,Time range with value filter,TS0|TS1|TS2,M1|M3,NOT_VALIDATED
+Q4,Aggregation with time filter,TS0,M3,NOT_VALIDATED
+Q5,Aggregation with value filter,TS0,M3,NOT_VALIDATED
+Q6,Aggregation with time and value filters,TS0,M3,NOT_VALIDATED
+Q7,Time-grouped aggregation,TS0|TS5,M1|M3,NOT_VALIDATED
+Q8,Latest point per selected device,TS0|TS4,M3,NOT_VALIDATED
+Q9,Descending time-range query,TS0|TS1|TS2,M1|M3,NOT_VALIDATED
+Q10,Descending range with value filter,TS0|TS1|TS2,M1|M3,NOT_VALIDATED
+Q11,Descending time-grouped aggregation,TS0|TS5,M1|M3,NOT_VALIDATED
+Q12,Set operation over time-range subqueries (table only),TS0|TS1|TS2,M1|M3,NOT_VALIDATED

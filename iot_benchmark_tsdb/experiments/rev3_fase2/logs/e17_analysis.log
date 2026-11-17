@@ -1,0 +1,5 @@
+WROTE /home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/experiments/rev3_fase2/analysis/e17_summary.json
+Teste confirmatório da regra T5 em e9r2: 0 de 4 hipóteses atendidas (H5.1 ✘, H5.2 ✘, H5.3 ✘, H5.4 ✘).
+T5: decisão firme em 61 de 80 casos, acerto firme 47/61, erros graves 7; arrependimento p90 0.101 (sempre U 0.075).
+Réplica E9 × e9r2: mesmo vencedor em 59 de 80 casos temporais.
+Anomalia P1 janela de 1 dia: mediana D/U em e9r2 = 1.016 → não reproduzida (critério EMENDA_05: ≤1,10 não; ≥1,30 sim).

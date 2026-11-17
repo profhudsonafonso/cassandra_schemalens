@@ -1,0 +1,243 @@
+[
+  {
+    "query_id": "Q1",
+    "name": "Precise point query",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q2",
+    "name": "Time range query",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q3",
+    "name": "Time range with value filter",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q4",
+    "name": "Aggregation with time filter",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": "count",
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q5",
+    "name": "Aggregation with value filter",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": "count",
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q6",
+    "name": "Aggregation with time and value filters",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": "count",
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q7",
+    "name": "Time-grouped aggregation",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": "count",
+    "value_lower": null,
+    "group_by_ms": 20000,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q8",
+    "name": "Latest point per selected device",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q9",
+    "name": "Descending time-range query",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q10",
+    "name": "Descending range with value filter",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": 10.0,
+    "group_by_ms": null,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q11",
+    "name": "Descending time-grouped aggregation",
+    "devices": [
+      "device_0"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": "count",
+    "value_lower": null,
+    "group_by_ms": 20000,
+    "set_op": null,
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  },
+  {
+    "query_id": "Q12",
+    "name": "Set operation over time-range subqueries (table only)",
+    "devices": [
+      "device_0",
+      "device_1"
+    ],
+    "sensors": [
+      "s0",
+      "s1"
+    ],
+    "start_ms": 1704067200000,
+    "end_ms_exclusive": 1704067205001,
+    "point_ms": 1704067200000,
+    "aggregation": null,
+    "value_lower": null,
+    "group_by_ms": null,
+    "set_op": "union",
+    "parameter_origin": "deterministic illustrative pilot; NOT official QUERY_SEED sequence",
+    "correctness_status": "reference-evaluable, not live Cassandra-validated"
+  }
+]

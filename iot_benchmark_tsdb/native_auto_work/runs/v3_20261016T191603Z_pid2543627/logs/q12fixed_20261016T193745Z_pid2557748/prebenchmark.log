@@ -1,0 +1,77 @@
+COMMAND: ['bash', 'scripts/run_native_prebenchmark.sh', '/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/native_data', '/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/native_queries_q12fixed_20261016T193745Z_pid2557748.jsonl', '/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/java_config/config.properties', '500000']
+A1 completed: 1800 metric cells, 12 query classes, 5 Cassandra DDL blueprints
+No HBench, no measured benchmark, all coverage NOT_VALIDATED
+JAVA QUERY-OBJECT SAMPLE; not native SQL or frequency/sequence replay
+Q1 : TS0,TS2        modifiers=M3
+Q2 : TS0,TS1,TS2    modifiers=M1,M3
+Q3 : TS0,TS1,TS2    modifiers=M1,M3
+Q4 : TS0            modifiers=M3
+Q5 : TS0            modifiers=M3
+Q6 : TS0            modifiers=M3
+Q7 : TS0,TS5        modifiers=M1,M3
+Q8 : TS0,TS4        modifiers=M3
+Q9 : TS0,TS1,TS2    modifiers=M1,M3
+Q10: TS0,TS1,TS2    modifiers=M1,M3
+Q11: TS0,TS5        modifiers=M1,M3
+Q12: TS0,TS1,TS2    modifiers=M1,M3
+/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/phase_a1/outputs
+4 Candidates OK 2
+5 QueryPlans OK 32
+6 WritePlans OK 6
+7 Analytical proxies OK 3
+8 Freeze HBench OK 4
+STOP BEFORE BENCHMARK: Stage8 HBench frozen. No Cassandra calls performed.
+OFFLINE ONLY: 48 selected route semantic checks passed across 4 deployments
+test_20_live_read_templates_against_fake_session (test_iot_stages_4_to_9.LiveQueryCompilerContractTests.test_20_live_read_templates_against_fake_session) ... ok
+test_01_original_activation_ts_only (test_iot_stages_4_to_9.PipelineTests.test_01_original_activation_ts_only) ... ok
+test_02_instantiation_follows_activation (test_iot_stages_4_to_9.PipelineTests.test_02_instantiation_follows_activation) ... ok
+test_03_no_physical_selection_unactivated (test_iot_stages_4_to_9.PipelineTests.test_03_no_physical_selection_unactivated) ... ok
+test_04_q12_set_op_must_have_raw (test_iot_stages_4_to_9.PipelineTests.test_04_q12_set_op_must_have_raw) ... ok
+test_05_non_aligned_rollup_rejected (test_iot_stages_4_to_9.PipelineTests.test_05_non_aligned_rollup_rejected) ... ok
+test_06_aligned_rollup_allowed_with_right_granularity (test_iot_stages_4_to_9.PipelineTests.test_06_aligned_rollup_allowed_with_right_granularity) ... ok
+test_07_ts4_historical_window_fallback (test_iot_stages_4_to_9.PipelineTests.test_07_ts4_historical_window_fallback) ... ok
+test_08_ts0_complete_queries (test_iot_stages_4_to_9.PipelineTests.test_08_ts0_complete_queries) ... ok
+test_09_ts1_day_boundaries (test_iot_stages_4_to_9.PipelineTests.test_09_ts1_day_boundaries) ... ok
+test_10_ts2_sparse_values (test_iot_stages_4_to_9.PipelineTests.test_10_ts2_sparse_values) ... ok
+test_11_stage6_writes_have_canonical_source (test_iot_stages_4_to_9.PipelineTests.test_11_stage6_writes_have_canonical_source) ... ok
+test_12_costs_not_latency (test_iot_stages_4_to_9.PipelineTests.test_12_costs_not_latency) ... ok
+test_13_stage8_hashes_and_selection (test_iot_stages_4_to_9.PipelineTests.test_13_stage8_hashes_and_selection) ... ok
+test_14_stage8_full_valid_cover (test_iot_stages_4_to_9.PipelineTests.test_14_stage8_full_valid_cover) ... ok
+test_15_stage8_no_oracle (test_iot_stages_4_to_9.PipelineTests.test_15_stage8_no_oracle) ... ok
+test_16_offline_reference_validation (test_iot_stages_4_to_9.PipelineTests.test_16_offline_reference_validation) ... ok
+test_17_unconfirmed_keyspace_rejected (test_iot_stages_4_to_9.PipelineTests.test_17_unconfirmed_keyspace_rejected) ... ok
+test_18_percentiles (test_iot_stages_4_to_9.PipelineTests.test_18_percentiles) ... ok
+test_19_nonsensical_relative_regret_not_generated (test_iot_stages_4_to_9.PipelineTests.test_19_nonsensical_relative_regret_not_generated) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.075s
+
+OK
+test_candidate_aware_live_cql_uses_no_bucket_for_unbucketed (test_stage4_rev2.Stage4Rev2Tests.test_candidate_aware_live_cql_uses_no_bucket_for_unbucketed) ... ok
+test_daily_requires_m1_evidence (test_stage4_rev2.Stage4Rev2Tests.test_daily_requires_m1_evidence) ... ok
+test_materializer_uses_candidate_spec (test_stage4_rev2.Stage4Rev2Tests.test_materializer_uses_candidate_spec) ... FAIL
+test_no_cover_contains_both_ts2_granularities (test_stage4_rev2.Stage4Rev2Tests.test_no_cover_contains_both_ts2_granularities) ... ok
+test_ts2_variant_columns_partition_keys (test_stage4_rev2.Stage4Rev2Tests.test_ts2_variant_columns_partition_keys) ... FAIL
+test_unbucketed_guard_is_predeclared_and_enforced (test_stage4_rev2.Stage4Rev2Tests.test_unbucketed_guard_is_predeclared_and_enforced) ... ok
+test_unbucketed_query_across_midnight_in_memory (test_stage4_rev2.Stage4Rev2Tests.test_unbucketed_query_across_midnight_in_memory) ... ok
+
+======================================================================
+FAIL: test_materializer_uses_candidate_spec (test_stage4_rev2.Stage4Rev2Tests.test_materializer_uses_candidate_spec)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/tests/test_stage4_rev2.py", line 89, in test_materializer_uses_candidate_spec
+    self.assertEqual(counts['ts2_iot_wide_unbucketed'],18)
+AssertionError: 900 != 18
+
+======================================================================
+FAIL: test_ts2_variant_columns_partition_keys (test_stage4_rev2.Stage4Rev2Tests.test_ts2_variant_columns_partition_keys)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/SchemaLens_IoT_Cassandra_V3_Automatico/native_auto_work/runs/v3_20261016T191603Z_pid2543627/schemalens_q12fixed_20261016T193745Z_pid2557748/tests/test_stage4_rev2.py", line 36, in test_ts2_variant_columns_partition_keys
+    self.assertIn('m_s0 double',by['ts2_iot_wide_unbucketed']['ddl'])
+AssertionError: 'm_s0 double' not found in 'CREATE TABLE IF NOT EXISTS ts2_iot_wide_unbucketed (device_id text, timestamp_ms bigint, m_s_0 double, m_s_1 double, PRIMARY KEY ((device_id),timestamp_ms)) WITH CLUSTERING ORDER BY (timestamp_ms DESC);'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+FAILED (failures=2)

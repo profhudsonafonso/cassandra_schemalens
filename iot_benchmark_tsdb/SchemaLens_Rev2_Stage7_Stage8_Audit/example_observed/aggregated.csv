@@ -1,0 +1,6 @@
+variant,mean_12_query_p95_ms,mean_11_query_p95_excluding_q8_ms,note
+BASELINE_ORIGINAL,3.8576970833333335,3.1055414545454547,unweighted mean of per-query p95; NOT mixed-workload p95
+BASELINE_Q8_OPTIMIZED,2.342030333333333,2.5086423636363637,unweighted mean of per-query p95; NOT mixed-workload p95
+R2H_e72ef4d8529d,2.67291225,2.869986090909091,unweighted mean of per-query p95; NOT mixed-workload p95
+R2H_bdc993acdde3,4.036445083333334,4.355748181818182,unweighted mean of per-query p95; NOT mixed-workload p95
+R2H_6355f4e57096,4.515435916666667,4.110906454545455,unweighted mean of per-query p95; NOT mixed-workload p95

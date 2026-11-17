@@ -1,0 +1,88 @@
+{
+  "benchmark_issues_no_ddl_dml_flush_or_compaction": true,
+  "created_utc": "2026-11-10T20:48:40+00:00",
+  "draft_sha256": "28b763380c1efd8ef7eb7ae731668d8dd4d7ccdf610e3b173f10b272b6495a50",
+  "expected_total_observations": 12960,
+  "factor_order": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "1": {
+      "dataset_sha256": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+      "flush_manifest_sha256": "1a8660af9f85d15980b6612d836f008ffff8bbb45da5422e3c80bda89bee8a43",
+      "materialization_manifest_sha256": "105ba0e806c28ce4a748b36437a2fd59f254fa0b8ba902526cead0209fb276b9",
+      "semantic_validation_sha256": "aef71f4801b3fefa764b3488414f38b6a86ae6dfb7793fe797bebba9c7523d33",
+      "storage_post_flush_summary_sha256": "5ad1437d710adf26fe58193328d9ae7bdaaa05b2b45da7336ea0d38ff4b8682c"
+    },
+    "2": {
+      "dataset_sha256": "7389fcdf0504676be94fd557f057a46f8c210f97db34386c59d8e62f7ba41cf3",
+      "flush_manifest_sha256": "06ca90c82d88ce32c250ee1b3af1dbfcb0dc4aacbaaa5d4b74ececf6a220c8d2",
+      "materialization_manifest_sha256": "eb38ddc5faf690fac9b7eb39a54def11cf8341c8384613ba256e8132f41bed58",
+      "semantic_validation_sha256": "c21a9b312242c0c248ea335f7cf9f98747928bd76cd35f102ac6bc6896308e5b",
+      "storage_post_flush_summary_sha256": "45dfe4ca774c2357bc4f4d6f48d895ba721f9957f5992d08f8b985b55c3bd9f2"
+    },
+    "4": {
+      "dataset_sha256": "b5aa8eb7570d8100e211a5eaa0131f189428c993e9695148c5009176ab49ac37",
+      "flush_manifest_sha256": "d8c189bfd527df5a201ccb6d0cfb85acbf8e42bb1416aaa0b92f7b23a12a6071",
+      "materialization_manifest_sha256": "f8d9d6ba7368f81b4b474905997a46d271ad8c6d621312788eac6e7338a91ed4",
+      "semantic_validation_sha256": "0bfeb69f29578e146ef2da28f66ab803fa362719c0b49b485617010dcd9491f9",
+      "storage_post_flush_summary_sha256": "7c1ecd88e33e8c9de7911da5c9b13fc2f49e39794d33de9cb43283ee81790150"
+    },
+    "8": {
+      "dataset_sha256": "dcdbcf015d6a8da27ca97dd1540762b133b50c5f082ec2dcc1048f43a110ae91",
+      "flush_manifest_sha256": "5346b47c68e8967a16b80371df1e84fb9b7c1be2e78399413ff23d320f0b2551",
+      "materialization_manifest_sha256": "6caabd087c811e077343149c3a94d20e71aaabdaa6bdf7fbe49f5797a49cc38b",
+      "semantic_validation_sha256": "3b42a8d58eaa0f95182bd7ecc605932a41453a75b80094d22f9b028cf015bf93",
+      "storage_post_flush_summary_sha256": "019b7323c81a66d0ef5751db501bef3f1d27ef22909697e5441d100bd6cc7412"
+    }
+  },
+  "keyspaces": {
+    "1": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d1_ref",
+      "R3H_38939db96444": "sl_s3_r1_d1_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d1_d"
+    },
+    "2": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d2_ref",
+      "R3H_38939db96444": "sl_s3_r1_d2_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d2_d"
+    },
+    "4": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d4_ref",
+      "R3H_38939db96444": "sl_s3_r1_d4_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d4_d"
+    },
+    "8": {
+      "BASELINE_Q8_OPTIMIZED": "sl_s3_r1_d8_ref",
+      "R3H_38939db96444": "sl_s3_r1_d8_u",
+      "R3H_d2ea1974de53": "sl_s3_r1_d8_d"
+    }
+  },
+  "labels": [
+    "BASELINE_Q8_OPTIMIZED",
+    "R3H_38939db96444",
+    "R3H_d2ea1974de53"
+  ],
+  "method": "POST_AB_EXPLORATORY_SYNTHETIC_FIXED_HISTORY_DENSITY_SWEEP_FLUSHED_SSTABLE_STATE",
+  "orchestrator_sha256": "465f29f1896f62ee69fdfb5ae71a3929183cee497ef213ab385c1e77ae41c55f",
+  "page_size": 16,
+  "per_factor_rng": "random.Random(seed + factor)",
+  "percentile": "nearest_rank",
+  "pre_timing_gate": "storage_pre_timing snapshot must pass SSTable/memtable gate or the run aborts",
+  "protocol_sha256": "842e7df478de6e3a402b15fa6dffa4eff274c57aa316d3a64db8d0b74c2aaa2b",
+  "randomization": "shuffle cases and variant order every round; reverse variant order on even rounds (as S2)",
+  "replicate": "r1",
+  "rounds": 60,
+  "runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "s1_cases_sha256": "31fd36c631d5ef2430087f57bb1fdfd000dbf956e415c64db5577d8c6c32d3e7",
+  "s2_generation_manifest_sha256": "6e7ef76b9115d5ddb8d9eb3f52d9e2a890b1e51bb387ff1f92fea6006b58aad8",
+  "seed": 20261127,
+  "status": "S3_BENCHMARK_PREREGISTERED_BEFORE_TIMING",
+  "strategy": "A: materialize all 12, flush all, gate, validate, preregister, then time in factor order",
+  "timing": "perf_counter_ns around dispatch+fetch+postprocessing; oracle comparison excluded",
+  "warmups": 5
+}

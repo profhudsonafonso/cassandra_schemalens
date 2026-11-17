@@ -1,0 +1,80 @@
+{
+ "by_dataset": {
+  "h2b": {
+   "label": "H2b · 83 dias · 9 disp.",
+   "n": 20,
+   "wins_u": 17,
+   "wins_d": 3,
+   "rev5": 17,
+   "rev4": 17,
+   "always_u": 17,
+   "fewer_calls": 17,
+   "u_partition_kb": 444.166015625,
+   "d_partition_kb": 5.54296875,
+   "u_partition_max_kb": 444.166015625,
+   "median_du": 1.4566
+  },
+  "h3b": {
+   "label": "H3b · 333 dias · 9 disp.",
+   "n": 24,
+   "wins_u": 19,
+   "wins_d": 5,
+   "rev5": 19,
+   "rev4": 19,
+   "always_u": 19,
+   "fewer_calls": 19,
+   "u_partition_kb": 1874.462890625,
+   "d_partition_kb": 5.5771484375,
+   "u_partition_max_kb": 1909.830078125,
+   "median_du": 1.4182
+  },
+  "n6": {
+   "label": "N6 · 21 dias · 6 disp.",
+   "n": 16,
+   "wins_u": 9,
+   "wins_d": 7,
+   "rev5": 11,
+   "rev4": 11,
+   "always_u": 9,
+   "fewer_calls": 11,
+   "u_partition_kb": 103.298828125,
+   "d_partition_kb": 5.521484375,
+   "u_partition_max_kb": 103.298828125,
+   "median_du": 1.0865
+  },
+  "p1": {
+   "label": "P1 · 333 dias · 1 leitura/min · 3 disp.",
+   "n": 20,
+   "wins_u": 16,
+   "wins_d": 4,
+   "rev5": 12,
+   "rev4": 12,
+   "always_u": 16,
+   "fewer_calls": 12,
+   "u_partition_kb": 17028.2392578125,
+   "d_partition_kb": 49.7177734375,
+   "u_partition_max_kb": 17028.2392578125,
+   "median_du": 1.1292
+  }
+ },
+ "totals": {
+  "n": 80,
+  "wins_u": 61,
+  "wins_d": 19,
+  "rev5": 59,
+  "rev4": 59,
+  "always_u": 61,
+  "fewer_calls": 59
+ },
+ "median_abs_log_error": {
+  "rev5": 0.1191,
+  "rev4": 0.1705
+ },
+ "findings": [
+  "Holdout E9: TS2-U venceu 61 e TS2-D 19 de 80 casos temporais.",
+  "Acerto do vencedor: Rev5 59/80, Rev4 59/80, 'sempre U' 61/80, 'menos chamadas' 59/80.",
+  "Erro mediano de ln(D/U): Rev5 0.119 (×1.13) contra Rev4 0.171 (×1.19).",
+  "Partições grandes (P1): partição de U 16.6 MB (máx. 16.6 MB) contra 50 KB de D; mediana D/U 1,129; D venceu 4 de 20."
+ ],
+ "created": "2026-11-12T12:46:34-03:00"
+}

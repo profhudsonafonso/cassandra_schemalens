@@ -1,0 +1,62 @@
+{
+  "amendments": {
+    "EMENDA_01_E1_por_fator.md": "cec0a21558858cd1ef1cf9ff8e62cade765500e5486add7d1fc322b718310eee",
+    "EMENDA_02_medicao_interrompida.md": "52820bbe6c26b1d33f815e5f3778648dfe36b982c7328f12255fd84a236e6e27",
+    "EMENDA_03_preregistro_campanhas_unicas.md": "95e78640a4dfaad2f88b99f930a0643fec6bd36f3fa4de841a5456c6f0e4d2b0",
+    "EMENDA_04_FASE3.md": "3470434ede0978c5ccf82b79b2eaa8557f35be07405fc5dcc419afc1f790e1a4"
+  },
+  "arms": [
+    "sst:REF",
+    "sst:TS2-U",
+    "sst:TS2-D"
+  ],
+  "campaign": "e3r2",
+  "core_sha256": "f7e3433079d5c46b7c8657e7086a28e0885691d96013c9cd59f15f3b29418b64",
+  "created_utc": "2026-11-12T14:24:47+00:00",
+  "dataset": null,
+  "frozen_B_sha256": "8f88693851245838a7485300f8ce70aa850bd65c0c2d881225e9365cbcb39231",
+  "inputs": {
+    "h1": {
+      "dataset_sha256": "935ad847e01089fb27b8e653acf80778923b575c8fc39fca8fdac686d4862211",
+      "flush": "9045d9d4606ef92b170ff7f4d7dbf09c2f4c75b45de21c9931a7402910599d77",
+      "materialization": "a01bedde4a68283606c4f133fe1763d4a3878a63572b4fbbd3253e2e0747c3a0",
+      "storage_post_flush": "363c3fce855f99d84988c5631270afa31e065e98aaa57b6f8e8347cd3d370fb0",
+      "validation": "45568a24dd37347b3123ebcef0819f31cd00add3edb03753715ee52e0fe972ee"
+    },
+    "h2": {
+      "dataset_sha256": "57fe9e4934adecb1e602f70f9e3dbb53de841b643774088e72c0fe55dc9af703",
+      "flush": "9891c1033b5b05b2f49d979ca2104d5d3da8a097eec4d988253105e97966252b",
+      "materialization": "1b8c7d27386b6ca9658d23717b7d0573c3e5b1a50cf7ab37d64bc8cea63a9f07",
+      "storage_post_flush": "306e67971c309f67826e32121e18ae8ed9639a5e0d0f820779ea729dcf15fb2a",
+      "validation": "3423a1bcc0b68899de55079ccfe09ccb1ec2a18ef386602b00d18a99734aa40c"
+    },
+    "h3": {
+      "dataset_sha256": "e8d1b4aaa71bcbeb105071c92dd2f94accd447d22c97c76f5fffd976794cd199",
+      "flush": "b842a353fa1eb478efca903d0e1eaa4713d12bca0ec2fcc9a1be10d2c5a151a0",
+      "materialization": "c4be292ede9656d8a98baaab79a5d2b27a9c0dc55fc05bd59ce2865a676dbb9b",
+      "storage_post_flush": "61ec737cd9803b820821139885f57202092401d919f001ffc67455ebd5e46d85",
+      "validation": "f1c44a9cb16444fdd4c298ba5dd6218fe9e9884278a3a009c4e01d53fae1b2d2"
+    }
+  },
+  "page_size": 16,
+  "percentile": "nearest_rank",
+  "protocol_sha256": "7fd85715c3eef4a1faf1116255a1237af6d2af33b5457d07c31224f82090442d",
+  "randomization": "per round: shuffle cases; per case shuffle arms, reverse on even rounds; Random(seed + dataset index)",
+  "rev4": null,
+  "s3_runner_sha256": "7cd3b86c980ade07742dce52d2156944d9dd08ce02654044cf7185052479d9df",
+  "spec": {
+    "conds": [
+      "sst"
+    ],
+    "datasets": [
+      "h1",
+      "h2",
+      "h3"
+    ],
+    "rounds": 60,
+    "seed": 20261311,
+    "stage": "E7"
+  },
+  "status": "F2_PREREGISTERED_BEFORE_TIMING",
+  "warmups": 5
+}

@@ -1,0 +1,28 @@
+{
+  "batch_size": 5,
+  "cells": 108000,
+  "config_sha256": "54ae03aa249421d5e5cbe2e52164725525fbfa12c38aa4c72bd41ad3ee739812",
+  "control_reproduction": false,
+  "created_utc": "2026-11-11T20:44:10.216355+00:00",
+  "csv": "n18.csv",
+  "csv_sha256": "22558f21cc643f7b8997243409b11e070a451bc32a48e104facdecd18444a89d",
+  "devices": 18,
+  "first_ms": 1704067800000,
+  "generator": "official IoT Benchmark generateDataMode (core, pinned)",
+  "history_days": 20.8264,
+  "id": "n18",
+  "java_upstream_commit": "62e0dc100e56443978c8b4c66472b1d8a7ef0238",
+  "last_ms": 1705867200000,
+  "loops": 600,
+  "native_files": 108,
+  "sensors": 2,
+  "settings": {
+    "DATA_SEED": 541501,
+    "GROUP_BY_TIME_UNIT": 3600000,
+    "POINT_STEP": 600000,
+    "QUERY_INTERVAL": 604800000,
+    "QUERY_SEED": 541503
+  },
+  "status": "FASE2_JAVA_DATA_GENERATED_NO_CASSANDRA",
+  "wide_rows": 54000
+}

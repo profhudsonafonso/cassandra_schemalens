@@ -1,0 +1,649 @@
+{
+  "status": "T5_PREDICTIONS_BEFORE_TIMING",
+  "campaign": "e9r2",
+  "created_utc": "2026-11-12T18:58:02.351118+00:00",
+  "tie_rule_sha256": "65da89f43faaabb8a4ec3c730fc7d845271d426e96d1a2695e0c91119ad3f325",
+  "rev5_predictions_sha256": "78d2a7813da3d64220df3233be24f08d6d5292d0661465b11c40a2dc38a336c6",
+  "predictions": [
+    {
+      "dataset": "h2b",
+      "case_id": "Q12_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8774,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q12_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4589,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q12_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5375,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q12_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5654,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q12_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.5654,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q2_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8678,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q2_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4664,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q2_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5421,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q2_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5686,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q2_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.6092,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q7_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8678,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q7_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4664,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q7_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5421,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q7_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5686,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q7_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.6092,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q9_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8678,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q9_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4664,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q9_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5421,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q9_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5686,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h2b",
+      "case_id": "Q9_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.6092,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q12_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8435,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q12_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4463,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q12_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5307,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q12_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5608,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q12_W330",
+      "window_days": 330,
+      "rev5_pred_d_over_u": 1.5608,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q12_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.5608,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q2_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8319,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q2_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4535,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q2_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5351,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q2_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.564,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q2_W330",
+      "window_days": 330,
+      "rev5_pred_d_over_u": 1.6204,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q2_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.6081,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q7_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8319,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q7_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4535,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q7_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5351,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q7_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.564,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q7_W330",
+      "window_days": 330,
+      "rev5_pred_d_over_u": 1.6204,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q7_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.6081,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q9_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8319,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q9_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4535,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q9_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5351,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q9_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.564,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q9_W330",
+      "window_days": 330,
+      "rev5_pred_d_over_u": 1.6204,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "h3b",
+      "case_id": "Q9_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.6081,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q12_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.8773,
+      "t5_recommendation": "TS2-D",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q12_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.871,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q12_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 2.0436,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q12_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 2.1158,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q2_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9076,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q2_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4798,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q2_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5493,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q2_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5778,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q7_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9076,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q7_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4798,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q7_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5493,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q7_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5778,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q9_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9076,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q9_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.4798,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q9_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.5493,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "n6",
+      "case_id": "Q9_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.5778,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q12_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9527,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q12_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.1141,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q12_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.1297,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q12_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.135,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q12_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.135,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": true
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q2_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9741,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q2_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.0579,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q2_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.0653,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q2_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.0678,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q2_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.0715,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q7_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9741,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q7_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.0579,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q7_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.0653,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q7_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.0678,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q7_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.0715,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q9_W01",
+      "window_days": 1,
+      "rev5_pred_d_over_u": 0.9741,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q9_W07",
+      "window_days": 7,
+      "rev5_pred_d_over_u": 1.0579,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q9_W14",
+      "window_days": 14,
+      "rev5_pred_d_over_u": 1.0653,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q9_W21",
+      "window_days": 21,
+      "rev5_pred_d_over_u": 1.0678,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    },
+    {
+      "dataset": "p1",
+      "case_id": "Q9_W80",
+      "window_days": 80,
+      "rev5_pred_d_over_u": 1.0715,
+      "t5_recommendation": "TS2-U",
+      "t5_firm": false
+    }
+  ]
+}
