@@ -1,0 +1,1927 @@
+[
+  {
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "query_kind": "single",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "query_kind": "single",
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "query_kind": "single",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "query_kind": "single",
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "query_kind": "single",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "8",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "query_kind": "single",
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "8",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "query_kind": "single",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "query_kind": "single",
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "query_kind": "single",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "query_kind": "single",
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "query_kind": "single",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "8",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "query_kind": "single",
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "8",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_minute",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "query_kind": "maxall",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_hour",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "query_kind": "maxall",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_hour",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "read_cql": "SELECT hour_ns, max_value FROM ts5_cpu_max_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_hour",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "query_kind": "maxall",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "8",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_hour",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "query_kind": "maxall",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_hour",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "8",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "read_cql": "SELECT hour_ns, max_value FROM ts5_cpu_max_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_hour",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "query_kind": "maxall",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "32",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_hour",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "query_kind": "maxall",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_max_by_host_hour",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "32",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "read_cql": "SELECT hour_ns, max_value FROM ts5_cpu_max_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_utc_hour",
+      "max_by_metric_across_selected_hosts",
+      "sort_bucket_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "query_kind": "double",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "query_kind": "double",
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_sum_count_by_host_hour",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "read_cql": "SELECT hour_ns, value_sum, sample_count FROM ts5_cpu_sum_count_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "query_kind": "double",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "physical_strategy": "dimension_rollup",
+    "table_name": "ts6_cpu_by_hour_host",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "clustering_key": [
+      "hostname"
+    ],
+    "read_cql": "SELECT hostname, sum_usage_user, count_usage_user, sum_usage_system, count_usage_system, sum_usage_idle, count_usage_idle, sum_usage_nice, count_usage_nice, sum_usage_iowait, count_usage_iowait, sum_usage_irq, count_usage_irq, sum_usage_softirq, count_usage_softirq, sum_usage_steal, count_usage_steal, sum_usage_guest, count_usage_guest, sum_usage_guest_nice, count_usage_guest_nice FROM ts6_cpu_by_hour_host WHERE bucket_day = ? AND hour_ns = ?;",
+    "read_bindings": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "query_kind": "double",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "query_kind": "double",
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_sum_count_by_host_hour",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "read_cql": "SELECT hour_ns, value_sum, sample_count FROM ts5_cpu_sum_count_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "query_kind": "double",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "physical_strategy": "dimension_rollup",
+    "table_name": "ts6_cpu_by_hour_host",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "clustering_key": [
+      "hostname"
+    ],
+    "read_cql": "SELECT hostname, sum_usage_user, count_usage_user, sum_usage_system, count_usage_system, sum_usage_idle, count_usage_idle, sum_usage_nice, count_usage_nice, sum_usage_iowait, count_usage_iowait, sum_usage_irq, count_usage_irq, sum_usage_softirq, count_usage_softirq, sum_usage_steal, count_usage_steal, sum_usage_guest, count_usage_guest, sum_usage_guest_nice, count_usage_guest_nice FROM ts6_cpu_by_hour_host WHERE bucket_day = ? AND hour_ns = ?;",
+    "read_bindings": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "query_kind": "double",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "query_kind": "double",
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_sum_count_by_host_hour",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "read_cql": "SELECT hour_ns, value_sum, sample_count FROM ts5_cpu_sum_count_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "query_kind": "double",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "physical_strategy": "dimension_rollup",
+    "table_name": "ts6_cpu_by_hour_host",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "clustering_key": [
+      "hostname"
+    ],
+    "read_cql": "SELECT hostname, sum_usage_user, count_usage_user, sum_usage_system, count_usage_system, sum_usage_idle, count_usage_idle, sum_usage_nice, count_usage_nice, sum_usage_iowait, count_usage_iowait, sum_usage_irq, count_usage_irq, sum_usage_softirq, count_usage_softirq, sum_usage_steal, count_usage_steal, sum_usage_guest, count_usage_guest, sum_usage_guest_nice, count_usage_guest_nice FROM ts6_cpu_by_hour_host WHERE bucket_day = ? AND hour_ns = ?;",
+    "read_bindings": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "group_by_hostname_utc_hour",
+      "sum_count_then_divide_per_metric",
+      "sort_bucket_then_hostname_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "alignment_guard": "hour",
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "query_kind": "high",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "pivot_metric_series_at_timestamp",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "query_kind": "high",
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "physical_strategy": "raw_scalar_bucketed",
+    "table_name": "ts1_cpu_metric_1d",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts1_cpu_metric_1d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "pivot_metric_series_at_timestamp",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "query_kind": "high",
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "physical_strategy": "raw_scalar_bucketed",
+    "table_name": "ts1_cpu_metric_7d",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts1_cpu_metric_7d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "pivot_metric_series_at_timestamp",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": 7,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "query_kind": "high",
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "physical_strategy": "raw_wide_bucketed",
+    "table_name": "ts2_cpu_wide_1d",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "1",
+    "partition_key": [
+      "hostname",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, usage_user, usage_system, usage_idle, usage_nice, usage_iowait, usage_irq, usage_softirq, usage_steal, usage_guest, usage_guest_nice FROM ts2_cpu_wide_1d WHERE hostname = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "preserve_wide_rows",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "query_kind": "high",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "pivot_metric_series_at_timestamp",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "query_kind": "high",
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "physical_strategy": "raw_scalar_bucketed",
+    "table_name": "ts1_cpu_metric_1d",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts1_cpu_metric_1d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "pivot_metric_series_at_timestamp",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "query_kind": "high",
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "physical_strategy": "raw_scalar_bucketed",
+    "table_name": "ts1_cpu_metric_7d",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts1_cpu_metric_7d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_partitions",
+      "pivot_metric_series_at_timestamp",
+      "filter_usage_user_strictly_gt_90",
+      "sort_time_ascending"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "half_open_start_end",
+    "bucket_days": 7,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "query_kind": "lastpoint",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? LIMIT 1;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_latest_metric_for_every_host",
+      "check_same_latest_timestamp",
+      "assemble_one_cpu_row_per_host"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "none",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "query_kind": "toprollup",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "physical_strategy": "raw_scalar",
+    "table_name": "ts0_cpu_metric_raw",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "read_cql": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns < ?;",
+    "read_bindings": [
+      "hostname",
+      "metric_name"
+    ],
+    "client_operators": [
+      "read_all_data_before_exclusive_end",
+      "max_by_utc_minute_across_all_hosts",
+      "sort_bucket_descending",
+      "take_first_five_buckets"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "alignment_guard": null,
+    "input_window": "exclusive_end_only",
+    "bucket_days": null,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  },
+  {
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "query_kind": "toprollup",
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "physical_strategy": "derived_rollup",
+    "table_name": "ts5_cpu_global_max_minute",
+    "query_metrics": [
+      "usage_user"
+    ],
+    "num_hosts": "ALL",
+    "partition_key": [
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "read_cql": "SELECT minute_ns, max_value FROM ts5_cpu_global_max_minute WHERE metric_name = ? AND bucket_day = ? AND minute_ns < ? LIMIT 5;",
+    "read_bindings": [
+      "metric_name",
+      "bucket_day"
+    ],
+    "client_operators": [
+      "read_all_data_before_exclusive_end",
+      "max_by_utc_minute_across_all_hosts",
+      "sort_bucket_descending",
+      "take_first_five_buckets"
+    ],
+    "requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "dataset_start_ns_provided",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "alignment_guard": "minute",
+    "input_window": "exclusive_end_only",
+    "bucket_days": 1,
+    "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+    "static_cql_validated": true,
+    "runtime_executable_using_cassandra": false,
+    "write_plan_complete": false,
+    "benchmark_verified": false
+  }
+]

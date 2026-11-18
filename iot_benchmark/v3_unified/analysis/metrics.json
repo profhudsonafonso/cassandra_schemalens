@@ -1,0 +1,92 @@
+{
+  "denominator": "3 V3 complete deployments, all measured in V2 verification mode",
+  "noise_floor_pct": 2.1516329881530627,
+  "source_raw": "iot_benchmark/v2_protocolo_v1/outputs/v1_run1/raw_latencies.csv",
+  "v2_hbench_on_v3_denominator": {
+    "hbench_size": 3,
+    "kendall_tau_score_vs_read": 1.0,
+    "measured_best": "V3IOT_ts2_iot_wide_unbucketed",
+    "measured_best_read_ms": 4.145142718055555,
+    "measured_pareto": [
+      "V3IOT_ts2_iot_wide_unbucketed"
+    ],
+    "near_best_5pct": true,
+    "pareto_retention": 1.0,
+    "random_k": {
+      "combinations": 1,
+      "expected_regret": 0.0,
+      "k": 3,
+      "p_contains_best": 1.0
+    },
+    "reduction": 0.0,
+    "regret": 0.0,
+    "space_size": 3,
+    "tied_with_best": [
+      "V3IOT_ts2_iot_wide_unbucketed"
+    ],
+    "top1_strict": true,
+    "top1_within_noise": true,
+    "top3": true
+  },
+  "v2_reported": {
+    "hbench_size": 3,
+    "kendall_tau_score_vs_read": 0.8666666666666667,
+    "measured_best": "R3H_38939db96444",
+    "measured_best_read_ms": 4.145142718055555,
+    "measured_pareto": [
+      "R3H_38939db96444"
+    ],
+    "names": {
+      "R3H_0cb71e472e90": "TS2-U+TS4",
+      "R3H_38939db96444": "TS2-U",
+      "R3H_69bc46506e7b": "TS2-D+TS4",
+      "R3H_934e5af2474c": "TS0",
+      "R3H_99b27982cb5a": "TS0+TS4",
+      "R3H_d2ea1974de53": "TS2-D"
+    },
+    "near_best_5pct": true,
+    "pareto_retention": 1.0,
+    "random_3": {
+      "combinations": 20,
+      "expected_regret": 0.06421193510058469,
+      "k": 3,
+      "p_contains_best": 0.5
+    },
+    "reduction": 0.5,
+    "regret": 0.0,
+    "space_size": 6,
+    "tied_with_best": [
+      "R3H_0cb71e472e90",
+      "R3H_38939db96444"
+    ],
+    "top1_strict": true,
+    "top1_within_noise": true,
+    "top3": true
+  },
+  "v3": {
+    "hbench_size": 1,
+    "kendall_tau_score_vs_read": 1.0,
+    "measured_best": "V3IOT_ts2_iot_wide_unbucketed",
+    "measured_best_read_ms": 4.145142718055555,
+    "measured_pareto": [
+      "V3IOT_ts2_iot_wide_unbucketed"
+    ],
+    "near_best_5pct": true,
+    "pareto_retention": 1.0,
+    "random_k": {
+      "combinations": 3,
+      "expected_regret": 0.32881602275787974,
+      "k": 1,
+      "p_contains_best": 0.3333333333333333
+    },
+    "reduction": 0.6666666666666667,
+    "regret": 0.0,
+    "space_size": 3,
+    "tied_with_best": [
+      "V3IOT_ts2_iot_wide_unbucketed"
+    ],
+    "top1_strict": true,
+    "top1_within_noise": true,
+    "top3": true
+  }
+}

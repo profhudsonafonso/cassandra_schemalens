@@ -1,0 +1,52 @@
+{
+  "stage": 6,
+  "scope": "TSDB_ONLY_WRITE_PLAN_REFERENCE",
+  "candidate_count": 9,
+  "query_plan_links": 37,
+  "raw_candidates": 4,
+  "derived_candidates": 5,
+  "families": [
+    "TS0",
+    "TS1",
+    "TS2",
+    "TS5",
+    "TS6"
+  ],
+  "all_candidates_have_reference_writers": true,
+  "source_files_sha256": {
+    "candidate_specs": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+    "stage4_manifest": "3fb3f7dcb872524d9e47b80246b391228048add724ad61ee04e8ad3d1dfe8f70",
+    "query_plans": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+    "stage5_manifest": "6a89bbaba8076e771439cff5746922472d1ab62813ba72d89c1e86cfcf40c49c",
+    "schema": "39b50f888b08b3496a6ac467d34b62800c3ae800734717b40e9229abcc84f75c",
+    "stage4_policy": "c03535c9ed2b0d8db5ea823ca1b365287037286870bec268c0d4cfe010b6471d",
+    "stage6_policy": "1c70e4fdad4f973f037c08d39820e48d2e30a2ab7f17257a8be4dbca33bfeaf9"
+  },
+  "C0_C9_used": false,
+  "original_activation_modified": false,
+  "live_CQL_executed": false,
+  "distributed_atomicity_proven": false,
+  "correctness": "DETERMINISTIC_IN_MEMORY_TESTS_ONLY",
+  "supported_logical_ops": [
+    "upsert_full_observation",
+    "delete_observation",
+    "replay",
+    "late_insert"
+  ],
+  "deferred": [
+    "Cassandra live driver and bulk loader",
+    "durable checkpoint/recovery and concurrent writes",
+    "host roster persistence",
+    "TTL/compaction/shard selection",
+    "Stage 7 workload-aware cost modeling",
+    "Stage 8 consolidation/HBench",
+    "Stage 9 performance measurement"
+  ],
+  "cautions": [
+    "Only CPU-only dense observations; not general DevOps or IoT.",
+    "Reference materialization stores canonical observations and grouping indexes in process memory.",
+    "Cassandra aggregate upserts are not atomic with raw writes; restart/replay not solved.",
+    "No result may be interpreted as benchmark latency or production readiness.",
+    "Stage 4 remains schema-only; Stage 5 read plans retain runtime coverage guards."
+  ]
+}

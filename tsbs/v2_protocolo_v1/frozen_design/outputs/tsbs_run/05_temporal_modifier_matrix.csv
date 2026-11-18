@@ -1,0 +1,17 @@
+query_id,query_name,M1,M2,M3,M4,M5,active_modifiers,bucket_granularity_status
+Q01,single-groupby-1-1-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q02,single-groupby-1-1-12,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q03,single-groupby-1-8-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q04,single-groupby-5-1-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q05,single-groupby-5-1-12,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q06,single-groupby-5-8-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q07,cpu-max-all-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q08,cpu-max-all-8,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q09,cpu-max-all-32-24,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q10,double-groupby-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q11,double-groupby-5,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q12,double-groupby-all,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q13,high-cpu-1,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q14,high-cpu-all,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN
+Q15,lastpoint,false,false,true,false,false,"[""M3""]",NOT_ACTIVATED
+Q16,groupby-orderby-limit,true,false,true,false,false,"[""M1"", ""M3""]",DEFERRED_TO_PHYSICAL_DESIGN

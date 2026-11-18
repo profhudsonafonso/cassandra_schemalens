@@ -1,9 +1,33 @@
+# ---------------------------------------------------------------- ambiente local
 .venv/
 __pycache__/
-monitor/.rate_samples.json
-runs/**/.tmp_*
+*.pyc
+.pytest_cache/
 .DS_Store
-# Raw benchmark traces (~2.2 GB) - too large for GitHub
-runs/**/raw/
-# V3 raw RUBiS traces (~2.2 GB); SHA-256 in outputs_v3/rubis/benchmark/run1/RAW_SHA256.json
-outputs_v3/**/raw/
+
+# ---------------------------------------------------------------- LaTeX (main.tex, tabelas, figuras e main.pdf ficam versionados)
+methodology/artigos/**/*.aux
+methodology/artigos/**/*.log
+methodology/artigos/**/*.out
+methodology/artigos/**/*.toc
+methodology/artigos/**/*.synctex.gz
+*.log.tex
+
+# ---------------------------------------------------------------- RUBiS V9 original
+rubis/v9_original/monitor/.rate_samples.json
+rubis/v9_original/runs/**/.tmp_*
+# traces brutos da V9 (~2,2 GB) - grandes demais para o GitHub
+rubis/v9_original/runs/**/raw/
+
+# ---------------------------------------------------------------- V2 (protocolo comum v1)
+# ledgers SQLite da ingestão TPCx (transitórios, ~350 MB); evidências em manifest.json/raw_reads.csv
+tpcx_iot/v2_protocolo_v1/**/outboxes/
+# RUBiS: latências brutas (grandes); resumos e análises ficam versionados (SHA-256 em RAW_SHA256.json)
+rubis/v2_protocolo_v1/outputs/**/raw/
+rubis/v2_protocolo_v1/attempts/**/raw/
+# RUBiS: .pkl da tentativa descartada (regeneráveis); os .pkl CONGELADOS de frozen/ são versionados (entrada da V3)
+rubis/v2_protocolo_v1/attempts/**/*.pkl
+
+# ---------------------------------------------------------------- V3 (Stage 7/8 unificado)
+# traces brutos do RUBiS V3 (~2,2 GB); SHA-256 em rubis/v3_unified/benchmark/run1/RAW_SHA256.json
+rubis/v3_unified/**/raw/

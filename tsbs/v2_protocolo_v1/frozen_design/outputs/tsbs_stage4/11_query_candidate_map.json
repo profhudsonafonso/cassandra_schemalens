@@ -1,0 +1,383 @@
+[
+  {
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "kind": "single",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "kind": "single",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "kind": "single",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "kind": "single",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "kind": "single",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "kind": "single",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "kind": "maxall",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_hour"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "kind": "maxall",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_hour"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "kind": "maxall",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_max_by_host_hour"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "kind": "double",
+    "active_families": [
+      "TS0",
+      "TS5",
+      "TS6"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_sum_count_by_host_hour"
+      ],
+      "TS6": [
+        "ts6_hour_host_dimension"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "kind": "double",
+    "active_families": [
+      "TS0",
+      "TS5",
+      "TS6"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_sum_count_by_host_hour"
+      ],
+      "TS6": [
+        "ts6_hour_host_dimension"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "kind": "double",
+    "active_families": [
+      "TS0",
+      "TS5",
+      "TS6"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_sum_count_by_host_hour"
+      ],
+      "TS6": [
+        "ts6_hour_host_dimension"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "kind": "high",
+    "active_families": [
+      "TS0",
+      "TS1",
+      "TS2"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS1": [
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d"
+      ],
+      "TS2": [
+        "ts2_wide_bucket_1d"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "kind": "high",
+    "active_families": [
+      "TS0",
+      "TS1"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS1": [
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "kind": "lastpoint",
+    "active_families": [
+      "TS0"
+    ],
+    "active_modifiers": [
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  },
+  {
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "kind": "toprollup",
+    "active_families": [
+      "TS0",
+      "TS5"
+    ],
+    "active_modifiers": [
+      "M1",
+      "M3"
+    ],
+    "candidate_ids_by_family": {
+      "TS0": [
+        "ts0_metric_raw"
+      ],
+      "TS5": [
+        "ts5_global_max_minute"
+      ]
+    },
+    "stage4_mapping_complete": true,
+    "query_plan_coverage_verified": false
+  }
+]

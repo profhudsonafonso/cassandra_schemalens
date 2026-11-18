@@ -1,0 +1,1184 @@
+{
+  "ALL_CHECKS_PASSED": true,
+  "attested_files": {
+    "iot_benchmark/v2_protocolo_v1/iot_v1/acceptance.py": "83cfd65036e5f9741fa513e81c9780b4b339b7b3014754b401f788a33b33a678",
+    "iot_benchmark/v2_protocolo_v1/iot_v1/common_paths.py": "cf5895865614629df0ff320c74bbba823c39f6b763ea994b58ad84e1880334a0",
+    "iot_benchmark/v2_protocolo_v1/run_all.sh": "644e7f6e89b46c285c6188c9cd1f7ec6a954b3836025e7504215005a858508e4",
+    "methodology/artigos/v2_protocolo_v1/build_tables.py": "802ce6b5b161a3c53fbe2b0ef29f03ea7ba0d1c45d6bd1e49f7102fcf258fa41",
+    "methodology/artigos/v3_unified/build_tables.py": "09b783d1832c8f1e3e3036cfef3219b492f3ab4fdfa9e698667260eeae874213",
+    "methodology/reproduce_check.py": "4bca58fb8aa61d916a67956c93b703f51e6ec5402a6c130755959da986c78468",
+    "methodology/run_v3_unified.sh": "8aa39de25198332f0adf7641bdd5b08c7733c234795b385d22163c52c07554ac",
+    "methodology/unified_stage7_v3/adapters/iot.py": "ed212fd0585afc83620f8a615fafc34a35946157bcd7b7aff92db1ac9072cf9d",
+    "methodology/unified_stage7_v3/adapters/rubis.py": "173132eb7c2404b19060be4691a399682af02f175c58279e9847c0a8cf334899",
+    "methodology/unified_stage7_v3/adapters/tpcx_iot.py": "2d3812d165d7bda430f2a59fd41425872734eb3fef49c2f67b7971f6ba182c3d",
+    "methodology/unified_stage7_v3/adapters/tsbs.py": "a87bcece4e722bcd79672ad9bd7e8eb7b0552226f868b101ce067803866ff9fe",
+    "methodology/unified_stage7_v3/analysis/common.py": "e101b4e8ff81d00a1a9e517455bc1366e499cb3b11e0da45fb10258f3b06d701",
+    "methodology/unified_stage7_v3/analysis/reuse.py": "79b475252232680d23a7623b9a54b6574f4ccbfccdb867ee4bdbca99a309efee",
+    "methodology/unified_stage7_v3/analysis/rubis.py": "2ba6fea24f22cba3a164f0ec241b9374df4f2e98e6aa35003fafdd3e8b3ff795",
+    "methodology/unified_stage7_v3/analysis/run_all.py": "ea17745da3fb432b32534f1601192696bf104901725b248eab41a3a359bb1322",
+    "methodology/unified_stage7_v3/analysis/tsbs.py": "743e708a1c7e6c525009f6348e23c32217ed7b6aea06904addb3413a794628c3",
+    "methodology/unified_stage7_v3/freeze.py": "34248252536059e8b19e3d1f7c93e4d950d936819f9b6cdb0f1e5aa675f5b1f9",
+    "methodology/unified_stage7_v3/layout.py": "9f7d189fa9bf95fb48f2c58a0667a7ee4196a03c3e491c49cef8df24837f79a3",
+    "methodology/unified_stage7_v3/plans.py": "33423a71d98588570a07b6e25faa322eaee5ca11f487a59316bfc24dd3ff7bb9",
+    "methodology/unified_stage7_v3/provenance.py": "ab1a73b615f43caddd0f67a8432a5d13291559adad9259c881392b7d89149298",
+    "methodology/unified_stage7_v3/relocation.py": "9b7ccf1837d3693af24e69c50e6b6170e60c7126b9b75e7b30f0fa000b472520",
+    "methodology/unified_stage7_v3/report_prebenchmark.py": "539b7cc9d592f3fda439f60779a37662931a2e080361efc23aa307d412dc85cb",
+    "methodology/unified_stage7_v3/run_prebenchmark.py": "fbe6cfb7c0de43376adbf64c59913c2428ec31cc7c7189d7302ef6af9b9d2ed5",
+    "methodology/unified_stage7_v3/stage9/reuse_v2.py": "0c1d6b97f9af754b631e91fd9cf916b9c7ebb2ef651b81144cad52adb3d04f23",
+    "methodology/unified_stage7_v3/stage9/rubis_v3.py": "570f44d114b74aec7a66d9adfc663de9531bacb2ae0110966b7b4f600aa95c30",
+    "methodology/unified_stage7_v3/stage9/tsbs_v3.py": "e95b93640d78faa8e1db8526634be3b01679431fbd2c882b1ddfd02cdbe55931",
+    "methodology/unified_stage7_v3/tests/test_v3.py": "f127bdc4097c02e1b644941f94891b2c47c74e9d7d2b48b2d972c5f44f70adae",
+    "reproduce.sh": "2b90e9ad50ddabc6e65580620bd8ff082fbefa6034e67b95c70c726f557143bf",
+    "rubis/v2_protocolo_v1/rubis_v1/acceptance.py": "a929ef40220ab8edaa01b347c418ccf123b50a6fcaee1c12c7b3eec59afbd4f1",
+    "rubis/v2_protocolo_v1/rubis_v1/common_paths.py": "6b8c03793970142ee906bf0d1307fc5c8a8e6dd119c0eab04d962da083f58d43",
+    "rubis/v2_protocolo_v1/run_mac.sh": "9c0534720f8cdecedb20763d26460a30a1035468e452c67faf73cfa1d737d794",
+    "rubis/v2_protocolo_v1/run_server.sh": "257aee39120024ddb93b5a777f44be4ba383ef43fb2634fa82cda57df719cfb7",
+    "setup_env.sh": "00c48b928f68f5256083ecd20002563474f292ece9356cf82337c7742b03e96a",
+    "tpcx_iot/v2_protocolo_v1/run_all.sh": "95c47a2a689f87f00be9cf3f41a5376c72d035b986a441624ccdbed0a0130ee9",
+    "tpcx_iot/v2_protocolo_v1/tpcx_v1/acceptance.py": "16a49d823dac50fab6892bc7490b4e20a633cde2c9253a22b5b52abe1edd3606",
+    "tpcx_iot/v2_protocolo_v1/tpcx_v1/common_paths.py": "aee4deda325d62f7cb048e0869a3b18f317a38cc2aca5fc73c3880bf70b3fc1e",
+    "tsbs/v2_protocolo_v1/run_all.sh": "69a332cff6d3ecb9300cec0f56f25ad9e78771f786113c15e811adf5710c7973",
+    "tsbs/v2_protocolo_v1/tsbs_v1/acceptance.py": "2f5767f929497e86a7a0bc2baef7ed3d4b61b8139bcff2425bbb97f474a833cd",
+    "tsbs/v2_protocolo_v1/tsbs_v1/common_paths.py": "54a07e2ebf074ab2f7af083b2422294883f75ac33a0a3a9e2e015f31aaff8bff"
+  },
+  "benchmarks": {
+    "iot": {
+      "files": [
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/outputs/v4_rev2_prebenchmark/stage4/10_v4_candidate_specs.json",
+          "path_now": "iot_benchmark/v2_protocolo_v1/frozen_design_B/outputs/v4_rev2_prebenchmark/stage4/10_v4_candidate_specs.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "4cf763022c4c7b93dfe69aadd70aeba875db008d20293e5c4adac9e2e49aa91e",
+          "sha256_now": "4cf763022c4c7b93dfe69aadd70aeba875db008d20293e5c4adac9e2e49aa91e"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+          "path_now": "iot_benchmark/v2_protocolo_v1/frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa",
+          "sha256_now": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/phase_a1/outputs/normalized_double_readings.csv",
+          "path_now": "iot_benchmark/v2_protocolo_v1/frozen_design_B/phase_a1/outputs/normalized_double_readings.csv",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+          "sha256_now": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/phase_a1/outputs/query_instances_pilot.json",
+          "path_now": "iot_benchmark/v2_protocolo_v1/frozen_design_B/phase_a1/outputs/query_instances_pilot.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5",
+          "sha256_now": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/cassandra_env.py",
+          "path_now": "methodology/protocolo_v1/cassandra_env.py",
+          "section": "protocol",
+          "sha256_frozen": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+          "sha256_now": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/method_eval.py",
+          "path_now": "methodology/protocolo_v1/method_eval.py",
+          "section": "protocol",
+          "sha256_frozen": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+          "sha256_now": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/protocol_v1.json",
+          "path_now": "methodology/protocolo_v1/protocol_v1.json",
+          "section": "protocol",
+          "sha256_frozen": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+          "sha256_now": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/slstats.py",
+          "path_now": "methodology/protocolo_v1/slstats.py",
+          "section": "protocol",
+          "sha256_frozen": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+          "sha256_now": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/PREREGISTRATION_IOT_V1.json",
+          "path_now": "iot_benchmark/v2_protocolo_v1/PREREGISTRATION_IOT_V1.json",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "03c48126ea948ac02a7f51bb0049c40be5c25592e6588e0ba6dbff2095cbabf1",
+          "sha256_now": "03c48126ea948ac02a7f51bb0049c40be5c25592e6588e0ba6dbff2095cbabf1"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/outputs/v1_run1/manifest.json",
+          "path_now": "iot_benchmark/v2_protocolo_v1/outputs/v1_run1/manifest.json",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "e9c95c1a299ccd6f2e447839ab37c8f676aaa239fb7adc031a31c15c4521a9ab",
+          "sha256_now": "e9c95c1a299ccd6f2e447839ab37c8f676aaa239fb7adc031a31c15c4521a9ab"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/iot_benchmark_tsdb/outputs/v1_run1/raw_latencies.csv",
+          "path_now": "iot_benchmark/v2_protocolo_v1/outputs/v1_run1/raw_latencies.csv",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "b198b12b0999b80a4e1e198316f3738c5a5ebee0b14e93bb9d052c044d4d6920",
+          "sha256_now": "b198b12b0999b80a4e1e198316f3738c5a5ebee0b14e93bb9d052c044d4d6920"
+        },
+        {
+          "equal": true,
+          "frozen_path": "00_input_hashes.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/00_input_hashes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "eb03009c1dfe43817c724066fd6ac1021ade13fe1549d16806a763a9fb33789d",
+          "sha256_now": "eb03009c1dfe43817c724066fd6ac1021ade13fe1549d16806a763a9fb33789d"
+        },
+        {
+          "equal": true,
+          "frozen_path": "01_scenario.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/01_scenario.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "d7f41881672acf7acd66a7d18e29bb85ad18c34edc1f00df338bd28e56906036",
+          "sha256_now": "d7f41881672acf7acd66a7d18e29bb85ad18c34edc1f00df338bd28e56906036"
+        },
+        {
+          "equal": true,
+          "frozen_path": "02_query_read_vectors.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/02_query_read_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "04f1e3bf7019f0840ae910d2ceb855913c3c9a1f2f5734a11bb84a044a7a396d",
+          "sha256_now": "04f1e3bf7019f0840ae910d2ceb855913c3c9a1f2f5734a11bb84a044a7a396d"
+        },
+        {
+          "equal": true,
+          "frozen_path": "03_write_vectors.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/03_write_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "8a72c19dd8bc2ec306faa8215dc418c2a3100915a9d2488dbd8cbaa6c1930428",
+          "sha256_now": "8a72c19dd8bc2ec306faa8215dc418c2a3100915a9d2488dbd8cbaa6c1930428"
+        },
+        {
+          "equal": true,
+          "frozen_path": "04_candidate_footprints.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/04_candidate_footprints.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "2a449e151bf3877d54cc860c6c08732ae359986efef68f2b5f4cac874aa1f18c",
+          "sha256_now": "2a449e151bf3877d54cc860c6c08732ae359986efef68f2b5f4cac874aa1f18c"
+        },
+        {
+          "equal": true,
+          "frozen_path": "05_deployment_vectors.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/05_deployment_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "1df83f44b812162da2327e996fc5c0fb6cfc87011343c9692af07c5c2ea06410",
+          "sha256_now": "1df83f44b812162da2327e996fc5c0fb6cfc87011343c9692af07c5c2ea06410"
+        },
+        {
+          "equal": true,
+          "frozen_path": "06_complete_deployments.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/06_complete_deployments.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "787630ebc2da4efeb4c8a2b1a38a87b8b7e3963305ab29b5da5bb366b53ca5e5",
+          "sha256_now": "787630ebc2da4efeb4c8a2b1a38a87b8b7e3963305ab29b5da5bb366b53ca5e5"
+        },
+        {
+          "equal": true,
+          "frozen_path": "07_pareto_front.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/07_pareto_front.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "16846292fe46573f410d9d9ad7981a9be78416c2afe533f953ce10c4cee375e1",
+          "sha256_now": "16846292fe46573f410d9d9ad7981a9be78416c2afe533f953ce10c4cee375e1"
+        },
+        {
+          "equal": true,
+          "frozen_path": "08_diversity_selection.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/08_diversity_selection.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "6c6b6c61a51b66d4add7378c8a77f8c406f80f993e3528a1d08303c39ea41e84",
+          "sha256_now": "6c6b6c61a51b66d4add7378c8a77f8c406f80f993e3528a1d08303c39ea41e84"
+        },
+        {
+          "equal": true,
+          "frozen_path": "09_hbench_v3.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/09_hbench_v3.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "fcfc0d282838366d063fe1c4eb5d103605be2d25f6a47d1a28c147d32bae671f",
+          "sha256_now": "fcfc0d282838366d063fe1c4eb5d103605be2d25f6a47d1a28c147d32bae671f"
+        },
+        {
+          "equal": true,
+          "frozen_path": "10_hbench_routes.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/10_hbench_routes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "235221ec652413befc4376c4f3b7dd8f1a93cd6a79704419b66014621ca0fa47",
+          "sha256_now": "235221ec652413befc4376c4f3b7dd8f1a93cd6a79704419b66014621ca0fa47"
+        },
+        {
+          "equal": true,
+          "frozen_path": "11_selection_trace.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/11_selection_trace.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "ea03f428ef613a60cbdb5ae145771fdcf8a1ecdbe734f99855156ae764b24bc3",
+          "sha256_now": "ea03f428ef613a60cbdb5ae145771fdcf8a1ecdbe734f99855156ae764b24bc3"
+        },
+        {
+          "equal": true,
+          "frozen_path": "12_frozen_manifest.json",
+          "path_now": "iot_benchmark/v3_unified/prebenchmark/12_frozen_manifest.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "16bebb82a771ac3ad1cf84082898bdf2b50c41753b4aa9b165da2b5774bd95ba",
+          "sha256_now": "16bebb82a771ac3ad1cf84082898bdf2b50c41753b4aa9b165da2b5774bd95ba"
+        },
+        {
+          "equal": true,
+          "frozen_path": "scenario",
+          "path_now": "iot_benchmark/v3_unified/V3_PREBENCHMARK_SCENARIO.json",
+          "section": "scenario",
+          "sha256_frozen": "d7f41881672acf7acd66a7d18e29bb85ad18c34edc1f00df338bd28e56906036",
+          "sha256_now": "d7f41881672acf7acd66a7d18e29bb85ad18c34edc1f00df338bd28e56906036"
+        },
+        {
+          "equal": true,
+          "frozen_path": "preregistration",
+          "path_now": "iot_benchmark/v3_unified/PREREGISTRATION_V3.json",
+          "section": "preregistration",
+          "sha256_frozen": "cd155a58e0c9995bf520f0b70fc589563ea473d1c1f76ae0b1e341d662275106",
+          "sha256_now": "cd155a58e0c9995bf520f0b70fc589563ea473d1c1f76ae0b1e341d662275106"
+        }
+      ],
+      "frozen_files_identical": true,
+      "rerun_detail": {
+        "00_input_hashes.json": true,
+        "01_scenario.json": true,
+        "02_query_read_vectors.json": true,
+        "03_write_vectors.json": true,
+        "04_candidate_footprints.json": true,
+        "05_deployment_vectors.json": true,
+        "06_complete_deployments.json": true,
+        "07_pareto_front.json": true,
+        "08_diversity_selection.json": true,
+        "09_hbench_v3.json": true,
+        "10_hbench_routes.json": true,
+        "11_selection_trace.json": true
+      },
+      "stage7_8_rerun_identical": true
+    },
+    "rubis": {
+      "files": [
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "runs/v9_generation_001/stages/E04_observed_stats/STATS.json",
+          "path_now": "rubis/v9_original/runs/v9_generation_001/stages/E04_observed_stats/STATS.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "a5ddaf11c0999abb75e60250bdd05810e326ffb0afda9383e5381c72324ea5df",
+          "sha256_now": "a5ddaf11c0999abb75e60250bdd05810e326ffb0afda9383e5381c72324ea5df"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "runs/v9_generation_001/stages/E05_workload/WORKLOAD.json",
+          "path_now": "rubis/v9_original/runs/v9_generation_001/stages/E05_workload/WORKLOAD.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "c92546f954c06399c1fcf348286cce388932bcf3745cf9dd2e5d788fb9972ef4",
+          "sha256_now": "c92546f954c06399c1fcf348286cce388932bcf3745cf9dd2e5d788fb9972ef4"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "runs/v9_generation_001/stages/E13_route_synthesis/CANONICAL_WITH_COVER.json",
+          "path_now": "rubis/v9_original/runs/v9_generation_001/stages/E13_route_synthesis/CANONICAL_WITH_COVER.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "dcaa1c3f23ee655bdf6b614c38c4f46b74abf63eb544e4845bb324997dc45194",
+          "sha256_now": "dcaa1c3f23ee655bdf6b614c38c4f46b74abf63eb544e4845bb324997dc45194"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/frozen/cohort_source.pkl",
+          "path_now": "rubis/v2_protocolo_v1/frozen/cohort_source.pkl",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3",
+          "sha256_now": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/cassandra_env.py",
+          "path_now": "methodology/protocolo_v1/cassandra_env.py",
+          "section": "protocol",
+          "sha256_frozen": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+          "sha256_now": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/method_eval.py",
+          "path_now": "methodology/protocolo_v1/method_eval.py",
+          "section": "protocol",
+          "sha256_frozen": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+          "sha256_now": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/protocol_v1.json",
+          "path_now": "methodology/protocolo_v1/protocol_v1.json",
+          "section": "protocol",
+          "sha256_frozen": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+          "sha256_now": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/slstats.py",
+          "path_now": "methodology/protocolo_v1/slstats.py",
+          "section": "protocol",
+          "sha256_frozen": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+          "sha256_now": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "schemalens_v9/phase2.py",
+          "path_now": "rubis/v9_original/schemalens_v9/phase2.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "8fb7bc2867c1da723fe69cc206fb09f884d7c1beebc0ab4198a2b3eb673514bf",
+          "sha256_now": "8fb7bc2867c1da723fe69cc206fb09f884d7c1beebc0ab4198a2b3eb673514bf"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "schemalens_v9/phase5.py",
+          "path_now": "rubis/v9_original/schemalens_v9/phase5.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "2f37d474e2b96680dff1c2391c4a1fcb297229fe1c067f6d0a0f3ccd49b7550b",
+          "sha256_now": "2f37d474e2b96680dff1c2391c4a1fcb297229fe1c067f6d0a0f3ccd49b7550b"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "schemalens_v9/phase6.py",
+          "path_now": "rubis/v9_original/schemalens_v9/phase6.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "32093b6ddc492fba566f2854ad8256730ea40993a9a8b6ef1a10fa8e13182630",
+          "sha256_now": "32093b6ddc492fba566f2854ad8256730ea40993a9a8b6ef1a10fa8e13182630"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "schemalens_v9/routes.py",
+          "path_now": "rubis/v9_original/schemalens_v9/routes.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "88d0b0f7c66210abf725131a487dca0701b6a45db19226a57101da8babcbd81a",
+          "sha256_now": "88d0b0f7c66210abf725131a487dca0701b6a45db19226a57101da8babcbd81a"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/frozen/ORACLE_REF.pkl",
+          "path_now": "rubis/v2_protocolo_v1/frozen/ORACLE_REF.pkl",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "8f7f2992ba2179b429821d8bdf9d52cf4b0c362063957db5213223638bab5b33",
+          "sha256_now": "8f7f2992ba2179b429821d8bdf9d52cf4b0c362063957db5213223638bab5b33"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/frozen/TRANSFER_MANIFEST.json",
+          "path_now": "rubis/v2_protocolo_v1/frozen/TRANSFER_MANIFEST.json",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "0966aa2aff78c1971c8f70c34f7a903ac1d87aff003c3d9fa6c33f8fb5bf1125",
+          "sha256_now": "0966aa2aff78c1971c8f70c34f7a903ac1d87aff003c3d9fa6c33f8fb5bf1125"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/frozen/cohort_source.pkl",
+          "path_now": "rubis/v2_protocolo_v1/frozen/cohort_source.pkl",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3",
+          "sha256_now": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3"
+        },
+        {
+          "accepted_as_path_only_code_change": true,
+          "equal": false,
+          "frozen_path": "versao_ajustada/rubis_v9/rubis_v1/common_paths.py",
+          "path_now": "rubis/v2_protocolo_v1/rubis_v1/common_paths.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "966900b0aa6be772e2d3282bf2e9290470f5adac65f26a72944539cfb7ac8f6d",
+          "sha256_now": "6b8c03793970142ee906bf0d1307fc5c8a8e6dd119c0eab04d962da083f58d43"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/rubis_v1/env.py",
+          "path_now": "rubis/v2_protocolo_v1/rubis_v1/env.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "18a5094df3005f14c3b7a633b8279e69f20dd247ea8be604bb97aba6431394ae",
+          "sha256_now": "18a5094df3005f14c3b7a633b8279e69f20dd247ea8be604bb97aba6431394ae"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/rubis_v1/measure.py",
+          "path_now": "rubis/v2_protocolo_v1/rubis_v1/measure.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "42aae1bb07fe1b10bf6ddf33df8d81e4b1d2de483aad85bdf530214ce601e64a",
+          "sha256_now": "42aae1bb07fe1b10bf6ddf33df8d81e4b1d2de483aad85bdf530214ce601e64a"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/rubis_v9/rubis_v1/oracle_ref.py",
+          "path_now": "rubis/v2_protocolo_v1/rubis_v1/oracle_ref.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "ffc396f4caafc9087e93a48ac9e165924a39b697a70445109de36d468487dd6b",
+          "sha256_now": "ffc396f4caafc9087e93a48ac9e165924a39b697a70445109de36d468487dd6b"
+        },
+        {
+          "equal": true,
+          "frozen_path": "00_input_hashes.json",
+          "path_now": "rubis/v3_unified/prebenchmark/00_input_hashes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "0d082dc891a5e7b5bf2bfdf23d0945e555aa0efae5126aa33e1cb3153e06a1bb",
+          "sha256_now": "0d082dc891a5e7b5bf2bfdf23d0945e555aa0efae5126aa33e1cb3153e06a1bb"
+        },
+        {
+          "equal": true,
+          "frozen_path": "01_scenario.json",
+          "path_now": "rubis/v3_unified/prebenchmark/01_scenario.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "8f0afab76fdc7451323e5e9d0cc9d27848d2b04e34be4a8a587b4378cfc957f9",
+          "sha256_now": "8f0afab76fdc7451323e5e9d0cc9d27848d2b04e34be4a8a587b4378cfc957f9"
+        },
+        {
+          "equal": true,
+          "frozen_path": "02_query_read_vectors.json",
+          "path_now": "rubis/v3_unified/prebenchmark/02_query_read_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "62af1ebaee4f396ecb03185224cec853117e6e2dfb200ad8f0cd79874fdb48ce",
+          "sha256_now": "62af1ebaee4f396ecb03185224cec853117e6e2dfb200ad8f0cd79874fdb48ce"
+        },
+        {
+          "equal": true,
+          "frozen_path": "03_write_vectors.json",
+          "path_now": "rubis/v3_unified/prebenchmark/03_write_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "f9ed0d9e008b0cd4ea820d75d618e66921ebcdaa055a95d8f4ac9de04a3a066b",
+          "sha256_now": "f9ed0d9e008b0cd4ea820d75d618e66921ebcdaa055a95d8f4ac9de04a3a066b"
+        },
+        {
+          "equal": true,
+          "frozen_path": "04_candidate_footprints.json",
+          "path_now": "rubis/v3_unified/prebenchmark/04_candidate_footprints.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "bd7ecb14ab1c52c2c7b82106629a6f966eaf969c8cba2f05a5034be7265139d7",
+          "sha256_now": "bd7ecb14ab1c52c2c7b82106629a6f966eaf969c8cba2f05a5034be7265139d7"
+        },
+        {
+          "equal": true,
+          "frozen_path": "05_deployment_vectors.json",
+          "path_now": "rubis/v3_unified/prebenchmark/05_deployment_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "1d5627ebf43b003dafc09ff9db97b6d79cb89ab909274299cdd46e941919b7c0",
+          "sha256_now": "1d5627ebf43b003dafc09ff9db97b6d79cb89ab909274299cdd46e941919b7c0"
+        },
+        {
+          "equal": true,
+          "frozen_path": "06_complete_deployments.json",
+          "path_now": "rubis/v3_unified/prebenchmark/06_complete_deployments.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "2e29c3528baeed72fc47c79611e6642faf224f394b427b6782cde31a9ec7163c",
+          "sha256_now": "2e29c3528baeed72fc47c79611e6642faf224f394b427b6782cde31a9ec7163c"
+        },
+        {
+          "equal": true,
+          "frozen_path": "07_pareto_front.json",
+          "path_now": "rubis/v3_unified/prebenchmark/07_pareto_front.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "fe0cc26595dba2c7c8e2d2c136799392caedbe379fe8c616a6a77d2d7b73fbe9",
+          "sha256_now": "fe0cc26595dba2c7c8e2d2c136799392caedbe379fe8c616a6a77d2d7b73fbe9"
+        },
+        {
+          "equal": true,
+          "frozen_path": "08_diversity_selection.json",
+          "path_now": "rubis/v3_unified/prebenchmark/08_diversity_selection.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "96fde47684df77430111623a5ad48d95ec2d92ca141dc2b54f73ccc26bd116a1",
+          "sha256_now": "96fde47684df77430111623a5ad48d95ec2d92ca141dc2b54f73ccc26bd116a1"
+        },
+        {
+          "equal": true,
+          "frozen_path": "09_hbench_v3.json",
+          "path_now": "rubis/v3_unified/prebenchmark/09_hbench_v3.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "e9cce29fab2ab823b8d5709fadfbb890446ac686868c71fb2071bba05e145787",
+          "sha256_now": "e9cce29fab2ab823b8d5709fadfbb890446ac686868c71fb2071bba05e145787"
+        },
+        {
+          "equal": true,
+          "frozen_path": "10_hbench_routes.json",
+          "path_now": "rubis/v3_unified/prebenchmark/10_hbench_routes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "4c256f99b6c768f28493a4aec8422f40d32573e7b5f235eca22c8df01b546382",
+          "sha256_now": "4c256f99b6c768f28493a4aec8422f40d32573e7b5f235eca22c8df01b546382"
+        },
+        {
+          "equal": true,
+          "frozen_path": "11_selection_trace.json",
+          "path_now": "rubis/v3_unified/prebenchmark/11_selection_trace.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "d57a05b64b1b76622492a4bee798da3861289ef0eba2f637e4a954c148526524",
+          "sha256_now": "d57a05b64b1b76622492a4bee798da3861289ef0eba2f637e4a954c148526524"
+        },
+        {
+          "equal": true,
+          "frozen_path": "12_frozen_manifest.json",
+          "path_now": "rubis/v3_unified/prebenchmark/12_frozen_manifest.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "ec822c52b0e2cac11fa61ebef729e1d9c1f7651710b0be9d737c3103a3a8a477",
+          "sha256_now": "ec822c52b0e2cac11fa61ebef729e1d9c1f7651710b0be9d737c3103a3a8a477"
+        },
+        {
+          "equal": true,
+          "frozen_path": "scenario",
+          "path_now": "rubis/v3_unified/V3_PREBENCHMARK_SCENARIO.json",
+          "section": "scenario",
+          "sha256_frozen": "8f0afab76fdc7451323e5e9d0cc9d27848d2b04e34be4a8a587b4378cfc957f9",
+          "sha256_now": "8f0afab76fdc7451323e5e9d0cc9d27848d2b04e34be4a8a587b4378cfc957f9"
+        },
+        {
+          "equal": true,
+          "frozen_path": "preregistration",
+          "path_now": "rubis/v3_unified/PREREGISTRATION_V3.json",
+          "section": "preregistration",
+          "sha256_frozen": "ee80b63f03384771ce2f2356348fabaaa6af76caf60a6550726068dd2ddd8bd1",
+          "sha256_now": "ee80b63f03384771ce2f2356348fabaaa6af76caf60a6550726068dd2ddd8bd1"
+        }
+      ],
+      "frozen_files_identical": true,
+      "rerun_detail": {
+        "00_input_hashes.json": true,
+        "01_scenario.json": true,
+        "02_query_read_vectors.json": true,
+        "03_write_vectors.json": true,
+        "04_candidate_footprints.json": true,
+        "05_deployment_vectors.json": true,
+        "06_complete_deployments.json": true,
+        "07_pareto_front.json": true,
+        "08_diversity_selection.json": true,
+        "09_hbench_v3.json": true,
+        "10_hbench_routes.json": true,
+        "11_selection_trace.json": true
+      },
+      "stage7_8_rerun_identical": true
+    },
+    "tpcx_iot": {
+      "files": [
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/frozen_design/methodology/tpcx_iot/stage9/experiment.py",
+          "path_now": "tpcx_iot/v2_protocolo_v1/frozen_design/methodology/tpcx_iot/stage9/experiment.py",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "1af4e4568888a9544b153196c96062e50fae40e6a2eeb5ce121cd6c02ebdf183",
+          "sha256_now": "1af4e4568888a9544b153196c96062e50fae40e6a2eeb5ce121cd6c02ebdf183"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/frozen_design/outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json",
+          "path_now": "tpcx_iot/v2_protocolo_v1/frozen_design/outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+          "sha256_now": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/frozen_design/outputs/tpcx_iot_stage5/20_queryplans.json",
+          "path_now": "tpcx_iot/v2_protocolo_v1/frozen_design/outputs/tpcx_iot_stage5/20_queryplans.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+          "sha256_now": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/frozen_design/outputs/tpcx_iot_stage6/30_writeplans.json",
+          "path_now": "tpcx_iot/v2_protocolo_v1/frozen_design/outputs/tpcx_iot_stage6/30_writeplans.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710",
+          "sha256_now": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/cassandra_env.py",
+          "path_now": "methodology/protocolo_v1/cassandra_env.py",
+          "section": "protocol",
+          "sha256_frozen": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+          "sha256_now": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/method_eval.py",
+          "path_now": "methodology/protocolo_v1/method_eval.py",
+          "section": "protocol",
+          "sha256_frozen": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+          "sha256_now": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/protocol_v1.json",
+          "path_now": "methodology/protocolo_v1/protocol_v1.json",
+          "section": "protocol",
+          "sha256_frozen": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+          "sha256_now": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/slstats.py",
+          "path_now": "methodology/protocolo_v1/slstats.py",
+          "section": "protocol",
+          "sha256_frozen": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+          "sha256_now": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/PREREGISTRATION_TPCX_V1.json",
+          "path_now": "tpcx_iot/v2_protocolo_v1/PREREGISTRATION_TPCX_V1.json",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "28c3c410bff06f28283e669cda58c1c7d5728e53e4333dd26f1a4e17597c5113",
+          "sha256_now": "28c3c410bff06f28283e669cda58c1c7d5728e53e4333dd26f1a4e17597c5113"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/outputs/v1_run1/manifest.json",
+          "path_now": "tpcx_iot/v2_protocolo_v1/outputs/v1_run1/manifest.json",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "f660d24e791afef02fd9cf6a3d2448741ccf77fc11a5e6224f82ab6417cd91a1",
+          "sha256_now": "f660d24e791afef02fd9cf6a3d2448741ccf77fc11a5e6224f82ab6417cd91a1"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tpcx_iot_benchmark/outputs/v1_run1/raw_reads.csv",
+          "path_now": "tpcx_iot/v2_protocolo_v1/outputs/v1_run1/raw_reads.csv",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "d1b8243535012c6beed4c3802628706d196bf6eb9644ddba9572ba679b7c4b9c",
+          "sha256_now": "d1b8243535012c6beed4c3802628706d196bf6eb9644ddba9572ba679b7c4b9c"
+        },
+        {
+          "equal": true,
+          "frozen_path": "00_input_hashes.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/00_input_hashes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "904f775d6bd570c14e8912f4476c0c6be0ed7666e48412e188cefba7865cc629",
+          "sha256_now": "904f775d6bd570c14e8912f4476c0c6be0ed7666e48412e188cefba7865cc629"
+        },
+        {
+          "equal": true,
+          "frozen_path": "01_scenario.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/01_scenario.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "0f1bc48489f0fbc0340eb7ba81639572ef5ec94d297838fe58bc574d91d1206f",
+          "sha256_now": "0f1bc48489f0fbc0340eb7ba81639572ef5ec94d297838fe58bc574d91d1206f"
+        },
+        {
+          "equal": true,
+          "frozen_path": "02_query_read_vectors.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/02_query_read_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "5e45eafe45352076e0d66e1e1de3b32ab031f8090020f7f256beae16df80aa34",
+          "sha256_now": "5e45eafe45352076e0d66e1e1de3b32ab031f8090020f7f256beae16df80aa34"
+        },
+        {
+          "equal": true,
+          "frozen_path": "03_write_vectors.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/03_write_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "47d7474bab697776c578c5c94cac2ad124bc2d77f2b1408230046f04302d1334",
+          "sha256_now": "47d7474bab697776c578c5c94cac2ad124bc2d77f2b1408230046f04302d1334"
+        },
+        {
+          "equal": true,
+          "frozen_path": "04_candidate_footprints.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/04_candidate_footprints.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "f3366de63b1ad16c9bb3c685eee5bf99805b4b3fee71cc2cc551a985083709c8",
+          "sha256_now": "f3366de63b1ad16c9bb3c685eee5bf99805b4b3fee71cc2cc551a985083709c8"
+        },
+        {
+          "equal": true,
+          "frozen_path": "05_deployment_vectors.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/05_deployment_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "c4459ff56a040d3afcbaf610c3c1e0ae061835caa9212eac865dbe4766c7836b",
+          "sha256_now": "c4459ff56a040d3afcbaf610c3c1e0ae061835caa9212eac865dbe4766c7836b"
+        },
+        {
+          "equal": true,
+          "frozen_path": "06_complete_deployments.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/06_complete_deployments.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "8bebeeb2687c6cbad523228ee89d3bac8d62aab5b6423bc3f6c222df383b0652",
+          "sha256_now": "8bebeeb2687c6cbad523228ee89d3bac8d62aab5b6423bc3f6c222df383b0652"
+        },
+        {
+          "equal": true,
+          "frozen_path": "07_pareto_front.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/07_pareto_front.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "9dd8cf152b96128547858216b74bf653e9216fc301f4be199dbe018e4951d776",
+          "sha256_now": "9dd8cf152b96128547858216b74bf653e9216fc301f4be199dbe018e4951d776"
+        },
+        {
+          "equal": true,
+          "frozen_path": "08_diversity_selection.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/08_diversity_selection.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "4a75ce4e063fb367f31a3484da516292c2e0a4922be7e4a032f93ba03b1e544d",
+          "sha256_now": "4a75ce4e063fb367f31a3484da516292c2e0a4922be7e4a032f93ba03b1e544d"
+        },
+        {
+          "equal": true,
+          "frozen_path": "09_hbench_v3.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/09_hbench_v3.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "f9a3e368865239dc27b9c0434d33cf033137463455e1fe71c94b0036ad1618bd",
+          "sha256_now": "f9a3e368865239dc27b9c0434d33cf033137463455e1fe71c94b0036ad1618bd"
+        },
+        {
+          "equal": true,
+          "frozen_path": "10_hbench_routes.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/10_hbench_routes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "9dfe9364c761d923d2fbcffb32d03f5d6dd8c3c67f6cc1a92a1d16f3e61bfce9",
+          "sha256_now": "9dfe9364c761d923d2fbcffb32d03f5d6dd8c3c67f6cc1a92a1d16f3e61bfce9"
+        },
+        {
+          "equal": true,
+          "frozen_path": "11_selection_trace.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/11_selection_trace.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "5141596e677306ce1f4fc8d6a8441f5b8d458dcfc5cb75bc18a49420e66d790f",
+          "sha256_now": "5141596e677306ce1f4fc8d6a8441f5b8d458dcfc5cb75bc18a49420e66d790f"
+        },
+        {
+          "equal": true,
+          "frozen_path": "12_frozen_manifest.json",
+          "path_now": "tpcx_iot/v3_unified/prebenchmark/12_frozen_manifest.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "d1280bbddf775594ff4ecbe98ac196c39e0d5182ccb0bba5186e703b93b163a8",
+          "sha256_now": "d1280bbddf775594ff4ecbe98ac196c39e0d5182ccb0bba5186e703b93b163a8"
+        },
+        {
+          "equal": true,
+          "frozen_path": "scenario",
+          "path_now": "tpcx_iot/v3_unified/V3_PREBENCHMARK_SCENARIO.json",
+          "section": "scenario",
+          "sha256_frozen": "0f1bc48489f0fbc0340eb7ba81639572ef5ec94d297838fe58bc574d91d1206f",
+          "sha256_now": "0f1bc48489f0fbc0340eb7ba81639572ef5ec94d297838fe58bc574d91d1206f"
+        },
+        {
+          "equal": true,
+          "frozen_path": "preregistration",
+          "path_now": "tpcx_iot/v3_unified/PREREGISTRATION_V3.json",
+          "section": "preregistration",
+          "sha256_frozen": "4ec6ab5a3eb5ee996d86b86800fb5b177429014510a04495918b1ed5ad6b170b",
+          "sha256_now": "4ec6ab5a3eb5ee996d86b86800fb5b177429014510a04495918b1ed5ad6b170b"
+        }
+      ],
+      "frozen_files_identical": true,
+      "rerun_detail": {
+        "00_input_hashes.json": true,
+        "01_scenario.json": true,
+        "02_query_read_vectors.json": true,
+        "03_write_vectors.json": true,
+        "04_candidate_footprints.json": true,
+        "05_deployment_vectors.json": true,
+        "06_complete_deployments.json": true,
+        "07_pareto_front.json": true,
+        "08_diversity_selection.json": true,
+        "09_hbench_v3.json": true,
+        "10_hbench_routes.json": true,
+        "11_selection_trace.json": true
+      },
+      "stage7_8_rerun_identical": true
+    },
+    "tsbs": {
+      "files": [
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/data/query_instances.json",
+          "path_now": "tsbs/v2_protocolo_v1/data/query_instances.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a",
+          "sha256_now": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/data/tsbs_cpu_only_cassandra_double.txt.gz",
+          "path_now": "tsbs/v2_protocolo_v1/data/tsbs_cpu_only_cassandra_double.txt.gz",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c",
+          "sha256_now": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage4/10_cassandra_candidate_specs.json",
+          "path_now": "tsbs/v2_protocolo_v1/frozen_design/outputs/tsbs_stage4/10_cassandra_candidate_specs.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+          "sha256_now": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage5/15_query_plans.json",
+          "path_now": "tsbs/v2_protocolo_v1/frozen_design/outputs/tsbs_stage5/15_query_plans.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+          "sha256_now": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage6/18_write_plans.json",
+          "path_now": "tsbs/v2_protocolo_v1/frozen_design/outputs/tsbs_stage6/18_write_plans.json",
+          "section": "stage7_inputs_live",
+          "sha256_frozen": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87",
+          "sha256_now": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/cassandra_env.py",
+          "path_now": "methodology/protocolo_v1/cassandra_env.py",
+          "section": "protocol",
+          "sha256_frozen": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+          "sha256_now": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/method_eval.py",
+          "path_now": "methodology/protocolo_v1/method_eval.py",
+          "section": "protocol",
+          "sha256_frozen": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+          "sha256_now": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/protocol_v1.json",
+          "path_now": "methodology/protocolo_v1/protocol_v1.json",
+          "section": "protocol",
+          "sha256_frozen": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+          "sha256_now": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/common/slstats.py",
+          "path_now": "methodology/protocolo_v1/slstats.py",
+          "section": "protocol",
+          "sha256_frozen": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01",
+          "sha256_now": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/data/query_instances.json",
+          "path_now": "tsbs/v2_protocolo_v1/data/query_instances.json",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a",
+          "sha256_now": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/data/tsbs_cpu_only_cassandra_double.txt.gz",
+          "path_now": "tsbs/v2_protocolo_v1/data/tsbs_cpu_only_cassandra_double.txt.gz",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c",
+          "sha256_now": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c"
+        },
+        {
+          "accepted_as_path_only_code_change": true,
+          "equal": false,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/tsbs_v1/common_paths.py",
+          "path_now": "tsbs/v2_protocolo_v1/tsbs_v1/common_paths.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "5d0abf3ffa544e6b558ed3fd661e4845d79bc430f62b3b294b5583aace6caf9a",
+          "sha256_now": "54a07e2ebf074ab2f7af083b2422294883f75ac33a0a3a9e2e015f31aaff8bff"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/tsbs_v1/freeze.py",
+          "path_now": "tsbs/v2_protocolo_v1/tsbs_v1/freeze.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "a43883709f1ac281e144e9e895dceea1bbe385859f434272a84dde72a132255d",
+          "sha256_now": "a43883709f1ac281e144e9e895dceea1bbe385859f434272a84dde72a132255d"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py",
+          "path_now": "tsbs/v2_protocolo_v1/tsbs_v1/measure.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "84a4b1399ec1cb0a8402e0f0c5560bc83868437bd0fbc2db197c9861238a05b8",
+          "sha256_now": "84a4b1399ec1cb0a8402e0f0c5560bc83868437bd0fbc2db197c9861238a05b8"
+        },
+        {
+          "accepted_as_path_only_code_change": false,
+          "equal": true,
+          "frozen_path": "versao_ajustada/tsbs_tsdb/tsbs_v1/oracle.py",
+          "path_now": "tsbs/v2_protocolo_v1/tsbs_v1/oracle.py",
+          "section": "measurement_harness_and_data",
+          "sha256_frozen": "ffdfe7e87c653caa9fe4758c5ee1d8f1318013a81dd4b96718f7199077aefc4c",
+          "sha256_now": "ffdfe7e87c653caa9fe4758c5ee1d8f1318013a81dd4b96718f7199077aefc4c"
+        },
+        {
+          "equal": true,
+          "frozen_path": "00_input_hashes.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/00_input_hashes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "bc3b68f65a1b18058e631056099f7b670b322e1e2d3e170a01eab925c82edd30",
+          "sha256_now": "bc3b68f65a1b18058e631056099f7b670b322e1e2d3e170a01eab925c82edd30"
+        },
+        {
+          "equal": true,
+          "frozen_path": "01_scenario.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/01_scenario.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca",
+          "sha256_now": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca"
+        },
+        {
+          "equal": true,
+          "frozen_path": "02_query_read_vectors.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/02_query_read_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "d79e5d1bd1c38d267dc7e3e3c4f02c1d6ab9483b00cdf7e5535d6f9b9157a89d",
+          "sha256_now": "d79e5d1bd1c38d267dc7e3e3c4f02c1d6ab9483b00cdf7e5535d6f9b9157a89d"
+        },
+        {
+          "equal": true,
+          "frozen_path": "03_write_vectors.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/03_write_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "be58ba3ae61e141546b4d9e98a8b8eb1e42f4f3e49d643da2169625580c3c42f",
+          "sha256_now": "be58ba3ae61e141546b4d9e98a8b8eb1e42f4f3e49d643da2169625580c3c42f"
+        },
+        {
+          "equal": true,
+          "frozen_path": "04_candidate_footprints.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/04_candidate_footprints.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "305d797a542eab5a7f4269d5fbea5509b2c1bc984a7a2d1e721aa5ab67141fb7",
+          "sha256_now": "305d797a542eab5a7f4269d5fbea5509b2c1bc984a7a2d1e721aa5ab67141fb7"
+        },
+        {
+          "equal": true,
+          "frozen_path": "05_deployment_vectors.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/05_deployment_vectors.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "069c184fddaced94b314243c0e373e506fce2d786f740d96919ddbef12ebe088",
+          "sha256_now": "069c184fddaced94b314243c0e373e506fce2d786f740d96919ddbef12ebe088"
+        },
+        {
+          "equal": true,
+          "frozen_path": "06_complete_deployments.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/06_complete_deployments.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "21d93067eb8950359372dd6d73874866c5f022e16899a30f2b283966d1dfb181",
+          "sha256_now": "21d93067eb8950359372dd6d73874866c5f022e16899a30f2b283966d1dfb181"
+        },
+        {
+          "equal": true,
+          "frozen_path": "07_pareto_front.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/07_pareto_front.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "230f80f1c9ad0f11a8ac8f8052509d551c714a06a076716730f6a513330280a8",
+          "sha256_now": "230f80f1c9ad0f11a8ac8f8052509d551c714a06a076716730f6a513330280a8"
+        },
+        {
+          "equal": true,
+          "frozen_path": "08_diversity_selection.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/08_diversity_selection.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "e82bffa39b14ad9f4c4cc6fbaab1b18610e9ee3637230baa14b150c344c5df49",
+          "sha256_now": "e82bffa39b14ad9f4c4cc6fbaab1b18610e9ee3637230baa14b150c344c5df49"
+        },
+        {
+          "equal": true,
+          "frozen_path": "09_hbench_v3.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/09_hbench_v3.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "26d7b88243e89db4a430c1eeb345602c63d306eb8b179a53087fc9a96668679a",
+          "sha256_now": "26d7b88243e89db4a430c1eeb345602c63d306eb8b179a53087fc9a96668679a"
+        },
+        {
+          "equal": true,
+          "frozen_path": "10_hbench_routes.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/10_hbench_routes.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "7e69e68b1a7856e2bfc156b128dc4d1bbee22078235c84652a73c8278419871c",
+          "sha256_now": "7e69e68b1a7856e2bfc156b128dc4d1bbee22078235c84652a73c8278419871c"
+        },
+        {
+          "equal": true,
+          "frozen_path": "11_selection_trace.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/11_selection_trace.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "540d75ce223aad04c53cf851dc8ae6fcb3ef1c0c99b4a59fc34f4a090a511b9c",
+          "sha256_now": "540d75ce223aad04c53cf851dc8ae6fcb3ef1c0c99b4a59fc34f4a090a511b9c"
+        },
+        {
+          "equal": true,
+          "frozen_path": "12_frozen_manifest.json",
+          "path_now": "tsbs/v3_unified/prebenchmark/12_frozen_manifest.json",
+          "section": "stage7_8_outputs",
+          "sha256_frozen": "964ede6b09e4eacc71ffebd7d7496bcc1b2a04423fd702279ad368403e3ca199",
+          "sha256_now": "964ede6b09e4eacc71ffebd7d7496bcc1b2a04423fd702279ad368403e3ca199"
+        },
+        {
+          "equal": true,
+          "frozen_path": "scenario",
+          "path_now": "tsbs/v3_unified/V3_PREBENCHMARK_SCENARIO.json",
+          "section": "scenario",
+          "sha256_frozen": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca",
+          "sha256_now": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca"
+        },
+        {
+          "equal": true,
+          "frozen_path": "preregistration",
+          "path_now": "tsbs/v3_unified/PREREGISTRATION_V3.json",
+          "section": "preregistration",
+          "sha256_frozen": "85597291c49c9e97289e0b54fa62cc8e8e25cef30bdac58ac323fd9a266f2dda",
+          "sha256_now": "85597291c49c9e97289e0b54fa62cc8e8e25cef30bdac58ac323fd9a266f2dda"
+        }
+      ],
+      "frozen_files_identical": true,
+      "rerun_detail": {
+        "00_input_hashes.json": true,
+        "01_scenario.json": true,
+        "02_query_read_vectors.json": true,
+        "03_write_vectors.json": true,
+        "04_candidate_footprints.json": true,
+        "05_deployment_vectors.json": true,
+        "06_complete_deployments.json": true,
+        "07_pareto_front.json": true,
+        "08_diversity_selection.json": true,
+        "09_hbench_v3.json": true,
+        "10_hbench_routes.json": true,
+        "11_selection_trace.json": true
+      },
+      "stage7_8_rerun_identical": true
+    }
+  },
+  "code_change_nature": "path-only: layout.py (new) centralises the V3 repository paths; relocation.py (new) is this attestation; freeze.verify and the V2 acceptance gates accept relocated code only through it; V2 common_paths.py resolve the unchanged logical hash keys to the new folders; run scripts point to the single root .venv; all other edits replace former paths or update docstrings. Full diff: RELOCATION_CODE.diff",
+  "code_changes_vs_frozen_commit": [
+    "R097\tversao_ajustada/iot_benchmark_tsdb/iot_v1/acceptance.py\tiot_benchmark/v2_protocolo_v1/iot_v1/acceptance.py",
+    "R074\tversao_ajustada/iot_benchmark_tsdb/iot_v1/common_paths.py\tiot_benchmark/v2_protocolo_v1/iot_v1/common_paths.py",
+    "R092\tversao_ajustada/iot_benchmark_tsdb/run_all.sh\tiot_benchmark/v2_protocolo_v1/run_all.sh",
+    "R096\tversao_ajustada/artigo_overleaf/build_tables.py\tmethodology/artigos/v2_protocolo_v1/build_tables.py",
+    "A\tmethodology/artigos/v3_unified/build_tables.py",
+    "A\tmethodology/reproduce_check.py",
+    "R077\trun_v3_unified.sh\tmethodology/run_v3_unified.sh",
+    "R098\tunified_stage7_v3/adapters/iot.py\tmethodology/unified_stage7_v3/adapters/iot.py",
+    "R097\tunified_stage7_v3/adapters/rubis.py\tmethodology/unified_stage7_v3/adapters/rubis.py",
+    "R099\tunified_stage7_v3/adapters/tpcx_iot.py\tmethodology/unified_stage7_v3/adapters/tpcx_iot.py",
+    "R099\tunified_stage7_v3/adapters/tsbs.py\tmethodology/unified_stage7_v3/adapters/tsbs.py",
+    "R096\tunified_stage7_v3/analysis/common.py\tmethodology/unified_stage7_v3/analysis/common.py",
+    "R087\tunified_stage7_v3/analysis/reuse.py\tmethodology/unified_stage7_v3/analysis/reuse.py",
+    "R093\tunified_stage7_v3/analysis/rubis.py\tmethodology/unified_stage7_v3/analysis/rubis.py",
+    "R095\tunified_stage7_v3/analysis/run_all.py\tmethodology/unified_stage7_v3/analysis/run_all.py",
+    "R097\tunified_stage7_v3/analysis/tsbs.py\tmethodology/unified_stage7_v3/analysis/tsbs.py",
+    "R062\tunified_stage7_v3/freeze.py\tmethodology/unified_stage7_v3/freeze.py",
+    "A\tmethodology/unified_stage7_v3/layout.py",
+    "R091\tunified_stage7_v3/plans.py\tmethodology/unified_stage7_v3/plans.py",
+    "R098\tunified_stage7_v3/provenance.py\tmethodology/unified_stage7_v3/provenance.py",
+    "A\tmethodology/unified_stage7_v3/relocation.py",
+    "R089\tunified_stage7_v3/report_prebenchmark.py\tmethodology/unified_stage7_v3/report_prebenchmark.py",
+    "R091\tunified_stage7_v3/run_prebenchmark.py\tmethodology/unified_stage7_v3/run_prebenchmark.py",
+    "R086\tunified_stage7_v3/stage9/reuse_v2.py\tmethodology/unified_stage7_v3/stage9/reuse_v2.py",
+    "R095\tunified_stage7_v3/stage9/rubis_v3.py\tmethodology/unified_stage7_v3/stage9/rubis_v3.py",
+    "R093\tunified_stage7_v3/stage9/tsbs_v3.py\tmethodology/unified_stage7_v3/stage9/tsbs_v3.py",
+    "R094\tunified_stage7_v3/tests/test_v3.py\tmethodology/unified_stage7_v3/tests/test_v3.py",
+    "A\treproduce.sh",
+    "R094\tversao_ajustada/rubis_v9/rubis_v1/acceptance.py\trubis/v2_protocolo_v1/rubis_v1/acceptance.py",
+    "R075\tversao_ajustada/rubis_v9/rubis_v1/common_paths.py\trubis/v2_protocolo_v1/rubis_v1/common_paths.py",
+    "R097\tversao_ajustada/rubis_v9/run_mac.sh\trubis/v2_protocolo_v1/run_mac.sh",
+    "R094\tversao_ajustada/rubis_v9/run_server.sh\trubis/v2_protocolo_v1/run_server.sh",
+    "A\tsetup_env.sh",
+    "R092\tversao_ajustada/tpcx_iot_benchmark/run_all.sh\ttpcx_iot/v2_protocolo_v1/run_all.sh",
+    "R096\tversao_ajustada/tpcx_iot_benchmark/tpcx_v1/acceptance.py\ttpcx_iot/v2_protocolo_v1/tpcx_v1/acceptance.py",
+    "R064\tversao_ajustada/tpcx_iot_benchmark/tpcx_v1/common_paths.py\ttpcx_iot/v2_protocolo_v1/tpcx_v1/common_paths.py",
+    "R092\tversao_ajustada/tsbs_tsdb/run_all.sh\ttsbs/v2_protocolo_v1/run_all.sh",
+    "R096\tversao_ajustada/tsbs_tsdb/tsbs_v1/acceptance.py\ttsbs/v2_protocolo_v1/tsbs_v1/acceptance.py",
+    "R067\tversao_ajustada/tsbs_tsdb/tsbs_v1/common_paths.py\ttsbs/v2_protocolo_v1/tsbs_v1/common_paths.py"
+  ],
+  "code_diff_sha256": "2184f7161f6313149afe7052b502f5c40ddb165c6af7c6c14862a24bff0cb11b",
+  "created_utc": "2026-11-18T20:31:38.209388+00:00",
+  "frozen_commit": "fcd99bf",
+  "new_code_sha256": {
+    "methodology/unified_stage7_v3/__init__.py": "8450c17809b05f37efa8daa71c46ec90db7e8408340ac688a10cf756e8c40e03",
+    "methodology/unified_stage7_v3/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "methodology/unified_stage7_v3/adapters/generic.py": "3465108167a321d4acad95790b806a05d6929a48ec2a4e5b0876ee985cfb3247",
+    "methodology/unified_stage7_v3/adapters/iot.py": "ed212fd0585afc83620f8a615fafc34a35946157bcd7b7aff92db1ac9072cf9d",
+    "methodology/unified_stage7_v3/adapters/rubis.py": "173132eb7c2404b19060be4691a399682af02f175c58279e9847c0a8cf334899",
+    "methodology/unified_stage7_v3/adapters/tpcx_iot.py": "2d3812d165d7bda430f2a59fd41425872734eb3fef49c2f67b7971f6ba182c3d",
+    "methodology/unified_stage7_v3/adapters/tsbs.py": "a87bcece4e722bcd79672ad9bd7e8eb7b0552226f868b101ce067803866ff9fe",
+    "methodology/unified_stage7_v3/aggregation.py": "feeaa482d96253c64a63761e524cf7d8fdc91ee7fa4a1c801c42efce57769a3e",
+    "methodology/unified_stage7_v3/estimator.py": "451d2da0a129be4f3dd155c7ad785f5545fbe67f24d5e51f898605461bd2f49e",
+    "methodology/unified_stage7_v3/freeze.py": "34248252536059e8b19e3d1f7c93e4d950d936819f9b6cdb0f1e5aa675f5b1f9",
+    "methodology/unified_stage7_v3/guards.py": "4f87eca6530d036c2346f025dea4caa8b90cbf40d74a83b04d88ad9505ff72e9",
+    "methodology/unified_stage7_v3/layout.py": "9f7d189fa9bf95fb48f2c58a0667a7ee4196a03c3e491c49cef8df24837f79a3",
+    "methodology/unified_stage7_v3/logical_bytes.py": "a6ee796d14eacbbeee2024ef59c6a22365cce393a28cc486dad4769df916316b",
+    "methodology/unified_stage7_v3/model.py": "a9e9315085637fc3e213a0f6430830b427146f99c141c68b3cfbfa57ea2a3ada",
+    "methodology/unified_stage7_v3/pareto.py": "fb3a4b29b63d2baad42d98af4a207da04b403d7c85651a51b63309bf249af069",
+    "methodology/unified_stage7_v3/plans.py": "33423a71d98588570a07b6e25faa322eaee5ca11f487a59316bfc24dd3ff7bb9",
+    "methodology/unified_stage7_v3/policy.json": "9bdd0df734877ae97589a432e6020bd7ee761318a9cb19af17143d8ecc8e1800",
+    "methodology/unified_stage7_v3/provenance.py": "ab1a73b615f43caddd0f67a8432a5d13291559adad9259c881392b7d89149298",
+    "methodology/unified_stage7_v3/relocation.py": "9b7ccf1837d3693af24e69c50e6b6170e60c7126b9b75e7b30f0fa000b472520",
+    "methodology/unified_stage7_v3/report_prebenchmark.py": "539b7cc9d592f3fda439f60779a37662931a2e080361efc23aa307d412dc85cb",
+    "methodology/unified_stage7_v3/run_prebenchmark.py": "fbe6cfb7c0de43376adbf64c59913c2428ec31cc7c7189d7302ef6af9b9d2ed5",
+    "methodology/unified_stage7_v3/selection.py": "20387f6a5e0b5ee67723127d88d27738f6d96797ab35b9b1faaaf202c6b03336",
+    "methodology/unified_stage7_v3/stage9/__init__.py": "9b55fac52b4cc7ab0611aca292e010bc7e1e03a02794262ce8ef7e6449cece50",
+    "methodology/unified_stage7_v3/stage9/reuse_v2.py": "0c1d6b97f9af754b631e91fd9cf916b9c7ebb2ef651b81144cad52adb3d04f23",
+    "methodology/unified_stage7_v3/stage9/rubis_v3.py": "570f44d114b74aec7a66d9adfc663de9531bacb2ae0110966b7b4f600aa95c30",
+    "methodology/unified_stage7_v3/stage9/tsbs_v3.py": "e95b93640d78faa8e1db8526634be3b01679431fbd2c882b1ddfd02cdbe55931"
+  },
+  "purpose": "relocation of the repository to the benchmark-first layout (D-V3-016); historical FROZEN.sha256 files untouched"
+}

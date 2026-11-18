@@ -1,0 +1,17 @@
+query_id,query_name,active_ts_families,active_modifiers,series_identity_bound,returns_raw_observations,has_time_range,metric_count,aggregate_function_count,time_bucketed,non_time_group_dimension_count,latest_only,latest_per_group_semantics,late_arrival_metadata_status,benchmark_latency_used
+Q01,single-groupby-1-1-1,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",true,false,true,1,1,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q02,single-groupby-1-1-12,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",true,false,true,1,1,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q03,single-groupby-1-8-1,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",false,false,true,1,1,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q04,single-groupby-5-1-1,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",true,false,true,5,5,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q05,single-groupby-5-1-12,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",true,false,true,5,5,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q06,single-groupby-5-8-1,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",false,false,true,5,5,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q07,cpu-max-all-1,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",true,false,true,10,10,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q08,cpu-max-all-8,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",false,false,true,10,10,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q09,cpu-max-all-32-24,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",false,false,true,10,10,true,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q10,double-groupby-1,"[""TS0"", ""TS5"", ""TS6""]","[""M1"", ""M3""]",false,false,true,1,1,true,1,false,false,UNSPECIFIED_BY_TSBS,false
+Q11,double-groupby-5,"[""TS0"", ""TS5"", ""TS6""]","[""M1"", ""M3""]",false,false,true,5,5,true,1,false,false,UNSPECIFIED_BY_TSBS,false
+Q12,double-groupby-all,"[""TS0"", ""TS5"", ""TS6""]","[""M1"", ""M3""]",false,false,true,10,10,true,1,false,false,UNSPECIFIED_BY_TSBS,false
+Q13,high-cpu-1,"[""TS0"", ""TS1"", ""TS2""]","[""M1"", ""M3""]",true,true,true,10,0,false,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q14,high-cpu-all,"[""TS0"", ""TS1""]","[""M1"", ""M3""]",false,true,true,10,0,false,0,false,false,UNSPECIFIED_BY_TSBS,false
+Q15,lastpoint,"[""TS0""]","[""M3""]",false,true,false,10,0,false,0,false,true,UNSPECIFIED_BY_TSBS,false
+Q16,groupby-orderby-limit,"[""TS0"", ""TS5""]","[""M1"", ""M3""]",false,false,false,1,1,true,0,false,false,UNSPECIFIED_BY_TSBS,false

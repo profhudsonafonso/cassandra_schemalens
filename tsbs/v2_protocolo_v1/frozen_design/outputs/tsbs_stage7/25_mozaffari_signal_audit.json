@@ -1,0 +1,28 @@
+[
+  {
+    "relationship": "host_generates_cpu_reading",
+    "direction": "host_to_reading",
+    "FR": null,
+    "FU": null,
+    "RC": null,
+    "TI": null,
+    "source": null,
+    "evidence_complete": false,
+    "cost_R": null,
+    "cost_D": null,
+    "cost_model_status": "UNAVAILABLE_MISSING_MEASURED_SIGNALS"
+  },
+  {
+    "relationship": "host_generates_cpu_reading",
+    "direction": "reading_to_host",
+    "FR": null,
+    "FU": null,
+    "RC": null,
+    "TI": null,
+    "source": null,
+    "evidence_complete": false,
+    "cost_R": null,
+    "cost_D": null,
+    "cost_model_status": "UNAVAILABLE_MISSING_MEASURED_SIGNALS"
+  }
+]

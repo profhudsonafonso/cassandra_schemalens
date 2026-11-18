@@ -1,0 +1,60 @@
+{
+  "stage": 5,
+  "scope": "TSDB_ONLY_QUERY_PLAN_STRUCTURAL_VALIDATION",
+  "queries": 16,
+  "candidate_count": 9,
+  "query_plans": 37,
+  "families": [
+    "TS0",
+    "TS1",
+    "TS2",
+    "TS5",
+    "TS6"
+  ],
+  "coverage_class": "STRUCTURAL_WITH_RUNTIME_GUARDS",
+  "per_query_has_structural_plan": true,
+  "source_files_sha256": {
+    "candidate_specs": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+    "query_map": "a9040edbda38d0ed6fbeef6806a6868e0b83e5839a3388dd07aaf58c86ffbdc2",
+    "read_primitives": "1d5818c62da8ff7b7e45bdd570c4f62b7809def699736693336b542dd96010f6",
+    "stage4_manifest": "3fb3f7dcb872524d9e47b80246b391228048add724ad61ee04e8ad3d1dfe8f70",
+    "query_manifest": "36d7e775e0d64d2161377975318d5708d85422dc1f96e62798b59c75618fbf8d",
+    "schema": "39b50f888b08b3496a6ac467d34b62800c3ae800734717b40e9229abcc84f75c",
+    "stage4_physical_policy": "c03535c9ed2b0d8db5ea823ca1b365287037286870bec268c0d4cfe010b6471d"
+  },
+  "logical_sql_sha256": {
+    "Q01_single-groupby-1-1-1.sql": "770612f95f4728eb40cc7e9ac7b9c929d413e13f3654f2121dea47e23a7baf50",
+    "Q02_single-groupby-1-1-12.sql": "770612f95f4728eb40cc7e9ac7b9c929d413e13f3654f2121dea47e23a7baf50",
+    "Q03_single-groupby-1-8-1.sql": "50654dafa14c3d9d1b3d8750d95df1ab28c0ed446351dc60d53907b265b622da",
+    "Q04_single-groupby-5-1-1.sql": "9c0e65ad1eca3e68677f39ec92d3ddf431eb56952e2db9b7fc753fed59b4cfe9",
+    "Q05_single-groupby-5-1-12.sql": "9c0e65ad1eca3e68677f39ec92d3ddf431eb56952e2db9b7fc753fed59b4cfe9",
+    "Q06_single-groupby-5-8-1.sql": "c47a9be7c693f13c94bdc152092bc65916d33c3b2979d2cbb97064fc60b9bf5d",
+    "Q07_cpu-max-all-1.sql": "92c46f8a39f7ee42fce9085f9f7b30195ba8bbe7a19140671defdefa6b40a169",
+    "Q08_cpu-max-all-8.sql": "05535f91bbcd02ea5bd915ecc13c74de473496401189b5a554518bbb9bb36340",
+    "Q09_cpu-max-all-32-24.sql": "826182c0d2e4aa0406c6aa55e2d1bbfe046ec2045fb0e2f5dd3e0280b3812481",
+    "Q10_double-groupby-1.sql": "72477386581800d2830bdb16922f87fc588fd474155e5a4e6ee74f743076d266",
+    "Q11_double-groupby-5.sql": "40dc2bedaa71f5d0268a2d1fb8aa59eef6d48dee54921a5e64acbe9663d3e8ea",
+    "Q12_double-groupby-all.sql": "61f24e931986884eb588d71ea2202d996c2d9cb7bdb895032291dee86960b617",
+    "Q13_high-cpu-1.sql": "7aea26388150c87c730916b85fda387981b42bf281f489bd3188d6c85217cd53",
+    "Q14_high-cpu-all.sql": "e02719784fabd75bb2c044fd957bdbaf04022a232b1fca4a5732724c49c7a0fa",
+    "Q15_lastpoint.sql": "84a8b0cd287f0783b771dead003f8d0f524c28b9a27fdb074da0e8bf959985f2",
+    "Q16_groupby-orderby-limit.sql": "601cd21e78427e1ef1f4a1f39384079ec0487886bd0314862c8f1a189eb9790e"
+  },
+  "alignment_guarded_plans": 16,
+  "raw_plans_without_time_alignment_restriction": 21,
+  "generated_read_binder": true,
+  "CQL_executed_on_server": false,
+  "database_result_equivalence_verified": false,
+  "complete_write_plan": false,
+  "materialized_aggregate_consistency_verified": false,
+  "benchmarked": false,
+  "C0_C9_used": false,
+  "cautions": [
+    "QueryPlans require runtime bindings and source data loaded by a future Stage 6 WritePlan.",
+    "Queries spanning partial rollup windows must be rejected or use a separately justified raw fallback.",
+    "All-host queries need a complete host roster from the SAME loaded dataset; Stage 4 does not materialize one.",
+    "TSBS cpu-only is assumed dense for scalar multi-metric pivot/latest-point behavior.",
+    "Static CQL shape checks and mock-data tests do NOT establish live Cassandra executability.",
+    "TS0 is NOT equivalent to original TSBS daily-bucketed series_id baseline."
+  ]
+}

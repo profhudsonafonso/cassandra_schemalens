@@ -1,0 +1,2114 @@
+[
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts2_wide_bucket_1d",
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "relative_read_proxy": 0.12,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "rank": 1,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "rank": 2,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0373333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0074666667,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0037333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts2_wide_bucket_1d",
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "relative_read_proxy": 0.12,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "rank": 1,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts5_global_max_minute",
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "relative_read_proxy": 0.0060277778,
+    "alignment_guard": "minute",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "dataset_start_ns_provided",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts5_max_by_host_hour",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "relative_read_proxy": 0.4133333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts5_max_by_host_hour",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "relative_read_proxy": 0.4133333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts5_max_by_host_hour",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "relative_read_proxy": 0.4133333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0373333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0074666667,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0037333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts2_wide_bucket_1d",
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "relative_read_proxy": 0.12,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "rank": 2,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts5_global_max_minute",
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "relative_read_proxy": 0.0060277778,
+    "alignment_guard": "minute",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "dataset_start_ns_provided",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0373333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0074666667,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0037333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "rank": 3,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts5_global_max_minute",
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "relative_read_proxy": 0.0060277778,
+    "alignment_guard": "minute",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "dataset_start_ns_provided",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts5_max_by_host_hour",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "relative_read_proxy": 0.4133333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts5_max_by_host_hour",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "relative_read_proxy": 0.4133333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts5_max_by_host_hour",
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "relative_read_proxy": 0.4133333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0373333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0074666667,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0037333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "rank": 4,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts5_global_max_minute",
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "relative_read_proxy": 0.0060277778,
+    "alignment_guard": "minute",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "dataset_start_ns_provided",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_minute"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q01",
+    "query_name": "single-groupby-1-1-1",
+    "selected_plan_id": "Q01__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q02",
+    "query_name": "single-groupby-1-1-12",
+    "selected_plan_id": "Q02__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q03",
+    "query_name": "single-groupby-1-8-1",
+    "selected_plan_id": "Q03__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q04",
+    "query_name": "single-groupby-5-1-1",
+    "selected_plan_id": "Q04__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q05",
+    "query_name": "single-groupby-5-1-12",
+    "selected_plan_id": "Q05__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q06",
+    "query_name": "single-groupby-5-8-1",
+    "selected_plan_id": "Q06__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q07",
+    "query_name": "cpu-max-all-1",
+    "selected_plan_id": "Q07__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q08",
+    "query_name": "cpu-max-all-8",
+    "selected_plan_id": "Q08__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q09",
+    "query_name": "cpu-max-all-32-24",
+    "selected_plan_id": "Q09__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q10",
+    "query_name": "double-groupby-1",
+    "selected_plan_id": "Q10__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0373333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q11",
+    "query_name": "double-groupby-5",
+    "selected_plan_id": "Q11__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0074666667,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q12",
+    "query_name": "double-groupby-all",
+    "selected_plan_id": "Q12__ts6_hour_host_dimension",
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "relative_read_proxy": 0.0037333333,
+    "alignment_guard": "hour",
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided",
+      "time_range_aligned_to_hour"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q13",
+    "query_name": "high-cpu-1",
+    "selected_plan_id": "Q13__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q14",
+    "query_name": "high-cpu-all",
+    "selected_plan_id": "Q14__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q15",
+    "query_name": "lastpoint",
+    "selected_plan_id": "Q15__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "cpu_metric_timestamps_are_dense",
+      "cpu_metrics_same_latest_timestamp",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "rank": 5,
+    "query_id": "Q16",
+    "query_name": "groupby-orderby-limit",
+    "selected_plan_id": "Q16__ts0_metric_raw",
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "relative_read_proxy": 1.0,
+    "alignment_guard": null,
+    "unverified_runtime_requirements": [
+      "complete_host_roster_from_same_loaded_dataset",
+      "dataset_materialized_consistently",
+      "host_identifiers_provided",
+      "query_parameters_provided"
+    ],
+    "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+  }
+]

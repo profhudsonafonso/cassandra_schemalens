@@ -1,0 +1,65 @@
+{
+  "stage": 8,
+  "scope": "TSDB_ONLY_WORKLOAD_CONSOLIDATION_BEFORE_BENCHMARK",
+  "selection_is_analytical_prebenchmark_only": true,
+  "uses_only_temporal_ts0_ts8_activation": true,
+  "c0_c9_rules_loaded": false,
+  "activation_rules_modified": false,
+  "query_count": 16,
+  "physical_candidate_count": 9,
+  "read_plan_count": 37,
+  "profiles": [
+    "conservative",
+    "conditional_aligned"
+  ],
+  "counts": {
+    "conservative": {
+      "subsets_checked": 256,
+      "canonical_complete_deployments": 2,
+      "pareto_frontier_size": 2,
+      "hbench_top_k_selected": 2
+    },
+    "conditional_aligned": {
+      "subsets_checked": 256,
+      "canonical_complete_deployments": 24,
+      "pareto_frontier_size": 8,
+      "hbench_top_k_selected": 5
+    }
+  },
+  "query_frequency_input": "MISSING; uniform weighting assumed BY STAGE 8 POLICY ONLY",
+  "score_interpretation": "ILLUSTRATIVE_ANALYTICAL_PROXIES_NOT_MS_NOT_OBSERVED_COST",
+  "top_k": 5,
+  "selected_deployments": 7,
+  "requirement": "Every deployment must include TS0 canonical raw series for correct recomputation and Q15 lastpoint",
+  "runtime_guard_policy": {
+    "conservative": "No rollup alignment assumed; all other Stage 5 runtime guards remain unverified",
+    "conditional_aligned": "Hour/minute rollup alignment assumed; requires verification on actual TSBS generated queries; TS0 remains fallback if guard fails"
+  },
+  "write_plan_status": "REFERENCE_ONLY_NO_DURABLE_CASSANDRA_CONSISTENCY",
+  "external_baseline": "Original TSBS Cassandra schema is outside SchemaLens selection and must be separately benchmarked",
+  "input_sha256": {
+    "specs": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+    "query_map": "a9040edbda38d0ed6fbeef6806a6868e0b83e5839a3388dd07aaf58c86ffbdc2",
+    "stage4_manifest": "3fb3f7dcb872524d9e47b80246b391228048add724ad61ee04e8ad3d1dfe8f70",
+    "read_plans": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+    "stage5_manifest": "6a89bbaba8076e771439cff5746922472d1ab62813ba72d89c1e86cfcf40c49c",
+    "write_plans": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87",
+    "stage6_manifest": "b95907225a4b8fe41fcc66000778fca943cef77e243d785dd1008f4d8ab40648",
+    "footprint": "cab88234e1ed94794b4b4c23ef43d58df6532ea2ddfc760c16420aca770603bc",
+    "writes": "617e1b2d0b83a7d89057f336b4e9dcfef8584b3272f148e7e9f75c1b141cf1bf",
+    "read_costs": "2b4626093bef5fff39248099a49dd8903edf716d7907cffb13e386367df784e3",
+    "stage7_manifest": "32b4dc90be1e2ead691b33750ec5de3a021407045cdb60e8712c3ab0c23e1cd3",
+    "workload": "36d7e775e0d64d2161377975318d5708d85422dc1f96e62798b59c75618fbf8d",
+    "stage8_policy": "9845e95391b877d485ddd40ecb16a79a211aae0f85e164f783824891593ee352"
+  },
+  "cassandra_executed": false,
+  "tsbs_benchmarked": false,
+  "limitations": [
+    "The Pareto frontier ignores runtime and cardinality risks not represented by numeric proxies; warnings must be audited.",
+    "No query runtime parameters were available. Conditional plans cannot claim exact aligned-window coverage yet.",
+    "Structural covers are NOT operationally demonstrated. All-host host roster is external.",
+    "Source correctness and concurrency require durable write maintenance; Stage 6 is in-memory reference only.",
+    "The candidate universe of nine physical structures is NOT an unrestricted exhaustive Cassandra design space.",
+    "Do not report these top-k as measured best configurations or near-best within 5% before Stage 9."
+  ]
+}

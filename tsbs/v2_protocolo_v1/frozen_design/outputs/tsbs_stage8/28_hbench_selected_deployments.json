@@ -1,0 +1,1986 @@
+[
+  {
+    "deployment_id": "H_815d3cd1f0cb",
+    "profile": "conservative",
+    "candidate_ids": [
+      "ts0_metric_raw",
+      "ts2_wide_bucket_1d"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw",
+      "ts2_cpu_wide_1d"
+    ],
+    "table_count": 2,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts2_wide_bucket_1d",
+        "candidate_id": "ts2_wide_bucket_1d",
+        "family": "TS2",
+        "relative_read_proxy": 0.12,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw",
+      "ts2_wide_bucket_1d"
+    ],
+    "derived_candidates_require_durable_source": [],
+    "normalized_proxies": {
+      "normalized_read": 0.945,
+      "normalized_storage": 1.1590909091,
+      "normalized_touched_write_keys": 1.1
+    },
+    "weighted_proxy_score": 0.9819090909,
+    "conditional_aligned_query_ids": [],
+    "physical_warnings": [],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 1
+  },
+  {
+    "deployment_id": "H_df2016403111",
+    "profile": "conservative",
+    "candidate_ids": [
+      "ts0_metric_raw"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw"
+    ],
+    "table_count": 1,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw"
+    ],
+    "derived_candidates_require_durable_source": [],
+    "normalized_proxies": {
+      "normalized_read": 1.0,
+      "normalized_storage": 1.0,
+      "normalized_touched_write_keys": 1.0
+    },
+    "weighted_proxy_score": 1.0,
+    "conditional_aligned_query_ids": [],
+    "physical_warnings": [],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 2
+  },
+  {
+    "deployment_id": "H_077824c77c40",
+    "profile": "conditional_aligned",
+    "candidate_ids": [
+      "ts0_metric_raw",
+      "ts2_wide_bucket_1d",
+      "ts5_global_max_minute",
+      "ts6_hour_host_dimension"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw",
+      "ts2_cpu_wide_1d",
+      "ts5_cpu_global_max_minute",
+      "ts6_cpu_by_hour_host"
+    ],
+    "table_count": 4,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0373333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0074666667,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0037333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts2_wide_bucket_1d",
+        "candidate_id": "ts2_wide_bucket_1d",
+        "family": "TS2",
+        "relative_read_proxy": 0.12,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts5_global_max_minute",
+        "candidate_id": "ts5_global_max_minute",
+        "family": "TS5",
+        "relative_read_proxy": 0.0060277778,
+        "alignment_guard": "minute",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "dataset_start_ns_provided",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_minute"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw",
+      "ts2_wide_bucket_1d",
+      "ts5_global_max_minute",
+      "ts6_hour_host_dimension"
+    ],
+    "derived_candidates_require_durable_source": [
+      "ts5_global_max_minute",
+      "ts6_hour_host_dimension"
+    ],
+    "normalized_proxies": {
+      "normalized_read": 0.6984100694,
+      "normalized_storage": 1.164030303,
+      "normalized_touched_write_keys": 1.3
+    },
+    "weighted_proxy_score": 0.8051310859,
+    "conditional_aligned_query_ids": [
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q16"
+    ],
+    "physical_warnings": [
+      "CROSS_HOST_PARTITION_GROWS_WITH_HOST_CARDINALITY",
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 1
+  },
+  {
+    "deployment_id": "H_ea367cb023b3",
+    "profile": "conditional_aligned",
+    "candidate_ids": [
+      "ts0_metric_raw",
+      "ts2_wide_bucket_1d",
+      "ts5_global_max_minute",
+      "ts5_max_by_host_hour",
+      "ts6_hour_host_dimension"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw",
+      "ts2_cpu_wide_1d",
+      "ts5_cpu_global_max_minute",
+      "ts5_cpu_max_by_host_hour",
+      "ts6_cpu_by_hour_host"
+    ],
+    "table_count": 5,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts5_max_by_host_hour",
+        "candidate_id": "ts5_max_by_host_hour",
+        "family": "TS5",
+        "relative_read_proxy": 0.4133333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts5_max_by_host_hour",
+        "candidate_id": "ts5_max_by_host_hour",
+        "family": "TS5",
+        "relative_read_proxy": 0.4133333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts5_max_by_host_hour",
+        "candidate_id": "ts5_max_by_host_hour",
+        "family": "TS5",
+        "relative_read_proxy": 0.4133333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0373333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0074666667,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0037333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts2_wide_bucket_1d",
+        "candidate_id": "ts2_wide_bucket_1d",
+        "family": "TS2",
+        "relative_read_proxy": 0.12,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts5_global_max_minute",
+        "candidate_id": "ts5_global_max_minute",
+        "family": "TS5",
+        "relative_read_proxy": 0.0060277778,
+        "alignment_guard": "minute",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "dataset_start_ns_provided",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_minute"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw",
+      "ts2_wide_bucket_1d",
+      "ts5_global_max_minute",
+      "ts5_max_by_host_hour",
+      "ts6_hour_host_dimension"
+    ],
+    "derived_candidates_require_durable_source": [
+      "ts5_global_max_minute",
+      "ts5_max_by_host_hour",
+      "ts6_hour_host_dimension"
+    ],
+    "normalized_proxies": {
+      "normalized_read": 0.5884100694,
+      "normalized_storage": 1.1814545455,
+      "normalized_touched_write_keys": 2.3
+    },
+    "weighted_proxy_score": 0.8188735101,
+    "conditional_aligned_query_ids": [
+      "Q07",
+      "Q08",
+      "Q09",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q16"
+    ],
+    "physical_warnings": [
+      "CROSS_HOST_PARTITION_GROWS_WITH_HOST_CARDINALITY",
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 2
+  },
+  {
+    "deployment_id": "H_69cc46e6ed43",
+    "profile": "conditional_aligned",
+    "candidate_ids": [
+      "ts0_metric_raw",
+      "ts5_global_max_minute",
+      "ts6_hour_host_dimension"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw",
+      "ts5_cpu_global_max_minute",
+      "ts6_cpu_by_hour_host"
+    ],
+    "table_count": 3,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0373333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0074666667,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0037333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts5_global_max_minute",
+        "candidate_id": "ts5_global_max_minute",
+        "family": "TS5",
+        "relative_read_proxy": 0.0060277778,
+        "alignment_guard": "minute",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "dataset_start_ns_provided",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_minute"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw",
+      "ts5_global_max_minute",
+      "ts6_hour_host_dimension"
+    ],
+    "derived_candidates_require_durable_source": [
+      "ts5_global_max_minute",
+      "ts6_hour_host_dimension"
+    ],
+    "normalized_proxies": {
+      "normalized_read": 0.7534100694,
+      "normalized_storage": 1.0049393939,
+      "normalized_touched_write_keys": 1.2
+    },
+    "weighted_proxy_score": 0.8232219949,
+    "conditional_aligned_query_ids": [
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q16"
+    ],
+    "physical_warnings": [
+      "CROSS_HOST_PARTITION_GROWS_WITH_HOST_CARDINALITY",
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 3
+  },
+  {
+    "deployment_id": "H_e08177e1a2a8",
+    "profile": "conditional_aligned",
+    "candidate_ids": [
+      "ts0_metric_raw",
+      "ts5_global_max_minute",
+      "ts5_max_by_host_hour",
+      "ts6_hour_host_dimension"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw",
+      "ts5_cpu_global_max_minute",
+      "ts5_cpu_max_by_host_hour",
+      "ts6_cpu_by_hour_host"
+    ],
+    "table_count": 4,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts5_max_by_host_hour",
+        "candidate_id": "ts5_max_by_host_hour",
+        "family": "TS5",
+        "relative_read_proxy": 0.4133333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts5_max_by_host_hour",
+        "candidate_id": "ts5_max_by_host_hour",
+        "family": "TS5",
+        "relative_read_proxy": 0.4133333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts5_max_by_host_hour",
+        "candidate_id": "ts5_max_by_host_hour",
+        "family": "TS5",
+        "relative_read_proxy": 0.4133333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0373333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0074666667,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0037333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts5_global_max_minute",
+        "candidate_id": "ts5_global_max_minute",
+        "family": "TS5",
+        "relative_read_proxy": 0.0060277778,
+        "alignment_guard": "minute",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "dataset_start_ns_provided",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_minute"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw",
+      "ts5_global_max_minute",
+      "ts5_max_by_host_hour",
+      "ts6_hour_host_dimension"
+    ],
+    "derived_candidates_require_durable_source": [
+      "ts5_global_max_minute",
+      "ts5_max_by_host_hour",
+      "ts6_hour_host_dimension"
+    ],
+    "normalized_proxies": {
+      "normalized_read": 0.6434100694,
+      "normalized_storage": 1.0223636364,
+      "normalized_touched_write_keys": 2.2
+    },
+    "weighted_proxy_score": 0.8369644192,
+    "conditional_aligned_query_ids": [
+      "Q07",
+      "Q08",
+      "Q09",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q16"
+    ],
+    "physical_warnings": [
+      "CROSS_HOST_PARTITION_GROWS_WITH_HOST_CARDINALITY",
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 4
+  },
+  {
+    "deployment_id": "H_b6f44ac379f4",
+    "profile": "conditional_aligned",
+    "candidate_ids": [
+      "ts0_metric_raw",
+      "ts6_hour_host_dimension"
+    ],
+    "physical_table_names": [
+      "ts0_cpu_metric_raw",
+      "ts6_cpu_by_hour_host"
+    ],
+    "table_count": 2,
+    "covered_queries_structural": 16,
+    "query_routes": {
+      "Q01": {
+        "query_name": "single-groupby-1-1-1",
+        "selected_plan_id": "Q01__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q02": {
+        "query_name": "single-groupby-1-1-12",
+        "selected_plan_id": "Q02__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q03": {
+        "query_name": "single-groupby-1-8-1",
+        "selected_plan_id": "Q03__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q04": {
+        "query_name": "single-groupby-5-1-1",
+        "selected_plan_id": "Q04__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q05": {
+        "query_name": "single-groupby-5-1-12",
+        "selected_plan_id": "Q05__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q06": {
+        "query_name": "single-groupby-5-8-1",
+        "selected_plan_id": "Q06__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q07": {
+        "query_name": "cpu-max-all-1",
+        "selected_plan_id": "Q07__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q08": {
+        "query_name": "cpu-max-all-8",
+        "selected_plan_id": "Q08__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q09": {
+        "query_name": "cpu-max-all-32-24",
+        "selected_plan_id": "Q09__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q10": {
+        "query_name": "double-groupby-1",
+        "selected_plan_id": "Q10__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0373333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q11": {
+        "query_name": "double-groupby-5",
+        "selected_plan_id": "Q11__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0074666667,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q12": {
+        "query_name": "double-groupby-all",
+        "selected_plan_id": "Q12__ts6_hour_host_dimension",
+        "candidate_id": "ts6_hour_host_dimension",
+        "family": "TS6",
+        "relative_read_proxy": 0.0037333333,
+        "alignment_guard": "hour",
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided",
+          "time_range_aligned_to_hour"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q13": {
+        "query_name": "high-cpu-1",
+        "selected_plan_id": "Q13__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q14": {
+        "query_name": "high-cpu-all",
+        "selected_plan_id": "Q14__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q15": {
+        "query_name": "lastpoint",
+        "selected_plan_id": "Q15__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "cpu_metric_timestamps_are_dense",
+          "cpu_metrics_same_latest_timestamp",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      },
+      "Q16": {
+        "query_name": "groupby-orderby-limit",
+        "selected_plan_id": "Q16__ts0_metric_raw",
+        "candidate_id": "ts0_metric_raw",
+        "family": "TS0",
+        "relative_read_proxy": 1.0,
+        "alignment_guard": null,
+        "unverified_runtime_requirements": [
+          "complete_host_roster_from_same_loaded_dataset",
+          "dataset_materialized_consistently",
+          "host_identifiers_provided",
+          "query_parameters_provided"
+        ],
+        "coverage_status": "CONDITIONAL_STRUCTURAL_NOT_RUNTIME_VERIFIED"
+      }
+    },
+    "required_write_plan_ids": [
+      "ts0_metric_raw",
+      "ts6_hour_host_dimension"
+    ],
+    "derived_candidates_require_durable_source": [
+      "ts6_hour_host_dimension"
+    ],
+    "normalized_proxies": {
+      "normalized_read": 0.8155333333,
+      "normalized_storage": 1.0041666667,
+      "normalized_touched_write_keys": 1.1
+    },
+    "weighted_proxy_score": 0.8628433333,
+    "conditional_aligned_query_ids": [
+      "Q10",
+      "Q11",
+      "Q12"
+    ],
+    "physical_warnings": [
+      "CROSS_HOST_PARTITION_GROWS_WITH_HOST_CARDINALITY",
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ],
+    "all_queries_runtime_verified": false,
+    "distributed_write_maintenance_verified": false,
+    "cassandra_ddl_dml_executed": false,
+    "benchmark_executed": false,
+    "rank": 5
+  }
+]

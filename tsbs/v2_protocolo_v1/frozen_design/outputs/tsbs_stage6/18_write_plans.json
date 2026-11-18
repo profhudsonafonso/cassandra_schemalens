@@ -1,0 +1,524 @@
+[
+  {
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "variant": "metric_raw",
+    "table_name": "ts0_cpu_metric_raw",
+    "column_order": [
+      "hostname",
+      "metric_name",
+      "timestamp_ns",
+      "value"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "metric_name": "text",
+      "timestamp_ns": "bigint",
+      "value": "double"
+    },
+    "chosen_modifiers": {},
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "metric_name",
+      "timestamp_ns"
+    ],
+    "write_cql": "INSERT INTO ts0_cpu_metric_raw (hostname, metric_name, timestamp_ns, value) VALUES (?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns = ?;",
+    "write_strategy": "raw_upsert",
+    "reference_maintenance": "REFERENCE_DIRECT_FULL_ROW_UPSERT",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "overwrite_existing_row_for_same_primary_key",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "variant": "metric_bucket_1d",
+    "table_name": "ts1_cpu_metric_1d",
+    "column_order": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "timestamp_ns",
+      "value"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "timestamp_ns": "bigint",
+      "value": "double"
+    },
+    "chosen_modifiers": {
+      "M1_bucket_days": 1
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "timestamp_ns"
+    ],
+    "write_cql": "INSERT INTO ts1_cpu_metric_1d (hostname, metric_name, bucket_day, timestamp_ns, value) VALUES (?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts1_cpu_metric_1d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns = ?;",
+    "write_strategy": "raw_upsert",
+    "reference_maintenance": "REFERENCE_DIRECT_FULL_ROW_UPSERT",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "overwrite_existing_row_for_same_primary_key",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "variant": "metric_bucket_7d",
+    "table_name": "ts1_cpu_metric_7d",
+    "column_order": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "timestamp_ns",
+      "value"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "timestamp_ns": "bigint",
+      "value": "double"
+    },
+    "chosen_modifiers": {
+      "M1_bucket_days": 7
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "timestamp_ns"
+    ],
+    "write_cql": "INSERT INTO ts1_cpu_metric_7d (hostname, metric_name, bucket_day, timestamp_ns, value) VALUES (?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts1_cpu_metric_7d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns = ?;",
+    "write_strategy": "raw_upsert",
+    "reference_maintenance": "REFERENCE_DIRECT_FULL_ROW_UPSERT",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "overwrite_existing_row_for_same_primary_key",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "variant": "wide_bucket_1d",
+    "table_name": "ts2_cpu_wide_1d",
+    "column_order": [
+      "hostname",
+      "bucket_day",
+      "timestamp_ns",
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "bucket_day": "date",
+      "timestamp_ns": "bigint",
+      "usage_user": "double",
+      "usage_system": "double",
+      "usage_idle": "double",
+      "usage_nice": "double",
+      "usage_iowait": "double",
+      "usage_irq": "double",
+      "usage_softirq": "double",
+      "usage_steal": "double",
+      "usage_guest": "double",
+      "usage_guest_nice": "double"
+    },
+    "chosen_modifiers": {
+      "M1_bucket_days": 1
+    },
+    "partition_key": [
+      "hostname",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "bucket_day",
+      "timestamp_ns"
+    ],
+    "write_cql": "INSERT INTO ts2_cpu_wide_1d (hostname, bucket_day, timestamp_ns, usage_user, usage_system, usage_idle, usage_nice, usage_iowait, usage_irq, usage_softirq, usage_steal, usage_guest, usage_guest_nice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts2_cpu_wide_1d WHERE hostname = ? AND bucket_day = ? AND timestamp_ns = ?;",
+    "write_strategy": "raw_upsert",
+    "reference_maintenance": "REFERENCE_DIRECT_FULL_ROW_UPSERT",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "overwrite_existing_row_for_same_primary_key",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "variant": "global_max_minute",
+    "table_name": "ts5_cpu_global_max_minute",
+    "column_order": [
+      "metric_name",
+      "bucket_day",
+      "minute_ns",
+      "max_value"
+    ],
+    "column_types": {
+      "metric_name": "text",
+      "bucket_day": "date",
+      "minute_ns": "bigint",
+      "max_value": "double"
+    },
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "minute"
+    },
+    "partition_key": [
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "identity_columns": [
+      "metric_name",
+      "bucket_day",
+      "minute_ns"
+    ],
+    "write_cql": "INSERT INTO ts5_cpu_global_max_minute (metric_name, bucket_day, minute_ns, max_value) VALUES (?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts5_cpu_global_max_minute WHERE metric_name = ? AND bucket_day = ? AND minute_ns = ?;",
+    "write_strategy": "derived_recompute",
+    "reference_maintenance": "REFERENCE_RECOMPUTE_AFFECTED_GROUP_AFTER_CANONICAL_CHANGE",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "recompute_impacted_group_from_reference_membership",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "variant": "max_by_host_hour",
+    "table_name": "ts5_cpu_max_by_host_hour",
+    "column_order": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "hour_ns",
+      "max_value"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "hour_ns": "bigint",
+      "max_value": "double"
+    },
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "hour"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "hour_ns"
+    ],
+    "write_cql": "INSERT INTO ts5_cpu_max_by_host_hour (hostname, metric_name, bucket_day, hour_ns, max_value) VALUES (?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts5_cpu_max_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns = ?;",
+    "write_strategy": "derived_recompute",
+    "reference_maintenance": "REFERENCE_RECOMPUTE_AFFECTED_GROUP_AFTER_CANONICAL_CHANGE",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "recompute_impacted_group_from_reference_membership",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "variant": "max_by_host_minute",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "column_order": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "minute_ns",
+      "max_value"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "minute_ns": "bigint",
+      "max_value": "double"
+    },
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "minute"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "minute_ns"
+    ],
+    "write_cql": "INSERT INTO ts5_cpu_max_by_host_minute (hostname, metric_name, bucket_day, minute_ns, max_value) VALUES (?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns = ?;",
+    "write_strategy": "derived_recompute",
+    "reference_maintenance": "REFERENCE_RECOMPUTE_AFFECTED_GROUP_AFTER_CANONICAL_CHANGE",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "recompute_impacted_group_from_reference_membership",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "variant": "sum_count_by_host_hour",
+    "table_name": "ts5_cpu_sum_count_by_host_hour",
+    "column_order": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "hour_ns",
+      "value_sum",
+      "sample_count"
+    ],
+    "column_types": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "hour_ns": "bigint",
+      "value_sum": "double",
+      "sample_count": "bigint"
+    },
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "hour"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "identity_columns": [
+      "hostname",
+      "metric_name",
+      "bucket_day",
+      "hour_ns"
+    ],
+    "write_cql": "INSERT INTO ts5_cpu_sum_count_by_host_hour (hostname, metric_name, bucket_day, hour_ns, value_sum, sample_count) VALUES (?, ?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts5_cpu_sum_count_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns = ?;",
+    "write_strategy": "derived_recompute",
+    "reference_maintenance": "REFERENCE_RECOMPUTE_AFFECTED_GROUP_AFTER_CANONICAL_CHANGE",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "recompute_impacted_group_from_reference_membership",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  },
+  {
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "variant": "hour_host_dimension",
+    "table_name": "ts6_cpu_by_hour_host",
+    "column_order": [
+      "bucket_day",
+      "hour_ns",
+      "hostname",
+      "sum_usage_user",
+      "count_usage_user",
+      "sum_usage_system",
+      "count_usage_system",
+      "sum_usage_idle",
+      "count_usage_idle",
+      "sum_usage_nice",
+      "count_usage_nice",
+      "sum_usage_iowait",
+      "count_usage_iowait",
+      "sum_usage_irq",
+      "count_usage_irq",
+      "sum_usage_softirq",
+      "count_usage_softirq",
+      "sum_usage_steal",
+      "count_usage_steal",
+      "sum_usage_guest",
+      "count_usage_guest",
+      "sum_usage_guest_nice",
+      "count_usage_guest_nice"
+    ],
+    "column_types": {
+      "bucket_day": "date",
+      "hour_ns": "bigint",
+      "hostname": "text",
+      "sum_usage_user": "double",
+      "count_usage_user": "bigint",
+      "sum_usage_system": "double",
+      "count_usage_system": "bigint",
+      "sum_usage_idle": "double",
+      "count_usage_idle": "bigint",
+      "sum_usage_nice": "double",
+      "count_usage_nice": "bigint",
+      "sum_usage_iowait": "double",
+      "count_usage_iowait": "bigint",
+      "sum_usage_irq": "double",
+      "count_usage_irq": "bigint",
+      "sum_usage_softirq": "double",
+      "count_usage_softirq": "bigint",
+      "sum_usage_steal": "double",
+      "count_usage_steal": "bigint",
+      "sum_usage_guest": "double",
+      "count_usage_guest": "bigint",
+      "sum_usage_guest_nice": "double",
+      "count_usage_guest_nice": "bigint"
+    },
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "hour"
+    },
+    "partition_key": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "clustering_key": [
+      "hostname"
+    ],
+    "identity_columns": [
+      "bucket_day",
+      "hour_ns",
+      "hostname"
+    ],
+    "write_cql": "INSERT INTO ts6_cpu_by_hour_host (bucket_day, hour_ns, hostname, sum_usage_user, count_usage_user, sum_usage_system, count_usage_system, sum_usage_idle, count_usage_idle, sum_usage_nice, count_usage_nice, sum_usage_iowait, count_usage_iowait, sum_usage_irq, count_usage_irq, sum_usage_softirq, count_usage_softirq, sum_usage_steal, count_usage_steal, sum_usage_guest, count_usage_guest, sum_usage_guest_nice, count_usage_guest_nice) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);",
+    "delete_cql": "DELETE FROM ts6_cpu_by_hour_host WHERE bucket_day = ? AND hour_ns = ? AND hostname = ?;",
+    "write_strategy": "derived_recompute",
+    "reference_maintenance": "REFERENCE_RECOMPUTE_AFFECTED_GROUP_AFTER_CANONICAL_CHANGE",
+    "source_observation": "TSBS_CPU_ONLY_DENSE_10_METRICS",
+    "idempotence": "canonical_logical_identity_deduplicated_before_materialization",
+    "late_or_corrected_event_handling": "recompute_impacted_group_from_reference_membership",
+    "requires": [
+      "complete_canonical_cpu_event",
+      "single_writer_ordered_event_stream",
+      "stable_host_timestamp_identity",
+      "external_durable_replay_for_production"
+    ],
+    "live_driver_implemented": false,
+    "distributed_atomic_maintenance_proven": false,
+    "benchmark_verified": false
+  }
+]

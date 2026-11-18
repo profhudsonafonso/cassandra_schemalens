@@ -1,0 +1,130 @@
+[
+  {
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "estimated_total_rows": 4320000,
+    "estimated_partitions": 1000,
+    "estimated_max_rows_in_one_partition": 4320,
+    "estimated_bytes_per_row_proxy": 88,
+    "estimated_max_partition_bytes_proxy": 380160,
+    "estimated_total_storage_bytes_proxy": 380160000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "estimated_total_rows": 4320000,
+    "estimated_partitions": 3000,
+    "estimated_max_rows_in_one_partition": 1440,
+    "estimated_bytes_per_row_proxy": 92,
+    "estimated_max_partition_bytes_proxy": 132480,
+    "estimated_total_storage_bytes_proxy": 397440000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "estimated_total_rows": 4320000,
+    "estimated_partitions": 1000,
+    "estimated_max_rows_in_one_partition": 4320,
+    "estimated_bytes_per_row_proxy": 92,
+    "estimated_max_partition_bytes_proxy": 397440,
+    "estimated_total_storage_bytes_proxy": 397440000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "estimated_total_rows": 432000,
+    "estimated_partitions": 300,
+    "estimated_max_rows_in_one_partition": 1440,
+    "estimated_bytes_per_row_proxy": 140,
+    "estimated_max_partition_bytes_proxy": 201600,
+    "estimated_total_storage_bytes_proxy": 60480000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "estimated_total_rows": 4320,
+    "estimated_partitions": 3,
+    "estimated_max_rows_in_one_partition": 1440,
+    "estimated_bytes_per_row_proxy": 68,
+    "estimated_max_partition_bytes_proxy": 97920,
+    "estimated_total_storage_bytes_proxy": 293760,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": [
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ]
+  },
+  {
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "estimated_total_rows": 72000,
+    "estimated_partitions": 3000,
+    "estimated_max_rows_in_one_partition": 24,
+    "estimated_bytes_per_row_proxy": 92,
+    "estimated_max_partition_bytes_proxy": 2208,
+    "estimated_total_storage_bytes_proxy": 6624000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": [
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ]
+  },
+  {
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "estimated_total_rows": 4320000,
+    "estimated_partitions": 3000,
+    "estimated_max_rows_in_one_partition": 1440,
+    "estimated_bytes_per_row_proxy": 92,
+    "estimated_max_partition_bytes_proxy": 132480,
+    "estimated_total_storage_bytes_proxy": 397440000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": [
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ]
+  },
+  {
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "estimated_total_rows": 72000,
+    "estimated_partitions": 3000,
+    "estimated_max_rows_in_one_partition": 24,
+    "estimated_bytes_per_row_proxy": 100,
+    "estimated_max_partition_bytes_proxy": 2400,
+    "estimated_total_storage_bytes_proxy": 7200000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": [
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ]
+  },
+  {
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "estimated_total_rows": 7200,
+    "estimated_partitions": 72,
+    "estimated_max_rows_in_one_partition": 100,
+    "estimated_bytes_per_row_proxy": 220,
+    "estimated_max_partition_bytes_proxy": 22000,
+    "estimated_total_storage_bytes_proxy": 1584000,
+    "byte_proxy_is_measured": false,
+    "estimate_covers": "ONLY candidate table (not required canonical source, indexes or replicas)",
+    "warnings": [
+      "CROSS_HOST_PARTITION_GROWS_WITH_HOST_CARDINALITY",
+      "DERIVED_RECOMPUTATION_REQUIRES_DURABLE_CANONICAL_SOURCE"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+query_id,query_name,query_mode,source,kind,metric_count_from_tsbs,host_count_from_tsbs,window_hours_from_tsbs,description,sql_file,relative_frequency,frequency_source
+Q01,single-groupby-1-1-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,single,1,1,1,"MAX per minute; 1 metric, 1 host, 1 hour",Q01_single-groupby-1-1-1.sql,,UNSPECIFIED
+Q02,single-groupby-1-1-12,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,single,1,1,12,"MAX per minute; 1 metric, 1 host, 12 hours",Q02_single-groupby-1-1-12.sql,,UNSPECIFIED
+Q03,single-groupby-1-8-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,single,1,8,1,"MAX per minute; 1 metric, 8 hosts, 1 hour",Q03_single-groupby-1-8-1.sql,,UNSPECIFIED
+Q04,single-groupby-5-1-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,single,5,1,1,"MAX per minute; 5 metrics, 1 host, 1 hour",Q04_single-groupby-5-1-1.sql,,UNSPECIFIED
+Q05,single-groupby-5-1-12,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,single,5,1,12,"MAX per minute; 5 metrics, 1 host, 12 hours",Q05_single-groupby-5-1-12.sql,,UNSPECIFIED
+Q06,single-groupby-5-8-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,single,5,8,1,"MAX per minute; 5 metrics, 8 hosts, 1 hour",Q06_single-groupby-5-8-1.sql,,UNSPECIFIED
+Q07,cpu-max-all-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,maxall,10,1,8,MAX of all CPU metrics per hour; 1 host,Q07_cpu-max-all-1.sql,,UNSPECIFIED
+Q08,cpu-max-all-8,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,maxall,10,8,8,MAX of all CPU metrics per hour; 8 hosts,Q08_cpu-max-all-8.sql,,UNSPECIFIED
+Q09,cpu-max-all-32-24,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,maxall,10,32,24,MAX of all CPU metrics per hour; 32 hosts / 24 hours,Q09_cpu-max-all-32-24.sql,,UNSPECIFIED
+Q10,double-groupby-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,double,1,ALL,12,"AVG per hour and hostname; 1 metric, all hosts",Q10_double-groupby-1.sql,,UNSPECIFIED
+Q11,double-groupby-5,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,double,5,ALL,12,"AVG per hour and hostname; 5 metrics, all hosts",Q11_double-groupby-5.sql,,UNSPECIFIED
+Q12,double-groupby-all,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,double,10,ALL,12,"AVG per hour and hostname; all 10 metrics, all hosts",Q12_double-groupby-all.sql,,UNSPECIFIED
+Q13,high-cpu-1,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,high,10,1,12,"All CPU fields above usage_user=90; 1 host, 12 hours",Q13_high-cpu-1.sql,,UNSPECIFIED
+Q14,high-cpu-all,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,high,10,ALL,12,"All CPU fields above usage_user=90; all hosts, 12 hours",Q14_high-cpu-all.sql,,UNSPECIFIED
+Q15,lastpoint,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,lastpoint,10,ALL,,Most recent row for EVERY host (not global LIMIT 1),Q15_lastpoint.sql,,UNSPECIFIED
+Q16,groupby-orderby-limit,TEMPORAL,TSBS_OFFICIAL_DEVOPS_TEMPLATE,toprollup,1,ALL,,5 latest per-minute MAX aggregates up to random end,Q16_groupby-orderby-limit.sql,,UNSPECIFIED

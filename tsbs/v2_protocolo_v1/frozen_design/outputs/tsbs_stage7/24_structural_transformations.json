@@ -1,0 +1,92 @@
+[
+  {
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "operation_label": "PRESERVE_RAW_SERIES",
+    "input_representation": "logical CPU readings",
+    "output_representation": "per-host/per-metric scalar series",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "operation_label": "BUCKET_RAW_SERIES",
+    "input_representation": "unbucketed scalar series",
+    "output_representation": "1-day partitions",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "operation_label": "BUCKET_RAW_SERIES",
+    "input_representation": "unbucketed scalar series",
+    "output_representation": "7-day partitions",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "operation_label": "COLOCATE_METRICS",
+    "input_representation": "separate scalar metric readings",
+    "output_representation": "one timestamp row with ten CPU metrics",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "operation_label": "MATERIALIZE_TEMPORAL_ROLLUP",
+    "input_representation": "raw CPU readings",
+    "output_representation": "global_max_minute",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "operation_label": "MATERIALIZE_TEMPORAL_ROLLUP",
+    "input_representation": "raw CPU readings",
+    "output_representation": "max_by_host_hour",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "operation_label": "MATERIALIZE_TEMPORAL_ROLLUP",
+    "input_representation": "raw CPU readings",
+    "output_representation": "max_by_host_minute",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "operation_label": "MATERIALIZE_TEMPORAL_ROLLUP",
+    "input_representation": "raw CPU readings",
+    "output_representation": "sum_count_by_host_hour",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  },
+  {
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "operation_label": "MATERIALIZE_DIMENSION_ROLLUP",
+    "input_representation": "raw CPU readings",
+    "output_representation": "hour x host SUM/COUNT",
+    "inspiration_only": "NoSE materialization/decomposition and Chen/QPG-style workload design are related context, not implemented algorithms",
+    "has_executable_rewrite_operator": false,
+    "has_published_operator_cost_model": false
+  }
+]

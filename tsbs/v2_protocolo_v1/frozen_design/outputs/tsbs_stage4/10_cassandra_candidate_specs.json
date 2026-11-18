@@ -1,0 +1,373 @@
+[
+  {
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "variant": "metric_raw",
+    "table_name": "ts0_cpu_metric_raw",
+    "columns": {
+      "hostname": "text",
+      "metric_name": "text",
+      "timestamp_ns": "bigint",
+      "value": "double"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "clustering_order": [
+      "DESC"
+    ],
+    "purpose": "Unbucketed per-host/per-metric raw-series control; risk of growing partitions.",
+    "read_cql_template": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "client_steps": [
+      "For multi-metric queries: fetch each metric and join by timestamp in client.",
+      "For multiple/all hosts: enumerate host identities; Stage 5 must specify this source.",
+      "For grouped MAX/AVG: aggregate retrieved points in client using exact time windows.",
+      "For latest-per-host: fetch DESC LIMIT 1 per host and metric, then align fields."
+    ],
+    "producer_required": "Stage 6: ingest each TSBS CPU observation into ten metric rows; not implemented.",
+    "chosen_modifiers": {},
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "variant": "metric_bucket_1d",
+    "table_name": "ts1_cpu_metric_1d",
+    "columns": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "timestamp_ns": "bigint",
+      "value": "double"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Raw scalar readings in UTC buckets of 1 day(s).",
+    "read_cql_template": "SELECT timestamp_ns, value FROM ts1_cpu_metric_1d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "client_steps": [
+      "Compute UTC bucket_day at boundaries; issue one CQL read per bucket and metric.",
+      "Apply non-key usage_user threshold and alignment/aggregation in client.",
+      "Enumerate hosts for all-host queries; a complete QueryPlan is deferred."
+    ],
+    "producer_required": "Stage 6: write every point to its UTC-aligned raw metric bucket; not implemented.",
+    "chosen_modifiers": {
+      "M1_bucket_days": 1
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "variant": "metric_bucket_7d",
+    "table_name": "ts1_cpu_metric_7d",
+    "columns": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "timestamp_ns": "bigint",
+      "value": "double"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Raw scalar readings in UTC buckets of 7 day(s).",
+    "read_cql_template": "SELECT timestamp_ns, value FROM ts1_cpu_metric_7d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "client_steps": [
+      "Compute UTC bucket_day at boundaries; issue one CQL read per bucket and metric.",
+      "Apply non-key usage_user threshold and alignment/aggregation in client.",
+      "Enumerate hosts for all-host queries; a complete QueryPlan is deferred."
+    ],
+    "producer_required": "Stage 6: write every point to its UTC-aligned raw metric bucket; not implemented.",
+    "chosen_modifiers": {
+      "M1_bucket_days": 7
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "variant": "wide_bucket_1d",
+    "table_name": "ts2_cpu_wide_1d",
+    "columns": {
+      "hostname": "text",
+      "bucket_day": "date",
+      "timestamp_ns": "bigint",
+      "usage_user": "double",
+      "usage_system": "double",
+      "usage_idle": "double",
+      "usage_nice": "double",
+      "usage_iowait": "double",
+      "usage_irq": "double",
+      "usage_softirq": "double",
+      "usage_steal": "double",
+      "usage_guest": "double",
+      "usage_guest_nice": "double"
+    },
+    "partition_key": [
+      "hostname",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "timestamp_ns"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Wide co-located 10-metric reading in UTC 1-day bucket.",
+    "read_cql_template": "SELECT timestamp_ns, usage_user, usage_system, usage_idle, usage_nice, usage_iowait, usage_irq, usage_softirq, usage_steal, usage_guest, usage_guest_nice FROM ts2_cpu_wide_1d WHERE hostname = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "client_steps": [
+      "Apply usage_user > 90 in the client on returned rows, without ALLOW FILTERING.",
+      "Enumerate affected UTC buckets; Stage 5 handles client plan completion."
+    ],
+    "producer_required": "Stage 6: write an atomic logical CPU observation as one wide row; not implemented.",
+    "chosen_modifiers": {
+      "M1_bucket_days": 1
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "variant": "global_max_minute",
+    "table_name": "ts5_cpu_global_max_minute",
+    "columns": {
+      "metric_name": "text",
+      "bucket_day": "date",
+      "minute_ns": "bigint",
+      "max_value": "double"
+    },
+    "partition_key": [
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "clustering_order": [
+      "DESC"
+    ],
+    "purpose": "Global MAX usage_user per minute across all hosts for groupby-orderby-limit.",
+    "read_cql_template": "SELECT minute_ns, max_value FROM ts5_cpu_global_max_minute WHERE metric_name = ? AND bucket_day = ? AND minute_ns < ? LIMIT 5;",
+    "client_steps": [
+      "Traverse historical daily buckets backward until five populated minutes are found.",
+      "Ensure window's exclusive end bound and ordering; fill partial buckets correctly."
+    ],
+    "producer_required": "Stage 6: maintain global MAX across hosts for each minute; not implemented.",
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "minute"
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "variant": "max_by_host_hour",
+    "table_name": "ts5_cpu_max_by_host_hour",
+    "columns": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "hour_ns": "bigint",
+      "max_value": "double"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Precomputed MAX per host/metric/hour for TSBS time buckets.",
+    "read_cql_template": "SELECT hour_ns, max_value FROM ts5_cpu_max_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "client_steps": [
+      "For N hosts and M metrics issue supported partition reads and combine/sort results.",
+      "Only complete buckets or explicitly correct boundary handling may serve a partial-time request."
+    ],
+    "producer_required": "Stage 6: maintain maximum upon ingest including late/backfilled points; not implemented.",
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "hour"
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "variant": "max_by_host_minute",
+    "table_name": "ts5_cpu_max_by_host_minute",
+    "columns": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "minute_ns": "bigint",
+      "max_value": "double"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "minute_ns"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Precomputed MAX per host/metric/minute for TSBS time buckets.",
+    "read_cql_template": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "client_steps": [
+      "For N hosts and M metrics issue supported partition reads and combine/sort results.",
+      "Only complete buckets or explicitly correct boundary handling may serve a partial-time request."
+    ],
+    "producer_required": "Stage 6: maintain maximum upon ingest including late/backfilled points; not implemented.",
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "minute"
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "variant": "sum_count_by_host_hour",
+    "table_name": "ts5_cpu_sum_count_by_host_hour",
+    "columns": {
+      "hostname": "text",
+      "metric_name": "text",
+      "bucket_day": "date",
+      "hour_ns": "bigint",
+      "value_sum": "double",
+      "sample_count": "bigint"
+    },
+    "partition_key": [
+      "hostname",
+      "metric_name",
+      "bucket_day"
+    ],
+    "clustering_key": [
+      "hour_ns"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Exact AVG = SUM/COUNT per host/metric/hour; do not average averages.",
+    "read_cql_template": "SELECT hour_ns, value_sum, sample_count FROM ts5_cpu_sum_count_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "client_steps": [
+      "Compute AVG as SUM(value_sum)/SUM(sample_count) with correct NULL/zero policy.",
+      "Enumerate all host identities before cross-host group-by; Stage 5 covers completeness."
+    ],
+    "producer_required": "Stage 6: maintain non-duplicated SUM and COUNT for each metric/window; not implemented.",
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "hour"
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  },
+  {
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "variant": "hour_host_dimension",
+    "table_name": "ts6_cpu_by_hour_host",
+    "columns": {
+      "bucket_day": "date",
+      "hour_ns": "bigint",
+      "hostname": "text",
+      "sum_usage_user": "double",
+      "count_usage_user": "bigint",
+      "sum_usage_system": "double",
+      "count_usage_system": "bigint",
+      "sum_usage_idle": "double",
+      "count_usage_idle": "bigint",
+      "sum_usage_nice": "double",
+      "count_usage_nice": "bigint",
+      "sum_usage_iowait": "double",
+      "count_usage_iowait": "bigint",
+      "sum_usage_irq": "double",
+      "count_usage_irq": "bigint",
+      "sum_usage_softirq": "double",
+      "count_usage_softirq": "bigint",
+      "sum_usage_steal": "double",
+      "count_usage_steal": "bigint",
+      "sum_usage_guest": "double",
+      "count_usage_guest": "bigint",
+      "sum_usage_guest_nice": "double",
+      "count_usage_guest_nice": "bigint"
+    },
+    "partition_key": [
+      "bucket_day",
+      "hour_ns"
+    ],
+    "clustering_key": [
+      "hostname"
+    ],
+    "clustering_order": [
+      "ASC"
+    ],
+    "purpose": "Time+hostname grouped AVG across multiple series; one partition per UTC hour.",
+    "read_cql_template": "SELECT hostname, sum_usage_user, count_usage_user, sum_usage_system, count_usage_system, sum_usage_idle, count_usage_idle, sum_usage_nice, count_usage_nice, sum_usage_iowait, count_usage_iowait, sum_usage_irq, count_usage_irq, sum_usage_softirq, count_usage_softirq, sum_usage_steal, count_usage_steal, sum_usage_guest, count_usage_guest, sum_usage_guest_nice, count_usage_guest_nice FROM ts6_cpu_by_hour_host WHERE bucket_day = ? AND hour_ns = ?;",
+    "client_steps": [
+      "Enumerate hourly windows, then emit rows by (hour, hostname).",
+      "Compute each metric AVG from its sum/count; preserve missing-value handling.",
+      "High host cardinality may create large partitions; feasibility guard deferred."
+    ],
+    "producer_required": "Stage 6: write/refresh each grouped host/hour sum/count; not implemented.",
+    "chosen_modifiers": {
+      "M1_storage_bucket_days": 1,
+      "logical_aggregate_resolution": "hour"
+    },
+    "schema_only": true,
+    "complete_query_plan": false,
+    "complete_write_plan": false,
+    "benchmarked": false
+  }
+]

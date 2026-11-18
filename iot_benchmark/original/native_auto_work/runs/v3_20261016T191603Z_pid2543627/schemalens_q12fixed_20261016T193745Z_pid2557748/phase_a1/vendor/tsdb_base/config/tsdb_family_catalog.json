@@ -1,0 +1,71 @@
+{
+  "catalog_version": "schemalens-ts-ts0-ts8-v1-demo",
+  "status": "PROPOSED_SCHEMA_LENS_TS_EXTENSION",
+  "scope": "Query-local time-series candidate families. These families are a methodological extension for demonstration and must be validated experimentally before being treated as final SchemaLens families.",
+  "families": [
+    {
+      "family": "TS0",
+      "name": "Raw series baseline",
+      "purpose": "Keep timestamped observations in a direct raw-series representation so every temporal workload has a simple baseline candidate.",
+      "main_evidence": ["temporal query", "temporal source relation"],
+      "notes": "TS0 is intentionally broad: it is the raw baseline against which specialized temporal representations are compared."
+    },
+    {
+      "family": "TS1",
+      "name": "Time-bucketed raw series",
+      "purpose": "Partition raw observations by series identity and a time bucket for bounded time-range scans.",
+      "main_evidence": ["returns raw observations", "time-range predicate", "temporal source"],
+      "notes": "The family activates the need for bucketing; exact bucket width is deferred to physical design/benchmarking."
+    },
+    {
+      "family": "TS2",
+      "name": "Co-located multi-metric series",
+      "purpose": "Keep multiple metrics for the same series/time axis together when the workload reads them jointly.",
+      "main_evidence": ["series identity bound", "two or more metrics projected", "raw temporal read"]
+    },
+    {
+      "family": "TS3",
+      "name": "Metric-specific / alternate-access projection",
+      "purpose": "Create a temporal projection oriented to one metric or an alternate dimension when the query is not anchored by the canonical series identity.",
+      "main_evidence": ["single metric", "dimension equality anchor", "series identity not bound", "raw temporal read"]
+    },
+    {
+      "family": "TS4",
+      "name": "Latest-state snapshot",
+      "purpose": "Maintain the most recent state separately when the workload repeatedly asks for the newest observation rather than a history range.",
+      "main_evidence": ["ORDER BY time DESC", "LIMIT 1", "temporal source"]
+    },
+    {
+      "family": "TS5",
+      "name": "Rollup / multi-resolution aggregate",
+      "purpose": "Materialize time-bucketed summaries such as hourly or daily aggregates.",
+      "main_evidence": ["TIME_BUCKET", "aggregate function", "group by time bucket"]
+    },
+    {
+      "family": "TS6",
+      "name": "Dimension/group aggregate",
+      "purpose": "Materialize temporal aggregates additionally grouped by a non-time dimension such as category, region, tenant, or device type.",
+      "main_evidence": ["aggregate function", "non-time GROUP BY dimension"]
+    },
+    {
+      "family": "TS7",
+      "name": "Tag / dimension discovery",
+      "purpose": "Support discovery of series identities through tags/dimensions without first knowing the series key.",
+      "main_evidence": ["DISTINCT series identity", "dimension predicate", "temporal source"]
+    },
+    {
+      "family": "TS8",
+      "name": "Model-segment representation",
+      "purpose": "Represent a time series as fitted/model segments when the logical workload explicitly requests piecewise/trend segments rather than raw samples.",
+      "main_evidence": ["explicit model-segment operator", "time range", "temporal source"],
+      "notes": "This is a proposed advanced family. The current demo activates it only from an explicit MODEL_SEGMENTS logical requirement."
+    }
+  ],
+  "physical_modifiers": [
+    {"modifier": "M1", "name": "Bucket granularity", "role": "Choose hour/day/week/etc. after range/volume evidence is available."},
+    {"modifier": "M2", "name": "TTL / retention", "role": "Apply bounded retention when the logical series has a finite retention requirement."},
+    {"modifier": "M3", "name": "Time-series compaction", "role": "Prefer a temporal compaction strategy for append-oriented series."},
+    {"modifier": "M4", "name": "Shard / salt", "role": "Mitigate hot partitions when event volume crosses a prespecified threshold."},
+    {"modifier": "M5", "name": "Late arrival / backfill handling", "role": "Preserve support for out-of-order or backfilled observations."}
+  ]
+}

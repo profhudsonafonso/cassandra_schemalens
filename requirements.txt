@@ -1,0 +1,8 @@
+# Ambiente Python único do repositório (Python 3.12). Criado por ./setup_env.sh.
+# Versões fixadas = as usadas nas campanhas V2 e V3.
+cassandra-driver==3.30.1
+numpy==2.5.5
+matplotlib==3.11.2
+PyYAML==6.0.3
+PuLP==2.9.0          # só a análise retrospectiva do NNLS legado (V9 E15) usa; traz o solver CBC embutido
+pytest==9.2.0

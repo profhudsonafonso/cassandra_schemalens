@@ -1,0 +1,10 @@
+family,name,purpose
+TS0,Raw series baseline,Keep timestamped observations in a direct raw-series representation so every temporal workload has a simple baseline candidate.
+TS1,Time-bucketed raw series,Partition raw observations by series identity and a time bucket for bounded time-range scans.
+TS2,Co-located multi-metric series,Keep multiple metrics for the same series/time axis together when the workload reads them jointly.
+TS3,Metric-specific / alternate-access projection,Create a temporal projection oriented to one metric or an alternate dimension when the query is not anchored by the canonical series identity.
+TS4,Latest-state snapshot,Maintain the most recent state separately when the workload repeatedly asks for the newest observation rather than a history range.
+TS5,Rollup / multi-resolution aggregate,Materialize time-bucketed summaries such as hourly or daily aggregates.
+TS6,Dimension/group aggregate,"Materialize temporal aggregates additionally grouped by a non-time dimension such as category, region, tenant, or device type."
+TS7,Tag / dimension discovery,Support discovery of series identities through tags/dimensions without first knowing the series key.
+TS8,Model-segment representation,Represent a time series as fitted/model segments when the logical workload explicitly requests piecewise/trend segments rather than raw samples.

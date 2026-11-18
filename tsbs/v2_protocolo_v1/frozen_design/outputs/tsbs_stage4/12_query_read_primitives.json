@@ -1,0 +1,97 @@
+[
+  {
+    "candidate_id": "ts0_metric_raw",
+    "family": "TS0",
+    "query_template": "SELECT timestamp_ns, value FROM ts0_cpu_metric_raw WHERE hostname = ? AND metric_name = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "application_requirements": [
+      "For multi-metric queries: fetch each metric and join by timestamp in client.",
+      "For multiple/all hosts: enumerate host identities; Stage 5 must specify this source.",
+      "For grouped MAX/AVG: aggregate retrieved points in client using exact time windows.",
+      "For latest-per-host: fetch DESC LIMIT 1 per host and metric, then align fields."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_1d",
+    "family": "TS1",
+    "query_template": "SELECT timestamp_ns, value FROM ts1_cpu_metric_1d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "application_requirements": [
+      "Compute UTC bucket_day at boundaries; issue one CQL read per bucket and metric.",
+      "Apply non-key usage_user threshold and alignment/aggregation in client.",
+      "Enumerate hosts for all-host queries; a complete QueryPlan is deferred."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_7d",
+    "family": "TS1",
+    "query_template": "SELECT timestamp_ns, value FROM ts1_cpu_metric_7d WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "application_requirements": [
+      "Compute UTC bucket_day at boundaries; issue one CQL read per bucket and metric.",
+      "Apply non-key usage_user threshold and alignment/aggregation in client.",
+      "Enumerate hosts for all-host queries; a complete QueryPlan is deferred."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts2_wide_bucket_1d",
+    "family": "TS2",
+    "query_template": "SELECT timestamp_ns, usage_user, usage_system, usage_idle, usage_nice, usage_iowait, usage_irq, usage_softirq, usage_steal, usage_guest, usage_guest_nice FROM ts2_cpu_wide_1d WHERE hostname = ? AND bucket_day = ? AND timestamp_ns >= ? AND timestamp_ns < ?;",
+    "application_requirements": [
+      "Apply usage_user > 90 in the client on returned rows, without ALLOW FILTERING.",
+      "Enumerate affected UTC buckets; Stage 5 handles client plan completion."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts5_global_max_minute",
+    "family": "TS5",
+    "query_template": "SELECT minute_ns, max_value FROM ts5_cpu_global_max_minute WHERE metric_name = ? AND bucket_day = ? AND minute_ns < ? LIMIT 5;",
+    "application_requirements": [
+      "Traverse historical daily buckets backward until five populated minutes are found.",
+      "Ensure window's exclusive end bound and ordering; fill partial buckets correctly."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts5_max_by_host_hour",
+    "family": "TS5",
+    "query_template": "SELECT hour_ns, max_value FROM ts5_cpu_max_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "application_requirements": [
+      "For N hosts and M metrics issue supported partition reads and combine/sort results.",
+      "Only complete buckets or explicitly correct boundary handling may serve a partial-time request."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts5_max_by_host_minute",
+    "family": "TS5",
+    "query_template": "SELECT minute_ns, max_value FROM ts5_cpu_max_by_host_minute WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND minute_ns >= ? AND minute_ns < ?;",
+    "application_requirements": [
+      "For N hosts and M metrics issue supported partition reads and combine/sort results.",
+      "Only complete buckets or explicitly correct boundary handling may serve a partial-time request."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "family": "TS5",
+    "query_template": "SELECT hour_ns, value_sum, sample_count FROM ts5_cpu_sum_count_by_host_hour WHERE hostname = ? AND metric_name = ? AND bucket_day = ? AND hour_ns >= ? AND hour_ns < ?;",
+    "application_requirements": [
+      "Compute AVG as SUM(value_sum)/SUM(sample_count) with correct NULL/zero policy.",
+      "Enumerate all host identities before cross-host group-by; Stage 5 covers completeness."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  },
+  {
+    "candidate_id": "ts6_hour_host_dimension",
+    "family": "TS6",
+    "query_template": "SELECT hostname, sum_usage_user, count_usage_user, sum_usage_system, count_usage_system, sum_usage_idle, count_usage_idle, sum_usage_nice, count_usage_nice, sum_usage_iowait, count_usage_iowait, sum_usage_irq, count_usage_irq, sum_usage_softirq, count_usage_softirq, sum_usage_steal, count_usage_steal, sum_usage_guest, count_usage_guest, sum_usage_guest_nice, count_usage_guest_nice FROM ts6_cpu_by_hour_host WHERE bucket_day = ? AND hour_ns = ?;",
+    "application_requirements": [
+      "Enumerate hourly windows, then emit rows by (hour, hostname).",
+      "Compute each metric AVG from its sum/count; preserve missing-value handling.",
+      "High host cardinality may create large partitions; feasibility guard deferred."
+    ],
+    "status": "TEMPLATE_ONLY_NOT_EXECUTED"
+  }
+]

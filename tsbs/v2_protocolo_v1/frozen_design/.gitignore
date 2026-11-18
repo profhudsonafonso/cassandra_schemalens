@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.venv/
+# As saídas congeladas dos Stages 4-8 são versionadas: são entradas do Stage 7/8 V3 e da V2 (pequenas, ~0,8 MB).

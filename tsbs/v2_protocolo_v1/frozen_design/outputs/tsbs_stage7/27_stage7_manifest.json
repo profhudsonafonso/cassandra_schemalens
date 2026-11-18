@@ -1,0 +1,82 @@
+{
+  "stage": 7,
+  "scope": "TSDB_ONLY_ANALYTICAL_COST_AND_FEASIBILITY_NOT_RANKED",
+  "candidate_count": 9,
+  "query_count": 16,
+  "query_plan_count": 37,
+  "scenario": {
+    "hosts": 100,
+    "interval_seconds": 60,
+    "days": 3,
+    "metrics": [
+      "usage_user",
+      "usage_system",
+      "usage_idle",
+      "usage_nice",
+      "usage_iowait",
+      "usage_irq",
+      "usage_softirq",
+      "usage_steal",
+      "usage_guest",
+      "usage_guest_nice"
+    ],
+    "metric_count": 10,
+    "samples_per_day": 1440,
+    "start_day": 16801,
+    "scenario_source": "Stage 3 synthetic conceptual schema; not observed Cassandra data"
+  },
+  "scenario_is_measured": false,
+  "families": [
+    "TS0",
+    "TS1",
+    "TS2",
+    "TS5",
+    "TS6"
+  ],
+  "physical_candidates_with_partition_warnings": [
+    "ts6_hour_host_dimension"
+  ],
+  "query_plans_with_fanout_warnings": [
+    "Q11__ts5_sum_count_by_host_hour",
+    "Q12__ts0_metric_raw",
+    "Q12__ts5_sum_count_by_host_hour",
+    "Q14__ts0_metric_raw",
+    "Q14__ts1_metric_bucket_1d",
+    "Q14__ts1_metric_bucket_7d",
+    "Q15__ts0_metric_raw"
+  ],
+  "aggregate_query_frequencies_available": false,
+  "relative_workload_cost_computed": false,
+  "candidate_ranking_performed": false,
+  "Mozaffari_signals_complete": 0,
+  "Mozaffari_Cost_R_Cost_D_computed": false,
+  "NoSE_optimizers_executed": false,
+  "Chen_optimizers_executed": false,
+  "TS0_TS8_activation_modified": false,
+  "C0_C9_used": false,
+  "Cassandra_executed": false,
+  "TSBS_benchmarked": false,
+  "source_files_sha256": {
+    "candidate_specs": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+    "cost_policy": "fcd778ca8b379d12e832cb778778f877e692680a7f71121f6ef063730f42c0c2",
+    "manifest": "36d7e775e0d64d2161377975318d5708d85422dc1f96e62798b59c75618fbf8d",
+    "mozaffari_evidence": "5226d5513a89bdbb48d9c67ad28852daa32c9c81398fa4d3543cc72f40923e0f",
+    "query_map": "a9040edbda38d0ed6fbeef6806a6868e0b83e5839a3388dd07aaf58c86ffbdc2",
+    "query_plans": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+    "schema": "39b50f888b08b3496a6ac467d34b62800c3ae800734717b40e9229abcc84f75c",
+    "stage4_manifest": "3fb3f7dcb872524d9e47b80246b391228048add724ad61ee04e8ad3d1dfe8f70",
+    "stage5_manifest": "6a89bbaba8076e771439cff5746922472d1ab62813ba72d89c1e86cfcf40c49c",
+    "stage6_manifest": "b95907225a4b8fe41fcc66000778fca943cef77e243d785dd1008f4d8ab40648",
+    "write_plans": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87"
+  },
+  "limitations": [
+    "Proxy rows and bytes are not observed costs; do not rank or select HBench from them without a prespecified scoring model.",
+    "Total storage is per candidate table only, without required raw canonical source for TS5/TS6.",
+    "Derived maintenance is reference in-memory recomputation, not durable or distributed-safe Cassandra writes.",
+    "Alignment-sensitive plans are conditional; workload randomized time windows are not bound or checked here.",
+    "An all-host query requires a complete real host catalog, which was not materialized.",
+    "TS0 can create unbounded partitions if data is retained beyond the illustrative horizon.",
+    "FR/FU/RC/TI directional evidence unavailable; Cost_R/Cost_D not calculated.",
+    "No real hardware, network, compaction, replication, indexing, or benchmark result is used."
+  ]
+}
