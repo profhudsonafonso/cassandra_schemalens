@@ -1,0 +1,36 @@
+{
+  "arm": "v41",
+  "cassandra_release_version": "4.1.12",
+  "container": "sl_v1_rubis_cassandra",
+  "cpu_count": 24,
+  "cpuset": "0-3",
+  "docker": {
+    "arch": "x86_64",
+    "mem_bytes": 66977333248,
+    "ncpu": 24,
+    "os": "Ubuntu Core 24",
+    "server_version": "29.8.0"
+  },
+  "driver": "3.30.1",
+  "host_os": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+  "image_id": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+  "loadavg": [
+    0.62353515625,
+    1.1513671875,
+    0.7919921875
+  ],
+  "machine": "x86_64",
+  "memory_limit_bytes": 6442450944,
+  "port": 9064,
+  "python": "3.12.3",
+  "running_containers": [
+    "sl_v1_rubis_cassandra\tcassandra\tUp About a minute",
+    "schemalens-rubis-cassandra\tcassandra:4.1\tUp 7 days",
+    "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 7 days (healthy)",
+    "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 7 days (healthy)",
+    "imdb_mongodb_alt\tmongo:8\tUp 7 days",
+    "fiben_mongodb_bench\tmongo:8.0\tUp 7 days"
+  ],
+  "utc": "2026-11-17T21:41:58.069977+00:00"
+}

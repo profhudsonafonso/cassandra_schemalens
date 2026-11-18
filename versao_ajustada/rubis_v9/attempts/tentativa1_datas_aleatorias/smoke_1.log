@@ -1,0 +1,23 @@
+{"phase": "materialize", "arm": "v41", "deployment": "H01"}
+{"phase": "materialize", "arm": "v41", "deployment": "NoSE"}
+{"phase": "materialize", "arm": "v41", "deployment": "H01_AA"}
+{"phase": "materialize", "arm": "v311", "deployment": "H01"}
+{"phase": "materialize", "arm": "v311", "deployment": "NoSE"}
+{"phase": "materialize", "arm": "v311", "deployment": "H01_AA"}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 1, "deployment": "H01", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 2, "deployment": "NoSE", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 3, "deployment": "H01_AA", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 1, "deployment": "H01", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 2, "deployment": "NoSE", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 3, "deployment": "H01_AA", "elapsed_min": 0.1}
+{"phase": "rep_done", "rep": 1, "of": 2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 1, "deployment": "H01_AA", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 2, "deployment": "NoSE", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 3, "deployment": "H01", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 1, "deployment": "H01_AA", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 2, "deployment": "NoSE", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 3, "deployment": "H01", "elapsed_min": 0.1}
+{"phase": "rep_done", "rep": 2, "of": 2}
+{"phase": "agreement"}
+{"phase": "complete", "agreement": {"v41": {"H01": "PASS", "NoSE": "FAIL", "H01_AA": "PASS"}, "v311": {"H01": "PASS", "NoSE": "FAIL", "H01_AA": "PASS"}}}
+EXIT 0

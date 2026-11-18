@@ -1,0 +1,252 @@
+{
+  "aa_pairs": [
+    [
+      "H01",
+      "H01_AA"
+    ]
+  ],
+  "arm_order_rule": "ABBA: repeticoes impares v41 -> v311, pares v311 -> v41; o outro no fica parado",
+  "arms": {
+    "v311": {
+      "container": "sl_v1_rubis311_cassandra",
+      "image": "cassandra@sha256:5e13c93dfc49c87dda562e2450b79e2d6f262f0b675ba90bdb382bbaf91bcd33",
+      "port": 9065,
+      "version": "3.11.11"
+    },
+    "v41": {
+      "container": "sl_v1_rubis_cassandra",
+      "image": "protocol_v1 (cassandra@sha256:25f6a4d5...)",
+      "port": 9064,
+      "version": "4.1.12"
+    }
+  },
+  "benchmark": "RUBiS (SchemaLens V9, run v9-generation-20261112-001) - E20 refeito neste servidor, dados regenerados, Cassandra 4.1.12 e 3.11.11",
+  "code_sha256": {
+    "common/protocol_v1.json": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+    "rubis_v9/rubis_v1/common_paths.py": "966900b0aa6be772e2d3282bf2e9290470f5adac65f26a72944539cfb7ac8f6d",
+    "rubis_v9/rubis_v1/env.py": "18a5094df3005f14c3b7a633b8279e69f20dd247ea8be604bb97aba6431394ae",
+    "rubis_v9/rubis_v1/freeze.py": "8798c1a9b3d4f1af5423aea1917258e3e71b5115fc4f281a5262c9ae14a21811",
+    "rubis_v9/rubis_v1/gen_data.py": "f2e86881f81c15616525d3e90851c5fe6b2621cdfce7b25e5c4bdeb1d05f28d7",
+    "rubis_v9/rubis_v1/measure.py": "42aae1bb07fe1b10bf6ddf33df8d81e4b1d2de483aad85bdf530214ce601e64a",
+    "rubis_v9/rubis_v1/oracle_ref.py": "ffc396f4caafc9087e93a48ac9e165924a39b697a70445109de36d468487dd6b",
+    "rubis_v9/rubis_v1/transfer.py": "d729b3b349b8768e2b7baa0910bda763f7a88d6f9af76d0a616d69934a62ca73"
+  },
+  "created_utc": "2026-11-17T21:52:04.398408+00:00",
+  "data": {
+    "cohort_counts": {
+      "bids": 5690,
+      "buynow": 5300,
+      "comments": 6529,
+      "items": 7392,
+      "users": 7083
+    },
+    "identical_on_both_nodes": true,
+    "manifest_sha256": "0966aa2aff78c1971c8f70c34f7a903ac1d87aff003c3d9fa6c33f8fb5bf1125",
+    "origin": "REGENERATED_ON_SERVER",
+    "pickle_sha256": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3",
+    "v9_cohort_counts_for_reference": {
+      "bids": 5690,
+      "buynow": 5300,
+      "comments": 6501,
+      "items": 5906,
+      "users": 5616
+    }
+  },
+  "decision_metric": "latencia media por requisicao em cada carga (metrica da V9 e do protocolo v1)",
+  "deployments_base_order": [
+    "H01",
+    "NoSE",
+    "H02",
+    "V8_AUTO_H_norm",
+    "H03",
+    "QPG",
+    "H04",
+    "H05",
+    "H01_AA"
+  ],
+  "design_phase": {
+    "design_phase_rerun": false,
+    "hbench_frozen_sha256": "8446365297fc491883753a0159193172acd3f7776be9094f075821ef9f2b3cfa",
+    "v9_frozen_and_code_sha256": {
+      "reused/methodology/baselines_005.py": "b796fac2b3d64b9b7e4eeaa8a46a9e11e0f3bc1abd748b0746e53a9388ecd703",
+      "reused/methodology/full_schemalens_012.py": "02704681a033b7667f32d1faaf569e8280ef5d5dd79b3deabe896d4fedf05b78",
+      "reused/methodology/protocol_012.py": "206588219f0ba9e6359aed34e94650aa6ff4dd11c491cb94a7cb556037a05c03",
+      "reused/methodology/semantic_replay_011.py": "dc358abc71632de19a566dfe2791bf1a364cafae69c042be67b0b5db950b96f8",
+      "reused/methodology/workload_005.py": "c1a8c6986253c8c43c79132703211711a58ddcf29fbf0cc0eeed101872cef55a",
+      "reused/v8_auto_h_norm_ddl.json": "368ba3121c3ee4cb0206981b43ccdcd2dda4664cd7154ea6363f604ed7bdef3c",
+      "runs/v9_generation_001/stages/E02_source_data/SOURCE_COUNTS.json": "803eac197c8d85ce2eba7aeb1c6aaf22e2d67195391ff82114242f9a198914c0",
+      "runs/v9_generation_001/stages/E06_semantic_contract/RESULT.json": "353a476c7b38615d6fbc363009138de42fa22ad1795c0234b6e6ae60f01069ac",
+      "runs/v9_generation_001/stages/E13_route_synthesis/CANONICAL_WITH_COVER.json": "dcaa1c3f23ee655bdf6b614c38c4f46b74abf63eb544e4845bb324997dc45194",
+      "runs/v9_generation_001/stages/E15_composition/H.json": "cc42a62b5d3c9a2786bab45a44b27af56b4ba0f17e6be1bfc5224608bc154328",
+      "runs/v9_generation_001/stages/E16_hbench_frozen/HBENCH_FROZEN.json": "94f8494f354ca17591d260eaf6eb00bd4f8b1d0b8c810f86414f34a8f7fead81",
+      "runs/v9_generation_001/stages/E17_cohort_materialization/COHORT_MANIFEST.json": "1a39f187d966d591fdc93ed8abd78ec09530369d9a4b307ec125433491981449",
+      "schemalens_v9/common.py": "9cdb926e8472c632a34791b34633695526d91ee37b9a21ca86bbdfbd251a5c42",
+      "schemalens_v9/isolation.py": "417e139627048e482ea00a7f9f8df80afe88ba81ca3e919af33f3b31b03ff53b",
+      "schemalens_v9/phase5.py": "2f37d474e2b96680dff1c2391c4a1fcb297229fe1c067f6d0a0f3ccd49b7550b",
+      "schemalens_v9/phase5_run.py": "59d9964454a06c1ecc9aec2edddb90d21287eb421278bf5f95832464e925b598",
+      "schemalens_v9/phase6.py": "32093b6ddc492fba566f2854ad8256730ea40993a9a8b6ef1a10fa8e13182630"
+    }
+  },
+  "firewall": {
+    "hbench_selection_modified": false,
+    "selection_uses_measured_results": false
+  },
+  "hypotheses": {
+    "H1": "Em 4.1.12, H01 e mais rapido que NoSE e QPG em browsing, bidding e update10x (replica a conclusao da V9 em dados regenerados)",
+    "H2": "A versao nao muda as conclusoes: em cada carga, tau >= 0,7 entre as medias de 3.11.11 e 4.1.12 dos 9 deployments, e os vereditos de H01 contra NoSE/QPG sao os mesmos nas duas versoes",
+    "H3": "Dentro de H (4.1.12), a ordem prevista pelo modelo de custo concorda com a medida (tau >= 0,6 em cada carga)",
+    "H4": "O Top-1 previsto dentro de H e o melhor medido (ou empata pelo piso de ruido) em pelo menos 3 das 4 cargas (4.1.12)",
+    "H5": "Todas as respostas de todos os deployments, nas duas versoes, concordam com o oraculo independente da V9"
+  },
+  "identical_work_pairs_v9": [
+    [
+      "H01",
+      "H02",
+      "browsing"
+    ]
+  ],
+  "oracle": {
+    "entries": 397479,
+    "file": "frozen/ORACLE_REF.pkl",
+    "sha256": "8f7f2992ba2179b429821d8bdf9d52cf4b0c362063957db5213223638bab5b33",
+    "source": "schemalens_v9/oracle_v9.py (contrato E6 das 36 instrucoes)"
+  },
+  "order_rule": "repeticoes impares: ordem base; pares: ordem invertida (contrabalanco)",
+  "predicted_cost": {
+    "H01": {
+      "bidding": {
+        "read_cost": 1.345774,
+        "total": 1.561248,
+        "write_cost": 0.215474
+      },
+      "browsing": {
+        "read_cost": 1.053204,
+        "total": 1.053204,
+        "write_cost": 0.0
+      },
+      "update100x": {
+        "read_cost": 0.451169,
+        "total": 2.433985,
+        "write_cost": 1.982816
+      },
+      "update10x": {
+        "read_cost": 0.879885,
+        "total": 2.015748,
+        "write_cost": 1.135863
+      }
+    },
+    "H02": {
+      "bidding": {
+        "read_cost": 1.33416,
+        "total": 1.55522,
+        "write_cost": 0.22106
+      },
+      "browsing": {
+        "read_cost": 1.053204,
+        "total": 1.053204,
+        "write_cost": 0.0
+      },
+      "update100x": {
+        "read_cost": 0.4501,
+        "total": 2.484325,
+        "write_cost": 2.034224
+      },
+      "update10x": {
+        "read_cost": 0.873763,
+        "total": 2.039075,
+        "write_cost": 1.165312
+      }
+    },
+    "H03": {
+      "bidding": {
+        "read_cost": 4.052439,
+        "total": 4.221481,
+        "write_cost": 0.169043
+      },
+      "browsing": {
+        "read_cost": 5.493114,
+        "total": 5.493114,
+        "write_cost": 0.0
+      },
+      "update100x": {
+        "read_cost": 0.70024,
+        "total": 2.255791,
+        "write_cost": 1.555552
+      },
+      "update10x": {
+        "read_cost": 2.306694,
+        "total": 3.197797,
+        "write_cost": 0.891103
+      }
+    },
+    "H04": {
+      "bidding": {
+        "read_cost": 2.05725,
+        "total": 2.272724,
+        "write_cost": 0.215474
+      },
+      "browsing": {
+        "read_cost": 1.758281,
+        "total": 1.758281,
+        "write_cost": 0.0
+      },
+      "update100x": {
+        "read_cost": 0.51664,
+        "total": 2.499456,
+        "write_cost": 1.982816
+      },
+      "update10x": {
+        "read_cost": 1.254937,
+        "total": 2.3908,
+        "write_cost": 1.135863
+      }
+    },
+    "H05": {
+      "bidding": {
+        "read_cost": 4.763915,
+        "total": 4.932957,
+        "write_cost": 0.169043
+      },
+      "browsing": {
+        "read_cost": 6.198191,
+        "total": 6.198191,
+        "write_cost": 0.0
+      },
+      "update100x": {
+        "read_cost": 0.76571,
+        "total": 2.321262,
+        "write_cost": 1.555552
+      },
+      "update10x": {
+        "read_cost": 2.681746,
+        "total": 3.57285,
+        "write_cost": 0.891103
+      }
+    }
+  },
+  "protocol_file_sha256": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+  "request_protocol": {
+    "histories": "reused.methodology.workload_005.histories (sementes por repeticao, identicas a V9)",
+    "measured": 10000,
+    "repetitions": 5,
+    "state_reset": "adapter.reset_state antes e depois de cada (deployment, carga, repeticao)",
+    "warmup": 1000,
+    "workloads": [
+      "browsing",
+      "bidding",
+      "update10x",
+      "update100x"
+    ]
+  },
+  "status": "PREREGISTERED_BEFORE_MEASUREMENT",
+  "v1_additions": [
+    "container dedicado 4.1.12 por digest",
+    "flush + reinicio a frio + gate antes de cada repeticao",
+    "ordem intercalada por repeticao e contrabalancada",
+    "replica A/A H01_AA (piso de ruido)",
+    "p50/p95/p99 + IC bootstrap estratificado + IC t",
+    "armazenamento por tablestats",
+    "guarda de isolamento para carga mista + BulkWriterWatch da V9"
+  ],
+  "v9_e21_status": "PASS"
+}

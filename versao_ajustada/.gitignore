@@ -4,3 +4,8 @@
 __pycache__/
 *.aux
 *.log.tex
+# RUBiS: latencias brutas da v1 (grandes); resumos e analise ficam versionados
+rubis_v9/outputs/**/raw/
+rubis_v9/attempts/**/raw/
+# RUBiS: fonte da coorte e referencia do oraculo sao regeneraveis (gen_data.py, oracle_ref.py); SHA-256 no pre-registro
+rubis_v9/**/*.pkl

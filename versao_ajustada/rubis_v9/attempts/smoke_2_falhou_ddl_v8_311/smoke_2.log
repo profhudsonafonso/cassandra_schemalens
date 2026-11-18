@@ -1,0 +1,21 @@
+{"phase": "materialize", "arm": "v41", "deployment": "H01"}
+{"phase": "materialize", "arm": "v41", "deployment": "NoSE"}
+{"phase": "materialize", "arm": "v41", "deployment": "H02"}
+{"phase": "materialize", "arm": "v41", "deployment": "V8_AUTO_H_norm"}
+{"phase": "failed", "error": "<Error from server: code=2000 [Syntax error in CQL query] message=\"Unknown property 'dclocal_read_repair_chance'\">"}
+Traceback (most recent call last):
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/rubis_v9/rubis_v1/measure.py", line 258, in <module>
+    node(a.arm) if a.cmd == 'node' else run(a)
+                                        ^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/rubis_v9/rubis_v1/measure.py", line 165, in run
+    manifest['materialization'][arm] = materialize(s, order, raw, state, H, C, status, arm)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/versao_ajustada/rubis_v9/rubis_v1/measure.py", line 111, in materialize
+    rec[dep] = M.materialize_v8_norm(s, PR.EXTERNAL[dep][0], raw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hudson/Documents/schemalens_cassandra/cassandra_schemalens/schemalens_v9/phase5.py", line 174, in materialize_v8_norm
+    s.execute(q.replace(f"{O.COHORT_KEYSPACE}.{t}", f"{ks}.{t}", 1))
+  File "cassandra/cluster.py", line 2642, in cassandra.cluster.Session.execute
+  File "cassandra/cluster.py", line 5013, in cassandra.cluster.ResponseFuture.result
+cassandra.protocol.SyntaxException: <Error from server: code=2000 [Syntax error in CQL query] message="Unknown property 'dclocal_read_repair_chance'">
+EXIT 1

@@ -1,0 +1,7 @@
+{
+  "arm": "v41",
+  "deployment": "V8_AUTO_H_norm",
+  "error": "<Error from server: code=2000 [Syntax error in CQL query] message=\"Unknown property 'dclocal_read_repair_chance'\">",
+  "phase": "failed",
+  "updated_utc": "2026-11-17T21:44:22.931320+00:00"
+}

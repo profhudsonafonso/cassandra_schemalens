@@ -1,0 +1,7 @@
+\begin{enumerate}
+\item \textbf{Harmonização.} O RUBiS agora tem uma medição em 4.1.12 com o mesmo protocolo, a mesma imagem e a mesma estatística dos TSDB, e também uma medição pareada em 3.11.11 que quantifica o efeito da versão.
+\item \textbf{O que se mantém da V9:} H01/H02 superam NoSE e QPG nas cargas de leitura e mistas (25--43\% mais rápidos em 4.1.12); update100x favorece os baselines ou empata; o modelo de custo ordena corretamente browsing e bidding.
+\item \textbf{O que não se confirmou:} a ordenação prevista em update100x (H03/H05 primeiro) e o Top-1 em update10x no 4.1.12, onde H02 vence H01 por pouco. Hipóteses H2--H4 rejeitadas, como registrado.
+\item \textbf{Limites:} os dados são regenerados (estrutura reconstruída, não o \texttt{rubis\_full} original); o E23 em escala completa não foi refeito; a latência é do cliente Python.
+\item \textbf{Para o artigo:} relatar o RUBiS em 4.1.12 (v1) como a medição comparável aos TSDB e mencionar que, nos mesmos dados, o 3.11.11 é $\approx$1,2--1,4$\times$ mais rápido sem mudar as conclusões principais.
+\end{enumerate}

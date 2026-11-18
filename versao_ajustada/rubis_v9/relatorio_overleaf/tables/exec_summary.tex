@@ -1,0 +1,14 @@
+\begin{enumerate}
+\item \textbf{O que foi feito.} O E20 da V9 foi refeito neste servidor sob o protocolo v1:
+\begin{itemize}
+\item fonte da coorte regenerada (o \texttt{rubis\_full} original só existe no Mac);
+\item os mesmos dados em dois nós dedicados, 4.1.12 e 3.11.11, intercalados em ABBA;
+\item 9 deployments, 5 repetições com reinício a frio e \envrawrows{} requisições;
+\item \textbf{100\% das respostas conferidas pelo oráculo independente da V9} (3.577.311 instruções por versão);
+\item 10 de 10 janelas válidas.
+\end{itemize}
+\item \textbf{A conclusão da V9 se replica.} Em 4.1.12, H01 é mais rápido que NoSE (razões 0,66--0,75) e QPG (0,64--0,74) em browsing, bidding e update10x. Em update100x empata com os dois. O mesmo quadro aparece em 3.11.11 e na V9 original.
+\item \textbf{O modelo de custo ordena bem três cargas.} $\tau$ = 0,95 (browsing), 1,00 (bidding) e 0,80 (update10x) nas duas versões. Em update100x, $\tau$ = 0,20 (4.1) e 0,40 (3.11): nessa carga os cinco esquemas ficam a menos de 25\% uns dos outros e a previsão (H03 primeiro) não se confirma. O Top-1 previsto é o melhor ou empata em 2 de 4 cargas no 4.1.12 e em 3 de 4 no 3.11.11.
+\item \textbf{A versão importa para os números absolutos.} Com os mesmos dados e o mesmo cliente, o 4.1.12 é mais lento em quase tudo: média geométrica 4.1/3.11 de 1,37 (browsing), 1,38 (bidding), 1,23 (update10x) e 1,14 (update100x). Isso não inverte as conclusões em browsing/bidding/update10x ($\tau$ entre versões de 0,78 a 0,94). Em update100x, onde tudo está próximo, a ordenação muda ($\tau$ = 0,28). Vale \textbf{entre benchmarks}: comparar valores absolutos do RUBiS V9 (3.11) com os TSDB (4.1) não é legítimo.
+\item \textbf{Piso de ruído.} O par A/A (H01 $\equiv$ H01\_AA) difere de 0,5\% a 8\%. O par ``de trabalho idêntico'' H01 $\times$ H02 da V9 não é idêntico com estes dados (H02 fica $\approx$12\% mais rápido em browsing) e infla o piso de browsing para 15\%.
+\end{enumerate}

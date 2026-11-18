@@ -1,0 +1,134 @@
+{
+  "IDENTICAL": true,
+  "arms": {
+    "v311": {
+      "IDENTICAL": true,
+      "container": "sl_v1_rubis311_cassandra",
+      "fingerprints_target": {
+        "closure_rows": "8a459ee6a85d68ba9b5406af66edca3c967d6661aee5d4b5fd2f9c21bd45562c",
+        "counts": {
+          "bids": 5690,
+          "buynow": 5300,
+          "categories": 500,
+          "comments": 6529,
+          "items": 7393,
+          "regions": 50,
+          "users": 21837
+        },
+        "ids": "7b36e45e8d1bb33986a25ed1ceccefed05e538a84ee5b0149b0269cb933163ac",
+        "raw_rows": "6a38d9d2101e25b1a283a562df247fb826f44fd5e3d255fca46f7d096bc20b7c",
+        "source_state_id": "e075a77755585778ba1c20446b281f454e6c3f5451d77d2e14c68777b33b83d2"
+      },
+      "port": 9065,
+      "verification": {
+        "closure_rows": true,
+        "counts": true,
+        "ids": true,
+        "raw_rows": true,
+        "source_state_id": true
+      }
+    },
+    "v41": {
+      "IDENTICAL": true,
+      "container": "sl_v1_rubis_cassandra",
+      "fingerprints_target": {
+        "closure_rows": "8a459ee6a85d68ba9b5406af66edca3c967d6661aee5d4b5fd2f9c21bd45562c",
+        "counts": {
+          "bids": 5690,
+          "buynow": 5300,
+          "categories": 500,
+          "comments": 6529,
+          "items": 7393,
+          "regions": 50,
+          "users": 21837
+        },
+        "ids": "7b36e45e8d1bb33986a25ed1ceccefed05e538a84ee5b0149b0269cb933163ac",
+        "raw_rows": "6a38d9d2101e25b1a283a562df247fb826f44fd5e3d255fca46f7d096bc20b7c",
+        "source_state_id": "e075a77755585778ba1c20446b281f454e6c3f5451d77d2e14c68777b33b83d2"
+      },
+      "port": 9064,
+      "verification": {
+        "closure_rows": true,
+        "counts": true,
+        "ids": true,
+        "raw_rows": true,
+        "source_state_id": true
+      }
+    }
+  },
+  "clock": "2016-01-01T00:00:00",
+  "closure_rule": "coorte = 5 primeiras paginas x 1000 linhas em ordem de token Murmur3 (baselines_005.materialize, max_pages=5) UNIAO fecho do dominio (replica offline de benchmark_005.enrich_baselines_with_domain_closure)",
+  "cohort_counts": {
+    "bids": 5690,
+    "buynow": 5300,
+    "comments": 6529,
+    "items": 7393,
+    "users": 7045
+  },
+  "cohort_identity_keyspace": "rubis_v8_c008_auto_norm",
+  "ddl": {
+    "rubis_full": {
+      "bids": "CREATE TABLE rubis_full.bids (id int, user_id int, item_id int, qty int, bid double, max_bid double, bid_date timestamp, PRIMARY KEY (id))",
+      "buynow": "CREATE TABLE rubis_full.buynow (id int, buyer_id int, item_id int, qty int, buy_date timestamp, PRIMARY KEY (id))",
+      "categories": "CREATE TABLE rubis_full.categories (id int, name text, dummy int, PRIMARY KEY (id))",
+      "comments": "CREATE TABLE rubis_full.comments (id int, from_user_id int, to_user_id int, item_id int, rating int, comment_date timestamp, comment text, PRIMARY KEY (id))",
+      "items": "CREATE TABLE rubis_full.items (id int, name text, description text, initial_price double, quantity int, reserve_price double, buy_now double, nb_of_bids int, max_bid double, start_date timestamp, end_date timestamp, seller_id int, category_id int, PRIMARY KEY (id))",
+      "regions": "CREATE TABLE rubis_full.regions (id int, name text, dummy int, PRIMARY KEY (id))",
+      "users": "CREATE TABLE rubis_full.users (id int, firstname text, lastname text, nickname text, password text, email text, rating int, balance double, creation_date timestamp, region_id int, PRIMARY KEY (id))"
+    },
+    "rubis_v8_c008_auto_norm": {
+      "bids": "CREATE TABLE rubis_v8_c008_auto_norm.bids (id int PRIMARY KEY)",
+      "buynow": "CREATE TABLE rubis_v8_c008_auto_norm.buynow (id int PRIMARY KEY)",
+      "comments": "CREATE TABLE rubis_v8_c008_auto_norm.comments (id int PRIMARY KEY)",
+      "items": "CREATE TABLE rubis_v8_c008_auto_norm.items (id int PRIMARY KEY)",
+      "users": "CREATE TABLE rubis_v8_c008_auto_norm.users (id int PRIMARY KEY)"
+    }
+  },
+  "fingerprints_reference": {
+    "closure_rows": "8a459ee6a85d68ba9b5406af66edca3c967d6661aee5d4b5fd2f9c21bd45562c",
+    "counts": {
+      "bids": 5690,
+      "buynow": 5300,
+      "categories": 500,
+      "comments": 6529,
+      "items": 7393,
+      "regions": 50,
+      "users": 21837
+    },
+    "ids": "7b36e45e8d1bb33986a25ed1ceccefed05e538a84ee5b0149b0269cb933163ac",
+    "raw_rows": "6a38d9d2101e25b1a283a562df247fb826f44fd5e3d255fca46f7d096bc20b7c",
+    "source_state_id": "e075a77755585778ba1c20446b281f454e6c3f5451d77d2e14c68777b33b83d2"
+  },
+  "fingerprints_source": null,
+  "full_scale_counts": {
+    "bids": 20000000,
+    "buynow": 2000000,
+    "categories": 500,
+    "comments": 10000000,
+    "items": 2000000,
+    "regions": 50,
+    "users": 200000
+  },
+  "origin": "REGENERATED_ON_SERVER",
+  "pickle_sha256": "20a1a94652175dba434f5350e4a84070403cce7ce7e735628fa675c99e677349",
+  "reference_arm": "v41",
+  "rows_written": {
+    "bids": 5690,
+    "buynow": 5300,
+    "categories": 500,
+    "comments": 6529,
+    "items": 7393,
+    "regions": 50,
+    "users": 21837
+  },
+  "seed": 20261117,
+  "structure": "modular; reconstruida das estatisticas E04 da V9 + convencoes do fecho da V8",
+  "v9_cohort_counts_for_reference": {
+    "bids": 5690,
+    "buynow": 5300,
+    "comments": 6501,
+    "items": 5906,
+    "users": 5616
+  },
+  "values": "contrato fake.js do NoSE com PRNG por linha"
+}

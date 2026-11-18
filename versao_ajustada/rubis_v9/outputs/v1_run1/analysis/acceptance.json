@@ -1,0 +1,31 @@
+{
+  "ACCEPTED": true,
+  "gates": {
+    "G10_contrabalanco": true,
+    "G11_materializacao_confere": true,
+    "G12_firewall": true,
+    "G1_completude_dois_bracos": true,
+    "G2_sem_erros": true,
+    "G3_concordancia_oraculo_V9": true,
+    "G4_restauracao_de_estado": true,
+    "G5_isolamento": true,
+    "G6_gate_flush_reinicio_frio": true,
+    "G7_ambiente": true,
+    "G8_congelamento": true,
+    "G9_dados_identicos_nos_dois_nos": true
+  },
+  "info": {
+    "discarded_windows": 0,
+    "errors": 0,
+    "valid_windows": 10
+  },
+  "negative_tests": {
+    "N1_codigo_alterado_detectado": true,
+    "N2_artefato_V9_alterado_detectado": true,
+    "N3_resposta_divergente_reprovada": true,
+    "N4_compactacao_fora_dos_medidos_invalida": true,
+    "N5_compactacao_propria_e_system_nao_invalidam": true,
+    "N6_memtable_nao_vazia_reprova": true,
+    "N7_preregistro_nao_sobrescreve": true
+  }
+}

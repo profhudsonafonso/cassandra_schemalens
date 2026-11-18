@@ -1,0 +1,4712 @@
+{
+  "arms": [
+    "v41",
+    "v311"
+  ],
+  "client_affinity": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "materialization": {
+    "v311": {
+      "H01": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H01_AA": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H02": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "comments_from_user__nickname_2425": {
+          "acked": 6529,
+          "expected_fingerprint": "062d35a40e7829922690908859c2b4ca68c962f81364376615b01af9a7a21832",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "062d35a40e7829922690908859c2b4ca68c962f81364376615b01af9a7a21832",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H03": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_5fdc7a": {
+          "acked": 7392,
+          "expected_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H04": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_579efe": {
+          "acked": 6529,
+          "expected_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H05": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_579efe": {
+          "acked": 6529,
+          "expected_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_5fdc7a": {
+          "acked": 7392,
+          "expected_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "NoSE": {
+        "historical_ddl": null,
+        "manifest_sha256": "e1c4e0e1365d606b2ed530cdc1635a7f64c2746d6dda744ddd00534fd7711110",
+        "tables": {
+          "i1888493477": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i193173044": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "i2337785568": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i2653317939": {
+            "expected_rows": 5300,
+            "match": true,
+            "read_back": 5300,
+            "skipped_missing_relationship": 0
+          },
+          "i2906147889": {
+            "expected_rows": 21855,
+            "match": true,
+            "read_back": 21855,
+            "skipped_missing_relationship": 0
+          },
+          "i3157175159": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          },
+          "i3392968797": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i3553045793": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "i3563903410": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "i3639792234": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i3722443462": {
+            "expected_rows": 500,
+            "match": true,
+            "read_back": 500,
+            "skipped_missing_relationship": 0
+          },
+          "i590232953": {
+            "expected_rows": 50,
+            "match": true,
+            "read_back": 50,
+            "skipped_missing_relationship": 0
+          },
+          "i915430138": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          }
+        }
+      },
+      "QPG": {
+        "historical_ddl": null,
+        "manifest_sha256": "1a27e7b536975681bea93e8701804ad85d0bacbc3cad50e1768ed7de4297bb2b",
+        "tables": {
+          "q15_2": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          },
+          "q16_2": {
+            "expected_rows": 5300,
+            "match": true,
+            "read_back": 5300,
+            "skipped_missing_relationship": 0
+          },
+          "q17": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q18": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "q19": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q1_7_9_14": {
+            "expected_rows": 21855,
+            "match": true,
+            "read_back": 21855,
+            "skipped_missing_relationship": 0
+          },
+          "q2": {
+            "expected_rows": 500,
+            "match": true,
+            "read_back": 500,
+            "skipped_missing_relationship": 0
+          },
+          "q20": {
+            "expected_rows": 50,
+            "match": true,
+            "read_back": 50,
+            "skipped_missing_relationship": 0
+          },
+          "q3_10_11_13": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q4_2": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "q5_12": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "q6": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q8": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          }
+        }
+      },
+      "V8_AUTO_H_norm": {
+        "ddl_sha256": "db38c1868d8d6855c494080fc90cd9e7d0fc996cad866ff9083bb981857a196a",
+        "tables": {
+          "bids": {
+            "expected_fingerprint": "413de61ce5bd33c958c1da54b9e9acfa701aca2356b4e26f887d2d02499f20e7",
+            "expected_rows": 5690,
+            "match": true,
+            "observed_fingerprint": "413de61ce5bd33c958c1da54b9e9acfa701aca2356b4e26f887d2d02499f20e7",
+            "read_back": 5690
+          },
+          "bids_by_item": {
+            "expected_fingerprint": "9e674c1c686a07eb5d45cbbdc4c961541eb86a1f21d19980dfb9b0ed8cc2b31e",
+            "expected_rows": 5690,
+            "match": true,
+            "observed_fingerprint": "9e674c1c686a07eb5d45cbbdc4c961541eb86a1f21d19980dfb9b0ed8cc2b31e",
+            "read_back": 5690
+          },
+          "buynow": {
+            "expected_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "expected_rows": 5300,
+            "match": true,
+            "observed_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "read_back": 5300
+          },
+          "buynow_by_buyer": {
+            "expected_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "expected_rows": 5300,
+            "match": true,
+            "observed_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "read_back": 5300
+          },
+          "categories": {
+            "expected_fingerprint": "98fb850eb5fd584d5c1f2fe2d696265aabc362cf352d1752428fd5fdae633072",
+            "expected_rows": 500,
+            "match": true,
+            "observed_fingerprint": "98fb850eb5fd584d5c1f2fe2d696265aabc362cf352d1752428fd5fdae633072",
+            "read_back": 500
+          },
+          "categories_by_dummy": {
+            "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+            "expected_rows": 500,
+            "match": true,
+            "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+            "read_back": 500
+          },
+          "comments": {
+            "expected_fingerprint": "395c0dc88d90705f11588b44b29e299d2ced41d49021fd141266359dba33e0e7",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "395c0dc88d90705f11588b44b29e299d2ced41d49021fd141266359dba33e0e7",
+            "read_back": 6529
+          },
+          "comments_by_id": {
+            "expected_fingerprint": "7dba035a5bd7ff768ffc2084a1cf1fd6bac6d3c6182bde2185b1eadd191544a7",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "7dba035a5bd7ff768ffc2084a1cf1fd6bac6d3c6182bde2185b1eadd191544a7",
+            "read_back": 6529
+          },
+          "comments_by_to_user": {
+            "expected_fingerprint": "a680766f2286a2eafaf63cf8a1d9f3670d3ff858ea5cd5a3dab338306b9a6926",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "a680766f2286a2eafaf63cf8a1d9f3670d3ff858ea5cd5a3dab338306b9a6926",
+            "read_back": 6529
+          },
+          "comments_by_user": {
+            "expected_fingerprint": "b9203d780d4ce838f3bdcb1b958f3043fcb23dbbcf06c95970ad35cf78346fd9",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "b9203d780d4ce838f3bdcb1b958f3043fcb23dbbcf06c95970ad35cf78346fd9",
+            "read_back": 6529
+          },
+          "items": {
+            "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+            "read_back": 7392
+          },
+          "items_by_category": {
+            "expected_fingerprint": "47d94146c0b02f7a6b1bfd0d448647e9babb99d683058121349793d1377b6d1a",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "47d94146c0b02f7a6b1bfd0d448647e9babb99d683058121349793d1377b6d1a",
+            "read_back": 7392
+          },
+          "items_by_region": {
+            "expected_fingerprint": "d4881277175eaf07ce22e44f6c85201b4c19ae6652c9c8ea23375088c58814a6",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "d4881277175eaf07ce22e44f6c85201b4c19ae6652c9c8ea23375088c58814a6",
+            "read_back": 7392
+          },
+          "items_by_seller": {
+            "expected_fingerprint": "b6a41f4b14058db32a9726a14e8ab2b2417a033638b65ec2168d1b39f69233e9",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "b6a41f4b14058db32a9726a14e8ab2b2417a033638b65ec2168d1b39f69233e9",
+            "read_back": 7392
+          },
+          "items_by_user_bid": {
+            "expected_fingerprint": "404eceb35acc70092327bae7a8a4c15462ca913584de48f3b5e67b2eabc2a671",
+            "expected_rows": 834,
+            "match": true,
+            "observed_fingerprint": "404eceb35acc70092327bae7a8a4c15462ca913584de48f3b5e67b2eabc2a671",
+            "read_back": 834
+          },
+          "regions": {
+            "expected_fingerprint": "0ef2732bd9265aab9d6caad7db6c927b68b68bc47f83e85607468556f540b6bc",
+            "expected_rows": 50,
+            "match": true,
+            "observed_fingerprint": "0ef2732bd9265aab9d6caad7db6c927b68b68bc47f83e85607468556f540b6bc",
+            "read_back": 50
+          },
+          "regions_by_dummy": {
+            "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+            "expected_rows": 50,
+            "match": true,
+            "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+            "read_back": 50
+          },
+          "users": {
+            "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+            "expected_rows": 21855,
+            "match": true,
+            "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+            "read_back": 21855
+          },
+          "users_by_region": {
+            "expected_fingerprint": "7564af7e84007eb83eba94b9159f4d413fc5e849a6597ff35a57718b0b1cddaf",
+            "expected_rows": 21855,
+            "match": true,
+            "observed_fingerprint": "7564af7e84007eb83eba94b9159f4d413fc5e849a6597ff35a57718b0b1cddaf",
+            "read_back": 21855
+          }
+        }
+      }
+    },
+    "v41": {
+      "H01": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H01_AA": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H02": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "comments_from_user__nickname_2425": {
+          "acked": 6529,
+          "expected_fingerprint": "062d35a40e7829922690908859c2b4ca68c962f81364376615b01af9a7a21832",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "062d35a40e7829922690908859c2b4ca68c962f81364376615b01af9a7a21832",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H03": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_c51248": {
+          "acked": 6529,
+          "expected_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "0cdd4ad922066c960f84f21276fdb281dd33cc4aaad782efc032959e87915f59",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_5fdc7a": {
+          "acked": 7392,
+          "expected_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H04": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_579efe": {
+          "acked": 6529,
+          "expected_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_ef9d5a": {
+          "acked": 7392,
+          "expected_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "11d8679ee135d26daef034df259db27ed6908007f4fa1cfecc63abf98b5578dd",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "H05": {
+        "bids_by_item_id_2847dc": {
+          "acked": 5690,
+          "expected_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "expected_rows": 5690,
+          "match": true,
+          "observed_fingerprint": "5c4a2cdf6ca98e3ed90c8e4dd0302bd51060581559f30ac78c50fa9b6052d53f",
+          "read_back": 5690
+        },
+        "bids_by_user_id_56201c": {
+          "acked": 834,
+          "expected_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "expected_rows": 834,
+          "match": true,
+          "observed_fingerprint": "722840489da6196583933d5612e3f8ddbbcc68d2205e75931059fdebc3a477cb",
+          "read_back": 834
+        },
+        "buynow_base": {
+          "acked": 5300,
+          "expected_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "cf4987e217f9096fee656fd4af764c91202f7b37d405a8ea8fc9646cd4874cc5",
+          "read_back": 5300
+        },
+        "buynow_by_buyer_id_498aaa": {
+          "acked": 5300,
+          "expected_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "expected_rows": 5300,
+          "match": true,
+          "observed_fingerprint": "eb1289eaf6b2947b34bfc3d57f17fc06f30bb7454545150dc4d129294803b3d1",
+          "read_back": 5300
+        },
+        "categories_by_dummy_3a576f": {
+          "acked": 500,
+          "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "expected_rows": 500,
+          "match": true,
+          "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+          "read_back": 500
+        },
+        "comments_base": {
+          "acked": 6529,
+          "expected_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "c7bfdc1e1260941b87e9af60077553bce65c9fd7f6bd5ffb62d880bd00ba7a63",
+          "read_back": 6529
+        },
+        "comments_by_to_user_id_579efe": {
+          "acked": 6529,
+          "expected_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "expected_rows": 6529,
+          "match": true,
+          "observed_fingerprint": "6bed864a09b3d799f9651c7b2085f4c97003ff77bb4399c6a2778b9c2a90728d",
+          "read_back": 6529
+        },
+        "items_base": {
+          "acked": 7392,
+          "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+          "read_back": 7392
+        },
+        "items_by_category_id_5fdc7a": {
+          "acked": 7392,
+          "expected_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "787cdb642f4e96f6b7a86780acf92e35301d314862315bb2267fc77152e3dffc",
+          "read_back": 7392
+        },
+        "items_by_seller__region_id_category_id_99797b": {
+          "acked": 7392,
+          "expected_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "216faa5eb939807227a57cfb048b952c717ee718f8b86704d2dbc2a191187040",
+          "read_back": 7392
+        },
+        "items_by_seller_id_34858b": {
+          "acked": 7392,
+          "expected_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "expected_rows": 7392,
+          "match": true,
+          "observed_fingerprint": "e3c4aab6cb7c2f80f63533d192f89dbb36bda67f55986f23019228b7128aa20f",
+          "read_back": 7392
+        },
+        "regions_by_dummy_05c2a3": {
+          "acked": 50,
+          "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "expected_rows": 50,
+          "match": true,
+          "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+          "read_back": 50
+        },
+        "users_base": {
+          "acked": 21855,
+          "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "expected_rows": 21855,
+          "match": true,
+          "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+          "read_back": 21855
+        }
+      },
+      "NoSE": {
+        "historical_ddl": null,
+        "manifest_sha256": "e1c4e0e1365d606b2ed530cdc1635a7f64c2746d6dda744ddd00534fd7711110",
+        "tables": {
+          "i1888493477": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i193173044": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "i2337785568": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i2653317939": {
+            "expected_rows": 5300,
+            "match": true,
+            "read_back": 5300,
+            "skipped_missing_relationship": 0
+          },
+          "i2906147889": {
+            "expected_rows": 21855,
+            "match": true,
+            "read_back": 21855,
+            "skipped_missing_relationship": 0
+          },
+          "i3157175159": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          },
+          "i3392968797": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i3553045793": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "i3563903410": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "i3639792234": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "i3722443462": {
+            "expected_rows": 500,
+            "match": true,
+            "read_back": 500,
+            "skipped_missing_relationship": 0
+          },
+          "i590232953": {
+            "expected_rows": 50,
+            "match": true,
+            "read_back": 50,
+            "skipped_missing_relationship": 0
+          },
+          "i915430138": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          }
+        }
+      },
+      "QPG": {
+        "historical_ddl": null,
+        "manifest_sha256": "1a27e7b536975681bea93e8701804ad85d0bacbc3cad50e1768ed7de4297bb2b",
+        "tables": {
+          "q15_2": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          },
+          "q16_2": {
+            "expected_rows": 5300,
+            "match": true,
+            "read_back": 5300,
+            "skipped_missing_relationship": 0
+          },
+          "q17": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q18": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "q19": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q1_7_9_14": {
+            "expected_rows": 21855,
+            "match": true,
+            "read_back": 21855,
+            "skipped_missing_relationship": 0
+          },
+          "q2": {
+            "expected_rows": 500,
+            "match": true,
+            "read_back": 500,
+            "skipped_missing_relationship": 0
+          },
+          "q20": {
+            "expected_rows": 50,
+            "match": true,
+            "read_back": 50,
+            "skipped_missing_relationship": 0
+          },
+          "q3_10_11_13": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q4_2": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "q5_12": {
+            "expected_rows": 1226,
+            "match": true,
+            "read_back": 1226,
+            "skipped_missing_relationship": 4464
+          },
+          "q6": {
+            "expected_rows": 7392,
+            "match": true,
+            "read_back": 7392,
+            "skipped_missing_relationship": 0
+          },
+          "q8": {
+            "expected_rows": 6529,
+            "match": true,
+            "read_back": 6529,
+            "skipped_missing_relationship": 0
+          }
+        }
+      },
+      "V8_AUTO_H_norm": {
+        "ddl_adaptation_41": "removidas dclocal_read_repair_chance=0.1 e read_repair_chance=0.0 (opcoes inexistentes no 4.x)",
+        "ddl_sha256": "db38c1868d8d6855c494080fc90cd9e7d0fc996cad866ff9083bb981857a196a",
+        "tables": {
+          "bids": {
+            "expected_fingerprint": "413de61ce5bd33c958c1da54b9e9acfa701aca2356b4e26f887d2d02499f20e7",
+            "expected_rows": 5690,
+            "match": true,
+            "observed_fingerprint": "413de61ce5bd33c958c1da54b9e9acfa701aca2356b4e26f887d2d02499f20e7",
+            "read_back": 5690
+          },
+          "bids_by_item": {
+            "expected_fingerprint": "9e674c1c686a07eb5d45cbbdc4c961541eb86a1f21d19980dfb9b0ed8cc2b31e",
+            "expected_rows": 5690,
+            "match": true,
+            "observed_fingerprint": "9e674c1c686a07eb5d45cbbdc4c961541eb86a1f21d19980dfb9b0ed8cc2b31e",
+            "read_back": 5690
+          },
+          "buynow": {
+            "expected_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "expected_rows": 5300,
+            "match": true,
+            "observed_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "read_back": 5300
+          },
+          "buynow_by_buyer": {
+            "expected_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "expected_rows": 5300,
+            "match": true,
+            "observed_fingerprint": "f8aacb8a2777c3cdc303d482e349bbfcc11d99f0192ee28a87ea62711cb6f85d",
+            "read_back": 5300
+          },
+          "categories": {
+            "expected_fingerprint": "98fb850eb5fd584d5c1f2fe2d696265aabc362cf352d1752428fd5fdae633072",
+            "expected_rows": 500,
+            "match": true,
+            "observed_fingerprint": "98fb850eb5fd584d5c1f2fe2d696265aabc362cf352d1752428fd5fdae633072",
+            "read_back": 500
+          },
+          "categories_by_dummy": {
+            "expected_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+            "expected_rows": 500,
+            "match": true,
+            "observed_fingerprint": "eb25d4f658ba47a0e2370360c8173095a7fec8bd35e5ccd317781d3d4c72cc3c",
+            "read_back": 500
+          },
+          "comments": {
+            "expected_fingerprint": "395c0dc88d90705f11588b44b29e299d2ced41d49021fd141266359dba33e0e7",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "395c0dc88d90705f11588b44b29e299d2ced41d49021fd141266359dba33e0e7",
+            "read_back": 6529
+          },
+          "comments_by_id": {
+            "expected_fingerprint": "7dba035a5bd7ff768ffc2084a1cf1fd6bac6d3c6182bde2185b1eadd191544a7",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "7dba035a5bd7ff768ffc2084a1cf1fd6bac6d3c6182bde2185b1eadd191544a7",
+            "read_back": 6529
+          },
+          "comments_by_to_user": {
+            "expected_fingerprint": "a680766f2286a2eafaf63cf8a1d9f3670d3ff858ea5cd5a3dab338306b9a6926",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "a680766f2286a2eafaf63cf8a1d9f3670d3ff858ea5cd5a3dab338306b9a6926",
+            "read_back": 6529
+          },
+          "comments_by_user": {
+            "expected_fingerprint": "b9203d780d4ce838f3bdcb1b958f3043fcb23dbbcf06c95970ad35cf78346fd9",
+            "expected_rows": 6529,
+            "match": true,
+            "observed_fingerprint": "b9203d780d4ce838f3bdcb1b958f3043fcb23dbbcf06c95970ad35cf78346fd9",
+            "read_back": 6529
+          },
+          "items": {
+            "expected_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "3c94743c9fd84af66eb4f042fff46df1b5c5be012e3b9eaed2eaff82a1fe8c71",
+            "read_back": 7392
+          },
+          "items_by_category": {
+            "expected_fingerprint": "47d94146c0b02f7a6b1bfd0d448647e9babb99d683058121349793d1377b6d1a",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "47d94146c0b02f7a6b1bfd0d448647e9babb99d683058121349793d1377b6d1a",
+            "read_back": 7392
+          },
+          "items_by_region": {
+            "expected_fingerprint": "d4881277175eaf07ce22e44f6c85201b4c19ae6652c9c8ea23375088c58814a6",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "d4881277175eaf07ce22e44f6c85201b4c19ae6652c9c8ea23375088c58814a6",
+            "read_back": 7392
+          },
+          "items_by_seller": {
+            "expected_fingerprint": "b6a41f4b14058db32a9726a14e8ab2b2417a033638b65ec2168d1b39f69233e9",
+            "expected_rows": 7392,
+            "match": true,
+            "observed_fingerprint": "b6a41f4b14058db32a9726a14e8ab2b2417a033638b65ec2168d1b39f69233e9",
+            "read_back": 7392
+          },
+          "items_by_user_bid": {
+            "expected_fingerprint": "404eceb35acc70092327bae7a8a4c15462ca913584de48f3b5e67b2eabc2a671",
+            "expected_rows": 834,
+            "match": true,
+            "observed_fingerprint": "404eceb35acc70092327bae7a8a4c15462ca913584de48f3b5e67b2eabc2a671",
+            "read_back": 834
+          },
+          "regions": {
+            "expected_fingerprint": "0ef2732bd9265aab9d6caad7db6c927b68b68bc47f83e85607468556f540b6bc",
+            "expected_rows": 50,
+            "match": true,
+            "observed_fingerprint": "0ef2732bd9265aab9d6caad7db6c927b68b68bc47f83e85607468556f540b6bc",
+            "read_back": 50
+          },
+          "regions_by_dummy": {
+            "expected_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+            "expected_rows": 50,
+            "match": true,
+            "observed_fingerprint": "daf616fd9fa4f9a18037c1ef284ffdd6e3b04e29ba552760128d032464cf61e7",
+            "read_back": 50
+          },
+          "users": {
+            "expected_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+            "expected_rows": 21855,
+            "match": true,
+            "observed_fingerprint": "7eadbed2fe526449abb50257b91f397b73f5b43deb26fe8b54f001534550bbd4",
+            "read_back": 21855
+          },
+          "users_by_region": {
+            "expected_fingerprint": "7564af7e84007eb83eba94b9159f4d413fc5e849a6597ff35a57718b0b1cddaf",
+            "expected_rows": 21855,
+            "match": true,
+            "observed_fingerprint": "7564af7e84007eb83eba94b9159f4d413fc5e849a6597ff35a57718b0b1cddaf",
+            "read_back": 21855
+          }
+        }
+      }
+    }
+  },
+  "measured": 10000,
+  "order_base": [
+    "H01",
+    "NoSE",
+    "H02",
+    "V8_AUTO_H_norm",
+    "H03",
+    "QPG",
+    "H04",
+    "H05",
+    "H01_AA"
+  ],
+  "preflight": {
+    "v311": {
+      "arm": "v311",
+      "cassandra_release_version": "3.11.11",
+      "container": "sl_v1_rubis311_cassandra",
+      "cpu_count": 24,
+      "cpuset": "0-3",
+      "docker": {
+        "arch": "x86_64",
+        "mem_bytes": 66977333248,
+        "ncpu": 24,
+        "os": "Ubuntu Core 24",
+        "server_version": "29.8.0"
+      },
+      "driver": "3.30.1",
+      "host_os": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+      "image": "cassandra@sha256:5e13c93dfc49c87dda562e2450b79e2d6f262f0b675ba90bdb382bbaf91bcd33",
+      "image_id": "sha256:401f4a1398ec654a9c87cda4b4bc0bb49c7c2da5603b312c5b6761a7b49f2eef",
+      "loadavg": [
+        3.05224609375,
+        2.18212890625,
+        1.47998046875
+      ],
+      "machine": "x86_64",
+      "memory_limit_bytes": 6442450944,
+      "port": 9065,
+      "python": "3.12.3",
+      "running_containers": [
+        "sl_v1_rubis311_cassandra\tcassandra\tUp 13 seconds",
+        "schemalens-rubis-cassandra\tcassandra:4.1\tUp 7 days",
+        "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 7 days (healthy)",
+        "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 7 days (healthy)",
+        "imdb_mongodb_alt\tmongo:8\tUp 7 days",
+        "fiben_mongodb_bench\tmongo:8.0\tUp 7 days"
+      ],
+      "utc": "2026-11-17T21:54:17.390274+00:00"
+    },
+    "v41": {
+      "arm": "v41",
+      "cassandra_release_version": "4.1.12",
+      "container": "sl_v1_rubis_cassandra",
+      "cpu_count": 24,
+      "cpuset": "0-3",
+      "docker": {
+        "arch": "x86_64",
+        "mem_bytes": 66977333248,
+        "ncpu": 24,
+        "os": "Ubuntu Core 24",
+        "server_version": "29.8.0"
+      },
+      "driver": "3.30.1",
+      "host_os": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+      "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+      "image_id": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+      "loadavg": [
+        1.37548828125,
+        1.6025390625,
+        1.21240234375
+      ],
+      "machine": "x86_64",
+      "memory_limit_bytes": 6442450944,
+      "port": 9064,
+      "python": "3.12.3",
+      "running_containers": [
+        "sl_v1_rubis_cassandra\tcassandra\tUp About a minute",
+        "schemalens-rubis-cassandra\tcassandra:4.1\tUp 7 days",
+        "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 7 days (healthy)",
+        "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 7 days (healthy)",
+        "imdb_mongodb_alt\tmongo:8\tUp 7 days",
+        "fiben_mongodb_bench\tmongo:8.0\tUp 7 days"
+      ],
+      "utc": "2026-11-17T21:52:04.653886+00:00"
+    }
+  },
+  "protocol": "SCHEMALENS_CASSANDRA_EXEC_PROTOCOL_V1",
+  "repetitions": [
+    {
+      "arm": "v41",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 57.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 1,
+          "raw_file": "H01_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 69.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 2,
+          "raw_file": "NoSE_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 55.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 3,
+          "raw_file": "H02_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 83.8
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 4,
+          "raw_file": "V8_AUTO_H_norm_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 120.0
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 70.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 6,
+          "raw_file": "QPG_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 78.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 7,
+          "raw_file": "H04_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 150.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 10
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 8,
+          "raw_file": "H05_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 64.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 9,
+          "raw_file": "H01_AA_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01",
+        "NoSE",
+        "H02",
+        "V8_AUTO_H_norm",
+        "H03",
+        "QPG",
+        "H04",
+        "H05",
+        "H01_AA"
+      ],
+      "rep": 1,
+      "restart_seconds": 13.397483587265015,
+      "valid": true,
+      "window_minutes": 13.6
+    },
+    {
+      "arm": "v311",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 57.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 1,
+          "raw_file": "H01_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 64.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 2,
+          "raw_file": "NoSE_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 56.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 3,
+          "raw_file": "H02_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 68.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 4,
+          "raw_file": "V8_AUTO_H_norm_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 114.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 63.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 6,
+          "raw_file": "QPG_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 65.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 7,
+          "raw_file": "H04_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 116.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 8,
+          "raw_file": "H05_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 54.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 9,
+          "raw_file": "H01_AA_rep1_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01",
+        "NoSE",
+        "H02",
+        "V8_AUTO_H_norm",
+        "H03",
+        "QPG",
+        "H04",
+        "H05",
+        "H01_AA"
+      ],
+      "rep": 1,
+      "restart_seconds": 13.00003695487976,
+      "valid": true,
+      "window_minutes": 12.1
+    },
+    {
+      "arm": "v311",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 56.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 1,
+          "raw_file": "H01_AA_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 116.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 2,
+          "raw_file": "H05_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 70.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 3,
+          "raw_file": "H04_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 65.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 4,
+          "raw_file": "QPG_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 122.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 74.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 6,
+          "raw_file": "V8_AUTO_H_norm_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 58.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 7,
+          "raw_file": "H02_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 65.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 8,
+          "raw_file": "NoSE_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 56.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 9,
+          "raw_file": "H01_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01_AA",
+        "H05",
+        "H04",
+        "QPG",
+        "H03",
+        "V8_AUTO_H_norm",
+        "H02",
+        "NoSE",
+        "H01"
+      ],
+      "rep": 2,
+      "restart_seconds": 15.741880178451538,
+      "valid": true,
+      "window_minutes": 12.5
+    },
+    {
+      "arm": "v41",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 62.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 1,
+          "raw_file": "H01_AA_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 154.8
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 11
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 2,
+          "raw_file": "H05_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 89.8
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 3,
+          "raw_file": "H04_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 81.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 4,
+          "raw_file": "QPG_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 136.8
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 10
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 102.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 6,
+          "raw_file": "V8_AUTO_H_norm_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 73.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 7,
+          "raw_file": "H02_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 90.8
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 8,
+          "raw_file": "NoSE_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 58.1
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 9,
+          "raw_file": "H01_rep2_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01_AA",
+        "H05",
+        "H04",
+        "QPG",
+        "H03",
+        "V8_AUTO_H_norm",
+        "H02",
+        "NoSE",
+        "H01"
+      ],
+      "rep": 2,
+      "restart_seconds": 13.106644630432129,
+      "valid": true,
+      "window_minutes": 15.3
+    },
+    {
+      "arm": "v41",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 77.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 1,
+          "raw_file": "H01_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 109.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 2,
+          "raw_file": "NoSE_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 70.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 3,
+          "raw_file": "H02_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 126.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 4,
+          "raw_file": "V8_AUTO_H_norm_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 170.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 12
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 117.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 6,
+          "raw_file": "QPG_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 113.1
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 7,
+          "raw_file": "H04_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 180.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 12
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 8,
+          "raw_file": "H05_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 89.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 9,
+          "raw_file": "H01_AA_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01",
+        "NoSE",
+        "H02",
+        "V8_AUTO_H_norm",
+        "H03",
+        "QPG",
+        "H04",
+        "H05",
+        "H01_AA"
+      ],
+      "rep": 3,
+      "restart_seconds": 20.9855899810791,
+      "valid": true,
+      "window_minutes": 18.7
+    },
+    {
+      "arm": "v311",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 67.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 1,
+          "raw_file": "H01_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 83.0
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 2,
+          "raw_file": "NoSE_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 68.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 3,
+          "raw_file": "H02_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 79.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 4,
+          "raw_file": "V8_AUTO_H_norm_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 131.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 78.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 6,
+          "raw_file": "QPG_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 85.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 7,
+          "raw_file": "H04_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 133.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 8,
+          "raw_file": "H05_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 67.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 9,
+          "raw_file": "H01_AA_rep3_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01",
+        "NoSE",
+        "H02",
+        "V8_AUTO_H_norm",
+        "H03",
+        "QPG",
+        "H04",
+        "H05",
+        "H01_AA"
+      ],
+      "rep": 3,
+      "restart_seconds": 12.931265592575073,
+      "valid": true,
+      "window_minutes": 14.4
+    },
+    {
+      "arm": "v311",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 68.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 1,
+          "raw_file": "H01_AA_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 125.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 2,
+          "raw_file": "H05_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 57.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 4
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 3,
+          "raw_file": "H04_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 62.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 4,
+          "raw_file": "QPG_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 120.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 84.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 6,
+          "raw_file": "V8_AUTO_H_norm_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 69.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 7,
+          "raw_file": "H02_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 82.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 8,
+          "raw_file": "NoSE_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 67.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 5
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 9,
+          "raw_file": "H01_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01_AA",
+        "H05",
+        "H04",
+        "QPG",
+        "H03",
+        "V8_AUTO_H_norm",
+        "H02",
+        "NoSE",
+        "H01"
+      ],
+      "rep": 4,
+      "restart_seconds": 15.655908107757568,
+      "valid": true,
+      "window_minutes": 13.4
+    },
+    {
+      "arm": "v41",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 78.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 1,
+          "raw_file": "H01_AA_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 178.0
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 12
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 2,
+          "raw_file": "H05_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 102.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 3,
+          "raw_file": "H04_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 114.0
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 4,
+          "raw_file": "QPG_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 174.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 12
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 128.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 6,
+          "raw_file": "V8_AUTO_H_norm_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 85.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 7,
+          "raw_file": "H02_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 113.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 8,
+          "raw_file": "NoSE_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 95.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 9,
+          "raw_file": "H01_rep4_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01_AA",
+        "H05",
+        "H04",
+        "QPG",
+        "H03",
+        "V8_AUTO_H_norm",
+        "H02",
+        "NoSE",
+        "H01"
+      ],
+      "rep": 4,
+      "restart_seconds": 16.789978981018066,
+      "valid": true,
+      "window_minutes": 19.0
+    },
+    {
+      "arm": "v41",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 102.0
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 1,
+          "raw_file": "H01_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 115.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 2,
+          "raw_file": "NoSE_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 94.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 3,
+          "raw_file": "H02_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 148.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 10
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 4,
+          "raw_file": "V8_AUTO_H_norm_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 168.1
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 12
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 128.1
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 6,
+          "raw_file": "QPG_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 128.2
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 9
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 7,
+          "raw_file": "H04_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 193.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 13
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 8,
+          "raw_file": "H05_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 114.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 8
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 9,
+          "raw_file": "H01_AA_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01",
+        "NoSE",
+        "H02",
+        "V8_AUTO_H_norm",
+        "H03",
+        "QPG",
+        "H04",
+        "H05",
+        "H01_AA"
+      ],
+      "rep": 5,
+      "restart_seconds": 17.99027419090271,
+      "valid": true,
+      "window_minutes": 21.0
+    },
+    {
+      "arm": "v311",
+      "attempt": 1,
+      "deployments": [
+        {
+          "deployment": "H01",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 79.7
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h01",
+          "position": 1,
+          "raw_file": "H01_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "NoSE",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 99.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_cohort_nose_bidding",
+          "position": 2,
+          "raw_file": "NoSE_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H02",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 78.6
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h02",
+          "position": 3,
+          "raw_file": "H02_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "V8_AUTO_H_norm",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 101.9
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_v8_auto_norm",
+          "position": 4,
+          "raw_file": "V8_AUTO_H_norm_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H03",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 147.0
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 10
+          },
+          "keyspace": "rubis_v9_h03",
+          "position": 5,
+          "raw_file": "H03_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "QPG",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 90.5
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_cohort_qpg_bidding",
+          "position": 6,
+          "raw_file": "QPG_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H04",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 103.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 7
+          },
+          "keyspace": "rubis_v9_h04",
+          "position": 7,
+          "raw_file": "H04_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H05",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 149.4
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 10
+          },
+          "keyspace": "rubis_v9_h05",
+          "position": 8,
+          "raw_file": "H05_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        },
+        {
+          "deployment": "H01_AA",
+          "errors": 0,
+          "guard_v1": {
+            "foreign_compactions": {},
+            "own_keyspace_compactions": {},
+            "passed": true,
+            "rule": "carga mista: compactacao nos keyspaces medidos e telemetria; fora deles (nao-system) invalida",
+            "window_seconds": 83.3
+          },
+          "isolation_v9": {
+            "clean": true,
+            "concurrent_bulk_writer_samples": 0,
+            "first_observations": [],
+            "ignored_paused_sibling_runner_noops": {
+              "count": 0,
+              "first": [],
+              "marker": "/Users/hudsonbatista/Documents/rubis3/experiments/rubis_cassandra/outputs/final_run_v8_completion_011/continuation/PAUSE_JOB"
+            },
+            "interval_s": 15.0,
+            "samples": 6
+          },
+          "keyspace": "rubis_v9_h01_aa",
+          "position": 9,
+          "raw_file": "H01_AA_rep5_a1.jsonl.gz",
+          "state_restoration_changed_tables": []
+        }
+      ],
+      "gate": {
+        "empty_tables": [],
+        "passed": true,
+        "tables": 124,
+        "violations": {}
+      },
+      "order": [
+        "H01",
+        "NoSE",
+        "H02",
+        "V8_AUTO_H_norm",
+        "H03",
+        "QPG",
+        "H04",
+        "H05",
+        "H01_AA"
+      ],
+      "rep": 5,
+      "restart_seconds": 12.918597221374512,
+      "valid": true,
+      "window_minutes": 16.7
+    }
+  ],
+  "reps": 5,
+  "smoke": false,
+  "started_utc": "2026-11-17T21:52:04.593798+00:00",
+  "warmup": 1000
+}

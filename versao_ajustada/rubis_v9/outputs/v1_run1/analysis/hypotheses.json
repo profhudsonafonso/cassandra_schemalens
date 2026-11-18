@@ -1,0 +1,22 @@
+{
+  "H1": {
+    "detail": "browsing/NoSE: A_MAIS_RAPIDO; browsing/QPG: A_MAIS_RAPIDO; bidding/NoSE: A_MAIS_RAPIDO; bidding/QPG: A_MAIS_RAPIDO; update10x/NoSE: A_MAIS_RAPIDO; update10x/QPG: A_MAIS_RAPIDO",
+    "result": true
+  },
+  "H2": {
+    "detail": "tau 3.11x4.1: browsing=0.89, bidding=0.94, update10x=0.78, update100x=0.28; vereditos identicos (todos os H x baselines): 46/60",
+    "result": false
+  },
+  "H3": {
+    "detail": "browsing=0.95, bidding=1.00, update10x=0.80, update100x=0.20",
+    "result": false
+  },
+  "H4": {
+    "detail": "browsing=sim, bidding=sim, update10x=nao, update100x=nao",
+    "result": false
+  },
+  "H5": {
+    "detail": "3.11.11: 3577311/3577311; 4.1.12: 3577311/3577311",
+    "result": true
+  }
+}

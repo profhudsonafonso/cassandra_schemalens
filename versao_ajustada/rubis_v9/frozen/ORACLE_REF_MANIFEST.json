@@ -1,0 +1,10 @@
+{
+  "entries": 397479,
+  "measured": 10000,
+  "oracle": "schemalens_v9/oracle_v9.py (contrato E6 das 36 instrucoes)",
+  "reps": 5,
+  "seconds": 71.2,
+  "sha256": "8f7f2992ba2179b429821d8bdf9d52cf4b0c362063957db5213223638bab5b33",
+  "state_from_arm": "v41",
+  "warmup": 1000
+}

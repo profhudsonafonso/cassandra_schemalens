@@ -1,0 +1,59 @@
+{"phase": "materialize", "arm": "v41", "deployment": "H01"}
+{"phase": "materialize", "arm": "v41", "deployment": "NoSE"}
+{"phase": "materialize", "arm": "v41", "deployment": "H02"}
+{"phase": "materialize", "arm": "v41", "deployment": "V8_AUTO_H_norm"}
+{"phase": "materialize", "arm": "v41", "deployment": "H03"}
+{"phase": "materialize", "arm": "v41", "deployment": "QPG"}
+{"phase": "materialize", "arm": "v41", "deployment": "H04"}
+{"phase": "materialize", "arm": "v41", "deployment": "H05"}
+{"phase": "materialize", "arm": "v41", "deployment": "H01_AA"}
+{"phase": "materialize", "arm": "v311", "deployment": "H01"}
+{"phase": "materialize", "arm": "v311", "deployment": "NoSE"}
+{"phase": "materialize", "arm": "v311", "deployment": "H02"}
+{"phase": "materialize", "arm": "v311", "deployment": "V8_AUTO_H_norm"}
+{"phase": "materialize", "arm": "v311", "deployment": "H03"}
+{"phase": "materialize", "arm": "v311", "deployment": "QPG"}
+{"phase": "materialize", "arm": "v311", "deployment": "H04"}
+{"phase": "materialize", "arm": "v311", "deployment": "H05"}
+{"phase": "materialize", "arm": "v311", "deployment": "H01_AA"}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 1, "deployment": "H01", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 2, "deployment": "NoSE", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 3, "deployment": "H02", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 4, "deployment": "V8_AUTO_H_norm", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 5, "deployment": "H03", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 6, "deployment": "QPG", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 7, "deployment": "H04", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 8, "deployment": "H05", "elapsed_min": 0.4}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v41", "attempt": 1, "pos": 9, "deployment": "H01_AA", "elapsed_min": 0.4}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 1, "deployment": "H01", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 2, "deployment": "NoSE", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 3, "deployment": "H02", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 4, "deployment": "V8_AUTO_H_norm", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 5, "deployment": "H03", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 6, "deployment": "QPG", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 7, "deployment": "H04", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 8, "deployment": "H05", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 1, "of": 2, "arm": "v311", "attempt": 1, "pos": 9, "deployment": "H01_AA", "elapsed_min": 0.4}
+{"phase": "rep_done", "rep": 1, "of": 2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 1, "deployment": "H01_AA", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 2, "deployment": "H05", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 3, "deployment": "H04", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 4, "deployment": "QPG", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 5, "deployment": "H03", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 6, "deployment": "V8_AUTO_H_norm", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 7, "deployment": "H02", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 8, "deployment": "NoSE", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v311", "attempt": 1, "pos": 9, "deployment": "H01", "elapsed_min": 0.4}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 1, "deployment": "H01_AA", "elapsed_min": 0.0}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 2, "deployment": "H05", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 3, "deployment": "H04", "elapsed_min": 0.1}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 4, "deployment": "QPG", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 5, "deployment": "H03", "elapsed_min": 0.2}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 6, "deployment": "V8_AUTO_H_norm", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 7, "deployment": "H02", "elapsed_min": 0.3}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 8, "deployment": "NoSE", "elapsed_min": 0.4}
+{"phase": "measure", "rep": 2, "of": 2, "arm": "v41", "attempt": 1, "pos": 9, "deployment": "H01", "elapsed_min": 0.4}
+{"phase": "rep_done", "rep": 2, "of": 2}
+{"phase": "agreement"}
+{"phase": "complete", "agreement": {"v41": {"H01": "PASS", "NoSE": "PASS", "H02": "PASS", "V8_AUTO_H_norm": "PASS", "H03": "PASS", "QPG": "PASS", "H04": "PASS", "H05": "PASS", "H01_AA": "PASS"}, "v311": {"H01": "PASS", "NoSE": "PASS", "H02": "PASS", "V8_AUTO_H_norm": "PASS", "H03": "PASS", "QPG": "PASS", "H04": "PASS", "H05": "PASS", "H01_AA": "PASS"}}}
+EXIT 0
