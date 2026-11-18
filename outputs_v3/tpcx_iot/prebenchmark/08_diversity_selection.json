@@ -1,0 +1,9 @@
+{
+  "pool": [
+    "h_119222012d4e",
+    "h_3f1449e05468"
+  ],
+  "rule": "PARETO_FITS_TOP_K_KEEP_ALL",
+  "steps": [],
+  "top_k": 5
+}

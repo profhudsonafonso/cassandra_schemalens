@@ -1,0 +1,18 @@
+{
+  "v2_same_denominator": {
+    "near_best_5pct": true,
+    "top1_strict": true,
+    "top1_within_noise": true,
+    "top3": true
+  },
+  "v3": {
+    "measured_best": "V3IOT_ts2_iot_wide_unbucketed",
+    "near_best_5pct": true,
+    "tied_with_best": [
+      "V3IOT_ts2_iot_wide_unbucketed"
+    ],
+    "top1_strict": true,
+    "top1_within_noise": true,
+    "top3": true
+  }
+}

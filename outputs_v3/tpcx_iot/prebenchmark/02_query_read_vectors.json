@@ -1,0 +1,87 @@
+[
+  {
+    "assumptions": [
+      "mean over the 120 frozen probes of one execution"
+    ],
+    "candidate_id": "ts0_series_raw",
+    "fanout": 2.0,
+    "logical_bytes": 20834.0,
+    "logical_rows": 22.0,
+    "partitions_touched": 4.0,
+    "plan_id": "qp__q_read_2_windows__ts0_series_raw",
+    "provenance": "tpcx stage5 20_queryplans.json + stage5.runtime.bind_read_requests",
+    "query_id": "Q_READ_2_WINDOWS",
+    "read_cql_requests": 4.0,
+    "runtime_guard": "two_explicit_5s_inclusive_windows; stable_event_identity; all_candidate_rows_materialized; correct_utc_epoch_milliseconds; complete_station_roster; complete_roster_provenance",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "mean over the 120 frozen probes of one execution"
+    ],
+    "candidate_id": "ts1_series_3600s",
+    "fanout": 2.0,
+    "logical_bytes": 20834.0,
+    "logical_rows": 22.0,
+    "partitions_touched": 4.0,
+    "plan_id": "qp__q_read_2_windows__ts1_series_3600s",
+    "provenance": "tpcx stage5 20_queryplans.json + stage5.runtime.bind_read_requests",
+    "query_id": "Q_READ_2_WINDOWS",
+    "read_cql_requests": 4.0,
+    "runtime_guard": "two_explicit_5s_inclusive_windows; stable_event_identity; all_candidate_rows_materialized; correct_utc_epoch_milliseconds; complete_station_roster; complete_roster_provenance",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "mean over the 120 frozen probes of one execution"
+    ],
+    "candidate_id": "ts1_series_60s",
+    "fanout": 2.15,
+    "logical_bytes": 20834.0,
+    "logical_rows": 22.0,
+    "partitions_touched": 4.3,
+    "plan_id": "qp__q_read_2_windows__ts1_series_60s",
+    "provenance": "tpcx stage5 20_queryplans.json + stage5.runtime.bind_read_requests",
+    "query_id": "Q_READ_2_WINDOWS",
+    "read_cql_requests": 4.3,
+    "runtime_guard": "two_explicit_5s_inclusive_windows; stable_event_identity; all_candidate_rows_materialized; correct_utc_epoch_milliseconds; complete_station_roster; complete_roster_provenance",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "mean over the 120 frozen probes of one execution"
+    ],
+    "candidate_id": "ts3_sensor_3600s",
+    "fanout": 1.0,
+    "logical_bytes": 20834.0,
+    "logical_rows": 22.0,
+    "partitions_touched": 2.0,
+    "plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+    "provenance": "tpcx stage5 20_queryplans.json + stage5.runtime.bind_read_requests",
+    "query_id": "Q_READ_2_WINDOWS",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "two_explicit_5s_inclusive_windows; stable_event_identity; all_candidate_rows_materialized; correct_utc_epoch_milliseconds; ts3_projection_correctly_maintained",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "mean over the 120 frozen probes of one execution"
+    ],
+    "candidate_id": "ts3_sensor_60s",
+    "fanout": 1.075,
+    "logical_bytes": 20834.0,
+    "logical_rows": 22.0,
+    "partitions_touched": 2.15,
+    "plan_id": "qp__q_read_2_windows__ts3_sensor_60s",
+    "provenance": "tpcx stage5 20_queryplans.json + stage5.runtime.bind_read_requests",
+    "query_id": "Q_READ_2_WINDOWS",
+    "read_cql_requests": 2.15,
+    "runtime_guard": "two_explicit_5s_inclusive_windows; stable_event_identity; all_candidate_rows_materialized; correct_utc_epoch_milliseconds; ts3_projection_correctly_maintained",
+    "valid": true,
+    "warnings": []
+  }
+]

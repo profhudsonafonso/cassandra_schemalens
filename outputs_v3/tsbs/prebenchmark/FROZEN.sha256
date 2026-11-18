@@ -1,0 +1,82 @@
+{
+  "determinism_rerun": {
+    "00_input_hashes.json": "bc3b68f65a1b18058e631056099f7b670b322e1e2d3e170a01eab925c82edd30",
+    "01_scenario.json": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca",
+    "02_query_read_vectors.json": "d79e5d1bd1c38d267dc7e3e3c4f02c1d6ab9483b00cdf7e5535d6f9b9157a89d",
+    "03_write_vectors.json": "be58ba3ae61e141546b4d9e98a8b8eb1e42f4f3e49d643da2169625580c3c42f",
+    "04_candidate_footprints.json": "305d797a542eab5a7f4269d5fbea5509b2c1bc984a7a2d1e721aa5ab67141fb7",
+    "05_deployment_vectors.json": "069c184fddaced94b314243c0e373e506fce2d786f740d96919ddbef12ebe088",
+    "06_complete_deployments.json": "21d93067eb8950359372dd6d73874866c5f022e16899a30f2b283966d1dfb181",
+    "07_pareto_front.json": "230f80f1c9ad0f11a8ac8f8052509d551c714a06a076716730f6a513330280a8",
+    "08_diversity_selection.json": "e82bffa39b14ad9f4c4cc6fbaab1b18610e9ee3637230baa14b150c344c5df49",
+    "09_hbench_v3.json": "26d7b88243e89db4a430c1eeb345602c63d306eb8b179a53087fc9a96668679a",
+    "10_hbench_routes.json": "7e69e68b1a7856e2bfc156b128dc4d1bbee22078235c84652a73c8278419871c",
+    "11_selection_trace.json": "540d75ce223aad04c53cf851dc8ae6fcb3ef1c0c99b4a59fc34f4a090a511b9c"
+  },
+  "frozen_utc": "2026-11-18T12:52:47.584387+00:00",
+  "measurement_harness_and_data": {
+    "versao_ajustada/tsbs_tsdb/data/query_instances.json": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a",
+    "versao_ajustada/tsbs_tsdb/data/tsbs_cpu_only_cassandra_double.txt.gz": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c",
+    "versao_ajustada/tsbs_tsdb/tsbs_v1/common_paths.py": "5d0abf3ffa544e6b558ed3fd661e4845d79bc430f62b3b294b5583aace6caf9a",
+    "versao_ajustada/tsbs_tsdb/tsbs_v1/freeze.py": "a43883709f1ac281e144e9e895dceea1bbe385859f434272a84dde72a132255d",
+    "versao_ajustada/tsbs_tsdb/tsbs_v1/measure.py": "84a4b1399ec1cb0a8402e0f0c5560bc83868437bd0fbc2db197c9861238a05b8",
+    "versao_ajustada/tsbs_tsdb/tsbs_v1/oracle.py": "ffdfe7e87c653caa9fe4758c5ee1d8f1318013a81dd4b96718f7199077aefc4c"
+  },
+  "preregistration_sha256": "85597291c49c9e97289e0b54fa62cc8e8e25cef30bdac58ac323fd9a266f2dda",
+  "protocol": {
+    "versao_ajustada/common/cassandra_env.py": "eddcbbfc9ecf76b22f294bb5c9a8af86142153d2b326424a153ddb9ad0980526",
+    "versao_ajustada/common/method_eval.py": "7a4b559b452d9acea4093277b47a026816f8d947c427296c9ceef80232a20aca",
+    "versao_ajustada/common/protocol_v1.json": "14d5940616015e3ea9d605ec623cfaf6dc9e642bf6cfef0a4496b3756643f1b8",
+    "versao_ajustada/common/slstats.py": "ff566adfb9172a325c9b7038fc36abfc7d135325a62c14ecb3d9dd7be2e86c01"
+  },
+  "rule": "any later difference => ABORT (verify() is called by every V3 Stage 9 entry point)",
+  "scenario": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca",
+  "stage7_8_outputs": {
+    "00_input_hashes.json": "bc3b68f65a1b18058e631056099f7b670b322e1e2d3e170a01eab925c82edd30",
+    "01_scenario.json": "1182a2bca4208ebe4c78b4dee37ba9212661e0506b03ffd8eae8397c5eee15ca",
+    "02_query_read_vectors.json": "d79e5d1bd1c38d267dc7e3e3c4f02c1d6ab9483b00cdf7e5535d6f9b9157a89d",
+    "03_write_vectors.json": "be58ba3ae61e141546b4d9e98a8b8eb1e42f4f3e49d643da2169625580c3c42f",
+    "04_candidate_footprints.json": "305d797a542eab5a7f4269d5fbea5509b2c1bc984a7a2d1e721aa5ab67141fb7",
+    "05_deployment_vectors.json": "069c184fddaced94b314243c0e373e506fce2d786f740d96919ddbef12ebe088",
+    "06_complete_deployments.json": "21d93067eb8950359372dd6d73874866c5f022e16899a30f2b283966d1dfb181",
+    "07_pareto_front.json": "230f80f1c9ad0f11a8ac8f8052509d551c714a06a076716730f6a513330280a8",
+    "08_diversity_selection.json": "e82bffa39b14ad9f4c4cc6fbaab1b18610e9ee3637230baa14b150c344c5df49",
+    "09_hbench_v3.json": "26d7b88243e89db4a430c1eeb345602c63d306eb8b179a53087fc9a96668679a",
+    "10_hbench_routes.json": "7e69e68b1a7856e2bfc156b128dc4d1bbee22078235c84652a73c8278419871c",
+    "11_selection_trace.json": "540d75ce223aad04c53cf851dc8ae6fcb3ef1c0c99b4a59fc34f4a090a511b9c",
+    "12_frozen_manifest.json": "964ede6b09e4eacc71ffebd7d7496bcc1b2a04423fd702279ad368403e3ca199"
+  },
+  "stage7_inputs_live": {
+    "versao_ajustada/tsbs_tsdb/data/query_instances.json": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a",
+    "versao_ajustada/tsbs_tsdb/data/tsbs_cpu_only_cassandra_double.txt.gz": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c",
+    "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage4/10_cassandra_candidate_specs.json": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+    "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage5/15_query_plans.json": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+    "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage6/18_write_plans.json": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87"
+  },
+  "v3_code": {
+    "unified_stage7_v3/__init__.py": "8450c17809b05f37efa8daa71c46ec90db7e8408340ac688a10cf756e8c40e03",
+    "unified_stage7_v3/adapters/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "unified_stage7_v3/adapters/generic.py": "3465108167a321d4acad95790b806a05d6929a48ec2a4e5b0876ee985cfb3247",
+    "unified_stage7_v3/adapters/iot.py": "2d0c3864124c7599f1ddc8450fe89c65f12ba617d1a829f6c9495d182c37bb3c",
+    "unified_stage7_v3/adapters/rubis.py": "fb62f434d98d5a2817adc512c5fb6436723f818be9c25bb7c0eeac4f25606b71",
+    "unified_stage7_v3/adapters/tpcx_iot.py": "e112ef79bb438bffd24cc0f73b8d53f99030b5b7aa81e3034a42bcbc986ab27f",
+    "unified_stage7_v3/adapters/tsbs.py": "1d4a80229eb6a21b76b47a0dc1dc2aa864808b68a0467d7da96a6acbae2fe7ad",
+    "unified_stage7_v3/aggregation.py": "feeaa482d96253c64a63761e524cf7d8fdc91ee7fa4a1c801c42efce57769a3e",
+    "unified_stage7_v3/estimator.py": "451d2da0a129be4f3dd155c7ad785f5545fbe67f24d5e51f898605461bd2f49e",
+    "unified_stage7_v3/freeze.py": "2549ecc2f7652f6ea8f6c5757ddca45430e56cfd717a70c291c653229b338a62",
+    "unified_stage7_v3/guards.py": "4f87eca6530d036c2346f025dea4caa8b90cbf40d74a83b04d88ad9505ff72e9",
+    "unified_stage7_v3/logical_bytes.py": "a6ee796d14eacbbeee2024ef59c6a22365cce393a28cc486dad4769df916316b",
+    "unified_stage7_v3/model.py": "a9e9315085637fc3e213a0f6430830b427146f99c141c68b3cfbfa57ea2a3ada",
+    "unified_stage7_v3/pareto.py": "fb3a4b29b63d2baad42d98af4a207da04b403d7c85651a51b63309bf249af069",
+    "unified_stage7_v3/plans.py": "617438b5c8f00f8a239ac0a2df78dd9aeece0c0928e6d9ccfc0f582052bd1f00",
+    "unified_stage7_v3/policy.json": "9bdd0df734877ae97589a432e6020bd7ee761318a9cb19af17143d8ecc8e1800",
+    "unified_stage7_v3/provenance.py": "da0805b9869e991a94aa066111d40cf5e587865a2630c08ad99659a77d7764c5",
+    "unified_stage7_v3/report_prebenchmark.py": "6eef0053dbdb8db731e35664c449ad84ae5bef14aff36ff09336f38e33ee9221",
+    "unified_stage7_v3/run_prebenchmark.py": "8735c99d689eb3da528fd5c8099088d60521464d3ee9ba0d62cb9444502dcd6f",
+    "unified_stage7_v3/selection.py": "20387f6a5e0b5ee67723127d88d27738f6d96797ab35b9b1faaaf202c6b03336",
+    "unified_stage7_v3/stage9/__init__.py": "9b55fac52b4cc7ab0611aca292e010bc7e1e03a02794262ce8ef7e6449cece50",
+    "unified_stage7_v3/stage9/reuse_v2.py": "9ce7db8534775f3a6d4fb432fffe8c40105be6d08f0ed73bf1a54468dce9ad58",
+    "unified_stage7_v3/stage9/rubis_v3.py": "a6edf583b64fec0a931be9bdbeeec070dba7aad45cc2a0fa45c4df7d876df9e7",
+    "unified_stage7_v3/stage9/tsbs_v3.py": "8ccc5e8742c3b3912832b21cbadb7b5560033927089b01563b9d52852dcee65e"
+  }
+}

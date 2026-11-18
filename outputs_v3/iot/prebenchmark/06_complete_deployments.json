@@ -1,0 +1,45 @@
+{
+  "complete": 3,
+  "complete_ids": [
+    "V3IOT_ts0_iot_raw",
+    "V3IOT_ts2_iot_wide",
+    "V3IOT_ts2_iot_wide_unbucketed"
+  ],
+  "enumerated": 6,
+  "infeasible": 3,
+  "infeasible_examples_first_2000": [
+    {
+      "deployment_id": "V3IOT_ts0_iot_raw+ts4_iot_latest",
+      "problems": [
+        "dead table ts4_iot_latest: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_iot_raw",
+        "ts4_iot_latest"
+      ]
+    },
+    {
+      "deployment_id": "V3IOT_ts2_iot_wide_unbucketed+ts4_iot_latest",
+      "problems": [
+        "dead table ts4_iot_latest: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts2_iot_wide_unbucketed",
+        "ts4_iot_latest"
+      ]
+    },
+    {
+      "deployment_id": "V3IOT_ts2_iot_wide+ts4_iot_latest",
+      "problems": [
+        "dead table ts4_iot_latest: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts2_iot_wide",
+        "ts4_iot_latest"
+      ]
+    }
+  ],
+  "infeasible_reason_histogram": {
+    "dead table": 3
+  }
+}

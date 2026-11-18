@@ -1,0 +1,42 @@
+{
+  "aa_control": "V2 A/A pair (TS2-U = REF-Q8opt DDL-identical)",
+  "baselines": [
+    "BASELINE_ORIGINAL",
+    "BASELINE_Q8_OPTIMIZED"
+  ],
+  "benchmark": "iot",
+  "created_utc": "2026-11-18T12:52:41.822127+00:00",
+  "decision_metric": "as V2: mean latency of the uniform Q1-Q12 mix",
+  "denominator": "all 3 V3 complete deployments",
+  "firewall": {
+    "benchmark_outputs_read": [],
+    "latency_files_read": [],
+    "selection_uses_measured_results": false
+  },
+  "hbench_v3_ranked": [
+    "V3IOT_ts2_iot_wide_unbucketed"
+  ],
+  "measured_space": "verification mode: all V3 complete deployments + V2 baselines + V2 A/A pair, raw data of versao_ajustada/iot_benchmark_tsdb/outputs/v1_run1",
+  "measurement_decision": "REUSE_V2_MEASUREMENTS",
+  "not_a_hypothesis": "Kendall tau is retrospective diagnostics; a low tau is a result, not a failure, and never feeds back into Stage 7/8",
+  "policy": "SCHEMALENS_UNIFIED_STAGE7_V3",
+  "primary_hypothesis": "P1 (preservation): the best measured deployment of the measured V3 space is in HBench V3, strictly or within the A/A noise floor (Top-1 noise-equivalent).",
+  "reason": "every V3 complete deployment (tables + per-query routes) was measured by the V2 verification-mode campaign under protocol v1",
+  "routes_identical_to_v2": {
+    "V3IOT_ts0_iot_raw": true,
+    "V3IOT_ts2_iot_wide": true,
+    "V3IOT_ts2_iot_wide_unbucketed": true
+  },
+  "secondary": [
+    "P2: regret of the best HBench V3 member <= max(A/A noise floor, 5%)",
+    "P3: Pareto retention: measured-Pareto deployments (decision metric x measured storage) that are in HBench V3 / all measured-Pareto deployments",
+    "D1 (diagnostic only, no threshold): Kendall tau between balanced_structural_tiebreak and the measured decision metric"
+  ],
+  "selection_rule": "PARETO_FITS_TOP_K_KEEP_ALL",
+  "status": "PREREGISTERED_BEFORE_V3_MEASUREMENT",
+  "v3_to_v2_variant": {
+    "V3IOT_ts0_iot_raw": "R3H_934e5af2474c",
+    "V3IOT_ts2_iot_wide": "R3H_d2ea1974de53",
+    "V3IOT_ts2_iot_wide_unbucketed": "R3H_38939db96444"
+  }
+}

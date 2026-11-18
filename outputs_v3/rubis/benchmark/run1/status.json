@@ -1,0 +1,35 @@
+{
+  "agreement": {
+    "v311": {
+      "NoSE": "PASS",
+      "QPG": "PASS",
+      "V3H01": "PASS",
+      "V3H01_AA": "PASS",
+      "V3H02": "PASS",
+      "V3H03": "PASS",
+      "V3H04": "PASS",
+      "V3H05": "PASS",
+      "V8_AUTO_H_norm": "PASS"
+    },
+    "v41": {
+      "NoSE": "PASS",
+      "QPG": "PASS",
+      "V3H01": "PASS",
+      "V3H01_AA": "PASS",
+      "V3H02": "PASS",
+      "V3H03": "PASS",
+      "V3H04": "PASS",
+      "V3H05": "PASS",
+      "V8_AUTO_H_norm": "PASS"
+    }
+  },
+  "arm": "v311",
+  "attempt": 1,
+  "deployment": "V3H01_AA",
+  "elapsed_min": 13.5,
+  "of": 5,
+  "phase": "complete",
+  "pos": 9,
+  "rep": 5,
+  "updated_utc": "2026-11-18T17:11:12.300209+00:00"
+}

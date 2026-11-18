@@ -1,0 +1,46 @@
+[
+  {
+    "candidate_id": "ts0_iot_raw",
+    "canonical_source_required": false,
+    "duplication_ratio": 1.0,
+    "family": "TS0",
+    "logical_storage_bytes": 1188000.0,
+    "max_partition_bytes": 66000.0,
+    "max_partition_rows": 3000.0,
+    "partition_count": 18.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "canonical_source_required": false,
+    "duplication_ratio": 0.5,
+    "family": "TS2",
+    "logical_storage_bytes": 729000.0,
+    "max_partition_bytes": 81000.0,
+    "max_partition_rows": 3000.0,
+    "partition_count": 9.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts2_iot_wide",
+    "canonical_source_required": false,
+    "duplication_ratio": 0.5,
+    "family": "TS2",
+    "logical_storage_bytes": 837000.0,
+    "max_partition_bytes": 4464.0,
+    "max_partition_rows": 144.0,
+    "partition_count": 189.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts4_iot_latest",
+    "canonical_source_required": true,
+    "duplication_ratio": 0.0003333333333333333,
+    "family": "TS4",
+    "logical_storage_bytes": 396.0,
+    "max_partition_bytes": 22.0,
+    "max_partition_rows": 1.0,
+    "partition_count": 18.0,
+    "warnings": []
+  }
+]

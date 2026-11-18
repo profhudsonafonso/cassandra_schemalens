@@ -1,0 +1,108 @@
+{
+  "pareto_front": [
+    "h_119222012d4e",
+    "h_3f1449e05468"
+  ],
+  "pool": [
+    "h_119222012d4e",
+    "h_3f1449e05468"
+  ],
+  "rule": "PARETO_FITS_TOP_K_KEEP_ALL",
+  "selected": [
+    "h_119222012d4e",
+    "h_3f1449e05468"
+  ],
+  "steps": [],
+  "tags": {
+    "h_119222012d4e": [
+      "bucket:none",
+      "canonical:ts0_series_raw",
+      "family:ts0_series_raw",
+      "raw",
+      "table:ts0_series_raw"
+    ],
+    "h_3f1449e05468": [
+      "bucket:3600",
+      "bucket:none",
+      "canonical:ts0_series_raw",
+      "family:ts0_series_raw+ts3_sensor_3600s",
+      "projection",
+      "raw",
+      "table:ts0_series_raw",
+      "table:ts3_sensor_3600s"
+    ],
+    "h_6276d5b68197": [
+      "bucket:3600",
+      "bucket:60",
+      "canonical:ts1_series_3600s",
+      "family:ts1_series_3600s+ts3_sensor_60s",
+      "projection",
+      "raw",
+      "table:ts1_series_3600s",
+      "table:ts3_sensor_60s"
+    ],
+    "h_6745757bf865": [
+      "bucket:3600",
+      "canonical:ts1_series_3600s",
+      "family:ts1_series_3600s+ts3_sensor_3600s",
+      "projection",
+      "raw",
+      "table:ts1_series_3600s",
+      "table:ts3_sensor_3600s"
+    ],
+    "h_977291c72920": [
+      "bucket:60",
+      "bucket:none",
+      "canonical:ts0_series_raw",
+      "family:ts0_series_raw+ts3_sensor_60s",
+      "projection",
+      "raw",
+      "table:ts0_series_raw",
+      "table:ts3_sensor_60s"
+    ],
+    "h_a9983e2318a9": [
+      "bucket:60",
+      "canonical:ts1_series_60s",
+      "family:ts1_series_60s+ts3_sensor_60s",
+      "projection",
+      "raw",
+      "table:ts1_series_60s",
+      "table:ts3_sensor_60s"
+    ],
+    "h_aba788b8e7b7": [
+      "bucket:3600",
+      "canonical:ts1_series_3600s",
+      "family:ts1_series_3600s",
+      "raw",
+      "table:ts1_series_3600s"
+    ],
+    "h_b4bea9150d2e": [
+      "bucket:60",
+      "canonical:ts1_series_60s",
+      "family:ts1_series_60s",
+      "raw",
+      "table:ts1_series_60s"
+    ],
+    "h_bdd6bbdce69f": [
+      "bucket:3600",
+      "bucket:60",
+      "canonical:ts1_series_60s",
+      "family:ts1_series_60s+ts3_sensor_3600s",
+      "projection",
+      "raw",
+      "table:ts1_series_60s",
+      "table:ts3_sensor_3600s"
+    ]
+  },
+  "tiebreak": {
+    "h_119222012d4e": 1.2,
+    "h_3f1449e05468": 1.4016895459345302,
+    "h_6276d5b68197": 1.4183790918690602,
+    "h_6745757bf865": 1.4033790918690603,
+    "h_977291c72920": 1.4166895459345301,
+    "h_a9983e2318a9": 1.4183790918690602,
+    "h_aba788b8e7b7": 1.20168954593453,
+    "h_b4bea9150d2e": 1.23168954593453,
+    "h_bdd6bbdce69f": 1.4033790918690603
+  }
+}

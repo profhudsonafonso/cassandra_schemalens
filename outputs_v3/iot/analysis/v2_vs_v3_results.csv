@@ -1,0 +1,4 @@
+v3_deployment_id,v2_label,in_hbench_v3,in_hbench_v2,mean_ms,ci_lo,ci_hi,storage_bytes,write_seconds,tied_with_best,balanced_structural_tiebreak,legacy_v2_score
+V3IOT_ts2_iot_wide_unbucketed,R3H_38939db96444,True,True,4.145142718055555,4.08907564,4.199317458652778,377683.0,6.8329,True,1.0,1.0
+V3IOT_ts0_iot_raw,R3H_934e5af2474c,False,True,5.455337352222222,5.3887608106944445,5.5260695879722235,683543.0,15.1946,False,1.7925925925925927,2.024105
+V3IOT_ts2_iot_wide,R3H_d2ea1974de53,False,True,6.923916110833333,6.852777839229168,6.999543849090278,386433.0,7.9249,False,2.4142450142450143,2.03857544

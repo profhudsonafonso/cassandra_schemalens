@@ -1,0 +1,394 @@
+{
+  "denominator": "HBench V3 (5) + 3 baselines + A/A; the 256 complete deployments are not measured",
+  "hypotheses": {
+    "ORACLE": {
+      "detail": "v311: 3577311/3577311; v41: 3577311/3577311",
+      "result": true
+    },
+    "R1": {
+      "detail": "browsing: best=V3H01 vs NoSE=A_MAIS_RAPIDO; browsing: best=V3H01 vs QPG=A_MAIS_RAPIDO; bidding: best=V3H01 vs NoSE=A_MAIS_RAPIDO; bidding: best=V3H01 vs QPG=A_MAIS_RAPIDO; update10x: best=V3H01 vs NoSE=A_MAIS_RAPIDO; update10x: best=V3H01 vs QPG=A_MAIS_RAPIDO",
+      "result": true
+    },
+    "R2": {
+      "detail": "tau 3.11 x 4.1 (9 deployments): browsing=0.78, bidding=0.56, update10x=0.89, update100x=0.00",
+      "result": true
+    }
+  },
+  "legacy_nnls_label": "RETROSPECTIVE_BASELINE_ONLY",
+  "noise_floor_pct": {
+    "v311/bidding": 6.516708407524829,
+    "v311/browsing": 9.2357969087288,
+    "v311/update100x": 1.8696390195378276,
+    "v311/update10x": 5.736527535595037,
+    "v41/bidding": 4.473855217408218,
+    "v41/browsing": 21.924086713041735,
+    "v41/update100x": 22.99719416266237,
+    "v41/update10x": 11.465393778716493
+  },
+  "tau_311_vs_41": {
+    "bidding": 0.5555555555555556,
+    "browsing": 0.7777777777777778,
+    "update100x": 0.0,
+    "update10x": 0.8888888888888888
+  },
+  "within_hbench": {
+    "v311/bidding": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H03",
+          "V3H01",
+          "V3H02",
+          "V3H04",
+          "V3H05"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 1.561248,
+          "V3H02": 1.564228,
+          "V3H03": 1.55522,
+          "V3H04": 2.272724,
+          "V3H05": 4.22445
+        },
+        "tau": 1.0,
+        "top1_noise": true
+      },
+      "measured_best": "V3H03",
+      "measured_order": [
+        "V3H03",
+        "V3H01",
+        "V3H02",
+        "V3H04",
+        "V3H05"
+      ],
+      "noise_floor_pct": 6.516708407524829,
+      "tied_with_best": [
+        "V3H01",
+        "V3H03"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.049969847707370896,
+      "v3_tiebreak_tau": 0.6,
+      "v3_top1_noise": true,
+      "v3_top1_strict": false
+    },
+    "v311/browsing": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H01",
+          "V3H02",
+          "V3H03",
+          "V3H04",
+          "V3H05"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 1.053204,
+          "V3H02": 1.053204,
+          "V3H03": 1.053204,
+          "V3H04": 1.758281,
+          "V3H05": 5.493114
+        },
+        "tau": 0.8366600265340756,
+        "top1_noise": true
+      },
+      "measured_best": "V3H01",
+      "measured_order": [
+        "V3H01",
+        "V3H03",
+        "V3H02",
+        "V3H04",
+        "V3H05"
+      ],
+      "noise_floor_pct": 9.2357969087288,
+      "tied_with_best": [
+        "V3H01",
+        "V3H02",
+        "V3H03"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.0,
+      "v3_tiebreak_tau": 0.8,
+      "v3_top1_noise": true,
+      "v3_top1_strict": true
+    },
+    "v311/update100x": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H05",
+          "V3H01",
+          "V3H02",
+          "V3H03",
+          "V3H04"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 2.433985,
+          "V3H02": 2.461407,
+          "V3H03": 2.484325,
+          "V3H04": 2.499456,
+          "V3H05": 2.388915
+        },
+        "tau": -0.2,
+        "top1_noise": false
+      },
+      "measured_best": "V3H02",
+      "measured_order": [
+        "V3H02",
+        "V3H01",
+        "V3H04",
+        "V3H03",
+        "V3H05"
+      ],
+      "noise_floor_pct": 1.8696390195378276,
+      "tied_with_best": [
+        "V3H01",
+        "V3H02",
+        "V3H04"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.001179787432203483,
+      "v3_tiebreak_tau": 0.6,
+      "v3_top1_noise": true,
+      "v3_top1_strict": false
+    },
+    "v311/update10x": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H01",
+          "V3H02",
+          "V3H03",
+          "V3H04",
+          "V3H05"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 2.015748,
+          "V3H02": 2.031457,
+          "V3H03": 2.039075,
+          "V3H04": 2.3908,
+          "V3H05": 3.268547
+        },
+        "tau": 0.6,
+        "top1_noise": false
+      },
+      "measured_best": "V3H03",
+      "measured_order": [
+        "V3H03",
+        "V3H01",
+        "V3H02",
+        "V3H04",
+        "V3H05"
+      ],
+      "noise_floor_pct": 5.736527535595037,
+      "tied_with_best": [
+        "V3H03"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.06685245277482688,
+      "v3_tiebreak_tau": 0.6,
+      "v3_top1_noise": false,
+      "v3_top1_strict": false
+    },
+    "v41/bidding": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H03",
+          "V3H01",
+          "V3H02",
+          "V3H04",
+          "V3H05"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 1.561248,
+          "V3H02": 1.564228,
+          "V3H03": 1.55522,
+          "V3H04": 2.272724,
+          "V3H05": 4.22445
+        },
+        "tau": 0.8,
+        "top1_noise": true
+      },
+      "measured_best": "V3H01",
+      "measured_order": [
+        "V3H01",
+        "V3H03",
+        "V3H02",
+        "V3H04",
+        "V3H05"
+      ],
+      "noise_floor_pct": 4.473855217408218,
+      "tied_with_best": [
+        "V3H01",
+        "V3H03"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.0,
+      "v3_tiebreak_tau": 0.8,
+      "v3_top1_noise": true,
+      "v3_top1_strict": true
+    },
+    "v41/browsing": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H01",
+          "V3H02",
+          "V3H03",
+          "V3H04",
+          "V3H05"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 1.053204,
+          "V3H02": 1.053204,
+          "V3H03": 1.053204,
+          "V3H04": 1.758281,
+          "V3H05": 5.493114
+        },
+        "tau": 0.8366600265340756,
+        "top1_noise": true
+      },
+      "measured_best": "V3H01",
+      "measured_order": [
+        "V3H01",
+        "V3H03",
+        "V3H02",
+        "V3H04",
+        "V3H05"
+      ],
+      "noise_floor_pct": 21.924086713041735,
+      "tied_with_best": [
+        "V3H01",
+        "V3H02",
+        "V3H03"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.0,
+      "v3_tiebreak_tau": 0.8,
+      "v3_top1_noise": true,
+      "v3_top1_strict": true
+    },
+    "v41/update100x": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H05",
+          "V3H01",
+          "V3H02",
+          "V3H03",
+          "V3H04"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 2.433985,
+          "V3H02": 2.461407,
+          "V3H03": 2.484325,
+          "V3H04": 2.499456,
+          "V3H05": 2.388915
+        },
+        "tau": -0.2,
+        "top1_noise": true
+      },
+      "measured_best": "V3H04",
+      "measured_order": [
+        "V3H04",
+        "V3H05",
+        "V3H02",
+        "V3H03",
+        "V3H01"
+      ],
+      "noise_floor_pct": 22.99719416266237,
+      "tied_with_best": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.1379772222725435,
+      "v3_tiebreak_tau": -0.6,
+      "v3_top1_noise": true,
+      "v3_top1_strict": false
+    },
+    "v41/update10x": {
+      "legacy_nnls_RETROSPECTIVE_BASELINE_ONLY": {
+        "order": [
+          "V3H01",
+          "V3H02",
+          "V3H03",
+          "V3H04",
+          "V3H05"
+        ],
+        "predicted_total_ms": {
+          "V3H01": 2.015748,
+          "V3H02": 2.031457,
+          "V3H03": 2.039075,
+          "V3H04": 2.3908,
+          "V3H05": 3.268547
+        },
+        "tau": 0.8,
+        "top1_noise": true
+      },
+      "measured_best": "V3H01",
+      "measured_order": [
+        "V3H01",
+        "V3H03",
+        "V3H02",
+        "V3H04",
+        "V3H05"
+      ],
+      "noise_floor_pct": 11.465393778716493,
+      "tied_with_best": [
+        "V3H01",
+        "V3H02",
+        "V3H03"
+      ],
+      "v3_order": [
+        "V3H01",
+        "V3H02",
+        "V3H03",
+        "V3H04",
+        "V3H05"
+      ],
+      "v3_rank1_regret": 0.0,
+      "v3_tiebreak_tau": 0.8,
+      "v3_top1_noise": true,
+      "v3_top1_strict": true
+    }
+  }
+}

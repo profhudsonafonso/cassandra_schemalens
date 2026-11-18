@@ -1,0 +1,62 @@
+[
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q1"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q10"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q11"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q12"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q2"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q3"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q4"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q5"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q6"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q7"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+    "query_id": "Q8"
+  },
+  {
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "plan_id": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "query_id": "Q9"
+  }
+]

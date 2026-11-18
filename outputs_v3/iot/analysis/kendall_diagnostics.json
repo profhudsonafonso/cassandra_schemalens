@@ -1,0 +1,5 @@
+{
+  "legacy_v2_score_tau": 1.0,
+  "note": "diagnostic only; never used to adjust V3",
+  "v3_balanced_structural_tiebreak_tau": 1.0
+}

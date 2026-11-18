@@ -1,0 +1,23 @@
+{
+  "v2_same_denominator": {
+    "near_best_5pct": true,
+    "top1_strict": false,
+    "top1_within_noise": false,
+    "top3": true
+  },
+  "v3": {
+    "measured_best": "h_a9983e2318a9",
+    "near_best_5pct": true,
+    "tied_with_best": [
+      "h_3f1449e05468",
+      "h_6276d5b68197",
+      "h_6745757bf865",
+      "h_977291c72920",
+      "h_a9983e2318a9",
+      "h_bdd6bbdce69f"
+    ],
+    "top1_strict": false,
+    "top1_within_noise": false,
+    "top3": true
+  }
+}

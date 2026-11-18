@@ -1,0 +1,101 @@
+[
+  {
+    "candidate_id": "ts0_metric_raw",
+    "canonical_source_required": false,
+    "duplication_ratio": 1.0,
+    "family": "TS0",
+    "logical_storage_bytes": 2950560.0,
+    "max_partition_bytes": 7376.4,
+    "max_partition_rows": 216.0,
+    "partition_count": 400.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_1d",
+    "canonical_source_required": true,
+    "duplication_ratio": 1.0,
+    "family": "TS1",
+    "logical_storage_bytes": 3296160.0,
+    "max_partition_bytes": 5493.599999999999,
+    "max_partition_rows": 144.0,
+    "partition_count": 800.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts1_metric_bucket_7d",
+    "canonical_source_required": true,
+    "duplication_ratio": 1.0,
+    "family": "TS1",
+    "logical_storage_bytes": 3296160.0,
+    "max_partition_bytes": 5493.599999999999,
+    "max_partition_rows": 144.0,
+    "partition_count": 800.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts2_wide_bucket_1d",
+    "canonical_source_required": true,
+    "duplication_ratio": 0.1,
+    "family": "TS2",
+    "logical_storage_bytes": 853200.0,
+    "max_partition_bytes": 14220.0,
+    "max_partition_rows": 144.0,
+    "partition_count": 80.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts5_global_max_minute",
+    "canonical_source_required": true,
+    "duplication_ratio": 0.0025,
+    "family": "TS5",
+    "logical_storage_bytes": 6782.4,
+    "max_partition_bytes": 4521.599999999999,
+    "max_partition_rows": 144.0,
+    "partition_count": 2.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts5_max_by_host_hour",
+    "canonical_source_required": true,
+    "duplication_ratio": 0.16666666666666666,
+    "family": "TS5",
+    "logical_storage_bytes": 549360.0,
+    "max_partition_bytes": 915.5999999999999,
+    "max_partition_rows": 24.0,
+    "partition_count": 800.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts5_max_by_host_minute",
+    "canonical_source_required": true,
+    "duplication_ratio": 1.0,
+    "family": "TS5",
+    "logical_storage_bytes": 3296160.0,
+    "max_partition_bytes": 5493.599999999999,
+    "max_partition_rows": 144.0,
+    "partition_count": 800.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "canonical_source_required": true,
+    "duplication_ratio": 0.16666666666666666,
+    "family": "TS5",
+    "logical_storage_bytes": 664560.0,
+    "max_partition_bytes": 1107.6,
+    "max_partition_rows": 24.0,
+    "partition_count": 800.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts6_hour_host_dimension",
+    "canonical_source_required": true,
+    "duplication_ratio": 0.016666666666666666,
+    "family": "TS6",
+    "logical_storage_bytes": 257400.0,
+    "max_partition_bytes": 7150.0,
+    "max_partition_rows": 40.0,
+    "partition_count": 36.0,
+    "warnings": []
+  }
+]

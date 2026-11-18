@@ -1,0 +1,682 @@
+[
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q1__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q1",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 1.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q1__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q1",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q1",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32288.0,
+    "logical_rows": 2018.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q10__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q10",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24216.0,
+    "logical_rows": 1009.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q10__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q10",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24216.0,
+    "logical_rows": 1009.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q10",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32288.0,
+    "logical_rows": 2018.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q11__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q11",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24216.0,
+    "logical_rows": 1009.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q11__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q11",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24216.0,
+    "logical_rows": 1009.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q11",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 1.0,
+    "logical_bytes": 64576.0,
+    "logical_rows": 4036.0,
+    "partitions_touched": 4.0,
+    "plan_id": "Q12__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q12",
+    "read_cql_requests": 4.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 4.0,
+    "logical_bytes": 48432.0,
+    "logical_rows": 2018.0,
+    "partitions_touched": 16.0,
+    "plan_id": "Q12__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q12",
+    "read_cql_requests": 16.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 0.5,
+    "logical_bytes": 48432.0,
+    "logical_rows": 2018.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q12",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32256.0,
+    "logical_rows": 2016.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q2__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q2",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q2__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q2",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q2",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32256.0,
+    "logical_rows": 2016.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q3__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q3",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q3__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q3",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q3",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32256.0,
+    "logical_rows": 2016.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q4__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q4",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q4__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q4",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q4",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 96000.0,
+    "logical_rows": 6000.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q5__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q5",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 21.0,
+    "logical_bytes": 72000.0,
+    "logical_rows": 3000.0,
+    "partitions_touched": 21.0,
+    "plan_id": "Q5__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q5",
+    "read_cql_requests": 21.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 72000.0,
+    "logical_rows": 3000.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q5",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32256.0,
+    "logical_rows": 2016.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q6__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q6",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q6__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q6",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q6",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32256.0,
+    "logical_rows": 2016.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q7__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q7",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q7__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q7",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24192.0,
+    "logical_rows": 1008.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q7",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 96000.0,
+    "logical_rows": 6000.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q8__ts0_iot_raw__TS0_FULL_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32.0,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q8__ts0_iot_raw__TS0_DESC_LIMIT1",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "TS0 clustering timestamp DESC; non-null observation rows from original loader; full-scan fallback if unexpected NULL is encountered",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 21.0,
+    "logical_bytes": 72000.0,
+    "logical_rows": 3000.0,
+    "partitions_touched": 21.0,
+    "plan_id": "Q8__ts2_iot_wide__TS2D_FULL_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 21.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 1.0,
+    "logical_bytes": 24.0,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q8__ts2_iot_wide__TS2D_DESC_SPARSE",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "timestamp DESC; find last non-null separately for each projected sensor",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 72000.0,
+    "logical_rows": 3000.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q8__ts2_iot_wide_unbucketed__TS2U_FULL_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24.0,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "timestamp DESC; find last non-null separately for each projected sensor",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts4_iot_latest",
+    "fanout": 2.0,
+    "logical_bytes": 32.0,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q8__ts4_iot_latest__TS4_SNAPSHOT_LOOKUP",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q8",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "fanout": 2.0,
+    "logical_bytes": 32288.0,
+    "logical_rows": 2018.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q9__ts0_iot_raw__TS0_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q9",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "fanout": 8.0,
+    "logical_bytes": 24216.0,
+    "logical_rows": 1009.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q9__ts2_iot_wide__TS2D_BUCKET_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q9",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "counts from Rev3 plan catalog computed on campaign-B data, pre-benchmark"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "fanout": 1.0,
+    "logical_bytes": 24216.0,
+    "logical_rows": 1009.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+    "provenance": "frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json",
+    "query_id": "Q9",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "deployment_id": "h_119222012d4e",
+    "plan_id": "qp__q_read_2_windows__ts0_series_raw",
+    "query_id": "Q_READ_2_WINDOWS"
+  },
+  {
+    "deployment_id": "h_3f1449e05468",
+    "plan_id": "qp__q_read_2_windows__ts3_sensor_3600s",
+    "query_id": "Q_READ_2_WINDOWS"
+  }
+]

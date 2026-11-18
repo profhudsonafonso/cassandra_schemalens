@@ -1,0 +1,2402 @@
+[
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "A_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "A_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "A_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "query_id": "A_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "query_id": "A_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "query_id": "A_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "query_id": "A_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "A_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts0_metric_raw",
+    "query_id": "N_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "A_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "A_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "A_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "N_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "N_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "N_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "A_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "A_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "A_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "A_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "A_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "A_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "query_id": "A_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "query_id": "A_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "A_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "query_id": "A_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "query_id": "A_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "A_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "A_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "query_id": "A_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "query_id": "A_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "query_id": "A_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "A_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "A_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "A_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "A_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "A_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts5_global_max_minute",
+    "query_id": "A_Q16_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q01__ts0_metric_raw",
+    "query_id": "N_Q01_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q02__ts0_metric_raw",
+    "query_id": "N_Q02_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q03__ts0_metric_raw",
+    "query_id": "N_Q03_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q04__ts0_metric_raw",
+    "query_id": "N_Q04_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q05__ts0_metric_raw",
+    "query_id": "N_Q05_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q06__ts0_metric_raw",
+    "query_id": "N_Q06_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q07__ts0_metric_raw",
+    "query_id": "N_Q07_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q08__ts0_metric_raw",
+    "query_id": "N_Q08_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q09__ts0_metric_raw",
+    "query_id": "N_Q09_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q10__ts0_metric_raw",
+    "query_id": "N_Q10_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q11__ts0_metric_raw",
+    "query_id": "N_Q11_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q12__ts0_metric_raw",
+    "query_id": "N_Q12_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "N_Q13_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "N_Q13_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "query_id": "N_Q13_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q14__ts0_metric_raw",
+    "query_id": "N_Q14_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q15__ts0_metric_raw",
+    "query_id": "N_Q15_R002"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R000"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R001"
+  },
+  {
+    "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "plan_id": "Q16__ts0_metric_raw",
+    "query_id": "N_Q16_R002"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "benchmark": "IoT-Benchmark",
+  "campaign": "B Rev3 (DATA_SEED 531101, QUERY_SEED 531107)",
+  "devices": 9,
+  "executed_stage9_scenario": "identical (same CSV and query objects measured in V2)",
+  "history_days": 20.826,
+  "metric_cells": 54000,
+  "queries": 12,
+  "query_window_days": 7,
+  "sensors": 2,
+  "text_widths_bytes": {
+    "device_id": 3.0,
+    "sensor_name": 3.0
+  },
+  "wide_rows": 27000
+}

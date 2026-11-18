@@ -1,0 +1,12 @@
+keyspace,table,sstable_count,memtable_cell_count,memtable_data_size,space_used_live_bytes,space_used_total_bytes,number_of_partitions,compacted_partition_mean_bytes,compacted_partition_max_bytes
+v1tsbs_3a7e10_baseline,baseline_series_bigint,1,0,0,1284814,1284814,800,3136,3973
+v1tsbs_3a7e10_h_86ec1f5bf644,ts0_cpu_metric_raw,1,0,0,977015,977015,400,5722,5722
+v1tsbs_3a7e10_h_86ec1f5bf644,ts5_cpu_global_max_minute,1,0,0,7999,7999,2,2945,3973
+v1tsbs_3a7e10_h_86ec1f5bf644,ts5_cpu_max_by_host_hour,1,0,0,206581,206581,800,542,770
+v1tsbs_3a7e10_h_86ec1f5bf644,ts6_cpu_by_hour_host,1,0,0,84277,84277,36,8239,8239
+v1tsbs_3a7e10_h_b232019d3428,ts0_cpu_metric_raw,1,0,0,970139,970139,400,5722,5722
+v1tsbs_3a7e10_h_b232019d3428,ts5_cpu_global_max_minute,1,0,0,7990,7990,2,2945,3973
+v1tsbs_3a7e10_h_b232019d3428,ts6_cpu_by_hour_host,1,0,0,84274,84274,36,8239,8239
+v1tsbs_3a7e10_h_b232019d3428_aa,ts0_cpu_metric_raw,1,0,0,977209,977209,400,5722,5722
+v1tsbs_3a7e10_h_b232019d3428_aa,ts5_cpu_global_max_minute,1,0,0,8035,8035,2,2945,3973
+v1tsbs_3a7e10_h_b232019d3428_aa,ts6_cpu_by_hour_host,1,0,0,84396,84396,36,8239,8239

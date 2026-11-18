@@ -1,0 +1,8 @@
+balanced_structural_tiebreak,benchmark,in_v2_hbench,logical_storage_bytes,maintenance_read_requests,read_cql_requests,read_logical_bytes,read_logical_rows,routes_identical_to_v2,tables,v2_id,v3_id,v3_rank,write_cql_mutations
+1.028987,tsbs,True,3214742.4,0.0,102.41666666666664,114249.75,6716.625,True,ts0_metric_raw+ts5_global_max_minute+ts6_hour_host_dimension,H_69cc46e6ed43,V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension,1,88056.0
+1.037845,tsbs,True,3207960.0,0.0,103.62499999999999,116279.75,6843.5,True,ts0_metric_raw+ts6_hour_host_dimension,H_b6f44ac379f4,V3TSBS_ts0metricraw+ts6hourhostdimension,2,87840.0
+1.095156,tsbs,True,3764102.4,0.0,102.41666666666664,113049.75,6641.625,False,ts0_metric_raw+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension,H_e08177e1a2a8,V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension,3,102456.0
+1.103975,tsbs,True,4067942.4,0.0,101.88541666666664,113925.75,6676.125,True,ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts6_hour_host_dimension,H_077824c77c40,V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension,4,96696.0
+1.170145,tsbs,True,4617302.4,0.0,101.88541666666664,112725.75,6601.125,False,ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension,H_ea367cb023b3,V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension,5,111096.0
+,tsbs,True,,,,,,,ts0_metric_raw,H_df2016403111,,,
+,tsbs,True,,,,,,,ts0_metric_raw+ts2_wide_bucket_1d,H_815d3cd1f0cb,,,

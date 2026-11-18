@@ -1,0 +1,138 @@
+{
+  "aligned": {
+    "best_hbench_vs_tsbs_original": {
+      "a": "H_b9a08f03123b",
+      "abs_ln_ci_hi": 1.0502315026222693,
+      "b": "B_tsbs_series_bigint",
+      "ci_hi": 0.37847936411653765,
+      "ci_lo": 0.3474622495347777,
+      "deployment": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "ln_ratio": -1.0141086047302241,
+      "ratio": 0.3627256176668517,
+      "verdict": "A_MAIS_RAPIDO"
+    },
+    "denominator": "24 V3 complete deployments (full verification)",
+    "hbench_size": 5,
+    "kendall_tau_score_vs_read": 0.36231884057971014,
+    "measured_best": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "measured_best_read_ms": 48.20315436354167,
+    "measured_pareto": [
+      "V3TSBS_ts0metricraw",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts6hourhostdimension"
+    ],
+    "near_best_5pct": true,
+    "noise_floor_pct": 4.938670195163031,
+    "pareto_retention": 0.5714285714285714,
+    "random_k": {
+      "combinations": 42504,
+      "expected_regret": 0.0560773033063859,
+      "k": 5,
+      "p_contains_best": 0.20833333333333334
+    },
+    "rank1_vs_tsbs_original": {
+      "a": "H_b232019d3428",
+      "abs_ln_ci_hi": 1.0040728104905716,
+      "b": "B_tsbs_series_bigint",
+      "ci_hi": 0.394076614214654,
+      "ci_lo": 0.36429009494298314,
+      "ln_ratio": -0.9700410974787632,
+      "ratio": 0.37906745906642264,
+      "verdict": "A_MAIS_RAPIDO"
+    },
+    "reduction": 0.7916666666666666,
+    "regret": 0.0,
+    "space_size": 24,
+    "tied_with_best": [
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts6hourhostdimension"
+    ],
+    "top1_strict": false,
+    "top1_within_noise": true,
+    "top3": true
+  },
+  "natural": {
+    "best_hbench_vs_tsbs_original": {
+      "a": "H_86ec1f5bf644",
+      "abs_ln_ci_hi": 0.6436532634535957,
+      "b": "B_tsbs_series_bigint",
+      "ci_hi": 0.5601058114342142,
+      "ci_lo": 0.5232522698932668,
+      "deployment": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "ln_ratio": -0.6136067015978923,
+      "ratio": 0.5413946944164663,
+      "verdict": "A_MAIS_RAPIDO"
+    },
+    "denominator": "24 V3 complete deployments (full verification)",
+    "hbench_size": 5,
+    "kendall_tau_score_vs_read": 0.34782608695652173,
+    "measured_best": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+    "measured_best_read_ms": 72.37833340520834,
+    "measured_pareto": [
+      "V3TSBS_ts0metricraw",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts6hourhostdimension"
+    ],
+    "near_best_5pct": true,
+    "noise_floor_pct": 12.293825497858336,
+    "pareto_retention": 0.3333333333333333,
+    "random_k": {
+      "combinations": 42504,
+      "expected_regret": 0.019211178490019,
+      "k": 5,
+      "p_contains_best": 0.20833333333333334
+    },
+    "rank1_vs_tsbs_original": {
+      "a": "H_b232019d3428",
+      "abs_ln_ci_hi": 0.6330152144389097,
+      "b": "B_tsbs_series_bigint",
+      "ci_hi": 0.5676067322679033,
+      "ci_lo": 0.5285310930633252,
+      "ln_ratio": -0.6022681622782569,
+      "ratio": 0.5475682528736834,
+      "verdict": "A_MAIS_RAPIDO"
+    },
+    "reduction": 0.7916666666666666,
+    "regret": 0.016650311396871897,
+    "space_size": 24,
+    "tied_with_best": [
+      "V3TSBS_ts0metricraw",
+      "V3TSBS_ts0metricraw+ts2widebucket1d",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts6hourhostdimension"
+    ],
+    "top1_strict": false,
+    "top1_within_noise": true,
+    "top3": true
+  }
+}

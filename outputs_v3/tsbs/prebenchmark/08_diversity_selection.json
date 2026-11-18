@@ -1,0 +1,51 @@
+{
+  "pool": [
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute",
+    "V3TSBS_ts0metricraw",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension"
+  ],
+  "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+  "steps": [
+    {
+      "pick": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "reason": "lowest balanced_structural_tiebreak"
+    },
+    {
+      "new_tags": [
+        "bucket:max_by_host_hour",
+        "bucket:wide_bucket_1d",
+        "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension",
+        "table:ts2_wide_bucket_1d",
+        "table:ts5_max_by_host_hour"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "family:ts0_metric_raw+ts6_hour_host_dimension"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "family:ts0_metric_raw+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts6_hour_host_dimension"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "reason": "structural diversity"
+    }
+  ],
+  "top_k": 5
+}

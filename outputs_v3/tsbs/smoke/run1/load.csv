@@ -1,0 +1,5 @@
+variant,keyspace,physical_writes,load_seconds,writes_per_second
+H_b232019d3428,v1tsbs_3a7e10_h_b232019d3428,88056,21.1325,4166.8
+H_86ec1f5bf644,v1tsbs_3a7e10_h_86ec1f5bf644,102456,28.4029,3607.2
+B_tsbs_series_bigint,v1tsbs_3a7e10_baseline,86400,24.6086,3511.0
+H_b232019d3428_aa,v1tsbs_3a7e10_h_b232019d3428_aa,88056,25.651,3432.8

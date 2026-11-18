@@ -1,0 +1,13 @@
+benchmark,ablation,hbench_size,status,rule,top1_strict,top1_noise,top3,near_best_5pct,regret,pareto_retention,dsr,hbench,note
+iot,full_v3,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_read_rows,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_read_bytes,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_request_count,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_write_mutations,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_storage,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_max_partition_safety,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,IDENTICAL_BY_CONSTRUCTION: risk axes are not V3 dominance axes (D-V3-006)
+iot,with_risk_axes_in_dominance,3,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,False,False,True,True,0.0,1.0,0.0,V3IOT_ts2_iot_wide V3IOT_ts2_iot_wide_unbucketed V3IOT_ts0_iot_raw,
+iot,without_structural_diversity,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,without_pareto,3,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.0,V3IOT_ts2_iot_wide_unbucketed V3IOT_ts0_iot_raw V3IOT_ts2_iot_wide,
+iot,top_k_1,1,EVALUATED,PARETO_FITS_TOP_K_KEEP_ALL,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,
+iot,random_k,1,EVALUATED,uniform random k=1 (seed 20261118); expectation over all k-subsets in random_k_expected,True,True,True,True,0.0,1.0,0.6666666666666667,V3IOT_ts2_iot_wide_unbucketed,

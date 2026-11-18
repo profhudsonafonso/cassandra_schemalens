@@ -1,0 +1,13 @@
+{
+  "measured_pareto": [
+    "V3TSBS_ts0metricraw",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts6hourhostdimension"
+  ],
+  "v2_same_denominator": null,
+  "v3": 0.5714285714285714
+}

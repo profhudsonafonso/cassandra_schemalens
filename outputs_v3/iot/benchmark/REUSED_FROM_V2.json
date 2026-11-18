@@ -1,0 +1,21 @@
+{
+  "benchmark": "iot",
+  "cassandra_image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+  "created_utc": "2026-11-18T12:54:24.071215+00:00",
+  "protocol": "versao_ajustada/common/protocol_v1.json (V2 campaign)",
+  "routes_identical_to_v2": {
+    "V3IOT_ts0_iot_raw": true,
+    "V3IOT_ts2_iot_wide": true,
+    "V3IOT_ts2_iot_wide_unbucketed": true
+  },
+  "rule": "D-V3-001",
+  "v2_raw_files_sha256": {
+    "versao_ajustada/iot_benchmark_tsdb/outputs/v1_run1/manifest.json": "e9c95c1a299ccd6f2e447839ab37c8f676aaa239fb7adc031a31c15c4521a9ab",
+    "versao_ajustada/iot_benchmark_tsdb/outputs/v1_run1/raw_latencies.csv": "b198b12b0999b80a4e1e198316f3738c5a5ebee0b14e93bb9d052c044d4d6920"
+  },
+  "v3_to_v2_variant": {
+    "V3IOT_ts0_iot_raw": "R3H_934e5af2474c",
+    "V3IOT_ts2_iot_wide": "R3H_d2ea1974de53",
+    "V3IOT_ts2_iot_wide_unbucketed": "R3H_38939db96444"
+  }
+}

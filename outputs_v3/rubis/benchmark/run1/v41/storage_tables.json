@@ -1,0 +1,1282 @@
+{
+  "rubis_v9_cohort_nose_bidding.i1888493477": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 261,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7481,
+    "space_used_live_bytes": 1107391,
+    "space_used_total_bytes": 1107391,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i193173044": {
+    "compacted_partition_max_bytes": 770,
+    "compacted_partition_mean_bytes": 139,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 834,
+    "space_used_live_bytes": 79175,
+    "space_used_total_bytes": 79175,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i2337785568": {
+    "compacted_partition_max_bytes": 2759,
+    "compacted_partition_mean_bytes": 279,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 1136052,
+    "space_used_total_bytes": 1136052,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i2653317939": {
+    "compacted_partition_max_bytes": 2759,
+    "compacted_partition_mean_bytes": 303,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 879777,
+    "space_used_total_bytes": 879777,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i2906147889": {
+    "compacted_partition_max_bytes": 149,
+    "compacted_partition_mean_bytes": 149,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2531375,
+    "space_used_total_bytes": 2531375,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i3157175159": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536556,
+    "space_used_total_bytes": 536556,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i3392968797": {
+    "compacted_partition_max_bytes": 4768,
+    "compacted_partition_mean_bytes": 902,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 318122,
+    "space_used_total_bytes": 318122,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i3553045793": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 75,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 36726,
+    "space_used_total_bytes": 36726,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i3563903410": {
+    "compacted_partition_max_bytes": 310,
+    "compacted_partition_mean_bytes": 65,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 834,
+    "space_used_live_bytes": 50267,
+    "space_used_total_bytes": 50267,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i3639792234": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 10301,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 50,
+    "space_used_live_bytes": 355610,
+    "space_used_total_bytes": 355610,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i3722443462": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12121,
+    "space_used_total_bytes": 12121,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i590232953": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5917,
+    "space_used_total_bytes": 5917,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_nose_bidding.i915430138": {
+    "compacted_partition_max_bytes": 72,
+    "compacted_partition_mean_bytes": 72,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 423074,
+    "space_used_total_bytes": 423074,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q15_2": {
+    "compacted_partition_max_bytes": 35,
+    "compacted_partition_mean_bytes": 35,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 182664,
+    "space_used_total_bytes": 182664,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q16_2": {
+    "compacted_partition_max_bytes": 310,
+    "compacted_partition_mean_bytes": 52,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 224076,
+    "space_used_total_bytes": 224076,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q17": {
+    "compacted_partition_max_bytes": 1916,
+    "compacted_partition_mean_bytes": 275,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7041,
+    "space_used_live_bytes": 1138813,
+    "space_used_total_bytes": 1138813,
+    "sstable_count": 2
+  },
+  "rubis_v9_cohort_qpg_bidding.q18": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 564,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 139814,
+    "space_used_total_bytes": 139814,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q19": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 990,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 352866,
+    "space_used_total_bytes": 352866,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q1_7_9_14": {
+    "compacted_partition_max_bytes": 149,
+    "compacted_partition_mean_bytes": 149,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2531146,
+    "space_used_total_bytes": 2531146,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q2": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12074,
+    "space_used_total_bytes": 12074,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q20": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5917,
+    "space_used_total_bytes": 5917,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q3_10_11_13": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 261,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7391,
+    "space_used_live_bytes": 1120567,
+    "space_used_total_bytes": 1120567,
+    "sstable_count": 2
+  },
+  "rubis_v9_cohort_qpg_bidding.q4_2": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 76,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 834,
+    "space_used_live_bytes": 53774,
+    "space_used_total_bytes": 53774,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q5_12": {
+    "compacted_partition_max_bytes": 310,
+    "compacted_partition_mean_bytes": 65,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 834,
+    "space_used_live_bytes": 50316,
+    "space_used_total_bytes": 50316,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q6": {
+    "compacted_partition_max_bytes": 4768,
+    "compacted_partition_mean_bytes": 902,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 318295,
+    "space_used_total_bytes": 318295,
+    "sstable_count": 1
+  },
+  "rubis_v9_cohort_qpg_bidding.q8": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536767,
+    "space_used_total_bytes": 536767,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.bids_by_item_id_2847dc": {
+    "compacted_partition_max_bytes": 924,
+    "compacted_partition_mean_bytes": 110,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 476673,
+    "space_used_total_bytes": 476673,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.bids_by_user_id_56201c": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 39078,
+    "space_used_total_bytes": 39078,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.buynow_base": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 237454,
+    "space_used_total_bytes": 237454,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.buynow_by_buyer_id_498aaa": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 78,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 280505,
+    "space_used_total_bytes": 280505,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.categories_by_dummy_3a576f": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12147,
+    "space_used_total_bytes": 12147,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.comments_base": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 632039,
+    "space_used_total_bytes": 632039,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.comments_by_to_user_id_c51248": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536538,
+    "space_used_total_bytes": 536538,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.items_base": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 290,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7481,
+    "space_used_live_bytes": 1211703,
+    "space_used_total_bytes": 1211703,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.items_by_category_id_ef9d5a": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 1038,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 336483,
+    "space_used_total_bytes": 336483,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.items_by_seller__region_id_category_id_99797b": {
+    "compacted_partition_max_bytes": 3973,
+    "compacted_partition_mean_bytes": 678,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 222763,
+    "space_used_total_bytes": 222763,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.items_by_seller_id_34858b": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 332450,
+    "space_used_total_bytes": 332450,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.regions_by_dummy_05c2a3": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5914,
+    "space_used_total_bytes": 5914,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01.users_base": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2646024,
+    "space_used_total_bytes": 2646024,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.bids_by_item_id_2847dc": {
+    "compacted_partition_max_bytes": 924,
+    "compacted_partition_mean_bytes": 110,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 476702,
+    "space_used_total_bytes": 476702,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.bids_by_user_id_56201c": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 39032,
+    "space_used_total_bytes": 39032,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.buynow_base": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 237851,
+    "space_used_total_bytes": 237851,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.buynow_by_buyer_id_498aaa": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 78,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 280795,
+    "space_used_total_bytes": 280795,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.categories_by_dummy_3a576f": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12051,
+    "space_used_total_bytes": 12051,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.comments_base": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 637427,
+    "space_used_total_bytes": 637427,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h01_aa.comments_by_to_user_id_c51248": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536632,
+    "space_used_total_bytes": 536632,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.items_base": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 289,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7392,
+    "space_used_live_bytes": 1225127,
+    "space_used_total_bytes": 1225127,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h01_aa.items_by_category_id_ef9d5a": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 1038,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 336497,
+    "space_used_total_bytes": 336497,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.items_by_seller__region_id_category_id_99797b": {
+    "compacted_partition_max_bytes": 3973,
+    "compacted_partition_mean_bytes": 678,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 222676,
+    "space_used_total_bytes": 222676,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.items_by_seller_id_34858b": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 332817,
+    "space_used_total_bytes": 332817,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.regions_by_dummy_05c2a3": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5910,
+    "space_used_total_bytes": 5910,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h01_aa.users_base": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2646059,
+    "space_used_total_bytes": 2646059,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.bids_by_item_id_2847dc": {
+    "compacted_partition_max_bytes": 924,
+    "compacted_partition_mean_bytes": 110,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 476692,
+    "space_used_total_bytes": 476692,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.bids_by_user_id_56201c": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 39059,
+    "space_used_total_bytes": 39059,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.buynow_base": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 237644,
+    "space_used_total_bytes": 237644,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.buynow_by_buyer_id_498aaa": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 78,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 280422,
+    "space_used_total_bytes": 280422,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.categories_by_dummy_3a576f": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12035,
+    "space_used_total_bytes": 12035,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.comments_base": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 632074,
+    "space_used_total_bytes": 632074,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.comments_by_to_user_id_c51248": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536573,
+    "space_used_total_bytes": 536573,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.items_base": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 290,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7481,
+    "space_used_live_bytes": 1211361,
+    "space_used_total_bytes": 1211361,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.items_by_category_id_ef9d5a": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 1038,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 336801,
+    "space_used_total_bytes": 336801,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.items_by_seller__region_id_category_id_99797b": {
+    "compacted_partition_max_bytes": 3973,
+    "compacted_partition_mean_bytes": 678,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 222806,
+    "space_used_total_bytes": 222806,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.items_by_seller_id_34858b": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 332389,
+    "space_used_total_bytes": 332389,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.items_end_date_name_b8ee": {
+    "compacted_partition_max_bytes": 86,
+    "compacted_partition_mean_bytes": 60,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7481,
+    "space_used_live_bytes": 321238,
+    "space_used_total_bytes": 321238,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.regions_by_dummy_05c2a3": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5912,
+    "space_used_total_bytes": 5912,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h02.users_base": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2643623,
+    "space_used_total_bytes": 2643623,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h03.bids_by_item_id_2847dc": {
+    "compacted_partition_max_bytes": 924,
+    "compacted_partition_mean_bytes": 110,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 476852,
+    "space_used_total_bytes": 476852,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.bids_by_user_id_56201c": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 39068,
+    "space_used_total_bytes": 39068,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.buynow_base": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 237352,
+    "space_used_total_bytes": 237352,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.buynow_by_buyer_id_498aaa": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 78,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 280437,
+    "space_used_total_bytes": 280437,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.categories_by_dummy_3a576f": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12108,
+    "space_used_total_bytes": 12108,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.comments_base": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6530,
+    "space_used_live_bytes": 647209,
+    "space_used_total_bytes": 647209,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h03.comments_by_to_user_id_c51248": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536514,
+    "space_used_total_bytes": 536514,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.comments_from_user__nickname_2425": {
+    "compacted_partition_max_bytes": 72,
+    "compacted_partition_mean_bytes": 72,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 392018,
+    "space_used_total_bytes": 392018,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.items_base": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 289,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7392,
+    "space_used_live_bytes": 1224697,
+    "space_used_total_bytes": 1224697,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h03.items_by_category_id_ef9d5a": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 1038,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 336479,
+    "space_used_total_bytes": 336479,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.items_by_seller__region_id_category_id_99797b": {
+    "compacted_partition_max_bytes": 3973,
+    "compacted_partition_mean_bytes": 678,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 222793,
+    "space_used_total_bytes": 222793,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.items_by_seller_id_34858b": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 332403,
+    "space_used_total_bytes": 332403,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.regions_by_dummy_05c2a3": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5912,
+    "space_used_total_bytes": 5912,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h03.users_base": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2658535,
+    "space_used_total_bytes": 2658535,
+    "sstable_count": 3
+  },
+  "rubis_v9_v3h04.bids_by_item_id_2847dc": {
+    "compacted_partition_max_bytes": 924,
+    "compacted_partition_mean_bytes": 110,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 476735,
+    "space_used_total_bytes": 476735,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.bids_by_user_id_56201c": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 39042,
+    "space_used_total_bytes": 39042,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.buynow_base": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 237915,
+    "space_used_total_bytes": 237915,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.buynow_by_buyer_id_498aaa": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 78,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 280389,
+    "space_used_total_bytes": 280389,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.categories_by_dummy_3a576f": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12006,
+    "space_used_total_bytes": 12006,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.comments_base": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 632128,
+    "space_used_total_bytes": 632128,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.comments_by_to_user_id_579efe": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 39,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 163034,
+    "space_used_total_bytes": 163034,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.items_base": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 290,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7392,
+    "space_used_live_bytes": 1224743,
+    "space_used_total_bytes": 1224743,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h04.items_by_category_id_ef9d5a": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 1038,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 336411,
+    "space_used_total_bytes": 336411,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.items_by_seller__region_id_category_id_99797b": {
+    "compacted_partition_max_bytes": 3973,
+    "compacted_partition_mean_bytes": 678,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 222807,
+    "space_used_total_bytes": 222807,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.items_by_seller_id_34858b": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 332295,
+    "space_used_total_bytes": 332295,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.regions_by_dummy_05c2a3": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5914,
+    "space_used_total_bytes": 5914,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h04.users_base": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2656160,
+    "space_used_total_bytes": 2656160,
+    "sstable_count": 3
+  },
+  "rubis_v9_v3h05.bids_by_item_id_2847dc": {
+    "compacted_partition_max_bytes": 924,
+    "compacted_partition_mean_bytes": 110,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 476755,
+    "space_used_total_bytes": 476755,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.bids_by_user_id_56201c": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 39035,
+    "space_used_total_bytes": 39035,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.buynow_base": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 237708,
+    "space_used_total_bytes": 237708,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.buynow_by_buyer_id_498aaa": {
+    "compacted_partition_max_bytes": 642,
+    "compacted_partition_mean_bytes": 78,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 280341,
+    "space_used_total_bytes": 280341,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.categories_by_dummy_3a576f": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12038,
+    "space_used_total_bytes": 12038,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.comments_base": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6530,
+    "space_used_live_bytes": 646839,
+    "space_used_total_bytes": 646839,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h05.comments_by_to_user_id_c51248": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 196,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 536569,
+    "space_used_total_bytes": 536569,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.comments_from_user__nickname_2425": {
+    "compacted_partition_max_bytes": 72,
+    "compacted_partition_mean_bytes": 72,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 392107,
+    "space_used_total_bytes": 392107,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.items_base": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 289,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7392,
+    "space_used_live_bytes": 1225121,
+    "space_used_total_bytes": 1225121,
+    "sstable_count": 2
+  },
+  "rubis_v9_v3h05.items_by_category_id_5fdc7a": {
+    "compacted_partition_max_bytes": 1597,
+    "compacted_partition_mean_bytes": 329,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 131800,
+    "space_used_total_bytes": 131800,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.items_by_seller__region_id_category_id_99797b": {
+    "compacted_partition_max_bytes": 3973,
+    "compacted_partition_mean_bytes": 678,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 222830,
+    "space_used_total_bytes": 222830,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.items_by_seller_id_34858b": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 332313,
+    "space_used_total_bytes": 332313,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.items_end_date_name_b8ee": {
+    "compacted_partition_max_bytes": 86,
+    "compacted_partition_mean_bytes": 60,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7481,
+    "space_used_live_bytes": 321404,
+    "space_used_total_bytes": 321404,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.regions_by_dummy_05c2a3": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5910,
+    "space_used_total_bytes": 5910,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.users_base": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2645942,
+    "space_used_total_bytes": 2645942,
+    "sstable_count": 1
+  },
+  "rubis_v9_v3h05.users_nickname_dcd8": {
+    "compacted_partition_max_bytes": 72,
+    "compacted_partition_mean_bytes": 72,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 1296067,
+    "space_used_total_bytes": 1296067,
+    "sstable_count": 2
+  },
+  "rubis_v9_v8_auto_norm.bids": {
+    "compacted_partition_max_bytes": 72,
+    "compacted_partition_mean_bytes": 72,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5690,
+    "space_used_live_bytes": 313036,
+    "space_used_total_bytes": 313036,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.bids_by_item": {
+    "compacted_partition_max_bytes": 446,
+    "compacted_partition_mean_bytes": 64,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5291,
+    "space_used_live_bytes": 269054,
+    "space_used_total_bytes": 269054,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.buynow": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 50,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 5299,
+    "space_used_live_bytes": 233288,
+    "space_used_total_bytes": 233288,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.buynow_by_buyer": {
+    "compacted_partition_max_bytes": 310,
+    "compacted_partition_mean_bytes": 52,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4983,
+    "space_used_live_bytes": 220839,
+    "space_used_total_bytes": 220839,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.categories": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 42,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 20062,
+    "space_used_total_bytes": 20062,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.categories_by_dummy": {
+    "compacted_partition_max_bytes": 14237,
+    "compacted_partition_mean_bytes": 14237,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 12086,
+    "space_used_total_bytes": 12086,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.comments": {
+    "compacted_partition_max_bytes": 258,
+    "compacted_partition_mean_bytes": 165,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 611999,
+    "space_used_total_bytes": 611999,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.comments_by_id": {
+    "compacted_partition_max_bytes": 72,
+    "compacted_partition_mean_bytes": 72,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6491,
+    "space_used_live_bytes": 411408,
+    "space_used_total_bytes": 411408,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.comments_by_to_user": {
+    "compacted_partition_max_bytes": 6866,
+    "compacted_partition_mean_bytes": 194,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 4971,
+    "space_used_live_bytes": 517742,
+    "space_used_total_bytes": 517742,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.comments_by_user": {
+    "compacted_partition_max_bytes": 86,
+    "compacted_partition_mean_bytes": 43,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 6438,
+    "space_used_live_bytes": 218966,
+    "space_used_total_bytes": 218966,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.items": {
+    "compacted_partition_max_bytes": 372,
+    "compacted_partition_mean_bytes": 290,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7392,
+    "space_used_live_bytes": 1176556,
+    "space_used_total_bytes": 1176556,
+    "sstable_count": 2
+  },
+  "rubis_v9_v8_auto_norm.items_by_category": {
+    "compacted_partition_max_bytes": 5722,
+    "compacted_partition_mean_bytes": 1038,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 500,
+    "space_used_live_bytes": 326215,
+    "space_used_total_bytes": 326215,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.items_by_region": {
+    "compacted_partition_max_bytes": 11864,
+    "compacted_partition_mean_bytes": 7856,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 50,
+    "space_used_live_bytes": 244307,
+    "space_used_total_bytes": 244307,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.items_by_seller": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 67,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 7024,
+    "space_used_live_bytes": 322288,
+    "space_used_total_bytes": 322288,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.items_by_user_bid": {
+    "compacted_partition_max_bytes": 535,
+    "compacted_partition_mean_bytes": 84,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 564,
+    "space_used_live_bytes": 38134,
+    "space_used_total_bytes": 38134,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.regions": {
+    "compacted_partition_max_bytes": 50,
+    "compacted_partition_mean_bytes": 42,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 50,
+    "space_used_live_bytes": 6657,
+    "space_used_total_bytes": 6657,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.regions_by_dummy": {
+    "compacted_partition_max_bytes": 1331,
+    "compacted_partition_mean_bytes": 1331,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 1,
+    "space_used_live_bytes": 5909,
+    "space_used_total_bytes": 5909,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.users": {
+    "compacted_partition_max_bytes": 179,
+    "compacted_partition_mean_bytes": 161,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 21749,
+    "space_used_live_bytes": 2539605,
+    "space_used_total_bytes": 2539605,
+    "sstable_count": 1
+  },
+  "rubis_v9_v8_auto_norm.users_by_region": {
+    "compacted_partition_max_bytes": 24601,
+    "compacted_partition_mean_bytes": 11948,
+    "memtable_cell_count": 0,
+    "memtable_data_size": 0,
+    "number_of_partitions": 50,
+    "space_used_live_bytes": 978455,
+    "space_used_total_bytes": 978455,
+    "sstable_count": 2
+  }
+}

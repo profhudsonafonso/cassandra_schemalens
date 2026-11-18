@@ -1,0 +1,8 @@
+{
+  "pool": [
+    "V3IOT_ts2_iot_wide_unbucketed"
+  ],
+  "rule": "PARETO_FITS_TOP_K_KEEP_ALL",
+  "steps": [],
+  "top_k": 5
+}

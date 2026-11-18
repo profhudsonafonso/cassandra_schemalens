@@ -1,0 +1,13 @@
+benchmark,ablation,hbench_size,status,rule,top1_strict,top1_noise,top3,near_best_5pct,regret,pareto_retention,dsr,hbench,note
+rubis,full_v3,5,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.0,V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86,
+rubis,without_read_rows,5,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.0,V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86,
+rubis,without_read_bytes,5,NOT_EVALUABLE (2 unmeasured),,,,,,,,,,
+rubis,without_request_count,5,NOT_EVALUABLE (2 unmeasured),,,,,,,,,,
+rubis,without_write_mutations,5,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.0,V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86,
+rubis,without_storage,5,NOT_EVALUABLE (1 unmeasured),,,,,,,,,,
+rubis,without_max_partition_safety,5,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.0,V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86,IDENTICAL_BY_CONSTRUCTION: risk axes are not V3 dominance axes (D-V3-006)
+rubis,with_risk_axes_in_dominance,5,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.0,V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86,
+rubis,without_structural_diversity,5,NOT_EVALUABLE (2 unmeasured),,,,,,,,,,
+rubis,without_pareto,5,NOT_EVALUABLE (3 unmeasured),,,,,,,,,,
+rubis,top_k_1,1,EVALUATED,PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK,True,True,True,True,0.0,1.0,0.8,V3R_cb2e537945,
+rubis,random_k,5,NOT_EVALUABLE (5 unmeasured),,,,,,,,,,

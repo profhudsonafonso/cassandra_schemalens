@@ -1,0 +1,10 @@
+{
+  "random_k": {
+    "combinations": 42504,
+    "expected_regret": 0.019211178490019,
+    "k": 5,
+    "p_contains_best": 0.20833333333333334
+  },
+  "v2_same_denominator": null,
+  "v3": 0.016650311396871897
+}

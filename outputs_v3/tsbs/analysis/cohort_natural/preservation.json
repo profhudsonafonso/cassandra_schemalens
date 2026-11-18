@@ -1,0 +1,35 @@
+{
+  "v2_same_denominator": null,
+  "v3": {
+    "measured_best": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+    "near_best_5pct": true,
+    "tied_with_best": [
+      "V3TSBS_ts0metricraw",
+      "V3TSBS_ts0metricraw+ts2widebucket1d",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5maxbyhosthour",
+      "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts6hourhostdimension",
+      "V3TSBS_ts0metricraw+ts5sumcountbyhosthour",
+      "V3TSBS_ts0metricraw+ts6hourhostdimension"
+    ],
+    "top1_strict": false,
+    "top1_within_noise": true,
+    "top3": true
+  }
+}

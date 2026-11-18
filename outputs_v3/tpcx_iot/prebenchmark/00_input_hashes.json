@@ -1,0 +1,6 @@
+{
+  "versao_ajustada/tpcx_iot_benchmark/frozen_design/methodology/tpcx_iot/stage9/experiment.py": "1af4e4568888a9544b153196c96062e50fae40e6a2eeb5ce121cd6c02ebdf183",
+  "versao_ajustada/tpcx_iot_benchmark/frozen_design/outputs/tpcx_iot_stage4/10_cassandra_candidate_specs.json": "5aabaed1646fa379fe6dfa129fc8492040a45f3d3d689b71e2937faf8a3e1d83",
+  "versao_ajustada/tpcx_iot_benchmark/frozen_design/outputs/tpcx_iot_stage5/20_queryplans.json": "0952f33a4393e9dd77d11a52a2f62ddca4542b4454260828049d1e47c42b945e",
+  "versao_ajustada/tpcx_iot_benchmark/frozen_design/outputs/tpcx_iot_stage6/30_writeplans.json": "2edd8a428fc2a00c25d2c2d2c84540605239e056ebaad7a9724a283be563d710"
+}

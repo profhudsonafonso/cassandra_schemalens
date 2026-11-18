@@ -1,0 +1,137 @@
+[
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "cql_mutations": 86400.0,
+    "logical_bytes_written": 2950560.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 86400.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "cql_mutations": 86400.0,
+    "logical_bytes_written": 3296160.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 86400.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "cql_mutations": 86400.0,
+    "logical_bytes_written": 3296160.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 86400.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "cql_mutations": 8640.0,
+    "logical_bytes_written": 853200.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 8640.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "cql_mutations": 216.0,
+    "logical_bytes_written": 6782.4,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 216.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "cql_mutations": 14400.0,
+    "logical_bytes_written": 549360.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 14400.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "cql_mutations": 86400.0,
+    "logical_bytes_written": 3296160.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 86400.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "cql_mutations": 14400.0,
+    "logical_bytes_written": 664560.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 14400.0,
+    "warnings": [],
+    "write_id": "load"
+  },
+  {
+    "assumptions": [
+      "static campaign load via the Stage 6 reference materializer; derived tables recomputed in memory (no Cassandra read)"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "cql_mutations": 1440.0,
+    "logical_bytes_written": 257400.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tsbs stage6 18_write_plans.json + ReferenceMaterializer",
+    "rows_touched": 1440.0,
+    "warnings": [],
+    "write_id": "load"
+  }
+]

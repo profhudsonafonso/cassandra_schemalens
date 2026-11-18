@@ -1,0 +1,10 @@
+{"phase": "start", "variants": 4, "classes": 32, "rounds": 2, "reps": 1}
+{"phase": "load", "variant": "H_b232019d3428", "seconds": 21.1, "writes": 88056}
+{"phase": "load", "variant": "H_86ec1f5bf644", "seconds": 28.4, "writes": 102456}
+{"phase": "load", "variant": "B_tsbs_series_bigint", "seconds": 24.6, "writes": 86400}
+{"phase": "load", "variant": "H_b232019d3428_aa", "seconds": 25.7, "writes": 88056}
+{"phase": "flushed", "tables": 11}
+{"phase": "window_start", "rep": 1, "attempt": 1, "restart_s": 17.7}
+{"phase": "rep_done", "rep": 1, "of": 1}
+{"phase": "complete"}
+EXIT 0

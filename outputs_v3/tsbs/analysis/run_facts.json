@@ -1,0 +1,45 @@
+{
+  "cassandra": "4.1.12",
+  "classes": {
+    "aligned": [
+      "AQ01",
+      "AQ02",
+      "AQ03",
+      "AQ04",
+      "AQ05",
+      "AQ06",
+      "AQ07",
+      "AQ08",
+      "AQ09",
+      "AQ10",
+      "AQ11",
+      "AQ12",
+      "AQ13",
+      "AQ14",
+      "AQ15",
+      "AQ16"
+    ],
+    "natural": [
+      "NQ01",
+      "NQ02",
+      "NQ03",
+      "NQ04",
+      "NQ05",
+      "NQ06",
+      "NQ07",
+      "NQ08",
+      "NQ09",
+      "NQ10",
+      "NQ11",
+      "NQ12",
+      "NQ13",
+      "NQ14",
+      "NQ15",
+      "NQ16"
+    ]
+  },
+  "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+  "isolation_all_passed": true,
+  "raw_rows": 49920,
+  "repetitions": 5
+}

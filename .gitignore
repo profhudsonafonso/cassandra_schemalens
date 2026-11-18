@@ -5,3 +5,5 @@ runs/**/.tmp_*
 .DS_Store
 # Raw benchmark traces (~2.2 GB) - too large for GitHub
 runs/**/raw/
+# V3 raw RUBiS traces (~2.2 GB); SHA-256 in outputs_v3/rubis/benchmark/run1/RAW_SHA256.json
+outputs_v3/**/raw/

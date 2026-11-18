@@ -1,0 +1,61 @@
+{
+  "pool": [
+    "V3R_cb2e537945",
+    "V3R_a82100f407",
+    "V3R_c3fc027f9f",
+    "V3R_f9e44778fb",
+    "V3R_c4706867f2",
+    "V3R_896c55893e",
+    "V3R_0fbc71f963",
+    "V3R_e1f741583e",
+    "V3R_0a6b5b4664",
+    "V3R_9d1ecfdeb1",
+    "V3R_36268b3c25",
+    "V3R_17b9abdd15",
+    "V3R_ec1bf31258",
+    "V3R_e43b81b2f4",
+    "V3R_22ae305593",
+    "V3R_63f05eeb86",
+    "V3R_022b352807",
+    "V3R_fb97fc7dd9",
+    "V3R_5930611078",
+    "V3R_0e92c048d2"
+  ],
+  "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+  "steps": [
+    {
+      "pick": "V3R_cb2e537945",
+      "reason": "lowest balanced_structural_tiebreak"
+    },
+    {
+      "new_tags": [
+        "family:C2",
+        "family:C6",
+        "table:C005",
+        "table:C008",
+        "table:C013",
+        "table:C015"
+      ],
+      "pick": "V3R_63f05eeb86",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "table:C011"
+      ],
+      "pick": "V3R_0fbc71f963",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [],
+      "pick": "V3R_a82100f407",
+      "reason": "tiebreak"
+    },
+    {
+      "new_tags": [],
+      "pick": "V3R_c3fc027f9f",
+      "reason": "tiebreak"
+    }
+  ],
+  "top_k": 5
+}

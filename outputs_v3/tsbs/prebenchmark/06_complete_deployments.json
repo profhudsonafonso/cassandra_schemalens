@@ -1,0 +1,3312 @@
+{
+  "complete": 24,
+  "complete_ids": [
+    "V3TSBS_ts0metricraw",
+    "V3TSBS_ts0metricraw+ts2widebucket1d",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour",
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5sumcountbyhosthour",
+    "V3TSBS_ts0metricraw+ts6hourhostdimension"
+  ],
+  "enumerated": 256,
+  "infeasible": 232,
+  "infeasible_examples_first_2000": [
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    },
+    {
+      "deployment_id": "V3TSBS_ts0metricraw+ts1metricbucket1d+ts1metricbucket7d+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5maxbyhostminute+ts5sumcountbyhosthour+ts6hourhostdimension",
+      "problems": [
+        "dead table ts1_metric_bucket_1d: serves no chosen read route and no maintenance support read",
+        "dead table ts1_metric_bucket_7d: serves no chosen read route and no maintenance support read",
+        "dead table ts5_max_by_host_minute: serves no chosen read route and no maintenance support read",
+        "dead table ts5_sum_count_by_host_hour: serves no chosen read route and no maintenance support read"
+      ],
+      "tables": [
+        "ts0_metric_raw",
+        "ts1_metric_bucket_1d",
+        "ts1_metric_bucket_7d",
+        "ts2_wide_bucket_1d",
+        "ts5_global_max_minute",
+        "ts5_max_by_host_hour",
+        "ts5_max_by_host_minute",
+        "ts5_sum_count_by_host_hour",
+        "ts6_hour_host_dimension"
+      ]
+    }
+  ],
+  "infeasible_reason_histogram": {
+    "dead table": 448
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "candidate_id": "ts0_series_raw",
+    "canonical_source_required": false,
+    "duplication_ratio": 1.0,
+    "family": "TS0",
+    "logical_storage_bytes": 3579660.0,
+    "max_partition_bytes": 596610.0,
+    "max_partition_rows": 630.0,
+    "partition_count": 6.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts1_series_3600s",
+    "canonical_source_required": false,
+    "duplication_ratio": 1.0,
+    "family": "TS1",
+    "logical_storage_bytes": 3609900.0,
+    "max_partition_bytes": 601650.0,
+    "max_partition_rows": 630.0,
+    "partition_count": 6.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts1_series_60s",
+    "canonical_source_required": false,
+    "duplication_ratio": 1.0,
+    "family": "TS1",
+    "logical_storage_bytes": 3609900.0,
+    "max_partition_bytes": 57300.0,
+    "max_partition_rows": 60.0,
+    "partition_count": 66.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts3_sensor_3600s",
+    "canonical_source_required": true,
+    "duplication_ratio": 1.0,
+    "family": "TS3",
+    "logical_storage_bytes": 3609900.0,
+    "max_partition_bytes": 1203300.0,
+    "max_partition_rows": 1260.0,
+    "partition_count": 3.0,
+    "warnings": []
+  },
+  {
+    "candidate_id": "ts3_sensor_60s",
+    "canonical_source_required": true,
+    "duplication_ratio": 1.0,
+    "family": "TS3",
+    "logical_storage_bytes": 3609900.0,
+    "max_partition_bytes": 114600.0,
+    "max_partition_rows": 120.0,
+    "partition_count": 33.0,
+    "warnings": []
+  }
+]

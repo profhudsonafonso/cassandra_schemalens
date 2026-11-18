@@ -1,0 +1,7 @@
+{
+  "versao_ajustada/tsbs_tsdb/data/query_instances.json": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a",
+  "versao_ajustada/tsbs_tsdb/data/tsbs_cpu_only_cassandra_double.txt.gz": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c",
+  "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage4/10_cassandra_candidate_specs.json": "881156d80f2a9d4ec11d625b8e038180486ad90f591c45e6c4843a1e1547abd7",
+  "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage5/15_query_plans.json": "d7c155e28099be5ec1a03cbc952e24f1145c05fad21561e1bb914e243054cd0f",
+  "versao_ajustada/tsbs_tsdb/frozen_design/outputs/tsbs_stage6/18_write_plans.json": "41a6d88e69cf434d21324376735acc4d2eca3e2adf1b9227de77284dd13bac87"
+}

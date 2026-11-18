@@ -1,0 +1,43 @@
+{
+  "pareto_front": [
+    "V3IOT_ts2_iot_wide_unbucketed"
+  ],
+  "pool": [
+    "V3IOT_ts2_iot_wide_unbucketed"
+  ],
+  "rule": "PARETO_FITS_TOP_K_KEEP_ALL",
+  "selected": [
+    "V3IOT_ts2_iot_wide_unbucketed"
+  ],
+  "steps": [],
+  "tags": {
+    "V3IOT_ts0_iot_raw": [
+      "canonical:ts0_iot_raw",
+      "family:ts0_iot_raw",
+      "narrow",
+      "raw",
+      "table:ts0_iot_raw"
+    ],
+    "V3IOT_ts2_iot_wide": [
+      "bucket:day",
+      "canonical:ts2_iot_wide",
+      "family:ts2_iot_wide",
+      "raw",
+      "table:ts2_iot_wide",
+      "wide"
+    ],
+    "V3IOT_ts2_iot_wide_unbucketed": [
+      "bucket:none",
+      "canonical:ts2_iot_wide_unbucketed",
+      "family:ts2_iot_wide_unbucketed",
+      "raw",
+      "table:ts2_iot_wide_unbucketed",
+      "wide"
+    ]
+  },
+  "tiebreak": {
+    "V3IOT_ts0_iot_raw": 1.7925925925925927,
+    "V3IOT_ts2_iot_wide": 2.4142450142450143,
+    "V3IOT_ts2_iot_wide_unbucketed": 1.0
+  }
+}

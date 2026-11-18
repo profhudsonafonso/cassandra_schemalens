@@ -1,0 +1,18 @@
+{
+  "bench_steps": 500,
+  "benchmark": "TPCx-IoT (research adaptation)",
+  "events_per_execution": 3780,
+  "executed_stage9_scenario": "identical to the V2 campaign (tpcx_v1 WORKLOAD)",
+  "mean_rows_per_logical_read": 22.0,
+  "old_stage7_scenario_NOT_USED": "10 stations x 200 sensors, 60 s, 1 day, RF=2",
+  "pad_bytes": 900,
+  "probes_hash": "1e98ed592637807d9978bc9c90bac325baceaaf18c96abb3ebce3db85e5e753f",
+  "read_operations": 120,
+  "read_threads": 2,
+  "reads_per_execution": 120,
+  "replication_factor": 1,
+  "seed_steps": 130,
+  "sensors": 3,
+  "stations": 2,
+  "tick_ms": 1000
+}

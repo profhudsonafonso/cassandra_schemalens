@@ -1,0 +1,3776 @@
+[
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q01_R000",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 2.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q01_R000",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q01_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q01_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q01_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q01_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q02_R000",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q02_R000",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q02_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q02_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q02_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 2.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q02_R002",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q03_R000",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q03_R000",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q03_R001",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q03_R001",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q03_R002",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q03_R002",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q04_R000",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q04_R000",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q04_R001",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q04_R001",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q04_R002",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q04_R002",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q05_R000",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q05_R000",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q05_R001",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q05_R001",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q05_R002",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 10.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q05_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q06_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q06_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q06_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q06_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q06_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q06_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 7680.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q07_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 1280.0,
+    "logical_rows": 80.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q07_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 7680.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q07_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 1280.0,
+    "logical_rows": 80.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q07_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 7680.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q07_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 20.0,
+    "logical_bytes": 1280.0,
+    "logical_rows": 80.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q07_R002",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 61440.0,
+    "logical_rows": 3840.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q08_R000",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 10240.0,
+    "logical_rows": 640.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q08_R000",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 61440.0,
+    "logical_rows": 3840.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q08_R001",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 10240.0,
+    "logical_rows": 640.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q08_R001",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 61440.0,
+    "logical_rows": 3840.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q08_R002",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 20.0,
+    "logical_bytes": 10240.0,
+    "logical_rows": 640.0,
+    "partitions_touched": 160.0,
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q08_R002",
+    "read_cql_requests": 160.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 737280.0,
+    "logical_rows": 46080.0,
+    "partitions_touched": 320.0,
+    "plan_id": "Q09__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q09_R000",
+    "read_cql_requests": 320.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 20.0,
+    "logical_bytes": 122880.0,
+    "logical_rows": 7680.0,
+    "partitions_touched": 640.0,
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q09_R000",
+    "read_cql_requests": 640.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 737280.0,
+    "logical_rows": 46080.0,
+    "partitions_touched": 320.0,
+    "plan_id": "Q09__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q09_R001",
+    "read_cql_requests": 320.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 20.0,
+    "logical_bytes": 122880.0,
+    "logical_rows": 7680.0,
+    "partitions_touched": 640.0,
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q09_R001",
+    "read_cql_requests": 640.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 737280.0,
+    "logical_rows": 46080.0,
+    "partitions_touched": 320.0,
+    "plan_id": "Q09__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q09_R002",
+    "read_cql_requests": 320.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 20.0,
+    "logical_bytes": 122880.0,
+    "logical_rows": 7680.0,
+    "partitions_touched": 640.0,
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q09_R002",
+    "read_cql_requests": 640.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 46080.0,
+    "logical_rows": 2880.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 1.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R000",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 46080.0,
+    "logical_rows": 2880.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 1.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R001",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 46080.0,
+    "logical_rows": 2880.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 1.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q10_R002",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 230400.0,
+    "logical_rows": 14400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R000",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 57600.0,
+    "logical_rows": 2400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R000",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 230400.0,
+    "logical_rows": 14400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R001",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 5.0,
+    "logical_bytes": 57600.0,
+    "logical_rows": 2400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R001",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R001",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 230400.0,
+    "logical_rows": 14400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R002",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 5.0,
+    "logical_bytes": 57600.0,
+    "logical_rows": 2400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R002",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q11_R002",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 115200.0,
+    "logical_rows": 4800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R000",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 10.0,
+    "logical_bytes": 115200.0,
+    "logical_rows": 4800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R001",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R002",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 20.0,
+    "logical_bytes": 115200.0,
+    "logical_rows": 4800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R002",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.3,
+    "logical_bytes": 80040.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 12.0,
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q12_R002",
+    "read_cql_requests": 12.0,
+    "runtime_guard": "hour",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "fanout": 1.0,
+    "logical_bytes": 6336.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R000",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "fanout": 1.0,
+    "logical_bytes": 6336.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 20.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R002",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 20.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R002",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "fanout": 2.0,
+    "logical_bytes": 6336.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q13_R002",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R002",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 20.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R002",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 20.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q14_R002",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 6400.0,
+    "logical_rows": 400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q15__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q15_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 6400.0,
+    "logical_rows": 400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q15__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q15_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 6400.0,
+    "logical_rows": 400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q15__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q15_R002",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 99840.0,
+    "logical_rows": 6240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q16__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q16_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "fanout": 0.05,
+    "logical_bytes": 160.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q16__ts5_global_max_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q16_R000",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 38400.0,
+    "logical_rows": 2400.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q16__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q16_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "fanout": 0.025,
+    "logical_bytes": 80.0,
+    "logical_rows": 5.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q16__ts5_global_max_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q16_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 56960.0,
+    "logical_rows": 3560.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q16__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q16_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "fanout": 0.025,
+    "logical_bytes": 80.0,
+    "logical_rows": 5.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q16__ts5_global_max_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "A_Q16_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "minute",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q01_R000",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q01_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q01_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q01_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 96.0,
+    "logical_rows": 6.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q01__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q01_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q01__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q01_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q02_R000",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q02_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q02_R001",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q02_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 1152.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q02__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q02_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q02__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q02_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q03_R000",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q03_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q03_R001",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q03_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 768.0,
+    "logical_rows": 48.0,
+    "partitions_touched": 8.0,
+    "plan_id": "Q03__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q03_R002",
+    "read_cql_requests": 8.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q03__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q03_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q04_R000",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q04_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q04_R001",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q04_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 480.0,
+    "logical_rows": 30.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q04__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q04_R002",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q04__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q04_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q05_R000",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q05_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q05_R001",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q05_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 5760.0,
+    "logical_rows": 360.0,
+    "partitions_touched": 5.0,
+    "plan_id": "Q05__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q05_R002",
+    "read_cql_requests": 5.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q05__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q05_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q06_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q06_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q06_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q06_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 3840.0,
+    "logical_rows": 240.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q06__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q06_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q06__ts5_max_by_host_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q06_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 7680.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q07_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q07_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 7680.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q07_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q07_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 7680.0,
+    "logical_rows": 480.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q07__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q07_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q07__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q07_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 61440.0,
+    "logical_rows": 3840.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q08_R000",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q08_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 61440.0,
+    "logical_rows": 3840.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q08_R001",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q08_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 61440.0,
+    "logical_rows": 3840.0,
+    "partitions_touched": 80.0,
+    "plan_id": "Q08__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q08_R002",
+    "read_cql_requests": 80.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q08__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q08_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 737280.0,
+    "logical_rows": 46080.0,
+    "partitions_touched": 320.0,
+    "plan_id": "Q09__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q09_R000",
+    "read_cql_requests": 320.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q09_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 737280.0,
+    "logical_rows": 46080.0,
+    "partitions_touched": 320.0,
+    "plan_id": "Q09__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q09_R001",
+    "read_cql_requests": 320.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q09_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 737280.0,
+    "logical_rows": 46080.0,
+    "partitions_touched": 320.0,
+    "plan_id": "Q09__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q09_R002",
+    "read_cql_requests": 320.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_max_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q09__ts5_max_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q09_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_max_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 46080.0,
+    "logical_rows": 2880.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 46080.0,
+    "logical_rows": 2880.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 46080.0,
+    "logical_rows": 2880.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q10__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q10__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q10__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q10_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 230400.0,
+    "logical_rows": 14400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R000",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 230400.0,
+    "logical_rows": 14400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R001",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 5.0,
+    "logical_bytes": 230400.0,
+    "logical_rows": 14400.0,
+    "partitions_touched": 200.0,
+    "plan_id": "Q11__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R002",
+    "read_cql_requests": 200.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q11__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q11__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q11_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q12__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R002",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_sum_count_by_host_hour",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q12__ts5_sum_count_by_host_hour",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_sum_count_by_host_hour is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts6_hour_host_dimension",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q12__ts6_hour_host_dimension",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q12_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts6_hour_host_dimension is exact only on hour-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R000",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 20.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R000",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 20.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R000",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "fanout": 2.0,
+    "logical_bytes": 6336.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R000",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R001",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 20.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R001",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 20.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 20.0,
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R001",
+    "read_cql_requests": 20.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "fanout": 2.0,
+    "logical_bytes": 6336.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 2.0,
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R001",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 10.0,
+    "logical_bytes": 11520.0,
+    "logical_rows": 720.0,
+    "partitions_touched": 10.0,
+    "plan_id": "Q13__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R002",
+    "read_cql_requests": 10.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts2_wide_bucket_1d",
+    "fanout": 1.0,
+    "logical_bytes": 6336.0,
+    "logical_rows": 72.0,
+    "partitions_touched": 1.0,
+    "plan_id": "Q13__ts2_wide_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q13_R002",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 20.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R001",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 20.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R001",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q14__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R002",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_1d",
+    "fanout": 20.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q14__ts1_metric_bucket_1d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R002",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts1_metric_bucket_7d",
+    "fanout": 20.0,
+    "logical_bytes": 460800.0,
+    "logical_rows": 28800.0,
+    "partitions_touched": 800.0,
+    "plan_id": "Q14__ts1_metric_bucket_7d",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q14_R002",
+    "read_cql_requests": 800.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 6400.0,
+    "logical_rows": 400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q15__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q15_R000",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 6400.0,
+    "logical_rows": 400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q15__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q15_R001",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 10.0,
+    "logical_bytes": 6400.0,
+    "logical_rows": 400.0,
+    "partitions_touched": 400.0,
+    "plan_id": "Q15__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q15_R002",
+    "read_cql_requests": 400.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 106240.0,
+    "logical_rows": 6640.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q16__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q16_R000",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q16__ts5_global_max_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q16_R000",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_global_max_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 47360.0,
+    "logical_rows": 2960.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q16__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q16_R001",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q16__ts5_global_max_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q16_R001",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_global_max_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts0_metric_raw",
+    "fanout": 1.0,
+    "logical_bytes": 98560.0,
+    "logical_rows": 6160.0,
+    "partitions_touched": 40.0,
+    "plan_id": "Q16__ts0_metric_raw",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q16_R002",
+    "read_cql_requests": 40.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "rows counted on the in-memory reference materialization of the campaign data"
+    ],
+    "candidate_id": "ts5_global_max_minute",
+    "fanout": 0.0,
+    "logical_bytes": 0.0,
+    "logical_rows": 0.0,
+    "partitions_touched": 0.0,
+    "plan_id": "Q16__ts5_global_max_minute",
+    "provenance": "tsbs stage5 15_query_plans.json + stage5.runtime.bind_read_requests",
+    "query_id": "N_Q16_R002",
+    "read_cql_requests": 0.0,
+    "runtime_guard": "RUNTIME_GUARD_FAILS: ts5_global_max_minute is exact only on minute-aligned windows",
+    "valid": false,
+    "warnings": []
+  }
+]

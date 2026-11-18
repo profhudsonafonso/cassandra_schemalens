@@ -1,0 +1,173 @@
+[
+  {
+    "axes": {
+      "logical_storage_bytes": 1188000.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 66000.0,
+      "max_partition_rows": 3000.0,
+      "partition_count": 18.0,
+      "read_cql_requests": 2.166666666666667,
+      "read_logical_bytes": 34896.00000000001,
+      "read_logical_rows": 2181.0000000000005,
+      "write_cql_mutations": 54000.0
+    },
+    "deployment_id": "V3IOT_ts0_iot_raw",
+    "problems": [],
+    "routes": {
+      "Q1": "Q1__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q10": "Q10__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q11": "Q11__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q12": "Q12__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q2": "Q2__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q3": "Q3__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q4": "Q4__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q5": "Q5__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q6": "Q6__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q7": "Q7__ts0_iot_raw__TS0_RANGE_SCAN",
+      "Q8": "Q8__ts0_iot_raw__TS0_DESC_LIMIT1",
+      "Q9": "Q9__ts0_iot_raw__TS0_RANGE_SCAN"
+    },
+    "tables": [
+      "ts0_iot_raw"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 1.0,
+        "logical_storage_bytes": 1188000.0,
+        "max_partition_bytes": 66000.0,
+        "max_partition_rows": 3000.0,
+        "physical_partition_count": 18.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.9166666666666667,
+        "cql_requests": 2.166666666666667,
+        "logical_bytes": 34896.00000000001,
+        "logical_rows": 2181.0000000000005,
+        "partitions_touched": 2.166666666666667
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 54000.0,
+        "logical_bytes_written": 1188000.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 54000.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 729000.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 81000.0,
+      "max_partition_rows": 3000.0,
+      "partition_count": 9.0,
+      "read_cql_requests": 1.0833333333333335,
+      "read_logical_bytes": 26172.0,
+      "read_logical_rows": 1090.5000000000002,
+      "write_cql_mutations": 27000.0
+    },
+    "deployment_id": "V3IOT_ts2_iot_wide_unbucketed",
+    "problems": [],
+    "routes": {
+      "Q1": "Q1__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q10": "Q10__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q11": "Q11__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q12": "Q12__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q2": "Q2__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q3": "Q3__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q4": "Q4__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q5": "Q5__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q6": "Q6__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q7": "Q7__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN",
+      "Q8": "Q8__ts2_iot_wide_unbucketed__TS2U_DESC_SPARSE",
+      "Q9": "Q9__ts2_iot_wide_unbucketed__TS2U_RANGE_SCAN"
+    },
+    "tables": [
+      "ts2_iot_wide_unbucketed"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 0.5,
+        "logical_storage_bytes": 729000.0,
+        "max_partition_bytes": 81000.0,
+        "max_partition_rows": 3000.0,
+        "physical_partition_count": 9.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 0.9583333333333334,
+        "cql_requests": 1.0833333333333335,
+        "logical_bytes": 26172.0,
+        "logical_rows": 1090.5000000000002,
+        "partitions_touched": 1.0833333333333335
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 27000.0,
+        "logical_bytes_written": 729000.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 27000.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 837000.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 4464.0,
+      "max_partition_rows": 144.0,
+      "partition_count": 189.0,
+      "read_cql_requests": 8.583333333333334,
+      "read_logical_bytes": 26172.0,
+      "read_logical_rows": 1090.5000000000002,
+      "write_cql_mutations": 27000.0
+    },
+    "deployment_id": "V3IOT_ts2_iot_wide",
+    "problems": [],
+    "routes": {
+      "Q1": "Q1__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q10": "Q10__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q11": "Q11__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q12": "Q12__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q2": "Q2__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q3": "Q3__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q4": "Q4__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q5": "Q5__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q6": "Q6__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q7": "Q7__ts2_iot_wide__TS2D_BUCKET_SCAN",
+      "Q8": "Q8__ts2_iot_wide__TS2D_DESC_SPARSE",
+      "Q9": "Q9__ts2_iot_wide__TS2D_BUCKET_SCAN"
+    },
+    "tables": [
+      "ts2_iot_wide"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 0.5,
+        "logical_storage_bytes": 837000.0,
+        "max_partition_bytes": 4464.0,
+        "max_partition_rows": 144.0,
+        "physical_partition_count": 189.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 7.583333333333334,
+        "cql_requests": 8.583333333333334,
+        "logical_bytes": 26172.0,
+        "logical_rows": 1090.5000000000002,
+        "partitions_touched": 8.583333333333334
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 27000.0,
+        "logical_bytes_written": 837000.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 27000.0
+      }
+    }
+  }
+]

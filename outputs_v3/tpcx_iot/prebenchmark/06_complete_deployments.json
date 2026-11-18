@@ -1,0 +1,18 @@
+{
+  "complete": 9,
+  "complete_ids": [
+    "h_119222012d4e",
+    "h_3f1449e05468",
+    "h_6276d5b68197",
+    "h_6745757bf865",
+    "h_977291c72920",
+    "h_a9983e2318a9",
+    "h_aba788b8e7b7",
+    "h_b4bea9150d2e",
+    "h_bdd6bbdce69f"
+  ],
+  "enumerated": 9,
+  "infeasible": 0,
+  "infeasible_examples_first_2000": [],
+  "infeasible_reason_histogram": {}
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "axes": {
+      "logical_storage_bytes": 3579660.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 596610.0,
+      "max_partition_rows": 630.0,
+      "partition_count": 6.0,
+      "read_cql_requests": 4.0,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 3780.0
+    },
+    "deployment_id": "h_119222012d4e",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts0_series_raw"
+    },
+    "tables": [
+      "ts0_series_raw"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 1.0,
+        "logical_storage_bytes": 3579660.0,
+        "max_partition_bytes": 596610.0,
+        "max_partition_rows": 630.0,
+        "physical_partition_count": 6.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 2.0,
+        "cql_requests": 4.0,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 4.0
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 3780.0,
+        "logical_bytes_written": 3579660.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 3780.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 7189560.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 1203300.0,
+      "max_partition_rows": 1260.0,
+      "partition_count": 9.0,
+      "read_cql_requests": 2.0,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 7560.0
+    },
+    "deployment_id": "h_3f1449e05468",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts3_sensor_3600s"
+    },
+    "tables": [
+      "ts0_series_raw",
+      "ts3_sensor_3600s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 2.0,
+        "logical_storage_bytes": 7189560.0,
+        "max_partition_bytes": 1203300.0,
+        "max_partition_rows": 1260.0,
+        "physical_partition_count": 9.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.0,
+        "cql_requests": 2.0,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 2.0
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 7560.0,
+        "logical_bytes_written": 7189560.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 7560.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 7189560.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 596610.0,
+      "max_partition_rows": 630.0,
+      "partition_count": 39.0,
+      "read_cql_requests": 2.15,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 7560.0
+    },
+    "deployment_id": "h_977291c72920",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts3_sensor_60s"
+    },
+    "tables": [
+      "ts0_series_raw",
+      "ts3_sensor_60s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 2.0,
+        "logical_storage_bytes": 7189560.0,
+        "max_partition_bytes": 596610.0,
+        "max_partition_rows": 630.0,
+        "physical_partition_count": 39.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.075,
+        "cql_requests": 2.15,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 2.15
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 7560.0,
+        "logical_bytes_written": 7189560.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 7560.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 3609900.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 601650.0,
+      "max_partition_rows": 630.0,
+      "partition_count": 6.0,
+      "read_cql_requests": 4.0,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 3780.0
+    },
+    "deployment_id": "h_aba788b8e7b7",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts1_series_3600s"
+    },
+    "tables": [
+      "ts1_series_3600s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 1.0,
+        "logical_storage_bytes": 3609900.0,
+        "max_partition_bytes": 601650.0,
+        "max_partition_rows": 630.0,
+        "physical_partition_count": 6.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 2.0,
+        "cql_requests": 4.0,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 4.0
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 3780.0,
+        "logical_bytes_written": 3609900.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 3780.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 7219800.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 1203300.0,
+      "max_partition_rows": 1260.0,
+      "partition_count": 9.0,
+      "read_cql_requests": 2.0,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 7560.0
+    },
+    "deployment_id": "h_6745757bf865",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts3_sensor_3600s"
+    },
+    "tables": [
+      "ts1_series_3600s",
+      "ts3_sensor_3600s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 2.0,
+        "logical_storage_bytes": 7219800.0,
+        "max_partition_bytes": 1203300.0,
+        "max_partition_rows": 1260.0,
+        "physical_partition_count": 9.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.0,
+        "cql_requests": 2.0,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 2.0
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 7560.0,
+        "logical_bytes_written": 7219800.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 7560.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 7219800.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 601650.0,
+      "max_partition_rows": 630.0,
+      "partition_count": 39.0,
+      "read_cql_requests": 2.15,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 7560.0
+    },
+    "deployment_id": "h_6276d5b68197",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts3_sensor_60s"
+    },
+    "tables": [
+      "ts1_series_3600s",
+      "ts3_sensor_60s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 2.0,
+        "logical_storage_bytes": 7219800.0,
+        "max_partition_bytes": 601650.0,
+        "max_partition_rows": 630.0,
+        "physical_partition_count": 39.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.075,
+        "cql_requests": 2.15,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 2.15
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 7560.0,
+        "logical_bytes_written": 7219800.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 7560.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 3609900.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 57300.0,
+      "max_partition_rows": 60.0,
+      "partition_count": 66.0,
+      "read_cql_requests": 4.3,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 3780.0
+    },
+    "deployment_id": "h_b4bea9150d2e",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts1_series_60s"
+    },
+    "tables": [
+      "ts1_series_60s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 1.0,
+        "logical_storage_bytes": 3609900.0,
+        "max_partition_bytes": 57300.0,
+        "max_partition_rows": 60.0,
+        "physical_partition_count": 66.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 2.15,
+        "cql_requests": 4.3,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 4.3
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 3780.0,
+        "logical_bytes_written": 3609900.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 3780.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 7219800.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 1203300.0,
+      "max_partition_rows": 1260.0,
+      "partition_count": 69.0,
+      "read_cql_requests": 2.0,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 7560.0
+    },
+    "deployment_id": "h_bdd6bbdce69f",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts3_sensor_3600s"
+    },
+    "tables": [
+      "ts1_series_60s",
+      "ts3_sensor_3600s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 2.0,
+        "logical_storage_bytes": 7219800.0,
+        "max_partition_bytes": 1203300.0,
+        "max_partition_rows": 1260.0,
+        "physical_partition_count": 69.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.0,
+        "cql_requests": 2.0,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 2.0
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 7560.0,
+        "logical_bytes_written": 7219800.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 7560.0
+      }
+    }
+  },
+  {
+    "axes": {
+      "logical_storage_bytes": 7219800.0,
+      "maintenance_read_requests": 0.0,
+      "max_partition_bytes": 114600.0,
+      "max_partition_rows": 120.0,
+      "partition_count": 99.0,
+      "read_cql_requests": 2.15,
+      "read_logical_bytes": 20834.0,
+      "read_logical_rows": 22.0,
+      "write_cql_mutations": 7560.0
+    },
+    "deployment_id": "h_a9983e2318a9",
+    "problems": [],
+    "routes": {
+      "Q_READ_2_WINDOWS": "qp__q_read_2_windows__ts3_sensor_60s"
+    },
+    "tables": [
+      "ts1_series_60s",
+      "ts3_sensor_60s"
+    ],
+    "vector": {
+      "assumptions": [],
+      "footprint": {
+        "duplication_ratio": 2.0,
+        "logical_storage_bytes": 7219800.0,
+        "max_partition_bytes": 114600.0,
+        "max_partition_rows": 120.0,
+        "physical_partition_count": 99.0
+      },
+      "read": {
+        "bucket_or_partition_fanout": 1.075,
+        "cql_requests": 2.15,
+        "logical_bytes": 20834.0,
+        "logical_rows": 22.0,
+        "partitions_touched": 2.15
+      },
+      "warnings": [],
+      "write": {
+        "cql_mutations": 7560.0,
+        "logical_bytes_written": 7219800.0,
+        "maintenance_read_requests": 0.0,
+        "maintenance_rows_read": 0.0,
+        "rows_touched": 7560.0
+      }
+    }
+  }
+]

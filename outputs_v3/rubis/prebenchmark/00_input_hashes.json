@@ -1,0 +1,6 @@
+{
+  "runs/v9_generation_001/stages/E04_observed_stats/STATS.json": "a5ddaf11c0999abb75e60250bdd05810e326ffb0afda9383e5381c72324ea5df",
+  "runs/v9_generation_001/stages/E05_workload/WORKLOAD.json": "c92546f954c06399c1fcf348286cce388932bcf3745cf9dd2e5d788fb9972ef4",
+  "runs/v9_generation_001/stages/E13_route_synthesis/CANONICAL_WITH_COVER.json": "dcaa1c3f23ee655bdf6b614c38c4f46b74abf63eb544e4845bb324997dc45194",
+  "versao_ajustada/rubis_v9/frozen/cohort_source.pkl": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3"
+}

@@ -1,0 +1,246 @@
+{
+  "classes": [
+    "aligned:Q01",
+    "aligned:Q02",
+    "aligned:Q03",
+    "aligned:Q04",
+    "aligned:Q05",
+    "aligned:Q06",
+    "aligned:Q07",
+    "aligned:Q08",
+    "aligned:Q09",
+    "aligned:Q10",
+    "aligned:Q11",
+    "aligned:Q12",
+    "aligned:Q13",
+    "aligned:Q14",
+    "aligned:Q15",
+    "aligned:Q16",
+    "natural:Q01",
+    "natural:Q02",
+    "natural:Q03",
+    "natural:Q04",
+    "natural:Q05",
+    "natural:Q06",
+    "natural:Q07",
+    "natural:Q08",
+    "natural:Q09",
+    "natural:Q10",
+    "natural:Q11",
+    "natural:Q12",
+    "natural:Q13",
+    "natural:Q14",
+    "natural:Q15",
+    "natural:Q16"
+  ],
+  "container": "sl_v3_tsbs_cassandra",
+  "finished_utc": "2026-11-18T14:35:05.060521+00:00",
+  "port": 9083,
+  "postflight": {
+    "cassandra_release_version": "4.1.12",
+    "client_affinity": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "container": "sl_v3_tsbs_cassandra",
+    "cpu_count": 24,
+    "cpuset": "0-3",
+    "docker_stats": [
+      "sl_v3_tsbs_cassandra\t0.62%\t2.309GiB / 6GiB",
+      "schemalens-rubis-cassandra\t0.74%\t1.426GiB / 62.38GiB",
+      "schemalens_tpcx_cassandra\t0.76%\t1.178GiB / 62.38GiB",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\t0.89%\t8.687GiB / 62.38GiB",
+      "imdb_mongodb_alt\t0.97%\t250.1MiB / 62.38GiB",
+      "fiben_mongodb_bench\t0.94%\t253.8MiB / 62.38GiB"
+    ],
+    "driver": "3.30.1",
+    "host": "ceos-PC",
+    "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+    "image_id": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+    "kernel": "7.0.0-38-generic",
+    "loadavg": [
+      1.291015625,
+      1.31982421875,
+      1.35205078125
+    ],
+    "meminfo": [
+      "MemTotal:       65407552 kB",
+      "MemFree:         2701496 kB",
+      "MemAvailable:   40445796 kB"
+    ],
+    "memory_limit_bytes": 6442450944,
+    "port": 9083,
+    "python": "3.12.3",
+    "running_containers": [
+      "sl_v3_tsbs_cassandra\tcassandra\tUp 17 minutes",
+      "schemalens-rubis-cassandra\tcassandra:4.1\tUp 8 days",
+      "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 8 days (healthy)",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 7 days (healthy)",
+      "imdb_mongodb_alt\tmongo:8\tUp 8 days",
+      "fiben_mongodb_bench\tmongo:8.0\tUp 8 days"
+    ],
+    "utc": "2026-11-18T14:35:07.144734+00:00"
+  },
+  "preflight": {
+    "cassandra_release_version": "4.1.12",
+    "client_affinity": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "container": "sl_v3_tsbs_cassandra",
+    "cpu_count": 24,
+    "cpuset": "0-3",
+    "docker_stats": [
+      "sl_v3_tsbs_cassandra\t0.81%\t2.288GiB / 6GiB",
+      "schemalens-rubis-cassandra\t1.12%\t1.408GiB / 62.38GiB",
+      "schemalens_tpcx_cassandra\t0.67%\t1.173GiB / 62.38GiB",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\t0.77%\t8.667GiB / 62.38GiB",
+      "imdb_mongodb_alt\t1.44%\t250.1MiB / 62.38GiB",
+      "fiben_mongodb_bench\t0.82%\t254MiB / 62.38GiB"
+    ],
+    "driver": "3.30.1",
+    "host": "ceos-PC",
+    "image": "cassandra@sha256:25f6a4d5c258fa7295cb4f4ccd7d94a21e565a1040ba1c205455fc11ff8041fc",
+    "image_id": "sha256:d4f138ee00e8fc2664905ef566645a152a2bf87ce36a48b4b76366913126a203",
+    "kernel": "7.0.0-38-generic",
+    "loadavg": [
+      1.0224609375,
+      1.56787109375,
+      1.28076171875
+    ],
+    "meminfo": [
+      "MemTotal:       65407552 kB",
+      "MemFree:         2978176 kB",
+      "MemAvailable:   40557604 kB"
+    ],
+    "memory_limit_bytes": 6442450944,
+    "port": 9083,
+    "python": "3.12.3",
+    "running_containers": [
+      "sl_v3_tsbs_cassandra\tcassandra\tUp About a minute",
+      "schemalens-rubis-cassandra\tcassandra:4.1\tUp 7 days",
+      "schemalens_tpcx_cassandra\tcassandra:4.1.8\tUp 7 days (healthy)",
+      "schemalens_iot_cassandra_pipeline-cassandra-1\tcassandra:4.1\tUp 7 days (healthy)",
+      "imdb_mongodb_alt\tmongo:8\tUp 7 days",
+      "fiben_mongodb_bench\tmongo:8.0\tUp 7 days"
+    ],
+    "utc": "2026-11-18T12:55:35.627408+00:00"
+  },
+  "protocol": "SCHEMALENS_CASSANDRA_EXEC_PROTOCOL_V1",
+  "repetitions": [
+    {
+      "attempt": 1,
+      "fallback_routes": [],
+      "flush_gate": {
+        "passed": true,
+        "tables": 80
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 2.26123046875,
+        "passed": true,
+        "samples": 56,
+        "window_seconds": 832.5
+      },
+      "raw_rows": 9984,
+      "rep": 1,
+      "restart_seconds": 18.19760227203369,
+      "window_seconds": 832.5
+    },
+    {
+      "attempt": 1,
+      "fallback_routes": [],
+      "flush_gate": {
+        "passed": true,
+        "tables": 80
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 1.802734375,
+        "passed": true,
+        "samples": 57,
+        "window_seconds": 854.0
+      },
+      "raw_rows": 9984,
+      "rep": 2,
+      "restart_seconds": 20.03459095954895,
+      "window_seconds": 854.1
+    },
+    {
+      "attempt": 1,
+      "fallback_routes": [],
+      "flush_gate": {
+        "passed": true,
+        "tables": 80
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 1.849609375,
+        "passed": true,
+        "samples": 58,
+        "window_seconds": 855.2
+      },
+      "raw_rows": 9984,
+      "rep": 3,
+      "restart_seconds": 17.941720962524414,
+      "window_seconds": 855.2
+    },
+    {
+      "attempt": 1,
+      "fallback_routes": [],
+      "flush_gate": {
+        "passed": true,
+        "tables": 80
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 1.6787109375,
+        "passed": true,
+        "samples": 57,
+        "window_seconds": 848.3
+      },
+      "raw_rows": 9984,
+      "rep": 4,
+      "restart_seconds": 18.002846479415894,
+      "window_seconds": 848.3
+    },
+    {
+      "attempt": 1,
+      "fallback_routes": [],
+      "flush_gate": {
+        "passed": true,
+        "tables": 80
+      },
+      "isolation_guard": {
+        "active_compaction_samples": [],
+        "compaction_history_new_rows": 0,
+        "interval_s": 15.0,
+        "loadavg1_max": 1.8212890625,
+        "passed": true,
+        "samples": 56,
+        "window_seconds": 837.8
+      },
+      "raw_rows": 9984,
+      "rep": 5,
+      "restart_seconds": 17.936391353607178,
+      "window_seconds": 837.8
+    }
+  ],
+  "reps_planned": 5,
+  "rounds": 12,
+  "smoke": false,
+  "status": "COMPLETE",
+  "warmup": 2
+}

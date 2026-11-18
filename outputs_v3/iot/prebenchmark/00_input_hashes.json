@@ -1,0 +1,6 @@
+{
+  "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/outputs/v4_rev2_prebenchmark/stage4/10_v4_candidate_specs.json": "4cf763022c4c7b93dfe69aadd70aeba875db008d20293e5c4adac9e2e49aa91e",
+  "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/outputs/v4_rev3_planaware_prebenchmark/stage5/15_executable_plan_catalog.json": "e7c5b5b0421ad49d16a7980704487deaa85f2bad5d3f9878cfc3cecac55b93fa",
+  "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/phase_a1/outputs/normalized_double_readings.csv": "047c269a42beea21333d7dbecdbde798862346015a35a5b1ced232b05a8f2c2a",
+  "versao_ajustada/iot_benchmark_tsdb/frozen_design_B/phase_a1/outputs/query_instances_pilot.json": "e77aa9ab1a284fdad41d00055435ea2e8f50062bba5518aaf149d3f70fd77de5"
+}

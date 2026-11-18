@@ -1,0 +1,77 @@
+[
+  {
+    "assumptions": [
+      "one INSERT per event per table (frozen WritePlan)"
+    ],
+    "candidate_id": "ts0_series_raw",
+    "cql_mutations": 1.0,
+    "logical_bytes_written": 947.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tpcx stage6 30_writeplans.json",
+    "rows_touched": 1.0,
+    "warnings": [],
+    "write_id": "Q_INGEST"
+  },
+  {
+    "assumptions": [
+      "one INSERT per event per table (frozen WritePlan)"
+    ],
+    "candidate_id": "ts1_series_3600s",
+    "cql_mutations": 1.0,
+    "logical_bytes_written": 955.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tpcx stage6 30_writeplans.json",
+    "rows_touched": 1.0,
+    "warnings": [],
+    "write_id": "Q_INGEST"
+  },
+  {
+    "assumptions": [
+      "one INSERT per event per table (frozen WritePlan)"
+    ],
+    "candidate_id": "ts1_series_60s",
+    "cql_mutations": 1.0,
+    "logical_bytes_written": 955.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tpcx stage6 30_writeplans.json",
+    "rows_touched": 1.0,
+    "warnings": [],
+    "write_id": "Q_INGEST"
+  },
+  {
+    "assumptions": [
+      "one INSERT per event per table (frozen WritePlan)"
+    ],
+    "candidate_id": "ts3_sensor_3600s",
+    "cql_mutations": 1.0,
+    "logical_bytes_written": 955.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tpcx stage6 30_writeplans.json",
+    "rows_touched": 1.0,
+    "warnings": [],
+    "write_id": "Q_INGEST"
+  },
+  {
+    "assumptions": [
+      "one INSERT per event per table (frozen WritePlan)"
+    ],
+    "candidate_id": "ts3_sensor_60s",
+    "cql_mutations": 1.0,
+    "logical_bytes_written": 955.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "tpcx stage6 30_writeplans.json",
+    "rows_touched": 1.0,
+    "warnings": [],
+    "write_id": "Q_INGEST"
+  }
+]

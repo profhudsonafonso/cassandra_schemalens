@@ -1,0 +1,387 @@
+{
+  "pareto_front": [
+    "V3TSBS_ts0metricraw",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts6hourhostdimension"
+  ],
+  "pool": [
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute",
+    "V3TSBS_ts0metricraw",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension"
+  ],
+  "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+  "selected": [
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension"
+  ],
+  "steps": [
+    {
+      "pick": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension",
+      "reason": "lowest balanced_structural_tiebreak"
+    },
+    {
+      "new_tags": [
+        "bucket:max_by_host_hour",
+        "bucket:wide_bucket_1d",
+        "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension",
+        "table:ts2_wide_bucket_1d",
+        "table:ts5_max_by_host_hour"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "family:ts0_metric_raw+ts6_hour_host_dimension"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts6hourhostdimension",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "family:ts0_metric_raw+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension",
+      "reason": "structural diversity"
+    },
+    {
+      "new_tags": [
+        "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts6_hour_host_dimension"
+      ],
+      "pick": "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension",
+      "reason": "structural diversity"
+    }
+  ],
+  "tags": {
+    "V3TSBS_ts0metricraw": [
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw",
+      "raw",
+      "table:ts0_metric_raw"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d": [
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_global_max_minute"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:max_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_max_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_global_max_minute",
+      "table:ts5_max_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:max_by_host_hour",
+      "bucket:sum_count_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_max_by_host_hour+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_global_max_minute",
+      "table:ts5_max_by_host_hour",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:hour_host_dimension",
+      "bucket:max_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_global_max_minute",
+      "table:ts5_max_by_host_hour",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:sum_count_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_global_max_minute",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:hour_host_dimension",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_global_max_minute+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_global_max_minute",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour": [
+      "aggregate",
+      "bucket:max_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_max_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_max_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:max_by_host_hour",
+      "bucket:sum_count_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_max_by_host_hour+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_max_by_host_hour",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:hour_host_dimension",
+      "bucket:max_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_max_by_host_hour+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_max_by_host_hour",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:sum_count_by_host_hour",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:hour_host_dimension",
+      "bucket:wide_bucket_1d",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts2_wide_bucket_1d+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts2_wide_bucket_1d",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts5globalmaxminute": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_global_max_minute",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_global_max_minute"
+    ],
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:max_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_global_max_minute+ts5_max_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_global_max_minute",
+      "table:ts5_max_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:max_by_host_hour",
+      "bucket:sum_count_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_global_max_minute+ts5_max_by_host_hour+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_global_max_minute",
+      "table:ts5_max_by_host_hour",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:hour_host_dimension",
+      "bucket:max_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_global_max_minute+ts5_max_by_host_hour+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_global_max_minute",
+      "table:ts5_max_by_host_hour",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:sum_count_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_global_max_minute+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_global_max_minute",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:global_max_minute",
+      "bucket:hour_host_dimension",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_global_max_minute+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_global_max_minute",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour": [
+      "aggregate",
+      "bucket:max_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_max_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_max_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:max_by_host_hour",
+      "bucket:sum_count_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_max_by_host_hour+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_max_by_host_hour",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:hour_host_dimension",
+      "bucket:max_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_max_by_host_hour+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_max_by_host_hour",
+      "table:ts6_hour_host_dimension"
+    ],
+    "V3TSBS_ts0metricraw+ts5sumcountbyhosthour": [
+      "aggregate",
+      "bucket:sum_count_by_host_hour",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts5_sum_count_by_host_hour",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts5_sum_count_by_host_hour"
+    ],
+    "V3TSBS_ts0metricraw+ts6hourhostdimension": [
+      "aggregate",
+      "bucket:hour_host_dimension",
+      "canonical:ts0_metric_raw",
+      "family:ts0_metric_raw+ts6_hour_host_dimension",
+      "projection",
+      "raw",
+      "table:ts0_metric_raw",
+      "table:ts6_hour_host_dimension"
+    ]
+  },
+  "tiebreak": {
+    "V3TSBS_ts0metricraw": 1.1239454340759811,
+    "V3TSBS_ts0metricraw+ts2widebucket1d": 1.1989337751887823,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute": 1.190075862746744,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour": 1.2562454720360328,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour": 1.288551726012971,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension": 1.1701447047340168,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts5sumcountbyhosthour": 1.2223821167236828,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5globalmaxminute+ts6hourhostdimension": 1.1039750954447283,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour": 1.2651033844780706,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts5sumcountbyhosthour": 1.2974096384550091,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5maxbyhosthour+ts6hourhostdimension": 1.1790026171760546,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts5sumcountbyhosthour": 1.2312400291657206,
+    "V3TSBS_ts0metricraw+ts2widebucket1d+ts6hourhostdimension": 1.112833007886766,
+    "V3TSBS_ts0metricraw+ts5globalmaxminute": 1.115087521633943,
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour": 1.1812571309232316,
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts5sumcountbyhosthour": 1.2135633849001701,
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5maxbyhosthour+ts6hourhostdimension": 1.0951563636212156,
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts5sumcountbyhosthour": 1.1473937756108816,
+    "V3TSBS_ts0metricraw+ts5globalmaxminute+ts6hourhostdimension": 1.028986754331927,
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour": 1.1901150433652696,
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts5sumcountbyhosthour": 1.222421297342208,
+    "V3TSBS_ts0metricraw+ts5maxbyhosthour+ts6hourhostdimension": 1.1040142760632534,
+    "V3TSBS_ts0metricraw+ts5sumcountbyhosthour": 1.1562516880529197,
+    "V3TSBS_ts0metricraw+ts6hourhostdimension": 1.0378446667739651
+  }
+}

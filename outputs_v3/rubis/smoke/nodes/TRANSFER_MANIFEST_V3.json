@@ -1,0 +1,48 @@
+{
+  "IDENTICAL": true,
+  "arms": {
+    "v311": {
+      "IDENTICAL": true,
+      "container": "sl_v3_rubis311_cassandra_smoke",
+      "counts": {
+        "bids": 5690,
+        "buynow": 5300,
+        "categories": 500,
+        "comments": 6529,
+        "items": 7392,
+        "regions": 50,
+        "users": 21855
+      },
+      "port": 9185,
+      "verification_vs_v2_reference": {
+        "closure_rows": true,
+        "counts": true,
+        "ids": true,
+        "raw_rows": true,
+        "source_state_id": true
+      }
+    },
+    "v41": {
+      "IDENTICAL": true,
+      "container": "sl_v3_rubis_cassandra_smoke",
+      "counts": {
+        "bids": 5690,
+        "buynow": 5300,
+        "categories": 500,
+        "comments": 6529,
+        "items": 7392,
+        "regions": 50,
+        "users": 21855
+      },
+      "port": 9184,
+      "verification_vs_v2_reference": {
+        "closure_rows": true,
+        "counts": true,
+        "ids": true,
+        "raw_rows": true,
+        "source_state_id": true
+      }
+    }
+  },
+  "pickle_sha256": "624633a5068ad5076544127524cf779d116860efc4a51b25e0bde6c6472904b3"
+}

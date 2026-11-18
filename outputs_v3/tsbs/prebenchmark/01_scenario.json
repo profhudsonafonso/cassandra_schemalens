@@ -1,0 +1,20 @@
+{
+  "benchmark": "TSBS cpu-only",
+  "cohorts": [
+    "natural",
+    "aligned"
+  ],
+  "data_sha256": "47efcf29f8175ee4b5af5f910f49ed03200029fb4c00ac0bf44d58728c6eed7c",
+  "executed_stage9_scenario": "identical to the V2 campaign (same data file and instance file)",
+  "generator": "tsbs_generate_data commit 8323e59c, --scale=40 --log-interval=600s, 36 h, seed 20261117",
+  "hosts": 40,
+  "instances": 96,
+  "instances_sha256": "941b054b9ddc5b04d13a576bd092d7d4af9b1113db288b80b1140a389f20227a",
+  "metric_cells": 86400,
+  "observations": 8640,
+  "old_stage7_scenario_NOT_USED": "100 hosts, 60 s, 3 days",
+  "text_widths_bytes": {
+    "hostname": 6.75,
+    "metric_name": 11.4
+  }
+}

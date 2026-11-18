@@ -1,0 +1,1262 @@
+[
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q1:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "1",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q1:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "1",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q1:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "1",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q12:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "12",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005",
+    "fanout": 1.0,
+    "logical_bytes": 40.0,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q12:C005",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "12",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q12:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "12",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C005",
+    "fanout": 2.0,
+    "logical_bytes": 48.0,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q12:C019+C005",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "12",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q13:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "13",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015+C003",
+    "fanout": 2.0,
+    "logical_bytes": 258.4206,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q13:C015+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "13",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q13:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "13",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q14:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "14",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015+C003",
+    "fanout": 2.0,
+    "logical_bytes": 258.4206,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q14:C015+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "14",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q14:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "14",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q17:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "17",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q17:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "17",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q17:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "17",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q18:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "18",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015+C003",
+    "fanout": 2.0,
+    "logical_bytes": 258.4206,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q18:C015+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "18",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q18:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "18",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C004",
+    "fanout": 1.0,
+    "logical_bytes": 680.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q19:C004",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "19",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C006",
+    "fanout": 1.0,
+    "logical_bytes": 280.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q19:C006",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "19",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=True"
+    ],
+    "candidate_id": "C012",
+    "fanout": 1.0,
+    "logical_bytes": 56.0,
+    "logical_rows": 2.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q19:C012",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "19",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C002",
+    "fanout": 1.0,
+    "logical_bytes": 10045.0,
+    "logical_rows": 500.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q2:C002",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "2",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q21:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "21",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015+C003",
+    "fanout": 2.0,
+    "logical_bytes": 258.4206,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q21:C015+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "21",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q21:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "21",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q23:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "23",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q23:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "23",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q23:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "23",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q24:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "24",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015+C003",
+    "fanout": 2.0,
+    "logical_bytes": 258.4206,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q24:C015+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "24",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q24:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "24",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q25:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "25",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q25:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "25",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q25:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "25",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q26:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "26",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q26:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "26",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q26:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "26",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q29:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "29",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q29:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "29",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q29:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "29",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q3:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "3",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015",
+    "fanout": 1.0,
+    "logical_bytes": 30.819,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q3:C015",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "3",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q3:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "3",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C015",
+    "fanout": 2.0,
+    "logical_bytes": 46.819,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q3:C023+C015",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "3",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=True"
+    ],
+    "candidate_id": "C010",
+    "fanout": 1.0,
+    "logical_bytes": 2836.355,
+    "logical_rows": 25.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q30:C010",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "30",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=True"
+    ],
+    "candidate_id": "C011+C024",
+    "fanout": 26.0,
+    "logical_bytes": 3236.355,
+    "logical_rows": 50.0,
+    "partitions_touched": 26.0,
+    "plan_id": "q30:C011+C024",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "30",
+    "read_cql_requests": 26.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C013",
+    "fanout": 1.0,
+    "logical_bytes": 40.0,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q31:C013",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "31",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C024+C001",
+    "fanout": 2.0,
+    "logical_bytes": 234.00779999999997,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q31:C024+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "31",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C024+C005",
+    "fanout": 2.0,
+    "logical_bytes": 161.45420000000001,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q31:C024+C005",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "31",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=True"
+    ],
+    "candidate_id": "C014",
+    "fanout": 1.0,
+    "logical_bytes": 427.702,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q32:C014",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "32",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=False"
+    ],
+    "candidate_id": "C016",
+    "fanout": 1.0,
+    "logical_bytes": 348.19000000000005,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q33:C016",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "33",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=False"
+    ],
+    "candidate_id": "C017",
+    "fanout": 1.0,
+    "logical_bytes": 807.9525756336877,
+    "logical_rows": 23.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q34:C017",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "34",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=True"
+    ],
+    "candidate_id": "C018",
+    "fanout": 1.0,
+    "logical_bytes": 291.53069,
+    "logical_rows": 7.51,
+    "partitions_touched": 1.0,
+    "plan_id": "q35:C018",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "35",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C020",
+    "fanout": 1.0,
+    "logical_bytes": 1024.0,
+    "logical_rows": 50.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q36:C020",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "36",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C004",
+    "fanout": 1.0,
+    "logical_bytes": 680.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q4:C004",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "4",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C003",
+    "fanout": 1.0,
+    "logical_bytes": 227.6016,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q5:C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "5",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C015+C003",
+    "fanout": 2.0,
+    "logical_bytes": 258.4206,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q5:C015+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "5",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C023+C003",
+    "fanout": 2.0,
+    "logical_bytes": 243.6016,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q5:C023+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "5",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C004",
+    "fanout": 1.0,
+    "logical_bytes": 680.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q6:C004",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "6",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C006",
+    "fanout": 1.0,
+    "logical_bytes": 280.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q6:C006",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "6",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C012",
+    "fanout": 1.0,
+    "logical_bytes": 280.0,
+    "logical_rows": 10.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q6:C012",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "6",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=True"
+    ],
+    "candidate_id": "C007",
+    "fanout": 1.0,
+    "logical_bytes": 1370.4750000000001,
+    "logical_rows": 25.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q7:C007",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "7",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=True"
+    ],
+    "candidate_id": "C008+C003",
+    "fanout": 26.0,
+    "logical_bytes": 6090.04,
+    "logical_rows": 50.0,
+    "partitions_touched": 26.0,
+    "plan_id": "q7:C008+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "7",
+    "read_cql_requests": 26.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=True limit_pushdown=True"
+    ],
+    "candidate_id": "C009+C003",
+    "fanout": 26.0,
+    "logical_bytes": 6760.515,
+    "logical_rows": 50.0,
+    "partitions_touched": 26.0,
+    "plan_id": "q7:C009+C003",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "7",
+    "read_cql_requests": 26.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C001",
+    "fanout": 1.0,
+    "logical_bytes": 112.55359999999999,
+    "logical_rows": 1.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q8:C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "8",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C005+C001",
+    "fanout": 2.0,
+    "logical_bytes": 152.5536,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q8:C005+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "8",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=False"
+    ],
+    "candidate_id": "C019+C001",
+    "fanout": 2.0,
+    "logical_bytes": 120.55359999999999,
+    "logical_rows": 2.0,
+    "partitions_touched": 2.0,
+    "plan_id": "q8:C019+C001",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "8",
+    "read_cql_requests": 2.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=True"
+    ],
+    "candidate_id": "C010",
+    "fanout": 1.0,
+    "logical_bytes": 2836.355,
+    "logical_rows": 25.0,
+    "partitions_touched": 1.0,
+    "plan_id": "q9:C010",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "9",
+    "read_cql_requests": 1.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  },
+  {
+    "assumptions": [
+      "V9 route synthesis; expected rows on the cohort state, domain-restricted fan-outs",
+      "range_pushdown=False limit_pushdown=True"
+    ],
+    "candidate_id": "C011+C024",
+    "fanout": 26.0,
+    "logical_bytes": 3236.355,
+    "logical_rows": 50.0,
+    "partitions_touched": 26.0,
+    "plan_id": "q9:C011+C024",
+    "provenance": "schemalens_v9.routes.read_options",
+    "query_id": "9",
+    "read_cql_requests": 26.0,
+    "runtime_guard": "",
+    "valid": true,
+    "warnings": []
+  }
+]

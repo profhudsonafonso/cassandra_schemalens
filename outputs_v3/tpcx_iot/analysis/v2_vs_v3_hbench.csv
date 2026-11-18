@@ -1,0 +1,6 @@
+balanced_structural_tiebreak,benchmark,in_v2_hbench,logical_storage_bytes,maintenance_read_requests,read_cql_requests,read_logical_bytes,read_logical_rows,routes_identical_to_v2,tables,v2_id,v3_id,v3_rank,write_cql_mutations
+1.2,tpcx_iot,True,3579660.0,0.0,4.0,20834.0,22.0,True,ts0_series_raw,h_119222012d4e,h_119222012d4e,1,3780.0
+1.40169,tpcx_iot,True,7189560.0,0.0,2.0,20834.0,22.0,True,ts0_series_raw+ts3_sensor_3600s,h_3f1449e05468,h_3f1449e05468,2,7560.0
+,tpcx_iot,True,,,,,,,ts1_series_3600s,h_aba788b8e7b7,,,
+,tpcx_iot,True,,,,,,,ts1_series_3600s+ts3_sensor_3600s,h_6745757bf865,,,
+,tpcx_iot,True,,,,,,,ts1_series_60s+ts3_sensor_60s,h_a9983e2318a9,,,

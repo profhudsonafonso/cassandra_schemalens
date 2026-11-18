@@ -1,0 +1,140 @@
+[
+  {
+    "ablation": "full_v3",
+    "benchmark": "rubis",
+    "dsr": 0.0,
+    "hbench": "V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86",
+    "hbench_size": 5,
+    "near_best_5pct": true,
+    "note": null,
+    "pareto_retention": 1.0,
+    "regret": 0.0,
+    "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+    "status": "EVALUATED",
+    "top1_noise": true,
+    "top1_strict": true,
+    "top3": true
+  },
+  {
+    "ablation": "without_read_rows",
+    "benchmark": "rubis",
+    "dsr": 0.0,
+    "hbench": "V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86",
+    "hbench_size": 5,
+    "near_best_5pct": true,
+    "note": null,
+    "pareto_retention": 1.0,
+    "regret": 0.0,
+    "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+    "status": "EVALUATED",
+    "top1_noise": true,
+    "top1_strict": true,
+    "top3": true
+  },
+  {
+    "ablation": "without_read_bytes",
+    "benchmark": "rubis",
+    "hbench_size": 5,
+    "note": null,
+    "status": "NOT_EVALUABLE (2 unmeasured)"
+  },
+  {
+    "ablation": "without_request_count",
+    "benchmark": "rubis",
+    "hbench_size": 5,
+    "note": null,
+    "status": "NOT_EVALUABLE (2 unmeasured)"
+  },
+  {
+    "ablation": "without_write_mutations",
+    "benchmark": "rubis",
+    "dsr": 0.0,
+    "hbench": "V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86",
+    "hbench_size": 5,
+    "near_best_5pct": true,
+    "note": null,
+    "pareto_retention": 1.0,
+    "regret": 0.0,
+    "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+    "status": "EVALUATED",
+    "top1_noise": true,
+    "top1_strict": true,
+    "top3": true
+  },
+  {
+    "ablation": "without_storage",
+    "benchmark": "rubis",
+    "hbench_size": 5,
+    "note": null,
+    "status": "NOT_EVALUABLE (1 unmeasured)"
+  },
+  {
+    "ablation": "without_max_partition_safety",
+    "benchmark": "rubis",
+    "dsr": 0.0,
+    "hbench": "V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86",
+    "hbench_size": 5,
+    "near_best_5pct": true,
+    "note": "IDENTICAL_BY_CONSTRUCTION: risk axes are not V3 dominance axes (D-V3-006)",
+    "pareto_retention": 1.0,
+    "regret": 0.0,
+    "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+    "status": "EVALUATED",
+    "top1_noise": true,
+    "top1_strict": true,
+    "top3": true
+  },
+  {
+    "ablation": "with_risk_axes_in_dominance",
+    "benchmark": "rubis",
+    "dsr": 0.0,
+    "hbench": "V3R_cb2e537945 V3R_a82100f407 V3R_c3fc027f9f V3R_0fbc71f963 V3R_63f05eeb86",
+    "hbench_size": 5,
+    "near_best_5pct": true,
+    "note": null,
+    "pareto_retention": 1.0,
+    "regret": 0.0,
+    "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+    "status": "EVALUATED",
+    "top1_noise": true,
+    "top1_strict": true,
+    "top3": true
+  },
+  {
+    "ablation": "without_structural_diversity",
+    "benchmark": "rubis",
+    "hbench_size": 5,
+    "note": null,
+    "status": "NOT_EVALUABLE (2 unmeasured)"
+  },
+  {
+    "ablation": "without_pareto",
+    "benchmark": "rubis",
+    "hbench_size": 5,
+    "note": null,
+    "status": "NOT_EVALUABLE (3 unmeasured)"
+  },
+  {
+    "ablation": "top_k_1",
+    "benchmark": "rubis",
+    "dsr": 0.8,
+    "hbench": "V3R_cb2e537945",
+    "hbench_size": 1,
+    "near_best_5pct": true,
+    "note": null,
+    "pareto_retention": 1.0,
+    "regret": 0.0,
+    "rule": "PARETO_THEN_STRUCTURAL_DIVERSITY_THEN_TIEBREAK",
+    "status": "EVALUATED",
+    "top1_noise": true,
+    "top1_strict": true,
+    "top3": true
+  },
+  {
+    "ablation": "random_k",
+    "benchmark": "rubis",
+    "hbench_size": 5,
+    "note": null,
+    "status": "NOT_EVALUABLE (5 unmeasured)"
+  }
+]

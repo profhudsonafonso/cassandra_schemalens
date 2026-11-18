@@ -1,0 +1,62 @@
+[
+  {
+    "assumptions": [
+      "static campaign load (stage9 loader semantics)"
+    ],
+    "candidate_id": "ts0_iot_raw",
+    "cql_mutations": 54000,
+    "logical_bytes_written": 1188000.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "campaign data CSV + DDL",
+    "rows_touched": 54000,
+    "warnings": [],
+    "write_id": "ingest"
+  },
+  {
+    "assumptions": [
+      "static campaign load (stage9 loader semantics)"
+    ],
+    "candidate_id": "ts2_iot_wide",
+    "cql_mutations": 27000,
+    "logical_bytes_written": 837000.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "campaign data CSV + DDL",
+    "rows_touched": 27000,
+    "warnings": [],
+    "write_id": "ingest"
+  },
+  {
+    "assumptions": [
+      "static campaign load (stage9 loader semantics)"
+    ],
+    "candidate_id": "ts2_iot_wide_unbucketed",
+    "cql_mutations": 27000,
+    "logical_bytes_written": 729000.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "campaign data CSV + DDL",
+    "rows_touched": 27000,
+    "warnings": [],
+    "write_id": "ingest"
+  },
+  {
+    "assumptions": [
+      "static campaign load (stage9 loader semantics)"
+    ],
+    "candidate_id": "ts4_iot_latest",
+    "cql_mutations": 18,
+    "logical_bytes_written": 396.0,
+    "maintainable": true,
+    "maintenance_read_requests": 0.0,
+    "maintenance_rows_read": 0.0,
+    "provenance": "campaign data CSV + DDL",
+    "rows_touched": 18,
+    "warnings": [],
+    "write_id": "ingest"
+  }
+]

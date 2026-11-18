@@ -1,0 +1,33 @@
+{
+  "policy_id": "SCHEMALENS_UNIFIED_STAGE7_V3",
+  "frozen_on": "2026-11-18",
+  "stage7_semantics": "structural work estimate: physical work required by each QueryPlan, WritePlan, CandidateSpec and deployment, computed only from pre-benchmark evidence. NOT a latency or performance predictor.",
+  "logical_byte_policy": {
+    "version": "LBP-1",
+    "fixed_width_bytes": {"int": 4, "bigint": 8, "smallint": 2, "tinyint": 1, "double": 8, "float": 4, "timestamp": 8,
+                          "date": 4, "time": 8, "boolean": 1, "uuid": 16, "timeuuid": 16, "decimal": 16, "counter": 8},
+    "variable_width_types": ["text", "varchar", "ascii", "blob"],
+    "variable_width_rule": "declared or pre-benchmark-estimated mean width per column, supplied by the scenario; UNKNOWN if absent (never zero)",
+    "logical_row_overhead_bytes": 0,
+    "naming": "logical_bytes_proxy / logical_storage_bytes_proxy (not disk, network or SSTable bytes)"
+  },
+  "route_choice_within_deployment": "among valid plans whose tables are all in the deployment: lexicographic minimum of (read_cql_requests, read_logical_rows, read_logical_bytes, plan_id)",
+  "deployment_aggregation": {
+    "read_axes": "sum over read operations of frequency x per-execution work of the chosen route; frequencies normalised to sum 1 over reads",
+    "write_axes": "sum over write operations of frequency x work summed over the deployment tables the write must maintain",
+    "storage": "sum of candidate logical_storage_bytes_proxy",
+    "risk": "max_partition_bytes, max_partition_rows = max over tables; partition_count = sum"
+  },
+  "pareto_axes": ["read_cql_requests", "read_logical_rows", "read_logical_bytes", "write_cql_mutations",
+                  "maintenance_read_requests", "logical_storage_bytes"],
+  "risk_axes_reported_not_dominating": ["max_partition_bytes", "max_partition_rows", "partition_count"],
+  "risk_axes_decision": "risk axes are NOT dominance axes in V3: decided before measurement (D-V3-006) to keep the front non-degenerate and identical across benchmarks; they are reported and used as structural diversity / warnings",
+  "relative_tolerance": 1e-9,
+  "top_k": 5,
+  "selection": "if |Pareto| <= top_k keep the whole front; else greedy structural diversity over deployment tags, ties and ordering by balanced_structural_tiebreak",
+  "balanced_structural_tiebreak": "mean over Pareto axes of value / min positive value of that axis among all complete deployments of the benchmark (equal weights); axes whose values are all zero are skipped. Used ONLY for ordering and tie-break, never named a prediction.",
+  "diversity_tags": ["canonical source variant", "physical table", "family combination", "bucket variant", "projection vs none", "raw vs aggregate"],
+  "forbidden_inputs": ["latency", "p50", "p95", "p99", "throughput", "raw_latencies", "benchmark summaries", "Stage9 results",
+                       "V8 raw latency", "COST_MODEL.json (NNLS)", "schemalens_v9.cost"],
+  "selection_uses_measured_results": false
+}
